@@ -86,7 +86,7 @@ Enfoque acordado con el usuario: app para **aprender**, no solo para leer la ley
 3. **Buscar**: por número de artículo, por texto de la ley y por fases y plazos del mapa.
 4. **Repaso**: tarjetas generadas de preguntas, alternativas y plazos, con progreso guardado en local.
 5. **Recursos**: selector por resolución (qué recurso cabe, plazo y órgano, con frase literal), fichas de cada recurso y test de opción múltiple.
-6. Marcadores y notas personales, guardados en el almacenamiento local del navegador. No se sincronizan entre el móvil y el PC; el usuario lo sabe (pendiente).
+6. **Notas**: marcadores y notas personales en artículos, fases y recursos, guardados en el almacenamiento local del navegador. No se sincronizan entre el móvil y el PC; para pasarlos hay copia de seguridad (descargar / importar archivo JSON).
 
 Datos del mapa: `lec/datos/procedimientos.json` (contenido elaborado, `revisado: false`). Cada plazo, alternativa y respuesta lleva una frase `literal`; `scripts/insertar_datos.py` comprueba que esa frase está en el artículo citado y, si no, no publica.
 
@@ -126,7 +126,7 @@ No empieces la siguiente fase sin su visto bueno.
 - **F2** — Mapa procesal (prototipo hecho): juicio ordinario, juicio verbal y monitorio, con plazos, alternativas y repaso. Pendiente de revisión del usuario.
 - **F3** — Mapa procesal: ejecución y embargo (arts. 517-680, sin la hipotecaria) y medidas cautelares (arts. 721-747). Hecha; pendiente de revisión del usuario.
 - **F4** — Mapa de recursos (`lec/datos/recursos.json`): selector «¿qué recurso cabe?» por resolución, fichas de cada recurso y test interactivo. Hecha; pendiente de revisión del usuario.
-- **F5** — Marcadores y notas.
+- **F5** — Marcadores y notas (☆ y ✎ en artículos, fases y recursos; pestaña «Notas»; búsqueda en notas; copia de seguridad descargable e importable para pasar del móvil al PC). Hecha.
 - **F6** — Procesos especiales: familia y capacidad, división de herencia, cambiario y ejecución hipotecaria (plazos, esquemas y repaso).
 - **F7** — Portada (`/index.html`) que enlaza a cada ley, preparada para añadir LECrim, LRJS y ET.
 - **Segunda parte** — Calculadora de plazos con calendario.

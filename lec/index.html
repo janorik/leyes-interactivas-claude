@@ -47,7 +47,7 @@ header.cab{background:var(--verde-osc);color:var(--crema);position:sticky;top:0;
 .ico{background:transparent;border:1px solid rgba(255,255,255,.18);color:var(--crema);border-radius:9px;
   height:38px;min-width:38px;padding:0 9px;cursor:pointer;font-size:.9rem;display:flex;align-items:center;justify-content:center;text-decoration:none}
 nav.tabs{max-width:1180px;margin:0 auto;display:flex;gap:2px;padding:0 10px}
-nav.tabs a{flex:1;text-align:center;padding:9px 4px 10px;color:rgba(245,240,232,.75);text-decoration:none;
+nav.tabs a{flex:1;text-align:center;white-space:nowrap;padding:9px 4px 10px;color:rgba(245,240,232,.75);text-decoration:none;
   font-size:.88rem;border-bottom:3px solid transparent}
 nav.tabs a[aria-current="page"]{color:var(--crema);border-bottom-color:var(--oro);font-weight:600}
 :focus-visible{outline:3px solid var(--oro);outline-offset:2px}
@@ -228,6 +228,19 @@ mark.hl{background:var(--marca);color:inherit;padding:0 1px;border-radius:2px}
 .opc.ok{background:#d9efe2;border-color:#2e7d4f;color:#14482b}
 .opc.mal{background:#f6dcd3;border-color:var(--peligro);color:#6b2410}
 :root[data-theme="dark"] .opc.ok{background:#1d4a32;color:#d8f3e2} :root[data-theme="dark"] .opc.mal{background:#4a2418;color:#f6dcd3}
+/* marcadores y notas */
+.mis{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:8px 0 4px}
+.mis .btn{padding:6px 10px;font-size:.85rem}
+.mis .btn[aria-pressed="true"]{background:var(--oro);border-color:var(--oro);color:#1c1606}
+.mis textarea{width:100%;min-height:88px;border:1px solid var(--borde);border-radius:10px;padding:10px;background:var(--superficie2);font:inherit;font-size:.95rem;color:var(--texto);resize:vertical}
+.mis .guardado{font-size:.75rem;color:var(--suave)}
+.mi-item{padding:12px 14px;margin-bottom:8px}
+.mi-item .cab{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.mi-item a.t{font-weight:700;text-decoration:none;color:var(--enlace)}
+.mi-item .txtnota{white-space:pre-wrap;margin:6px 0 0;font-size:.92rem}
+.mi-item .fecha{font-size:.72rem;color:var(--suave)}
+.borrar{background:none;border:0;color:var(--peligro);cursor:pointer;font-size:.85rem;padding:2px 4px}
+.ind{color:var(--oro);font-size:.8rem;margin-left:4px}
 footer{max-width:1180px;margin:0 auto;padding:0 16px 30px;font-size:.74rem;color:var(--suave)}
 </style>
 </head>
@@ -248,6 +261,7 @@ footer{max-width:1180px;margin:0 auto;padding:0 16px 30px;font-size:.74rem;color
     <a href="#ley" data-v="ley">Ley</a>
     <a href="#buscar" data-v="buscar">Buscar</a>
     <a href="#repaso" data-v="repaso">Repaso</a>
+    <a href="#notas" data-v="notas">Notas</a>
   </nav>
 </header>
 
@@ -273,6 +287,7 @@ footer{max-width:1180px;margin:0 auto;padding:0 16px 30px;font-size:.74rem;color
   </section>
   <section id="v-repaso" hidden></section>
   <section id="v-recursos" hidden></section>
+  <section id="v-notas" hidden></section>
 </main>
 <div class="hoja-fondo" id="hojaFondo" hidden></div>
 <div class="hoja" id="hoja" hidden role="dialog" aria-modal="true" aria-labelledby="hojaTit">
@@ -328,6 +343,49 @@ const lit = t => '<div class="lit">'+esc(t)+'</div>';
 const PEND = '<span class="pend" title="Contenido elaborado: valídalo con el texto literal">Pendiente de revisión</span>';
 const nombreArt = k => A[k].rotulo + (A[k].titulo ? ". "+A[k].titulo.replace(/\.$/,"") : "");
 
+/* ---------- marcadores y notas (solo en este navegador) ---------- */
+let MIS = {marcas:{}, notas:{}};
+try{ const g = JSON.parse(ls.get("mis")||"null"); if (g && g.marcas && g.notas) MIS = g; }catch(e){}
+const guardarMis = () => ls.set("mis", JSON.stringify(MIS));
+const hoy = () => new Date().toISOString().slice(0,10);
+function infoClave(c){
+  const [tipo, ...r] = c.split(":"); const id = r.join(":");
+  if (tipo==="art") return A[id] ? {tipo:"Artículo", nombre:nombreArt(id), href:hrefLey(id)} : null;
+  if (tipo==="fase"){ const [pid,fid]=id.split("/"); const p=PROC.find(x=>x.id===pid), f=p&&p.fases.find(x=>x.id===fid);
+    return f ? {tipo:"Fase", nombre:p.nombre+" · "+f.fase, href:"#proc/"+pid+"/"+fid} : null; }
+  if (tipo==="rec"){ const x=(D.recursos||[]).find(y=>y.id===id); return x ? {tipo:"Recurso", nombre:x.recurso, href:"#recursos/fichas/"+id} : null; }
+  return null;
+}
+function htmlMis(c){
+  const m = !!MIS.marcas[c], n = MIS.notas[c];
+  return '<div class="mis" data-clave="'+esc(c)+'"><button class="btn" data-marca="'+esc(c)+'" aria-pressed="'+m+'">'+(m?"★ Marcado":"☆ Marcar")+'</button>'+
+    '<button class="btn" data-abrenota="'+esc(c)+'">✎ '+(n?"Mi nota":"Añadir nota")+'</button>'+
+    '<textarea data-nota="'+esc(c)+'" placeholder="Escribe tu nota (se guarda sola en este navegador)"'+(n?"":" hidden")+'>'+esc(n?n.texto:"")+'</textarea>'+
+    '<span class="guardado" data-estado="'+esc(c)+'"></span></div>';
+}
+const indMis = c => (MIS.marcas[c]?'<span class="ind" title="Marcado">★</span>':"")+(MIS.notas[c]?'<span class="ind" title="Con nota">✎</span>':"");
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-marca]");
+  if (b){ e.preventDefault(); e.stopPropagation(); const c = b.dataset.marca;
+    if (MIS.marcas[c]) delete MIS.marcas[c]; else MIS.marcas[c] = hoy();
+    guardarMis(); const on = !!MIS.marcas[c];
+    document.querySelectorAll('[data-marca="'+CSS.escape(c)+'"]').forEach(x=>{ x.setAttribute("aria-pressed",on); x.textContent = on?"★ Marcado":"☆ Marcar"; });
+    return; }
+  const n = e.target.closest("[data-abrenota]");
+  if (n){ e.preventDefault(); e.stopPropagation(); const t = n.parentElement.querySelector("textarea"); t.hidden = !t.hidden; if(!t.hidden) t.focus(); }
+}, true);
+let tNota = null;
+document.addEventListener("input", e => {
+  const t = e.target.closest("textarea[data-nota]"); if (!t) return;
+  const c = t.dataset.nota; clearTimeout(tNota);
+  tNota = setTimeout(() => {
+    const v = t.value.trim();
+    if (v) MIS.notas[c] = {texto:t.value, fecha:hoy()}; else delete MIS.notas[c];
+    guardarMis();
+    const est = t.parentElement.querySelector(".guardado"); if (est) est.textContent = v ? "Guardado ✓" : "Nota borrada";
+  }, 400);
+});
+
 /* =====================  PROCESOS  ===================== */
 const PROXIMOS = [
   ["Procesos especiales","Familia y capacidad, división de herencia, cambiario y ejecución hipotecaria"]
@@ -362,7 +420,7 @@ function vistaProc(id, faseId){
   if (pestProc === "ruta"){
     h += '<div class="layout"><ol class="ruta">'+p.fases.map((f,i)=>
       '<li><button class="fase" data-f="'+f.id+'" aria-current="'+(!!fase&&fase.id===f.id)+'"><span class="n">'+String(i+1).padStart(2,"0")+'</span>'+
-        '<span class="cuerpo"><span class="t">'+esc(f.fase)+'</span><span class="s">'+esc(f.subtitulo)+'</span>'+
+        '<span class="cuerpo"><span class="t">'+esc(f.fase)+indMis("fase:"+p.id+"/"+f.id)+'</span><span class="s">'+esc(f.subtitulo)+'</span>'+
         '<span class="meta">'+f.plazos.map(pl=>'<span class="chip plazo">'+esc(pl.plazo)+'</span>').join("")+
         (f.ramas.length?'<span class="bif">⑂ '+f.ramas.length+(f.ramas.length===1?' alternativa':' alternativas')+'</span>':"")+'</span></span>'+
         '<span class="art">Art. '+esc(f.articulos[0])+'</span></button></li>').join("")+'</ol>'+
@@ -387,7 +445,7 @@ function vistaProc(id, faseId){
 function htmlFicha(p, f){
   const i = p.fases.indexOf(f), ant = p.fases[i-1], sig = p.fases[i+1];
   return '<div class="ficha"><div class="eyebrow">Fase '+(i+1)+' · '+esc(f.articulos.map(k=>"Art. "+k).join(" · "))+'</div>'+
-    '<h2>'+esc(f.fase)+'</h2><div>'+(p.revisado?"":PEND)+'</div>'+
+    '<h2>'+esc(f.fase)+'</h2><div>'+(p.revisado?"":PEND)+'</div>'+htmlMis("fase:"+p.id+"/"+f.id)+
     '<h4>Qué ocurre</h4><p>'+esc(f.descripcion)+'</p>'+
     (f.plazos.length ? '<h4>Plazos</h4>'+f.plazos.map(pl=>'<div class="plz"><span class="v">'+esc(pl.plazo)+'</span><div class="d">'+esc(pl.acto)+' '+chipArt(pl.articulo)+lit(pl.literal)+'</div></div>').join("") : "")+
     (f.ramas.length ? '<h4>Alternativas · toca para ver qué pasa</h4>'+f.ramas.map(r=>'<div class="rama" role="button" tabindex="0" aria-expanded="false"><span class="flecha">▾</span><span class="q">'+esc(minus(r.si))+'</span>'+
@@ -444,7 +502,7 @@ function pintarHijos(cont, hijos){
     if (h.tipo === "articulo"){
       if(!ul){ ul = document.createElement("ul"); cont.appendChild(ul); }
       const a = A[h.clave], li = document.createElement("li");
-      li.innerHTML = '<a href="'+hrefLey(h.clave)+'"><b>'+esc(a.rotulo)+'.</b> '+esc(a.titulo||"")+'</a>';
+      li.innerHTML = '<a href="'+hrefLey(h.clave)+'"><b>'+esc(a.rotulo)+'.</b> '+esc(a.titulo||"")+indMis("art:"+h.clave)+'</a>';
       ul.appendChild(li);
     } else {
       ul = null;
@@ -489,7 +547,7 @@ function htmlArticulo(k, conNav, terminos){
   if (conNav){ const i=POS[k], an=CLAVES[i-1], si=CLAVES[i+1];
     nav = '<div class="navart">'+(an?'<a class="btn" href="'+hrefLey(an)+'">‹ '+esc(A[an].rotulo)+'</a>':'<span></span>')+(si?'<a class="btn" href="'+hrefLey(si)+'">'+esc(A[si].rotulo)+' ›</a>':'<span></span>')+'</div>'; }
   return '<div class="migas">'+(a.ruta||[]).map(r=>"<span>"+esc(r)+"</span>").join("")+'</div>'+
-    '<article class="art card"><h1><span class="r">'+esc(a.rotulo)+(a.titulo?".":"")+'</span> '+esc(a.titulo||"")+'</h1>'+notas+'<div class="txt">'+cuerpo+'</div>'+usos+'</article>'+nav;
+    '<article class="art card"><h1><span class="r">'+esc(a.rotulo)+(a.titulo?".":"")+'</span> '+esc(a.titulo||"")+'</h1>'+htmlMis("art:"+k)+notas+'<div class="txt">'+cuerpo+'</div>'+usos+'</article>'+nav;
 }
 function vistaArt(k, resaltar){
   const v = $("#v-art");
@@ -529,7 +587,9 @@ function buscar(){
   if (!claves || (claves.length===0 && modo==="auto")){ terminos = pal; claves = INDICE.filter(e=>pal.every(w=>e.t.includes(w))).map(e=>e.k); ultimos = terminos; }
   const MAX=300;
   info.textContent = (fases.length?fases.length+" fase(s) del mapa procesal · ":"")+(claves.length?claves.length+" artículo(s)":"ningún artículo")+(claves.length>MAX?" (se muestran "+MAX+")":"")+".";
-  let h = fases.map(e=>'<li class="card"><a href="#proc/'+e.p.id+'/'+e.f.id+'"><div class="tipo">Fase · '+esc(e.p.nombre)+'</div><span class="t">'+esc(e.f.fase)+'</span> — '+esc(e.f.subtitulo)+
+  const misN = modo==="auto" ? Object.keys(MIS.notas).filter(c=>infoClave(c) && pal.every(w=>norm(MIS.notas[c].texto+" "+infoClave(c).nombre).includes(w))) : [];
+  if (misN.length) info.textContent = misN.length+" nota(s) tuya(s) · "+info.textContent;
+  let h = misN.map(c=>{ const i=infoClave(c); return '<li class="card"><a href="'+i.href+'"><div class="tipo">Tu nota · '+esc(i.tipo)+'</div><span class="t">'+esc(i.nombre)+'</span><div class="frag">'+esc(MIS.notas[c].texto.slice(0,160))+'</div></a></li>'; }).join("")+fases.map(e=>'<li class="card"><a href="#proc/'+e.p.id+'/'+e.f.id+'"><div class="tipo">Fase · '+esc(e.p.nombre)+'</div><span class="t">'+esc(e.f.fase)+'</span> — '+esc(e.f.subtitulo)+
     (e.f.plazos.length?'<div class="frag">'+e.f.plazos.map(x=>esc(x.acto+": "+x.plazo)).join(" · ")+'</div>':"")+'</a></li>').join("");
   h += claves.slice(0,MAX).map(k=>{ const a=A[k]; let extra="";
     if (terminos.length){ const t=a.rotulo+" "+(a.titulo||"")+"\n"+a.texto_literal, i=norm(t).indexOf(terminos[0]);
@@ -620,7 +680,7 @@ function vistaRecursos(tab, foco){
         SEL.map((c,i)=>[c,i]).filter(([c])=>c.quien===q).map(([c,i])=>'<div class="selres" role="button" tabindex="0" aria-expanded="false" data-i="'+i+'"><span class="quien">'+esc(c.quien)+'</span><span class="nom">'+esc(c.res)+'</span><div class="sol">'+htmlSolucion(c)+'</div></div>').join("")+'</div>';
     }
   } else if (pestRec === "fichas"){
-    h += REC.map(r=>'<div class="card recficha'+(r.no_vigente?" novig":"")+'" id="rec-'+r.id+'"><h3>'+esc(r.recurso)+(r.no_vigente?' <span class="pend">No vigente</span>':"")+'</h3>'+
+    h += REC.map(r=>'<div class="card recficha'+(r.no_vigente?" novig":"")+'" id="rec-'+r.id+'"><h3>'+esc(r.recurso)+(r.no_vigente?' <span class="pend">No vigente</span>':"")+'</h3>'+htmlMis("rec:"+r.id)+
       '<dl><dt>Contra</dt><dd>'+esc(r.contra_que)+'</dd><dt>Plazo</dt><dd><b>'+esc(r.plazo)+'</b></dd><dt>Órgano</dt><dd>'+esc(r.organo)+'</dd><dt>Efectos</dt><dd>'+esc(r.efectos)+'</dd></dl>'+
       r.literales.map(l=>lit(l.texto)+'<div style="margin:2px 0 4px">'+chipArt(l.articulo)+'</div>').join("")+'</div>').join("");
   } else {
@@ -645,8 +705,51 @@ function vistaRecursos(tab, foco){
   if (foco){ const el = document.getElementById("rec-"+foco); if (el) setTimeout(()=>el.scrollIntoView({block:"start"}),0); }
 }
 
+/* =====================  MIS NOTAS  ===================== */
+function vistaNotas(){
+  const v = $("#v-notas");
+  const item = (c, extra) => { const i = infoClave(c); if (!i) return "";
+    return '<div class="card mi-item"><div class="cab"><div><div class="tipo">'+esc(i.tipo)+'</div><a class="t" href="'+i.href+'">'+esc(i.nombre)+'</a></div>'+extra.btn+'</div>'+(extra.txt||"")+'</div>'; };
+  const marcas = Object.keys(MIS.marcas).sort((a,b)=>MIS.marcas[b].localeCompare(MIS.marcas[a]));
+  const notas = Object.keys(MIS.notas).sort((a,b)=>MIS.notas[b].fecha.localeCompare(MIS.notas[a].fecha));
+  v.innerHTML = '<div class="eyebrow">Solo en este navegador</div><h1 class="tit">Mis notas y marcadores</h1>'+
+    '<p class="lead">Marca artículos, fases y recursos con ☆ y escribe notas con ✎. Se guardan en este navegador y <b>no se sincronizan</b> entre el móvil y el PC: usa la copia de seguridad para pasarlos.</p>'+
+    '<div class="seccion-t">Marcadores ('+marcas.length+')</div>'+
+    (marcas.length ? marcas.map(c=>item(c,{btn:'<button class="borrar" data-quitar-marca="'+esc(c)+'">Quitar</button>', txt:'<div class="fecha">Marcado el '+esc(MIS.marcas[c])+'</div>'})).join("") : '<p class="vacio">Aún no has marcado nada.</p>')+
+    '<div class="seccion-t">Notas ('+notas.length+')</div>'+
+    (notas.length ? notas.map(c=>item(c,{btn:'<button class="borrar" data-quitar-nota="'+esc(c)+'">Borrar</button>', txt:'<p class="txtnota">'+esc(MIS.notas[c].texto)+'</p><div class="fecha">Última edición: '+esc(MIS.notas[c].fecha)+'</div>'})).join("") : '<p class="vacio">Aún no tienes notas.</p>')+
+    '<div class="seccion-t">Copia de seguridad</div><div class="card" style="padding:12px 14px">'+
+    '<p style="margin:0 0 10px;font-size:.9rem">Para pasar tus notas del móvil al PC (o al revés): <b>1)</b> descarga la copia en un dispositivo; <b>2)</b> en el otro, pulsa «Importar copia» y elige ese archivo. Se suman a las que ya tengas.</p>'+
+    '<div class="botones"><button class="btn prim" id="exportar">⬇ Descargar copia</button><label class="btn" style="cursor:pointer">⬆ Importar copia<input type="file" id="importar" accept=".json,application/json" hidden></label></div>'+
+    '<p class="res-info" id="estadoCopia"></p></div>';
+  v.querySelectorAll("[data-quitar-marca]").forEach(b=>b.onclick=()=>{ delete MIS.marcas[b.dataset.quitarMarca]; guardarMis(); vistaNotas(); });
+  v.querySelectorAll("[data-quitar-nota]").forEach(b=>b.onclick=()=>{ if(confirm("¿Borrar esta nota?")){ delete MIS.notas[b.dataset.quitarNota]; guardarMis(); vistaNotas(); } });
+  $("#exportar").onclick = () => {
+    const blob = new Blob([JSON.stringify({app:"lec-norlexia", version:1, fecha:hoy(), ...MIS}, null, 1)], {type:"application/json"});
+    const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "lec-mis-notas-"+hoy()+".json";
+    document.body.appendChild(a); a.click(); setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+    $("#estadoCopia").textContent = "Copia descargada.";
+  };
+  $("#importar").onchange = e => {
+    const f = e.target.files[0]; if (!f) return;
+    const r = new FileReader();
+    r.onload = () => { try{
+        const d = JSON.parse(r.result); if (!d || typeof d.marcas!=="object" || typeof d.notas!=="object") throw 0;
+        let nm=0, nn=0;
+        for (const [c,v] of Object.entries(d.marcas)) if (!MIS.marcas[c]){ MIS.marcas[c]=String(v); nm++; }
+        for (const [c,v] of Object.entries(d.notas)) if (v && typeof v.texto==="string"){
+          const act = MIS.notas[c];
+          if (!act) { MIS.notas[c] = {texto:v.texto, fecha:String(v.fecha||hoy())}; nn++; }
+          else if (act.texto !== v.texto){ MIS.notas[c] = {texto:act.texto+"\n\n--- (importado)\n"+v.texto, fecha:hoy()}; nn++; }
+        }
+        guardarMis(); vistaNotas(); $("#estadoCopia").textContent = "Importados: "+nm+" marcadores y "+nn+" notas.";
+      }catch(err){ $("#estadoCopia").textContent = "El archivo no es una copia válida de esta app."; } };
+    r.readAsText(f);
+  };
+}
+
 /* =====================  RUTAS (#hash)  ===================== */
-const VISTAS = ["procesos","proc","ley","art","buscar","repaso","recursos"];
+const VISTAS = ["procesos","proc","ley","art","buscar","repaso","recursos","notas"];
 function mostrar(v, pest){
   VISTAS.forEach(id => $("#v-"+id).hidden = id!==v);
   document.querySelectorAll("nav.tabs a").forEach(a => a.dataset.v===pest ? a.setAttribute("aria-current","page") : a.removeAttribute("aria-current"));
@@ -664,6 +767,7 @@ function ruta(){
     else if (partes[0]==="ley"){ mostrar("ley","ley"); pintarArbol(); }
     else if (partes[0]==="buscar"){ mostrar("buscar","buscar"); setTimeout(()=>$("#q").focus(),0); }
     else if (partes[0]==="repaso"){ mostrar("repaso","repaso"); vistaRepaso(partes[1]||"todos"); }
+    else if (partes[0]==="notas"){ mostrar("notas","notas"); vistaNotas(); document.title = "LEC · Mis notas"; }
     else if (partes[0]==="recursos"){ mostrar("recursos","procesos"); vistaRecursos(partes[1]||"cabe", partes[2]); document.title = "LEC · Recursos"; }
     else { mostrar("procesos","procesos"); vistaProcesos(); }
     if (!(partes[0]==="proc" && partes[2]) && !(partes[0]==="recursos" && partes[2])) scrollTo(0,0);
