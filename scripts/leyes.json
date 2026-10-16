@@ -1,0 +1,10 @@
+{
+ "_nota": "Lista de leyes de la portada. Para añadir una ley: crea su carpeta con su index.html y cambia su estado a «disponible».",
+ "leyes": [
+  {"id": "lec", "abreviatura": "LEC", "nombre": "Ley de Enjuiciamiento Civil", "referencia": "Ley 1/2000, de 7 de enero · BOE-A-2000-323", "carpeta": "lec/", "estado": "disponible",
+   "descripcion": "Mapa procesal (ordinario, verbal, ejecución, cautelares, monitorio, cambiario, familia, herencia, hipotecaria), sistema de recursos, texto literal completo, repaso y notas."},
+  {"id": "lecrim", "abreviatura": "LECrim", "nombre": "Ley de Enjuiciamiento Criminal", "referencia": "", "carpeta": "lecrim/", "estado": "proximamente", "descripcion": ""},
+  {"id": "lrjs", "abreviatura": "LRJS", "nombre": "Ley reguladora de la Jurisdicción Social", "referencia": "", "carpeta": "lrjs/", "estado": "proximamente", "descripcion": ""},
+  {"id": "et", "abreviatura": "ET", "nombre": "Estatuto de los Trabajadores", "referencia": "", "carpeta": "et/", "estado": "proximamente", "descripcion": ""}
+ ]
+}

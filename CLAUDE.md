@@ -128,5 +128,5 @@ No empieces la siguiente fase sin su visto bueno.
 - **F4** — Mapa de recursos (`lec/datos/recursos.json`): selector «¿qué recurso cabe?» por resolución, fichas de cada recurso y test interactivo. Hecha; pendiente de revisión del usuario.
 - **F5** — Marcadores y notas (☆ y ✎ en artículos, fases y recursos; pestaña «Notas»; búsqueda en notas; copia de seguridad descargable e importable para pasar del móvil al PC). Hecha.
 - **F6** — Procesos especiales: nulidad, separación y divorcio (arts. 748-777), medidas judiciales de apoyo (756-763), división de herencia (782-789), cambiario (819-827) y ejecución hipotecaria (681-698). Hecha; pendiente de revisión del usuario.
-- **F7** — Portada (`/index.html`) que enlaza a cada ley, preparada para añadir LECrim, LRJS y ET.
+- **F7** — Portada (`/index.html`) que enlaza a cada ley, preparada para añadir LECrim, LRJS y ET. Hecha: se genera con `python3 scripts/generar_portada.py` a partir de `scripts/leyes.json`. Para añadir una ley: crear su carpeta con su `index.html` y poner su estado a «disponible» en `leyes.json`. Los enlaces apuntan a `carpeta/index.html` para que funcionen también en local.
 - **Segunda parte** — Calculadora de plazos con calendario.
