@@ -17,6 +17,7 @@ import sys
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HTML = os.path.join(RAIZ, "lec", "index.html")
 JSON_LEY = os.path.join(RAIZ, "lec", "datos", "lec.json")
+JSON_PROC = os.path.join(RAIZ, "lec", "datos", "procedimientos.json")
 
 # Recorte del emblema "N" en el logo cuadrado de 2048 px (proporciones relativas).
 RECORTE = (680 / 2048, 930 / 2048, 1420 / 2048, 1500 / 2048)
@@ -42,9 +43,71 @@ def logo_base64():
     return "data:image/png;base64," + base64.b64encode(buf.getvalue()).decode("ascii")
 
 
+def _norm(t):
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def validar_y_anadir_procedimientos(datos):
+    """Comprueba el contenido elaborado contra el texto literal y lo añade a los datos.
+
+    - Todo artículo citado debe existir en la LEC extraída.
+    - Toda frase 'literal' debe aparecer tal cual en el artículo citado.
+    - Todo procedimiento debe llevar revisado (false hasta que lo valide el usuario).
+    Si algo falla, el script se detiene: no se publica nada sin comprobar.
+    """
+    if not os.path.exists(JSON_PROC):
+        return
+    with open(JSON_PROC, encoding="utf-8") as f:
+        proc = json.load(f)["procedimientos"]
+    arts = datos["articulos"]
+    errores = []
+
+    def art(k, donde):
+        if k not in arts:
+            errores.append(f"{donde}: el artículo {k} no existe")
+
+    def lit(articulo, texto, donde):
+        art(articulo, donde)
+        if articulo in arts and _norm(texto) not in _norm(arts[articulo]["texto_literal"]):
+            errores.append(f"{donde}: la frase no está en el art. {articulo}: «{texto[:70]}»")
+
+    plazos = []
+    for p in proc:
+        if "revisado" not in p:
+            errores.append(f"{p['id']}: falta 'revisado'")
+        for k in p["ambito"]["articulos"]:
+            art(k, p["id"])
+        for l in p["ambito"].get("literal", []):
+            lit(l["articulo"], l["texto"], p["id"] + "/ámbito")
+        for f in p["fases"]:
+            d = f["id"]
+            for k in f["articulos"] + f.get("conexiones", []):
+                art(k, d)
+            for pl in f["plazos"]:
+                lit(pl["articulo"], pl["literal"], d + "/plazo")
+                plazos.append({"id": f"{d}-{len(plazos) + 1}", "acto": pl["acto"], "plazo": pl["plazo"],
+                               "computo": "", "articulos": [pl["articulo"]], "bloque": p["bloque"],
+                               "procedimiento": p["id"], "fase": f["fase"], "literal": pl["literal"],
+                               "revisado": p["revisado"]})
+            for r in f["ramas"]:
+                for k in r["articulos"]:
+                    art(k, d)
+                lit(r["literal"]["articulo"], r["literal"]["texto"], d + "/rama")
+            q = f.get("pregunta")
+            if q:
+                lit(q["literal"]["articulo"], q["literal"]["texto"], d + "/pregunta")
+    if errores:
+        sys.exit("ERROR en procedimientos.json:\n- " + "\n- ".join(errores))
+    datos["procedimientos"] = proc
+    datos["plazos"] = plazos
+    print(f"Procedimientos comprobados: {len(proc)} ({sum(len(p['fases']) for p in proc)} fases, "
+          f"{len(plazos)} plazos). Todas las frases literales están en su artículo.")
+
+
 def main():
     with open(JSON_LEY, encoding="utf-8") as f:
         datos = json.load(f)
+    validar_y_anadir_procedimientos(datos)
     js = json.dumps(datos, ensure_ascii=False, separators=(",", ":"))
     js = js.replace("</", "<\\/")  # no puede cerrar la etiqueta <script>
     with open(HTML, encoding="utf-8") as f:
