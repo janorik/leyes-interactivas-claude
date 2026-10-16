@@ -658,7 +658,10 @@
       "438",
       "496"
      ],
-     "aviso": "Los desahucios y otros casos especiales (art. 438.4 a 438.7) tienen reglas propias que aún no están en este esquema."
+     "aviso": "El desahucio por falta de pago tiene su propio esquema (ver «Continúa en»). Otros casos especiales (art. 438.4 y 438.7) aún no están desarrollados.",
+     "continua_en": [
+      "desahucio"
+     ]
     },
     {
      "id": "ver-prueba",
@@ -920,6 +923,316 @@
     }
    ],
    "grupo": "Libro II · Procesos declarativos"
+  },
+  {
+   "id": "desahucio",
+   "nombre": "Desahucio por falta de pago",
+   "bloque": "juicio verbal",
+   "grupo": "Libro II · Procesos declarativos",
+   "resumen": "Juicio verbal de desahucio de finca por impago de rentas: requerimiento de 10 días, enervación, vulnerabilidad, sentencia y lanzamiento.",
+   "ambito": {
+    "corto": "Verbal por razón de la materia (art. 250.1.1.º)",
+    "texto": "Se sigue el juicio verbal cualquiera que sea la cuantía. La demanda debe indicar si cabe o no la enervación.",
+    "articulos": [
+     "250",
+     "439"
+    ],
+    "literal": [
+     {
+      "articulo": "250",
+      "texto": "Las que versen sobre reclamación de cantidades por impago de rentas y cantidades debidas"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "des-demanda",
+     "fase": "Demanda",
+     "subtitulo": "Enervación, condonación y lanzamiento",
+     "descripcion": "Debe indicar las circunstancias que permitan o no enervar. El arrendador puede ofrecer condonar deuda y costas si se desaloja voluntariamente en un plazo no inferior a 15 días, y pedir ya la ejecución del lanzamiento.",
+     "articulos": [
+      "439",
+      "437"
+     ],
+     "plazos": [
+      {
+       "acto": "Plazo mínimo para el desalojo voluntario con condonación",
+       "plazo": "No inferior a 15 días",
+       "articulo": "437",
+       "literal": "que no podrá ser inferior al plazo de quince días desde que se notifique la demanda"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La demanda no indica si cabe enervación",
+       "entonces": "No se admite.",
+       "articulos": [
+        "439"
+       ],
+       "literal": {
+        "articulo": "439",
+        "texto": "No se admitirán las demandas de desahucio de finca urbana por falta de pago de las rentas o cantidades debidas por el arrendatario si el arrendador no indicare las circunstancias concurrentes que puedan permitir o no, en el caso concreto, la enervación del desahucio."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué efecto tiene que el arrendatario acepte el compromiso de condonación?",
+      "a": "Equivale a un allanamiento con los efectos del art. 21.",
+      "articulos": [
+       "438"
+      ],
+      "literal": {
+       "articulo": "438",
+       "texto": "la aceptación de este compromiso equivaldrá a un allanamiento con los efectos del artículo 21"
+      }
+     },
+     "conexiones": [
+      "21",
+      "437",
+      "439"
+     ]
+    },
+    {
+     "id": "des-requerimiento",
+     "fase": "Requerimiento de 10 días",
+     "subtitulo": "Desalojar, pagar, enervar u oponerse",
+     "descripcion": "Tras la admisión, el LAJ requiere al demandado para que en 10 días desaloje, pague, enerve o se oponga. El requerimiento fija ya la fecha de la vista y la del lanzamiento. La asistencia jurídica gratuita se pide en 3 días.",
+     "articulos": [
+      "438",
+      "441"
+     ],
+     "plazos": [
+      {
+       "acto": "Atender el requerimiento",
+       "plazo": "10 días",
+       "articulo": "438",
+       "literal": "requerirá a la persona demandada para que, en el plazo de diez días, desaloje el inmueble"
+      },
+      {
+       "acto": "Solicitar asistencia jurídica gratuita",
+       "plazo": "3 días",
+       "articulo": "438",
+       "literal": "deberá hacerlo en los tres días siguientes a la práctica del requerimiento"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Es la vivienda habitual del demandado",
+       "entonces": "Se le informa de los servicios sociales y se comunica de oficio a las Administraciones, que informan de la vulnerabilidad en un máximo de 10 días.",
+       "articulos": [
+        "441"
+       ],
+       "literal": {
+        "articulo": "441",
+        "texto": "en todo caso en el plazo máximo de diez días"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué supone no oponerse al requerimiento?",
+      "a": "Prestar consentimiento a la resolución del contrato de arrendamiento.",
+      "articulos": [
+       "438"
+      ],
+      "literal": {
+       "articulo": "438",
+       "texto": "la falta de oposición al requerimiento supondrá la prestación de su consentimiento a la resolución del contrato de arrendamiento"
+      }
+     },
+     "conexiones": [
+      "438",
+      "441"
+     ]
+    },
+    {
+     "id": "des-respuesta",
+     "fase": "Respuesta del demandado",
+     "subtitulo": "No hace nada / desaloja / enerva / se opone",
+     "descripcion": "Lo que haga en los 10 días decide el camino.",
+     "articulos": [
+      "438",
+      "22"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "No paga ni comparece",
+       "entonces": "Decreto que termina el juicio y lanzamiento en la fecha fijada.",
+       "articulos": [
+        "438"
+       ],
+       "literal": {
+        "articulo": "438",
+        "texto": "dictará decreto dando por terminado el juicio de desahucio y se procederá al lanzamiento en el día y la hora fijadas"
+       }
+      },
+      {
+       "si": "Desaloja sin pagar ni oponerse",
+       "entonces": "Decreto de terminación; el actor puede pedir ejecución por la cantidad con la mera solicitud.",
+       "articulos": [
+        "438"
+       ],
+       "literal": {
+        "articulo": "438",
+        "texto": "dando traslado a la parte demandante para que inste el despacho de ejecución en cuanto a la cantidad reclamada, bastando para ello con la mera solicitud"
+       }
+      },
+      {
+       "si": "Paga o consigna todo lo debido (enerva)",
+       "entonces": "Decreto que termina el desahucio, salvo que el actor se oponga a la enervación (entonces vista).",
+       "articulos": [
+        "22"
+       ],
+       "literal": {
+        "articulo": "22",
+        "texto": "terminarán mediante decreto dictado al efecto por el letrado de la Administración de Justicia"
+       }
+      },
+      {
+       "si": "Se opone",
+       "entonces": "Se celebra la vista en la fecha señalada.",
+       "articulos": [
+        "438"
+       ],
+       "literal": {
+        "articulo": "438",
+        "texto": "Si el demandado formulara oposición, se celebrará la vista en la fecha señalada."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo no cabe enervar el desahucio?",
+      "a": "Si ya se enervó una vez antes (salvo cobro frustrado por causa del arrendador) o si hubo requerimiento fehaciente de pago con al menos 30 días de antelación a la demanda sin que se pagara.",
+      "articulos": [
+       "22"
+      ],
+      "literal": {
+       "articulo": "22",
+       "texto": "Lo dispuesto en el párrafo anterior no será de aplicación cuando el arrendatario hubiera enervado el desahucio en una ocasión anterior"
+      }
+     },
+     "conexiones": [
+      "22",
+      "438"
+     ],
+     "duda": "El art. 22.4 recoge las excepciones a la enervación; revisa si la redacción de la tarjeta (requerimiento fehaciente con 30 días de antelación) refleja bien tu lectura."
+    },
+    {
+     "id": "des-sentencia",
+     "fase": "Vista, sentencia y lanzamiento",
+     "subtitulo": "Sentencia en 5 días; sin cosa juzgada",
+     "descripcion": "Si el demandado no comparece a la vista, se declara el desahucio sin más trámites. La sentencia se dicta en 5 días. El lanzamiento debe ser antes de 30 días desde la vista. La sentencia de desahucio no produce cosa juzgada (salvo en las cantidades acumuladas).",
+     "articulos": [
+      "438",
+      "447"
+     ],
+     "plazos": [
+      {
+       "acto": "Dictar sentencia de desahucio",
+       "plazo": "5 días",
+       "articulo": "447",
+       "literal": "en que la sentencia se dictará en los cinco días siguientes"
+      },
+      {
+       "acto": "Fecha del lanzamiento",
+       "plazo": "Antes de 30 días desde la vista",
+       "articulo": "438",
+       "literal": "que deberá verificarse antes de treinta días desde la fecha señalada para la vista"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El demandado no comparece a la vista",
+       "entonces": "Se declara el desahucio sin más trámites.",
+       "articulos": [
+        "438"
+       ],
+       "literal": {
+        "articulo": "438",
+        "texto": "de no comparecer a la vista, se declarará el desahucio sin más trámites"
+       }
+      },
+      {
+       "si": "Se acumuló la reclamación de rentas",
+       "entonces": "Ese pronunciamiento sí produce cosa juzgada.",
+       "articulos": [
+        "447"
+       ],
+       "literal": {
+        "articulo": "447",
+        "texto": "los pronunciamientos de la sentencia en relación con esas acciones acumuladas a la de desahucio producirán efectos de cosa juzgada"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Produce cosa juzgada la sentencia de desahucio por impago?",
+      "a": "No en cuanto al desahucio (art. 447.2); sí en cuanto a las rentas reclamadas acumuladamente.",
+      "articulos": [
+       "447"
+      ],
+      "literal": {
+       "articulo": "447",
+       "texto": "No producirán efectos de cosa juzgada las sentencias que pongan fin a los juicios verbales sobre tutela sumaria de la posesión ni las que decidan sobre la pretensión de desahucio"
+      }
+     },
+     "conexiones": [
+      "438",
+      "447"
+     ]
+    },
+    {
+     "id": "des-recurso",
+     "fase": "Recurso y ejecución",
+     "subtitulo": "Pagar para recurrir; sin plazo de espera",
+     "descripcion": "Para apelar o recurrir en casación, el arrendatario debe acreditar tener pagadas las rentas vencidas y las que deba adelantar. La ejecución del desahucio no espera los 20 días del art. 548.",
+     "articulos": [
+      "449",
+      "549"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El arrendatario recurre sin acreditar el pago de rentas",
+       "entonces": "No se admite el recurso (y se declara desierto si deja de pagar durante él).",
+       "articulos": [
+        "449"
+       ],
+       "literal": {
+        "articulo": "449",
+        "texto": "no se admitirán al demandado los recursos de apelación o casación si, al interponerlos, no manifiesta, acreditándolo por escrito, tener satisfechas las rentas vencidas"
+       }
+      },
+      {
+       "si": "Se pide la ejecución del lanzamiento",
+       "entonces": "No rige el plazo de espera del art. 548.",
+       "articulos": [
+        "549"
+       ],
+       "literal": {
+        "articulo": "549",
+        "texto": "El plazo de espera legal al que se refiere el artículo anterior no será de aplicación en la ejecución de resoluciones de condena de desahucio"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Basta pedir la ejecución en la propia demanda de desahucio?",
+      "a": "Sí: es suficiente para la ejecución directa y el lanzamiento en la fecha señalada.",
+      "articulos": [
+       "549"
+      ],
+      "literal": {
+       "articulo": "549",
+       "texto": "la solicitud de su ejecución en la demanda de desahucio será suficiente para la ejecución directa de dichas resoluciones"
+      }
+     },
+     "conexiones": [
+      "449",
+      "548",
+      "549"
+     ]
+    }
+   ]
   },
   {
    "id": "ejecucion",
@@ -3154,6 +3467,9 @@
      "conexiones": [
       "773",
       "774"
+     ],
+     "continua_en": [
+      "liquidacion"
      ]
     },
     {
@@ -3273,6 +3589,710 @@
       "770",
       "775",
       "777"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "filiacion",
+   "nombre": "Filiación, paternidad y maternidad",
+   "bloque": "familia y capacidad",
+   "grupo": "Libro IV · Procesos especiales",
+   "resumen": "Determinación e impugnación de la filiación: admisión con principio de prueba, legitimación, prueba (incluida la biológica) y medidas cautelares.",
+   "ambito": {
+    "corto": "Arts. 764-768, con las reglas comunes del Título I",
+    "texto": "Determinación legal o impugnación de la filiación en los casos de la legislación civil. Se sigue el verbal con las especialidades del Título I (contestación en 20 días; Ministerio Fiscal siempre parte).",
+    "articulos": [
+     "764",
+     "749",
+     "753"
+    ],
+    "literal": [
+     {
+      "articulo": "764",
+      "texto": "Podrá pedirse de los tribunales la determinación legal de la filiación, así como impugnarse ante ellos la filiación legalmente determinada"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "fil-admision",
+     "fase": "Demanda y admisión",
+     "subtitulo": "Principio de prueba y cosa juzgada",
+     "descripcion": "La demanda solo se admite con un principio de prueba de los hechos. No se admite la que impugne una filiación declarada por sentencia firme o pretenda otra contradictoria.",
+     "articulos": [
+      "767",
+      "764",
+      "753",
+      "749"
+     ],
+     "plazos": [
+      {
+       "acto": "Contestar a la demanda",
+       "plazo": "20 días",
+       "articulo": "753",
+       "literal": "emplazándoles para que la contesten en el plazo de veinte días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No se aporta principio de prueba",
+       "entonces": "No se admite la demanda.",
+       "articulos": [
+        "767"
+       ],
+       "literal": {
+        "articulo": "767",
+        "texto": "En ningún caso se admitirá la demanda sobre determinación o impugnación de la filiación si con ella no se presenta un principio de prueba de los hechos en que se funde."
+       }
+      },
+      {
+       "si": "Ya hay sentencia firme sobre esa filiación",
+       "entonces": "Inadmisión; si se acredita después, archivo de plano.",
+       "articulos": [
+        "764"
+       ],
+       "literal": {
+        "articulo": "764",
+        "texto": "el tribunal procederá de plano al archivo de éste"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Es parte el Ministerio Fiscal en los procesos de filiación?",
+      "a": "Sí, siempre, en los de determinación e impugnación de la filiación.",
+      "articulos": [
+       "749"
+      ],
+      "literal": {
+       "articulo": "749",
+       "texto": "en los de determinación e impugnación de la filiación, será siempre parte el Ministerio Fiscal"
+      }
+     },
+     "conexiones": [
+      "749",
+      "753",
+      "764",
+      "767"
+     ]
+    },
+    {
+     "id": "fil-partes",
+     "fase": "Legitimación",
+     "subtitulo": "Quién demanda y a quién",
+     "descripcion": "Por el hijo menor pueden actuar su representante legal o el Fiscal. Son demandados quienes figuren como progenitores e hijo (o sus herederos). Si muere el actor, sus herederos pueden continuar.",
+     "articulos": [
+      "765",
+      "766"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El hijo es menor de edad",
+       "entonces": "Pueden ejercitar las acciones su representante legal o el Ministerio Fiscal, indistintamente.",
+       "articulos": [
+        "765"
+       ],
+       "literal": {
+        "articulo": "765",
+        "texto": "podrán ser ejercitadas por su representante legal o por el Ministerio Fiscal, indistintamente"
+       }
+      },
+      {
+       "si": "Fallece el actor durante el proceso",
+       "entonces": "Sus herederos pueden continuar la acción.",
+       "articulos": [
+        "765"
+       ],
+       "literal": {
+        "articulo": "765",
+        "texto": "a la muerte del actor, sus herederos podrán continuar las acciones ya entabladas"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si ha fallecido el supuesto progenitor, ¿a quién se demanda?",
+      "a": "A sus herederos.",
+      "articulos": [
+       "766"
+      ],
+      "literal": {
+       "articulo": "766",
+       "texto": "Si cualquiera de ellos hubiere fallecido, serán parte demandada sus herederos."
+      }
+     },
+     "conexiones": [
+      "765",
+      "766"
+     ]
+    },
+    {
+     "id": "fil-prueba",
+     "fase": "Prueba",
+     "subtitulo": "Toda clase de pruebas, incluidas las biológicas",
+     "descripcion": "Se admite toda prueba, incluidas las biológicas. Sin prueba directa, la filiación puede declararse por reconocimiento, posesión de estado, convivencia con la madre en la concepción u otros hechos.",
+     "articulos": [
+      "767",
+      "752"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El demandado se niega sin justificación a la prueba biológica",
+       "entonces": "El tribunal puede declarar la filiación si hay otros indicios y no se ha probado por otros medios.",
+       "articulos": [
+        "767"
+       ],
+       "literal": {
+        "articulo": "767",
+        "texto": "La negativa injustificada a someterse a la prueba biológica de paternidad o maternidad permitirá al tribunal declarar la filiación reclamada"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Basta la negativa a la prueba biológica para declarar la filiación?",
+      "a": "No por sí sola: hacen falta otros indicios y que la prueba no se haya obtenido por otros medios.",
+      "articulos": [
+       "767"
+      ],
+      "literal": {
+       "articulo": "767",
+       "texto": "siempre que existan otros indicios de la paternidad o maternidad y la prueba de ésta no se haya obtenido por otros medios"
+      }
+     },
+     "conexiones": [
+      "752",
+      "767"
+     ]
+    },
+    {
+     "id": "fil-cautelares",
+     "fase": "Medidas cautelares",
+     "subtitulo": "Protección y alimentos provisionales",
+     "descripcion": "Durante la impugnación, medidas de protección del sometido a la potestad. Reclamada la filiación, alimentos provisionales. Como regla, con audiencia previa; si hay urgencia, sin ella y comparecencia posterior. Puede no exigirse caución.",
+     "articulos": [
+      "768"
+     ],
+     "plazos": [
+      {
+       "acto": "Comparecencia tras medidas urgentes",
+       "plazo": "Dentro de 10 días",
+       "articulo": "768",
+       "literal": "que se celebrará dentro de los diez días siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se reclama la filiación",
+       "entonces": "El tribunal puede acordar alimentos provisionales a cargo del demandado.",
+       "articulos": [
+        "768"
+       ],
+       "literal": {
+        "articulo": "768",
+        "texto": "el tribunal podrá acordar alimentos provisionales a cargo del demandado"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Es obligatoria la caución para estas medidas cautelares?",
+      "a": "No necesariamente: podrá no exigirse.",
+      "articulos": [
+       "768"
+      ],
+      "literal": {
+       "articulo": "768",
+       "texto": "podrá no exigirse caución a quien las solicite"
+      }
+     },
+     "conexiones": [
+      "734",
+      "768"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "menores",
+   "nombre": "Protección de menores y adopción",
+   "bloque": "familia y capacidad",
+   "grupo": "Libro IV · Procesos especiales",
+   "resumen": "Oposición a resoluciones administrativas de protección, asentimiento en la adopción, ingreso en centros específicos y entrada en domicilios.",
+   "ambito": {
+    "corto": "Arts. 778 bis-ter y 779-781",
+    "texto": "Procedimientos preferentes sobre medidas de protección de menores adoptadas por la Entidad Pública y sobre la necesidad de asentimiento de los progenitores en la adopción.",
+    "articulos": [
+     "779",
+     "780",
+     "781",
+     "778 bis",
+     "778 ter"
+    ],
+    "literal": [
+     {
+      "articulo": "779",
+      "texto": "tendrán carácter preferente y deberán realizarse en el plazo de tres meses desde la fecha en que se hubieren iniciado"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "men-oposicion",
+     "fase": "Oposición a resoluciones administrativas",
+     "subtitulo": "Sin reclamación previa",
+     "descripcion": "Se formula sin reclamación administrativa previa, con un escrito inicial sucinto. Se reclama el expediente, se emplaza para demandar y se tramita por el art. 753. Debe terminar en tres meses.",
+     "articulos": [
+      "779",
+      "780"
+     ],
+     "plazos": [
+      {
+       "acto": "Formular la oposición",
+       "plazo": "2 meses desde la notificación",
+       "articulo": "780",
+       "literal": "La oposición a las mismas podrá formularse en el plazo de dos meses desde su notificación."
+      },
+      {
+       "acto": "Aportación del expediente por la Administración",
+       "plazo": "10 días",
+       "articulo": "780",
+       "literal": "que deberá ser aportado en el plazo de diez días"
+      },
+      {
+       "acto": "Presentar la demanda tras recibir el expediente",
+       "plazo": "10 días",
+       "articulo": "780",
+       "literal": "emplazará al actor por diez días para que presente la demanda"
+      },
+      {
+       "acto": "Dictar sentencia",
+       "plazo": "10 días desde el juicio",
+       "articulo": "780",
+       "literal": "El Tribunal dictará sentencia dentro de los diez días siguientes a la terminación del juicio."
+      },
+      {
+       "acto": "Duración máxima del procedimiento",
+       "plazo": "3 meses",
+       "articulo": "779",
+       "literal": "deberán realizarse en el plazo de tres meses desde la fecha en que se hubieren iniciado"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay varios procedimientos sobre el mismo menor",
+       "entonces": "Acumulación ante el juzgado del más antiguo, incluso de oficio.",
+       "articulos": [
+        "780"
+       ],
+       "literal": {
+        "articulo": "780",
+        "texto": "la acumulación ante el Juzgado que estuviera conociendo del procedimiento más antiguo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hace falta reclamación previa en vía administrativa?",
+      "a": "No.",
+      "articulos": [
+       "780"
+      ],
+      "literal": {
+       "articulo": "780",
+       "texto": "No será necesaria reclamación previa en vía administrativa"
+      }
+     },
+     "conexiones": [
+      "753",
+      "779",
+      "780"
+     ]
+    },
+    {
+     "id": "men-asentimiento",
+     "fase": "Necesidad de asentimiento en la adopción",
+     "subtitulo": "Pieza separada",
+     "descripcion": "Los progenitores comparecen en el expediente de adopción. Se suspende y tienen plazo para demandar. Si no demandan, sigue la adopción. Si demandan, se declara contencioso y se tramita como pieza separada.",
+     "articulos": [
+      "781"
+     ],
+     "plazos": [
+      {
+       "acto": "Presentar la demanda",
+       "plazo": "15 días",
+       "articulo": "781",
+       "literal": "otorgará el plazo de quince días para la presentación de la demanda"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No se presenta la demanda en plazo",
+       "entonces": "Decreto que da por finalizado el trámite y alza la suspensión; recurrible en revisión.",
+       "articulos": [
+        "781"
+       ],
+       "literal": {
+        "articulo": "781",
+        "texto": "El decreto será recurrible directamente en revisión ante el Tribunal."
+       }
+      },
+      {
+       "si": "Se recurre el auto final",
+       "entonces": "Apelación con efectos suspensivos.",
+       "articulos": [
+        "781"
+       ],
+       "literal": {
+        "articulo": "781",
+        "texto": "El auto que ponga fin al procedimiento será susceptible de recurso de apelación, que tendrá efectos suspensivos."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Con arreglo a qué artículo se tramita la demanda sobre el asentimiento?",
+      "a": "Al art. 753 (verbal del Título I), como pieza separada.",
+      "articulos": [
+       "781"
+      ],
+      "literal": {
+       "articulo": "781",
+       "texto": "como pieza separada, con arreglo a lo previsto en el artículo 753"
+      }
+     },
+     "conexiones": [
+      "753",
+      "781"
+     ]
+    },
+    {
+     "id": "men-ingreso",
+     "fase": "Ingreso en centros de protección específicos",
+     "subtitulo": "Menores con problemas de conducta",
+     "descripcion": "Lo solicitan la Entidad Pública o el Fiscal, con valoración psicosocial. Autorización judicial previa salvo urgencia, en cuyo caso se comunica en 24 horas y se ratifica en 72.",
+     "articulos": [
+      "778 bis"
+     ],
+     "plazos": [
+      {
+       "acto": "Comunicar el ingreso urgente al juzgado",
+       "plazo": "24 horas",
+       "articulo": "778 bis",
+       "literal": "dentro de las veinticuatro horas siguientes"
+      },
+      {
+       "acto": "Ratificación judicial",
+       "plazo": "Máximo 72 horas",
+       "articulo": "778 bis",
+       "literal": "en el plazo máximo de setenta y dos horas desde que llegue el ingreso a conocimiento del Juzgado"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El juzgado no autoriza el ingreso urgente",
+       "entonces": "El ingreso queda sin efecto de inmediato.",
+       "articulos": [
+        "778 bis"
+       ],
+       "literal": {
+        "articulo": "778 bis",
+        "texto": "dejándose de inmediato sin efecto el ingreso en caso de que no sea autorizado"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué juzgado autoriza el ingreso?",
+      "a": "El de Primera Instancia del lugar donde radique el centro.",
+      "articulos": [
+       "778 bis"
+      ],
+      "literal": {
+       "articulo": "778 bis",
+       "texto": "los Juzgados de Primera Instancia del lugar donde radique el centro"
+      }
+     },
+     "conexiones": [
+      "778 bis"
+     ]
+    },
+    {
+     "id": "men-entrada",
+     "fase": "Entrada en domicilios",
+     "subtitulo": "Ejecución forzosa de medidas de protección",
+     "descripcion": "La Entidad Pública pide autorización para entrar en un domicilio cuando sea necesario para ejecutar sus medidas. Se da traslado al titular u ocupante para alegar en 24 horas, salvo urgencia.",
+     "articulos": [
+      "778 ter"
+     ],
+     "plazos": [
+      {
+       "acto": "Alegaciones del titular u ocupante",
+       "plazo": "24 horas",
+       "articulo": "778 ter",
+       "literal": "para que en el plazo de las 24 horas siguientes alegue lo que a su derecho convenga"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay urgencia por riesgo para el menor",
+       "entonces": "El juez puede acordar la entrada de inmediato, como máximo en 24 horas, previo informe del Fiscal.",
+       "articulos": [
+        "778 ter"
+       ],
+       "literal": {
+        "articulo": "778 ter",
+        "texto": "el Juez podrá acordarla mediante auto dictado de forma inmediata"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué debe justificar la solicitud respecto del consentimiento del titular?",
+      "a": "Que se intentó recabarlo sin resultado o con resultado negativo (o razonar por qué no procede).",
+      "articulos": [
+       "778 ter"
+      ],
+      "literal": {
+       "articulo": "778 ter",
+       "texto": "La justificación de que se ha intentado recabar dicho consentimiento sin resultado o con resultado negativo."
+      }
+     },
+     "conexiones": [
+      "778 ter"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sustraccion",
+   "nombre": "Sustracción internacional de menores",
+   "bloque": "familia y capacidad",
+   "grupo": "Libro IV · Procesos especiales",
+   "resumen": "Restitución o retorno del menor trasladado o retenido ilícitamente que se encuentra en España (convenios internacionales o normas UE). Procedimiento urgente.",
+   "ambito": {
+    "corto": "Arts. 778 quáter-sexies · plazo total 6 semanas",
+    "texto": "Se aplica cuando hay convenio internacional o norma de la UE aplicable y el menor está en España. Urgente y preferente: seis semanas en total, ambas instancias incluidas, salvo circunstancias excepcionales.",
+    "articulos": [
+     "778 quáter"
+    ],
+    "literal": [
+     {
+      "articulo": "778 quáter",
+      "texto": "en el inexcusable plazo total de seis semanas desde la fecha de la presentación de la solicitud"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "sus-ambito",
+     "fase": "Competencia y partes",
+     "subtitulo": "Juzgado de la capital de provincia",
+     "descripcion": "Competente el Juzgado de Primera Instancia de la capital de la provincia (o Ceuta y Melilla) con competencias en familia donde esté el menor. Abogado y procurador obligatorios. No se suspende por prejudicialidad penal.",
+     "articulos": [
+      "778 quáter"
+     ],
+     "plazos": [
+      {
+       "acto": "Duración total del procedimiento (ambas instancias)",
+       "plazo": "6 semanas",
+       "articulo": "778 quáter",
+       "literal": "en el inexcusable plazo total de seis semanas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay un proceso penal por sustracción",
+       "entonces": "No se suspenden las actuaciones civiles.",
+       "articulos": [
+        "778 quáter"
+       ],
+       "literal": {
+        "articulo": "778 quáter",
+        "texto": "En ningún caso se ordenará la suspensión de las actuaciones civiles por la existencia de prejudicialidad penal"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quién puede promover el procedimiento?",
+      "a": "Quien tenga la guarda y custodia o un régimen de estancia o visitas, la Autoridad Central española o la persona que esta designe.",
+      "articulos": [
+       "778 quáter"
+      ],
+      "literal": {
+       "articulo": "778 quáter",
+       "texto": "la Autoridad Central española encargada del cumplimiento de las obligaciones impuestas por el correspondiente convenio"
+      }
+     },
+     "conexiones": [
+      "778 quáter"
+     ]
+    },
+    {
+     "id": "sus-admision",
+     "fase": "Demanda, admisión y requerimiento",
+     "subtitulo": "24 horas y comparecencia en 3 días",
+     "descripcion": "El LAJ resuelve sobre la admisión en 24 horas y requiere al sustractor para que comparezca con el menor y diga si accede o se opone.",
+     "articulos": [
+      "778 quinquies"
+     ],
+     "plazos": [
+      {
+       "acto": "Resolver sobre la admisión",
+       "plazo": "24 horas",
+       "articulo": "778 quinquies",
+       "literal": "resolverá sobre la admisión de la demanda en el plazo de las 24 horas siguientes"
+      },
+      {
+       "acto": "Comparecencia del requerido con el menor",
+       "plazo": "No más de 3 días",
+       "articulo": "778 quinquies",
+       "literal": "que no podrá exceder de los tres días siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El menor no es hallado",
+       "entonces": "Archivo provisional hasta que sea encontrado.",
+       "articulos": [
+        "778 quinquies"
+       ],
+       "literal": {
+        "articulo": "778 quinquies",
+        "texto": "se archivará provisionalmente el procedimiento hasta ser encontrado"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué se entrega al requerido junto con el requerimiento?",
+      "a": "El texto del convenio o norma internacional aplicable.",
+      "articulos": [
+       "778 quinquies"
+      ],
+      "literal": {
+       "articulo": "778 quinquies",
+       "texto": "con entrega al requerido del texto del correspondiente convenio o norma internacional aplicable"
+      }
+     },
+     "conexiones": [
+      "778 quinquies"
+     ]
+    },
+    {
+     "id": "sus-respuesta",
+     "fase": "Respuesta del requerido",
+     "subtitulo": "Accede / no comparece / se opone",
+     "descripcion": "Si accede, auto el mismo día con la restitución. Si no comparece, rebeldía y vista sin él. Si se opone por escrito con las causas del convenio, vista en 5 días.",
+     "articulos": [
+      "778 quinquies"
+     ],
+     "plazos": [
+      {
+       "acto": "Vista si se opone",
+       "plazo": "Dentro de 5 días improrrogables",
+       "articulo": "778 quinquies",
+       "literal": "que se celebrará dentro del improrrogable plazo de los cinco días siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Accede a la restitución",
+       "entonces": "Auto el mismo día acordando la conclusión y la restitución o retorno.",
+       "articulos": [
+        "778 quinquies"
+       ],
+       "literal": {
+        "articulo": "778 quinquies",
+        "texto": "el Juez dictará auto el mismo día acordando la conclusión del proceso y la restitución o el retorno del menor"
+       }
+      },
+      {
+       "si": "No comparece",
+       "entonces": "Rebeldía en el mismo día y vista con el demandante y el Fiscal.",
+       "articulos": [
+        "778 quinquies"
+       ],
+       "literal": {
+        "articulo": "778 quinquies",
+        "texto": "en el mismo día le declarará en rebeldía y dispondrá la continuación del procedimiento sin el mismo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si el demandado que se opuso no acude a la vista, ¿qué ocurre?",
+      "a": "Se le tiene por desistido de la oposición y la vista continúa.",
+      "articulos": [
+       "778 quinquies"
+      ],
+      "literal": {
+       "articulo": "778 quinquies",
+       "texto": "el Juez le tendrá por desistido de la oposición y continuará la vista"
+      }
+     },
+     "conexiones": [
+      "773",
+      "778 quinquies"
+     ]
+    },
+    {
+     "id": "sus-sentencia",
+     "fase": "Vista, sentencia y apelación",
+     "subtitulo": "Oír al menor; resolver en 3 días",
+     "descripcion": "Prueba en 6 días improrrogables. Antes de decidir, el juez oye al menor por separado (salvo que no sea conveniente por su edad o madurez). Sentencia en 3 días solo sobre la ilicitud y la restitución. Apelación con efectos suspensivos.",
+     "articulos": [
+      "778 quinquies"
+     ],
+     "plazos": [
+      {
+       "acto": "Práctica de la prueba",
+       "plazo": "6 días improrrogables",
+       "articulo": "778 quinquies",
+       "literal": "dentro del plazo improrrogable de seis días"
+      },
+      {
+       "acto": "Dictar sentencia",
+       "plazo": "3 días",
+       "articulo": "778 quinquies",
+       "literal": "dentro de los tres días siguientes a su finalización, el Juez dictará sentencia"
+      },
+      {
+       "acto": "Interponer apelación",
+       "plazo": "10 días",
+       "articulo": "778 quinquies",
+       "literal": "en el plazo de diez días contados desde el día siguiente a la notificación de la resolución"
+      },
+      {
+       "acto": "Resolver la apelación",
+       "plazo": "30 días improrrogables",
+       "articulo": "778 quinquies",
+       "literal": "debiendo ser resuelto en el improrrogable plazo de treinta días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se acuerda la restitución",
+       "entonces": "Costas, gastos de viaje y de retorno a cargo de quien trasladó o retuvo al menor.",
+       "articulos": [
+        "778 quinquies"
+       ],
+       "literal": {
+        "articulo": "778 quinquies",
+        "texto": "se establecerá que la persona que hubiere trasladado o retenido al menor abone las costas procesales"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué recurso cabe contra la resolución, y con qué efectos?",
+      "a": "Solo apelación, con efectos suspensivos y tramitación preferente.",
+      "articulos": [
+       "778 quinquies"
+      ],
+      "literal": {
+       "articulo": "778 quinquies",
+       "texto": "Contra la resolución que se dicte sólo cabrá recurso de apelación con efectos suspensivos"
+      }
+     },
+     "conexiones": [
+      "778 quinquies",
+      "778 sexies"
      ]
     }
    ]
@@ -3576,6 +4596,227 @@
    ]
   },
   {
+   "id": "liquidacion",
+   "nombre": "Liquidación del régimen económico matrimonial",
+   "bloque": "familia y capacidad",
+   "grupo": "Libro IV · Procesos especiales",
+   "resumen": "Inventario y liquidación de la masa común (gananciales y similares) y liquidación del régimen de participación, a falta de acuerdo entre los cónyuges.",
+   "ambito": {
+    "corto": "Arts. 806-811 · a falta de acuerdo",
+    "texto": "Liquidación de cualquier régimen con masa común de bienes, en defecto de acuerdo entre los cónyuges. Competente el juzgado del proceso de nulidad, separación o divorcio o de la disolución.",
+    "articulos": [
+     "806",
+     "807"
+    ],
+    "literal": [
+     {
+      "articulo": "806",
+      "texto": "se llevará a cabo, en defecto de acuerdo entre los cónyuges, con arreglo a lo dispuesto en el presente capítulo"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "liq-solicitud",
+     "fase": "Solicitud de inventario",
+     "subtitulo": "Desde la admisión de la demanda matrimonial",
+     "descripcion": "Admitida la demanda de nulidad, separación o divorcio (o iniciado el proceso de disolución), cualquiera de los cónyuges o sus herederos puede pedir el inventario con una propuesta de partidas y sus documentos.",
+     "articulos": [
+      "808",
+      "807"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Aún no se ha admitido la demanda matrimonial",
+       "entonces": "Todavía no puede pedirse el inventario por esta vía.",
+       "articulos": [
+        "808"
+       ],
+       "literal": {
+        "articulo": "808",
+        "texto": "Admitida la demanda de nulidad, separación o divorcio, o iniciado el proceso en que se haya demandado la disolución del régimen económico matrimonial"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué debe acompañar a la solicitud de inventario?",
+      "a": "Una propuesta con las partidas separadas y los documentos que las justifiquen.",
+      "articulos": [
+       "808"
+      ],
+      "literal": {
+       "articulo": "808",
+       "texto": "A la solicitud se acompañarán también los documentos que justifiquen las diferentes partidas incluidas en la propuesta."
+      }
+     },
+     "conexiones": [
+      "807",
+      "808"
+     ]
+    },
+    {
+     "id": "liq-inventario",
+     "fase": "Formación del inventario",
+     "subtitulo": "Comparecencia ante el LAJ",
+     "descripcion": "El LAJ cita a los cónyuges para formar el inventario. Si hay acuerdo, se recoge en acta. Si hay controversia sobre partidas, vista y juicio verbal; la sentencia aprueba el inventario.",
+     "articulos": [
+      "809"
+     ],
+     "plazos": [
+      {
+       "acto": "Comparecencia para formar el inventario",
+       "plazo": "Máximo 10 días",
+       "articulo": "809",
+       "literal": "en el plazo máximo de diez días, se proceda a la formación de inventario"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Un cónyuge no comparece sin causa",
+       "entonces": "Se le tiene por conforme con la propuesta del que comparece.",
+       "articulos": [
+        "809"
+       ],
+       "literal": {
+        "articulo": "809",
+        "texto": "se le tendrá por conforme con la propuesta de inventario que efectúe el cónyuge que haya comparecido"
+       }
+      },
+      {
+       "si": "Hay controversia sobre alguna partida",
+       "entonces": "Vista y tramitación como juicio verbal.",
+       "articulos": [
+        "809"
+       ],
+       "literal": {
+        "articulo": "809",
+        "texto": "citará a los interesados a una vista, continuando la tramitación con arreglo a lo previsto para el juicio verbal"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo resuelve el tribunal sobre la administración de los bienes inventariados?",
+      "a": "En el mismo día o en el siguiente.",
+      "articulos": [
+       "809"
+      ],
+      "literal": {
+       "articulo": "809",
+       "texto": "En el mismo día o en el siguiente, se resolverá por el Tribunal lo que proceda sobre la administración y disposición de los bienes incluidos en el inventario."
+      }
+     },
+     "conexiones": [
+      "809"
+     ]
+    },
+    {
+     "id": "liq-liquidacion",
+     "fase": "Liquidación",
+     "subtitulo": "Propuesta, comparecencia y, sin acuerdo, contador",
+     "descripcion": "Concluido el inventario y firme la disolución, se pide la liquidación con propuesta (indemnizaciones, reintegros y división). Comparecencia; sin acuerdo, contador y peritos como en la herencia.",
+     "articulos": [
+      "810",
+      "784",
+      "788"
+     ],
+     "plazos": [
+      {
+       "acto": "Comparecencia para intentar acuerdo",
+       "plazo": "Máximo 10 días",
+       "articulo": "810",
+       "literal": "señalará, dentro del plazo máximo de diez días, el día y hora"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Un cónyuge no comparece sin causa",
+       "entonces": "Se le tiene por conforme con la propuesta del otro.",
+       "articulos": [
+        "810"
+       ],
+       "literal": {
+        "articulo": "810",
+        "texto": "se le tendrá por conforme con la propuesta de liquidación"
+       }
+      },
+      {
+       "si": "No hay acuerdo",
+       "entonces": "Nombramiento de contador y, en su caso, peritos (art. 784).",
+       "articulos": [
+        "810"
+       ],
+       "literal": {
+        "articulo": "810",
+        "texto": "se procederá, mediante diligencia, al nombramiento de contador y, en su caso, peritos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo puede pedirse la liquidación?",
+      "a": "Concluido el inventario y, en su caso, firme la resolución que declare disuelto el régimen.",
+      "articulos": [
+       "810"
+      ],
+      "literal": {
+       "articulo": "810",
+       "texto": "Concluido el inventario y, en su caso, una vez firme la resolución que declare disuelto el régimen económico matrimonial"
+      }
+     },
+     "conexiones": [
+      "784",
+      "788",
+      "810"
+     ]
+    },
+    {
+     "id": "liq-participacion",
+     "fase": "Régimen de participación",
+     "subtitulo": "Patrimonios inicial y final",
+     "descripcion": "Solo tras la firmeza de la disolución. La propuesta estima patrimonios inicial y final y la cantidad a pagar. Sin acuerdo, juicio verbal.",
+     "articulos": [
+      "811"
+     ],
+     "plazos": [
+      {
+       "acto": "Comparecencia para intentar acuerdo",
+       "plazo": "Máximo 10 días",
+       "articulo": "811",
+       "literal": "señalará, dentro del plazo máximo de diez días, el día y hora"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No hay acuerdo",
+       "entonces": "Vista y juicio verbal; la sentencia fija patrimonios y cantidad a pagar.",
+       "articulos": [
+        "811"
+       ],
+       "literal": {
+        "articulo": "811",
+        "texto": "les citará a una vista, y continuará la tramitación con arreglo a lo previsto para el juicio verbal"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede pedirse la liquidación de la participación antes de la firmeza de la disolución?",
+      "a": "No.",
+      "articulos": [
+       "811"
+      ],
+      "literal": {
+       "articulo": "811",
+       "texto": "No podrá solicitarse la liquidación de régimen de participación hasta que no sea firme la resolución que declare disuelto el régimen económico matrimonial."
+      }
+     },
+     "conexiones": [
+      "811"
+     ]
+    }
+   ]
+  },
+  {
    "id": "herencia",
    "nombre": "División judicial de la herencia",
    "bloque": "división de herencia",
@@ -3692,6 +4933,9 @@
       "783",
       "784",
       "792"
+     ],
+     "continua_en": [
+      "caudal"
      ]
     },
     {
@@ -3840,6 +5084,163 @@
       "782",
       "788",
       "789"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "caudal",
+   "nombre": "Intervención y administración del caudal hereditario",
+   "bloque": "división de herencia",
+   "grupo": "Libro IV · Procesos especiales",
+   "resumen": "Aseguramiento de bienes del difunto, intervención judicial de la herencia y administración (nombramiento, representación, cuentas, enajenación y retribución).",
+   "ambito": {
+    "corto": "Arts. 790-805",
+    "texto": "Medidas de aseguramiento cuando no constan herederos próximos, intervención a instancia de parte durante la declaración de herederos o la división, y régimen del administrador.",
+    "articulos": [
+     "790",
+     "792"
+    ],
+    "literal": [
+     {
+      "articulo": "790",
+      "texto": "adoptará de oficio las medidas más indispensables para el enterramiento del difunto si fuere necesario y para la seguridad de los bienes"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "cau-aseguramiento",
+     "fase": "Aseguramiento de oficio",
+     "subtitulo": "Sin testamento ni parientes conocidos",
+     "descripcion": "Si el tribunal sabe del fallecimiento y no constan testamento ni parientes hasta el cuarto grado (o están ausentes o son menores sin representante), asegura de oficio bienes y documentos. Cuando comparecen, se les entregan y se acude al notario para la declaración de herederos.",
+     "articulos": [
+      "790"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Comparecen los parientes",
+       "entonces": "Se les entregan los bienes y cesa la intervención; declaración de herederos ante notario.",
+       "articulos": [
+        "790"
+       ],
+       "literal": {
+        "articulo": "790",
+        "texto": "debiendo acudir al Notario a fin de que proceda a la incoación del expediente de declaración de herederos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hasta qué grado de colaterales se mira para decidir el aseguramiento de oficio?",
+      "a": "Hasta el cuarto grado.",
+      "articulos": [
+       "790"
+      ],
+      "literal": {
+       "articulo": "790",
+       "texto": "ni de colaterales dentro del cuarto grado"
+      }
+     },
+     "conexiones": [
+      "790"
+     ]
+    },
+    {
+     "id": "cau-intervencion",
+     "fase": "Intervención a instancia de parte",
+     "subtitulo": "Durante la declaración de herederos o la división",
+     "descripcion": "Pueden pedirla el cónyuge o parientes que promuevan la declaración notarial de herederos, cualquier coheredero o legatario de parte alícuota al pedir la división (salvo prohibición testamentaria), la Administración y ciertos acreedores.",
+     "articulos": [
+      "792"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El testador prohibió la intervención",
+       "entonces": "El coheredero que pide la división no puede solicitarla.",
+       "articulos": [
+        "792"
+       ],
+       "literal": {
+        "articulo": "792",
+        "texto": "salvo que la intervención hubiera sido expresamente prohibida por disposición testamentaria"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué acreedores pueden pedir la intervención del caudal?",
+      "a": "Los reconocidos en el testamento o por los coherederos y los que tengan su derecho en un título ejecutivo.",
+      "articulos": [
+       "792"
+      ],
+      "literal": {
+       "articulo": "792",
+       "texto": "los acreedores reconocidos como tales en el testamento o por los coherederos y los que tengan su derecho documentado en un título ejecutivo"
+      }
+     },
+     "conexiones": [
+      "782",
+      "792"
+     ]
+    },
+    {
+     "id": "cau-administracion",
+     "fase": "Administración del caudal",
+     "subtitulo": "Nombramiento, representación y cuentas",
+     "descripcion": "Hecho el inventario, el tribunal decide por auto sobre la administración. Administrador: el viudo o viuda y, en su defecto, el heredero o legatario de mayor parte, con caución. Representa a la herencia; no puede enajenar ni gravar salvo excepciones; rinde cuentas.",
+     "articulos": [
+      "795",
+      "797",
+      "798",
+      "800",
+      "803",
+      "804"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "No hay oposición a las cuentas finales",
+       "entonces": "Decreto que las aprueba, exonera al administrador y devuelve la caución.",
+       "articulos": [
+        "800"
+       ],
+       "literal": {
+        "articulo": "800",
+        "texto": "dictará decreto aprobándolas y declarando exento de responsabilidad al administrador"
+       }
+      },
+      {
+       "si": "El administrador quiere vender bienes inventariados",
+       "entonces": "Solo en los casos tasados, con providencia del tribunal y pública subasta.",
+       "articulos": [
+        "803"
+       ],
+       "literal": {
+        "articulo": "803",
+        "texto": "El administrador no podrá enajenar ni gravar los bienes inventariados."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿A quién se nombra administrador en primer lugar?",
+      "a": "Al viudo o viuda; en su defecto, al heredero o legatario de parte alícuota con mayor parte.",
+      "articulos": [
+       "795"
+      ],
+      "literal": {
+       "articulo": "795",
+       "texto": "Se nombrará administrador al viudo o viuda"
+      }
+     },
+     "conexiones": [
+      "795",
+      "797",
+      "798",
+      "800",
+      "803",
+      "804"
      ]
     }
    ]

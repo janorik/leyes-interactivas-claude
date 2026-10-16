@@ -25,16 +25,19 @@ Cuando se resuelva uno, se marca con [x] y se anota la decisión.
 
 - [ ] **Internamiento no voluntario (art. 763.1):** el texto remite a «lo dispuesto en el apartado 3 del artículo 757», que trata del traslado al curador propuesto. Se recoge tal cual; revisa si la remisión te parece correcta o es una errata del texto consolidado.
 
+- [ ] **Desahucio: excepciones a la enervación (art. 22.4).** La tarjeta resume que no cabe enervar si ya se enervó antes (salvo cobro frustrado por causa del arrendador) o si hubo requerimiento fehaciente con al menos 30 días de antelación a la demanda sin pago. Revisa si la redacción refleja tu lectura.
+  En la app: Procesos › Desahucio por falta de pago › fase 3.
+
 ## Puntos de contenido
 
 - [ ] **Recurso extraordinario por infracción procesal:** los arts. 468 a 476 figuran "(Sin contenido)" en el texto consolidado. En la app aparece como «No vigente», y se indica que la infracción procesal se invoca ahora en casación (art. 477.2). ¿Lo dejas así?
 - [ ] **Recursos, órganos:** el órgano de la apelación (art. 455.2) y de la casación (art. 478) está resumido. Revisa la redacción.
 
 - [ ] **Antes de demandar (MASC):** solo recoge lo que dice la LEC (arts. 264, 399 y 403). Qué casos exigen el MASC lo regula otra ley que no está en la app. ¿Se añade esa ley como segunda fuente?
-- [ ] **Verbal, casos especiales:** los desahucios y el resto de supuestos del art. 438.4 a 438.7 no están en el esquema.
+- [ ] **Verbal, casos especiales:** el desahucio por falta de pago ya tiene esquema propio. Siguen sin desarrollar los supuestos del art. 438.4 (derechos reales inscritos) y 438.7 (ocupación de vivienda), y el desahucio por expiración del plazo.
 - [ ] **Art. 641** (realización por persona o entidad especializada): figura "(Sin contenido)" en el texto consolidado; anotado así en la ficha del apremio.
 - [ ] **Subastas (arts. 643 a 675):** solo hay una visión general, sin desglose.
-- [ ] **Procesos especiales no desarrollados:** filiación (arts. 764-768), guarda y custodia y alimentos de menores (arts. 770 y 778 bis-ter), sustracción internacional de menores (arts. 778 quáter-sexies), oposición a resoluciones de protección de menores (arts. 779-781 bis), intervención y administración del caudal hereditario (arts. 790-805) y liquidación del régimen económico matrimonial (arts. 806-811). ¿Cuáles quieres que se añadan?
+- [x] **Procesos especiales no desarrollados:** añadidos filiación, protección de menores y adopción, sustracción internacional, liquidación del régimen económico matrimonial e intervención y administración del caudal. Quedan sin esquema propio: guarda y custodia y alimentos de menores (se tramitan por el art. 770, ya recogido) y la oposición a resoluciones de la DGRN en materia de Registro Civil (art. 781 bis).
 - [ ] **Ejecución hipotecaria sobre vivienda:** el art. 693.2 remite a la Ley 5/2019 y al art. 129 bis de la Ley Hipotecaria, que no están en la app.
 - [ ] **Orden y agrupación de las fases** de los cinco procedimientos: ¿falta o sobra alguna?
 - [ ] **Descripciones de todas las fases:** todo lo que no va entre « » es elaborado y está marcado "Pendiente de revisión".
