@@ -127,6 +127,6 @@ No empieces la siguiente fase sin su visto bueno.
 - **F3** — Mapa procesal: ejecución y embargo (arts. 517-680, sin la hipotecaria) y medidas cautelares (arts. 721-747). Hecha; pendiente de revisión del usuario.
 - **F4** — Mapa de recursos (`lec/datos/recursos.json`): selector «¿qué recurso cabe?» por resolución, fichas de cada recurso y test interactivo. Hecha; pendiente de revisión del usuario.
 - **F5** — Marcadores y notas (☆ y ✎ en artículos, fases y recursos; pestaña «Notas»; búsqueda en notas; copia de seguridad descargable e importable para pasar del móvil al PC). Hecha.
-- **F6** — Procesos especiales: familia y capacidad, división de herencia, cambiario y ejecución hipotecaria (plazos, esquemas y repaso).
+- **F6** — Procesos especiales: nulidad, separación y divorcio (arts. 748-777), medidas judiciales de apoyo (756-763), división de herencia (782-789), cambiario (819-827) y ejecución hipotecaria (681-698). Hecha; pendiente de revisión del usuario.
 - **F7** — Portada (`/index.html`) que enlaza a cada ley, preparada para añadir LECrim, LRJS y ET.
 - **Segunda parte** — Calculadora de plazos con calendario.

@@ -20,6 +20,11 @@ Cuando se resuelva uno, se marca con [x] y se anota la decisión.
 
 - [ ] **Recursos: inadmisión de prueba (audiencia previa / vista).** En el selector figura «reposición en el acto + protesta» (arts. 285.2 y 446). Está ligado a la duda del juicio verbal (art. 438.10).
 
+- [ ] **Ejecución hipotecaria: plazo de oposición.** El art. 695 regula las causas tasadas de oposición pero no fija plazo propio. En la app no se muestra plazo. ¿Aplicas el general (arts. 556-557)?
+  En la app: Procesos › Ejecución hipotecaria › fase 4.
+
+- [ ] **Internamiento no voluntario (art. 763.1):** el texto remite a «lo dispuesto en el apartado 3 del artículo 757», que trata del traslado al curador propuesto. Se recoge tal cual; revisa si la remisión te parece correcta o es una errata del texto consolidado.
+
 ## Puntos de contenido
 
 - [ ] **Recurso extraordinario por infracción procesal:** los arts. 468 a 476 figuran "(Sin contenido)" en el texto consolidado. En la app aparece como «No vigente», y se indica que la infracción procesal se invoca ahora en casación (art. 477.2). ¿Lo dejas así?
@@ -29,6 +34,8 @@ Cuando se resuelva uno, se marca con [x] y se anota la decisión.
 - [ ] **Verbal, casos especiales:** los desahucios y el resto de supuestos del art. 438.4 a 438.7 no están en el esquema.
 - [ ] **Art. 641** (realización por persona o entidad especializada): figura "(Sin contenido)" en el texto consolidado; anotado así en la ficha del apremio.
 - [ ] **Subastas (arts. 643 a 675):** solo hay una visión general, sin desglose.
+- [ ] **Procesos especiales no desarrollados:** filiación (arts. 764-768), guarda y custodia y alimentos de menores (arts. 770 y 778 bis-ter), sustracción internacional de menores (arts. 778 quáter-sexies), oposición a resoluciones de protección de menores (arts. 779-781 bis), intervención y administración del caudal hereditario (arts. 790-805) y liquidación del régimen económico matrimonial (arts. 806-811). ¿Cuáles quieres que se añadan?
+- [ ] **Ejecución hipotecaria sobre vivienda:** el art. 693.2 remite a la Ley 5/2019 y al art. 129 bis de la Ley Hipotecaria, que no están en la app.
 - [ ] **Orden y agrupación de las fases** de los cinco procedimientos: ¿falta o sobra alguna?
 - [ ] **Descripciones de todas las fases:** todo lo que no va entre « » es elaborado y está marcado "Pendiente de revisión".
 
