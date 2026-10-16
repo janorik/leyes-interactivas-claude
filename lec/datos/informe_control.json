@@ -1,0 +1,42 @@
+{
+ "controles": {
+  "articulos_numerados": 867,
+  "articulo_max": 827,
+  "numeros_que_faltan": [],
+  "sin_texto": [],
+  "muy_cortos": [],
+  "articulos_sin_titulo": [
+   "Artículo 141 bis"
+  ],
+  "sospechas": [],
+  "estados": {
+   "(Derogado)": 1,
+   "(Sin contenido)": 22,
+   "(Anulado)": 1,
+   "(Derogada)": 1,
+   "(Suprimida)": 1
+  },
+  "marcadores_pdf": 1086,
+  "marcadores_sin_pareja": [],
+  "nodos_estructura": {
+   "titulo": 24,
+   "libro": 4,
+   "capitulo": 81,
+   "seccion": 55,
+   "grupo": 4
+  }
+ },
+ "contraste": {
+  "unidades_xml": 918,
+  "unidades_pdf": 918,
+  "coinciden": 918,
+  "difieren": [],
+  "destacados": [
+   {
+    "clave": "da5",
+    "texto": "El Ministerio de Justicia, de acuerdo con la comunidad autónoma correspondiente con competencias en la materia,"
+   }
+  ]
+ },
+ "avisos": []
+}
