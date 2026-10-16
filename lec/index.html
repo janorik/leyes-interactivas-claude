@@ -52,7 +52,7 @@ nav.tabs a{flex:1;text-align:center;white-space:nowrap;padding:9px 4px 10px;colo
 nav.tabs a[aria-current="page"]{color:var(--crema);border-bottom-color:var(--oro);font-weight:600}
 :focus-visible{outline:3px solid var(--oro);outline-offset:2px}
 
-main{max-width:1180px;margin:0 auto;padding:14px 16px 90px}
+main{max-width:1180px;margin:0 auto;padding:14px 16px 100px}
 .aviso-boe{font-size:.8rem;color:var(--suave);margin:0 0 12px}
 .aviso-boe b{color:var(--texto)}
 .migas{font-size:.78rem;color:var(--suave);margin:2px 0 8px}
@@ -241,6 +241,10 @@ mark.hl{background:var(--marca);color:inherit;padding:0 1px;border-radius:2px}
 .mi-item .fecha{font-size:.72rem;color:var(--suave)}
 .borrar{background:none;border:0;color:var(--peligro);cursor:pointer;font-size:.85rem;padding:2px 4px}
 .ind{color:var(--oro);font-size:.8rem;margin-left:4px}
+/* botón Atrás flotante */
+#atras{position:fixed;left:14px;bottom:calc(14px + env(safe-area-inset-bottom));z-index:30;
+  background:var(--acento);color:var(--acento-txt);border:0;border-radius:999px;padding:11px 18px 11px 14px;
+  font-weight:700;font-size:.95rem;box-shadow:0 4px 14px rgba(0,0,0,.25);cursor:pointer}
 footer{max-width:1180px;margin:0 auto;padding:0 16px 30px;font-size:.74rem;color:var(--suave)}
 </style>
 </head>
@@ -290,6 +294,7 @@ footer{max-width:1180px;margin:0 auto;padding:0 16px 30px;font-size:.74rem;color
   <section id="v-recursos" hidden></section>
   <section id="v-notas" hidden></section>
 </main>
+<button id="atras" hidden aria-label="Volver a la pantalla anterior">‹ Atrás</button>
 <div class="hoja-fondo" id="hojaFondo" hidden></div>
 <div class="hoja" id="hoja" hidden role="dialog" aria-modal="true" aria-labelledby="hojaTit">
   <div class="asa"><b id="hojaTit"></b><a class="btn" id="hojaCerrar" href="#">Cerrar ✕</a></div>
@@ -475,8 +480,9 @@ function abrirHoja(titulo, html, cerrarHref){
   $("#hoja").hidden = false; $("#hojaFondo").hidden = false;
   $("#hoja").scrollTop = 0; activarFicha($("#hojaCuerpo"));
   document.body.style.overflow = "hidden";
+  $("#atras").hidden = true;
 }
-function cerrarHoja(){ $("#hoja").hidden = true; $("#hojaFondo").hidden = true; document.body.style.overflow = ""; }
+function cerrarHoja(){ $("#hoja").hidden = true; $("#hojaFondo").hidden = true; document.body.style.overflow = ""; if (typeof actualizarAtras==="function") setTimeout(actualizarAtras,0); }
 // Cerrar = volver atrás si venimos de la página de debajo (así el botón Atrás del móvil y "Cerrar" hacen lo mismo).
 let hashAnterior = null;
 window.addEventListener("hashchange", e => { hashAnterior = e.oldURL.indexOf("#")>=0 ? e.oldURL.slice(e.oldURL.indexOf("#")) : "#"; });
@@ -747,6 +753,30 @@ function vistaNotas(){
   };
 }
 
+/* =====================  BOTÓN ATRÁS  ===================== */
+// Cada entrada del historial creada por la app lleva un índice; si es > 0, «Atrás» vuelve a la anterior.
+// Si se entró directamente con un enlace (índice 0), sube un nivel lógico.
+let idxHist = (history.state && typeof history.state.i === "number") ? history.state.i : 0;
+try{ history.replaceState({i: idxHist}, ""); }catch(e){}
+window.addEventListener("hashchange", () => {
+  if (!history.state || typeof history.state.i !== "number"){ idxHist++; try{ history.replaceState({i: idxHist}, ""); }catch(e){} }
+  else idxHist = history.state.i;
+});
+window.addEventListener("popstate", () => { if (history.state && typeof history.state.i === "number") idxHist = history.state.i; });
+function padreLogico(base){
+  const p = base.split("/");
+  if (p[0]==="proc") return p[2] ? "#proc/"+p[1] : "#procesos";
+  if (p[0]==="art") return "#ley";
+  if (p[0]==="recursos") return p[2] ? "#recursos/"+p[1] : "#procesos";
+  if (p[0]==="repaso" && p[1]) return "#repaso";
+  return "#procesos";
+}
+$("#atras").onclick = () => { if (idxHist > 0) history.back(); else location.hash = padreLogico(BASE); };
+function actualizarAtras(){
+  const inicio = BASE==="procesos" || BASE==="";
+  $("#atras").hidden = inicio || !$("#hoja").hidden;
+}
+
 /* =====================  RUTAS (#hash)  ===================== */
 const VISTAS = ["procesos","proc","ley","art","buscar","repaso","recursos","notas"];
 function mostrar(v, pest){
@@ -776,6 +806,7 @@ function ruta(){
     // al cerrar un artículo abierto desde la ficha (móvil), se vuelve a la ficha
     if (partes[0]==="proc" && partes[2] && esMovil()){ ultimaBase = null; ruta(); return; }
   }
+  setTimeout(actualizarAtras, 0);
   if (sobre){
     abrirHoja(A[sobre] ? A[sobre].rotulo : sobre, '<div style="padding:12px 16px">'+htmlArticulo(sobre,false,[])+
       '<p><a class="btn" href="'+hrefLey(sobre)+'">Abrir en la ley ›</a></p></div>', "#"+base);
