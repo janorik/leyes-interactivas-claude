@@ -1,0 +1,458 @@
+{
+ "_nota": "Contenido ELABORADO (no literal), revisado:false. Cada literal se comprueba contra el artículo citado.",
+ "revisado": false,
+ "recursos": [
+  {
+   "id": "reposicion-laj",
+   "recurso": "Reposición (ante el LAJ)",
+   "contra_que": "Diligencias de ordenación y decretos no definitivos, salvo que la ley prevea revisión directa.",
+   "plazo": "5 días",
+   "organo": "El Letrado de la Administración de Justicia que dictó la resolución",
+   "efectos": "No suspensivo. Impugnación: 5 días. Resuelve por decreto en 5 días.",
+   "articulos": [
+    "451",
+    "452",
+    "453"
+   ],
+   "literales": [
+    {
+     "articulo": "451",
+     "texto": "Contra las diligencias de ordenación y decretos no definitivos cabrá recurso de reposición ante el Letrado de la Administración de Justicia que dictó la resolución recurrida"
+    },
+    {
+     "articulo": "452",
+     "texto": "El recurso de reposición deberá interponerse en el plazo de cinco días"
+    },
+    {
+     "articulo": "451",
+     "texto": "La interposición del recurso de reposición no tendrá efectos suspensivos respecto de la resolución recurrida."
+    }
+   ]
+  },
+  {
+   "id": "reposicion-tribunal",
+   "recurso": "Reposición (ante el tribunal)",
+   "contra_que": "Providencias y autos no definitivos.",
+   "plazo": "5 días",
+   "organo": "El mismo tribunal que dictó la resolución",
+   "efectos": "No suspensivo. Contra el auto que la resuelve no cabe recurso (salvo queja); la cuestión puede reproducirse al recurrir la resolución definitiva.",
+   "articulos": [
+    "451",
+    "452",
+    "453",
+    "454"
+   ],
+   "literales": [
+    {
+     "articulo": "451",
+     "texto": "Contra todas las providencias y autos no definitivos cabrá recurso de reposición ante el mismo Tribunal que dictó la resolución recurrida."
+    },
+    {
+     "articulo": "452",
+     "texto": "El recurso de reposición deberá interponerse en el plazo de cinco días"
+    },
+    {
+     "articulo": "454",
+     "texto": "contra el auto que resuelva el recurso de reposición no cabrá recurso alguno, sin perjuicio de reproducir la cuestión objeto de la reposición al recurrir, si fuere procedente, la resolución definitiva"
+    }
+   ]
+  },
+  {
+   "id": "revision",
+   "recurso": "Revisión (contra decretos)",
+   "contra_que": "El decreto que resuelve la reposición; y, directamente, los decretos que ponen fin al procedimiento o impiden su continuación (y los demás casos que la ley prevea).",
+   "plazo": "5 días",
+   "organo": "El tribunal",
+   "efectos": "Sin efectos suspensivos. Impugnación: 5 días. Resuelve por auto en 5 días; apelación solo si pone fin al procedimiento o impide su continuación.",
+   "articulos": [
+    "454 bis"
+   ],
+   "literales": [
+    {
+     "articulo": "454 bis",
+     "texto": "Cabrá recurso de revisión ante el tribunal contra el decreto resolutivo de la reposición y recurso directo de revisión contra los decretos por los que se ponga fin al procedimiento o impidan su continuación."
+    },
+    {
+     "articulo": "454 bis",
+     "texto": "El recurso de revisión deberá interponerse en el plazo de cinco días"
+    },
+    {
+     "articulo": "454 bis",
+     "texto": "Contra el auto dictado resolviendo el recurso de revisión sólo cabrá recurso de apelación cuando ponga fin al procedimiento o impida su continuación."
+    }
+   ]
+  },
+  {
+   "id": "apelacion",
+   "recurso": "Apelación",
+   "contra_que": "Sentencias de toda clase de juicio, autos definitivos y los que la ley señale. No son apelables las sentencias de juicios verbales por razón de la cuantía que no supere 3.000 €.",
+   "plazo": "20 días desde la notificación",
+   "organo": "Audiencia Provincial (si resolvió un Juzgado de Primera Instancia) o Juzgado de Primera Instancia (si resolvió un Juzgado de Paz). Se interpone ante el tribunal competente para resolverlo.",
+   "efectos": "Contra sentencias desestimatorias y autos que ponen fin al proceso, sin efectos suspensivos. Oposición o impugnación de la apelada: 10 días.",
+   "articulos": [
+    "455",
+    "456",
+    "458",
+    "461"
+   ],
+   "literales": [
+    {
+     "articulo": "455",
+     "texto": "Las sentencias dictadas en toda clase de juicio, los autos definitivos y aquéllos otros que la ley expresamente señale, serán apelables"
+    },
+    {
+     "articulo": "455",
+     "texto": "con excepción de las sentencias dictadas en los juicios verbales por razón de la cuantía cuando ésta no supere los 3.000 euros"
+    },
+    {
+     "articulo": "458",
+     "texto": "en el plazo de veinte días desde la notificación de la resolución impugnada"
+    },
+    {
+     "articulo": "455",
+     "texto": "Las Audiencias Provinciales, cuando las resoluciones apelables hayan sido dictadas por los Juzgados de Primera Instancia de su circunscripción."
+    },
+    {
+     "articulo": "456",
+     "texto": "La apelación contra sentencias desestimatorias de la demanda y contra autos que pongan fin al proceso carecerá de efectos suspensivos"
+    }
+   ]
+  },
+  {
+   "id": "casacion",
+   "recurso": "Casación",
+   "contra_que": "Sentencias que ponen fin a la segunda instancia dictadas por las Audiencias Provinciales como órgano colegiado (y otros casos del art. 477.1). Se funda en infracción de norma procesal o sustantiva con interés casacional (salvo derechos fundamentales).",
+   "plazo": "20 días desde el día siguiente a la notificación",
+   "organo": "Sala Primera del Tribunal Supremo (o Sala de lo Civil y Penal del TSJ si se funda en Derecho civil propio de la Comunidad). Se interpone ante el tribunal que dictó la resolución.",
+   "efectos": "Oposición de los recurridos: 20 días. La valoración de la prueba y la fijación de hechos no pueden ser objeto de casación.",
+   "articulos": [
+    "466",
+    "477",
+    "478",
+    "479",
+    "485"
+   ],
+   "literales": [
+    {
+     "articulo": "477",
+     "texto": "Serán recurribles en casación las sentencias que pongan fin a la segunda instancia dictadas por las Audiencias Provinciales cuando, conforme a la ley, deban actuar como órgano colegiado"
+    },
+    {
+     "articulo": "477",
+     "texto": "El recurso de casación habrá de fundarse en infracción de norma procesal o sustantiva, siempre que concurra interés casacional."
+    },
+    {
+     "articulo": "479",
+     "texto": "dentro del plazo de veinte días contados desde el día siguiente a la notificación de aquélla"
+    },
+    {
+     "articulo": "478",
+     "texto": "El conocimiento del recurso de casación corresponde a la Sala Primera del Tribunal Supremo."
+    },
+    {
+     "articulo": "477",
+     "texto": "La valoración de la prueba y la fijación de hechos no podrán ser objeto de recurso de casación"
+    }
+   ]
+  },
+  {
+   "id": "queja",
+   "recurso": "Queja",
+   "contra_que": "Autos que deniegan la tramitación de un recurso de casación. No procede en desahucios cuya sentencia no tenga fuerza de cosa juzgada.",
+   "plazo": "10 días desde la notificación",
+   "organo": "El órgano al que corresponda resolver el recurso no tramitado",
+   "efectos": "Resuelve en 5 días. Contra el auto que lo resuelve no cabe recurso.",
+   "articulos": [
+    "494",
+    "495"
+   ],
+   "literales": [
+    {
+     "articulo": "494",
+     "texto": "Contra los autos en que el tribunal que haya dictado la resolución denegare la tramitación de un recurso de casación, se podrá interponer recurso de queja"
+    },
+    {
+     "articulo": "495",
+     "texto": "en el plazo de diez días desde la notificación de la resolución que deniega la tramitación del recurso de casación"
+    },
+    {
+     "articulo": "495",
+     "texto": "Contra el auto que resuelva el recurso de queja no se dará recurso alguno."
+    }
+   ]
+  },
+  {
+   "id": "rescision",
+   "recurso": "Rescisión de sentencia firme (rebelde)",
+   "contra_que": "Sentencia firme dictada contra quien estuvo constantemente en rebeldía, por fuerza mayor ininterrumpida o desconocimiento no imputable de la demanda.",
+   "plazo": "20 días (notificación personal) o 4 meses (edictos); nunca después de 16 meses",
+   "organo": "El tribunal que dictó la sentencia",
+   "efectos": "Plazos de caducidad.",
+   "articulos": [
+    "501",
+    "502"
+   ],
+   "literales": [
+    {
+     "articulo": "501",
+     "texto": "Los demandados que hayan permanecido constantemente en rebeldía podrán pretender, del tribunal que la hubiere dictado, la rescisión de la sentencia firme"
+    },
+    {
+     "articulo": "502",
+     "texto": "De veinte días, a partir de la notificación de la sentencia firme, si dicha notificación se hubiere practicado personalmente."
+    },
+    {
+     "articulo": "502",
+     "texto": "De cuatro meses, a partir de la publicación del edicto de notificación de la sentencia firme, si ésta no se notificó personalmente."
+    },
+    {
+     "articulo": "502",
+     "texto": "sin que en ningún caso quepa ejercitar la acción de rescisión una vez transcurridos dieciséis meses desde la notificación de la sentencia"
+    }
+   ]
+  },
+  {
+   "id": "revision-firmes",
+   "recurso": "Revisión de sentencias firmes",
+   "contra_que": "Sentencia firme por documentos decisivos recobrados, falsedad declarada penalmente, falso testimonio, cohecho, violencia o maquinación fraudulenta, o sentencia del TEDH.",
+   "plazo": "3 meses desde el descubrimiento, dentro de 5 años desde la publicación (1 año si se basa en sentencia del TEDH)",
+   "organo": "Sala de lo Civil del Tribunal Supremo o Salas de lo Civil y Penal de los TSJ",
+   "efectos": "Legitimado: quien fue parte perjudicada.",
+   "articulos": [
+    "509",
+    "510",
+    "511",
+    "512"
+   ],
+   "literales": [
+    {
+     "articulo": "509",
+     "texto": "La revisión de sentencias firmes se solicitará a la Sala de lo Civil del Tribunal Supremo o a las Salas de lo Civil y Penal de los Tribunales Superiores de Justicia"
+    },
+    {
+     "articulo": "512",
+     "texto": "En ningún caso podrá solicitarse la revisión después de transcurridos cinco años desde la fecha de la publicación de la sentencia que se pretende impugnar."
+    },
+    {
+     "articulo": "512",
+     "texto": "siempre que no hayan transcurrido tres meses desde el día en que se descubrieren los documentos decisivos"
+    }
+   ]
+  },
+  {
+   "id": "infraccion-procesal",
+   "recurso": "Recurso extraordinario por infracción procesal",
+   "no_vigente": true,
+   "contra_que": "En el texto consolidado los arts. 468 a 476 figuran «(Sin contenido)». La infracción de norma procesal se invoca ahora como fundamento de la casación (art. 477.2).",
+   "plazo": "—",
+   "organo": "—",
+   "efectos": "No vigente en el texto consolidado.",
+   "articulos": [
+    "468",
+    "477"
+   ],
+   "literales": [
+    {
+     "articulo": "468",
+     "texto": "(Sin contenido)"
+    },
+    {
+     "articulo": "477",
+     "texto": "infracción de norma procesal o sustantiva"
+    }
+   ]
+  }
+ ],
+ "selector": [
+  {
+   "res": "Diligencia de ordenación",
+   "quien": "LAJ",
+   "recurso": "reposicion-laj",
+   "nota": "Salvo que la ley prevea recurso directo de revisión.",
+   "literal": {
+    "articulo": "451",
+    "texto": "Contra las diligencias de ordenación y decretos no definitivos cabrá recurso de reposición"
+   }
+  },
+  {
+   "res": "Decreto no definitivo",
+   "quien": "LAJ",
+   "recurso": "reposicion-laj",
+   "nota": "Salvo que la ley prevea recurso directo de revisión.",
+   "literal": {
+    "articulo": "451",
+    "texto": "excepto en los casos en que la ley prevea recurso directo de revisión"
+   }
+  },
+  {
+   "res": "Decreto que resuelve una reposición",
+   "quien": "LAJ",
+   "recurso": "revision",
+   "nota": "",
+   "literal": {
+    "articulo": "454 bis",
+    "texto": "Cabrá recurso de revisión ante el tribunal contra el decreto resolutivo de la reposición"
+   }
+  },
+  {
+   "res": "Decreto que pone fin al procedimiento o impide su continuación",
+   "quien": "LAJ",
+   "recurso": "revision",
+   "nota": "Revisión directa (sin reposición previa).",
+   "literal": {
+    "articulo": "454 bis",
+    "texto": "recurso directo de revisión contra los decretos por los que se ponga fin al procedimiento o impidan su continuación"
+   }
+  },
+  {
+   "res": "Providencia",
+   "quien": "Tribunal",
+   "recurso": "reposicion-tribunal",
+   "nota": "",
+   "literal": {
+    "articulo": "451",
+    "texto": "Contra todas las providencias y autos no definitivos cabrá recurso de reposición"
+   }
+  },
+  {
+   "res": "Auto no definitivo",
+   "quien": "Tribunal",
+   "recurso": "reposicion-tribunal",
+   "nota": "",
+   "literal": {
+    "articulo": "451",
+    "texto": "Contra todas las providencias y autos no definitivos cabrá recurso de reposición"
+   }
+  },
+  {
+   "res": "Auto que resuelve una reposición",
+   "quien": "Tribunal",
+   "recurso": null,
+   "nota": "Ningún recurso (salvo queja). La cuestión puede reproducirse al recurrir la resolución definitiva.",
+   "literal": {
+    "articulo": "454",
+    "texto": "contra el auto que resuelva el recurso de reposición no cabrá recurso alguno"
+   }
+  },
+  {
+   "res": "Auto definitivo",
+   "quien": "Tribunal",
+   "recurso": "apelacion",
+   "nota": "",
+   "literal": {
+    "articulo": "455",
+    "texto": "los autos definitivos y aquéllos otros que la ley expresamente señale, serán apelables"
+   }
+  },
+  {
+   "res": "Sentencia de primera instancia",
+   "quien": "Tribunal",
+   "recurso": "apelacion",
+   "nota": "Excepto juicio verbal por razón de la cuantía hasta 3.000 €: no apelable.",
+   "literal": {
+    "articulo": "455",
+    "texto": "Las sentencias dictadas en toda clase de juicio"
+   }
+  },
+  {
+   "res": "Sentencia de juicio verbal por cuantía de hasta 3.000 €",
+   "quien": "Tribunal",
+   "recurso": null,
+   "nota": "No es apelable.",
+   "literal": {
+    "articulo": "455",
+    "texto": "con excepción de las sentencias dictadas en los juicios verbales por razón de la cuantía cuando ésta no supere los 3.000 euros"
+   }
+  },
+  {
+   "res": "Sentencia de la Audiencia Provincial en segunda instancia",
+   "quien": "Tribunal",
+   "recurso": "casacion",
+   "nota": "Requiere infracción de norma procesal o sustantiva e interés casacional (salvo tutela de derechos fundamentales).",
+   "literal": {
+    "articulo": "466",
+    "texto": "Contra las sentencias dictadas por las Audiencias Provinciales en la segunda instancia de cualquier tipo de proceso civil podrán las partes legitimadas interponer el recurso de casación."
+   }
+  },
+  {
+   "res": "Auto que deniega tramitar un recurso de casación",
+   "quien": "Tribunal",
+   "recurso": "queja",
+   "nota": "",
+   "literal": {
+    "articulo": "494",
+    "texto": "se podrá interponer recurso de queja ante el órgano al que corresponda resolver del recurso no tramitado"
+   }
+  },
+  {
+   "res": "Sentencia firme dictada en rebeldía (no supe del pleito)",
+   "quien": "Tribunal",
+   "recurso": "rescision",
+   "nota": "Solo en los casos del art. 501.",
+   "literal": {
+    "articulo": "501",
+    "texto": "la rescisión de la sentencia firme en los casos siguientes"
+   }
+  },
+  {
+   "res": "Sentencia firme ganada con documentos falsos o fraude, o con documentos decisivos que aparecen después",
+   "quien": "Tribunal",
+   "recurso": "revision-firmes",
+   "nota": "Solo por los motivos del art. 510.",
+   "literal": {
+    "articulo": "510",
+    "texto": "Habrá lugar a la revisión de una sentencia firme"
+   }
+  },
+  {
+   "res": "Inadmisión de una prueba en la audiencia previa o en la vista",
+   "quien": "Tribunal",
+   "recurso": "reposicion-tribunal",
+   "nota": "Reposición que se resuelve en el acto; si se desestima, protesta para la segunda instancia.",
+   "literal": {
+    "articulo": "285",
+    "texto": "sólo cabrá recurso de reposición, que se sustanciará y resolverá en el acto"
+   }
+  },
+  {
+   "res": "Auto que acuerda medidas cautelares sin oír al demandado",
+   "quien": "Tribunal",
+   "recurso": null,
+   "nota": "Ningún recurso: el demandado puede formular oposición en 20 días (art. 739).",
+   "literal": {
+    "articulo": "733",
+    "texto": "Contra el auto que acuerde medidas cautelares sin previa audiencia del demandado no cabrá recurso alguno"
+   }
+  },
+  {
+   "res": "Auto que acuerda medidas cautelares tras la vista",
+   "quien": "Tribunal",
+   "recurso": "apelacion",
+   "nota": "Sin efectos suspensivos.",
+   "literal": {
+    "articulo": "735",
+    "texto": "Contra el auto que acuerde medidas cautelares cabrá recurso de apelación, sin efectos suspensivos."
+   }
+  },
+  {
+   "res": "Auto que resuelve la oposición a la ejecución",
+   "quien": "Tribunal",
+   "recurso": "apelacion",
+   "nota": "No suspende la ejecución si desestimó la oposición.",
+   "literal": {
+    "articulo": "561",
+    "texto": "Contra el auto que resuelva la oposición podrá interponerse recurso de apelación"
+   }
+  },
+  {
+   "res": "Auto que deniega el despacho de la ejecución",
+   "quien": "Tribunal",
+   "recurso": "apelacion",
+   "nota": "Directamente apelable; también cabe reposición previa a elección del acreedor.",
+   "literal": {
+    "articulo": "552",
+    "texto": "El auto que deniegue el despacho de la ejecución será directamente apelable"
+   }
+  }
+ ]
+}

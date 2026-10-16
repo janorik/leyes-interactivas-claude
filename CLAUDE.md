@@ -85,7 +85,7 @@ Enfoque acordado con el usuario: app para **aprender**, no solo para leer la ley
 2. **Ley**: árbol navegable (Libros > Títulos > Capítulos > Secciones > Artículos) con el texto literal.
 3. **Buscar**: por número de artículo, por texto de la ley y por fases y plazos del mapa.
 4. **Repaso**: tarjetas generadas de preguntas, alternativas y plazos, con progreso guardado en local.
-5. Mapa de recursos: qué recurso cabe, contra qué resolución, plazo y órgano (pendiente).
+5. **Recursos**: selector por resolución (qué recurso cabe, plazo y órgano, con frase literal), fichas de cada recurso y test de opción múltiple.
 6. Marcadores y notas personales, guardados en el almacenamiento local del navegador. No se sincronizan entre el móvil y el PC; el usuario lo sabe (pendiente).
 
 Datos del mapa: `lec/datos/procedimientos.json` (contenido elaborado, `revisado: false`). Cada plazo, alternativa y respuesta lleva una frase `literal`; `scripts/insertar_datos.py` comprueba que esa frase está en el artículo citado y, si no, no publica.
@@ -106,6 +106,9 @@ Todo artículo citado en cualquier vista es un enlace que abre su texto literal.
 - Botón de modo claro/oscuro, recordado en local.
 - Diseño adaptado a móvil (prioridad) y a ordenador. Texto legible y zoom cómodo.
 
+## Pendientes
+Las dudas de interpretación y los puntos a revisar se anotan en `PENDIENTES.md` (el usuario los repasará al final). No se elige una interpretación: se anota y se sigue.
+
 ## Fases de trabajo
 Una fase cada vez. Al cerrar cada fase:
 - haz commit con un mensaje claro;
@@ -122,7 +125,7 @@ No empieces la siguiente fase sin su visto bueno.
   - Incluye un informe de control: número de artículos extraídos y artículos con posibles problemas de extracción.
 - **F2** — Mapa procesal (prototipo hecho): juicio ordinario, juicio verbal y monitorio, con plazos, alternativas y repaso. Pendiente de revisión del usuario.
 - **F3** — Mapa procesal: ejecución y embargo (arts. 517-680, sin la hipotecaria) y medidas cautelares (arts. 721-747). Hecha; pendiente de revisión del usuario.
-- **F4** — Mapa de recursos.
+- **F4** — Mapa de recursos (`lec/datos/recursos.json`): selector «¿qué recurso cabe?» por resolución, fichas de cada recurso y test interactivo. Hecha; pendiente de revisión del usuario.
 - **F5** — Marcadores y notas.
 - **F6** — Procesos especiales: familia y capacidad, división de herencia, cambiario y ejecución hipotecaria (plazos, esquemas y repaso).
 - **F7** — Portada (`/index.html`) que enlaza a cada ley, preparada para añadir LECrim, LRJS y ET.

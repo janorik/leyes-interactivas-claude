@@ -18,6 +18,7 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HTML = os.path.join(RAIZ, "lec", "index.html")
 JSON_LEY = os.path.join(RAIZ, "lec", "datos", "lec.json")
 JSON_PROC = os.path.join(RAIZ, "lec", "datos", "procedimientos.json")
+JSON_REC = os.path.join(RAIZ, "lec", "datos", "recursos.json")
 
 # Recorte del emblema "N" en el logo cuadrado de 2048 px (proporciones relativas).
 RECORTE = (680 / 2048, 930 / 2048, 1420 / 2048, 1500 / 2048)
@@ -104,10 +105,46 @@ def validar_y_anadir_procedimientos(datos):
           f"{len(plazos)} plazos). Todas las frases literales están en su artículo.")
 
 
+def validar_y_anadir_recursos(datos):
+    """Igual que con los procedimientos: artículos existentes y frases literales comprobadas."""
+    if not os.path.exists(JSON_REC):
+        return
+    with open(JSON_REC, encoding="utf-8") as f:
+        rec = json.load(f)
+    arts = datos["articulos"]
+    errores = []
+    ids = {r["id"] for r in rec["recursos"]}
+
+    def lit(l, donde):
+        a, t = l["articulo"], l["texto"]
+        if a not in arts:
+            errores.append(f"{donde}: el artículo {a} no existe")
+        elif _norm(t) not in _norm(arts[a]["texto_literal"]):
+            errores.append(f"{donde}: la frase no está en el art. {a}: «{t[:70]}»")
+
+    for r in rec["recursos"]:
+        for k in r["articulos"]:
+            if k not in arts:
+                errores.append(f"{r['id']}: el artículo {k} no existe")
+        for l in r["literales"]:
+            lit(l, r["id"])
+    for s in rec["selector"]:
+        if s["recurso"] is not None and s["recurso"] not in ids:
+            errores.append(f"selector «{s['res']}»: recurso {s['recurso']} no definido")
+        lit(s["literal"], "selector «" + s["res"] + "»")
+    if errores:
+        sys.exit("ERROR en recursos.json:\n- " + "\n- ".join(errores))
+    datos["recursos"] = rec["recursos"]
+    datos["selector_recursos"] = rec["selector"]
+    datos["recursos_revisado"] = rec["revisado"]
+    print(f"Recursos comprobados: {len(rec['recursos'])} recursos, {len(rec['selector'])} casos del selector.")
+
+
 def main():
     with open(JSON_LEY, encoding="utf-8") as f:
         datos = json.load(f)
     validar_y_anadir_procedimientos(datos)
+    validar_y_anadir_recursos(datos)
     js = json.dumps(datos, ensure_ascii=False, separators=(",", ":"))
     js = js.replace("</", "<\\/")  # no puede cerrar la etiqueta <script>
     with open(HTML, encoding="utf-8") as f:
