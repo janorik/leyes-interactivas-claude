@@ -106,6 +106,9 @@
       "264",
       "265",
       "400"
+     ],
+     "continua_en": [
+      "cautelares"
      ]
     },
     {
@@ -464,6 +467,9 @@
       "209",
       "218",
       "434"
+     ],
+     "continua_en": [
+      "ejecucion"
      ]
     },
     {
@@ -511,7 +517,8 @@
       "465"
      ]
     }
-   ]
+   ],
+   "grupo": "Libro II · Procesos declarativos"
   },
   {
    "id": "verbal",
@@ -582,6 +589,9 @@
      "conexiones": [
       "399",
       "437"
+     ],
+     "continua_en": [
+      "cautelares"
      ]
     },
     {
@@ -844,6 +854,9 @@
      "conexiones": [
       "210",
       "447"
+     ],
+     "continua_en": [
+      "ejecucion"
      ]
     },
     {
@@ -905,7 +918,983 @@
       "461"
      ]
     }
-   ]
+   ],
+   "grupo": "Libro II · Procesos declarativos"
+  },
+  {
+   "id": "ejecucion",
+   "nombre": "Ejecución dineraria y embargo",
+   "bloque": "ejecución y embargo",
+   "resumen": "De la demanda ejecutiva a la realización de los bienes: despacho, oposición, embargo y apremio. La ejecución hipotecaria (arts. 681 a 698) irá aparte, en los procesos especiales.",
+   "ambito": {
+    "corto": "Título ejecutivo del art. 517 (judicial o no judicial)",
+    "texto": "Solo cabe con un título que lleve aparejada ejecución (art. 517.2): sentencia de condena firme, laudos y acuerdos de mediación elevados a escritura, transacciones homologadas, escrituras públicas, pólizas, etc. El régimen de oposición cambia según el título sea judicial o no.",
+    "articulos": [
+     "517"
+    ],
+    "literal": [
+     {
+      "articulo": "517",
+      "texto": "La acción ejecutiva deberá fundarse en un título que tenga aparejada ejecución."
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "eje-titulo",
+     "fase": "Título ejecutivo y plazos previos",
+     "subtitulo": "Caducidad y plazo de espera",
+     "descripcion": "La acción ejecutiva basada en sentencia, transacción o acuerdo judicial, laudo o acuerdo de mediación caduca a los cinco años. No puede despacharse ejecución de esas resoluciones en los veinte días siguientes a su firmeza o notificación.",
+     "articulos": [
+      "517",
+      "518",
+      "548"
+     ],
+     "plazos": [
+      {
+       "acto": "Caducidad de la acción ejecutiva (sentencia, laudo, mediación…)",
+       "plazo": "5 años desde la firmeza",
+       "articulo": "518",
+       "literal": "si no se interpone la correspondiente demanda ejecutiva dentro de los cinco años siguientes a la firmeza de la sentencia o resolución"
+      },
+      {
+       "acto": "Plazo de espera antes de despachar ejecución",
+       "plazo": "20 días",
+       "articulo": "548",
+       "literal": "dentro de los veinte días posteriores a aquel en que la resolución de condena sea firme"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se trata de una condena de desahucio por falta de pago o expiración del plazo",
+       "entonces": "No rige el plazo de espera del art. 548.",
+       "articulos": [
+        "549"
+       ],
+       "literal": {
+        "articulo": "549",
+        "texto": "El plazo de espera legal al que se refiere el artículo anterior no será de aplicación en la ejecución de resoluciones de condena de desahucio"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuántos títulos con aparejada ejecución enumera el art. 517.2 y cuál es el primero?",
+      "a": "Nueve; el primero es la sentencia de condena firme.",
+      "articulos": [
+       "517"
+      ],
+      "literal": {
+       "articulo": "517",
+       "texto": "1.º La sentencia de condena firme."
+      }
+     },
+     "conexiones": [
+      "517",
+      "518",
+      "548",
+      "549"
+     ]
+    },
+    {
+     "id": "eje-demanda",
+     "fase": "Demanda ejecutiva",
+     "subtitulo": "Siempre a instancia de parte",
+     "descripcion": "Se expresan el título, la tutela que se pide (cantidad), los bienes embargables conocidos, las medidas de localización y los ejecutados. Si se ejecuta una resolución del propio tribunal, basta pedir el despacho identificándola.",
+     "articulos": [
+      "549",
+      "550"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El título es una sentencia del tribunal competente para ejecutar",
+       "entonces": "La demanda puede limitarse a pedir el despacho identificando la resolución.",
+       "articulos": [
+        "549"
+       ],
+       "literal": {
+        "articulo": "549",
+        "texto": "la demanda ejecutiva podrá limitarse a la solicitud de que se despache la ejecución, identificando la sentencia o resolución cuya ejecución se pretenda"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el tribunal despachar ejecución de oficio?",
+      "a": "No: sólo a petición de parte, en forma de demanda.",
+      "articulos": [
+       "549"
+      ],
+      "literal": {
+       "articulo": "549",
+       "texto": "Sólo se despachará ejecución a petición de parte, en forma de demanda"
+      }
+     },
+     "conexiones": [
+      "549",
+      "550",
+      "575",
+      "590"
+     ]
+    },
+    {
+     "id": "eje-despacho",
+     "fase": "Despacho de la ejecución",
+     "subtitulo": "Auto del juez + decreto del LAJ",
+     "descripcion": "Si concurren los presupuestos, el juez dicta auto con la orden general de ejecución (con control de cláusulas abusivas en títulos extrajudiciales). El LAJ dicta después decreto con las medidas concretas, incluido el embargo. Se notifican al ejecutado sin citación ni emplazamiento.",
+     "articulos": [
+      "551",
+      "552",
+      "553"
+     ],
+     "plazos": [
+      {
+       "acto": "Decreto del LAJ con las medidas ejecutivas",
+       "plazo": "Mismo día o siguiente hábil al auto",
+       "articulo": "551",
+       "literal": "en el mismo día o en el siguiente día hábil a aquél en que hubiera sido dictado el auto despachando ejecución, dictará decreto"
+      },
+      {
+       "acto": "Audiencia a las partes si el juez aprecia posible cláusula abusiva",
+       "plazo": "15 días",
+       "articulo": "552",
+       "literal": "dará audiencia por quince días a las partes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El tribunal deniega el despacho",
+       "entonces": "Auto directamente apelable (solo con el acreedor); también cabe reposición previa, a elección del acreedor.",
+       "articulos": [
+        "552"
+       ],
+       "literal": {
+        "articulo": "552",
+        "texto": "El auto que deniegue el despacho de la ejecución será directamente apelable, sustanciándose la apelación sólo con el acreedor."
+       }
+      },
+      {
+       "si": "Firme la denegación",
+       "entonces": "El acreedor solo puede acudir al proceso ordinario, salvo cosa juzgada.",
+       "articulos": [
+        "552"
+       ],
+       "literal": {
+        "articulo": "552",
+        "texto": "el acreedor sólo podrá hacer valer sus derechos en el proceso ordinario correspondiente"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se cita o emplaza al ejecutado al notificarle el despacho?",
+      "a": "No: se le notifica sin citación ni emplazamiento, para que pueda personarse en cualquier momento.",
+      "articulos": [
+       "553"
+      ],
+      "literal": {
+       "articulo": "553",
+       "texto": "sin citación ni emplazamiento, para que en cualquier momento pueda personarse en la ejecución"
+      }
+     },
+     "conexiones": [
+      "551",
+      "552",
+      "553",
+      "557"
+     ]
+    },
+    {
+     "id": "eje-oposicion",
+     "fase": "Oposición a la ejecución",
+     "subtitulo": "Motivos según el título; defectos procesales y fondo",
+     "descripcion": "Con título judicial, arbitral o de mediación: pago o cumplimiento justificado documentalmente, caducidad y pactos en documento público; no suspende. Con títulos no judiciales: lista cerrada del art. 557 (pago, compensación, pluspetición, prescripción, quita, transacción, cláusulas abusivas) y sí suspende. En ambos casos caben defectos procesales (art. 559). Se resuelve por auto apelable.",
+     "articulos": [
+      "556",
+      "557",
+      "559",
+      "560",
+      "561"
+     ],
+     "plazos": [
+      {
+       "acto": "Oponerse a la ejecución",
+       "plazo": "10 días desde la notificación del auto",
+       "articulo": "556",
+       "literal": "dentro de los diez días siguientes a la notificación del auto en que se despache ejecución"
+      },
+      {
+       "acto": "Alegaciones del ejecutante sobre defectos procesales",
+       "plazo": "5 días",
+       "articulo": "559",
+       "literal": "el ejecutante podrá formular alegaciones sobre éstos, en el plazo de cinco días"
+      },
+      {
+       "acto": "Subsanar un defecto subsanable",
+       "plazo": "10 días",
+       "articulo": "559",
+       "literal": "concederá mediante providencia al ejecutante un plazo de diez días para subsanarlo"
+      },
+      {
+       "acto": "Impugnar la oposición por motivos de fondo",
+       "plazo": "5 días",
+       "articulo": "560",
+       "literal": "el ejecutante podrá impugnar la oposición basada en motivos de fondo en el plazo de cinco días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El título es una sentencia y el ejecutado se opone",
+       "entonces": "La oposición no suspende la ejecución.",
+       "articulos": [
+        "556"
+       ],
+       "literal": {
+        "articulo": "556",
+        "texto": "La oposición que se formule en los casos del apartado anterior no suspenderá el curso de la ejecución."
+       }
+      },
+      {
+       "si": "El título es no judicial (escritura, póliza…) y el ejecutado se opone",
+       "entonces": "El LAJ suspende la ejecución.",
+       "articulos": [
+        "557"
+       ],
+       "literal": {
+        "articulo": "557",
+        "texto": "el Letrado de la Administración de Justicia mediante diligencia de ordenación suspenderá el curso de la ejecución"
+       }
+      },
+      {
+       "si": "Se desestima totalmente la oposición",
+       "entonces": "La ejecución sigue adelante y se condena en costas al ejecutado.",
+       "articulos": [
+        "561"
+       ],
+       "literal": {
+        "articulo": "561",
+        "texto": "El auto que desestime totalmente la oposición condenará en las costas de ésta al ejecutado"
+       }
+      },
+      {
+       "si": "Se recurre el auto que resuelve la oposición",
+       "entonces": "Apelación; no suspende si el auto fue desestimatorio de la oposición.",
+       "articulos": [
+        "561"
+       ],
+       "literal": {
+        "articulo": "561",
+        "texto": "Contra el auto que resuelva la oposición podrá interponerse recurso de apelación, que no suspenderá el curso de la ejecución si la resolución recurrida fuera desestimatoria de la oposición."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Ejecución de sentencia: ¿puede el ejecutado oponerse alegando prescripción?",
+      "a": "No figura entre los motivos del art. 556.1 (pago o cumplimiento, caducidad de la acción ejecutiva y pactos o transacciones en documento público). La prescripción es motivo para títulos no judiciales (art. 557.1.4.ª).",
+      "articulos": [
+       "556",
+       "557"
+      ],
+      "literal": {
+       "articulo": "557",
+       "texto": "4.ª Prescripción y caducidad."
+      }
+     },
+     "conexiones": [
+      "556",
+      "557",
+      "558",
+      "559",
+      "560",
+      "561"
+     ],
+     "duda": "El art. 556.1 no menciona la prescripción para títulos judiciales; el 557.1 sí para los no judiciales. La respuesta de la tarjeta se basa solo en esa enumeración literal: confirma si hay otra vía que quieras recoger."
+    },
+    {
+     "id": "eje-impugnacion",
+     "fase": "Impugnar actos de ejecución",
+     "subtitulo": "Infracciones durante la ejecución",
+     "descripcion": "Al margen de la oposición, se pueden denunciar infracciones en los actos concretos: reposición contra resoluciones, apelación cuando la ley lo prevea o escrito al tribunal si no hay resolución. Si se actúa en contra del título judicial: reposición y, si se desestima, apelación.",
+     "articulos": [
+      "562",
+      "563"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "No hay resolución expresa que recurrir",
+       "entonces": "Escrito dirigido al tribunal.",
+       "articulos": [
+        "562"
+       ],
+       "literal": {
+        "articulo": "562",
+        "texto": "Mediante escrito dirigido al Tribunal si no existiera resolución expresa frente a la que recurrir."
+       }
+      },
+      {
+       "si": "El tribunal provee en contradicción con la sentencia que se ejecuta",
+       "entonces": "Reposición y, si se desestima, apelación.",
+       "articulos": [
+        "563"
+       ],
+       "literal": {
+        "articulo": "563",
+        "texto": "la parte perjudicada podrá interponer recurso de reposición y, si se desestimare, de apelación"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué recurso cabe contra la resolución del LAJ contraria al título ejecutivo judicial?",
+      "a": "Previa reposición, recurso de revisión ante el tribunal y, si se desestima, apelación.",
+      "articulos": [
+       "563"
+      ],
+      "literal": {
+       "articulo": "563",
+       "texto": "previa reposición, cabrá contra ella recurso de revisión ante el tribunal y, si fuera desestimado, recurso de apelación"
+      }
+     },
+     "conexiones": [
+      "225",
+      "562",
+      "563"
+     ]
+    },
+    {
+     "id": "eje-requerimiento",
+     "fase": "Requerimiento de pago",
+     "subtitulo": "Solo con títulos no judiciales",
+     "descripcion": "Con títulos judiciales, arbitrales o de mediación que condenan a pagar dinero no hace falta requerir de pago para embargar. Con los demás títulos sí, salvo que se aporte acta notarial de requerimiento previo.",
+     "articulos": [
+      "580",
+      "581"
+     ],
+     "plazos": [
+      {
+       "acto": "Antelación del requerimiento notarial que evita el judicial",
+       "plazo": "Al menos 10 días",
+       "articulo": "581",
+       "literal": "con al menos diez días de antelación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se ejecuta una sentencia de condena dineraria",
+       "entonces": "No es necesario el requerimiento de pago para embargar.",
+       "articulos": [
+        "580"
+       ],
+       "literal": {
+        "articulo": "580",
+        "texto": "no será necesario requerir de pago al ejecutado para proceder al embargo de sus bienes"
+       }
+      },
+      {
+       "si": "Se ejecuta un título no judicial y no paga en el acto",
+       "entonces": "Embargo de bienes suficientes.",
+       "articulos": [
+        "581"
+       ],
+       "literal": {
+        "articulo": "581",
+        "texto": "si no pagase en el acto, el letrado o letrada de la Administración de Justicia procederá al embargo de sus bienes"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Ejecución de sentencia de condena a pagar: ¿hay que requerir de pago antes de embargar?",
+      "a": "No.",
+      "articulos": [
+       "580"
+      ],
+      "literal": {
+       "articulo": "580",
+       "texto": "no será necesario requerir de pago al ejecutado"
+      }
+     },
+     "conexiones": [
+      "580",
+      "581",
+      "582",
+      "583"
+     ]
+    },
+    {
+     "id": "eje-embargo",
+     "fase": "Embargo",
+     "subtitulo": "Suficiencia, orden, inembargables y tercerías",
+     "descripcion": "Se embarga lo suficiente, nunca bienes de existencia no constatada (salvo cuentas con límite). Si no hay pacto, el LAJ atiende a la facilidad de enajenación y menor onerosidad, y si no es posible, al orden legal. Hay bienes inembargables y límites en salarios y pensiones. Terceros pueden interponer tercería de dominio o de mejor derecho.",
+     "articulos": [
+      "584",
+      "588",
+      "589",
+      "592",
+      "605",
+      "607",
+      "595",
+      "614"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El ejecutante no señala bienes suficientes",
+       "entonces": "Requerimiento al ejecutado para que manifieste sus bienes, con apercibimiento de sanciones.",
+       "articulos": [
+        "589"
+       ],
+       "literal": {
+        "articulo": "589",
+        "texto": "requerirá, mediante diligencia de ordenación, de oficio al ejecutado para que manifieste relacionadamente bienes y derechos suficientes"
+       }
+      },
+      {
+       "si": "Se quiere embargar el salario",
+       "entonces": "Inembargable hasta el SMI; por encima, escala de porcentajes.",
+       "articulos": [
+        "607"
+       ],
+       "literal": {
+        "articulo": "607",
+        "texto": "Es inembargable el salario, sueldo, pensión, retribución o su equivalente, que no exceda de la cuantía señalada para el salario mínimo interprofesional."
+       }
+      },
+      {
+       "si": "Un tercero dice ser dueño del bien embargado",
+       "entonces": "Tercería de dominio, con principio de prueba por escrito.",
+       "articulos": [
+        "595",
+        "596"
+       ],
+       "literal": {
+        "articulo": "595",
+        "texto": "Con la demanda de tercería de dominio deberá aportarse un principio de prueba por escrito del fundamento de la pretensión del tercerista."
+       }
+      },
+      {
+       "si": "Otro acreedor dice tener preferencia",
+       "entonces": "Tercería de mejor derecho, con principio de prueba del crédito preferente.",
+       "articulos": [
+        "614"
+       ],
+       "literal": {
+        "articulo": "614",
+        "texto": "podrá interponer demanda de tercería de mejor derecho"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué se embarga en primer lugar según el orden legal del art. 592.2?",
+      "a": "Dinero o cuentas corrientes de cualquier clase.",
+      "articulos": [
+       "592"
+      ],
+      "literal": {
+       "articulo": "592",
+       "texto": "1.º Dinero o cuentas corrientes de cualquier clase."
+      }
+     },
+     "conexiones": [
+      "584",
+      "588",
+      "589",
+      "592",
+      "595",
+      "596",
+      "605",
+      "606",
+      "607",
+      "614"
+     ]
+    },
+    {
+     "id": "eje-apremio",
+     "fase": "Realización de los bienes (apremio)",
+     "subtitulo": "Convenio, entidad especializada o subasta",
+     "descripcion": "Los bienes se avalúan (salvo acuerdo) y se realizan por convenio aprobado por el LAJ, por persona o entidad especializada o, a falta de convenio, en subasta judicial. Las subastas de inmuebles tienen reglas propias.",
+     "articulos": [
+      "636",
+      "637",
+      "640",
+      "643",
+      "655"
+     ],
+     "plazos": [
+      {
+       "acto": "Alegaciones sobre la formación de lotes",
+       "plazo": "5 días",
+       "articulo": "643",
+       "literal": "se emplazará a las partes por cinco días para que aleguen lo que tengan por conveniente sobre la formación de lotes para la subasta"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No hay convenio de realización",
+       "entonces": "Subasta judicial.",
+       "articulos": [
+        "636"
+       ],
+       "literal": {
+        "articulo": "636",
+        "texto": "A falta de convenio de realización, la enajenación de los bienes embargados se llevará a cabo mediante subasta judicial."
+       }
+      },
+      {
+       "si": "Ejecutante y ejecutado pactan cómo vender",
+       "entonces": "El LAJ lo aprueba por decreto y suspende la ejecución sobre esos bienes.",
+       "articulos": [
+        "640"
+       ],
+       "literal": {
+        "articulo": "640",
+        "texto": "lo aprobará el letrado de la Administración de Justicia mediante decreto y suspenderá la ejecución respecto del bien o bienes objeto del acuerdo"
+       }
+      },
+      {
+       "si": "Con la subasta no se cubrirían ni sus gastos",
+       "entonces": "No se convoca.",
+       "articulos": [
+        "643"
+       ],
+       "literal": {
+        "articulo": "643",
+        "texto": "No se convocará subasta de bienes o lotes de bienes cuando, según su tasación o valoración definitiva, sea previsible que con su realización no se obtendrá una cantidad de dinero que supere, cuando menos, los gastos originados por la misma subasta."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hace falta avalúo si ejecutante y ejecutado se ponen de acuerdo sobre el valor?",
+      "a": "No.",
+      "articulos": [
+       "637"
+      ],
+      "literal": {
+       "articulo": "637",
+       "texto": "a no ser que ejecutante y ejecutado se hayan puesto de acuerdo sobre su valor"
+      }
+     },
+     "conexiones": [
+      "634",
+      "635",
+      "636",
+      "637",
+      "640",
+      "643",
+      "655"
+     ],
+     "aviso": "El art. 641 (realización por persona o entidad especializada) figura «(Sin contenido)» en el texto consolidado. El detalle de las subastas (arts. 643 a 675) aún no está desglosado."
+    }
+   ],
+   "grupo": "Libro III · Ejecución forzosa y medidas cautelares"
+  },
+  {
+   "id": "cautelares",
+   "nombre": "Medidas cautelares",
+   "bloque": "medidas cautelares",
+   "resumen": "Solicitud, adopción con o sin audiencia del demandado, oposición, caución y alzamiento.",
+   "ambito": {
+    "corto": "A instancia del actor; nunca de oficio (regla general)",
+    "texto": "Las pide el actor (principal o reconvencional), bajo su responsabilidad, para asegurar la efectividad de una eventual sentencia estimatoria. Como regla, no se acuerdan de oficio ni más gravosas que las pedidas.",
+    "articulos": [
+     "721"
+    ],
+    "literal": [
+     {
+      "articulo": "721",
+      "texto": "Las medidas cautelares previstas en este Título no podrán ser acordadas de oficio por el tribunal"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "cau-presupuestos",
+     "fase": "Presupuestos",
+     "subtitulo": "Peligro por la mora, apariencia de buen derecho y caución",
+     "descripcion": "Hay que justificar el peligro de que la tutela se frustre durante el proceso, aportar datos que funden un juicio provisional favorable y ofrecer caución. La medida debe ser la menos gravosa igualmente eficaz.",
+     "articulos": [
+      "726",
+      "727",
+      "728"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Se pretende alterar una situación consentida durante largo tiempo",
+       "entonces": "No se acuerda, salvo que el solicitante justifique por qué no la pidió antes.",
+       "articulos": [
+        "728"
+       ],
+       "literal": {
+        "articulo": "728",
+        "texto": "No se acordarán medidas cautelares cuando con ellas se pretenda alterar situaciones de hecho consentidas por el solicitante durante largo tiempo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Debe el solicitante prestar caución?",
+      "a": "Sí, salvo que expresamente se disponga otra cosa, para responder de los daños y perjuicios que la medida pueda causar al demandado.",
+      "articulos": [
+       "728"
+      ],
+      "literal": {
+       "articulo": "728",
+       "texto": "Salvo que expresamente se disponga otra cosa, el solicitante de la medida cautelar deberá prestar caución suficiente"
+      }
+     },
+     "conexiones": [
+      "529",
+      "726",
+      "727",
+      "728"
+     ]
+    },
+    {
+     "id": "cau-momento",
+     "fase": "Momento y solicitud",
+     "subtitulo": "Con la demanda, antes o después",
+     "descripcion": "Lo ordinario es pedirlas con la demanda. Antes de la demanda solo por urgencia o necesidad, y la demanda debe presentarse después en plazo. La solicitud debe ser clara, con documentos y ofrecimiento de caución.",
+     "articulos": [
+      "730",
+      "732"
+     ],
+     "plazos": [
+      {
+       "acto": "Presentar la demanda si las medidas se acordaron antes",
+       "plazo": "20 días desde su adopción",
+       "articulo": "730",
+       "literal": "si la demanda no se presentare ante el mismo tribunal que conoció de la solicitud de aquéllas en los veinte días siguientes a su adopción"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se piden antes de la demanda y luego no se presenta en plazo",
+       "entonces": "Quedan sin efecto; costas y responsabilidad por daños del solicitante.",
+       "articulos": [
+        "730"
+       ],
+       "literal": {
+        "articulo": "730",
+        "texto": "condenará al solicitante en las costas y declarará que es responsable de los daños y perjuicios"
+       }
+      },
+      {
+       "si": "Se piden con la demanda",
+       "entonces": "Es el momento ordinario.",
+       "articulos": [
+        "730"
+       ],
+       "literal": {
+        "articulo": "730",
+        "texto": "Las medidas cautelares se solicitarán, de ordinario, junto con la demanda principal."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En la solicitud de medidas cautelares, ¿qué hay que decir sobre la caución?",
+      "a": "Ofrecer su prestación, especificando tipo y justificando el importe.",
+      "articulos": [
+       "732"
+      ],
+      "literal": {
+       "articulo": "732",
+       "texto": "En el escrito de petición habrá de ofrecerse la prestación de caución, especificando de qué tipo o tipos se ofrece constituirla y con justificación del importe que se propone."
+      }
+     },
+     "conexiones": [
+      "730",
+      "731",
+      "732"
+     ]
+    },
+    {
+     "id": "cau-adopcion",
+     "fase": "Adopción: con o sin audiencia",
+     "subtitulo": "Vista y auto",
+     "descripcion": "Regla general: audiencia previa del demandado en una vista. Excepción: sin audiencia si hay urgencia o riesgo para el buen fin de la medida. Se resuelve por auto.",
+     "articulos": [
+      "733",
+      "734",
+      "735",
+      "736"
+     ],
+     "plazos": [
+      {
+       "acto": "Auto sin audiencia del demandado",
+       "plazo": "5 días",
+       "articulo": "733",
+       "literal": "el tribunal podrá acordarla sin más trámites mediante auto, en el plazo de cinco días"
+      },
+      {
+       "acto": "Convocatoria a la vista",
+       "plazo": "5 días",
+       "articulo": "734",
+       "literal": "en el plazo de cinco días, contados desde la notificación de aquélla al demandado convocará a las partes a una vista"
+      },
+      {
+       "acto": "Celebración de la vista",
+       "plazo": "Dentro de 10 días",
+       "articulo": "734",
+       "literal": "que se celebrará dentro de los diez días siguientes"
+      },
+      {
+       "acto": "Auto tras la vista",
+       "plazo": "5 días",
+       "articulo": "735",
+       "literal": "Terminada la vista, el tribunal, en el plazo de cinco días, decidirá mediante auto"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se acuerdan sin oír al demandado",
+       "entonces": "Contra el auto no cabe recurso; el demandado puede oponerse (fase siguiente).",
+       "articulos": [
+        "733"
+       ],
+       "literal": {
+        "articulo": "733",
+        "texto": "Contra el auto que acuerde medidas cautelares sin previa audiencia del demandado no cabrá recurso alguno"
+       }
+      },
+      {
+       "si": "Se acuerdan tras la vista",
+       "entonces": "Apelación sin efectos suspensivos.",
+       "articulos": [
+        "735"
+       ],
+       "literal": {
+        "articulo": "735",
+        "texto": "Contra el auto que acuerde medidas cautelares cabrá recurso de apelación, sin efectos suspensivos."
+       }
+      },
+      {
+       "si": "Se deniegan",
+       "entonces": "Solo apelación, con tramitación preferente; se puede reiterar si cambian las circunstancias.",
+       "articulos": [
+        "736"
+       ],
+       "literal": {
+        "articulo": "736",
+        "texto": "Contra el auto en que el tribunal deniegue la medida cautelar sólo cabrá recurso de apelación, al que se dará una tramitación preferente."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En la vista de medidas cautelares, ¿se pueden recurrir las resoluciones sobre la prueba propuesta?",
+      "a": "No; previa protesta, las infracciones se alegan en el recurso contra el auto que resuelva sobre las medidas.",
+      "articulos": [
+       "734"
+      ],
+      "literal": {
+       "articulo": "734",
+       "texto": "Contra las resoluciones del tribunal sobre el desarrollo de la comparecencia, su contenido y la prueba propuesta no cabrá recurso alguno"
+      }
+     },
+     "conexiones": [
+      "733",
+      "734",
+      "735",
+      "736"
+     ]
+    },
+    {
+     "id": "cau-cumplimiento",
+     "fase": "Caución y cumplimiento",
+     "subtitulo": "Primero la caución",
+     "descripcion": "La caución se presta siempre antes de cumplir la medida. Después la medida se ejecuta de oficio; el embargo preventivo sigue las reglas del embargo, sin manifestación de bienes.",
+     "articulos": [
+      "737",
+      "738"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "La medida es un embargo preventivo",
+       "entonces": "Reglas del embargo ejecutivo, pero sin obligación del deudor de manifestar bienes.",
+       "articulos": [
+        "738"
+       ],
+       "literal": {
+        "articulo": "738",
+        "texto": "pero sin que el deudor esté obligado a la manifestación de bienes que dispone el artículo 589"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede cumplirse la medida cautelar antes de prestar la caución?",
+      "a": "No: la caución es siempre previa a cualquier acto de cumplimiento.",
+      "articulos": [
+       "737"
+      ],
+      "literal": {
+       "articulo": "737",
+       "texto": "La prestación de caución será siempre previa a cualquier acto de cumplimiento de la medida cautelar acordada."
+      }
+     },
+     "conexiones": [
+      "584",
+      "589",
+      "737",
+      "738"
+     ]
+    },
+    {
+     "id": "cau-oposicion",
+     "fase": "Oposición (medidas sin audiencia)",
+     "subtitulo": "Y caución sustitutoria",
+     "descripcion": "Si la medida se adoptó sin oír al demandado, este puede oponerse por cualquier motivo y ofrecer caución sustitutoria. Se celebra vista y se resuelve por auto apelable sin efecto suspensivo.",
+     "articulos": [
+      "739",
+      "740",
+      "741",
+      "742",
+      "746",
+      "747"
+     ],
+     "plazos": [
+      {
+       "acto": "Oponerse a la medida adoptada sin audiencia",
+       "plazo": "20 días desde la notificación del auto",
+       "articulo": "739",
+       "literal": "podrá éste formular oposición en el plazo de veinte días, contados desde la notificación del auto que acuerda las medidas cautelares"
+      },
+      {
+       "acto": "Auto sobre la oposición tras la vista",
+       "plazo": "5 días",
+       "articulo": "741",
+       "literal": "Celebrada la vista, el tribunal, en el plazo de cinco días, decidirá en forma de auto sobre la oposición."
+      },
+      {
+       "acto": "Traslado de la solicitud de caución sustitutoria",
+       "plazo": "5 días",
+       "articulo": "747",
+       "literal": "Previo traslado del escrito al solicitante de la medida cautelar, por cinco días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se mantienen las medidas",
+       "entonces": "Costas al opositor.",
+       "articulos": [
+        "741"
+       ],
+       "literal": {
+        "articulo": "741",
+        "texto": "Si mantuviere las medidas cautelares acordadas condenará al opositor a las costas de la oposición."
+       }
+      },
+      {
+       "si": "Se alzan las medidas",
+       "entonces": "Costas y daños y perjuicios a cargo del actor.",
+       "articulos": [
+        "741",
+        "742"
+       ],
+       "literal": {
+        "articulo": "741",
+        "texto": "Si alzare las medidas cautelares, condenará al actor a las costas y al pago de los daños y perjuicios que éstas hayan producido."
+       }
+      },
+      {
+       "si": "Se resuelve sobre la caución sustitutoria",
+       "entonces": "Contra ese auto no cabe recurso.",
+       "articulos": [
+        "747"
+       ],
+       "literal": {
+        "articulo": "747",
+        "texto": "Contra el auto que resuelva aceptar o rechazar caución sustitutoria no cabrá recurso alguno."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué recurso cabe contra el auto que decide la oposición a medidas cautelares?",
+      "a": "Apelación sin efecto suspensivo.",
+      "articulos": [
+       "741"
+      ],
+      "literal": {
+       "articulo": "741",
+       "texto": "El auto en que se decida sobre la oposición será apelable sin efecto suspensivo."
+      }
+     },
+     "conexiones": [
+      "712",
+      "739",
+      "740",
+      "741",
+      "742",
+      "746",
+      "747"
+     ]
+    },
+    {
+     "id": "cau-alzamiento",
+     "fase": "Modificación y alzamiento",
+     "subtitulo": "Hechos nuevos y efecto de la sentencia",
+     "descripcion": "Pueden modificarse por hechos que no pudieron tenerse en cuenta. Se alzan si el demandado es absuelto (salvo que el recurrente pida mantenerlas) y de oficio con sentencia absolutoria firme. Con sentencia condenatoria se mantienen hasta que pase el plazo del art. 548.",
+     "articulos": [
+      "743",
+      "744",
+      "745",
+      "731"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Sentencia absolutoria firme",
+       "entonces": "El LAJ alza de oficio todas las medidas; daños y perjuicios por el art. 742.",
+       "articulos": [
+        "745"
+       ],
+       "literal": {
+        "articulo": "745",
+        "texto": "Firme una sentencia absolutoria, sea en el fondo o en la instancia, se alzarán de oficio por el Letrado de la Administración de Justicia todas las medidas cautelares adoptadas"
+       }
+      },
+      {
+       "si": "Sentencia condenatoria",
+       "entonces": "Se mantienen hasta que transcurra el plazo del art. 548; si no se pide ejecución, se alzan.",
+       "articulos": [
+        "731"
+       ],
+       "literal": {
+        "articulo": "731",
+        "texto": "deberán mantenerse las medidas acordadas hasta que transcurra el plazo a que se refiere el artículo 548 de la presente Ley"
+       }
+      },
+      {
+       "si": "El proceso queda en suspenso más de seis meses por causa del solicitante",
+       "entonces": "No puede mantenerse la medida.",
+       "articulos": [
+        "731"
+       ],
+       "literal": {
+        "articulo": "731",
+        "texto": "Tampoco podrá mantenerse una medida cautelar si el proceso quedare en suspenso durante más de seis meses por causa imputable al solicitante de la medida."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Con qué fundamento pueden modificarse las medidas cautelares?",
+      "a": "Alegando y probando hechos y circunstancias que no pudieron tenerse en cuenta al concederlas o en el plazo para oponerse.",
+      "articulos": [
+       "743"
+      ],
+      "literal": {
+       "articulo": "743",
+       "texto": "alegando y probando hechos y circunstancias que no pudieron tenerse en cuenta al tiempo de su concesión o dentro del plazo para oponerse a ellas"
+      }
+     },
+     "conexiones": [
+      "548",
+      "731",
+      "743",
+      "744",
+      "745"
+     ]
+    }
+   ],
+   "grupo": "Libro III · Ejecución forzosa y medidas cautelares"
   },
   {
    "id": "monitorio",
@@ -1276,9 +2265,12 @@
       "576",
       "816"
      ],
-     "aviso": "El módulo de ejecución (despacho, oposición, embargo) aún no está hecho."
+     "continua_en": [
+      "ejecucion"
+     ]
     }
-   ]
+   ],
+   "grupo": "Libro IV · Procesos especiales"
   }
  ]
 }

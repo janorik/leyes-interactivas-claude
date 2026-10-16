@@ -121,7 +121,7 @@ No empieces la siguiente fase sin su visto bueno.
   - fecha de versión y aviso del BOE.
   - Incluye un informe de control: número de artículos extraídos y artículos con posibles problemas de extracción.
 - **F2** — Mapa procesal (prototipo hecho): juicio ordinario, juicio verbal y monitorio, con plazos, alternativas y repaso. Pendiente de revisión del usuario.
-- **F3** — Mapa procesal: ejecución y embargo, y medidas cautelares.
+- **F3** — Mapa procesal: ejecución y embargo (arts. 517-680, sin la hipotecaria) y medidas cautelares (arts. 721-747). Hecha; pendiente de revisión del usuario.
 - **F4** — Mapa de recursos.
 - **F5** — Marcadores y notas.
 - **F6** — Procesos especiales: familia y capacidad, división de herencia, cambiario y ejecución hipotecaria (plazos, esquemas y repaso).
