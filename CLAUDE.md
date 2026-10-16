@@ -80,13 +80,15 @@ repaso:         [{id, pregunta, respuesta, articulos, origen, revisado}]
 - Publicación con GitHub Pages desde la rama principal, carpeta raíz.
 
 ## Vistas de la app LEC
-1. Árbol navegable (Libros > Títulos > Capítulos > Secciones > Artículos) con el texto literal.
-2. Buscador por número de artículo y por texto.
-3. Esquemas de procedimientos por fases, con el artículo de cada fase enlazado.
-4. Tabla de plazos filtrable por bloque y por acto procesal.
-5. Mapa de recursos: qué recurso cabe, contra qué resolución, plazo y órgano.
-6. Marcadores y notas personales, guardados en el almacenamiento local del navegador. No se sincronizan entre el móvil y el PC; el usuario lo sabe.
-7. Modo repaso con tarjetas generadas a partir de plazos, procedimientos y recursos, con su progreso guardado en local.
+Enfoque acordado con el usuario: app para **aprender**, no solo para leer la ley. El centro es el **mapa procesal**.
+1. **Procesos** (pantalla de inicio): cada procedimiento como ruta de fases en vista de conjunto. Cada fase abre una ficha con: qué ocurre, plazos (con la frase literal del artículo), alternativas desplegables («¿y si no contesta?»), pregunta «Ponte a prueba», conexiones y enlaces a otros procesos. En móvil la ficha se abre como hoja inferior; en ordenador, como panel lateral.
+2. **Ley**: árbol navegable (Libros > Títulos > Capítulos > Secciones > Artículos) con el texto literal.
+3. **Buscar**: por número de artículo, por texto de la ley y por fases y plazos del mapa.
+4. **Repaso**: tarjetas generadas de preguntas, alternativas y plazos, con progreso guardado en local.
+5. Mapa de recursos: qué recurso cabe, contra qué resolución, plazo y órgano (pendiente).
+6. Marcadores y notas personales, guardados en el almacenamiento local del navegador. No se sincronizan entre el móvil y el PC; el usuario lo sabe (pendiente).
+
+Datos del mapa: `lec/datos/procedimientos.json` (contenido elaborado, `revisado: false`). Cada plazo, alternativa y respuesta lleva una frase `literal`; `scripts/insertar_datos.py` comprueba que esa frase está en el artículo citado y, si no, no publica.
 
 Todo artículo citado en cualquier vista es un enlace que abre su texto literal.
 
@@ -118,10 +120,10 @@ No empieces la siguiente fase sin su visto bueno.
   - buscador;
   - fecha de versión y aviso del BOE.
   - Incluye un informe de control: número de artículos extraídos y artículos con posibles problemas de extracción.
-- **F2** — Tabla de plazos de los bloques núcleo.
-- **F3** — Esquemas de procedimientos: ordinario, verbal, monitorio, ejecución y cautelares.
+- **F2** — Mapa procesal (prototipo hecho): juicio ordinario, juicio verbal y monitorio, con plazos, alternativas y repaso. Pendiente de revisión del usuario.
+- **F3** — Mapa procesal: ejecución y embargo, y medidas cautelares.
 - **F4** — Mapa de recursos.
-- **F5** — Marcadores, notas y modo repaso.
+- **F5** — Marcadores y notas.
 - **F6** — Procesos especiales: familia y capacidad, división de herencia, cambiario y ejecución hipotecaria (plazos, esquemas y repaso).
 - **F7** — Portada (`/index.html`) que enlaza a cada ley, preparada para añadir LECrim, LRJS y ET.
 - **Segunda parte** — Calculadora de plazos con calendario.

@@ -9,10 +9,19 @@
    "ambito": {
     "corto": "Más de 15.000 € o por materia (art. 249)",
     "texto": "Por cuantía: demandas de más de 15.000 € o de cuantía imposible de calcular. Por materia: las del art. 249.1, cualquiera que sea su cuantía. La materia prevalece sobre la cuantía.",
-    "articulos": ["249", "248"],
+    "articulos": [
+     "249",
+     "248"
+    ],
     "literal": [
-     {"articulo": "249", "texto": "las demandas cuya cuantía exceda de quince mil euros y aquéllas cuyo interés económico resulte imposible de calcular"},
-     {"articulo": "248", "texto": "Las normas de determinación de la clase de juicio por razón de la cuantía sólo se aplicarán en defecto de norma por razón de la materia."}
+     {
+      "articulo": "249",
+      "texto": "las demandas cuya cuantía exceda de quince mil euros y aquéllas cuyo interés económico resulte imposible de calcular"
+     },
+     {
+      "articulo": "248",
+      "texto": "Las normas de determinación de la clase de juicio por razón de la cuantía sólo se aplicarán en defecto de norma por razón de la materia."
+     }
     ]
    },
    "revisado": false,
@@ -22,17 +31,52 @@
      "fase": "Antes de demandar",
      "subtitulo": "Negociación previa (MASC) cuando la ley la exija",
      "descripcion": "Si la ley exige un medio adecuado de solución de controversias como requisito de procedibilidad, la demanda debe describir la negociación previa (o su imposibilidad) y acompañar el documento que lo acredite. Si falta, la demanda no se admite.",
-     "articulos": ["399", "264", "403"],
+     "articulos": [
+      "399",
+      "264",
+      "403"
+     ],
      "plazos": [],
      "ramas": [
-      {"si": "Se acudió a MASC y consta en la demanda", "entonces": "La demanda puede admitirse.", "articulos": ["399"],
-       "literal": {"articulo": "399", "texto": "se hará constar en la demanda la descripción del proceso de negociación previo llevado a cabo o la imposibilidad del mismo"}},
-      {"si": "No constan esas circunstancias cuando la ley lo exige", "entonces": "Inadmisión de la demanda.", "articulos": ["403"],
-       "literal": {"articulo": "403", "texto": "No se admitirán las demandas cuando no se acompañen a ella los documentos que la ley expresamente exija para la admisión de aquellas"}}
+      {
+       "si": "Se acudió a MASC y consta en la demanda",
+       "entonces": "La demanda puede admitirse.",
+       "articulos": [
+        "399"
+       ],
+       "literal": {
+        "articulo": "399",
+        "texto": "se hará constar en la demanda la descripción del proceso de negociación previo llevado a cabo o la imposibilidad del mismo"
+       }
+      },
+      {
+       "si": "No constan esas circunstancias cuando la ley lo exige",
+       "entonces": "Inadmisión de la demanda.",
+       "articulos": [
+        "403"
+       ],
+       "literal": {
+        "articulo": "403",
+        "texto": "No se admitirán las demandas cuando no se acompañen a ella los documentos que la ley expresamente exija para la admisión de aquellas"
+       }
+      }
      ],
-     "pregunta": {"q": "¿Qué documento debe acompañar a la demanda cuando la ley exige negociación previa?", "a": "El documento que acredite haberse intentado la actividad negociadora previa, o declaración responsable de la imposibilidad por desconocer el domicilio o medio de requerimiento del demandado.", "articulos": ["264"],
-      "literal": {"articulo": "264", "texto": "El documento que acredite haberse intentado la actividad negociadora previa a la vía judicial cuando la ley exija dicho intento como requisito de procedibilidad"}},
-     "conexiones": ["264", "399", "403"],
+     "pregunta": {
+      "q": "¿Qué documento debe acompañar a la demanda cuando la ley exige negociación previa?",
+      "a": "El documento que acredite haberse intentado la actividad negociadora previa, o declaración responsable de la imposibilidad por desconocer el domicilio o medio de requerimiento del demandado.",
+      "articulos": [
+       "264"
+      ],
+      "literal": {
+       "articulo": "264",
+       "texto": "El documento que acredite haberse intentado la actividad negociadora previa a la vía judicial cuando la ley exija dicho intento como requisito de procedibilidad"
+      }
+     },
+     "conexiones": [
+      "264",
+      "399",
+      "403"
+     ],
      "aviso": "Qué casos exigen el MASC lo regula otra ley (no incluida en esta app). Aquí solo se recoge lo que dice la LEC."
     },
     {
@@ -40,148 +84,432 @@
      "fase": "Demanda",
      "subtitulo": "Contenido y forma",
      "descripcion": "Identificación de las partes, hechos y fundamentos de derecho numerados y separados, y petición clara y precisa. Los fundamentos incluyen las alegaciones procesales (capacidad, jurisdicción, competencia, clase de juicio).",
-     "articulos": ["399", "400"],
+     "articulos": [
+      "399",
+      "400"
+     ],
      "plazos": [],
      "ramas": [],
-     "pregunta": {"q": "¿Cómo deben exponerse los hechos y los fundamentos de derecho en la demanda?", "a": "Numerados y separados, fijando con claridad y precisión lo que se pida.", "articulos": ["399"],
-      "literal": {"articulo": "399", "texto": "se expondrán numerados y separados los hechos y los fundamentos de derecho, y se fijará con claridad y precisión lo que se pida"}},
-     "conexiones": ["155", "264", "265", "400"]
+     "pregunta": {
+      "q": "¿Cómo deben exponerse los hechos y los fundamentos de derecho en la demanda?",
+      "a": "Numerados y separados, fijando con claridad y precisión lo que se pida.",
+      "articulos": [
+       "399"
+      ],
+      "literal": {
+       "articulo": "399",
+       "texto": "se expondrán numerados y separados los hechos y los fundamentos de derecho, y se fijará con claridad y precisión lo que se pida"
+      }
+     },
+     "conexiones": [
+      "155",
+      "264",
+      "265",
+      "400"
+     ]
     },
     {
      "id": "ord-admision",
      "fase": "Admisión y emplazamiento",
      "subtitulo": "Decreto del Letrado de la Administración de Justicia",
      "descripcion": "El LAJ admite la demanda por decreto y da traslado al demandado para contestar. Da cuenta al tribunal si aprecia falta de jurisdicción o competencia, o defectos formales no subsanados.",
-     "articulos": ["404", "403"],
+     "articulos": [
+      "404",
+      "403"
+     ],
      "plazos": [
-      {"acto": "Contestar a la demanda", "plazo": "20 días", "articulo": "404",
-       "literal": "dará traslado de ella al demandado para que la conteste en el plazo de veinte días"}
+      {
+       "acto": "Contestar a la demanda",
+       "plazo": "20 días",
+       "articulo": "404",
+       "literal": "dará traslado de ella al demandado para que la conteste en el plazo de veinte días"
+      }
      ],
      "ramas": [
-      {"si": "Falta de jurisdicción o competencia, o defectos no subsanados", "entonces": "El LAJ da cuenta al tribunal para que resuelva sobre la admisión.", "articulos": ["404"],
-       "literal": {"articulo": "404", "texto": "dará cuenta al Tribunal para que resuelva sobre la admisión"}}
+      {
+       "si": "Falta de jurisdicción o competencia, o defectos no subsanados",
+       "entonces": "El LAJ da cuenta al tribunal para que resuelva sobre la admisión.",
+       "articulos": [
+        "404"
+       ],
+       "literal": {
+        "articulo": "404",
+        "texto": "dará cuenta al Tribunal para que resuelva sobre la admisión"
+       }
+      }
      ],
-     "pregunta": {"q": "¿Qué plazo tiene el demandado para contestar en el juicio ordinario?", "a": "Veinte días.", "articulos": ["404"],
-      "literal": {"articulo": "404", "texto": "para que la conteste en el plazo de veinte días"}},
-     "conexiones": ["403", "404"]
+     "pregunta": {
+      "q": "¿Qué plazo tiene el demandado para contestar en el juicio ordinario?",
+      "a": "Veinte días.",
+      "articulos": [
+       "404"
+      ],
+      "literal": {
+       "articulo": "404",
+       "texto": "para que la conteste en el plazo de veinte días"
+      }
+     },
+     "conexiones": [
+      "403",
+      "404"
+     ]
     },
     {
      "id": "ord-contestacion",
      "fase": "Contestación y reconvención",
      "subtitulo": "Contesta / no contesta",
      "descripcion": "El demandado debe admitir o negar los hechos y alegar las excepciones materiales y procesales. Puede reconvenir si hay conexión con la demanda principal.",
-     "articulos": ["405", "406", "407", "496"],
+     "articulos": [
+      "405",
+      "406",
+      "407",
+      "496"
+     ],
      "plazos": [
-      {"acto": "Contestar a la reconvención", "plazo": "20 días", "articulo": "407",
-       "literal": "podrán contestar a la reconvención en el plazo de veinte días a partir de la notificación de la demanda reconvencional"}
+      {
+       "acto": "Contestar a la reconvención",
+       "plazo": "20 días",
+       "articulo": "407",
+       "literal": "podrán contestar a la reconvención en el plazo de veinte días a partir de la notificación de la demanda reconvencional"
+      }
      ],
      "ramas": [
-      {"si": "Contesta", "entonces": "Pasa a la audiencia previa. El silencio o las respuestas evasivas pueden considerarse admisión tácita de hechos perjudiciales.", "articulos": ["405"],
-       "literal": {"articulo": "405", "texto": "El tribunal podrá considerar el silencio o las respuestas evasivas del demandado como admisión tácita de los hechos que le sean perjudiciales."}},
-      {"si": "No contesta (no comparece)", "entonces": "Declaración de rebeldía por el LAJ. No equivale a allanamiento ni a admisión de hechos, salvo que la ley diga otra cosa.", "articulos": ["496", "497"],
-       "literal": {"articulo": "496", "texto": "La declaración de rebeldía no será considerada como allanamiento ni como admisión de los hechos de la demanda"}},
-      {"si": "Reconviene", "entonces": "Solo si hay conexión con la demanda principal; el actor reconvenido contesta a la reconvención.", "articulos": ["406", "407"],
-       "literal": {"articulo": "406", "texto": "Sólo se admitirá la reconvención si existiere conexión entre sus pretensiones y las que sean objeto de la demanda principal."}}
+      {
+       "si": "Contesta",
+       "entonces": "Pasa a la audiencia previa. El silencio o las respuestas evasivas pueden considerarse admisión tácita de hechos perjudiciales.",
+       "articulos": [
+        "405"
+       ],
+       "literal": {
+        "articulo": "405",
+        "texto": "El tribunal podrá considerar el silencio o las respuestas evasivas del demandado como admisión tácita de los hechos que le sean perjudiciales."
+       }
+      },
+      {
+       "si": "No contesta (no comparece)",
+       "entonces": "Declaración de rebeldía por el LAJ. No equivale a allanamiento ni a admisión de hechos, salvo que la ley diga otra cosa.",
+       "articulos": [
+        "496",
+        "497"
+       ],
+       "literal": {
+        "articulo": "496",
+        "texto": "La declaración de rebeldía no será considerada como allanamiento ni como admisión de los hechos de la demanda"
+       }
+      },
+      {
+       "si": "Reconviene",
+       "entonces": "Solo si hay conexión con la demanda principal; el actor reconvenido contesta a la reconvención.",
+       "articulos": [
+        "406",
+        "407"
+       ],
+       "literal": {
+        "articulo": "406",
+        "texto": "Sólo se admitirá la reconvención si existiere conexión entre sus pretensiones y las que sean objeto de la demanda principal."
+       }
+      }
      ],
-     "pregunta": {"q": "El demandado no contesta: ¿se tienen por admitidos los hechos de la demanda?", "a": "No. La rebeldía no se considera allanamiento ni admisión de hechos, salvo los casos en que la ley expresamente disponga lo contrario.", "articulos": ["496"],
-      "literal": {"articulo": "496", "texto": "salvo los casos en que la ley expresamente disponga lo contrario"}},
-     "conexiones": ["405", "406", "407", "408", "496", "497"]
+     "pregunta": {
+      "q": "El demandado no contesta: ¿se tienen por admitidos los hechos de la demanda?",
+      "a": "No. La rebeldía no se considera allanamiento ni admisión de hechos, salvo los casos en que la ley expresamente disponga lo contrario.",
+      "articulos": [
+       "496"
+      ],
+      "literal": {
+       "articulo": "496",
+       "texto": "salvo los casos en que la ley expresamente disponga lo contrario"
+      }
+     },
+     "conexiones": [
+      "405",
+      "406",
+      "407",
+      "408",
+      "496",
+      "497"
+     ]
     },
     {
      "id": "ord-audiencia",
      "fase": "Audiencia previa",
      "subtitulo": "Acuerdo, cuestiones procesales, hechos controvertidos y prueba",
      "descripcion": "Finalidades: intentar acuerdo, depurar cuestiones procesales, fijar el objeto y los hechos controvertidos y proponer y admitir la prueba. Si solo queda una cuestión jurídica, el tribunal dicta sentencia sin juicio.",
-     "articulos": ["414", "415", "416", "421", "428", "429", "285"],
+     "articulos": [
+      "414",
+      "415",
+      "416",
+      "421",
+      "428",
+      "429",
+      "285"
+     ],
      "plazos": [
-      {"acto": "Convocatoria de la audiencia", "plazo": "Dentro del tercer día", "articulo": "414",
-       "literal": "dentro del tercer día, convocará a las partes a una audiencia"},
-      {"acto": "Celebración de la audiencia", "plazo": "20 días desde la convocatoria", "articulo": "414",
-       "literal": "que habrá de celebrarse en el plazo de veinte días desde la convocatoria"},
-      {"acto": "Sentencia si solo hay cuestión jurídica", "plazo": "20 días", "articulo": "428",
-       "literal": "el tribunal dictará sentencia dentro de veinte días a partir del siguiente al de la terminación de la audiencia"},
-      {"acto": "Señalamiento del juicio", "plazo": "Celebración en 1 mes desde la audiencia", "articulo": "429",
-       "literal": "que deberá celebrarse en el plazo de un mes desde la conclusión de la audiencia"}
+      {
+       "acto": "Convocatoria de la audiencia",
+       "plazo": "Dentro del tercer día",
+       "articulo": "414",
+       "literal": "dentro del tercer día, convocará a las partes a una audiencia"
+      },
+      {
+       "acto": "Celebración de la audiencia",
+       "plazo": "20 días desde la convocatoria",
+       "articulo": "414",
+       "literal": "que habrá de celebrarse en el plazo de veinte días desde la convocatoria"
+      },
+      {
+       "acto": "Sentencia si solo hay cuestión jurídica",
+       "plazo": "20 días",
+       "articulo": "428",
+       "literal": "el tribunal dictará sentencia dentro de veinte días a partir del siguiente al de la terminación de la audiencia"
+      },
+      {
+       "acto": "Señalamiento del juicio",
+       "plazo": "Celebración en 1 mes desde la audiencia",
+       "articulo": "429",
+       "literal": "que deberá celebrarse en el plazo de un mes desde la conclusión de la audiencia"
+      }
      ],
      "ramas": [
-      {"si": "No comparece ninguna parte", "entonces": "Auto de sobreseimiento y archivo.", "articulos": ["414"],
-       "literal": {"articulo": "414", "texto": "Si no compareciere a la audiencia ninguna de las partes, se levantará acta haciéndolo constar y el tribunal, sin más trámites, dictará auto de sobreseimiento del proceso"}},
-      {"si": "No comparece el demandado", "entonces": "La audiencia se entiende con el actor en lo que proceda.", "articulos": ["414"],
-       "literal": {"articulo": "414", "texto": "Si fuere el demandado quien no concurriere, la audiencia se entenderá con el actor en lo que resultare procedente."}},
-      {"si": "El tribunal inadmite una prueba", "entonces": "Solo recurso de reposición, que se resuelve en el acto; si se desestima, protesta para hacerlo valer en segunda instancia.", "articulos": ["285"],
-       "literal": {"articulo": "285", "texto": "sólo cabrá recurso de reposición, que se sustanciará y resolverá en el acto, y, si se desestimare, la parte podrá formular protesta al efecto de hacer valer sus derechos en la segunda instancia"}},
-      {"si": "Conformidad en los hechos: solo queda cuestión jurídica", "entonces": "Sentencia sin juicio.", "articulos": ["428"],
-       "literal": {"articulo": "428", "texto": "estuvieren conformes en todos los hechos y la discrepancia quedase reducida a cuestión o cuestiones jurídicas"}}
+      {
+       "si": "No comparece ninguna parte",
+       "entonces": "Auto de sobreseimiento y archivo.",
+       "articulos": [
+        "414"
+       ],
+       "literal": {
+        "articulo": "414",
+        "texto": "Si no compareciere a la audiencia ninguna de las partes, se levantará acta haciéndolo constar y el tribunal, sin más trámites, dictará auto de sobreseimiento del proceso"
+       }
+      },
+      {
+       "si": "No comparece el demandado",
+       "entonces": "La audiencia se entiende con el actor en lo que proceda.",
+       "articulos": [
+        "414"
+       ],
+       "literal": {
+        "articulo": "414",
+        "texto": "Si fuere el demandado quien no concurriere, la audiencia se entenderá con el actor en lo que resultare procedente."
+       }
+      },
+      {
+       "si": "El tribunal inadmite una prueba",
+       "entonces": "Solo recurso de reposición, que se resuelve en el acto; si se desestima, protesta para hacerlo valer en segunda instancia.",
+       "articulos": [
+        "285"
+       ],
+       "literal": {
+        "articulo": "285",
+        "texto": "sólo cabrá recurso de reposición, que se sustanciará y resolverá en el acto, y, si se desestimare, la parte podrá formular protesta al efecto de hacer valer sus derechos en la segunda instancia"
+       }
+      },
+      {
+       "si": "Conformidad en los hechos: solo queda cuestión jurídica",
+       "entonces": "Sentencia sin juicio.",
+       "articulos": [
+        "428"
+       ],
+       "literal": {
+        "articulo": "428",
+        "texto": "estuvieren conformes en todos los hechos y la discrepancia quedase reducida a cuestión o cuestiones jurídicas"
+       }
+      }
      ],
-     "pregunta": {"q": "En la audiencia previa el juez inadmite una prueba propuesta. ¿Qué recurso cabe?", "a": "Solo reposición, sustanciada y resuelta en el acto; si se desestima, protesta para hacer valer el derecho en la segunda instancia.", "articulos": ["285"],
-      "literal": {"articulo": "285", "texto": "Contra la resolución que admita o inadmita cada una de las pruebas sólo cabrá recurso de reposición"}},
-     "conexiones": ["281", "283", "285", "416", "421", "428", "429"]
+     "pregunta": {
+      "q": "En la audiencia previa el juez inadmite una prueba propuesta. ¿Qué recurso cabe?",
+      "a": "Solo reposición, sustanciada y resuelta en el acto; si se desestima, protesta para hacer valer el derecho en la segunda instancia.",
+      "articulos": [
+       "285"
+      ],
+      "literal": {
+       "articulo": "285",
+       "texto": "Contra la resolución que admita o inadmita cada una de las pruebas sólo cabrá recurso de reposición"
+      }
+     },
+     "conexiones": [
+      "281",
+      "283",
+      "285",
+      "416",
+      "421",
+      "428",
+      "429"
+     ]
     },
     {
      "id": "ord-juicio",
      "fase": "Juicio",
      "subtitulo": "Práctica de la prueba y conclusiones",
      "descripcion": "Se practican las pruebas admitidas (declaración de partes, testigos, peritos, reconocimiento judicial, reproducción de imágenes y sonidos) y las partes formulan conclusiones orales.",
-     "articulos": ["431", "432", "433"],
+     "articulos": [
+      "431",
+      "432",
+      "433"
+     ],
      "plazos": [],
      "ramas": [
-      {"si": "No comparece ninguna parte", "entonces": "El pleito queda visto para sentencia.", "articulos": ["432"],
-       "literal": {"articulo": "432", "texto": "Si no compareciere en el juicio ninguna de las partes, se levantará acta haciéndolo constar y el tribunal, sin más trámites, declarará el pleito visto para sentencia."}},
-      {"si": "Comparece solo una parte", "entonces": "Se celebra el juicio.", "articulos": ["432"],
-       "literal": {"articulo": "432", "texto": "Si sólo compareciere alguna de las partes, se procederá a la celebración del juicio."}}
+      {
+       "si": "No comparece ninguna parte",
+       "entonces": "El pleito queda visto para sentencia.",
+       "articulos": [
+        "432"
+       ],
+       "literal": {
+        "articulo": "432",
+        "texto": "Si no compareciere en el juicio ninguna de las partes, se levantará acta haciéndolo constar y el tribunal, sin más trámites, declarará el pleito visto para sentencia."
+       }
+      },
+      {
+       "si": "Comparece solo una parte",
+       "entonces": "Se celebra el juicio.",
+       "articulos": [
+        "432"
+       ],
+       "literal": {
+        "articulo": "432",
+        "texto": "Si sólo compareciere alguna de las partes, se procederá a la celebración del juicio."
+       }
+      }
      ],
-     "pregunta": {"q": "¿Qué ocurre si en el juicio no comparece ninguna de las partes?", "a": "Se levanta acta y el tribunal declara el pleito visto para sentencia.", "articulos": ["432"],
-      "literal": {"articulo": "432", "texto": "declarará el pleito visto para sentencia"}},
-     "conexiones": ["299", "431", "432", "433"]
+     "pregunta": {
+      "q": "¿Qué ocurre si en el juicio no comparece ninguna de las partes?",
+      "a": "Se levanta acta y el tribunal declara el pleito visto para sentencia.",
+      "articulos": [
+       "432"
+      ],
+      "literal": {
+       "articulo": "432",
+       "texto": "declarará el pleito visto para sentencia"
+      }
+     },
+     "conexiones": [
+      "299",
+      "431",
+      "432",
+      "433"
+     ]
     },
     {
      "id": "ord-diligencias",
      "fase": "Diligencias finales",
      "subtitulo": "Solo a instancia de parte (regla general)",
      "descripcion": "Actuaciones de prueba tras el juicio en supuestos tasados. Suspenden el plazo para dictar sentencia.",
-     "articulos": ["435", "436", "434"],
+     "articulos": [
+      "435",
+      "436",
+      "434"
+     ],
      "plazos": [
-      {"acto": "Práctica de las diligencias finales", "plazo": "20 días", "articulo": "436",
-       "literal": "se llevarán a cabo, dentro del plazo de veinte días"},
-      {"acto": "Escrito de las partes valorando el resultado", "plazo": "Dentro del quinto día", "articulo": "436",
-       "literal": "las partes podrán, dentro del quinto día, presentar escrito en que resuman y valoren el resultado"}
+      {
+       "acto": "Práctica de las diligencias finales",
+       "plazo": "20 días",
+       "articulo": "436",
+       "literal": "se llevarán a cabo, dentro del plazo de veinte días"
+      },
+      {
+       "acto": "Escrito de las partes valorando el resultado",
+       "plazo": "Dentro del quinto día",
+       "articulo": "436",
+       "literal": "las partes podrán, dentro del quinto día, presentar escrito en que resuman y valoren el resultado"
+      }
      ],
      "ramas": [],
-     "pregunta": {"q": "¿Pueden practicarse como diligencias finales pruebas que pudieron proponerse en tiempo y forma?", "a": "No.", "articulos": ["435"],
-      "literal": {"articulo": "435", "texto": "No se practicarán como diligencias finales las pruebas que hubieran podido proponerse en tiempo y forma por las partes"}},
-     "conexiones": ["286", "435", "436"]
+     "pregunta": {
+      "q": "¿Pueden practicarse como diligencias finales pruebas que pudieron proponerse en tiempo y forma?",
+      "a": "No.",
+      "articulos": [
+       "435"
+      ],
+      "literal": {
+       "articulo": "435",
+       "texto": "No se practicarán como diligencias finales las pruebas que hubieran podido proponerse en tiempo y forma por las partes"
+      }
+     },
+     "conexiones": [
+      "286",
+      "435",
+      "436"
+     ]
     },
     {
      "id": "ord-sentencia",
      "fase": "Sentencia",
      "subtitulo": "Plazo para dictarla",
      "descripcion": "La sentencia se dicta tras el juicio. Si se acuerdan diligencias finales, el plazo queda en suspenso.",
-     "articulos": ["434"],
+     "articulos": [
+      "434"
+     ],
      "plazos": [
-      {"acto": "Dictar sentencia", "plazo": "20 días desde la terminación del juicio", "articulo": "434",
-       "literal": "La sentencia se dictará dentro de los veinte días siguientes a la terminación del juicio."}
+      {
+       "acto": "Dictar sentencia",
+       "plazo": "20 días desde la terminación del juicio",
+       "articulo": "434",
+       "literal": "La sentencia se dictará dentro de los veinte días siguientes a la terminación del juicio."
+      }
      ],
      "ramas": [],
-     "pregunta": {"q": "¿En qué plazo debe dictarse la sentencia en el juicio ordinario?", "a": "Dentro de los veinte días siguientes a la terminación del juicio.", "articulos": ["434"],
-      "literal": {"articulo": "434", "texto": "dentro de los veinte días siguientes a la terminación del juicio"}},
-     "conexiones": ["209", "218", "434"]
+     "pregunta": {
+      "q": "¿En qué plazo debe dictarse la sentencia en el juicio ordinario?",
+      "a": "Dentro de los veinte días siguientes a la terminación del juicio.",
+      "articulos": [
+       "434"
+      ],
+      "literal": {
+       "articulo": "434",
+       "texto": "dentro de los veinte días siguientes a la terminación del juicio"
+      }
+     },
+     "conexiones": [
+      "209",
+      "218",
+      "434"
+     ]
     },
     {
      "id": "ord-recurso",
      "fase": "Recurso de apelación",
      "subtitulo": "Contra la sentencia",
      "descripcion": "Las sentencias del juicio ordinario son apelables. Se interpone ante el tribunal competente para resolverlo; las demás partes pueden oponerse o impugnar.",
-     "articulos": ["455", "458", "461", "448"],
+     "articulos": [
+      "455",
+      "458",
+      "461",
+      "448"
+     ],
      "plazos": [
-      {"acto": "Interponer apelación", "plazo": "20 días desde la notificación", "articulo": "458",
-       "literal": "en el plazo de veinte días desde la notificación de la resolución impugnada"},
-      {"acto": "Oposición o impugnación de la parte apelada", "plazo": "10 días", "articulo": "461",
-       "literal": "emplazándolas por diez días para que presenten escrito de oposición al recurso"}
+      {
+       "acto": "Interponer apelación",
+       "plazo": "20 días desde la notificación",
+       "articulo": "458",
+       "literal": "en el plazo de veinte días desde la notificación de la resolución impugnada"
+      },
+      {
+       "acto": "Oposición o impugnación de la parte apelada",
+       "plazo": "10 días",
+       "articulo": "461",
+       "literal": "emplazándolas por diez días para que presenten escrito de oposición al recurso"
+      }
      ],
      "ramas": [],
-     "pregunta": {"q": "¿Ante quién se interpone el recurso de apelación?", "a": "Ante el tribunal que sea competente para conocer del mismo.", "articulos": ["458"],
-      "literal": {"articulo": "458", "texto": "ante el tribunal que sea competente para conocer del mismo"}},
-     "conexiones": ["448", "455", "458", "461", "465"]
+     "pregunta": {
+      "q": "¿Ante quién se interpone el recurso de apelación?",
+      "a": "Ante el tribunal que sea competente para conocer del mismo.",
+      "articulos": [
+       "458"
+      ],
+      "literal": {
+       "articulo": "458",
+       "texto": "ante el tribunal que sea competente para conocer del mismo"
+      }
+     },
+     "conexiones": [
+      "448",
+      "455",
+      "458",
+      "461",
+      "465"
+     ]
     }
    ]
   },
@@ -193,9 +521,15 @@
    "ambito": {
     "corto": "Hasta 15.000 € o por materia (art. 250)",
     "texto": "Por cuantía: demandas que no excedan de 15.000 € y no sean de materias del art. 249.1. Por materia: las del art. 250.1, cualquiera que sea su cuantía.",
-    "articulos": ["250", "248"],
+    "articulos": [
+     "250",
+     "248"
+    ],
     "literal": [
-     {"articulo": "250", "texto": "las demandas cuya cuantía no exceda de quince mil euros y no se refieran a ninguna de las materias previstas en el apartado 1 del artículo anterior"}
+     {
+      "articulo": "250",
+      "texto": "las demandas cuya cuantía no exceda de quince mil euros y no se refieran a ninguna de las materias previstas en el apartado 1 del artículo anterior"
+     }
     ]
    },
    "revisado": false,
@@ -205,39 +539,115 @@
      "fase": "Demanda",
      "subtitulo": "Ordinaria o sucinta",
      "descripcion": "Misma forma que en el ordinario. Si no se actúa con abogado y procurador, cabe demanda sucinta, incluso con impresos normalizados.",
-     "articulos": ["437"],
+     "articulos": [
+      "437"
+     ],
      "plazos": [],
      "ramas": [
-      {"si": "Con abogado y procurador", "entonces": "Demanda con el contenido y forma del juicio ordinario.", "articulos": ["437", "399"],
-       "literal": {"articulo": "437", "texto": "El juicio verbal principiará por demanda, con el contenido y forma propios del juicio ordinario"}},
-      {"si": "Sin abogado ni procurador", "entonces": "Demanda sucinta.", "articulos": ["437"],
-       "literal": {"articulo": "437", "texto": "el demandante podrá formular una demanda sucinta"}}
+      {
+       "si": "Con abogado y procurador",
+       "entonces": "Demanda con el contenido y forma del juicio ordinario.",
+       "articulos": [
+        "437",
+        "399"
+       ],
+       "literal": {
+        "articulo": "437",
+        "texto": "El juicio verbal principiará por demanda, con el contenido y forma propios del juicio ordinario"
+       }
+      },
+      {
+       "si": "Sin abogado ni procurador",
+       "entonces": "Demanda sucinta.",
+       "articulos": [
+        "437"
+       ],
+       "literal": {
+        "articulo": "437",
+        "texto": "el demandante podrá formular una demanda sucinta"
+       }
+      }
      ],
-     "pregunta": {"q": "¿Cuándo puede presentarse una demanda sucinta en el juicio verbal?", "a": "En los juicios verbales en que no se actúe con abogado y procurador.", "articulos": ["437"],
-      "literal": {"articulo": "437", "texto": "en los juicios verbales en que no se actúe con abogado y procurador"}},
-     "conexiones": ["399", "437"]
+     "pregunta": {
+      "q": "¿Cuándo puede presentarse una demanda sucinta en el juicio verbal?",
+      "a": "En los juicios verbales en que no se actúe con abogado y procurador.",
+      "articulos": [
+       "437"
+      ],
+      "literal": {
+       "articulo": "437",
+       "texto": "en los juicios verbales en que no se actúe con abogado y procurador"
+      }
+     },
+     "conexiones": [
+      "399",
+      "437"
+     ]
     },
     {
      "id": "ver-contestacion",
      "fase": "Admisión y contestación escrita",
      "subtitulo": "Contesta / no contesta",
      "descripcion": "Admitida la demanda por decreto, el demandado contesta por escrito. Si no comparece, es declarado en rebeldía.",
-     "articulos": ["438", "496"],
+     "articulos": [
+      "438",
+      "496"
+     ],
      "plazos": [
-      {"acto": "Contestar a la demanda", "plazo": "10 días", "articulo": "438",
-       "literal": "para que la conteste por escrito en el plazo de diez días"},
-      {"acto": "Contestar a la reconvención", "plazo": "10 días", "articulo": "438",
-       "literal": "salvo el plazo para su contestación que será de diez días"}
+      {
+       "acto": "Contestar a la demanda",
+       "plazo": "10 días",
+       "articulo": "438",
+       "literal": "para que la conteste por escrito en el plazo de diez días"
+      },
+      {
+       "acto": "Contestar a la reconvención",
+       "plazo": "10 días",
+       "articulo": "438",
+       "literal": "salvo el plazo para su contestación que será de diez días"
+      }
      ],
      "ramas": [
-      {"si": "Contesta", "entonces": "Pasa a la proposición de prueba por escrito.", "articulos": ["438"],
-       "literal": {"articulo": "438", "texto": "Contestada la demanda y, en su caso, la reconvención o el crédito compensable, o transcurridos los plazos correspondientes"}},
-      {"si": "No comparece", "entonces": "Rebeldía (art. 496).", "articulos": ["438", "496"],
-       "literal": {"articulo": "438", "texto": "Si el demandado no compareciere en el plazo otorgado será declarado en rebeldía conforme al artículo 496."}}
+      {
+       "si": "Contesta",
+       "entonces": "Pasa a la proposición de prueba por escrito.",
+       "articulos": [
+        "438"
+       ],
+       "literal": {
+        "articulo": "438",
+        "texto": "Contestada la demanda y, en su caso, la reconvención o el crédito compensable, o transcurridos los plazos correspondientes"
+       }
+      },
+      {
+       "si": "No comparece",
+       "entonces": "Rebeldía (art. 496).",
+       "articulos": [
+        "438",
+        "496"
+       ],
+       "literal": {
+        "articulo": "438",
+        "texto": "Si el demandado no compareciere en el plazo otorgado será declarado en rebeldía conforme al artículo 496."
+       }
+      }
      ],
-     "pregunta": {"q": "¿Qué plazo tiene el demandado para contestar en el juicio verbal?", "a": "Diez días, por escrito.", "articulos": ["438"],
-      "literal": {"articulo": "438", "texto": "en el plazo de diez días conforme a lo dispuesto para el juicio ordinario"}},
-     "conexiones": ["404", "438", "496"],
+     "pregunta": {
+      "q": "¿Qué plazo tiene el demandado para contestar en el juicio verbal?",
+      "a": "Diez días, por escrito.",
+      "articulos": [
+       "438"
+      ],
+      "literal": {
+       "articulo": "438",
+       "texto": "en el plazo de diez días conforme a lo dispuesto para el juicio ordinario"
+      }
+     },
+     "conexiones": [
+      "404",
+      "438",
+      "496"
+     ],
      "aviso": "Los desahucios y otros casos especiales (art. 438.4 a 438.7) tienen reglas propias que aún no están en este esquema."
     },
     {
@@ -245,24 +655,77 @@
      "fase": "Proposición de prueba por escrito",
      "subtitulo": "Auto sobre prueba y sobre si hay vista",
      "descripcion": "Las partes proponen prueba por escrito; después cabe impugnar; el tribunal resuelve por auto sobre excepciones procesales, admisión de prueba y necesidad de vista.",
-     "articulos": ["438"],
+     "articulos": [
+      "438"
+     ],
      "plazos": [
-      {"acto": "Proponer prueba (plazo común)", "plazo": "5 días", "articulo": "438",
-       "literal": "concediendo a ambas partes el plazo común de cinco días a fin de que propongan la prueba que quieran practicar"},
-      {"acto": "Impugnaciones (arts. 280, 283, 287 y 427)", "plazo": "3 días", "articulo": "438",
-       "literal": "En los tres días siguientes al traslado del escrito de proposición de prueba"}
+      {
+       "acto": "Proponer prueba (plazo común)",
+       "plazo": "5 días",
+       "articulo": "438",
+       "literal": "concediendo a ambas partes el plazo común de cinco días a fin de que propongan la prueba que quieran practicar"
+      },
+      {
+       "acto": "Impugnaciones (arts. 280, 283, 287 y 427)",
+       "plazo": "3 días",
+       "articulo": "438",
+       "literal": "En los tres días siguientes al traslado del escrito de proposición de prueba"
+      }
      ],
      "ramas": [
-      {"si": "El tribunal considera necesaria la vista", "entonces": "Citación para la vista.", "articulos": ["440"],
-       "literal": {"articulo": "440", "texto": "cuando haya de celebrarse vista de acuerdo con lo expresado en el artículo 438"}},
-      {"si": "Solo prueba documental no impugnada (o periciales sin necesidad de peritos)", "entonces": "Sentencia sin vista.", "articulos": ["438"],
-       "literal": {"articulo": "438", "texto": "se procederá a dictar sentencia, sin previa celebración de la vista"}},
-      {"si": "Se recurre el auto sobre la prueba", "entonces": "Recurso de reposición con efecto suspensivo.", "articulos": ["438"],
-       "literal": {"articulo": "438", "texto": "Contra este auto cabrá interponer recurso de reposición, que tendrá efecto suspensivo."}}
+      {
+       "si": "El tribunal considera necesaria la vista",
+       "entonces": "Citación para la vista.",
+       "articulos": [
+        "440"
+       ],
+       "literal": {
+        "articulo": "440",
+        "texto": "cuando haya de celebrarse vista de acuerdo con lo expresado en el artículo 438"
+       }
+      },
+      {
+       "si": "Solo prueba documental no impugnada (o periciales sin necesidad de peritos)",
+       "entonces": "Sentencia sin vista.",
+       "articulos": [
+        "438"
+       ],
+       "literal": {
+        "articulo": "438",
+        "texto": "se procederá a dictar sentencia, sin previa celebración de la vista"
+       }
+      },
+      {
+       "si": "Se recurre el auto sobre la prueba",
+       "entonces": "Recurso de reposición con efecto suspensivo.",
+       "articulos": [
+        "438"
+       ],
+       "literal": {
+        "articulo": "438",
+        "texto": "Contra este auto cabrá interponer recurso de reposición, que tendrá efecto suspensivo."
+       }
+      }
      ],
-     "pregunta": {"q": "¿Qué recurso cabe contra el auto que resuelve sobre la admisión de la prueba en el verbal, y con qué efecto?", "a": "Recurso de reposición, con efecto suspensivo.", "articulos": ["438"],
-      "literal": {"articulo": "438", "texto": "recurso de reposición, que tendrá efecto suspensivo"}},
-     "conexiones": ["280", "283", "287", "381", "427", "438"],
+     "pregunta": {
+      "q": "¿Qué recurso cabe contra el auto que resuelve sobre la admisión de la prueba en el verbal, y con qué efecto?",
+      "a": "Recurso de reposición, con efecto suspensivo.",
+      "articulos": [
+       "438"
+      ],
+      "literal": {
+       "articulo": "438",
+       "texto": "recurso de reposición, que tendrá efecto suspensivo"
+      }
+     },
+     "conexiones": [
+      "280",
+      "283",
+      "287",
+      "381",
+      "427",
+      "438"
+     ],
      "duda": "Lectura a revisar: el art. 438.10 da reposición con efecto suspensivo contra el auto sobre la prueba; el art. 285.2 (reposición en el acto + protesta) y el 446 (prueba en el acto de la vista) parecen pensados para resoluciones orales. Confirma tú cuál aplicas en cada momento."
     },
     {
@@ -270,61 +733,550 @@
      "fase": "Vista",
      "subtitulo": "Citación, comparecencia y práctica de la prueba",
      "descripcion": "El LAJ cita a las partes. En la vista se comprueba si subsiste el litigio, se practica la prueba y pueden formularse conclusiones.",
-     "articulos": ["440", "442", "443", "446"],
+     "articulos": [
+      "440",
+      "442",
+      "443",
+      "446"
+     ],
      "plazos": [
-      {"acto": "Citación para la vista", "plazo": "Dentro de 5 días", "articulo": "440",
-       "literal": "citará a las partes a tal fin dentro de los cinco días siguientes"},
-      {"acto": "Celebración de la vista", "plazo": "Máximo 1 mes", "articulo": "440",
-       "literal": "La vista habrá de tener lugar dentro del plazo máximo de un mes."}
+      {
+       "acto": "Citación para la vista",
+       "plazo": "Dentro de 5 días",
+       "articulo": "440",
+       "literal": "citará a las partes a tal fin dentro de los cinco días siguientes"
+      },
+      {
+       "acto": "Celebración de la vista",
+       "plazo": "Máximo 1 mes",
+       "articulo": "440",
+       "literal": "La vista habrá de tener lugar dentro del plazo máximo de un mes."
+      }
      ],
      "ramas": [
-      {"si": "No asiste el demandante", "entonces": "Se le tiene por desistido (salvo interés legítimo del demandado), con costas.", "articulos": ["442"],
-       "literal": {"articulo": "442", "texto": "se tendrá en el acto por desistido a aquél de la demanda, se le impondrán las costas causadas"}},
-      {"si": "No asiste el demandado", "entonces": "Se celebra el juicio.", "articulos": ["442"],
-       "literal": {"articulo": "442", "texto": "Si no compareciere el demandado, se procederá a la celebración del juicio."}},
-      {"si": "El tribunal inadmite una prueba en la vista", "entonces": "Solo reposición en el acto; si se desestima, protesta.", "articulos": ["446"],
-       "literal": {"articulo": "446", "texto": "solo cabrá recurso de reposición, que se sustanciará y resolverá en el acto"}}
+      {
+       "si": "No asiste el demandante",
+       "entonces": "Se le tiene por desistido (salvo interés legítimo del demandado), con costas.",
+       "articulos": [
+        "442"
+       ],
+       "literal": {
+        "articulo": "442",
+        "texto": "se tendrá en el acto por desistido a aquél de la demanda, se le impondrán las costas causadas"
+       }
+      },
+      {
+       "si": "No asiste el demandado",
+       "entonces": "Se celebra el juicio.",
+       "articulos": [
+        "442"
+       ],
+       "literal": {
+        "articulo": "442",
+        "texto": "Si no compareciere el demandado, se procederá a la celebración del juicio."
+       }
+      },
+      {
+       "si": "El tribunal inadmite una prueba en la vista",
+       "entonces": "Solo reposición en el acto; si se desestima, protesta.",
+       "articulos": [
+        "446"
+       ],
+       "literal": {
+        "articulo": "446",
+        "texto": "solo cabrá recurso de reposición, que se sustanciará y resolverá en el acto"
+       }
+      }
      ],
-     "pregunta": {"q": "En el juicio verbal no asiste el demandante a la vista. ¿Qué sucede?", "a": "Si el demandado no alega interés legítimo en la continuación, se le tiene por desistido, con imposición de costas (y posible indemnización al demandado comparecido).", "articulos": ["442"],
-      "literal": {"articulo": "442", "texto": "Si el demandante no asistiese a la vista, y el demandado no alegare interés legítimo en la continuación del proceso"}},
-     "conexiones": ["304", "440", "442", "443", "446"]
+     "pregunta": {
+      "q": "En el juicio verbal no asiste el demandante a la vista. ¿Qué sucede?",
+      "a": "Si el demandado no alega interés legítimo en la continuación, se le tiene por desistido, con imposición de costas (y posible indemnización al demandado comparecido).",
+      "articulos": [
+       "442"
+      ],
+      "literal": {
+       "articulo": "442",
+       "texto": "Si el demandante no asistiese a la vista, y el demandado no alegare interés legítimo en la continuación del proceso"
+      }
+     },
+     "conexiones": [
+      "304",
+      "440",
+      "442",
+      "443",
+      "446"
+     ]
     },
     {
      "id": "ver-sentencia",
      "fase": "Sentencia",
      "subtitulo": "Plazo para dictarla",
      "descripcion": "Terminada la vista, sentencia en plazo (salvo sentencia oral). Plazo especial en desahucio de finca urbana. Algunas sentencias no producen cosa juzgada (art. 447.2 a 447.4).",
-     "articulos": ["447"],
+     "articulos": [
+      "447"
+     ],
      "plazos": [
-      {"acto": "Dictar sentencia", "plazo": "10 días", "articulo": "447",
-       "literal": "dictará sentencia dentro de los diez días siguientes"},
-      {"acto": "Dictar sentencia en desahucio de finca urbana", "plazo": "5 días", "articulo": "447",
-       "literal": "en que la sentencia se dictará en los cinco días siguientes"}
+      {
+       "acto": "Dictar sentencia",
+       "plazo": "10 días",
+       "articulo": "447",
+       "literal": "dictará sentencia dentro de los diez días siguientes"
+      },
+      {
+       "acto": "Dictar sentencia en desahucio de finca urbana",
+       "plazo": "5 días",
+       "articulo": "447",
+       "literal": "en que la sentencia se dictará en los cinco días siguientes"
+      }
      ],
      "ramas": [],
-     "pregunta": {"q": "¿Producen efecto de cosa juzgada las sentencias de tutela sumaria de la posesión?", "a": "No.", "articulos": ["447"],
-      "literal": {"articulo": "447", "texto": "No producirán efectos de cosa juzgada las sentencias que pongan fin a los juicios verbales sobre tutela sumaria de la posesión"}},
-     "conexiones": ["210", "447"]
+     "pregunta": {
+      "q": "¿Producen efecto de cosa juzgada las sentencias de tutela sumaria de la posesión?",
+      "a": "No.",
+      "articulos": [
+       "447"
+      ],
+      "literal": {
+       "articulo": "447",
+       "texto": "No producirán efectos de cosa juzgada las sentencias que pongan fin a los juicios verbales sobre tutela sumaria de la posesión"
+      }
+     },
+     "conexiones": [
+      "210",
+      "447"
+     ]
     },
     {
      "id": "ver-recurso",
      "fase": "Recurso de apelación",
      "subtitulo": "Ojo con la cuantía",
      "descripcion": "Las sentencias son apelables, salvo las de juicios verbales por razón de la cuantía cuando esta no supere 3.000 €.",
-     "articulos": ["455", "458", "461"],
+     "articulos": [
+      "455",
+      "458",
+      "461"
+     ],
      "plazos": [
-      {"acto": "Interponer apelación", "plazo": "20 días desde la notificación", "articulo": "458",
-       "literal": "en el plazo de veinte días desde la notificación de la resolución impugnada"}
+      {
+       "acto": "Interponer apelación",
+       "plazo": "20 días desde la notificación",
+       "articulo": "458",
+       "literal": "en el plazo de veinte días desde la notificación de la resolución impugnada"
+      }
      ],
      "ramas": [
-      {"si": "Verbal por cuantía de hasta 3.000 €", "entonces": "Sentencia no apelable.", "articulos": ["455"],
-       "literal": {"articulo": "455", "texto": "con excepción de las sentencias dictadas en los juicios verbales por razón de la cuantía cuando ésta no supere los 3.000 euros"}},
-      {"si": "Resto de casos", "entonces": "Apelación.", "articulos": ["455"],
-       "literal": {"articulo": "455", "texto": "Las sentencias dictadas en toda clase de juicio, los autos definitivos y aquéllos otros que la ley expresamente señale, serán apelables"}}
+      {
+       "si": "Verbal por cuantía de hasta 3.000 €",
+       "entonces": "Sentencia no apelable.",
+       "articulos": [
+        "455"
+       ],
+       "literal": {
+        "articulo": "455",
+        "texto": "con excepción de las sentencias dictadas en los juicios verbales por razón de la cuantía cuando ésta no supere los 3.000 euros"
+       }
+      },
+      {
+       "si": "Resto de casos",
+       "entonces": "Apelación.",
+       "articulos": [
+        "455"
+       ],
+       "literal": {
+        "articulo": "455",
+        "texto": "Las sentencias dictadas en toda clase de juicio, los autos definitivos y aquéllos otros que la ley expresamente señale, serán apelables"
+       }
+      }
      ],
-     "pregunta": {"q": "Sentencia de juicio verbal por cuantía de 2.500 €: ¿cabe apelación?", "a": "No: se exceptúan las sentencias de juicios verbales por razón de la cuantía que no supere los 3.000 euros.", "articulos": ["455"],
-      "literal": {"articulo": "455", "texto": "cuando ésta no supere los 3.000 euros"}},
-     "conexiones": ["455", "458", "461"]
+     "pregunta": {
+      "q": "Sentencia de juicio verbal por cuantía de 2.500 €: ¿cabe apelación?",
+      "a": "No: se exceptúan las sentencias de juicios verbales por razón de la cuantía que no supere los 3.000 euros.",
+      "articulos": [
+       "455"
+      ],
+      "literal": {
+       "articulo": "455",
+       "texto": "cuando ésta no supere los 3.000 euros"
+      }
+     },
+     "conexiones": [
+      "455",
+      "458",
+      "461"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "monitorio",
+   "nombre": "Proceso monitorio",
+   "bloque": "monitorio",
+   "resumen": "Reclamación de deuda dineraria documentada: requerimiento de pago y, según lo que haga el deudor, archivo, ejecución o paso al juicio que corresponda.",
+   "ambito": {
+    "corto": "Deuda dineraria de cualquier importe, documentada (art. 812)",
+    "texto": "Deuda dineraria de cualquier importe, líquida, determinada, vencida y exigible, acreditada con alguno de los documentos del art. 812.",
+    "articulos": [
+     "812"
+    ],
+    "literal": [
+     {
+      "articulo": "812",
+      "texto": "el pago de deuda dineraria de cualquier importe, líquida, determinada, vencida y exigible"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "mon-procede",
+     "fase": "¿Procede el monitorio?",
+     "subtitulo": "Requisitos de la deuda y documentos",
+     "descripcion": "La deuda debe ser dineraria, líquida, determinada, vencida y exigible, y acreditarse con documentos firmados por el deudor o con documentos que habitualmente documentan créditos (facturas, albaranes, certificaciones…). Hay supuestos adicionales: relación comercial duradera y gastos de comunidad de propietarios.",
+     "articulos": [
+      "812"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "La deuda consta en un documento firmado por el deudor",
+       "entonces": "Cabe el monitorio.",
+       "articulos": [
+        "812"
+       ],
+       "literal": {
+        "articulo": "812",
+        "texto": "que aparezcan firmados por el deudor o con su sello, impronta o marca o con cualquier otra señal, física o electrónica"
+       }
+      },
+      {
+       "si": "Son cuotas impagadas de una comunidad de propietarios",
+       "entonces": "Cabe el monitorio mediante certificación de impago.",
+       "articulos": [
+        "812"
+       ],
+       "literal": {
+        "articulo": "812",
+        "texto": "Cuando la deuda se acredite mediante certificaciones de impago de cantidades debidas en concepto de gastos comunes de Comunidades de propietarios de inmuebles urbanos."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hay límite de cuantía para acudir al proceso monitorio?",
+      "a": "No: deuda dineraria de cualquier importe.",
+      "articulos": [
+       "812"
+      ],
+      "literal": {
+       "articulo": "812",
+       "texto": "deuda dineraria de cualquier importe"
+      }
+     },
+     "conexiones": [
+      "812"
+     ]
+    },
+    {
+     "id": "mon-peticion",
+     "fase": "Petición inicial",
+     "subtitulo": "Competencia y forma",
+     "descripcion": "Petición del acreedor con identidad y domicilios, origen y cuantía de la deuda y los documentos del art. 812. Puede usarse impreso o formulario. Competente en exclusiva el Juzgado de Primera Instancia del domicilio del deudor; no rige la sumisión.",
+     "articulos": [
+      "814",
+      "813"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El acreedor no tiene abogado ni procurador",
+       "entonces": "Puede presentar la petición inicial igualmente.",
+       "articulos": [
+        "814"
+       ],
+       "literal": {
+        "articulo": "814",
+        "texto": "Para la presentación de la petición inicial del procedimiento monitorio no será preciso valerse de procurador y abogado."
+       }
+      },
+      {
+       "si": "El deudor no es localizado o está en otro partido judicial",
+       "entonces": "Auto que da por terminado el proceso, con reserva al acreedor para instarlo ante el juzgado competente.",
+       "articulos": [
+        "813"
+       ],
+       "literal": {
+        "articulo": "813",
+        "texto": "el juez dictará auto dando por terminado el proceso, haciendo constar tal circunstancia y reservando al acreedor el derecho a instar de nuevo el proceso ante el Juzgado competente"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se puede pactar la sumisión a otro juzgado en el monitorio?",
+      "a": "No: no se aplican las normas sobre sumisión expresa o tácita.",
+      "articulos": [
+       "813"
+      ],
+      "literal": {
+       "articulo": "813",
+       "texto": "no serán de aplicación las normas sobre sumisión expresa o tácita"
+      }
+     },
+     "conexiones": [
+      "813",
+      "814"
+     ]
+    },
+    {
+     "id": "mon-requerimiento",
+     "fase": "Requerimiento de pago",
+     "subtitulo": "Control de cantidad y de cláusulas abusivas",
+     "descripcion": "El LAJ requiere al deudor para que pague o se oponga. Antes, si la cantidad no parece correcta o la deuda nace de un contrato con consumidor con posibles cláusulas abusivas, el juez puede proponer un requerimiento por importe inferior.",
+     "articulos": [
+      "815"
+     ],
+     "plazos": [
+      {
+       "acto": "Pagar u oponerse (deudor)",
+       "plazo": "20 días",
+       "articulo": "815",
+       "literal": "requerirá al deudor para que, en el plazo de veinte días, pague al peticionario"
+      },
+      {
+       "acto": "Aceptar o rechazar la propuesta del juez (acreedor)",
+       "plazo": "10 días",
+       "articulo": "815",
+       "literal": "el demandante deberá aceptar o rechazar la propuesta formulada en el plazo de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El acreedor no contesta a la propuesta del juez",
+       "entonces": "Se entiende aceptada.",
+       "articulos": [
+        "815"
+       ],
+       "literal": {
+        "articulo": "815",
+        "texto": "entendiéndose aceptada si dejara transcurrir el plazo sin realizar manifestación alguna"
+       }
+      },
+      {
+       "si": "El acreedor rechaza la propuesta",
+       "entonces": "Se le tiene por desistido; el auto es directamente apelable.",
+       "articulos": [
+        "815"
+       ],
+       "literal": {
+        "articulo": "815",
+        "texto": "En otro caso se tendrá al demandante por desistido"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cabe notificar el requerimiento de pago del monitorio por edictos?",
+      "a": "Solo en el supuesto de deudas de comunidades de propietarios (art. 815.2).",
+      "articulos": [
+       "815"
+      ],
+      "literal": {
+       "articulo": "815",
+       "texto": "Sólo se admitirá el requerimiento al demandado por medio de edictos en el supuesto regulado en el siguiente apartado de este artículo."
+      }
+     },
+     "conexiones": [
+      "161",
+      "164",
+      "815"
+     ]
+    },
+    {
+     "id": "mon-respuesta",
+     "fase": "Respuesta del deudor",
+     "subtitulo": "Paga / no hace nada / se opone",
+     "descripcion": "Lo que haga el deudor dentro del plazo decide el camino: archivo, ejecución o juicio.",
+     "articulos": [
+      "816",
+      "817",
+      "818"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Paga",
+       "entonces": "Archivo de las actuaciones.",
+       "articulos": [
+        "817"
+       ],
+       "literal": {
+        "articulo": "817",
+        "texto": "Si el deudor atendiere el requerimiento de pago, tan pronto como lo acredite, el Letrado de la Administración de Justicia acordará el archivo de las actuaciones."
+       }
+      },
+      {
+       "si": "No paga ni comparece",
+       "entonces": "Decreto que termina el monitorio y traslado al acreedor para pedir la ejecución, sin esperar los 20 días del art. 548.",
+       "articulos": [
+        "816"
+       ],
+       "literal": {
+        "articulo": "816",
+        "texto": "bastando para ello con la mera solicitud, sin necesidad de que transcurra el plazo de veinte días previsto en el artículo 548 de esta Ley"
+       }
+      },
+      {
+       "si": "Se opone en plazo",
+       "entonces": "El asunto se resuelve en el juicio que corresponda, con sentencia con fuerza de cosa juzgada.",
+       "articulos": [
+        "818"
+       ],
+       "literal": {
+        "articulo": "818",
+        "texto": "el asunto se resolverá definitivamente en juicio que corresponda, teniendo la sentencia que se dicte fuerza de cosa juzgada"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "El deudor no paga ni se opone. ¿Hay que esperar el plazo de espera del art. 548 para pedir la ejecución?",
+      "a": "No: basta la mera solicitud, sin que transcurra el plazo de veinte días del art. 548.",
+      "articulos": [
+       "816"
+      ],
+      "literal": {
+       "articulo": "816",
+       "texto": "sin necesidad de que transcurra el plazo de veinte días previsto en el artículo 548 de esta Ley"
+      }
+     },
+     "conexiones": [
+      "548",
+      "816",
+      "817",
+      "818"
+     ]
+    },
+    {
+     "id": "mon-oposicion",
+     "fase": "Oposición: paso al juicio",
+     "subtitulo": "Verbal u ordinario según la cuantía",
+     "descripcion": "Si la cuantía es de juicio verbal, se sigue el verbal (impugnación y proposición de prueba). Si excede, el acreedor debe presentar demanda de juicio ordinario. En rentas de arrendamiento urbano, siempre verbal.",
+     "articulos": [
+      "818"
+     ],
+     "plazos": [
+      {
+       "acto": "Impugnar la oposición (cuantía de verbal)",
+       "plazo": "10 días",
+       "articulo": "818",
+       "literal": "quien podrá impugnarla por escrito en el plazo de diez días"
+      },
+      {
+       "acto": "Proponer prueba (cuantía de verbal)",
+       "plazo": "5 días",
+       "articulo": "818",
+       "literal": "conceder a ambas partes el plazo de cinco días a fin de que propongan la prueba que quieran practicar"
+      },
+      {
+       "acto": "Presentar demanda de ordinario (cuantía superior)",
+       "plazo": "1 mes desde el traslado de la oposición",
+       "articulo": "818",
+       "literal": "dentro del plazo de un mes desde el traslado del escrito de oposición"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La cuantía no excede la del juicio verbal",
+       "entonces": "Decreto que termina el monitorio y continúa como verbal.",
+       "articulos": [
+        "818"
+       ],
+       "literal": {
+        "articulo": "818",
+        "texto": "Cuando la cuantía de la pretensión no excediera de la propia del juicio verbal"
+       }
+      },
+      {
+       "si": "La cuantía excede y el acreedor no presenta demanda en plazo",
+       "entonces": "Sobreseimiento con condena en costas al acreedor.",
+       "articulos": [
+        "818"
+       ],
+       "literal": {
+        "articulo": "818",
+        "texto": "dictará decreto sobreseyendo las actuaciones y condenando en costas al acreedor"
+       }
+      },
+      {
+       "si": "Se reclaman rentas de finca urbana y el arrendatario se opone",
+       "entonces": "Juicio verbal, cualquiera que sea la cuantía.",
+       "articulos": [
+        "818"
+       ],
+       "literal": {
+        "articulo": "818",
+        "texto": "el asunto se resolverá definitivamente por los trámites del juicio verbal, cualquiera que sea su cuantía"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Necesita abogado y procurador el escrito de oposición del deudor?",
+      "a": "Sí, cuando su intervención sea necesaria por razón de la cuantía, según las reglas generales.",
+      "articulos": [
+       "818"
+      ],
+      "literal": {
+       "articulo": "818",
+       "texto": "El escrito de oposición deberá ir firmado por abogado y procurador cuando su intervención fuere necesaria por razón de la cuantía"
+      }
+     },
+     "conexiones": [
+      "21",
+      "250",
+      "404",
+      "438",
+      "818"
+     ],
+     "continua_en": [
+      "verbal",
+      "ordinario"
+     ]
+    },
+    {
+     "id": "mon-ejecucion",
+     "fase": "Ejecución",
+     "subtitulo": "Si el deudor no pagó ni se opuso",
+     "descripcion": "Despachada la ejecución, sigue como la de sentencias. Ni acreedor ni deudor pueden después reclamar en proceso ordinario lo reclamado en el monitorio. La deuda devenga el interés del art. 576.",
+     "articulos": [
+      "816"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El deudor quiere discutir después la deuda en un juicio ordinario",
+       "entonces": "No puede: queda vedado.",
+       "articulos": [
+        "816"
+       ],
+       "literal": {
+        "articulo": "816",
+        "texto": "no podrán pretender ulteriormente en proceso ordinario la cantidad reclamada en el monitorio o la devolución de la que con la ejecución se obtuviere"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Desde cuándo devenga la deuda el interés del art. 576?",
+      "a": "Desde que se dicta el auto despachando ejecución.",
+      "articulos": [
+       "816"
+      ],
+      "literal": {
+       "articulo": "816",
+       "texto": "Desde que se dicte el auto despachando ejecución la deuda devengará el interés a que se refiere el artículo 576."
+      }
+     },
+     "conexiones": [
+      "556",
+      "576",
+      "816"
+     ],
+     "aviso": "El módulo de ejecución (despacho, oposición, embargo) aún no está hecho."
     }
    ]
   }
