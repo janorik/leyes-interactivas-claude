@@ -99,4 +99,10 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [ ] **Real Decreto de aprobación:** sus artículos 1.º a 5.º van como «Real Decreto de aprobación» (al principio del árbol), para que no se confundan con los arts. 1 a 5 de la ley.
 - [ ] **Rangos de artículos:** el BOE agrupa algunos derogados o sin contenido en una sola entrada (por ejemplo, «Artículos 48 a 50»). En la app aparecen así; buscar «49» lleva a esa entrada.
 - [ ] **Nota «(*)» sobre el Libro V/VII:** el BOE la sitúa junto al art. 784; se muestra como nota de ese artículo.
+- [ ] **Tribunal del Jurado (enlace a otra ley):** el nombre «Ley Orgánica del Tribunal del Jurado» sale del art. 846 bis a de la LECrim (Verificable). El número y la fecha (5/1995, de 22 de mayo) y la referencia BOE-A-1995-12095 los puse de memoria (No verificable). Comprueba que el enlace abre la ley correcta. En la app: Procesos › Libro IV › Tribunal del Jurado.
+
+### Mapa procesal (esqueleto)
+
+- [ ] **Esqueleto de 14 bloques y 86 fases:** cada fase es un título, capítulo o sección del índice del BOE, con su nombre literal y sus artículos. Se han quitado las fases que solo tienen artículos derogados o sin contenido (casación, caps. II a IV del título II del libro V). Revisa si la agrupación en bloques te sirve antes de desarrollar el primero.
+- [ ] **Orden de desarrollo:** dime por qué bloque empezamos.
 - [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).

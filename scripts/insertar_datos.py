@@ -68,7 +68,9 @@ def validar_y_anadir_procedimientos(datos):
     if not os.path.exists(JSON_PROC):
         return
     with open(JSON_PROC, encoding="utf-8") as f:
-        proc = json.load(f)["procedimientos"]
+        bruto = json.load(f)
+    proc = bruto["procedimientos"]
+    externos = bruto.get("externos", [])
     arts = datos["articulos"]
     errores = []
 
@@ -110,9 +112,16 @@ def validar_y_anadir_procedimientos(datos):
             q = f.get("pregunta")
             if q:
                 lit(q["literal"]["articulo"], q["literal"]["texto"], d + "/pregunta")
+    # Leyes distintas enlazadas desde el mapa (p. ej. el Tribunal del Jurado en la LECrim).
+    for e in externos:
+        if len(RE_LEY_EXT.findall(e["texto"])) != 1 or e["texto"].count("[[") != 1:
+            errores.append(f"externo {e['id']}: el texto debe llevar un enlace [[Nombre|https://www.boe.es/...]]")
+        for k in e.get("articulos", []):
+            art(k, "externo " + e["id"])
     if errores:
         sys.exit("ERROR en procedimientos.json:\n- " + "\n- ".join(errores))
     datos["procedimientos"] = proc
+    datos["externos"] = externos
     datos["plazos"] = plazos
     print(f"Procedimientos comprobados: {len(proc)} ({sum(len(p['fases']) for p in proc)} fases, "
           f"{len(plazos)} plazos). Todas las frases literales están en su artículo.")
@@ -161,6 +170,7 @@ def main():
         ficha = next((l for l in json.load(f)["leyes"] if l["id"] == LEY), None)
     if ficha:
         datos["ley"]["nombre_corto"] = ficha["nombre"]
+        datos["ley"]["titulo_mapa"] = ficha.get("mapa", "Mapa procesal")
     validar_y_anadir_procedimientos(datos)
     validar_y_anadir_recursos(datos)
     js = json.dumps(datos, ensure_ascii=False, separators=(",", ":"))

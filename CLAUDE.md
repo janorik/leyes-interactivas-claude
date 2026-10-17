@@ -140,4 +140,6 @@ No empieces la siguiente fase sin su visto bueno.
 - App: `lecrim/index.html`, generada con `python3 scripts/insertar_datos.py lecrim`. La app es la misma para todas las leyes: `lec/index.html` es la plantilla y el script la copia con los datos de cada ley. Una mejora de la app se hace en `lec/index.html` y se regeneran todas.
 - Mientras una ley no tenga mapa procesal, la app abre en «Ley» y oculta «Procesos» y «Repaso».
 - **F1 LECrim (hecha):** texto literal completo (1059 artículos y 10 disposiciones), árbol, buscador, notas y portada. Pendiente de revisión del usuario.
-- **Contenido elaborado de la LECrim:** bloques por decidir con el usuario a partir del índice real del PDF. No empezar sin su visto bueno.
+- **Esqueleto del mapa (hecho):** `python3 scripts/esqueleto_lecrim.py` genera `lecrim/datos/procedimientos.json` con 14 bloques y 86 fases sacados del índice del BOE (nombre literal y rango de artículos, `"esqueleto": true`, sin plazos ni alternativas). Al desarrollar un bloque se quita su `"esqueleto": true` y el script deja de regenerarlo.
+- **Método acordado con el usuario:** primero el esqueleto completo del mapa; después se desarrolla un bloque cada vez (plazos con frase literal, alternativas, preguntas), con su visto bueno.
+- **Leyes relacionadas:** el Tribunal del Jurado se muestra como tarjeta «otra ley» con enlace al BOE (campo `externos` de `procedimientos.json`), no se desarrolla.

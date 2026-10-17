@@ -8,7 +8,8 @@
    "referencia": "Ley 1/2000, de 7 de enero · BOE-A-2000-323",
    "carpeta": "lec/",
    "estado": "disponible",
-   "descripcion": "Mapa procesal (ordinario, verbal, ejecución, cautelares, monitorio, cambiario, familia, herencia, hipotecaria), sistema de recursos, texto literal completo, repaso y notas."
+   "descripcion": "Mapa procesal (ordinario, verbal, ejecución, cautelares, monitorio, cambiario, familia, herencia, hipotecaria), sistema de recursos, texto literal completo, repaso y notas.",
+   "mapa": "Procesos civiles"
   },
   {
    "id": "lecrim",
@@ -17,7 +18,8 @@
    "referencia": "Real Decreto de 14 de septiembre de 1882 · BOE-A-1882-6036",
    "carpeta": "lecrim/",
    "estado": "disponible",
-   "descripcion": "Texto literal completo con árbol y buscador, y notas. El mapa procesal está en preparación."
+   "descripcion": "Mapa procesal en esqueleto (sumario, juicio oral, abreviado, juicio rápido, recursos…), texto literal completo, buscador y notas.",
+   "mapa": "Procesos penales"
   },
   {
    "id": "lrjs",
