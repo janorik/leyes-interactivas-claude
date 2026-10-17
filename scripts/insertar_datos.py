@@ -167,6 +167,9 @@ def validar_y_anadir_recursos(datos):
         for l in r["literales"]:
             lit(l, r["id"])
     for s in rec["selector"]:
+        # El LAJ solo dicta diligencias y decretos: un auto o una sentencia en su grupo es un error.
+        if s["quien"] == "LAJ" and not s["res"].startswith(("Diligencia", "Decreto")):
+            errores.append(f"selector «{s['res']}»: el LAJ solo dicta diligencias y decretos")
         if s["recurso"] is not None and s["recurso"] not in ids:
             errores.append(f"selector «{s['res']}»: recurso {s['recurso']} no definido")
         lit(s["literal"], "selector «" + s["res"] + "»")

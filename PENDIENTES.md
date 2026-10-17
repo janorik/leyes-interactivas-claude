@@ -113,6 +113,7 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
   - **Propuesta:** dejarlo fuera hasta que me digas qué órgano aplicas (¿el del art. 846 ter o el del 846 bis a si es Jurado?).
   - **Tu respuesta:**
 - [ ] **Apelación contra autos: sumario frente a abreviado.** En el sumario hace falta la reforma previa (art. 222); en el abreviado no (art. 766.2). Se muestra en una sola ficha con los dos regímenes. Revisa si prefieres dos fichas separadas.
+- [x] **Corrección del usuario (hecha):** el LAJ solo dicta diligencias y decretos. El «auto que resuelve una revisión» estaba por error en el grupo del LAJ; ahora está en «Autos que dicta el Juez o el Tribunal», junto con el auto de acumulación de condenas (art. 988: «el Juez o Tribunal que hubiera dictado la última sentencia»). El script rechaza ya cualquier auto o sentencia en el grupo del LAJ.
 - [ ] **Revisa todas las fichas y los 27 casos del selector:** las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
 
 ### Mapa procesal (esqueleto)

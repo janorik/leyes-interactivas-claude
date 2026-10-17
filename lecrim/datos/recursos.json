@@ -16,6 +16,10 @@
    "titulo": "Autos de los Tribunales"
   },
   {
+   "quien": "Juez o Tribunal",
+   "titulo": "Autos que dicta el Juez o el Tribunal (según la fase o la causa)"
+  },
+  {
    "quien": "Sentencia",
    "titulo": "Sentencias"
   }
@@ -495,16 +499,6 @@
    }
   },
   {
-   "res": "Auto que resuelve una revisión",
-   "quien": "LAJ",
-   "recurso": null,
-   "nota": "",
-   "literal": {
-    "articulo": "238 ter",
-    "texto": "Contra el auto resolutorio del recurso de revisión no cabrá interponer recurso alguno."
-   }
-  },
-  {
    "res": "Cualquier auto del Juez de Instrucción",
    "quien": "Juez de Instrucción",
    "recurso": "reforma",
@@ -605,16 +599,6 @@
    }
   },
   {
-   "res": "Auto que fija el límite de cumplimiento de las penas (acumulación)",
-   "quien": "Tribunal",
-   "recurso": "casacion",
-   "nota": "Solo por infracción de ley.",
-   "literal": {
-    "articulo": "988",
-    "texto": "Contra tal auto podrán el Ministerio Fiscal y el condenado interponer recurso de casación por infracción de Ley."
-   }
-  },
-  {
    "res": "Auto que deniega tener por preparada la casación",
    "quien": "Tribunal",
    "recurso": "queja-casacion",
@@ -622,6 +606,26 @@
    "literal": {
     "articulo": "862",
     "texto": "Si el recurrente se creyere agraviado por el auto denegatorio de que se habla en el artículo 858, podrá acudir en queja a la Sala Segunda del Tribunal Supremo"
+   }
+  },
+  {
+   "res": "Auto que resuelve una revisión contra un decreto del LAJ",
+   "quien": "Juez o Tribunal",
+   "recurso": null,
+   "nota": "Lo dicta el Juez o Tribunal con competencia funcional en esa fase, no el LAJ.",
+   "literal": {
+    "articulo": "238 ter",
+    "texto": "Contra el auto resolutorio del recurso de revisión no cabrá interponer recurso alguno."
+   }
+  },
+  {
+   "res": "Auto que fija el límite de cumplimiento de las penas (acumulación)",
+   "quien": "Juez o Tribunal",
+   "recurso": "casacion",
+   "nota": "Lo dicta el Juez o Tribunal de la última sentencia. Solo cabe casación por infracción de ley.",
+   "literal": {
+    "articulo": "988",
+    "texto": "el Juez o Tribunal que hubiera dictado la última sentencia, de oficio, a instancia del Ministerio Fiscal o del condenado, procederá a fijar el límite del cumplimiento de las penas impuestas"
    }
   },
   {
