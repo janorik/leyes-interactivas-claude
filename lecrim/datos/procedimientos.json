@@ -1719,6 +1719,391 @@
      "esqueleto": true
     }
    ]
+  },
+  {
+   "id": "sumario",
+   "nombre": "Sumario ordinario",
+   "bloque": "lecrim",
+   "grupo": "Libros II y III · Sumario y juicio oral",
+   "solo_procedimientos": true,
+   "esqueleto": true,
+   "resumen": "Una sola ruta: instrucción del sumario, conclusión y sobreseimiento, y juicio oral. Las medidas cautelares, de investigación y las fianzas son comunes a varios procedimientos y van aparte.",
+   "relacionados": [
+    "cautelares",
+    "investigacion",
+    "fianzas"
+   ],
+   "ambito": {
+    "corto": "Arts. 299 a 749",
+    "texto": "TÍTULO IV. De la instrucción · TÍTULO V. De la comprobación del delito y averiguación del delincuente · TÍTULO XI. De la conclusión del sumario y del sobreseimiento · TÍTULO XII. Disposiciones generales referentes a los anteriores títulos · TÍTULO I. De la calificación del delito · TÍTULO II. De los artículos de previo pronunciamiento · TÍTULO III. De la celebración del juicio oral",
+    "articulos": [
+     "299"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "sumario-instruccion-299",
+     "fase": "Del sumario y de las autoridades competentes para instruirlo",
+     "subtitulo": "TÍTULO IV · CAPÍTULO I · arts. 299 a 305",
+     "descripcion": "",
+     "articulos": [
+      "299",
+      "305"
+     ],
+     "rango": [
+      "299",
+      "305"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "instruccion"
+    },
+    {
+     "id": "sumario-instruccion-306",
+     "fase": "De la formación del sumario",
+     "subtitulo": "TÍTULO IV · CAPÍTULO II · arts. 306 a 325",
+     "descripcion": "",
+     "articulos": [
+      "306",
+      "325"
+     ],
+     "rango": [
+      "306",
+      "325"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "instruccion"
+    },
+    {
+     "id": "sumario-instruccion-326",
+     "fase": "De la inspección ocular",
+     "subtitulo": "TÍTULO V · CAPÍTULO I · arts. 326 a 333",
+     "descripcion": "",
+     "articulos": [
+      "326",
+      "333"
+     ],
+     "rango": [
+      "326",
+      "333"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "instruccion"
+    },
+    {
+     "id": "sumario-instruccion-334",
+     "fase": "Del cuerpo del delito",
+     "subtitulo": "TÍTULO V · CAPÍTULO II · arts. 334 a 367",
+     "descripcion": "",
+     "articulos": [
+      "334",
+      "367"
+     ],
+     "rango": [
+      "334",
+      "367"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "instruccion"
+    },
+    {
+     "id": "sumario-instruccion-367_bis",
+     "fase": "De la destrucción y la realización anticipada de los efectos judiciales",
+     "subtitulo": "TÍTULO V · CAPÍTULO II BIS · arts. 367 bis a 367 septies",
+     "descripcion": "",
+     "articulos": [
+      "367 bis",
+      "367 septies"
+     ],
+     "rango": [
+      "367 bis",
+      "367 septies"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "instruccion"
+    },
+    {
+     "id": "sumario-instruccion-368",
+     "fase": "De la identidad del delincuente y de sus circunstancias personales",
+     "subtitulo": "TÍTULO V · CAPÍTULO III · arts. 368 a 384 bis",
+     "descripcion": "",
+     "articulos": [
+      "368",
+      "384 bis"
+     ],
+     "rango": [
+      "368",
+      "384 bis"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "instruccion"
+    },
+    {
+     "id": "sumario-instruccion-385",
+     "fase": "De las declaraciones de los procesados",
+     "subtitulo": "TÍTULO V · CAPÍTULO IV · arts. 385 a 409 bis",
+     "descripcion": "",
+     "articulos": [
+      "385",
+      "409 bis"
+     ],
+     "rango": [
+      "385",
+      "409 bis"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "instruccion"
+    },
+    {
+     "id": "sumario-instruccion-410",
+     "fase": "De las declaraciones de los testigos",
+     "subtitulo": "TÍTULO V · CAPÍTULO V · arts. 410 a 450",
+     "descripcion": "",
+     "articulos": [
+      "410",
+      "450"
+     ],
+     "rango": [
+      "410",
+      "450"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "instruccion"
+    },
+    {
+     "id": "sumario-instruccion-451",
+     "fase": "Del careo de los testigos y procesados",
+     "subtitulo": "TÍTULO V · CAPÍTULO VI · arts. 451 a 455",
+     "descripcion": "",
+     "articulos": [
+      "451",
+      "455"
+     ],
+     "rango": [
+      "451",
+      "455"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "instruccion"
+    },
+    {
+     "id": "sumario-instruccion-456",
+     "fase": "Del informe pericial",
+     "subtitulo": "TÍTULO V · CAPÍTULO VII · arts. 456 a 485",
+     "descripcion": "",
+     "articulos": [
+      "456",
+      "485"
+     ],
+     "rango": [
+      "456",
+      "485"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "instruccion"
+    },
+    {
+     "id": "sumario-conclusion-622",
+     "fase": "De la conclusión del sumario",
+     "subtitulo": "TÍTULO XI · CAPÍTULO I · arts. 622 a 633",
+     "descripcion": "",
+     "articulos": [
+      "622",
+      "633"
+     ],
+     "rango": [
+      "622",
+      "633"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "conclusion"
+    },
+    {
+     "id": "sumario-conclusion-634",
+     "fase": "Del sobreseimiento",
+     "subtitulo": "TÍTULO XI · CAPÍTULO II · arts. 634 a 645",
+     "descripcion": "",
+     "articulos": [
+      "634",
+      "645"
+     ],
+     "rango": [
+      "634",
+      "645"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "conclusion"
+    },
+    {
+     "id": "sumario-conclusion-646",
+     "fase": "Disposiciones generales referentes a los anteriores títulos",
+     "subtitulo": "TÍTULO XII · arts. 646 a 648",
+     "descripcion": "",
+     "articulos": [
+      "646",
+      "648"
+     ],
+     "rango": [
+      "646",
+      "648"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "conclusion"
+    },
+    {
+     "id": "sumario-juicio-oral-649",
+     "fase": "De la calificación del delito",
+     "subtitulo": "TÍTULO I · arts. 649 a 665",
+     "descripcion": "",
+     "articulos": [
+      "649",
+      "665"
+     ],
+     "rango": [
+      "649",
+      "665"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "juicio-oral"
+    },
+    {
+     "id": "sumario-juicio-oral-666",
+     "fase": "De los artículos de previo pronunciamiento",
+     "subtitulo": "TÍTULO II · arts. 666 a 679",
+     "descripcion": "",
+     "articulos": [
+      "666",
+      "679"
+     ],
+     "rango": [
+      "666",
+      "679"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "juicio-oral"
+    },
+    {
+     "id": "sumario-juicio-oral-680",
+     "fase": "De la publicidad de los debates",
+     "subtitulo": "TÍTULO III · CAPÍTULO I · arts. 680 a 682",
+     "descripcion": "",
+     "articulos": [
+      "680",
+      "682"
+     ],
+     "rango": [
+      "680",
+      "682"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "juicio-oral"
+    },
+    {
+     "id": "sumario-juicio-oral-683",
+     "fase": "De las facultades del Presidente del Tribunal",
+     "subtitulo": "TÍTULO III · CAPÍTULO II · arts. 683 a 687",
+     "descripcion": "",
+     "articulos": [
+      "683",
+      "687"
+     ],
+     "rango": [
+      "683",
+      "687"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "juicio-oral"
+    },
+    {
+     "id": "sumario-juicio-oral-688",
+     "fase": "Del modo de practicar las pruebas durante el juicio oral",
+     "subtitulo": "TÍTULO III · CAPÍTULO III · arts. 688 a 731 bis",
+     "descripcion": "",
+     "articulos": [
+      "688",
+      "731 bis"
+     ],
+     "rango": [
+      "688",
+      "731 bis"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "juicio-oral"
+    },
+    {
+     "id": "sumario-juicio-oral-732",
+     "fase": "De la acusación de la defensa y de la sentencia",
+     "subtitulo": "TÍTULO III · CAPÍTULO IV · arts. 732 a 743",
+     "descripcion": "",
+     "articulos": [
+      "732",
+      "743"
+     ],
+     "rango": [
+      "732",
+      "743"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "juicio-oral"
+    },
+    {
+     "id": "sumario-juicio-oral-744",
+     "fase": "De la suspensión del juicio oral",
+     "subtitulo": "TÍTULO III · CAPÍTULO V · arts. 744 a 749",
+     "descripcion": "",
+     "articulos": [
+      "744",
+      "749"
+     ],
+     "rango": [
+      "744",
+      "749"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true,
+     "origen": "juicio-oral"
+    }
+   ]
   }
  ],
  "externos": [
@@ -1736,11 +2121,9 @@
  "vista_procedimientos": [
   {
    "grupo": "Sumario ordinario",
-   "nota": "La ley lo reparte entre el Libro II (sumario) y el Libro III (juicio oral): se recorre en estos tres bloques, por orden.",
+   "nota": "Una sola ruta de la instrucción a la sentencia. En el Mapa sigue repartido como en la ley: Libro II (sumario) y Libro III (juicio oral).",
    "items": [
-    "instruccion",
-    "conclusion",
-    "juicio-oral"
+    "sumario"
    ]
   },
   {

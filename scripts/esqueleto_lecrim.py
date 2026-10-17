@@ -78,14 +78,24 @@ def claves_rango(est, rango):
 # Un elemento es el id de un bloque, {"proc", "fase"} para una fase concreta o {"externo"} para otra ley.
 VISTA_PROCEDIMIENTOS = [
     {"grupo": "Sumario ordinario",
-     "nota": "La ley lo reparte entre el Libro II (sumario) y el Libro III (juicio oral): se recorre en estos tres bloques, por orden.",
-     "items": ["instruccion", "conclusion", "juicio-oral"]},
+     "nota": "Una sola ruta de la instrucción a la sentencia. En el Mapa sigue repartido como en la ley: Libro II (sumario) y Libro III (juicio oral).",
+     "items": ["sumario"]},
     {"grupo": "Procedimiento abreviado", "items": ["abreviado"]},
     {"grupo": "Enjuiciamiento rápido", "items": ["rapido"]},
     {"grupo": "Delitos leves", "items": ["leves"]},
     {"grupo": "Otros procedimientos", "items": [{"proc": "especiales", "fase": "especiales-803_bis_a"},
                                                 {"externo": "jurado"}, "especiales"]},
 ]
+# Procedimientos que solo existen en la pestaña «Procedimientos»: unen fases de varios bloques del
+# Mapa (que sigue el orden de la ley). Se regeneran siempre a partir de esos bloques.
+UNIDOS = [
+    {"id": "sumario", "nombre": "Sumario ordinario", "grupo": "Libros II y III · Sumario y juicio oral",
+     "bloques": ["instruccion", "conclusion", "juicio-oral"],
+     "relacionados": ["cautelares", "investigacion", "fianzas"],
+     "resumen": "Una sola ruta: instrucción del sumario, conclusión y sobreseimiento, y juicio oral. "
+                "Las medidas cautelares, de investigación y las fianzas son comunes a varios procedimientos y van aparte."},
+]
+
 VISTA_RECURSOS = [
     {"grupo": "Recursos contra sentencias", "items": ["recursos"]},
     {"grupo": "Recursos contra las resoluciones procesales (Libro I)",
@@ -147,7 +157,8 @@ def main():
     previos = {}
     if os.path.exists(destino):
         with open(destino, encoding="utf-8") as f:
-            previos = {p["id"]: p for p in json.load(f)["procedimientos"] if not p.get("esqueleto")}
+            previos = {p["id"]: p for p in json.load(f)["procedimientos"]
+                       if not p.get("esqueleto") and not p.get("solo_procedimientos")}
     procs = []
     for pid, nombre, grupo, partes in BLOQUES:
         if pid in previos:  # bloque ya desarrollado: no se toca
@@ -176,6 +187,18 @@ def main():
             "ambito": {"corto": CORTO.get(pid, f"Arts. {num(todos[0])} a {num(todos[-1], True)}"), "texto": " · ".join(rutas),
                        "articulos": [todos[0]], "literal": []},
             "revisado": False, "fases": fases})
+    por_id = {p["id"]: p for p in procs}
+    for u in UNIDOS:
+        partes = [por_id[b] for b in u["bloques"]]
+        fases = [dict(f, id="{}-{}".format(u["id"], f["id"]), origen=p["id"]) for p in partes for f in p["fases"]]
+        procs.append({"id": u["id"], "nombre": u["nombre"], "bloque": "lecrim", "grupo": u["grupo"],
+                      "solo_procedimientos": True, "esqueleto": any(p.get("esqueleto") for p in partes),
+                      "resumen": u["resumen"], "relacionados": u["relacionados"],
+                      "ambito": {"corto": f"Arts. {partes[0]['ambito']['corto'].split()[1]} a "
+                                          f"{partes[-1]['ambito']['corto'].split()[-1]}",
+                                 "texto": " · ".join(p["ambito"]["texto"] for p in partes),
+                                 "articulos": partes[0]["ambito"]["articulos"], "literal": []},
+                      "revisado": all(p["revisado"] for p in partes), "fases": fases})
     with open(destino, "w", encoding="utf-8") as f:
         json.dump({"procedimientos": procs, "externos": EXTERNOS, "vista_procedimientos": VISTA_PROCEDIMIENTOS,
                    "vista_recursos": VISTA_RECURSOS}, f, ensure_ascii=False, indent=1)
