@@ -1,0 +1,75 @@
+{
+ "control": {
+  "huecos_numeracion": [],
+  "fuera_de_orden": [],
+  "vacios": [
+   "48 a 50",
+   "51",
+   "128 a 140",
+   "300",
+   "316",
+   "387",
+   "394",
+   "395",
+   "504 bis",
+   "504 bis 2",
+   "557",
+   "601 a 610",
+   "853",
+   "865",
+   "872",
+   "886",
+   "891",
+   "907 a 909",
+   "910 a 933",
+   "934 a 946",
+   "947 a 953",
+   "978 a 982",
+   "995"
+  ],
+  "sin_texto": [],
+  "muy_cortos": [],
+  "rotulos_indice": 130,
+  "rotulos_cuerpo": 130,
+  "indice_no_encontrado": [],
+  "n_articulos": 1059,
+  "n_disposiciones": 10,
+  "con_notas_boe": 2,
+  "con_destacado": []
+ },
+ "avisos": [],
+ "contraste": {
+  "palabras_pdftotext": 115417,
+  "palabras_extraidas": 115420,
+  "diferencias": [
+   {
+    "pdftotext": "la de mandamiento o cartaorden cuando se dirija a",
+    "extraido": "la de mandamiento o carta orden cuando se dirija a"
+   },
+   {
+    "pdftotext": "un suplicatorio exhorto o cartaorden acordará su cumplimiento sin",
+    "extraido": "un suplicatorio exhorto o carta orden acordará su cumplimiento sin"
+   },
+   {
+    "pdftotext": "en Farmacia en Ciencias físicoquímicas o por Ingenieros que",
+    "extraido": "en Farmacia en Ciencias físico químicas o por Ingenieros que"
+   },
+   {
+    "pdftotext": "de los casos siguientes sí a Cuando sean perecederos",
+    "extraido": "de los casos siguientes a Cuando sean perecederos"
+   },
+   {
+    "pdftotext": "valor del objeto en d Cuando su conservación",
+    "extraido": "valor del objeto en sí d Cuando su conservación"
+   },
+   {
+    "pdftotext": "Artículo 588 ter j servicios Datos obrantes en archivos",
+    "extraido": "Artículo 588 ter j Datos obrantes en archivos"
+   },
+   {
+    "pdftotext": "de los prestadores de 1 Los datos electrónicos",
+    "extraido": "de los prestadores de servicios 1 Los datos electrónicos"
+   }
+  ]
+ }
+}

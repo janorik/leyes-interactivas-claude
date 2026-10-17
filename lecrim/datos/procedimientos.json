@@ -1,0 +1,1736 @@
+{
+ "procedimientos": [
+  {
+   "id": "generales",
+   "nombre": "Disposiciones generales",
+   "bloque": "lecrim",
+   "grupo": "Libro I · Disposiciones generales",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Arts. 1 a 258 bis",
+    "texto": "LIBRO I. Disposiciones generales",
+    "articulos": [
+     "1"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "generales-1",
+     "fase": "Preliminares",
+     "subtitulo": "LIBRO I · TÍTULO I · arts. 1 a 7",
+     "descripcion": "",
+     "articulos": [
+      "1",
+      "7"
+     ],
+     "rango": [
+      "1",
+      "7"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-8",
+     "fase": "De la competencia de los Jueces y Tribunales en lo criminal",
+     "subtitulo": "LIBRO I · TÍTULO II · arts. 8 a 51",
+     "descripcion": "",
+     "articulos": [
+      "8",
+      "51"
+     ],
+     "rango": [
+      "8",
+      "51"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-52",
+     "fase": "De las recusaciones y excusas de los Magistrados, Jueces, Asesores y Auxiliares de los Juzgados y Tribunales y de la abstención del Ministerio Fiscal",
+     "subtitulo": "LIBRO I · TÍTULO III · arts. 52 a 99",
+     "descripcion": "",
+     "articulos": [
+      "52",
+      "99"
+     ],
+     "rango": [
+      "52",
+      "99"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-100",
+     "fase": "De las personas a quienes corresponde el ejercicio de las acciones que nacen de los delitos y faltas",
+     "subtitulo": "LIBRO I · TÍTULO IV · arts. 100 a 117",
+     "descripcion": "",
+     "articulos": [
+      "100",
+      "117"
+     ],
+     "rango": [
+      "100",
+      "117"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-118",
+     "fase": "Del derecho a la defensa, a la asistencia jurídica gratuita y a la traducción e interpretación en los juicios criminales.",
+     "subtitulo": "LIBRO I · TÍTULO V · arts. 118 a 140",
+     "descripcion": "",
+     "articulos": [
+      "118",
+      "128 a 140"
+     ],
+     "rango": [
+      "118",
+      "128 a 140"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-141",
+     "fase": "De la forma de dictar resoluciones y del modo de dirimir las discordias",
+     "subtitulo": "LIBRO I · TÍTULO VI · arts. 141 a 165",
+     "descripcion": "",
+     "articulos": [
+      "141",
+      "165"
+     ],
+     "rango": [
+      "141",
+      "165"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-166",
+     "fase": "De las notificaciones, citaciones y emplazamientos",
+     "subtitulo": "LIBRO I · TÍTULO VII · arts. 166 a 182",
+     "descripcion": "",
+     "articulos": [
+      "166",
+      "182"
+     ],
+     "rango": [
+      "166",
+      "182"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-183",
+     "fase": "De los suplicatorios, exhortos y mandamientos",
+     "subtitulo": "LIBRO I · TÍTULO VIII · arts. 183 a 196",
+     "descripcion": "",
+     "articulos": [
+      "183",
+      "196"
+     ],
+     "rango": [
+      "183",
+      "196"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-197",
+     "fase": "De los términos judiciales",
+     "subtitulo": "LIBRO I · TÍTULO IX · arts. 197 a 215",
+     "descripcion": "",
+     "articulos": [
+      "197",
+      "215"
+     ],
+     "rango": [
+      "197",
+      "215"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-216",
+     "fase": "De los recursos contra las resoluciones procesales",
+     "subtitulo": "LIBRO I · TÍTULO X · arts. 216 a 238 ter",
+     "descripcion": "",
+     "articulos": [
+      "216",
+      "238 ter"
+     ],
+     "rango": [
+      "216",
+      "238 ter"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-239",
+     "fase": "De las costas procesales",
+     "subtitulo": "LIBRO I · TÍTULO XI · arts. 239 a 246",
+     "descripcion": "",
+     "articulos": [
+      "239",
+      "246"
+     ],
+     "rango": [
+      "239",
+      "246"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-247",
+     "fase": "De las obligaciones de los Jueces y Tribunales relativas a la estadística judicial",
+     "subtitulo": "LIBRO I · TÍTULO XII · arts. 247 a 257",
+     "descripcion": "",
+     "articulos": [
+      "247",
+      "257"
+     ],
+     "rango": [
+      "247",
+      "257"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-258",
+     "fase": "De las correcciones disciplinarias",
+     "subtitulo": "LIBRO I · TÍTULO XIII · art. 258",
+     "descripcion": "",
+     "articulos": [
+      "258"
+     ],
+     "rango": [
+      "258",
+      "258"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-258_bis",
+     "fase": "De los actos procesales mediante presencia telemática",
+     "subtitulo": "LIBRO I · TÍTULO XIV · art. 258 bis",
+     "descripcion": "",
+     "articulos": [
+      "258 bis"
+     ],
+     "rango": [
+      "258 bis",
+      "258 bis"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "inicio",
+   "nombre": "Denuncia, querella y Policía judicial",
+   "bloque": "lecrim",
+   "grupo": "Libro II · Sumario",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Arts. 259 a 298",
+    "texto": "TÍTULO I. De la denuncia · TÍTULO II. De la querella · TÍTULO III. De la Policía judicial",
+    "articulos": [
+     "259"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "inicio-259",
+     "fase": "De la denuncia",
+     "subtitulo": "TÍTULO I · arts. 259 a 269",
+     "descripcion": "",
+     "articulos": [
+      "259",
+      "269"
+     ],
+     "rango": [
+      "259",
+      "269"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "inicio-270",
+     "fase": "De la querella",
+     "subtitulo": "TÍTULO II · arts. 270 a 281",
+     "descripcion": "",
+     "articulos": [
+      "270",
+      "281"
+     ],
+     "rango": [
+      "270",
+      "281"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "inicio-282",
+     "fase": "De la Policía judicial",
+     "subtitulo": "TÍTULO III · arts. 282 a 298",
+     "descripcion": "",
+     "articulos": [
+      "282",
+      "298"
+     ],
+     "rango": [
+      "282",
+      "298"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "instruccion",
+   "nombre": "Instrucción del sumario",
+   "bloque": "lecrim",
+   "grupo": "Libro II · Sumario",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Arts. 299 a 485",
+    "texto": "TÍTULO IV. De la instrucción · TÍTULO V. De la comprobación del delito y averiguación del delincuente",
+    "articulos": [
+     "299"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "instruccion-299",
+     "fase": "Del sumario y de las autoridades competentes para instruirlo",
+     "subtitulo": "TÍTULO IV · CAPÍTULO I · arts. 299 a 305",
+     "descripcion": "",
+     "articulos": [
+      "299",
+      "305"
+     ],
+     "rango": [
+      "299",
+      "305"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "instruccion-306",
+     "fase": "De la formación del sumario",
+     "subtitulo": "TÍTULO IV · CAPÍTULO II · arts. 306 a 325",
+     "descripcion": "",
+     "articulos": [
+      "306",
+      "325"
+     ],
+     "rango": [
+      "306",
+      "325"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "instruccion-326",
+     "fase": "De la inspección ocular",
+     "subtitulo": "TÍTULO V · CAPÍTULO I · arts. 326 a 333",
+     "descripcion": "",
+     "articulos": [
+      "326",
+      "333"
+     ],
+     "rango": [
+      "326",
+      "333"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "instruccion-334",
+     "fase": "Del cuerpo del delito",
+     "subtitulo": "TÍTULO V · CAPÍTULO II · arts. 334 a 367",
+     "descripcion": "",
+     "articulos": [
+      "334",
+      "367"
+     ],
+     "rango": [
+      "334",
+      "367"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "instruccion-367_bis",
+     "fase": "De la destrucción y la realización anticipada de los efectos judiciales",
+     "subtitulo": "TÍTULO V · CAPÍTULO II BIS · arts. 367 bis a 367 septies",
+     "descripcion": "",
+     "articulos": [
+      "367 bis",
+      "367 septies"
+     ],
+     "rango": [
+      "367 bis",
+      "367 septies"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "instruccion-368",
+     "fase": "De la identidad del delincuente y de sus circunstancias personales",
+     "subtitulo": "TÍTULO V · CAPÍTULO III · arts. 368 a 384 bis",
+     "descripcion": "",
+     "articulos": [
+      "368",
+      "384 bis"
+     ],
+     "rango": [
+      "368",
+      "384 bis"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "instruccion-385",
+     "fase": "De las declaraciones de los procesados",
+     "subtitulo": "TÍTULO V · CAPÍTULO IV · arts. 385 a 409 bis",
+     "descripcion": "",
+     "articulos": [
+      "385",
+      "409 bis"
+     ],
+     "rango": [
+      "385",
+      "409 bis"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "instruccion-410",
+     "fase": "De las declaraciones de los testigos",
+     "subtitulo": "TÍTULO V · CAPÍTULO V · arts. 410 a 450",
+     "descripcion": "",
+     "articulos": [
+      "410",
+      "450"
+     ],
+     "rango": [
+      "410",
+      "450"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "instruccion-451",
+     "fase": "Del careo de los testigos y procesados",
+     "subtitulo": "TÍTULO V · CAPÍTULO VI · arts. 451 a 455",
+     "descripcion": "",
+     "articulos": [
+      "451",
+      "455"
+     ],
+     "rango": [
+      "451",
+      "455"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "instruccion-456",
+     "fase": "Del informe pericial",
+     "subtitulo": "TÍTULO V · CAPÍTULO VII · arts. 456 a 485",
+     "descripcion": "",
+     "articulos": [
+      "456",
+      "485"
+     ],
+     "rango": [
+      "456",
+      "485"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "cautelares",
+   "nombre": "Citación, detención, prisión y libertad provisional",
+   "bloque": "lecrim",
+   "grupo": "Libro II · Sumario",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Arts. 486 a 544 quinquies",
+    "texto": "TÍTULO VI. De la citación, de la detención y de la prisión provisional · TÍTULO VII. De la libertad provisional del procesado",
+    "articulos": [
+     "486"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "cautelares-486",
+     "fase": "De la citación",
+     "subtitulo": "TÍTULO VI · CAPÍTULO I · arts. 486 a 488",
+     "descripcion": "",
+     "articulos": [
+      "486",
+      "488"
+     ],
+     "rango": [
+      "486",
+      "488"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "cautelares-489",
+     "fase": "De la detención",
+     "subtitulo": "TÍTULO VI · CAPÍTULO II · arts. 489 a 501",
+     "descripcion": "",
+     "articulos": [
+      "489",
+      "501"
+     ],
+     "rango": [
+      "489",
+      "501"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "cautelares-502",
+     "fase": "De la prisión provisional",
+     "subtitulo": "TÍTULO VI · CAPÍTULO III · arts. 502 a 519",
+     "descripcion": "",
+     "articulos": [
+      "502",
+      "519"
+     ],
+     "rango": [
+      "502",
+      "519"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "cautelares-520",
+     "fase": "Del ejercicio del derecho de defensa, de la asistencia de Abogado y del tratamiento de los detenidos y presos",
+     "subtitulo": "TÍTULO VI · CAPÍTULO IV · arts. 520 a 527",
+     "descripcion": "",
+     "articulos": [
+      "520",
+      "527"
+     ],
+     "rango": [
+      "520",
+      "527"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "cautelares-528",
+     "fase": "De la libertad provisional del procesado",
+     "subtitulo": "TÍTULO VII · arts. 528 a 544 quinquies",
+     "descripcion": "",
+     "articulos": [
+      "528",
+      "544 quinquies"
+     ],
+     "rango": [
+      "528",
+      "544 quinquies"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "investigacion",
+   "nombre": "Medidas de investigación limitativas de derechos (art. 18 CE)",
+   "bloque": "lecrim",
+   "grupo": "Libro II · Sumario",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Arts. 545 a 588 octies",
+    "texto": "TÍTULO VIII. De las medidas de investigación limitativas de los derechos reconocidos en el artículo 18 de la Constitución",
+    "articulos": [
+     "545"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "investigacion-545",
+     "fase": "De la entrada y registro en lugar cerrado",
+     "subtitulo": "TÍTULO VIII · CAPÍTULO I · arts. 545 a 572",
+     "descripcion": "",
+     "articulos": [
+      "545",
+      "572"
+     ],
+     "rango": [
+      "545",
+      "572"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "investigacion-573",
+     "fase": "Del registro de libros y papeles",
+     "subtitulo": "TÍTULO VIII · CAPÍTULO II · arts. 573 a 578",
+     "descripcion": "",
+     "articulos": [
+      "573",
+      "578"
+     ],
+     "rango": [
+      "573",
+      "578"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "investigacion-579",
+     "fase": "De la detención y apertura de la correspondencia escrita y telegráfica",
+     "subtitulo": "TÍTULO VIII · CAPÍTULO III · arts. 579 a 588",
+     "descripcion": "",
+     "articulos": [
+      "579",
+      "588"
+     ],
+     "rango": [
+      "579",
+      "588"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "investigacion-588_bis_a",
+     "fase": "Disposiciones comunes a la interceptación de las comunicaciones telefónicas y telemáticas, la captación y grabación de comunicaciones orales mediante la utilización de dispositivos electrónicos, la utilización de dispositivos técnicos de seguimiento, localización y captación de la imagen, el registro de dispositivos de almacenamiento masivo de información y los registros remotos sobre equipos informáticos",
+     "subtitulo": "TÍTULO VIII · CAPÍTULO IV · arts. 588 bis a a 588 bis k",
+     "descripcion": "",
+     "articulos": [
+      "588 bis a",
+      "588 bis k"
+     ],
+     "rango": [
+      "588 bis a",
+      "588 bis k"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "investigacion-588_ter_a",
+     "fase": "La interceptación de las comunicaciones telefónicas y telemáticas",
+     "subtitulo": "TÍTULO VIII · CAPÍTULO V · arts. 588 ter a a 588 ter m",
+     "descripcion": "",
+     "articulos": [
+      "588 ter a",
+      "588 ter m"
+     ],
+     "rango": [
+      "588 ter a",
+      "588 ter m"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "investigacion-588_quater_a",
+     "fase": "Captación y grabación de comunicaciones orales mediante la utilización de dispositivos electrónicos",
+     "subtitulo": "TÍTULO VIII · CAPÍTULO VI · arts. 588 quater a a 588 quater e",
+     "descripcion": "",
+     "articulos": [
+      "588 quater a",
+      "588 quater e"
+     ],
+     "rango": [
+      "588 quater a",
+      "588 quater e"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "investigacion-588_quinquies_a",
+     "fase": "Utilización de dispositivos técnicos de captación de la imagen, de seguimiento y de localización",
+     "subtitulo": "TÍTULO VIII · CAPÍTULO VII · arts. 588 quinquies a a 588 quinquies c",
+     "descripcion": "",
+     "articulos": [
+      "588 quinquies a",
+      "588 quinquies c"
+     ],
+     "rango": [
+      "588 quinquies a",
+      "588 quinquies c"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "investigacion-588_sexies_a",
+     "fase": "Registro de dispositivos de almacenamiento masivo de información",
+     "subtitulo": "TÍTULO VIII · CAPÍTULO VIII · arts. 588 sexies a a 588 sexies c",
+     "descripcion": "",
+     "articulos": [
+      "588 sexies a",
+      "588 sexies c"
+     ],
+     "rango": [
+      "588 sexies a",
+      "588 sexies c"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "investigacion-588_septies_a",
+     "fase": "Registros remotos sobre equipos informáticos",
+     "subtitulo": "TÍTULO VIII · CAPÍTULO IX · arts. 588 septies a a 588 septies c",
+     "descripcion": "",
+     "articulos": [
+      "588 septies a",
+      "588 septies c"
+     ],
+     "rango": [
+      "588 septies a",
+      "588 septies c"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "investigacion-588_octies",
+     "fase": "Medidas de aseguramiento",
+     "subtitulo": "TÍTULO VIII · CAPÍTULO X · art. 588 octies",
+     "descripcion": "",
+     "articulos": [
+      "588 octies"
+     ],
+     "rango": [
+      "588 octies",
+      "588 octies"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "fianzas",
+   "nombre": "Fianzas, embargos y responsabilidad civil",
+   "bloque": "lecrim",
+   "grupo": "Libro II · Sumario",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Arts. 589 a 621 ter",
+    "texto": "TÍTULO IX. De las fianzas y embargos · TÍTULO X. De la responsabilidad civil de terceras personas · TÍTULO X BIS. De las especialidades en los delitos contra la Hacienda Pública",
+    "articulos": [
+     "589"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "fianzas-589",
+     "fase": "De las fianzas y embargos",
+     "subtitulo": "TÍTULO IX · arts. 589 a 614 bis",
+     "descripcion": "",
+     "articulos": [
+      "589",
+      "614 bis"
+     ],
+     "rango": [
+      "589",
+      "614 bis"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "fianzas-615",
+     "fase": "De la responsabilidad civil de terceras personas",
+     "subtitulo": "TÍTULO X · arts. 615 a 621",
+     "descripcion": "",
+     "articulos": [
+      "615",
+      "621"
+     ],
+     "rango": [
+      "615",
+      "621"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "fianzas-621_bis",
+     "fase": "De las especialidades en los delitos contra la Hacienda Pública",
+     "subtitulo": "TÍTULO X BIS · arts. 621 bis a 621 ter",
+     "descripcion": "",
+     "articulos": [
+      "621 bis",
+      "621 ter"
+     ],
+     "rango": [
+      "621 bis",
+      "621 ter"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "conclusion",
+   "nombre": "Conclusión del sumario y sobreseimiento",
+   "bloque": "lecrim",
+   "grupo": "Libro II · Sumario",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Arts. 622 a 648",
+    "texto": "TÍTULO XI. De la conclusión del sumario y del sobreseimiento · TÍTULO XII. Disposiciones generales referentes a los anteriores títulos",
+    "articulos": [
+     "622"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "conclusion-622",
+     "fase": "De la conclusión del sumario",
+     "subtitulo": "TÍTULO XI · CAPÍTULO I · arts. 622 a 633",
+     "descripcion": "",
+     "articulos": [
+      "622",
+      "633"
+     ],
+     "rango": [
+      "622",
+      "633"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "conclusion-634",
+     "fase": "Del sobreseimiento",
+     "subtitulo": "TÍTULO XI · CAPÍTULO II · arts. 634 a 645",
+     "descripcion": "",
+     "articulos": [
+      "634",
+      "645"
+     ],
+     "rango": [
+      "634",
+      "645"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "conclusion-646",
+     "fase": "Disposiciones generales referentes a los anteriores títulos",
+     "subtitulo": "TÍTULO XII · arts. 646 a 648",
+     "descripcion": "",
+     "articulos": [
+      "646",
+      "648"
+     ],
+     "rango": [
+      "646",
+      "648"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "juicio-oral",
+   "nombre": "Juicio oral",
+   "bloque": "lecrim",
+   "grupo": "Libro III · Juicio oral",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Arts. 649 a 749",
+    "texto": "TÍTULO I. De la calificación del delito · TÍTULO II. De los artículos de previo pronunciamiento · TÍTULO III. De la celebración del juicio oral",
+    "articulos": [
+     "649"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "juicio-oral-649",
+     "fase": "De la calificación del delito",
+     "subtitulo": "TÍTULO I · arts. 649 a 665",
+     "descripcion": "",
+     "articulos": [
+      "649",
+      "665"
+     ],
+     "rango": [
+      "649",
+      "665"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "juicio-oral-666",
+     "fase": "De los artículos de previo pronunciamiento",
+     "subtitulo": "TÍTULO II · arts. 666 a 679",
+     "descripcion": "",
+     "articulos": [
+      "666",
+      "679"
+     ],
+     "rango": [
+      "666",
+      "679"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "juicio-oral-680",
+     "fase": "De la publicidad de los debates",
+     "subtitulo": "TÍTULO III · CAPÍTULO I · arts. 680 a 682",
+     "descripcion": "",
+     "articulos": [
+      "680",
+      "682"
+     ],
+     "rango": [
+      "680",
+      "682"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "juicio-oral-683",
+     "fase": "De las facultades del Presidente del Tribunal",
+     "subtitulo": "TÍTULO III · CAPÍTULO II · arts. 683 a 687",
+     "descripcion": "",
+     "articulos": [
+      "683",
+      "687"
+     ],
+     "rango": [
+      "683",
+      "687"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "juicio-oral-688",
+     "fase": "Del modo de practicar las pruebas durante el juicio oral",
+     "subtitulo": "TÍTULO III · CAPÍTULO III · arts. 688 a 731 bis",
+     "descripcion": "",
+     "articulos": [
+      "688",
+      "731 bis"
+     ],
+     "rango": [
+      "688",
+      "731 bis"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "juicio-oral-732",
+     "fase": "De la acusación de la defensa y de la sentencia",
+     "subtitulo": "TÍTULO III · CAPÍTULO IV · arts. 732 a 743",
+     "descripcion": "",
+     "articulos": [
+      "732",
+      "743"
+     ],
+     "rango": [
+      "732",
+      "743"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "juicio-oral-744",
+     "fase": "De la suspensión del juicio oral",
+     "subtitulo": "TÍTULO III · CAPÍTULO V · arts. 744 a 749",
+     "descripcion": "",
+     "articulos": [
+      "744",
+      "749"
+     ],
+     "rango": [
+      "744",
+      "749"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "abreviado",
+   "nombre": "Procedimiento abreviado",
+   "bloque": "lecrim",
+   "grupo": "Libro IV · Procedimientos especiales",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Arts. 757 a 794",
+    "texto": "TÍTULO II. Del procedimiento abreviado",
+    "articulos": [
+     "757"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "abreviado-757",
+     "fase": "Disposiciones generales",
+     "subtitulo": "TÍTULO II · CAPÍTULO I · arts. 757 a 768",
+     "descripcion": "",
+     "articulos": [
+      "757",
+      "768"
+     ],
+     "rango": [
+      "757",
+      "768"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "abreviado-769",
+     "fase": "De las actuaciones de la Policía Judicial y del Ministerio Fiscal",
+     "subtitulo": "TÍTULO II · CAPÍTULO II · arts. 769 a 773",
+     "descripcion": "",
+     "articulos": [
+      "769",
+      "773"
+     ],
+     "rango": [
+      "769",
+      "773"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "abreviado-774",
+     "fase": "De las diligencias previas",
+     "subtitulo": "TÍTULO II · CAPÍTULO III · arts. 774 a 779",
+     "descripcion": "",
+     "articulos": [
+      "774",
+      "779"
+     ],
+     "rango": [
+      "774",
+      "779"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "abreviado-780",
+     "fase": "De la preparación del juicio oral",
+     "subtitulo": "TÍTULO II · CAPÍTULO IV · arts. 780 a 784",
+     "descripcion": "",
+     "articulos": [
+      "780",
+      "784"
+     ],
+     "rango": [
+      "780",
+      "784"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "abreviado-785",
+     "fase": "De la audiencia preliminar, del juicio oral y de la sentencia",
+     "subtitulo": "TÍTULO II · CAPÍTULO V · arts. 785 a 789",
+     "descripcion": "",
+     "articulos": [
+      "785",
+      "789"
+     ],
+     "rango": [
+      "785",
+      "789"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "abreviado-790",
+     "fase": "De la impugnación de la sentencia",
+     "subtitulo": "TÍTULO II · CAPÍTULO VI · arts. 790 a 793",
+     "descripcion": "",
+     "articulos": [
+      "790",
+      "793"
+     ],
+     "rango": [
+      "790",
+      "793"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "abreviado-794",
+     "fase": "De la ejecución de sentencias",
+     "subtitulo": "TÍTULO II · CAPÍTULO VII · art. 794",
+     "descripcion": "",
+     "articulos": [
+      "794"
+     ],
+     "rango": [
+      "794",
+      "794"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "rapido",
+   "nombre": "Enjuiciamiento rápido de determinados delitos",
+   "bloque": "lecrim",
+   "grupo": "Libro IV · Procedimientos especiales",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Arts. 795 a 803",
+    "texto": "TÍTULO III. Del procedimiento para el enjuiciamiento rápido de determinados delitos",
+    "articulos": [
+     "795"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "rapido-795",
+     "fase": "Ámbito de aplicación",
+     "subtitulo": "TÍTULO III · CAPÍTULO I · art. 795",
+     "descripcion": "",
+     "articulos": [
+      "795"
+     ],
+     "rango": [
+      "795",
+      "795"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "rapido-796",
+     "fase": "De las actuaciones de la Policía Judicial",
+     "subtitulo": "TÍTULO III · CAPÍTULO II · art. 796",
+     "descripcion": "",
+     "articulos": [
+      "796"
+     ],
+     "rango": [
+      "796",
+      "796"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "rapido-797",
+     "fase": "De las diligencias urgentes ante el Juzgado de guardia",
+     "subtitulo": "TÍTULO III · CAPÍTULO III · arts. 797 a 799",
+     "descripcion": "",
+     "articulos": [
+      "797",
+      "799"
+     ],
+     "rango": [
+      "797",
+      "799"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "rapido-800",
+     "fase": "De la preparación del juicio oral",
+     "subtitulo": "TÍTULO III · CAPÍTULO IV · arts. 800 a 801",
+     "descripcion": "",
+     "articulos": [
+      "800",
+      "801"
+     ],
+     "rango": [
+      "800",
+      "801"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "rapido-802",
+     "fase": "Del juicio oral y de la sentencia",
+     "subtitulo": "TÍTULO III · CAPÍTULO V · art. 802",
+     "descripcion": "",
+     "articulos": [
+      "802"
+     ],
+     "rango": [
+      "802",
+      "802"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "rapido-803",
+     "fase": "De la impugnación de la sentencia",
+     "subtitulo": "TÍTULO III · CAPÍTULO VI · art. 803",
+     "descripcion": "",
+     "articulos": [
+      "803"
+     ],
+     "rango": [
+      "803",
+      "803"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "especiales",
+   "nombre": "Otros procedimientos especiales",
+   "bloque": "lecrim",
+   "grupo": "Libro IV · Procedimientos especiales",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Libro IV, varios títulos",
+    "texto": "TÍTULO I. Del modo de proceder cuando fuere procesado un Senador o Diputado a Cortes · TÍTULO III BIS. Proceso por aceptación de decreto · TÍTULO III TER. De la intervención de terceros afectados por el decomiso y del procedimiento de decomiso autónomo · TÍTULO IV. Del procedimiento por delitos de injuria y calumnia contra particulares · TÍTULO V. Del procedimiento por delitos cometidos por medio de la imprenta, el grabado u otro medio mecánico de publicación · TÍTULO VI. Del procedimiento para la extradición · TÍTULO VII. Del procedimiento contra reos ausentes",
+    "articulos": [
+     "750"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "especiales-750",
+     "fase": "Del modo de proceder cuando fuere procesado un Senador o Diputado a Cortes",
+     "subtitulo": "TÍTULO I · arts. 750 a 756",
+     "descripcion": "",
+     "articulos": [
+      "750",
+      "756"
+     ],
+     "rango": [
+      "750",
+      "756"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "especiales-803_bis_a",
+     "fase": "Proceso por aceptación de decreto",
+     "subtitulo": "TÍTULO III BIS · arts. 803 bis a a 803 bis j",
+     "descripcion": "",
+     "articulos": [
+      "803 bis a",
+      "803 bis j"
+     ],
+     "rango": [
+      "803 bis a",
+      "803 bis j"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "especiales-803_ter_a",
+     "fase": "De la intervención en el proceso penal de los terceros que puedan resultar afectados por el decomiso",
+     "subtitulo": "TÍTULO III TER · CAPÍTULO I · arts. 803 ter a a 803 ter d",
+     "descripcion": "",
+     "articulos": [
+      "803 ter a",
+      "803 ter d"
+     ],
+     "rango": [
+      "803 ter a",
+      "803 ter d"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "especiales-803_ter_e",
+     "fase": "Procedimiento de decomiso autónomo",
+     "subtitulo": "TÍTULO III TER · CAPÍTULO II · arts. 803 ter e a 803 ter u",
+     "descripcion": "",
+     "articulos": [
+      "803 ter e",
+      "803 ter u"
+     ],
+     "rango": [
+      "803 ter e",
+      "803 ter u"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "especiales-804",
+     "fase": "Del procedimiento por delitos de injuria y calumnia contra particulares",
+     "subtitulo": "TÍTULO IV · arts. 804 a 815",
+     "descripcion": "",
+     "articulos": [
+      "804",
+      "815"
+     ],
+     "rango": [
+      "804",
+      "815"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "especiales-816",
+     "fase": "Del procedimiento por delitos cometidos por medio de la imprenta, el grabado u otro medio mecánico de publicación",
+     "subtitulo": "TÍTULO V · arts. 816 a 823 bis",
+     "descripcion": "",
+     "articulos": [
+      "816",
+      "823 bis"
+     ],
+     "rango": [
+      "816",
+      "823 bis"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "especiales-824",
+     "fase": "Del procedimiento para la extradición",
+     "subtitulo": "TÍTULO VI · arts. 824 a 833",
+     "descripcion": "",
+     "articulos": [
+      "824",
+      "833"
+     ],
+     "rango": [
+      "824",
+      "833"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "especiales-834",
+     "fase": "Del procedimiento contra reos ausentes",
+     "subtitulo": "TÍTULO VII · arts. 834 a 846",
+     "descripcion": "",
+     "articulos": [
+      "834",
+      "846"
+     ],
+     "rango": [
+      "834",
+      "846"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "recursos",
+   "nombre": "Recursos de apelación, casación y revisión",
+   "bloque": "lecrim",
+   "grupo": "Libro V · Recursos",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Arts. 846 bis a a 961",
+    "texto": "TÍTULO I. Del recurso de apelación contra las sentencias y determinados autos · CAPÍTULO I. De los recursos de casación por infracción de Ley y por quebrantamiento de forma · CAPÍTULO II. De los recursos de casación por quebrantamiento de forma · CAPÍTULO III. De la interposición, sustanciación y resolución del recurso de casación por infracción de ley y por quebrantamiento de forma · CAPÍTULO IV. Del recurso de casación en las causas de muerte · TÍTULO III. Del recurso de revisión",
+    "articulos": [
+     "846 bis a"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "recursos-846_bis_a",
+     "fase": "Del recurso de apelación contra las sentencias y determinados autos",
+     "subtitulo": "TÍTULO I · arts. 846 bis a a 846 ter",
+     "descripcion": "",
+     "articulos": [
+      "846 bis a",
+      "846 ter"
+     ],
+     "rango": [
+      "846 bis a",
+      "846 ter"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "recursos-847",
+     "fase": "De la procedencia del recurso",
+     "subtitulo": "CAPÍTULO I · Sección 1.ª · arts. 847 a 854",
+     "descripcion": "",
+     "articulos": [
+      "847",
+      "854"
+     ],
+     "rango": [
+      "847",
+      "854"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "recursos-855",
+     "fase": "De la preparación del recurso",
+     "subtitulo": "CAPÍTULO I · Sección 2.ª · arts. 855 a 861 bis c",
+     "descripcion": "",
+     "articulos": [
+      "855",
+      "861 bis c"
+     ],
+     "rango": [
+      "855",
+      "861 bis c"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "recursos-862",
+     "fase": "Del recurso de queja por denegación del testimonio pedido para interponer el de casación",
+     "subtitulo": "CAPÍTULO I · Sección 3.ª · arts. 862 a 872",
+     "descripcion": "",
+     "articulos": [
+      "862",
+      "872"
+     ],
+     "rango": [
+      "862",
+      "872"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "recursos-873",
+     "fase": "De la interposición del recurso",
+     "subtitulo": "CAPÍTULO I · Sección 4.ª · arts. 873 a 879",
+     "descripcion": "",
+     "articulos": [
+      "873",
+      "879"
+     ],
+     "rango": [
+      "873",
+      "879"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "recursos-880",
+     "fase": "De la sustanciación del recurso",
+     "subtitulo": "CAPÍTULO I · Sección 5.ª · arts. 880 a 893",
+     "descripcion": "",
+     "articulos": [
+      "880",
+      "893"
+     ],
+     "rango": [
+      "880",
+      "893"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "recursos-893_bis_a",
+     "fase": "De la decisión del recurso",
+     "subtitulo": "CAPÍTULO I · Sección 6.ª · arts. 893 bis a a 909",
+     "descripcion": "",
+     "articulos": [
+      "893 bis a",
+      "907 a 909"
+     ],
+     "rango": [
+      "893 bis a",
+      "907 a 909"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "recursos-954",
+     "fase": "Del recurso de revisión",
+     "subtitulo": "TÍTULO III · arts. 954 a 961",
+     "descripcion": "",
+     "articulos": [
+      "954",
+      "961"
+     ],
+     "rango": [
+      "954",
+      "961"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "leves",
+   "nombre": "Juicio sobre delitos leves",
+   "bloque": "lecrim",
+   "grupo": "Libros VI y VII",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Arts. 962 a 982",
+    "texto": "LIBRO VI. Del procedimiento para el juicio sobre delitos leves",
+    "articulos": [
+     "962"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "leves-962",
+     "fase": "Del procedimiento para el juicio sobre delitos leves",
+     "subtitulo": "LIBRO VI · arts. 962 a 982",
+     "descripcion": "",
+     "articulos": [
+      "962",
+      "978 a 982"
+     ],
+     "rango": [
+      "962",
+      "978 a 982"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "ejecucion",
+   "nombre": "Ejecución de las sentencias",
+   "bloque": "lecrim",
+   "grupo": "Libros VI y VII",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Arts. 983 a 999",
+    "texto": "LIBRO VII. De la ejecución de las sentencias",
+    "articulos": [
+     "983"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "ejecucion-983",
+     "fase": "De la ejecución de las sentencias",
+     "subtitulo": "LIBRO VII · arts. 983 a 999",
+     "descripcion": "",
+     "articulos": [
+      "983",
+      "999"
+     ],
+     "rango": [
+      "983",
+      "999"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  }
+ ],
+ "externos": [
+  {
+   "id": "jurado",
+   "nombre": "Tribunal del Jurado",
+   "grupo": "Libro IV · Procedimientos especiales",
+   "texto": "El procedimiento ante el Tribunal del Jurado se regula en la [[Ley Orgánica 5/1995, de 22 de mayo, del Tribunal del Jurado|https://www.boe.es/buscar/act.php?id=BOE-A-1995-12095]]. La LECrim la nombra «Ley Orgánica del Tribunal del Jurado».",
+   "articulos": [
+    "846 bis a",
+    "309 bis"
+   ]
+  }
+ ]
+}
