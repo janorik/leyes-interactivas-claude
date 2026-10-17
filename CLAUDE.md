@@ -109,7 +109,7 @@ Todo artículo citado en cualquier vista es un enlace que abre su texto literal.
 - Diseño adaptado a móvil (prioridad) y a ordenador. Texto legible y zoom cómodo.
 
 ## Pendientes
-Las dudas de interpretación y los puntos a revisar se anotan en `PENDIENTES.md` (el usuario los repasará al final). No se elige una interpretación: se anota y se sigue.
+Las dudas de interpretación y los puntos a revisar se anotan en `PENDIENTES.md` (el usuario los repasará al final). No se elige una interpretación: se anota y se sigue. Un único `PENDIENTES.md` para todas las leyes, con una sección por ley (`## LEC`, `## LECrim`…). Cada duda de interpretación lleva una **propuesta** argumentada con artículos (No verificable hasta que el usuario la confirme) y un hueco «Tu respuesta».
 
 ## Fases de trabajo
 Una fase cada vez. Al cerrar cada fase:

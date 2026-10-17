@@ -2,8 +2,11 @@
 
 Dudas de interpretación y puntos que el usuario debe revisar. Cada uno indica dónde está en la app.
 Cuando se resuelva uno, se marca con [x] y se anota la decisión.
+Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpretación, puntos de contenido y decisiones de diseño.
 
-## Dudas de interpretación
+## LEC — Ley de Enjuiciamiento Civil
+
+### Dudas de interpretación
 
 > Cada duda lleva una **propuesta de Claude** (No verificable hasta que la confirmes), hecha solo con el texto de la LEC de la app. Contesta en cada una: **sí** (se aplica), **no** (se deja como está) u **otra** (explica tu lectura).
 
@@ -61,7 +64,7 @@ Cuando se resuelva uno, se marca con [x] y se anota la decisión.
   - Cambio en la app: añadir lo que dice el art. 22.6. La enervación por vulnerabilidad «no computará como enervación anterior» y «podrá producirse aunque el arrendador haya efectuado el requerimiento fehaciente».
   - **Tu respuesta:**
 
-## Puntos de contenido
+### Puntos de contenido
 
 - [ ] **Recurso extraordinario por infracción procesal:** los arts. 468 a 476 figuran "(Sin contenido)" en el texto consolidado. En la app aparece como «No vigente», y se indica que la infracción procesal se invoca ahora en casación (art. 477.2). ¿Lo dejas así?
 - [ ] **Recursos, órganos:** el órgano de la apelación (art. 455.2) y de la casación (art. 478) está resumido. Revisa la redacción.
@@ -82,8 +85,12 @@ Cuando se resuelva uno, se marca con [x] y se anota la decisión.
   - **Tu respuesta:**
 - [ ] **Descripciones de todas las fases:** todo lo que no va entre « » es elaborado y está marcado "Pendiente de revisión".
 
-## Decisiones de diseño pendientes
+### Decisiones de diseño pendientes
 
 - [ ] **Logo:** tiene en la esquina inferior derecha una estrella de 4 puntas, que parece una marca de agua. En la cabecera solo se usa el emblema "N".
 - [ ] **Nombre:** ¿"NORLEXia" (como en el logo) o "NOrlexia" (como en CLAUDE.md)?
 - [ ] **Remisiones internas:** los "artículo 24…" dentro del texto literal todavía no son enlaces.
+
+## LECrim — Ley de Enjuiciamiento Criminal
+
+(Se irá llenando al empezar la LECrim.)
