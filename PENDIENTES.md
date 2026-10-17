@@ -40,6 +40,8 @@ Cuando se resuelva uno, se marca con [x] y se anota la decisión.
 - [x] **Procesos especiales no desarrollados:** añadidos filiación, protección de menores y adopción, sustracción internacional, liquidación del régimen económico matrimonial e intervención y administración del caudal. Quedan sin esquema propio: guarda y custodia y alimentos de menores (se tramitan por el art. 770, ya recogido) y la oposición a resoluciones de la DGRN en materia de Registro Civil (art. 781 bis).
 - [ ] **Ejecución hipotecaria sobre vivienda:** el art. 693.2 remite a la Ley 5/2019 y al art. 129 bis de la Ley Hipotecaria, que no están en la app.
 - [ ] **Orden y agrupación de las fases** de los cinco procedimientos: ¿falta o sobra alguna?
+- [ ] **Bloques nuevos (disposiciones generales y prueba):** competencia (arts. 36-67), partes y postulación (6-35), actuaciones, plazos, comunicaciones y nulidad (129-247), costas (241-246 y 394-398) y prueba (217 y 281-386). Son resúmenes por fases de materias que no son un procedimiento; revisa si la división en fases te sirve para estudiar.
+- [ ] **Prueba pericial, plazos del art. 337:** se muestran por separado el plazo del ordinario (5 días antes de la audiencia previa) y el del verbal (30 días desde la demanda o la contestación). Revisa que la distinción refleja tu lectura del artículo.
 - [ ] **Descripciones de todas las fases:** todo lo que no va entre « » es elaborado y está marcado "Pendiente de revisión".
 
 ## Decisiones de diseño pendientes
