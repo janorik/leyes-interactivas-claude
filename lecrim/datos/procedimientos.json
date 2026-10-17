@@ -1732,5 +1732,64 @@
     "309 bis"
    ]
   }
+ ],
+ "vista_procedimientos": [
+  {
+   "grupo": "Sumario ordinario",
+   "nota": "La ley lo reparte entre el Libro II (sumario) y el Libro III (juicio oral): se recorre en estos tres bloques, por orden.",
+   "items": [
+    "instruccion",
+    "conclusion",
+    "juicio-oral"
+   ]
+  },
+  {
+   "grupo": "Procedimiento abreviado",
+   "items": [
+    "abreviado"
+   ]
+  },
+  {
+   "grupo": "Enjuiciamiento rápido",
+   "items": [
+    "rapido"
+   ]
+  },
+  {
+   "grupo": "Delitos leves",
+   "items": [
+    "leves"
+   ]
+  },
+  {
+   "grupo": "Otros procedimientos",
+   "items": [
+    {
+     "proc": "especiales",
+     "fase": "especiales-803_bis_a"
+    },
+    {
+     "externo": "jurado"
+    },
+    "especiales"
+   ]
+  }
+ ],
+ "vista_recursos": [
+  {
+   "grupo": "Recursos contra sentencias",
+   "items": [
+    "recursos"
+   ]
+  },
+  {
+   "grupo": "Recursos contra las resoluciones procesales (Libro I)",
+   "items": [
+    {
+     "proc": "generales",
+     "fase": "generales-216"
+    }
+   ]
+  }
  ]
 }

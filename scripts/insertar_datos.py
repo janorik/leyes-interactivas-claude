@@ -118,10 +118,26 @@ def validar_y_anadir_procedimientos(datos):
             errores.append(f"externo {e['id']}: el texto debe llevar un enlace [[Nombre|https://www.boe.es/...]]")
         for k in e.get("articulos", []):
             art(k, "externo " + e["id"])
+    # Pestañas «Procedimientos» y «Recursos»: cada elemento debe existir.
+    ids_proc = {p["id"]: p for p in proc}
+    ids_ext = {e["id"] for e in externos}
+    vistas = {k: bruto.get(k, []) for k in ("vista_procedimientos", "vista_recursos")}
+    for nombre, grupos in vistas.items():
+        for g in grupos:
+            for it in g["items"]:
+                if isinstance(it, str):
+                    ok = it in ids_proc
+                elif "externo" in it:
+                    ok = it["externo"] in ids_ext
+                else:
+                    ok = it["proc"] in ids_proc and any(f["id"] == it["fase"] for f in ids_proc[it["proc"]]["fases"])
+                if not ok:
+                    errores.append(f"{nombre} «{g['grupo']}»: no existe {it}")
     if errores:
         sys.exit("ERROR en procedimientos.json:\n- " + "\n- ".join(errores))
     datos["procedimientos"] = proc
     datos["externos"] = externos
+    datos.update(vistas)
     datos["plazos"] = plazos
     print(f"Procedimientos comprobados: {len(proc)} ({sum(len(p['fases']) for p in proc)} fases, "
           f"{len(plazos)} plazos). Todas las frases literales están en su artículo.")
