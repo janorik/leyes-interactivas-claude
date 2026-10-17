@@ -101,8 +101,23 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [ ] **Nota «(*)» sobre el Libro V/VII:** el BOE la sitúa junto al art. 784; se muestra como nota de ese artículo.
 - [ ] **Tribunal del Jurado (enlace a otra ley):** el nombre «Ley Orgánica del Tribunal del Jurado» sale del art. 846 bis a de la LECrim (Verificable). El número y la fecha (5/1995, de 22 de mayo) y la referencia BOE-A-1995-12095 los puse de memoria (No verificable). Comprueba que el enlace abre la ley correcta. En la app: Procesos › Libro IV › Tribunal del Jurado.
 
+### Recursos (contenido elaborado, pendiente de revisión)
+
+- [ ] **Delitos leves: plazo de la apelación.** El art. 212, párrafo tercero, dice que la apelación contra la sentencia «en juicio sobre faltas» se interpone «el primer día siguiente» a la última notificación. El art. 976.1 dice que la sentencia «es apelable en el plazo de los cinco días siguientes al de su notificación».
+  - **Propuesta:** aplicar el art. 976 (5 días). Es la norma propia del juicio sobre delitos leves (Libro VI), y la nota general del BOE dice que las «faltas» se entienden referidas a los «delitos leves». El art. 212 parece no haberse adaptado. En la app figura así.
+  - **Tu respuesta:**
+- [ ] **Recurso de revisión: qué Sala.** Los arts. 957 a 959 hablan de «la Sala» sin decir cuál; el art. 956 menciona al Fiscal del Tribunal Supremo.
+  - **Propuesta:** no poner «Tribunal Supremo» en la ficha hasta que lo confirmes (en la app se dice que el artículo no lo concreta).
+  - **Tu respuesta:**
+- [ ] **Auto que resuelve la declinatoria (art. 676).** El art. 676 dice que contra él «procede el recurso de apelación», pero no dice ante quién. No lo he puesto en el selector.
+  - **Propuesta:** dejarlo fuera hasta que me digas qué órgano aplicas (¿el del art. 846 ter o el del 846 bis a si es Jurado?).
+  - **Tu respuesta:**
+- [ ] **Apelación contra autos: sumario frente a abreviado.** En el sumario hace falta la reforma previa (art. 222); en el abreviado no (art. 766.2). Se muestra en una sola ficha con los dos regímenes. Revisa si prefieres dos fichas separadas.
+- [ ] **Revisa todas las fichas y los 27 casos del selector:** las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
+
 ### Mapa procesal (esqueleto)
 
 - [ ] **Esqueleto de 14 bloques y 86 fases:** cada fase es un título, capítulo o sección del índice del BOE, con su nombre literal y sus artículos. Se han quitado las fases que solo tienen artículos derogados o sin contenido (casación, caps. II a IV del título II del libro V). Revisa si la agrupación en bloques te sirve antes de desarrollar el primero.
 - [ ] **Orden de desarrollo:** dime por qué bloque empezamos.
+- [x] **Recursos de la LECrim como en la LEC (hecho):** 14 recursos y 27 casos del selector, con «Por resolución», «Recursos» y «Ponte a prueba». Antes: al usuario le gusta la pestaña Recursos de la LEC (selector «Por resolución», fichas de cada recurso y «Ponte a prueba»). En la LECrim ahora solo hay tarjetas de bloques en esqueleto. Hacer `lecrim/datos/recursos.json` con el mismo formato (recursos, selector por resolución con frase literal, test), a partir de los arts. 216-238 ter (recursos contra resoluciones procesales), 846 bis a-846 ter (apelación), 847-933 (casación) y 954-961 (revisión), y los recursos propios del abreviado, juicio rápido y delitos leves. Todo con `revisado: false` y las dudas anotadas aquí.
 - [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).

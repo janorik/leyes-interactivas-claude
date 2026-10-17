@@ -1,0 +1,728 @@
+{
+ "_nota": "Contenido ELABORADO (no literal), revisado:false. Cada literal se comprueba contra el artículo citado de la LECrim (scripts/insertar_datos.py lecrim).",
+ "revisado": false,
+ "ubicacion": "Libro I, Título X · Libro IV · Libro V · Libro VI",
+ "grupos_selector": [
+  {
+   "quien": "LAJ",
+   "titulo": "Resoluciones del Letrado de la Administración de Justicia"
+  },
+  {
+   "quien": "Juez de Instrucción",
+   "titulo": "Autos del Juez de Instrucción (y del Juez de lo Penal en el abreviado)"
+  },
+  {
+   "quien": "Tribunal",
+   "titulo": "Autos de los Tribunales"
+  },
+  {
+   "quien": "Sentencia",
+   "titulo": "Sentencias"
+  }
+ ],
+ "recursos": [
+  {
+   "id": "reposicion-laj",
+   "recurso": "Reposición (contra resoluciones del LAJ)",
+   "contra_que": "Diligencias de ordenación y decretos del Letrado de la Administración de Justicia, salvo que la ley prevea revisión directa.",
+   "plazo": "3 días desde la notificación",
+   "organo": "El mismo Letrado de la Administración de Justicia que dictó la resolución.",
+   "efectos": "No tiene efectos suspensivos. Traslado común de 2 días a las demás partes. Contra el decreto que lo resuelve no cabe recurso.",
+   "articulos": [
+    "238 bis",
+    "211"
+   ],
+   "literales": [
+    {
+     "articulo": "238 bis",
+     "texto": "Contra todas las diligencias de ordenación dictadas por los Secretarios judiciales podrá ejercitarse ante ellos mismos recurso de reposición."
+    },
+    {
+     "articulo": "211",
+     "texto": "En el mismo plazo se interpondrán los recursos de reposición y de revisión contra las resoluciones de los Secretarios judiciales."
+    },
+    {
+     "articulo": "238 bis",
+     "texto": "en ningún caso tendrá efectos suspensivos"
+    },
+    {
+     "articulo": "238 bis",
+     "texto": "Contra el decreto del Secretario judicial que resuelva el recurso de reposición no cabrá interponer recurso alguno."
+    }
+   ]
+  },
+  {
+   "id": "revision-laj",
+   "recurso": "Revisión (contra decretos del LAJ)",
+   "contra_que": "Decretos del Letrado de la Administración de Justicia cuando la ley prevé expresamente la revisión directa (por ejemplo, el que declara desierto un recurso).",
+   "plazo": "3 días desde la notificación",
+   "organo": "El Juez o Tribunal con competencia funcional en la fase del proceso en que se dictó el decreto.",
+   "efectos": "Traslado común de 2 días. Contra el auto que lo resuelve no cabe recurso.",
+   "articulos": [
+    "238 ter",
+    "211",
+    "228"
+   ],
+   "literales": [
+    {
+     "articulo": "238 ter",
+     "texto": "El recurso de revisión se interpondrá ante el Juez o Tribunal con competencia funcional en la fase del proceso en la que haya recaído el decreto del Secretario judicial que se impugna"
+    },
+    {
+     "articulo": "211",
+     "texto": "En el mismo plazo se interpondrán los recursos de reposición y de revisión contra las resoluciones de los Secretarios judiciales."
+    },
+    {
+     "articulo": "238 ter",
+     "texto": "Contra el auto resolutorio del recurso de revisión no cabrá interponer recurso alguno."
+    }
+   ]
+  },
+  {
+   "id": "reforma",
+   "recurso": "Reforma",
+   "contra_que": "Todos los autos del Juez de Instrucción (y, en el abreviado, también los del Juez de lo Penal que no estén exceptuados de recurso).",
+   "plazo": "3 días desde la notificación",
+   "organo": "El mismo Juez que dictó el auto.",
+   "efectos": "Escrito con firma de Letrado. El Juez resuelve al segundo día de entregadas las copias. En el abreviado no suspende el curso del procedimiento, salvo que la ley disponga otra cosa.",
+   "articulos": [
+    "217",
+    "211",
+    "219",
+    "221",
+    "222",
+    "766"
+   ],
+   "literales": [
+    {
+     "articulo": "217",
+     "texto": "El recurso de reforma podrá interponerse contra todos los autos del Juez de Instrucción."
+    },
+    {
+     "articulo": "211",
+     "texto": "Los recursos de reforma o de súplica contra las resoluciones de los Jueces y Tribunales se interpondrán en el plazo de los tres días siguientes a su notificación"
+    },
+    {
+     "articulo": "219",
+     "texto": "Los recursos de reforma y apelación se interpondrán ante el mismo Juez que hubiere dictado el auto."
+    },
+    {
+     "articulo": "222",
+     "texto": "El Juez resolverá el recurso al segundo día de entregadas las copias"
+    },
+    {
+     "articulo": "766",
+     "texto": "Salvo que la Ley disponga otra cosa, los recursos de reforma y apelación no suspenderán el curso del procedimiento."
+    }
+   ]
+  },
+  {
+   "id": "suplica",
+   "recurso": "Súplica",
+   "contra_que": "Los autos de los Tribunales de lo criminal, salvo aquellos contra los que la ley otorgue expresamente otro recurso.",
+   "plazo": "3 días desde la notificación",
+   "organo": "El mismo Tribunal que dictó el auto.",
+   "efectos": "Se tramita por el procedimiento del recurso de reforma.",
+   "articulos": [
+    "236",
+    "237",
+    "238",
+    "211"
+   ],
+   "literales": [
+    {
+     "articulo": "236",
+     "texto": "Contra los autos de los Tribunales de lo criminal podrá interponerse el recurso de súplica ante el mismo que los hubiese dictado"
+    },
+    {
+     "articulo": "237",
+     "texto": "Se exceptúan aquellos contra los cuales se otorgue expresamente otro recurso en la Ley."
+    },
+    {
+     "articulo": "238",
+     "texto": "se sustanciará por el procedimiento señalado para el recurso de reforma"
+    },
+    {
+     "articulo": "211",
+     "texto": "Los recursos de reforma o de súplica contra las resoluciones de los Jueces y Tribunales se interpondrán en el plazo de los tres días siguientes a su notificación"
+    }
+   ]
+  },
+  {
+   "id": "apelacion-autos",
+   "recurso": "Apelación contra autos (instrucción)",
+   "contra_que": "Autos del Juez de Instrucción en los casos que determine la ley (sumario) y, en el abreviado, autos del Juez de Instrucción y del Juez de lo Penal no exceptuados de recurso. Incluye los autos de prisión provisional o libertad.",
+   "plazo": "5 días desde la notificación",
+   "organo": "En el sumario, el Tribunal que conocería de la causa en juicio oral. En el abreviado, la Audiencia respectiva.",
+   "efectos": "Sumario: exige haber interpuesto antes la reforma (pueden ir en el mismo escrito, la apelación como subsidiaria). Abreviado: no hace falta la reforma previa y no suspende el procedimiento salvo disposición en contrario. El de prisión se resuelve en un máximo de 30 días.",
+   "articulos": [
+    "217",
+    "212",
+    "220",
+    "222",
+    "766",
+    "507"
+   ],
+   "literales": [
+    {
+     "articulo": "217",
+     "texto": "El de apelación podrá interponerse únicamente en los casos determinados en la Ley"
+    },
+    {
+     "articulo": "212",
+     "texto": "El recurso de apelación se entablará dentro de cinco días, a contar desde el siguiente al de la última notificación de la resolución judicial que fuere su objeto"
+    },
+    {
+     "articulo": "220",
+     "texto": "Será Tribunal competente para conocer del recurso de apelación aquel a quien correspondiese el conocimiento de la causa en juicio oral."
+    },
+    {
+     "articulo": "222",
+     "texto": "El recurso de apelación no podrá interponerse sino después de haberse ejercitado el de reforma"
+    },
+    {
+     "articulo": "766",
+     "texto": "En ningún caso será necesario interponer previamente el de reforma para presentar la apelación."
+    },
+    {
+     "articulo": "766",
+     "texto": "El recurso de apelación se presentará dentro de los cinco días siguientes a la notificación del auto recurrido o del resolutorio del recurso de reforma"
+    },
+    {
+     "articulo": "507",
+     "texto": "El recurso contra el auto de prisión deberá resolverse en un plazo máximo de 30 días."
+    }
+   ]
+  },
+  {
+   "id": "queja",
+   "recurso": "Queja (contra autos del Juez)",
+   "contra_que": "Autos no apelables del Juez y resoluciones que deniegan la admisión de un recurso de apelación.",
+   "plazo": "Si la ley no le señala término: en cualquier tiempo mientras esté pendiente la causa",
+   "organo": "El Tribunal superior competente.",
+   "efectos": "El Tribunal pide informe al Juez y, en su caso, dictamen del Fiscal (3 días) y resuelve.",
+   "articulos": [
+    "218",
+    "219",
+    "213",
+    "233",
+    "234",
+    "235"
+   ],
+   "literales": [
+    {
+     "articulo": "218",
+     "texto": "El recurso de queja podrá interponerse contra todos los autos no apelables del Juez y contra las resoluciones en que se denegare la admisión de un recurso de apelación."
+    },
+    {
+     "articulo": "219",
+     "texto": "El de queja se producirá ante el Tribunal superior competente."
+    },
+    {
+     "articulo": "213",
+     "texto": "El recurso de queja para cuya interposición no señale término la Ley podrá interponerse en cualquier tiempo, mientras estuviese pendiente la causa."
+    }
+   ]
+  },
+  {
+   "id": "apelacion-penal",
+   "recurso": "Apelación contra sentencias del Juez de lo Penal (abreviado)",
+   "contra_que": "Sentencias del Juez de lo Penal y del Juez Central de lo Penal.",
+   "plazo": "10 días desde la notificación de la sentencia",
+   "organo": "Audiencia Provincial (Juez de lo Penal) o Sala de lo Penal de la Audiencia Nacional (Juez Central de lo Penal). El escrito se presenta ante el órgano que dictó la sentencia.",
+   "efectos": "Las demás partes alegan en 10 días y pueden adherirse. Contra la sentencia de apelación solo cabe casación en los supuestos del art. 847.",
+   "articulos": [
+    "790",
+    "791",
+    "792"
+   ],
+   "literales": [
+    {
+     "articulo": "790",
+     "texto": "La sentencia dictada por el Juez de lo Penal es apelable ante la Audiencia Provincial correspondiente, y la del Juez Central de lo penal, ante la Sala de lo Penal de la Audiencia Nacional."
+    },
+    {
+     "articulo": "790",
+     "texto": "dentro de los diez días siguientes a aquel en que se les hubiere notificado la sentencia"
+    },
+    {
+     "articulo": "790",
+     "texto": "El escrito de formalización del recurso se presentará ante el órgano que dictó la resolución que se impugne"
+    },
+    {
+     "articulo": "792",
+     "texto": "Contra la sentencia dictada en apelación solo cabrá recurso de casación en los supuestos previstos en el artículo 847"
+    }
+   ]
+  },
+  {
+   "id": "apelacion-rapido",
+   "recurso": "Apelación en el juicio rápido",
+   "contra_que": "Sentencias del Juzgado de lo Penal en el enjuiciamiento rápido.",
+   "plazo": "5 días para el escrito de formalización",
+   "organo": "Se tramita como la apelación del abreviado (arts. 790 a 792).",
+   "efectos": "Alegaciones de las demás partes: 5 días. Tramitación preferente.",
+   "articulos": [
+    "803",
+    "790"
+   ],
+   "literales": [
+    {
+     "articulo": "803",
+     "texto": "Frente a la sentencia dictada por el Juzgado de lo Penal podrá interponerse recurso de apelación, que se sustanciará conforme a lo previsto en los artículos 790 a 792"
+    },
+    {
+     "articulo": "803",
+     "texto": "El plazo para presentar el escrito de formalización será de cinco días."
+    },
+    {
+     "articulo": "803",
+     "texto": "La tramitación y resolución de estos recursos de apelación tendrán carácter preferente."
+    }
+   ]
+  },
+  {
+   "id": "apelacion-leves",
+   "recurso": "Apelación en el juicio por delito leve",
+   "contra_que": "Sentencias dictadas en el juicio sobre delitos leves.",
+   "plazo": "5 días desde la notificación",
+   "organo": "Se formaliza y tramita conforme a los arts. 790 a 792.",
+   "efectos": "Contra la sentencia de segunda instancia no cabe recurso alguno.",
+   "articulos": [
+    "976",
+    "977"
+   ],
+   "literales": [
+    {
+     "articulo": "976",
+     "texto": "La sentencia es apelable en el plazo de los cinco días siguientes al de su notificación."
+    },
+    {
+     "articulo": "976",
+     "texto": "El recurso se formalizará y tramitará conforme a lo dispuesto en los artículos 790 a 792."
+    },
+    {
+     "articulo": "977",
+     "texto": "Contra la sentencia que se dicte en segunda instancia no habrá lugar a recurso alguno."
+    }
+   ]
+  },
+  {
+   "id": "apelacion-audiencia",
+   "recurso": "Apelación contra resoluciones de la Audiencia en primera instancia",
+   "contra_que": "Sentencias de las Audiencias Provinciales o de la Sala de lo Penal de la Audiencia Nacional en primera instancia, y autos que ponen fin al proceso por falta de jurisdicción o sobreseimiento libre.",
+   "plazo": "Se rige por los arts. 790 a 792 (10 días para la sentencia, art. 790)",
+   "organo": "Sala de lo Civil y Penal del Tribunal Superior de Justicia (Audiencias Provinciales) o Sala de Apelación de la Audiencia Nacional, con tres magistrados.",
+   "efectos": "Resuelven en sentencia.",
+   "articulos": [
+    "846 ter",
+    "790"
+   ],
+   "literales": [
+    {
+     "articulo": "846 ter",
+     "texto": "Los autos que supongan la finalización del proceso por falta de jurisdicción o sobreseimiento libre y las sentencias dictadas por las Audiencias Provinciales o la Sala de lo Penal de la Audiencia Nacional en primera instancia son recurribles en apelación"
+    },
+    {
+     "articulo": "846 ter",
+     "texto": "ante las Salas de lo Civil y Penal de los Tribunales Superiores de Justicia de su territorio y ante la Sala de Apelación de la Audiencia Nacional, respectivamente"
+    },
+    {
+     "articulo": "846 ter",
+     "texto": "se regirán por lo dispuesto en los artículos 790, 791 y 792 de esta ley"
+    }
+   ]
+  },
+  {
+   "id": "apelacion-jurado",
+   "recurso": "Apelación contra sentencias del Tribunal del Jurado",
+   "contra_que": "Sentencias del Magistrado-Presidente del Tribunal del Jurado en el ámbito de la Audiencia Provincial, y determinados autos (art. 36 de la Ley Orgánica del Tribunal del Jurado y art. 676 LECrim).",
+   "plazo": "10 días desde la última notificación de la sentencia",
+   "organo": "Sala de lo Civil y Penal del Tribunal Superior de Justicia (tres magistrados).",
+   "efectos": "Motivos tasados (art. 846 bis c). Las demás partes pueden impugnar o formular apelación supeditada en 5 días.",
+   "articulos": [
+    "846 bis a",
+    "846 bis b",
+    "846 bis c",
+    "846 bis d"
+   ],
+   "literales": [
+    {
+     "articulo": "846 bis a",
+     "texto": "Las sentencias dictadas, en el ámbito de la Audiencia Provincial y en primera instancia, por el Magistrado-Presidente del Tribunal del Jurado, serán apelables para ante la Sala de lo Civil y Penal del Tribunal Superior de Justicia de la correspondiente Comunidad Autónoma."
+    },
+    {
+     "articulo": "846 bis b",
+     "texto": "dentro de los diez días siguientes a la última notificación de la sentencia"
+    },
+    {
+     "articulo": "846 bis c",
+     "texto": "El recurso de apelación deberá fundamentarse en alguno de los motivos siguientes"
+    }
+   ]
+  },
+  {
+   "id": "casacion",
+   "recurso": "Casación",
+   "contra_que": "Por infracción de ley y quebrantamiento de forma: sentencias de los TSJ (única instancia o apelación) y de la Sala de Apelación de la AN. Solo por infracción de ley del art. 849.1.º: sentencias de apelación de las Audiencias Provinciales y de la Sala de lo Penal de la AN. Además, ciertos autos (art. 848).",
+   "plazo": "Preparación: 5 días desde la última notificación",
+   "organo": "Se prepara ante el Tribunal que dictó la resolución; lo resuelve la Sala Segunda del Tribunal Supremo.",
+   "efectos": "La sentencia recurrible no se ejecuta hasta que pasa el plazo para preparar el recurso. No cabe contra sentencias que solo declaran la nulidad de la de primera instancia.",
+   "articulos": [
+    "847",
+    "848",
+    "855",
+    "856",
+    "859",
+    "861 bis a"
+   ],
+   "literales": [
+    {
+     "articulo": "847",
+     "texto": "Las sentencias dictadas en única instancia o en apelación por la Sala de lo Civil y Penal de los Tribunales Superiores de Justicia."
+    },
+    {
+     "articulo": "847",
+     "texto": "Por infracción de ley del motivo previsto en el número 1.º del artículo 849 contra las sentencias dictadas en apelación por las Audiencias Provinciales y la Sala de lo Penal de la Audiencia Nacional."
+    },
+    {
+     "articulo": "856",
+     "texto": "dentro de los cinco días siguientes al de la última notificación de la sentencia o auto contra que se intente entablar el recurso"
+    },
+    {
+     "articulo": "855",
+     "texto": "pedirá, ante el Tribunal que haya dictado la resolución definitiva, un testimonio de la misma"
+    },
+    {
+     "articulo": "861 bis a",
+     "texto": "Las sentencias contra las cuales pueda interponerse recurso de casación no se ejecutarán hasta que transcurra el término señalado para prepararlo."
+    },
+    {
+     "articulo": "847",
+     "texto": "Quedan exceptuadas aquellas que se limiten a declarar la nulidad de las sentencias recaídas en primera instancia."
+    }
+   ]
+  },
+  {
+   "id": "queja-casacion",
+   "recurso": "Queja por denegación de la casación",
+   "contra_que": "El auto que deniega tener por preparado el recurso de casación.",
+   "plazo": "2 días desde la notificación del auto denegatorio",
+   "organo": "Sala Segunda del Tribunal Supremo (se hace presente al Tribunal sentenciador).",
+   "efectos": "El Tribunal remite copia certificada del auto y emplaza a las partes.",
+   "articulos": [
+    "862",
+    "863"
+   ],
+   "literales": [
+    {
+     "articulo": "862",
+     "texto": "podrá acudir en queja a la Sala Segunda del Tribunal Supremo, haciéndolo presente al Tribunal sentenciador, dentro de los dos días siguientes al de la notificación de dicho auto"
+    }
+   ]
+  },
+  {
+   "id": "revision",
+   "recurso": "Revisión de sentencias firmes",
+   "contra_que": "Sentencias firmes, en los casos tasados del art. 954 (prueba falsa, prevaricación, dos sentencias sobre el mismo hecho, hechos o pruebas nuevos, cuestión prejudicial contradictoria, sentencia del TEDH).",
+   "plazo": "Sin plazo general. Si se basa en una sentencia del TEDH: 1 año desde su firmeza. Autorizado el recurso: 15 días para interponerlo",
+   "organo": "«La Sala» autoriza o deniega su interposición, previa audiencia del Ministerio Fiscal. Estos artículos no dicen qué Sala; el art. 956 menciona al Fiscal del Tribunal Supremo.",
+   "efectos": "Legitimados: el penado y, si ha fallecido, su cónyuge o quien convivió como tal, ascendientes y descendientes.",
+   "articulos": [
+    "954",
+    "955",
+    "957"
+   ],
+   "literales": [
+    {
+     "articulo": "954",
+     "texto": "Se podrá solicitar la revisión de las sentencias firmes en los casos siguientes"
+    },
+    {
+     "articulo": "954",
+     "texto": "Cuando después de la sentencia sobrevenga el conocimiento de hechos o elementos de prueba, que, de haber sido aportados, hubieran determinado la absolución o una condena menos grave."
+    },
+    {
+     "articulo": "954",
+     "texto": "La solicitud deberá formularse en el plazo de un año desde que adquiera firmeza la sentencia del referido Tribunal."
+    },
+    {
+     "articulo": "957",
+     "texto": "Autorizado el recurso, el promovente dispondrá de quince días para su interposición."
+    }
+   ]
+  }
+ ],
+ "selector": [
+  {
+   "res": "Diligencia de ordenación",
+   "quien": "LAJ",
+   "recurso": "reposicion-laj",
+   "nota": "",
+   "literal": {
+    "articulo": "238 bis",
+    "texto": "Contra todas las diligencias de ordenación dictadas por los Secretarios judiciales podrá ejercitarse ante ellos mismos recurso de reposición."
+   }
+  },
+  {
+   "res": "Decreto del LAJ",
+   "quien": "LAJ",
+   "recurso": "reposicion-laj",
+   "nota": "Salvo que la ley prevea revisión directa.",
+   "literal": {
+    "articulo": "238 bis",
+    "texto": "También podrá interponerse recurso de reposición contra los decretos de los Secretarios judiciales, excepto en aquellos supuestos en que proceda la interposición directa de recurso de revisión por así preverlo expresamente la Ley."
+   }
+  },
+  {
+   "res": "Decreto que resuelve una reposición",
+   "quien": "LAJ",
+   "recurso": null,
+   "nota": "",
+   "literal": {
+    "articulo": "238 bis",
+    "texto": "Contra el decreto del Secretario judicial que resuelva el recurso de reposición no cabrá interponer recurso alguno."
+   }
+  },
+  {
+   "res": "Decreto que declara desierto un recurso de apelación",
+   "quien": "LAJ",
+   "recurso": "revision-laj",
+   "nota": "Revisión directa.",
+   "literal": {
+    "articulo": "228",
+    "texto": "Contra este decreto cabrá recurso directo de revisión."
+   }
+  },
+  {
+   "res": "Auto que resuelve una revisión",
+   "quien": "LAJ",
+   "recurso": null,
+   "nota": "",
+   "literal": {
+    "articulo": "238 ter",
+    "texto": "Contra el auto resolutorio del recurso de revisión no cabrá interponer recurso alguno."
+   }
+  },
+  {
+   "res": "Cualquier auto del Juez de Instrucción",
+   "quien": "Juez de Instrucción",
+   "recurso": "reforma",
+   "nota": "Además, apelación solo en los casos que determine la ley.",
+   "literal": {
+    "articulo": "217",
+    "texto": "El recurso de reforma podrá interponerse contra todos los autos del Juez de Instrucción."
+   }
+  },
+  {
+   "res": "Auto apelable del Juez de Instrucción (sumario)",
+   "quien": "Juez de Instrucción",
+   "recurso": "apelacion-autos",
+   "nota": "Hay que interponer antes la reforma (puede ir en el mismo escrito, con la apelación como subsidiaria).",
+   "literal": {
+    "articulo": "222",
+    "texto": "El recurso de apelación no podrá interponerse sino después de haberse ejercitado el de reforma; pero podrán interponerse ambos en un mismo escrito"
+   }
+  },
+  {
+   "res": "Auto del Juez de Instrucción o del Juez de lo Penal (abreviado)",
+   "quien": "Juez de Instrucción",
+   "recurso": "apelacion-autos",
+   "nota": "Reforma y apelación; la reforma previa no es necesaria.",
+   "literal": {
+    "articulo": "766",
+    "texto": "Contra los autos del Juez de Instrucción y del Juez de lo Penal que no estén exceptuados de recurso podrán ejercitarse el de reforma y el de apelación."
+   }
+  },
+  {
+   "res": "Auto que decreta, prorroga o deniega la prisión provisional, o acuerda la libertad",
+   "quien": "Juez de Instrucción",
+   "recurso": "apelacion-autos",
+   "nota": "Por los trámites del art. 766, con tramitación preferente.",
+   "literal": {
+    "articulo": "507",
+    "texto": "Contra los autos que decreten, prorroguen o denieguen la prisión provisional o acuerden la libertad del investigado o encausado podrá ejercitarse el recurso de apelación en los términos previstos en el artículo 766"
+   }
+  },
+  {
+   "res": "Auto no apelable del Juez",
+   "quien": "Juez de Instrucción",
+   "recurso": "queja",
+   "nota": "",
+   "literal": {
+    "articulo": "218",
+    "texto": "El recurso de queja podrá interponerse contra todos los autos no apelables del Juez"
+   }
+  },
+  {
+   "res": "Resolución que deniega admitir una apelación",
+   "quien": "Juez de Instrucción",
+   "recurso": "queja",
+   "nota": "",
+   "literal": {
+    "articulo": "218",
+    "texto": "contra las resoluciones en que se denegare la admisión de un recurso de apelación"
+   }
+  },
+  {
+   "res": "Auto de apertura del juicio oral en el juicio rápido",
+   "quien": "Juez de Instrucción",
+   "recurso": null,
+   "nota": "Lo dicta el Juez de guardia en forma oral.",
+   "literal": {
+    "articulo": "800",
+    "texto": "dictará en forma oral auto motivado, que deberá documentarse y no será susceptible de recurso alguno"
+   }
+  },
+  {
+   "res": "Auto de un Tribunal de lo criminal",
+   "quien": "Tribunal",
+   "recurso": "suplica",
+   "nota": "Salvo que la ley le otorgue expresamente otro recurso.",
+   "literal": {
+    "articulo": "236",
+    "texto": "Contra los autos de los Tribunales de lo criminal podrá interponerse el recurso de súplica ante el mismo que los hubiese dictado"
+   }
+  },
+  {
+   "res": "Auto de sobreseimiento (sumario)",
+   "quien": "Tribunal",
+   "recurso": "casacion",
+   "nota": "«En su caso».",
+   "literal": {
+    "articulo": "636",
+    "texto": "Contra los autos de sobreseimiento sólo procederá, en su caso, el recurso de casación."
+   }
+  },
+  {
+   "res": "Auto de la Audiencia que pone fin al proceso por falta de jurisdicción o sobreseimiento libre (primera instancia)",
+   "quien": "Tribunal",
+   "recurso": "apelacion-audiencia",
+   "nota": "",
+   "literal": {
+    "articulo": "846 ter",
+    "texto": "Los autos que supongan la finalización del proceso por falta de jurisdicción o sobreseimiento libre"
+   }
+  },
+  {
+   "res": "Auto que fija el límite de cumplimiento de las penas (acumulación)",
+   "quien": "Tribunal",
+   "recurso": "casacion",
+   "nota": "Solo por infracción de ley.",
+   "literal": {
+    "articulo": "988",
+    "texto": "Contra tal auto podrán el Ministerio Fiscal y el condenado interponer recurso de casación por infracción de Ley."
+   }
+  },
+  {
+   "res": "Auto que deniega tener por preparada la casación",
+   "quien": "Tribunal",
+   "recurso": "queja-casacion",
+   "nota": "",
+   "literal": {
+    "articulo": "862",
+    "texto": "Si el recurrente se creyere agraviado por el auto denegatorio de que se habla en el artículo 858, podrá acudir en queja a la Sala Segunda del Tribunal Supremo"
+   }
+  },
+  {
+   "res": "Sentencia del Juez de lo Penal (abreviado)",
+   "quien": "Sentencia",
+   "recurso": "apelacion-penal",
+   "nota": "",
+   "literal": {
+    "articulo": "790",
+    "texto": "La sentencia dictada por el Juez de lo Penal es apelable ante la Audiencia Provincial correspondiente"
+   }
+  },
+  {
+   "res": "Sentencia del Juzgado de lo Penal en el juicio rápido",
+   "quien": "Sentencia",
+   "recurso": "apelacion-rapido",
+   "nota": "Formalización en 5 días.",
+   "literal": {
+    "articulo": "803",
+    "texto": "El plazo para presentar el escrito de formalización será de cinco días."
+   }
+  },
+  {
+   "res": "Sentencia en el juicio por delito leve",
+   "quien": "Sentencia",
+   "recurso": "apelacion-leves",
+   "nota": "",
+   "literal": {
+    "articulo": "976",
+    "texto": "La sentencia es apelable en el plazo de los cinco días siguientes al de su notificación."
+   }
+  },
+  {
+   "res": "Sentencia de apelación en un juicio por delito leve",
+   "quien": "Sentencia",
+   "recurso": null,
+   "nota": "",
+   "literal": {
+    "articulo": "977",
+    "texto": "Contra la sentencia que se dicte en segunda instancia no habrá lugar a recurso alguno."
+   }
+  },
+  {
+   "res": "Sentencia de la Audiencia Provincial o de la Sala de lo Penal de la AN en primera instancia",
+   "quien": "Sentencia",
+   "recurso": "apelacion-audiencia",
+   "nota": "",
+   "literal": {
+    "articulo": "846 ter",
+    "texto": "las sentencias dictadas por las Audiencias Provinciales o la Sala de lo Penal de la Audiencia Nacional en primera instancia son recurribles en apelación"
+   }
+  },
+  {
+   "res": "Sentencia del Magistrado-Presidente del Tribunal del Jurado",
+   "quien": "Sentencia",
+   "recurso": "apelacion-jurado",
+   "nota": "",
+   "literal": {
+    "articulo": "846 bis a",
+    "texto": "por el Magistrado-Presidente del Tribunal del Jurado, serán apelables para ante la Sala de lo Civil y Penal del Tribunal Superior de Justicia"
+   }
+  },
+  {
+   "res": "Sentencia de un TSJ (única instancia o apelación) o de la Sala de Apelación de la AN",
+   "quien": "Sentencia",
+   "recurso": "casacion",
+   "nota": "Por infracción de ley y por quebrantamiento de forma.",
+   "literal": {
+    "articulo": "847",
+    "texto": "Las sentencias dictadas por la Sala de Apelación de la Audiencia Nacional."
+   }
+  },
+  {
+   "res": "Sentencia de apelación de la Audiencia Provincial o de la Sala de lo Penal de la AN",
+   "quien": "Sentencia",
+   "recurso": "casacion",
+   "nota": "Solo por infracción de ley del art. 849.1.º.",
+   "literal": {
+    "articulo": "847",
+    "texto": "Por infracción de ley del motivo previsto en el número 1.º del artículo 849 contra las sentencias dictadas en apelación por las Audiencias Provinciales"
+   }
+  },
+  {
+   "res": "Sentencia de apelación que solo declara la nulidad de la de primera instancia",
+   "quien": "Sentencia",
+   "recurso": null,
+   "nota": "Excluida de la casación.",
+   "literal": {
+    "articulo": "847",
+    "texto": "Quedan exceptuadas aquellas que se limiten a declarar la nulidad de las sentencias recaídas en primera instancia."
+   }
+  },
+  {
+   "res": "Sentencia firme (pruebas falsas, hechos nuevos, dos condenas por el mismo hecho…)",
+   "quien": "Sentencia",
+   "recurso": "revision",
+   "nota": "Solo en los casos tasados del art. 954.",
+   "literal": {
+    "articulo": "954",
+    "texto": "Se podrá solicitar la revisión de las sentencias firmes en los casos siguientes"
+   }
+  }
+ ]
+}

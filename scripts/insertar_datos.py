@@ -175,6 +175,12 @@ def validar_y_anadir_recursos(datos):
     datos["recursos"] = rec["recursos"]
     datos["selector_recursos"] = rec["selector"]
     datos["recursos_revisado"] = rec["revisado"]
+    # Grupos del selector «Por resolución» (si no hay, la app usa LAJ / Tribunal, como en la LEC).
+    datos["grupos_selector"] = rec.get("grupos_selector", [])
+    datos["recursos_ubicacion"] = rec.get("ubicacion", "")
+    sin_grupo = {s["quien"] for s in rec["selector"]} - {g["quien"] for g in datos["grupos_selector"]}
+    if datos["grupos_selector"] and sin_grupo:
+        sys.exit(f"ERROR en recursos.json: casos del selector sin grupo: {sorted(sin_grupo)}")
     print(f"Recursos comprobados: {len(rec['recursos'])} recursos, {len(rec['selector'])} casos del selector.")
 
 
