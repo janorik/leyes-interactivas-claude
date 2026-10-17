@@ -1,0 +1,5249 @@
+{
+ "_nota": "Contenido ELABORADO (no literal). Todo con revisado:false hasta que el usuario lo valide. Cada 'literal' debe aparecer tal cual en el artículo citado: lo comprueba scripts/insertar_datos.py.",
+ "procedimientos": [
+  {
+   "id": "ordinario",
+   "nombre": "Juicio ordinario",
+   "bloque": "juicio ordinario",
+   "resumen": "Recorrido del juicio ordinario desde la demanda hasta el recurso de apelación.",
+   "ambito": {
+    "corto": "Más de 15.000 € o por materia (art. 249)",
+    "texto": "Por cuantía: demandas de más de 15.000 € o de cuantía imposible de calcular. Por materia: las del art. 249.1, cualquiera que sea su cuantía. La materia prevalece sobre la cuantía.",
+    "articulos": [
+     "249",
+     "248"
+    ],
+    "literal": [
+     {
+      "articulo": "249",
+      "texto": "las demandas cuya cuantía exceda de quince mil euros y aquéllas cuyo interés económico resulte imposible de calcular"
+     },
+     {
+      "articulo": "248",
+      "texto": "Las normas de determinación de la clase de juicio por razón de la cuantía sólo se aplicarán en defecto de norma por razón de la materia."
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "ord-previo",
+     "fase": "Antes de demandar",
+     "subtitulo": "Negociación previa (MASC) cuando la ley la exija",
+     "descripcion": "Si la ley exige un medio adecuado de solución de controversias como requisito de procedibilidad, la demanda debe describir la negociación previa (o su imposibilidad) y acompañar el documento que lo acredite. Si falta, la demanda no se admite.",
+     "articulos": [
+      "399",
+      "264",
+      "403"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Se acudió a MASC y consta en la demanda",
+       "entonces": "La demanda puede admitirse.",
+       "articulos": [
+        "399"
+       ],
+       "literal": {
+        "articulo": "399",
+        "texto": "se hará constar en la demanda la descripción del proceso de negociación previo llevado a cabo o la imposibilidad del mismo"
+       }
+      },
+      {
+       "si": "No constan esas circunstancias cuando la ley lo exige",
+       "entonces": "Inadmisión de la demanda.",
+       "articulos": [
+        "403"
+       ],
+       "literal": {
+        "articulo": "403",
+        "texto": "No se admitirán las demandas cuando no se acompañen a ella los documentos que la ley expresamente exija para la admisión de aquellas"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué documento debe acompañar a la demanda cuando la ley exige negociación previa?",
+      "a": "El documento que acredite haberse intentado la actividad negociadora previa, o declaración responsable de la imposibilidad por desconocer el domicilio o medio de requerimiento del demandado.",
+      "articulos": [
+       "264"
+      ],
+      "literal": {
+       "articulo": "264",
+       "texto": "El documento que acredite haberse intentado la actividad negociadora previa a la vía judicial cuando la ley exija dicho intento como requisito de procedibilidad"
+      }
+     },
+     "conexiones": [
+      "264",
+      "399",
+      "403"
+     ],
+     "aviso": "Qué casos exigen el MASC lo regula otra ley (no incluida en esta app). Aquí solo se recoge lo que dice la LEC."
+    },
+    {
+     "id": "ord-demanda",
+     "fase": "Demanda",
+     "subtitulo": "Contenido y forma",
+     "descripcion": "Identificación de las partes, hechos y fundamentos de derecho numerados y separados, y petición clara y precisa. Los fundamentos incluyen las alegaciones procesales (capacidad, jurisdicción, competencia, clase de juicio).",
+     "articulos": [
+      "399",
+      "400"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "pregunta": {
+      "q": "¿Cómo deben exponerse los hechos y los fundamentos de derecho en la demanda?",
+      "a": "Numerados y separados, fijando con claridad y precisión lo que se pida.",
+      "articulos": [
+       "399"
+      ],
+      "literal": {
+       "articulo": "399",
+       "texto": "se expondrán numerados y separados los hechos y los fundamentos de derecho, y se fijará con claridad y precisión lo que se pida"
+      }
+     },
+     "conexiones": [
+      "155",
+      "264",
+      "265",
+      "400"
+     ],
+     "continua_en": [
+      "cautelares"
+     ]
+    },
+    {
+     "id": "ord-admision",
+     "fase": "Admisión y emplazamiento",
+     "subtitulo": "Decreto del Letrado de la Administración de Justicia",
+     "descripcion": "El LAJ admite la demanda por decreto y da traslado al demandado para contestar. Da cuenta al tribunal si aprecia falta de jurisdicción o competencia, o defectos formales no subsanados.",
+     "articulos": [
+      "404",
+      "403"
+     ],
+     "plazos": [
+      {
+       "acto": "Contestar a la demanda",
+       "plazo": "20 días",
+       "articulo": "404",
+       "literal": "dará traslado de ella al demandado para que la conteste en el plazo de veinte días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Falta de jurisdicción o competencia, o defectos no subsanados",
+       "entonces": "El LAJ da cuenta al tribunal para que resuelva sobre la admisión.",
+       "articulos": [
+        "404"
+       ],
+       "literal": {
+        "articulo": "404",
+        "texto": "dará cuenta al Tribunal para que resuelva sobre la admisión"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué plazo tiene el demandado para contestar en el juicio ordinario?",
+      "a": "Veinte días.",
+      "articulos": [
+       "404"
+      ],
+      "literal": {
+       "articulo": "404",
+       "texto": "para que la conteste en el plazo de veinte días"
+      }
+     },
+     "conexiones": [
+      "403",
+      "404"
+     ]
+    },
+    {
+     "id": "ord-contestacion",
+     "fase": "Contestación y reconvención",
+     "subtitulo": "Contesta / no contesta",
+     "descripcion": "El demandado debe admitir o negar los hechos y alegar las excepciones materiales y procesales. Puede reconvenir si hay conexión con la demanda principal.",
+     "articulos": [
+      "405",
+      "406",
+      "407",
+      "496"
+     ],
+     "plazos": [
+      {
+       "acto": "Contestar a la reconvención",
+       "plazo": "20 días",
+       "articulo": "407",
+       "literal": "podrán contestar a la reconvención en el plazo de veinte días a partir de la notificación de la demanda reconvencional"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Contesta",
+       "entonces": "Pasa a la audiencia previa. El silencio o las respuestas evasivas pueden considerarse admisión tácita de hechos perjudiciales.",
+       "articulos": [
+        "405"
+       ],
+       "literal": {
+        "articulo": "405",
+        "texto": "El tribunal podrá considerar el silencio o las respuestas evasivas del demandado como admisión tácita de los hechos que le sean perjudiciales."
+       }
+      },
+      {
+       "si": "No contesta (no comparece)",
+       "entonces": "Declaración de rebeldía por el LAJ. No equivale a allanamiento ni a admisión de hechos, salvo que la ley diga otra cosa.",
+       "articulos": [
+        "496",
+        "497"
+       ],
+       "literal": {
+        "articulo": "496",
+        "texto": "La declaración de rebeldía no será considerada como allanamiento ni como admisión de los hechos de la demanda"
+       }
+      },
+      {
+       "si": "Reconviene",
+       "entonces": "Solo si hay conexión con la demanda principal; el actor reconvenido contesta a la reconvención.",
+       "articulos": [
+        "406",
+        "407"
+       ],
+       "literal": {
+        "articulo": "406",
+        "texto": "Sólo se admitirá la reconvención si existiere conexión entre sus pretensiones y las que sean objeto de la demanda principal."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "El demandado no contesta: ¿se tienen por admitidos los hechos de la demanda?",
+      "a": "No. La rebeldía no se considera allanamiento ni admisión de hechos, salvo los casos en que la ley expresamente disponga lo contrario.",
+      "articulos": [
+       "496"
+      ],
+      "literal": {
+       "articulo": "496",
+       "texto": "salvo los casos en que la ley expresamente disponga lo contrario"
+      }
+     },
+     "conexiones": [
+      "405",
+      "406",
+      "407",
+      "408",
+      "496",
+      "497"
+     ]
+    },
+    {
+     "id": "ord-audiencia",
+     "fase": "Audiencia previa",
+     "subtitulo": "Acuerdo, cuestiones procesales, hechos controvertidos y prueba",
+     "descripcion": "Finalidades: intentar acuerdo, depurar cuestiones procesales, fijar el objeto y los hechos controvertidos y proponer y admitir la prueba. Si solo queda una cuestión jurídica, el tribunal dicta sentencia sin juicio.",
+     "articulos": [
+      "414",
+      "415",
+      "416",
+      "421",
+      "428",
+      "429",
+      "285"
+     ],
+     "plazos": [
+      {
+       "acto": "Convocatoria de la audiencia",
+       "plazo": "Dentro del tercer día",
+       "articulo": "414",
+       "literal": "dentro del tercer día, convocará a las partes a una audiencia"
+      },
+      {
+       "acto": "Celebración de la audiencia",
+       "plazo": "20 días desde la convocatoria",
+       "articulo": "414",
+       "literal": "que habrá de celebrarse en el plazo de veinte días desde la convocatoria"
+      },
+      {
+       "acto": "Sentencia si solo hay cuestión jurídica",
+       "plazo": "20 días",
+       "articulo": "428",
+       "literal": "el tribunal dictará sentencia dentro de veinte días a partir del siguiente al de la terminación de la audiencia"
+      },
+      {
+       "acto": "Señalamiento del juicio",
+       "plazo": "Celebración en 1 mes desde la audiencia",
+       "articulo": "429",
+       "literal": "que deberá celebrarse en el plazo de un mes desde la conclusión de la audiencia"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No comparece ninguna parte",
+       "entonces": "Auto de sobreseimiento y archivo.",
+       "articulos": [
+        "414"
+       ],
+       "literal": {
+        "articulo": "414",
+        "texto": "Si no compareciere a la audiencia ninguna de las partes, se levantará acta haciéndolo constar y el tribunal, sin más trámites, dictará auto de sobreseimiento del proceso"
+       }
+      },
+      {
+       "si": "No comparece el demandado",
+       "entonces": "La audiencia se entiende con el actor en lo que proceda.",
+       "articulos": [
+        "414"
+       ],
+       "literal": {
+        "articulo": "414",
+        "texto": "Si fuere el demandado quien no concurriere, la audiencia se entenderá con el actor en lo que resultare procedente."
+       }
+      },
+      {
+       "si": "El tribunal inadmite una prueba",
+       "entonces": "Solo recurso de reposición, que se resuelve en el acto; si se desestima, protesta para hacerlo valer en segunda instancia.",
+       "articulos": [
+        "285"
+       ],
+       "literal": {
+        "articulo": "285",
+        "texto": "sólo cabrá recurso de reposición, que se sustanciará y resolverá en el acto, y, si se desestimare, la parte podrá formular protesta al efecto de hacer valer sus derechos en la segunda instancia"
+       }
+      },
+      {
+       "si": "Conformidad en los hechos: solo queda cuestión jurídica",
+       "entonces": "Sentencia sin juicio.",
+       "articulos": [
+        "428"
+       ],
+       "literal": {
+        "articulo": "428",
+        "texto": "estuvieren conformes en todos los hechos y la discrepancia quedase reducida a cuestión o cuestiones jurídicas"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En la audiencia previa el juez inadmite una prueba propuesta. ¿Qué recurso cabe?",
+      "a": "Solo reposición, sustanciada y resuelta en el acto; si se desestima, protesta para hacer valer el derecho en la segunda instancia.",
+      "articulos": [
+       "285"
+      ],
+      "literal": {
+       "articulo": "285",
+       "texto": "Contra la resolución que admita o inadmita cada una de las pruebas sólo cabrá recurso de reposición"
+      }
+     },
+     "conexiones": [
+      "281",
+      "283",
+      "285",
+      "416",
+      "421",
+      "428",
+      "429"
+     ]
+    },
+    {
+     "id": "ord-juicio",
+     "fase": "Juicio",
+     "subtitulo": "Práctica de la prueba y conclusiones",
+     "descripcion": "Se practican las pruebas admitidas (declaración de partes, testigos, peritos, reconocimiento judicial, reproducción de imágenes y sonidos) y las partes formulan conclusiones orales.",
+     "articulos": [
+      "431",
+      "432",
+      "433"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "No comparece ninguna parte",
+       "entonces": "El pleito queda visto para sentencia.",
+       "articulos": [
+        "432"
+       ],
+       "literal": {
+        "articulo": "432",
+        "texto": "Si no compareciere en el juicio ninguna de las partes, se levantará acta haciéndolo constar y el tribunal, sin más trámites, declarará el pleito visto para sentencia."
+       }
+      },
+      {
+       "si": "Comparece solo una parte",
+       "entonces": "Se celebra el juicio.",
+       "articulos": [
+        "432"
+       ],
+       "literal": {
+        "articulo": "432",
+        "texto": "Si sólo compareciere alguna de las partes, se procederá a la celebración del juicio."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué ocurre si en el juicio no comparece ninguna de las partes?",
+      "a": "Se levanta acta y el tribunal declara el pleito visto para sentencia.",
+      "articulos": [
+       "432"
+      ],
+      "literal": {
+       "articulo": "432",
+       "texto": "declarará el pleito visto para sentencia"
+      }
+     },
+     "conexiones": [
+      "299",
+      "431",
+      "432",
+      "433"
+     ]
+    },
+    {
+     "id": "ord-diligencias",
+     "fase": "Diligencias finales",
+     "subtitulo": "Solo a instancia de parte (regla general)",
+     "descripcion": "Actuaciones de prueba tras el juicio en supuestos tasados. Suspenden el plazo para dictar sentencia.",
+     "articulos": [
+      "435",
+      "436",
+      "434"
+     ],
+     "plazos": [
+      {
+       "acto": "Práctica de las diligencias finales",
+       "plazo": "20 días",
+       "articulo": "436",
+       "literal": "se llevarán a cabo, dentro del plazo de veinte días"
+      },
+      {
+       "acto": "Escrito de las partes valorando el resultado",
+       "plazo": "Dentro del quinto día",
+       "articulo": "436",
+       "literal": "las partes podrán, dentro del quinto día, presentar escrito en que resuman y valoren el resultado"
+      }
+     ],
+     "ramas": [],
+     "pregunta": {
+      "q": "¿Pueden practicarse como diligencias finales pruebas que pudieron proponerse en tiempo y forma?",
+      "a": "No.",
+      "articulos": [
+       "435"
+      ],
+      "literal": {
+       "articulo": "435",
+       "texto": "No se practicarán como diligencias finales las pruebas que hubieran podido proponerse en tiempo y forma por las partes"
+      }
+     },
+     "conexiones": [
+      "286",
+      "435",
+      "436"
+     ]
+    },
+    {
+     "id": "ord-sentencia",
+     "fase": "Sentencia",
+     "subtitulo": "Plazo para dictarla",
+     "descripcion": "La sentencia se dicta tras el juicio. Si se acuerdan diligencias finales, el plazo queda en suspenso.",
+     "articulos": [
+      "434"
+     ],
+     "plazos": [
+      {
+       "acto": "Dictar sentencia",
+       "plazo": "20 días desde la terminación del juicio",
+       "articulo": "434",
+       "literal": "La sentencia se dictará dentro de los veinte días siguientes a la terminación del juicio."
+      }
+     ],
+     "ramas": [],
+     "pregunta": {
+      "q": "¿En qué plazo debe dictarse la sentencia en el juicio ordinario?",
+      "a": "Dentro de los veinte días siguientes a la terminación del juicio.",
+      "articulos": [
+       "434"
+      ],
+      "literal": {
+       "articulo": "434",
+       "texto": "dentro de los veinte días siguientes a la terminación del juicio"
+      }
+     },
+     "conexiones": [
+      "209",
+      "218",
+      "434"
+     ],
+     "continua_en": [
+      "ejecucion"
+     ]
+    },
+    {
+     "id": "ord-recurso",
+     "fase": "Recurso de apelación",
+     "subtitulo": "Contra la sentencia",
+     "descripcion": "Las sentencias del juicio ordinario son apelables. Se interpone ante el tribunal competente para resolverlo; las demás partes pueden oponerse o impugnar.",
+     "articulos": [
+      "455",
+      "458",
+      "461",
+      "448"
+     ],
+     "plazos": [
+      {
+       "acto": "Interponer apelación",
+       "plazo": "20 días desde la notificación",
+       "articulo": "458",
+       "literal": "en el plazo de veinte días desde la notificación de la resolución impugnada"
+      },
+      {
+       "acto": "Oposición o impugnación de la parte apelada",
+       "plazo": "10 días",
+       "articulo": "461",
+       "literal": "emplazándolas por diez días para que presenten escrito de oposición al recurso"
+      }
+     ],
+     "ramas": [],
+     "pregunta": {
+      "q": "¿Ante quién se interpone el recurso de apelación?",
+      "a": "Ante el tribunal que sea competente para conocer del mismo.",
+      "articulos": [
+       "458"
+      ],
+      "literal": {
+       "articulo": "458",
+       "texto": "ante el tribunal que sea competente para conocer del mismo"
+      }
+     },
+     "conexiones": [
+      "448",
+      "455",
+      "458",
+      "461",
+      "465"
+     ]
+    }
+   ],
+   "grupo": "Libro II · Procesos declarativos"
+  },
+  {
+   "id": "verbal",
+   "nombre": "Juicio verbal",
+   "bloque": "juicio verbal",
+   "resumen": "Recorrido del juicio verbal (texto vigente tras la reforma que introduce la proposición de prueba por escrito).",
+   "ambito": {
+    "corto": "Hasta 15.000 € o por materia (art. 250)",
+    "texto": "Por cuantía: demandas que no excedan de 15.000 € y no sean de materias del art. 249.1. Por materia: las del art. 250.1, cualquiera que sea su cuantía.",
+    "articulos": [
+     "250",
+     "248"
+    ],
+    "literal": [
+     {
+      "articulo": "250",
+      "texto": "las demandas cuya cuantía no exceda de quince mil euros y no se refieran a ninguna de las materias previstas en el apartado 1 del artículo anterior"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "ver-demanda",
+     "fase": "Demanda",
+     "subtitulo": "Ordinaria o sucinta",
+     "descripcion": "Misma forma que en el ordinario. Si no se actúa con abogado y procurador, cabe demanda sucinta, incluso con impresos normalizados.",
+     "articulos": [
+      "437"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Con abogado y procurador",
+       "entonces": "Demanda con el contenido y forma del juicio ordinario.",
+       "articulos": [
+        "437",
+        "399"
+       ],
+       "literal": {
+        "articulo": "437",
+        "texto": "El juicio verbal principiará por demanda, con el contenido y forma propios del juicio ordinario"
+       }
+      },
+      {
+       "si": "Sin abogado ni procurador",
+       "entonces": "Demanda sucinta.",
+       "articulos": [
+        "437"
+       ],
+       "literal": {
+        "articulo": "437",
+        "texto": "el demandante podrá formular una demanda sucinta"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo puede presentarse una demanda sucinta en el juicio verbal?",
+      "a": "En los juicios verbales en que no se actúe con abogado y procurador.",
+      "articulos": [
+       "437"
+      ],
+      "literal": {
+       "articulo": "437",
+       "texto": "en los juicios verbales en que no se actúe con abogado y procurador"
+      }
+     },
+     "conexiones": [
+      "399",
+      "437"
+     ],
+     "continua_en": [
+      "cautelares"
+     ]
+    },
+    {
+     "id": "ver-contestacion",
+     "fase": "Admisión y contestación escrita",
+     "subtitulo": "Contesta / no contesta",
+     "descripcion": "Admitida la demanda por decreto, el demandado contesta por escrito. Si no comparece, es declarado en rebeldía.",
+     "articulos": [
+      "438",
+      "496"
+     ],
+     "plazos": [
+      {
+       "acto": "Contestar a la demanda",
+       "plazo": "10 días",
+       "articulo": "438",
+       "literal": "para que la conteste por escrito en el plazo de diez días"
+      },
+      {
+       "acto": "Contestar a la reconvención",
+       "plazo": "10 días",
+       "articulo": "438",
+       "literal": "salvo el plazo para su contestación que será de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Contesta",
+       "entonces": "Pasa a la proposición de prueba por escrito.",
+       "articulos": [
+        "438"
+       ],
+       "literal": {
+        "articulo": "438",
+        "texto": "Contestada la demanda y, en su caso, la reconvención o el crédito compensable, o transcurridos los plazos correspondientes"
+       }
+      },
+      {
+       "si": "No comparece",
+       "entonces": "Rebeldía (art. 496).",
+       "articulos": [
+        "438",
+        "496"
+       ],
+       "literal": {
+        "articulo": "438",
+        "texto": "Si el demandado no compareciere en el plazo otorgado será declarado en rebeldía conforme al artículo 496."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué plazo tiene el demandado para contestar en el juicio verbal?",
+      "a": "Diez días, por escrito.",
+      "articulos": [
+       "438"
+      ],
+      "literal": {
+       "articulo": "438",
+       "texto": "en el plazo de diez días conforme a lo dispuesto para el juicio ordinario"
+      }
+     },
+     "conexiones": [
+      "404",
+      "438",
+      "496"
+     ],
+     "aviso": "El desahucio por falta de pago tiene su propio esquema (ver «Continúa en»). Otros casos especiales (art. 438.4 y 438.7) aún no están desarrollados.",
+     "continua_en": [
+      "desahucio"
+     ]
+    },
+    {
+     "id": "ver-prueba",
+     "fase": "Proposición de prueba por escrito",
+     "subtitulo": "Auto sobre prueba y sobre si hay vista",
+     "descripcion": "Las partes proponen prueba por escrito; después cabe impugnar; el tribunal resuelve por auto sobre excepciones procesales, admisión de prueba y necesidad de vista.",
+     "articulos": [
+      "438"
+     ],
+     "plazos": [
+      {
+       "acto": "Proponer prueba (plazo común)",
+       "plazo": "5 días",
+       "articulo": "438",
+       "literal": "concediendo a ambas partes el plazo común de cinco días a fin de que propongan la prueba que quieran practicar"
+      },
+      {
+       "acto": "Impugnaciones (arts. 280, 283, 287 y 427)",
+       "plazo": "3 días",
+       "articulo": "438",
+       "literal": "En los tres días siguientes al traslado del escrito de proposición de prueba"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El tribunal considera necesaria la vista",
+       "entonces": "Citación para la vista.",
+       "articulos": [
+        "440"
+       ],
+       "literal": {
+        "articulo": "440",
+        "texto": "cuando haya de celebrarse vista de acuerdo con lo expresado en el artículo 438"
+       }
+      },
+      {
+       "si": "Solo prueba documental no impugnada (o periciales sin necesidad de peritos)",
+       "entonces": "Sentencia sin vista.",
+       "articulos": [
+        "438"
+       ],
+       "literal": {
+        "articulo": "438",
+        "texto": "se procederá a dictar sentencia, sin previa celebración de la vista"
+       }
+      },
+      {
+       "si": "Se recurre el auto sobre la prueba",
+       "entonces": "Recurso de reposición con efecto suspensivo.",
+       "articulos": [
+        "438"
+       ],
+       "literal": {
+        "articulo": "438",
+        "texto": "Contra este auto cabrá interponer recurso de reposición, que tendrá efecto suspensivo."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué recurso cabe contra el auto que resuelve sobre la admisión de la prueba en el verbal, y con qué efecto?",
+      "a": "Recurso de reposición, con efecto suspensivo.",
+      "articulos": [
+       "438"
+      ],
+      "literal": {
+       "articulo": "438",
+       "texto": "recurso de reposición, que tendrá efecto suspensivo"
+      }
+     },
+     "conexiones": [
+      "280",
+      "283",
+      "287",
+      "381",
+      "427",
+      "438"
+     ],
+     "duda": "Lectura a revisar: el art. 438.10 da reposición con efecto suspensivo contra el auto sobre la prueba; el art. 285.2 (reposición en el acto + protesta) y el 446 (prueba en el acto de la vista) parecen pensados para resoluciones orales. Confirma tú cuál aplicas en cada momento."
+    },
+    {
+     "id": "ver-vista",
+     "fase": "Vista",
+     "subtitulo": "Citación, comparecencia y práctica de la prueba",
+     "descripcion": "El LAJ cita a las partes. En la vista se comprueba si subsiste el litigio, se practica la prueba y pueden formularse conclusiones.",
+     "articulos": [
+      "440",
+      "442",
+      "443",
+      "446"
+     ],
+     "plazos": [
+      {
+       "acto": "Citación para la vista",
+       "plazo": "Dentro de 5 días",
+       "articulo": "440",
+       "literal": "citará a las partes a tal fin dentro de los cinco días siguientes"
+      },
+      {
+       "acto": "Celebración de la vista",
+       "plazo": "Máximo 1 mes",
+       "articulo": "440",
+       "literal": "La vista habrá de tener lugar dentro del plazo máximo de un mes."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No asiste el demandante",
+       "entonces": "Se le tiene por desistido (salvo interés legítimo del demandado), con costas.",
+       "articulos": [
+        "442"
+       ],
+       "literal": {
+        "articulo": "442",
+        "texto": "se tendrá en el acto por desistido a aquél de la demanda, se le impondrán las costas causadas"
+       }
+      },
+      {
+       "si": "No asiste el demandado",
+       "entonces": "Se celebra el juicio.",
+       "articulos": [
+        "442"
+       ],
+       "literal": {
+        "articulo": "442",
+        "texto": "Si no compareciere el demandado, se procederá a la celebración del juicio."
+       }
+      },
+      {
+       "si": "El tribunal inadmite una prueba en la vista",
+       "entonces": "Solo reposición en el acto; si se desestima, protesta.",
+       "articulos": [
+        "446"
+       ],
+       "literal": {
+        "articulo": "446",
+        "texto": "solo cabrá recurso de reposición, que se sustanciará y resolverá en el acto"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En el juicio verbal no asiste el demandante a la vista. ¿Qué sucede?",
+      "a": "Si el demandado no alega interés legítimo en la continuación, se le tiene por desistido, con imposición de costas (y posible indemnización al demandado comparecido).",
+      "articulos": [
+       "442"
+      ],
+      "literal": {
+       "articulo": "442",
+       "texto": "Si el demandante no asistiese a la vista, y el demandado no alegare interés legítimo en la continuación del proceso"
+      }
+     },
+     "conexiones": [
+      "304",
+      "440",
+      "442",
+      "443",
+      "446"
+     ]
+    },
+    {
+     "id": "ver-sentencia",
+     "fase": "Sentencia",
+     "subtitulo": "Plazo para dictarla",
+     "descripcion": "Terminada la vista, sentencia en plazo (salvo sentencia oral). Plazo especial en desahucio de finca urbana. Algunas sentencias no producen cosa juzgada (art. 447.2 a 447.4).",
+     "articulos": [
+      "447"
+     ],
+     "plazos": [
+      {
+       "acto": "Dictar sentencia",
+       "plazo": "10 días",
+       "articulo": "447",
+       "literal": "dictará sentencia dentro de los diez días siguientes"
+      },
+      {
+       "acto": "Dictar sentencia en desahucio de finca urbana",
+       "plazo": "5 días",
+       "articulo": "447",
+       "literal": "en que la sentencia se dictará en los cinco días siguientes"
+      }
+     ],
+     "ramas": [],
+     "pregunta": {
+      "q": "¿Producen efecto de cosa juzgada las sentencias de tutela sumaria de la posesión?",
+      "a": "No.",
+      "articulos": [
+       "447"
+      ],
+      "literal": {
+       "articulo": "447",
+       "texto": "No producirán efectos de cosa juzgada las sentencias que pongan fin a los juicios verbales sobre tutela sumaria de la posesión"
+      }
+     },
+     "conexiones": [
+      "210",
+      "447"
+     ],
+     "continua_en": [
+      "ejecucion"
+     ]
+    },
+    {
+     "id": "ver-recurso",
+     "fase": "Recurso de apelación",
+     "subtitulo": "Ojo con la cuantía",
+     "descripcion": "Las sentencias son apelables, salvo las de juicios verbales por razón de la cuantía cuando esta no supere 3.000 €.",
+     "articulos": [
+      "455",
+      "458",
+      "461"
+     ],
+     "plazos": [
+      {
+       "acto": "Interponer apelación",
+       "plazo": "20 días desde la notificación",
+       "articulo": "458",
+       "literal": "en el plazo de veinte días desde la notificación de la resolución impugnada"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Verbal por cuantía de hasta 3.000 €",
+       "entonces": "Sentencia no apelable.",
+       "articulos": [
+        "455"
+       ],
+       "literal": {
+        "articulo": "455",
+        "texto": "con excepción de las sentencias dictadas en los juicios verbales por razón de la cuantía cuando ésta no supere los 3.000 euros"
+       }
+      },
+      {
+       "si": "Resto de casos",
+       "entonces": "Apelación.",
+       "articulos": [
+        "455"
+       ],
+       "literal": {
+        "articulo": "455",
+        "texto": "Las sentencias dictadas en toda clase de juicio, los autos definitivos y aquéllos otros que la ley expresamente señale, serán apelables"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Sentencia de juicio verbal por cuantía de 2.500 €: ¿cabe apelación?",
+      "a": "No: se exceptúan las sentencias de juicios verbales por razón de la cuantía que no supere los 3.000 euros.",
+      "articulos": [
+       "455"
+      ],
+      "literal": {
+       "articulo": "455",
+       "texto": "cuando ésta no supere los 3.000 euros"
+      }
+     },
+     "conexiones": [
+      "455",
+      "458",
+      "461"
+     ]
+    }
+   ],
+   "grupo": "Libro II · Procesos declarativos"
+  },
+  {
+   "id": "desahucio",
+   "nombre": "Desahucio por falta de pago",
+   "bloque": "juicio verbal",
+   "grupo": "Libro II · Procesos declarativos",
+   "resumen": "Juicio verbal de desahucio de finca por impago de rentas: requerimiento de 10 días, enervación, vulnerabilidad, sentencia y lanzamiento.",
+   "ambito": {
+    "corto": "Verbal por razón de la materia (art. 250.1.1.º)",
+    "texto": "Se sigue el juicio verbal cualquiera que sea la cuantía. La demanda debe indicar si cabe o no la enervación.",
+    "articulos": [
+     "250",
+     "439"
+    ],
+    "literal": [
+     {
+      "articulo": "250",
+      "texto": "Las que versen sobre reclamación de cantidades por impago de rentas y cantidades debidas"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "des-demanda",
+     "fase": "Demanda",
+     "subtitulo": "Enervación, condonación y lanzamiento",
+     "descripcion": "Debe indicar las circunstancias que permitan o no enervar. El arrendador puede ofrecer condonar deuda y costas si se desaloja voluntariamente en un plazo no inferior a 15 días, y pedir ya la ejecución del lanzamiento.",
+     "articulos": [
+      "439",
+      "437"
+     ],
+     "plazos": [
+      {
+       "acto": "Plazo mínimo para el desalojo voluntario con condonación",
+       "plazo": "No inferior a 15 días",
+       "articulo": "437",
+       "literal": "que no podrá ser inferior al plazo de quince días desde que se notifique la demanda"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La demanda no indica si cabe enervación",
+       "entonces": "No se admite.",
+       "articulos": [
+        "439"
+       ],
+       "literal": {
+        "articulo": "439",
+        "texto": "No se admitirán las demandas de desahucio de finca urbana por falta de pago de las rentas o cantidades debidas por el arrendatario si el arrendador no indicare las circunstancias concurrentes que puedan permitir o no, en el caso concreto, la enervación del desahucio."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué efecto tiene que el arrendatario acepte el compromiso de condonación?",
+      "a": "Equivale a un allanamiento con los efectos del art. 21.",
+      "articulos": [
+       "438"
+      ],
+      "literal": {
+       "articulo": "438",
+       "texto": "la aceptación de este compromiso equivaldrá a un allanamiento con los efectos del artículo 21"
+      }
+     },
+     "conexiones": [
+      "21",
+      "437",
+      "439"
+     ]
+    },
+    {
+     "id": "des-requerimiento",
+     "fase": "Requerimiento de 10 días",
+     "subtitulo": "Desalojar, pagar, enervar u oponerse",
+     "descripcion": "Tras la admisión, el LAJ requiere al demandado para que en 10 días desaloje, pague, enerve o se oponga. El requerimiento fija ya la fecha de la vista y la del lanzamiento. La asistencia jurídica gratuita se pide en 3 días.",
+     "articulos": [
+      "438",
+      "441"
+     ],
+     "plazos": [
+      {
+       "acto": "Atender el requerimiento",
+       "plazo": "10 días",
+       "articulo": "438",
+       "literal": "requerirá a la persona demandada para que, en el plazo de diez días, desaloje el inmueble"
+      },
+      {
+       "acto": "Solicitar asistencia jurídica gratuita",
+       "plazo": "3 días",
+       "articulo": "438",
+       "literal": "deberá hacerlo en los tres días siguientes a la práctica del requerimiento"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Es la vivienda habitual del demandado",
+       "entonces": "Se le informa de los servicios sociales y se comunica de oficio a las Administraciones, que informan de la vulnerabilidad en un máximo de 10 días.",
+       "articulos": [
+        "441"
+       ],
+       "literal": {
+        "articulo": "441",
+        "texto": "en todo caso en el plazo máximo de diez días"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué supone no oponerse al requerimiento?",
+      "a": "Prestar consentimiento a la resolución del contrato de arrendamiento.",
+      "articulos": [
+       "438"
+      ],
+      "literal": {
+       "articulo": "438",
+       "texto": "la falta de oposición al requerimiento supondrá la prestación de su consentimiento a la resolución del contrato de arrendamiento"
+      }
+     },
+     "conexiones": [
+      "438",
+      "441"
+     ]
+    },
+    {
+     "id": "des-respuesta",
+     "fase": "Respuesta del demandado",
+     "subtitulo": "No hace nada / desaloja / enerva / se opone",
+     "descripcion": "Lo que haga en los 10 días decide el camino.",
+     "articulos": [
+      "438",
+      "22"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "No paga ni comparece",
+       "entonces": "Decreto que termina el juicio y lanzamiento en la fecha fijada.",
+       "articulos": [
+        "438"
+       ],
+       "literal": {
+        "articulo": "438",
+        "texto": "dictará decreto dando por terminado el juicio de desahucio y se procederá al lanzamiento en el día y la hora fijadas"
+       }
+      },
+      {
+       "si": "Desaloja sin pagar ni oponerse",
+       "entonces": "Decreto de terminación; el actor puede pedir ejecución por la cantidad con la mera solicitud.",
+       "articulos": [
+        "438"
+       ],
+       "literal": {
+        "articulo": "438",
+        "texto": "dando traslado a la parte demandante para que inste el despacho de ejecución en cuanto a la cantidad reclamada, bastando para ello con la mera solicitud"
+       }
+      },
+      {
+       "si": "Paga o consigna todo lo debido (enerva)",
+       "entonces": "Decreto que termina el desahucio, salvo que el actor se oponga a la enervación (entonces vista).",
+       "articulos": [
+        "22"
+       ],
+       "literal": {
+        "articulo": "22",
+        "texto": "terminarán mediante decreto dictado al efecto por el letrado de la Administración de Justicia"
+       }
+      },
+      {
+       "si": "Se opone",
+       "entonces": "Se celebra la vista en la fecha señalada.",
+       "articulos": [
+        "438"
+       ],
+       "literal": {
+        "articulo": "438",
+        "texto": "Si el demandado formulara oposición, se celebrará la vista en la fecha señalada."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo no cabe enervar el desahucio?",
+      "a": "Si ya se enervó una vez antes (salvo cobro frustrado por causa del arrendador) o si hubo requerimiento fehaciente de pago con al menos 30 días de antelación a la demanda sin que se pagara.",
+      "articulos": [
+       "22"
+      ],
+      "literal": {
+       "articulo": "22",
+       "texto": "Lo dispuesto en el párrafo anterior no será de aplicación cuando el arrendatario hubiera enervado el desahucio en una ocasión anterior"
+      }
+     },
+     "conexiones": [
+      "22",
+      "438"
+     ],
+     "duda": "El art. 22.4 recoge las excepciones a la enervación; revisa si la redacción de la tarjeta (requerimiento fehaciente con 30 días de antelación) refleja bien tu lectura."
+    },
+    {
+     "id": "des-sentencia",
+     "fase": "Vista, sentencia y lanzamiento",
+     "subtitulo": "Sentencia en 5 días; sin cosa juzgada",
+     "descripcion": "Si el demandado no comparece a la vista, se declara el desahucio sin más trámites. La sentencia se dicta en 5 días. El lanzamiento debe ser antes de 30 días desde la vista. La sentencia de desahucio no produce cosa juzgada (salvo en las cantidades acumuladas).",
+     "articulos": [
+      "438",
+      "447"
+     ],
+     "plazos": [
+      {
+       "acto": "Dictar sentencia de desahucio",
+       "plazo": "5 días",
+       "articulo": "447",
+       "literal": "en que la sentencia se dictará en los cinco días siguientes"
+      },
+      {
+       "acto": "Fecha del lanzamiento",
+       "plazo": "Antes de 30 días desde la vista",
+       "articulo": "438",
+       "literal": "que deberá verificarse antes de treinta días desde la fecha señalada para la vista"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El demandado no comparece a la vista",
+       "entonces": "Se declara el desahucio sin más trámites.",
+       "articulos": [
+        "438"
+       ],
+       "literal": {
+        "articulo": "438",
+        "texto": "de no comparecer a la vista, se declarará el desahucio sin más trámites"
+       }
+      },
+      {
+       "si": "Se acumuló la reclamación de rentas",
+       "entonces": "Ese pronunciamiento sí produce cosa juzgada.",
+       "articulos": [
+        "447"
+       ],
+       "literal": {
+        "articulo": "447",
+        "texto": "los pronunciamientos de la sentencia en relación con esas acciones acumuladas a la de desahucio producirán efectos de cosa juzgada"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Produce cosa juzgada la sentencia de desahucio por impago?",
+      "a": "No en cuanto al desahucio (art. 447.2); sí en cuanto a las rentas reclamadas acumuladamente.",
+      "articulos": [
+       "447"
+      ],
+      "literal": {
+       "articulo": "447",
+       "texto": "No producirán efectos de cosa juzgada las sentencias que pongan fin a los juicios verbales sobre tutela sumaria de la posesión ni las que decidan sobre la pretensión de desahucio"
+      }
+     },
+     "conexiones": [
+      "438",
+      "447"
+     ]
+    },
+    {
+     "id": "des-recurso",
+     "fase": "Recurso y ejecución",
+     "subtitulo": "Pagar para recurrir; sin plazo de espera",
+     "descripcion": "Para apelar o recurrir en casación, el arrendatario debe acreditar tener pagadas las rentas vencidas y las que deba adelantar. La ejecución del desahucio no espera los 20 días del art. 548.",
+     "articulos": [
+      "449",
+      "549"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El arrendatario recurre sin acreditar el pago de rentas",
+       "entonces": "No se admite el recurso (y se declara desierto si deja de pagar durante él).",
+       "articulos": [
+        "449"
+       ],
+       "literal": {
+        "articulo": "449",
+        "texto": "no se admitirán al demandado los recursos de apelación o casación si, al interponerlos, no manifiesta, acreditándolo por escrito, tener satisfechas las rentas vencidas"
+       }
+      },
+      {
+       "si": "Se pide la ejecución del lanzamiento",
+       "entonces": "No rige el plazo de espera del art. 548.",
+       "articulos": [
+        "549"
+       ],
+       "literal": {
+        "articulo": "549",
+        "texto": "El plazo de espera legal al que se refiere el artículo anterior no será de aplicación en la ejecución de resoluciones de condena de desahucio"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Basta pedir la ejecución en la propia demanda de desahucio?",
+      "a": "Sí: es suficiente para la ejecución directa y el lanzamiento en la fecha señalada.",
+      "articulos": [
+       "549"
+      ],
+      "literal": {
+       "articulo": "549",
+       "texto": "la solicitud de su ejecución en la demanda de desahucio será suficiente para la ejecución directa de dichas resoluciones"
+      }
+     },
+     "conexiones": [
+      "449",
+      "548",
+      "549"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ejecucion",
+   "nombre": "Ejecución dineraria y embargo",
+   "bloque": "ejecución y embargo",
+   "resumen": "De la demanda ejecutiva a la realización de los bienes: despacho, oposición, embargo y apremio. La ejecución hipotecaria (arts. 681 a 698) irá aparte, en los procesos especiales.",
+   "ambito": {
+    "corto": "Título ejecutivo del art. 517 (judicial o no judicial)",
+    "texto": "Solo cabe con un título que lleve aparejada ejecución (art. 517.2): sentencia de condena firme, laudos y acuerdos de mediación elevados a escritura, transacciones homologadas, escrituras públicas, pólizas, etc. El régimen de oposición cambia según el título sea judicial o no.",
+    "articulos": [
+     "517"
+    ],
+    "literal": [
+     {
+      "articulo": "517",
+      "texto": "La acción ejecutiva deberá fundarse en un título que tenga aparejada ejecución."
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "eje-titulo",
+     "fase": "Título ejecutivo y plazos previos",
+     "subtitulo": "Caducidad y plazo de espera",
+     "descripcion": "La acción ejecutiva basada en sentencia, transacción o acuerdo judicial, laudo o acuerdo de mediación caduca a los cinco años. No puede despacharse ejecución de esas resoluciones en los veinte días siguientes a su firmeza o notificación.",
+     "articulos": [
+      "517",
+      "518",
+      "548"
+     ],
+     "plazos": [
+      {
+       "acto": "Caducidad de la acción ejecutiva (sentencia, laudo, mediación…)",
+       "plazo": "5 años desde la firmeza",
+       "articulo": "518",
+       "literal": "si no se interpone la correspondiente demanda ejecutiva dentro de los cinco años siguientes a la firmeza de la sentencia o resolución"
+      },
+      {
+       "acto": "Plazo de espera antes de despachar ejecución",
+       "plazo": "20 días",
+       "articulo": "548",
+       "literal": "dentro de los veinte días posteriores a aquel en que la resolución de condena sea firme"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se trata de una condena de desahucio por falta de pago o expiración del plazo",
+       "entonces": "No rige el plazo de espera del art. 548.",
+       "articulos": [
+        "549"
+       ],
+       "literal": {
+        "articulo": "549",
+        "texto": "El plazo de espera legal al que se refiere el artículo anterior no será de aplicación en la ejecución de resoluciones de condena de desahucio"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuántos títulos con aparejada ejecución enumera el art. 517.2 y cuál es el primero?",
+      "a": "Nueve; el primero es la sentencia de condena firme.",
+      "articulos": [
+       "517"
+      ],
+      "literal": {
+       "articulo": "517",
+       "texto": "1.º La sentencia de condena firme."
+      }
+     },
+     "conexiones": [
+      "517",
+      "518",
+      "548",
+      "549"
+     ],
+     "continua_en": [
+      "hipotecaria"
+     ]
+    },
+    {
+     "id": "eje-demanda",
+     "fase": "Demanda ejecutiva",
+     "subtitulo": "Siempre a instancia de parte",
+     "descripcion": "Se expresan el título, la tutela que se pide (cantidad), los bienes embargables conocidos, las medidas de localización y los ejecutados. Si se ejecuta una resolución del propio tribunal, basta pedir el despacho identificándola.",
+     "articulos": [
+      "549",
+      "550"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El título es una sentencia del tribunal competente para ejecutar",
+       "entonces": "La demanda puede limitarse a pedir el despacho identificando la resolución.",
+       "articulos": [
+        "549"
+       ],
+       "literal": {
+        "articulo": "549",
+        "texto": "la demanda ejecutiva podrá limitarse a la solicitud de que se despache la ejecución, identificando la sentencia o resolución cuya ejecución se pretenda"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el tribunal despachar ejecución de oficio?",
+      "a": "No: sólo a petición de parte, en forma de demanda.",
+      "articulos": [
+       "549"
+      ],
+      "literal": {
+       "articulo": "549",
+       "texto": "Sólo se despachará ejecución a petición de parte, en forma de demanda"
+      }
+     },
+     "conexiones": [
+      "549",
+      "550",
+      "575",
+      "590"
+     ]
+    },
+    {
+     "id": "eje-despacho",
+     "fase": "Despacho de la ejecución",
+     "subtitulo": "Auto del juez + decreto del LAJ",
+     "descripcion": "Si concurren los presupuestos, el juez dicta auto con la orden general de ejecución (con control de cláusulas abusivas en títulos extrajudiciales). El LAJ dicta después decreto con las medidas concretas, incluido el embargo. Se notifican al ejecutado sin citación ni emplazamiento.",
+     "articulos": [
+      "551",
+      "552",
+      "553"
+     ],
+     "plazos": [
+      {
+       "acto": "Decreto del LAJ con las medidas ejecutivas",
+       "plazo": "Mismo día o siguiente hábil al auto",
+       "articulo": "551",
+       "literal": "en el mismo día o en el siguiente día hábil a aquél en que hubiera sido dictado el auto despachando ejecución, dictará decreto"
+      },
+      {
+       "acto": "Audiencia a las partes si el juez aprecia posible cláusula abusiva",
+       "plazo": "15 días",
+       "articulo": "552",
+       "literal": "dará audiencia por quince días a las partes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El tribunal deniega el despacho",
+       "entonces": "Auto directamente apelable (solo con el acreedor); también cabe reposición previa, a elección del acreedor.",
+       "articulos": [
+        "552"
+       ],
+       "literal": {
+        "articulo": "552",
+        "texto": "El auto que deniegue el despacho de la ejecución será directamente apelable, sustanciándose la apelación sólo con el acreedor."
+       }
+      },
+      {
+       "si": "Firme la denegación",
+       "entonces": "El acreedor solo puede acudir al proceso ordinario, salvo cosa juzgada.",
+       "articulos": [
+        "552"
+       ],
+       "literal": {
+        "articulo": "552",
+        "texto": "el acreedor sólo podrá hacer valer sus derechos en el proceso ordinario correspondiente"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se cita o emplaza al ejecutado al notificarle el despacho?",
+      "a": "No: se le notifica sin citación ni emplazamiento, para que pueda personarse en cualquier momento.",
+      "articulos": [
+       "553"
+      ],
+      "literal": {
+       "articulo": "553",
+       "texto": "sin citación ni emplazamiento, para que en cualquier momento pueda personarse en la ejecución"
+      }
+     },
+     "conexiones": [
+      "551",
+      "552",
+      "553",
+      "557"
+     ]
+    },
+    {
+     "id": "eje-oposicion",
+     "fase": "Oposición a la ejecución",
+     "subtitulo": "Motivos según el título; defectos procesales y fondo",
+     "descripcion": "Con título judicial, arbitral o de mediación: pago o cumplimiento justificado documentalmente, caducidad y pactos en documento público; no suspende. Con títulos no judiciales: lista cerrada del art. 557 (pago, compensación, pluspetición, prescripción, quita, transacción, cláusulas abusivas) y sí suspende. En ambos casos caben defectos procesales (art. 559). Se resuelve por auto apelable.",
+     "articulos": [
+      "556",
+      "557",
+      "559",
+      "560",
+      "561"
+     ],
+     "plazos": [
+      {
+       "acto": "Oponerse a la ejecución",
+       "plazo": "10 días desde la notificación del auto",
+       "articulo": "556",
+       "literal": "dentro de los diez días siguientes a la notificación del auto en que se despache ejecución"
+      },
+      {
+       "acto": "Alegaciones del ejecutante sobre defectos procesales",
+       "plazo": "5 días",
+       "articulo": "559",
+       "literal": "el ejecutante podrá formular alegaciones sobre éstos, en el plazo de cinco días"
+      },
+      {
+       "acto": "Subsanar un defecto subsanable",
+       "plazo": "10 días",
+       "articulo": "559",
+       "literal": "concederá mediante providencia al ejecutante un plazo de diez días para subsanarlo"
+      },
+      {
+       "acto": "Impugnar la oposición por motivos de fondo",
+       "plazo": "5 días",
+       "articulo": "560",
+       "literal": "el ejecutante podrá impugnar la oposición basada en motivos de fondo en el plazo de cinco días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El título es una sentencia y el ejecutado se opone",
+       "entonces": "La oposición no suspende la ejecución.",
+       "articulos": [
+        "556"
+       ],
+       "literal": {
+        "articulo": "556",
+        "texto": "La oposición que se formule en los casos del apartado anterior no suspenderá el curso de la ejecución."
+       }
+      },
+      {
+       "si": "El título es no judicial (escritura, póliza…) y el ejecutado se opone",
+       "entonces": "El LAJ suspende la ejecución.",
+       "articulos": [
+        "557"
+       ],
+       "literal": {
+        "articulo": "557",
+        "texto": "el Letrado de la Administración de Justicia mediante diligencia de ordenación suspenderá el curso de la ejecución"
+       }
+      },
+      {
+       "si": "Se desestima totalmente la oposición",
+       "entonces": "La ejecución sigue adelante y se condena en costas al ejecutado.",
+       "articulos": [
+        "561"
+       ],
+       "literal": {
+        "articulo": "561",
+        "texto": "El auto que desestime totalmente la oposición condenará en las costas de ésta al ejecutado"
+       }
+      },
+      {
+       "si": "Se recurre el auto que resuelve la oposición",
+       "entonces": "Apelación; no suspende si el auto fue desestimatorio de la oposición.",
+       "articulos": [
+        "561"
+       ],
+       "literal": {
+        "articulo": "561",
+        "texto": "Contra el auto que resuelva la oposición podrá interponerse recurso de apelación, que no suspenderá el curso de la ejecución si la resolución recurrida fuera desestimatoria de la oposición."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Ejecución de sentencia: ¿puede el ejecutado oponerse alegando prescripción?",
+      "a": "No figura entre los motivos del art. 556.1 (pago o cumplimiento, caducidad de la acción ejecutiva y pactos o transacciones en documento público). La prescripción es motivo para títulos no judiciales (art. 557.1.4.ª).",
+      "articulos": [
+       "556",
+       "557"
+      ],
+      "literal": {
+       "articulo": "557",
+       "texto": "4.ª Prescripción y caducidad."
+      }
+     },
+     "conexiones": [
+      "556",
+      "557",
+      "558",
+      "559",
+      "560",
+      "561"
+     ],
+     "duda": "El art. 556.1 no menciona la prescripción para títulos judiciales; el 557.1 sí para los no judiciales. La respuesta de la tarjeta se basa solo en esa enumeración literal: confirma si hay otra vía que quieras recoger."
+    },
+    {
+     "id": "eje-impugnacion",
+     "fase": "Impugnar actos de ejecución",
+     "subtitulo": "Infracciones durante la ejecución",
+     "descripcion": "Al margen de la oposición, se pueden denunciar infracciones en los actos concretos: reposición contra resoluciones, apelación cuando la ley lo prevea o escrito al tribunal si no hay resolución. Si se actúa en contra del título judicial: reposición y, si se desestima, apelación.",
+     "articulos": [
+      "562",
+      "563"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "No hay resolución expresa que recurrir",
+       "entonces": "Escrito dirigido al tribunal.",
+       "articulos": [
+        "562"
+       ],
+       "literal": {
+        "articulo": "562",
+        "texto": "Mediante escrito dirigido al Tribunal si no existiera resolución expresa frente a la que recurrir."
+       }
+      },
+      {
+       "si": "El tribunal provee en contradicción con la sentencia que se ejecuta",
+       "entonces": "Reposición y, si se desestima, apelación.",
+       "articulos": [
+        "563"
+       ],
+       "literal": {
+        "articulo": "563",
+        "texto": "la parte perjudicada podrá interponer recurso de reposición y, si se desestimare, de apelación"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué recurso cabe contra la resolución del LAJ contraria al título ejecutivo judicial?",
+      "a": "Previa reposición, recurso de revisión ante el tribunal y, si se desestima, apelación.",
+      "articulos": [
+       "563"
+      ],
+      "literal": {
+       "articulo": "563",
+       "texto": "previa reposición, cabrá contra ella recurso de revisión ante el tribunal y, si fuera desestimado, recurso de apelación"
+      }
+     },
+     "conexiones": [
+      "225",
+      "562",
+      "563"
+     ]
+    },
+    {
+     "id": "eje-requerimiento",
+     "fase": "Requerimiento de pago",
+     "subtitulo": "Solo con títulos no judiciales",
+     "descripcion": "Con títulos judiciales, arbitrales o de mediación que condenan a pagar dinero no hace falta requerir de pago para embargar. Con los demás títulos sí, salvo que se aporte acta notarial de requerimiento previo.",
+     "articulos": [
+      "580",
+      "581"
+     ],
+     "plazos": [
+      {
+       "acto": "Antelación del requerimiento notarial que evita el judicial",
+       "plazo": "Al menos 10 días",
+       "articulo": "581",
+       "literal": "con al menos diez días de antelación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se ejecuta una sentencia de condena dineraria",
+       "entonces": "No es necesario el requerimiento de pago para embargar.",
+       "articulos": [
+        "580"
+       ],
+       "literal": {
+        "articulo": "580",
+        "texto": "no será necesario requerir de pago al ejecutado para proceder al embargo de sus bienes"
+       }
+      },
+      {
+       "si": "Se ejecuta un título no judicial y no paga en el acto",
+       "entonces": "Embargo de bienes suficientes.",
+       "articulos": [
+        "581"
+       ],
+       "literal": {
+        "articulo": "581",
+        "texto": "si no pagase en el acto, el letrado o letrada de la Administración de Justicia procederá al embargo de sus bienes"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Ejecución de sentencia de condena a pagar: ¿hay que requerir de pago antes de embargar?",
+      "a": "No.",
+      "articulos": [
+       "580"
+      ],
+      "literal": {
+       "articulo": "580",
+       "texto": "no será necesario requerir de pago al ejecutado"
+      }
+     },
+     "conexiones": [
+      "580",
+      "581",
+      "582",
+      "583"
+     ]
+    },
+    {
+     "id": "eje-embargo",
+     "fase": "Embargo",
+     "subtitulo": "Suficiencia, orden, inembargables y tercerías",
+     "descripcion": "Se embarga lo suficiente, nunca bienes de existencia no constatada (salvo cuentas con límite). Si no hay pacto, el LAJ atiende a la facilidad de enajenación y menor onerosidad, y si no es posible, al orden legal. Hay bienes inembargables y límites en salarios y pensiones. Terceros pueden interponer tercería de dominio o de mejor derecho.",
+     "articulos": [
+      "584",
+      "588",
+      "589",
+      "592",
+      "605",
+      "607",
+      "595",
+      "614"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El ejecutante no señala bienes suficientes",
+       "entonces": "Requerimiento al ejecutado para que manifieste sus bienes, con apercibimiento de sanciones.",
+       "articulos": [
+        "589"
+       ],
+       "literal": {
+        "articulo": "589",
+        "texto": "requerirá, mediante diligencia de ordenación, de oficio al ejecutado para que manifieste relacionadamente bienes y derechos suficientes"
+       }
+      },
+      {
+       "si": "Se quiere embargar el salario",
+       "entonces": "Inembargable hasta el SMI; por encima, escala de porcentajes.",
+       "articulos": [
+        "607"
+       ],
+       "literal": {
+        "articulo": "607",
+        "texto": "Es inembargable el salario, sueldo, pensión, retribución o su equivalente, que no exceda de la cuantía señalada para el salario mínimo interprofesional."
+       }
+      },
+      {
+       "si": "Un tercero dice ser dueño del bien embargado",
+       "entonces": "Tercería de dominio, con principio de prueba por escrito.",
+       "articulos": [
+        "595",
+        "596"
+       ],
+       "literal": {
+        "articulo": "595",
+        "texto": "Con la demanda de tercería de dominio deberá aportarse un principio de prueba por escrito del fundamento de la pretensión del tercerista."
+       }
+      },
+      {
+       "si": "Otro acreedor dice tener preferencia",
+       "entonces": "Tercería de mejor derecho, con principio de prueba del crédito preferente.",
+       "articulos": [
+        "614"
+       ],
+       "literal": {
+        "articulo": "614",
+        "texto": "podrá interponer demanda de tercería de mejor derecho"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué se embarga en primer lugar según el orden legal del art. 592.2?",
+      "a": "Dinero o cuentas corrientes de cualquier clase.",
+      "articulos": [
+       "592"
+      ],
+      "literal": {
+       "articulo": "592",
+       "texto": "1.º Dinero o cuentas corrientes de cualquier clase."
+      }
+     },
+     "conexiones": [
+      "584",
+      "588",
+      "589",
+      "592",
+      "595",
+      "596",
+      "605",
+      "606",
+      "607",
+      "614"
+     ]
+    },
+    {
+     "id": "eje-apremio",
+     "fase": "Realización de los bienes (apremio)",
+     "subtitulo": "Convenio, entidad especializada o subasta",
+     "descripcion": "Los bienes se avalúan (salvo acuerdo) y se realizan por convenio aprobado por el LAJ, por persona o entidad especializada o, a falta de convenio, en subasta judicial. Las subastas de inmuebles tienen reglas propias.",
+     "articulos": [
+      "636",
+      "637",
+      "640",
+      "643",
+      "655"
+     ],
+     "plazos": [
+      {
+       "acto": "Alegaciones sobre la formación de lotes",
+       "plazo": "5 días",
+       "articulo": "643",
+       "literal": "se emplazará a las partes por cinco días para que aleguen lo que tengan por conveniente sobre la formación de lotes para la subasta"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No hay convenio de realización",
+       "entonces": "Subasta judicial.",
+       "articulos": [
+        "636"
+       ],
+       "literal": {
+        "articulo": "636",
+        "texto": "A falta de convenio de realización, la enajenación de los bienes embargados se llevará a cabo mediante subasta judicial."
+       }
+      },
+      {
+       "si": "Ejecutante y ejecutado pactan cómo vender",
+       "entonces": "El LAJ lo aprueba por decreto y suspende la ejecución sobre esos bienes.",
+       "articulos": [
+        "640"
+       ],
+       "literal": {
+        "articulo": "640",
+        "texto": "lo aprobará el letrado de la Administración de Justicia mediante decreto y suspenderá la ejecución respecto del bien o bienes objeto del acuerdo"
+       }
+      },
+      {
+       "si": "Con la subasta no se cubrirían ni sus gastos",
+       "entonces": "No se convoca.",
+       "articulos": [
+        "643"
+       ],
+       "literal": {
+        "articulo": "643",
+        "texto": "No se convocará subasta de bienes o lotes de bienes cuando, según su tasación o valoración definitiva, sea previsible que con su realización no se obtendrá una cantidad de dinero que supere, cuando menos, los gastos originados por la misma subasta."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hace falta avalúo si ejecutante y ejecutado se ponen de acuerdo sobre el valor?",
+      "a": "No.",
+      "articulos": [
+       "637"
+      ],
+      "literal": {
+       "articulo": "637",
+       "texto": "a no ser que ejecutante y ejecutado se hayan puesto de acuerdo sobre su valor"
+      }
+     },
+     "conexiones": [
+      "634",
+      "635",
+      "636",
+      "637",
+      "640",
+      "643",
+      "655"
+     ],
+     "aviso": "El art. 641 (realización por persona o entidad especializada) figura «(Sin contenido)» en el texto consolidado. El detalle de las subastas (arts. 643 a 675) aún no está desglosado."
+    }
+   ],
+   "grupo": "Libro III · Ejecución forzosa y medidas cautelares"
+  },
+  {
+   "id": "hipotecaria",
+   "nombre": "Ejecución hipotecaria",
+   "bloque": "ejecución hipotecaria",
+   "grupo": "Libro III · Ejecución forzosa y medidas cautelares",
+   "resumen": "Ejecución directa sobre bienes hipotecados o pignorados (arts. 681 a 698): requisitos de la escritura, demanda, requerimiento, certificación de cargas, oposición tasada y subasta.",
+   "ambito": {
+    "corto": "Ejecución dirigida solo contra el bien hipotecado o pignorado",
+    "texto": "Se aplica cuando la ejecución se dirige exclusivamente contra los bienes pignorados o hipotecados y, si son hipotecados, la escritura fija el precio de tasación para subasta y un domicilio del deudor.",
+    "articulos": [
+     "681",
+     "682"
+    ],
+    "literal": [
+     {
+      "articulo": "682",
+      "texto": "Las normas del presente Capítulo sólo serán aplicables cuando la ejecución se dirija exclusivamente contra bienes pignorados o hipotecados"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "hip-requisitos",
+     "fase": "Requisitos y vencimiento",
+     "subtitulo": "Escritura, tasación, domicilio; vencimiento anticipado",
+     "descripcion": "La escritura debe fijar el tipo de subasta (no inferior al 75 % de la tasación) y un domicilio para requerimientos y notificaciones. Para préstamos de personas físicas sobre vivienda rige además la Ley 5/2019.",
+     "articulos": [
+      "682",
+      "693"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Se reclama por impago de plazos",
+       "entonces": "Debe haber vencido al menos el equivalente a tres meses de impago.",
+       "articulos": [
+        "693"
+       ],
+       "literal": {
+        "articulo": "693",
+        "texto": "si vencieren al menos tres plazos mensuales sin cumplir el deudor su obligación de pago"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué porcentaje mínimo de la tasación debe tener el tipo de subasta fijado en la escritura?",
+      "a": "No inferior al 75 %.",
+      "articulos": [
+       "682"
+      ],
+      "literal": {
+       "articulo": "682",
+       "texto": "que no podrá ser inferior, en ningún caso, al 75 por cien del valor señalado en la tasación"
+      }
+     },
+     "conexiones": [
+      "682",
+      "693"
+     ],
+     "aviso": "Para préstamos de personas físicas sobre vivienda, el art. 693.2 remite al art. 24 de la Ley 5/2019 y al art. 129 bis de la Ley Hipotecaria, que no están en esta app."
+    },
+    {
+     "id": "hip-demanda",
+     "fase": "Demanda y competencia",
+     "subtitulo": "Contra deudor, hipotecante no deudor o tercer poseedor",
+     "descripcion": "Competente, para inmuebles, el juzgado del lugar de la finca (sin sumisión). La demanda indica si es vivienda habitual y si el ejecutante es gran tenedor.",
+     "articulos": [
+      "684",
+      "685"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "No puede presentarse el título inscrito",
+       "entonces": "Se acompaña certificación registral de inscripción y subsistencia de la hipoteca.",
+       "articulos": [
+        "685"
+       ],
+       "literal": {
+        "articulo": "685",
+        "texto": "deberá acompañarse con el que se presente certificación del Registro que acredite la inscripción y subsistencia de la hipoteca"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué juzgado es competente si el bien hipotecado es un inmueble?",
+      "a": "El de Primera Instancia del lugar en que radique la finca, sin sumisión expresa o tácita.",
+      "articulos": [
+       "684"
+      ],
+      "literal": {
+       "articulo": "684",
+       "texto": "el Juzgado de Primera Instancia del lugar en que radique la finca"
+      }
+     },
+     "conexiones": [
+      "684",
+      "685"
+     ]
+    },
+    {
+     "id": "hip-requerimiento",
+     "fase": "Requerimiento y certificación de cargas",
+     "subtitulo": "Domicilio registral",
+     "descripcion": "El auto que despacha manda requerir de pago en el domicilio del Registro (salvo requerimiento extrajudicial previo). Se pide certificación de dominio y cargas; si la hipoteca no existe o está cancelada, fin de la ejecución.",
+     "articulos": [
+      "686",
+      "688"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "La certificación muestra la hipoteca inexistente o cancelada",
+       "entonces": "Decreto del LAJ poniendo fin a la ejecución.",
+       "articulos": [
+        "688"
+       ],
+       "literal": {
+        "articulo": "688",
+        "texto": "el Letrado de la Administración de Justicia dictará decreto poniendo fin a la ejecución"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Dónde se requiere de pago al deudor?",
+      "a": "En el domicilio que resulte vigente en el Registro.",
+      "articulos": [
+       "686"
+      ],
+      "literal": {
+       "articulo": "686",
+       "texto": "en el domicilio que resulte vigente en el Registro"
+      }
+     },
+     "conexiones": [
+      "581",
+      "656",
+      "686",
+      "688"
+     ]
+    },
+    {
+     "id": "hip-oposicion",
+     "fase": "Oposición tasada",
+     "subtitulo": "Solo cuatro causas",
+     "descripcion": "Solo cabe oponerse por extinción de la garantía u obligación (con certificación o escritura), error en el saldo de cuenta, preferencia de otra carga anterior (muebles) o cláusula abusiva. Suspende la ejecución. Cualquier otra reclamación va al juicio correspondiente sin suspender.",
+     "articulos": [
+      "695",
+      "698"
+     ],
+     "plazos": [
+      {
+       "acto": "Comparecencia tras la oposición",
+       "plazo": "Han de mediar 15 días desde la citación",
+       "articulo": "695",
+       "literal": "debiendo mediar quince días desde la citación"
+      },
+      {
+       "acto": "Auto que resuelve",
+       "plazo": "Dentro del segundo día",
+       "articulo": "695",
+       "literal": "acordará en forma de auto lo que estime procedente dentro del segundo día"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se alega una cláusula abusiva y se estima",
+       "entonces": "Sobreseimiento si fundamenta la ejecución; si no, se sigue sin aplicarla.",
+       "articulos": [
+        "695"
+       ],
+       "literal": {
+        "articulo": "695",
+        "texto": "se acordará el sobreseimiento de la ejecución cuando la cláusula contractual fundamente la ejecución"
+       }
+      },
+      {
+       "si": "El deudor alega nulidad del título u otra causa no tasada",
+       "entonces": "Juicio que corresponda, sin suspender la ejecución.",
+       "articulos": [
+        "698"
+       ],
+       "literal": {
+        "articulo": "698",
+        "texto": "se ventilarán en el juicio que corresponda, sin producir nunca el efecto de suspender ni entorpecer el procedimiento"
+       }
+      },
+      {
+       "si": "Se recurre el auto sobre la oposición",
+       "entonces": "Apelación solo si sobresee, inaplica una cláusula abusiva o desestima la oposición por abusividad; en los demás casos, no hay recurso.",
+       "articulos": [
+        "695"
+       ],
+       "literal": {
+        "articulo": "695",
+        "texto": "los autos que decidan la oposición a que se refiere este artículo no serán susceptibles de recurso alguno"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Suspende la ejecución hipotecaria la oposición del art. 695?",
+      "a": "Sí: el LAJ suspende la ejecución y convoca comparecencia.",
+      "articulos": [
+       "695"
+      ],
+      "literal": {
+       "articulo": "695",
+       "texto": "el Letrado de la Administración de Justicia suspenderá la ejecución"
+      }
+     },
+     "conexiones": [
+      "695",
+      "696",
+      "698"
+     ],
+     "duda": "El art. 695 no fija el plazo para oponerse. No se muestra plazo: revisa si aplicas el general de la oposición (arts. 556-557)."
+    },
+    {
+     "id": "hip-subasta",
+     "fase": "Subasta",
+     "subtitulo": "Reglas de la subasta de inmuebles",
+     "descripcion": "Pasados 20 días desde el requerimiento y las notificaciones, se subasta a instancia del actor, deudor o tercer poseedor, con las reglas de inmuebles. Se suspende si consta el concurso del deudor.",
+     "articulos": [
+      "691",
+      "696"
+     ],
+     "plazos": [
+      {
+       "acto": "Desde el requerimiento hasta poder pedir la subasta",
+       "plazo": "20 días",
+       "articulo": "691",
+       "literal": "transcurridos veinte días desde que tuvieron lugar el requerimiento de pago y las notificaciones antes expresadas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Consta la declaración de concurso del deudor",
+       "entonces": "El LAJ suspende la subasta.",
+       "articulos": [
+        "691"
+       ],
+       "literal": {
+        "articulo": "691",
+        "texto": "Cuando le conste al Letrado de la Administración de Justicia la declaración de concurso del deudor, suspenderá la subasta aunque ya se hubiera iniciado."
+       }
+      },
+      {
+       "si": "Un tercero interpone tercería de dominio",
+       "entonces": "Necesita título de fecha fehaciente anterior a la garantía; su admisión suspende la ejecución sobre esos bienes.",
+       "articulos": [
+        "696"
+       ],
+       "literal": {
+        "articulo": "696",
+        "texto": "deberá acompañarse a la demanda título de propiedad de fecha fehaciente anterior a la de constitución de la garantía"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Con qué reglas se subastan los bienes hipotecados, sean muebles o inmuebles?",
+      "a": "Con las de la subasta de bienes inmuebles.",
+      "articulos": [
+       "691"
+      ],
+      "literal": {
+       "articulo": "691",
+       "texto": "se realizará con arreglo a lo dispuesto en esta Ley para la subasta de bienes inmuebles"
+      }
+     },
+     "conexiones": [
+      "655",
+      "667",
+      "691",
+      "696"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cautelares",
+   "nombre": "Medidas cautelares",
+   "bloque": "medidas cautelares",
+   "resumen": "Solicitud, adopción con o sin audiencia del demandado, oposición, caución y alzamiento.",
+   "ambito": {
+    "corto": "A instancia del actor; nunca de oficio (regla general)",
+    "texto": "Las pide el actor (principal o reconvencional), bajo su responsabilidad, para asegurar la efectividad de una eventual sentencia estimatoria. Como regla, no se acuerdan de oficio ni más gravosas que las pedidas.",
+    "articulos": [
+     "721"
+    ],
+    "literal": [
+     {
+      "articulo": "721",
+      "texto": "Las medidas cautelares previstas en este Título no podrán ser acordadas de oficio por el tribunal"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "cau-presupuestos",
+     "fase": "Presupuestos",
+     "subtitulo": "Peligro por la mora, apariencia de buen derecho y caución",
+     "descripcion": "Hay que justificar el peligro de que la tutela se frustre durante el proceso, aportar datos que funden un juicio provisional favorable y ofrecer caución. La medida debe ser la menos gravosa igualmente eficaz.",
+     "articulos": [
+      "726",
+      "727",
+      "728"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Se pretende alterar una situación consentida durante largo tiempo",
+       "entonces": "No se acuerda, salvo que el solicitante justifique por qué no la pidió antes.",
+       "articulos": [
+        "728"
+       ],
+       "literal": {
+        "articulo": "728",
+        "texto": "No se acordarán medidas cautelares cuando con ellas se pretenda alterar situaciones de hecho consentidas por el solicitante durante largo tiempo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Debe el solicitante prestar caución?",
+      "a": "Sí, salvo que expresamente se disponga otra cosa, para responder de los daños y perjuicios que la medida pueda causar al demandado.",
+      "articulos": [
+       "728"
+      ],
+      "literal": {
+       "articulo": "728",
+       "texto": "Salvo que expresamente se disponga otra cosa, el solicitante de la medida cautelar deberá prestar caución suficiente"
+      }
+     },
+     "conexiones": [
+      "529",
+      "726",
+      "727",
+      "728"
+     ]
+    },
+    {
+     "id": "cau-momento",
+     "fase": "Momento y solicitud",
+     "subtitulo": "Con la demanda, antes o después",
+     "descripcion": "Lo ordinario es pedirlas con la demanda. Antes de la demanda solo por urgencia o necesidad, y la demanda debe presentarse después en plazo. La solicitud debe ser clara, con documentos y ofrecimiento de caución.",
+     "articulos": [
+      "730",
+      "732"
+     ],
+     "plazos": [
+      {
+       "acto": "Presentar la demanda si las medidas se acordaron antes",
+       "plazo": "20 días desde su adopción",
+       "articulo": "730",
+       "literal": "si la demanda no se presentare ante el mismo tribunal que conoció de la solicitud de aquéllas en los veinte días siguientes a su adopción"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se piden antes de la demanda y luego no se presenta en plazo",
+       "entonces": "Quedan sin efecto; costas y responsabilidad por daños del solicitante.",
+       "articulos": [
+        "730"
+       ],
+       "literal": {
+        "articulo": "730",
+        "texto": "condenará al solicitante en las costas y declarará que es responsable de los daños y perjuicios"
+       }
+      },
+      {
+       "si": "Se piden con la demanda",
+       "entonces": "Es el momento ordinario.",
+       "articulos": [
+        "730"
+       ],
+       "literal": {
+        "articulo": "730",
+        "texto": "Las medidas cautelares se solicitarán, de ordinario, junto con la demanda principal."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En la solicitud de medidas cautelares, ¿qué hay que decir sobre la caución?",
+      "a": "Ofrecer su prestación, especificando tipo y justificando el importe.",
+      "articulos": [
+       "732"
+      ],
+      "literal": {
+       "articulo": "732",
+       "texto": "En el escrito de petición habrá de ofrecerse la prestación de caución, especificando de qué tipo o tipos se ofrece constituirla y con justificación del importe que se propone."
+      }
+     },
+     "conexiones": [
+      "730",
+      "731",
+      "732"
+     ]
+    },
+    {
+     "id": "cau-adopcion",
+     "fase": "Adopción: con o sin audiencia",
+     "subtitulo": "Vista y auto",
+     "descripcion": "Regla general: audiencia previa del demandado en una vista. Excepción: sin audiencia si hay urgencia o riesgo para el buen fin de la medida. Se resuelve por auto.",
+     "articulos": [
+      "733",
+      "734",
+      "735",
+      "736"
+     ],
+     "plazos": [
+      {
+       "acto": "Auto sin audiencia del demandado",
+       "plazo": "5 días",
+       "articulo": "733",
+       "literal": "el tribunal podrá acordarla sin más trámites mediante auto, en el plazo de cinco días"
+      },
+      {
+       "acto": "Convocatoria a la vista",
+       "plazo": "5 días",
+       "articulo": "734",
+       "literal": "en el plazo de cinco días, contados desde la notificación de aquélla al demandado convocará a las partes a una vista"
+      },
+      {
+       "acto": "Celebración de la vista",
+       "plazo": "Dentro de 10 días",
+       "articulo": "734",
+       "literal": "que se celebrará dentro de los diez días siguientes"
+      },
+      {
+       "acto": "Auto tras la vista",
+       "plazo": "5 días",
+       "articulo": "735",
+       "literal": "Terminada la vista, el tribunal, en el plazo de cinco días, decidirá mediante auto"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se acuerdan sin oír al demandado",
+       "entonces": "Contra el auto no cabe recurso; el demandado puede oponerse (fase siguiente).",
+       "articulos": [
+        "733"
+       ],
+       "literal": {
+        "articulo": "733",
+        "texto": "Contra el auto que acuerde medidas cautelares sin previa audiencia del demandado no cabrá recurso alguno"
+       }
+      },
+      {
+       "si": "Se acuerdan tras la vista",
+       "entonces": "Apelación sin efectos suspensivos.",
+       "articulos": [
+        "735"
+       ],
+       "literal": {
+        "articulo": "735",
+        "texto": "Contra el auto que acuerde medidas cautelares cabrá recurso de apelación, sin efectos suspensivos."
+       }
+      },
+      {
+       "si": "Se deniegan",
+       "entonces": "Solo apelación, con tramitación preferente; se puede reiterar si cambian las circunstancias.",
+       "articulos": [
+        "736"
+       ],
+       "literal": {
+        "articulo": "736",
+        "texto": "Contra el auto en que el tribunal deniegue la medida cautelar sólo cabrá recurso de apelación, al que se dará una tramitación preferente."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En la vista de medidas cautelares, ¿se pueden recurrir las resoluciones sobre la prueba propuesta?",
+      "a": "No; previa protesta, las infracciones se alegan en el recurso contra el auto que resuelva sobre las medidas.",
+      "articulos": [
+       "734"
+      ],
+      "literal": {
+       "articulo": "734",
+       "texto": "Contra las resoluciones del tribunal sobre el desarrollo de la comparecencia, su contenido y la prueba propuesta no cabrá recurso alguno"
+      }
+     },
+     "conexiones": [
+      "733",
+      "734",
+      "735",
+      "736"
+     ]
+    },
+    {
+     "id": "cau-cumplimiento",
+     "fase": "Caución y cumplimiento",
+     "subtitulo": "Primero la caución",
+     "descripcion": "La caución se presta siempre antes de cumplir la medida. Después la medida se ejecuta de oficio; el embargo preventivo sigue las reglas del embargo, sin manifestación de bienes.",
+     "articulos": [
+      "737",
+      "738"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "La medida es un embargo preventivo",
+       "entonces": "Reglas del embargo ejecutivo, pero sin obligación del deudor de manifestar bienes.",
+       "articulos": [
+        "738"
+       ],
+       "literal": {
+        "articulo": "738",
+        "texto": "pero sin que el deudor esté obligado a la manifestación de bienes que dispone el artículo 589"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede cumplirse la medida cautelar antes de prestar la caución?",
+      "a": "No: la caución es siempre previa a cualquier acto de cumplimiento.",
+      "articulos": [
+       "737"
+      ],
+      "literal": {
+       "articulo": "737",
+       "texto": "La prestación de caución será siempre previa a cualquier acto de cumplimiento de la medida cautelar acordada."
+      }
+     },
+     "conexiones": [
+      "584",
+      "589",
+      "737",
+      "738"
+     ]
+    },
+    {
+     "id": "cau-oposicion",
+     "fase": "Oposición (medidas sin audiencia)",
+     "subtitulo": "Y caución sustitutoria",
+     "descripcion": "Si la medida se adoptó sin oír al demandado, este puede oponerse por cualquier motivo y ofrecer caución sustitutoria. Se celebra vista y se resuelve por auto apelable sin efecto suspensivo.",
+     "articulos": [
+      "739",
+      "740",
+      "741",
+      "742",
+      "746",
+      "747"
+     ],
+     "plazos": [
+      {
+       "acto": "Oponerse a la medida adoptada sin audiencia",
+       "plazo": "20 días desde la notificación del auto",
+       "articulo": "739",
+       "literal": "podrá éste formular oposición en el plazo de veinte días, contados desde la notificación del auto que acuerda las medidas cautelares"
+      },
+      {
+       "acto": "Auto sobre la oposición tras la vista",
+       "plazo": "5 días",
+       "articulo": "741",
+       "literal": "Celebrada la vista, el tribunal, en el plazo de cinco días, decidirá en forma de auto sobre la oposición."
+      },
+      {
+       "acto": "Traslado de la solicitud de caución sustitutoria",
+       "plazo": "5 días",
+       "articulo": "747",
+       "literal": "Previo traslado del escrito al solicitante de la medida cautelar, por cinco días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se mantienen las medidas",
+       "entonces": "Costas al opositor.",
+       "articulos": [
+        "741"
+       ],
+       "literal": {
+        "articulo": "741",
+        "texto": "Si mantuviere las medidas cautelares acordadas condenará al opositor a las costas de la oposición."
+       }
+      },
+      {
+       "si": "Se alzan las medidas",
+       "entonces": "Costas y daños y perjuicios a cargo del actor.",
+       "articulos": [
+        "741",
+        "742"
+       ],
+       "literal": {
+        "articulo": "741",
+        "texto": "Si alzare las medidas cautelares, condenará al actor a las costas y al pago de los daños y perjuicios que éstas hayan producido."
+       }
+      },
+      {
+       "si": "Se resuelve sobre la caución sustitutoria",
+       "entonces": "Contra ese auto no cabe recurso.",
+       "articulos": [
+        "747"
+       ],
+       "literal": {
+        "articulo": "747",
+        "texto": "Contra el auto que resuelva aceptar o rechazar caución sustitutoria no cabrá recurso alguno."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué recurso cabe contra el auto que decide la oposición a medidas cautelares?",
+      "a": "Apelación sin efecto suspensivo.",
+      "articulos": [
+       "741"
+      ],
+      "literal": {
+       "articulo": "741",
+       "texto": "El auto en que se decida sobre la oposición será apelable sin efecto suspensivo."
+      }
+     },
+     "conexiones": [
+      "712",
+      "739",
+      "740",
+      "741",
+      "742",
+      "746",
+      "747"
+     ]
+    },
+    {
+     "id": "cau-alzamiento",
+     "fase": "Modificación y alzamiento",
+     "subtitulo": "Hechos nuevos y efecto de la sentencia",
+     "descripcion": "Pueden modificarse por hechos que no pudieron tenerse en cuenta. Se alzan si el demandado es absuelto (salvo que el recurrente pida mantenerlas) y de oficio con sentencia absolutoria firme. Con sentencia condenatoria se mantienen hasta que pase el plazo del art. 548.",
+     "articulos": [
+      "743",
+      "744",
+      "745",
+      "731"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Sentencia absolutoria firme",
+       "entonces": "El LAJ alza de oficio todas las medidas; daños y perjuicios por el art. 742.",
+       "articulos": [
+        "745"
+       ],
+       "literal": {
+        "articulo": "745",
+        "texto": "Firme una sentencia absolutoria, sea en el fondo o en la instancia, se alzarán de oficio por el Letrado de la Administración de Justicia todas las medidas cautelares adoptadas"
+       }
+      },
+      {
+       "si": "Sentencia condenatoria",
+       "entonces": "Se mantienen hasta que transcurra el plazo del art. 548; si no se pide ejecución, se alzan.",
+       "articulos": [
+        "731"
+       ],
+       "literal": {
+        "articulo": "731",
+        "texto": "deberán mantenerse las medidas acordadas hasta que transcurra el plazo a que se refiere el artículo 548 de la presente Ley"
+       }
+      },
+      {
+       "si": "El proceso queda en suspenso más de seis meses por causa del solicitante",
+       "entonces": "No puede mantenerse la medida.",
+       "articulos": [
+        "731"
+       ],
+       "literal": {
+        "articulo": "731",
+        "texto": "Tampoco podrá mantenerse una medida cautelar si el proceso quedare en suspenso durante más de seis meses por causa imputable al solicitante de la medida."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Con qué fundamento pueden modificarse las medidas cautelares?",
+      "a": "Alegando y probando hechos y circunstancias que no pudieron tenerse en cuenta al concederlas o en el plazo para oponerse.",
+      "articulos": [
+       "743"
+      ],
+      "literal": {
+       "articulo": "743",
+       "texto": "alegando y probando hechos y circunstancias que no pudieron tenerse en cuenta al tiempo de su concesión o dentro del plazo para oponerse a ellas"
+      }
+     },
+     "conexiones": [
+      "548",
+      "731",
+      "743",
+      "744",
+      "745"
+     ]
+    }
+   ],
+   "grupo": "Libro III · Ejecución forzosa y medidas cautelares"
+  },
+  {
+   "id": "monitorio",
+   "nombre": "Proceso monitorio",
+   "bloque": "monitorio",
+   "resumen": "Reclamación de deuda dineraria documentada: requerimiento de pago y, según lo que haga el deudor, archivo, ejecución o paso al juicio que corresponda.",
+   "ambito": {
+    "corto": "Deuda dineraria de cualquier importe, documentada (art. 812)",
+    "texto": "Deuda dineraria de cualquier importe, líquida, determinada, vencida y exigible, acreditada con alguno de los documentos del art. 812.",
+    "articulos": [
+     "812"
+    ],
+    "literal": [
+     {
+      "articulo": "812",
+      "texto": "el pago de deuda dineraria de cualquier importe, líquida, determinada, vencida y exigible"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "mon-procede",
+     "fase": "¿Procede el monitorio?",
+     "subtitulo": "Requisitos de la deuda y documentos",
+     "descripcion": "La deuda debe ser dineraria, líquida, determinada, vencida y exigible, y acreditarse con documentos firmados por el deudor o con documentos que habitualmente documentan créditos (facturas, albaranes, certificaciones…). Hay supuestos adicionales: relación comercial duradera y gastos de comunidad de propietarios.",
+     "articulos": [
+      "812"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "La deuda consta en un documento firmado por el deudor",
+       "entonces": "Cabe el monitorio.",
+       "articulos": [
+        "812"
+       ],
+       "literal": {
+        "articulo": "812",
+        "texto": "que aparezcan firmados por el deudor o con su sello, impronta o marca o con cualquier otra señal, física o electrónica"
+       }
+      },
+      {
+       "si": "Son cuotas impagadas de una comunidad de propietarios",
+       "entonces": "Cabe el monitorio mediante certificación de impago.",
+       "articulos": [
+        "812"
+       ],
+       "literal": {
+        "articulo": "812",
+        "texto": "Cuando la deuda se acredite mediante certificaciones de impago de cantidades debidas en concepto de gastos comunes de Comunidades de propietarios de inmuebles urbanos."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hay límite de cuantía para acudir al proceso monitorio?",
+      "a": "No: deuda dineraria de cualquier importe.",
+      "articulos": [
+       "812"
+      ],
+      "literal": {
+       "articulo": "812",
+       "texto": "deuda dineraria de cualquier importe"
+      }
+     },
+     "conexiones": [
+      "812"
+     ]
+    },
+    {
+     "id": "mon-peticion",
+     "fase": "Petición inicial",
+     "subtitulo": "Competencia y forma",
+     "descripcion": "Petición del acreedor con identidad y domicilios, origen y cuantía de la deuda y los documentos del art. 812. Puede usarse impreso o formulario. Competente en exclusiva el Juzgado de Primera Instancia del domicilio del deudor; no rige la sumisión.",
+     "articulos": [
+      "814",
+      "813"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El acreedor no tiene abogado ni procurador",
+       "entonces": "Puede presentar la petición inicial igualmente.",
+       "articulos": [
+        "814"
+       ],
+       "literal": {
+        "articulo": "814",
+        "texto": "Para la presentación de la petición inicial del procedimiento monitorio no será preciso valerse de procurador y abogado."
+       }
+      },
+      {
+       "si": "El deudor no es localizado o está en otro partido judicial",
+       "entonces": "Auto que da por terminado el proceso, con reserva al acreedor para instarlo ante el juzgado competente.",
+       "articulos": [
+        "813"
+       ],
+       "literal": {
+        "articulo": "813",
+        "texto": "el juez dictará auto dando por terminado el proceso, haciendo constar tal circunstancia y reservando al acreedor el derecho a instar de nuevo el proceso ante el Juzgado competente"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se puede pactar la sumisión a otro juzgado en el monitorio?",
+      "a": "No: no se aplican las normas sobre sumisión expresa o tácita.",
+      "articulos": [
+       "813"
+      ],
+      "literal": {
+       "articulo": "813",
+       "texto": "no serán de aplicación las normas sobre sumisión expresa o tácita"
+      }
+     },
+     "conexiones": [
+      "813",
+      "814"
+     ]
+    },
+    {
+     "id": "mon-requerimiento",
+     "fase": "Requerimiento de pago",
+     "subtitulo": "Control de cantidad y de cláusulas abusivas",
+     "descripcion": "El LAJ requiere al deudor para que pague o se oponga. Antes, si la cantidad no parece correcta o la deuda nace de un contrato con consumidor con posibles cláusulas abusivas, el juez puede proponer un requerimiento por importe inferior.",
+     "articulos": [
+      "815"
+     ],
+     "plazos": [
+      {
+       "acto": "Pagar u oponerse (deudor)",
+       "plazo": "20 días",
+       "articulo": "815",
+       "literal": "requerirá al deudor para que, en el plazo de veinte días, pague al peticionario"
+      },
+      {
+       "acto": "Aceptar o rechazar la propuesta del juez (acreedor)",
+       "plazo": "10 días",
+       "articulo": "815",
+       "literal": "el demandante deberá aceptar o rechazar la propuesta formulada en el plazo de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El acreedor no contesta a la propuesta del juez",
+       "entonces": "Se entiende aceptada.",
+       "articulos": [
+        "815"
+       ],
+       "literal": {
+        "articulo": "815",
+        "texto": "entendiéndose aceptada si dejara transcurrir el plazo sin realizar manifestación alguna"
+       }
+      },
+      {
+       "si": "El acreedor rechaza la propuesta",
+       "entonces": "Se le tiene por desistido; el auto es directamente apelable.",
+       "articulos": [
+        "815"
+       ],
+       "literal": {
+        "articulo": "815",
+        "texto": "En otro caso se tendrá al demandante por desistido"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cabe notificar el requerimiento de pago del monitorio por edictos?",
+      "a": "Solo en el supuesto de deudas de comunidades de propietarios (art. 815.2).",
+      "articulos": [
+       "815"
+      ],
+      "literal": {
+       "articulo": "815",
+       "texto": "Sólo se admitirá el requerimiento al demandado por medio de edictos en el supuesto regulado en el siguiente apartado de este artículo."
+      }
+     },
+     "conexiones": [
+      "161",
+      "164",
+      "815"
+     ]
+    },
+    {
+     "id": "mon-respuesta",
+     "fase": "Respuesta del deudor",
+     "subtitulo": "Paga / no hace nada / se opone",
+     "descripcion": "Lo que haga el deudor dentro del plazo decide el camino: archivo, ejecución o juicio.",
+     "articulos": [
+      "816",
+      "817",
+      "818"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Paga",
+       "entonces": "Archivo de las actuaciones.",
+       "articulos": [
+        "817"
+       ],
+       "literal": {
+        "articulo": "817",
+        "texto": "Si el deudor atendiere el requerimiento de pago, tan pronto como lo acredite, el Letrado de la Administración de Justicia acordará el archivo de las actuaciones."
+       }
+      },
+      {
+       "si": "No paga ni comparece",
+       "entonces": "Decreto que termina el monitorio y traslado al acreedor para pedir la ejecución, sin esperar los 20 días del art. 548.",
+       "articulos": [
+        "816"
+       ],
+       "literal": {
+        "articulo": "816",
+        "texto": "bastando para ello con la mera solicitud, sin necesidad de que transcurra el plazo de veinte días previsto en el artículo 548 de esta Ley"
+       }
+      },
+      {
+       "si": "Se opone en plazo",
+       "entonces": "El asunto se resuelve en el juicio que corresponda, con sentencia con fuerza de cosa juzgada.",
+       "articulos": [
+        "818"
+       ],
+       "literal": {
+        "articulo": "818",
+        "texto": "el asunto se resolverá definitivamente en juicio que corresponda, teniendo la sentencia que se dicte fuerza de cosa juzgada"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "El deudor no paga ni se opone. ¿Hay que esperar el plazo de espera del art. 548 para pedir la ejecución?",
+      "a": "No: basta la mera solicitud, sin que transcurra el plazo de veinte días del art. 548.",
+      "articulos": [
+       "816"
+      ],
+      "literal": {
+       "articulo": "816",
+       "texto": "sin necesidad de que transcurra el plazo de veinte días previsto en el artículo 548 de esta Ley"
+      }
+     },
+     "conexiones": [
+      "548",
+      "816",
+      "817",
+      "818"
+     ]
+    },
+    {
+     "id": "mon-oposicion",
+     "fase": "Oposición: paso al juicio",
+     "subtitulo": "Verbal u ordinario según la cuantía",
+     "descripcion": "Si la cuantía es de juicio verbal, se sigue el verbal (impugnación y proposición de prueba). Si excede, el acreedor debe presentar demanda de juicio ordinario. En rentas de arrendamiento urbano, siempre verbal.",
+     "articulos": [
+      "818"
+     ],
+     "plazos": [
+      {
+       "acto": "Impugnar la oposición (cuantía de verbal)",
+       "plazo": "10 días",
+       "articulo": "818",
+       "literal": "quien podrá impugnarla por escrito en el plazo de diez días"
+      },
+      {
+       "acto": "Proponer prueba (cuantía de verbal)",
+       "plazo": "5 días",
+       "articulo": "818",
+       "literal": "conceder a ambas partes el plazo de cinco días a fin de que propongan la prueba que quieran practicar"
+      },
+      {
+       "acto": "Presentar demanda de ordinario (cuantía superior)",
+       "plazo": "1 mes desde el traslado de la oposición",
+       "articulo": "818",
+       "literal": "dentro del plazo de un mes desde el traslado del escrito de oposición"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La cuantía no excede la del juicio verbal",
+       "entonces": "Decreto que termina el monitorio y continúa como verbal.",
+       "articulos": [
+        "818"
+       ],
+       "literal": {
+        "articulo": "818",
+        "texto": "Cuando la cuantía de la pretensión no excediera de la propia del juicio verbal"
+       }
+      },
+      {
+       "si": "La cuantía excede y el acreedor no presenta demanda en plazo",
+       "entonces": "Sobreseimiento con condena en costas al acreedor.",
+       "articulos": [
+        "818"
+       ],
+       "literal": {
+        "articulo": "818",
+        "texto": "dictará decreto sobreseyendo las actuaciones y condenando en costas al acreedor"
+       }
+      },
+      {
+       "si": "Se reclaman rentas de finca urbana y el arrendatario se opone",
+       "entonces": "Juicio verbal, cualquiera que sea la cuantía.",
+       "articulos": [
+        "818"
+       ],
+       "literal": {
+        "articulo": "818",
+        "texto": "el asunto se resolverá definitivamente por los trámites del juicio verbal, cualquiera que sea su cuantía"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Necesita abogado y procurador el escrito de oposición del deudor?",
+      "a": "Sí, cuando su intervención sea necesaria por razón de la cuantía, según las reglas generales.",
+      "articulos": [
+       "818"
+      ],
+      "literal": {
+       "articulo": "818",
+       "texto": "El escrito de oposición deberá ir firmado por abogado y procurador cuando su intervención fuere necesaria por razón de la cuantía"
+      }
+     },
+     "conexiones": [
+      "21",
+      "250",
+      "404",
+      "438",
+      "818"
+     ],
+     "continua_en": [
+      "verbal",
+      "ordinario"
+     ]
+    },
+    {
+     "id": "mon-ejecucion",
+     "fase": "Ejecución",
+     "subtitulo": "Si el deudor no pagó ni se opuso",
+     "descripcion": "Despachada la ejecución, sigue como la de sentencias. Ni acreedor ni deudor pueden después reclamar en proceso ordinario lo reclamado en el monitorio. La deuda devenga el interés del art. 576.",
+     "articulos": [
+      "816"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El deudor quiere discutir después la deuda en un juicio ordinario",
+       "entonces": "No puede: queda vedado.",
+       "articulos": [
+        "816"
+       ],
+       "literal": {
+        "articulo": "816",
+        "texto": "no podrán pretender ulteriormente en proceso ordinario la cantidad reclamada en el monitorio o la devolución de la que con la ejecución se obtuviere"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Desde cuándo devenga la deuda el interés del art. 576?",
+      "a": "Desde que se dicta el auto despachando ejecución.",
+      "articulos": [
+       "816"
+      ],
+      "literal": {
+       "articulo": "816",
+       "texto": "Desde que se dicte el auto despachando ejecución la deuda devengará el interés a que se refiere el artículo 576."
+      }
+     },
+     "conexiones": [
+      "556",
+      "576",
+      "816"
+     ],
+     "continua_en": [
+      "ejecucion"
+     ]
+    }
+   ],
+   "grupo": "Libro IV · Procesos especiales"
+  },
+  {
+   "id": "cambiario",
+   "nombre": "Juicio cambiario",
+   "bloque": "juicio cambiario",
+   "grupo": "Libro IV · Procesos especiales",
+   "resumen": "Letra de cambio, cheque o pagaré: requerimiento de pago con embargo preventivo inmediato, oposición en forma de demanda y sentencia.",
+   "ambito": {
+    "corto": "Letra, cheque o pagaré conforme a la Ley Cambiaria",
+    "texto": "Solo procede si se presenta letra de cambio, cheque o pagaré con los requisitos de la Ley cambiaria y del cheque. Competente el juzgado del domicilio del demandado; no rige la sumisión.",
+    "articulos": [
+     "819",
+     "820"
+    ],
+    "literal": [
+     {
+      "articulo": "819",
+      "texto": "Sólo procederá el juicio cambiario si, al incoarlo, se presenta letra de cambio, cheque o pagaré"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "cam-demanda",
+     "fase": "Demanda sucinta",
+     "subtitulo": "Con el título cambiario",
+     "descripcion": "Demanda sucinta acompañada del título. Si son varios deudores del mismo título, competente el domicilio de cualquiera.",
+     "articulos": [
+      "821",
+      "820"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Se demanda a varios deudores del mismo título",
+       "entonces": "Competente el domicilio de cualquiera de ellos.",
+       "articulos": [
+        "820"
+       ],
+       "literal": {
+        "articulo": "820",
+        "texto": "será competente el domicilio de cualquiera de ellos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cabe sumisión expresa o tácita en el juicio cambiario?",
+      "a": "No.",
+      "articulos": [
+       "820"
+      ],
+      "literal": {
+       "articulo": "820",
+       "texto": "No serán aplicables las normas sobre sumisión expresa o tácita"
+      }
+     },
+     "conexiones": [
+      "820",
+      "821"
+     ]
+    },
+    {
+     "id": "cam-requerimiento",
+     "fase": "Auto: requerimiento y embargo",
+     "subtitulo": "Control formal del título",
+     "descripcion": "El tribunal analiza la corrección formal del título y, si es conforme, requiere de pago y ordena el embargo preventivo inmediato.",
+     "articulos": [
+      "821",
+      "822"
+     ],
+     "plazos": [
+      {
+       "acto": "Pagar tras el requerimiento",
+       "plazo": "10 días",
+       "articulo": "821",
+       "literal": "Requerir al deudor para que pague en el plazo de diez días."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El deudor paga",
+       "entonces": "Se procede como el art. 583, pero las costas son del deudor.",
+       "articulos": [
+        "822"
+       ],
+       "literal": {
+        "articulo": "822",
+        "texto": "pero las costas serán de cargo del deudor"
+       }
+      },
+      {
+       "si": "Se deniegan las medidas",
+       "entonces": "El demandante tiene los recursos del art. 552.2 (apelación directa o reposición previa).",
+       "articulos": [
+        "821"
+       ],
+       "literal": {
+        "articulo": "821",
+        "texto": "podrá interponer el demandante los recursos a que se refiere el apartado 2 del artículo 552"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo se ordena el embargo preventivo en el cambiario?",
+      "a": "De inmediato, en el auto que admite, por si no se atiende el requerimiento.",
+      "articulos": [
+       "821"
+      ],
+      "literal": {
+       "articulo": "821",
+       "texto": "Ordenar el inmediato embargo preventivo de los bienes del deudor"
+      }
+     },
+     "conexiones": [
+      "552",
+      "583",
+      "821",
+      "822"
+     ]
+    },
+    {
+     "id": "cam-alzamiento",
+     "fase": "Alzamiento del embargo",
+     "subtitulo": "Negación de firma o falta de representación",
+     "descripcion": "Si el deudor comparece en 5 días negando categóricamente su firma o alegando falta absoluta de representación, el tribunal puede alzar el embargo (con caución). No se alza en los supuestos tasados del art. 823.2.",
+     "articulos": [
+      "823"
+     ],
+     "plazos": [
+      {
+       "acto": "Comparecer negando la firma o la representación",
+       "plazo": "5 días desde el requerimiento",
+       "articulo": "823",
+       "literal": "dentro de los cinco días siguientes a aquel en que se le requirió de pago"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Las firmas están legitimadas por notario o intervenidas por corredor",
+       "entonces": "No se levanta el embargo.",
+       "articulos": [
+        "823"
+       ],
+       "literal": {
+        "articulo": "823",
+        "texto": "No se levantará el embargo en los casos siguientes"
+       }
+      },
+      {
+       "si": "El deudor no negó su firma en el protesto o requerimiento notarial",
+       "entonces": "No se levanta el embargo.",
+       "articulos": [
+        "823"
+       ],
+       "literal": {
+        "articulo": "823",
+        "texto": "no hubiere negado categóricamente la autenticidad de su firma en el título"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se alza el embargo si el deudor reconoció su firma en documento público?",
+      "a": "No.",
+      "articulos": [
+       "823"
+      ],
+      "literal": {
+       "articulo": "823",
+       "texto": "Cuando el obligado cambiario hubiera reconocido su firma judicialmente o en documento público."
+      }
+     },
+     "conexiones": [
+      "823"
+     ]
+    },
+    {
+     "id": "cam-oposicion",
+     "fase": "Oposición cambiaria",
+     "subtitulo": "En forma de demanda",
+     "descripcion": "El deudor puede oponerse por demanda con los motivos del art. 67 de la Ley Cambiaria. El acreedor impugna; puede haber vista por los trámites del verbal. Sin oposición, se despacha ejecución.",
+     "articulos": [
+      "824",
+      "825",
+      "826"
+     ],
+     "plazos": [
+      {
+       "acto": "Demanda de oposición",
+       "plazo": "10 días desde el requerimiento",
+       "articulo": "824",
+       "literal": "en los diez días siguientes al del requerimiento de pago el deudor podrá interponer demanda de oposición"
+      },
+      {
+       "acto": "Impugnación del acreedor",
+       "plazo": "10 días",
+       "articulo": "826",
+       "literal": "para que lo impugne por escrito en el plazo de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El deudor no se opone en plazo",
+       "entonces": "El tribunal despacha ejecución, como la de sentencias.",
+       "articulos": [
+        "825"
+       ],
+       "literal": {
+        "articulo": "825",
+        "texto": "el Tribunal despachará ejecución por las cantidades reclamadas"
+       }
+      },
+      {
+       "si": "Hay vista y el deudor no comparece",
+       "entonces": "Se le tiene por desistido de la oposición.",
+       "articulos": [
+        "826"
+       ],
+       "literal": {
+        "articulo": "826",
+        "texto": "si no compareciere el deudor, el tribunal le tendrá por desistido de la oposición"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué motivos puede oponer el deudor cambiario?",
+      "a": "Todos los del art. 67 de la Ley cambiaria y del cheque.",
+      "articulos": [
+       "824"
+      ],
+      "literal": {
+       "articulo": "824",
+       "texto": "todas las causas o motivos de oposición previstos en el artículo 67 de la Ley cambiaria y del cheque"
+      }
+     },
+     "conexiones": [
+      "438",
+      "824",
+      "825",
+      "826"
+     ]
+    },
+    {
+     "id": "cam-sentencia",
+     "fase": "Sentencia",
+     "subtitulo": "Cosa juzgada limitada",
+     "descripcion": "Sentencia en 10 días. Si desestima la oposición y se recurre, es provisionalmente ejecutable. La firme produce cosa juzgada solo sobre lo que pudo alegarse y discutirse.",
+     "articulos": [
+      "827"
+     ],
+     "plazos": [
+      {
+       "acto": "Dictar sentencia sobre la oposición",
+       "plazo": "10 días",
+       "articulo": "827",
+       "literal": "En el plazo de diez días, el tribunal dictará sentencia resolviendo sobre la oposición."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se estima la oposición y la sentencia se recurre",
+       "entonces": "Los embargos preventivos siguen el art. 744.",
+       "articulos": [
+        "827"
+       ],
+       "literal": {
+        "articulo": "827",
+        "texto": "se estará, respecto de los embargos preventivos que se hubiesen trabado, a lo que dispone el artículo 744"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Sobre qué produce cosa juzgada la sentencia firme del cambiario?",
+      "a": "Sobre las cuestiones que pudieron ser alegadas y discutidas en él; las demás pueden plantearse en el juicio correspondiente.",
+      "articulos": [
+       "827"
+      ],
+      "literal": {
+       "articulo": "827",
+       "texto": "producirá efectos de cosa juzgada, respecto de las cuestiones que pudieron ser en él alegadas y discutidas"
+      }
+     },
+     "conexiones": [
+      "744",
+      "827"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "matrimonial",
+   "nombre": "Nulidad, separación y divorcio",
+   "bloque": "familia y capacidad",
+   "grupo": "Libro IV · Procesos especiales",
+   "resumen": "Proceso contencioso (art. 770), medidas provisionales previas y coetáneas, medidas definitivas, mutuo acuerdo (art. 777) y modificación de medidas.",
+   "ambito": {
+    "corto": "Procesos del art. 748.3.º: verbal con especialidades",
+    "texto": "Nulidad, separación y divorcio y modificación de medidas. Se tramitan por el juicio verbal con las especialidades de los arts. 748 y ss. y 769 y ss. Interviene el Ministerio Fiscal cuando hay menores o personas con discapacidad (y siempre en la nulidad).",
+    "articulos": [
+     "748",
+     "753",
+     "770"
+    ],
+    "literal": [
+     {
+      "articulo": "748",
+      "texto": "Los de nulidad del matrimonio, separación y divorcio y los de modificación de medidas adoptadas en ellos."
+     },
+     {
+      "articulo": "753",
+      "texto": "Salvo que expresamente se disponga otra cosa, los procesos a que se refiere este título se sustanciarán por los trámites del juicio verbal."
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "mat-reglas",
+     "fase": "Reglas comunes",
+     "subtitulo": "Fiscal, postulación, indisponibilidad y prueba",
+     "descripcion": "Abogado y procurador obligatorios (una sola defensa si es de mutuo acuerdo). No surten efecto la renuncia, el allanamiento ni la transacción, salvo en materias disponibles. El tribunal puede acordar prueba de oficio y no queda vinculado por la conformidad de las partes.",
+     "articulos": [
+      "749",
+      "750",
+      "751",
+      "752"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Separación o divorcio de común acuerdo",
+       "entonces": "Pueden usar una sola defensa y representación.",
+       "articulos": [
+        "750"
+       ],
+       "literal": {
+        "articulo": "750",
+        "texto": "En los procedimientos de separación o divorcio solicitado de común acuerdo por los cónyuges, éstos podrán valerse de una sola defensa y representación."
+       }
+      },
+      {
+       "si": "Las partes están conformes en los hechos",
+       "entonces": "No vincula al tribunal.",
+       "articulos": [
+        "752"
+       ],
+       "literal": {
+        "articulo": "752",
+        "texto": "La conformidad de las partes sobre los hechos no vinculará al tribunal"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cabe el allanamiento en un proceso de divorcio?",
+      "a": "No sobre lo indisponible: en estos procesos no surten efecto la renuncia, el allanamiento ni la transacción, salvo en materias de libre disposición (art. 751.3).",
+      "articulos": [
+       "751"
+      ],
+      "literal": {
+       "articulo": "751",
+       "texto": "no surtirán efecto la renuncia, el allanamiento ni la transacción"
+      }
+     },
+     "conexiones": [
+      "749",
+      "750",
+      "751",
+      "752",
+      "753"
+     ]
+    },
+    {
+     "id": "mat-previas",
+     "fase": "Medidas provisionales previas",
+     "subtitulo": "Antes de la demanda",
+     "descripcion": "El cónyuge que va a demandar puede pedir medidas (arts. 102 y 103 CC) en el tribunal de su domicilio, sin abogado ni procurador para la solicitud. Comparecencia, auto irrecurrible, y la demanda debe presentarse en plazo.",
+     "articulos": [
+      "771",
+      "772"
+     ],
+     "plazos": [
+      {
+       "acto": "Celebración de la comparecencia",
+       "plazo": "10 días",
+       "articulo": "771",
+       "literal": "que se celebrará en los diez días siguientes"
+      },
+      {
+       "acto": "Auto sobre las medidas",
+       "plazo": "3 días",
+       "articulo": "771",
+       "literal": "el tribunal resolverá, en el plazo de tres días, mediante auto, contra el que no se dará recurso alguno"
+      },
+      {
+       "acto": "Presentar la demanda para que subsistan",
+       "plazo": "30 días desde su adopción",
+       "articulo": "771",
+       "literal": "sólo subsistirán si, dentro de los treinta días siguientes a su adopción se presenta la demanda de nulidad, separación o divorcio"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Uno de los cónyuges no comparece sin causa",
+       "entonces": "Pueden tenerse por admitidos los hechos del presente sobre medidas patrimoniales.",
+       "articulos": [
+        "771"
+       ],
+       "literal": {
+        "articulo": "771",
+        "texto": "podrá determinar que se consideren admitidos los hechos alegados por el cónyuge presente para fundamentar sus peticiones sobre medidas provisionales de carácter patrimonial"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Necesita abogado y procurador quien solicita medidas provisionales previas?",
+      "a": "Para la solicitud no; para todo escrito y actuación posterior, sí.",
+      "articulos": [
+       "771"
+      ],
+      "literal": {
+       "articulo": "771",
+       "texto": "Para formular esta solicitud no será precisa la intervención de procurador y abogado, pero sí será necesaria dicha intervención para todo escrito y actuación posterior."
+      }
+     },
+     "conexiones": [
+      "771",
+      "772"
+     ]
+    },
+    {
+     "id": "mat-demanda",
+     "fase": "Demanda y contestación",
+     "subtitulo": "Documentos, reconvención tasada y medidas coetáneas",
+     "descripcion": "Con la demanda, certificaciones del matrimonio y de nacimiento de los hijos, y documentación económica si se piden medidas patrimoniales. El demandado contesta en 20 días (plazo del Título I). La reconvención solo cabe en los casos del art. 770.2.ª. Pueden pedirse medidas provisionales en la demanda.",
+     "articulos": [
+      "770",
+      "753",
+      "773",
+      "769"
+     ],
+     "plazos": [
+      {
+       "acto": "Contestar a la demanda",
+       "plazo": "20 días",
+       "articulo": "753",
+       "literal": "emplazándoles para que la contesten en el plazo de veinte días"
+      },
+      {
+       "acto": "Contestar a la reconvención",
+       "plazo": "10 días",
+       "articulo": "770",
+       "literal": "El actor dispondrá de 10 días para contestarla."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El demandado de separación pretende el divorcio",
+       "entonces": "Puede reconvenir.",
+       "articulos": [
+        "770"
+       ],
+       "literal": {
+        "articulo": "770",
+        "texto": "Cuando el cónyuge demandado de separación o de nulidad pretenda el divorcio."
+       }
+      },
+      {
+       "si": "Se piden medidas provisionales con la demanda",
+       "entonces": "Comparecencia y auto no recurrible.",
+       "articulos": [
+        "773"
+       ],
+       "literal": {
+        "articulo": "773",
+        "texto": "Contra el auto que se dicte no se dará recurso alguno."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué juzgado es competente si los cónyuges viven en partidos judiciales distintos?",
+      "a": "A elección del demandante: el del último domicilio del matrimonio o el de residencia del demandado.",
+      "articulos": [
+       "769"
+      ],
+      "literal": {
+       "articulo": "769",
+       "texto": "a elección del demandante, el del último domicilio del matrimonio o el de residencia del demandado"
+      }
+     },
+     "conexiones": [
+      "769",
+      "770",
+      "773"
+     ],
+     "aviso": "El plazo de 20 días es el del art. 753.1 (procesos del Título I), distinto de los 10 días del verbal común (art. 438.1)."
+    },
+    {
+     "id": "mat-vista",
+     "fase": "Vista y prueba",
+     "subtitulo": "Comparecencia personal de las partes",
+     "descripcion": "Las partes deben acudir personalmente, con sus abogados. Pruebas que no puedan practicarse en la vista: en el plazo que fije el tribunal (máximo 30 días). Audiencia de los hijos según su edad.",
+     "articulos": [
+      "770",
+      "753"
+     ],
+     "plazos": [
+      {
+       "acto": "Práctica de pruebas fuera de la vista",
+       "plazo": "Máximo 30 días",
+       "articulo": "770",
+       "literal": "que no podrá exceder de treinta días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Una parte no acude a la vista sin causa",
+       "entonces": "Pueden considerarse admitidos los hechos de la otra sobre medidas patrimoniales.",
+       "articulos": [
+        "770"
+       ],
+       "literal": {
+        "articulo": "770",
+        "texto": "su incomparecencia sin causa justificada podrá determinar que se consideren admitidos los hechos alegados por la parte que comparezca para fundamentar sus peticiones sobre medidas definitivas de carácter patrimonial"
+       }
+      },
+      {
+       "si": "Hay hijos de doce años o más",
+       "entonces": "Deben ser oídos en todo caso (procedimiento contencioso).",
+       "articulos": [
+        "770"
+       ],
+       "literal": {
+        "articulo": "770",
+        "texto": "debiendo ser oídos en todo caso si hubieran alcanzado dicha edad"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se puede pasar del procedimiento contencioso al de mutuo acuerdo?",
+      "a": "Sí, en cualquier momento, si concurren los requisitos del art. 777.",
+      "articulos": [
+       "770"
+      ],
+      "literal": {
+       "articulo": "770",
+       "texto": "En cualquier momento del proceso, concurriendo los requisitos señalados en el artículo 777, las partes podrán solicitar que continúe el procedimiento por los trámites que se establecen en dicho artículo."
+      }
+     },
+     "conexiones": [
+      "433",
+      "770",
+      "777"
+     ]
+    },
+    {
+     "id": "mat-sentencia",
+     "fase": "Sentencia y medidas definitivas",
+     "subtitulo": "Hijos, vivienda, cargas, animales de compañía, régimen económico",
+     "descripcion": "La sentencia resuelve sobre las medidas acordadas por los cónyuges o, a falta de acuerdo, las fija el tribunal. Los recursos no suspenden la eficacia de las medidas.",
+     "articulos": [
+      "774"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Se recurre la sentencia",
+       "entonces": "No se suspende la eficacia de las medidas.",
+       "articulos": [
+        "774"
+       ],
+       "literal": {
+        "articulo": "774",
+        "texto": "Los recursos que, conforme a la ley, se interpongan contra la sentencia no suspenderán la eficacia de las medidas que se hubieren acordado en ésta."
+       }
+      },
+      {
+       "si": "Solo se recurren las medidas",
+       "entonces": "El LAJ declara firme el pronunciamiento sobre nulidad, separación o divorcio.",
+       "articulos": [
+        "774"
+       ],
+       "literal": {
+        "articulo": "774",
+        "texto": "se declarará por el Letrado de la Administración de Justicia la firmeza del pronunciamiento sobre la nulidad, separación o divorcio"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Las medidas provisionales siguen vigentes tras la sentencia?",
+      "a": "Quedan sin efecto cuando son sustituidas por las que establece definitivamente la sentencia o cuando el procedimiento termina de otro modo.",
+      "articulos": [
+       "773"
+      ],
+      "literal": {
+       "articulo": "773",
+       "texto": "Las medidas provisionales quedarán sin efecto cuando sean sustituidas por las que establezca definitivamente la sentencia"
+      }
+     },
+     "conexiones": [
+      "773",
+      "774"
+     ],
+     "continua_en": [
+      "liquidacion"
+     ]
+    },
+    {
+     "id": "mat-mutuo",
+     "fase": "Mutuo acuerdo (art. 777)",
+     "subtitulo": "Ratificación por separado y convenio regulador",
+     "descripcion": "Escrito con certificaciones y propuesta de convenio regulador. Los cónyuges se ratifican por separado; si alguno no se ratifica, archivo. Sin hijos menores no emancipados ni con discapacidad con apoyos de los progenitores, resuelve el LAJ por decreto.",
+     "articulos": [
+      "777",
+      "769"
+     ],
+     "plazos": [
+      {
+       "acto": "Citación para ratificarse",
+       "plazo": "3 días",
+       "articulo": "777",
+       "literal": "citará a los cónyuges, dentro de los tres días siguientes, para que se ratifiquen por separado en su petición"
+      },
+      {
+       "acto": "Completar documentación insuficiente",
+       "plazo": "10 días",
+       "articulo": "777",
+       "literal": "concederá a los solicitantes un plazo de diez días para que la completen"
+      },
+      {
+       "acto": "Nuevo convenio si no se aprueba en todo o en parte",
+       "plazo": "10 días",
+       "articulo": "777",
+       "literal": "se concederá a las partes un plazo de diez días para proponer nuevo convenio"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Uno de los cónyuges no se ratifica",
+       "entonces": "Archivo; cabe recurso directo de revisión.",
+       "articulos": [
+        "777"
+       ],
+       "literal": {
+        "articulo": "777",
+        "texto": "el Letrado de la Administración de Justicia acordará de inmediato el archivo de las actuaciones"
+       }
+      },
+      {
+       "si": "No hay hijos menores ni con discapacidad con apoyos de los progenitores",
+       "entonces": "Decreto del LAJ sobre el convenio, que no es recurrible.",
+       "articulos": [
+        "777"
+       ],
+       "literal": {
+        "articulo": "777",
+        "texto": "El decreto no será recurrible."
+       }
+      },
+      {
+       "si": "La sentencia aprueba todo el convenio",
+       "entonces": "Solo puede recurrirla el Ministerio Fiscal, en interés de los hijos.",
+       "articulos": [
+        "777"
+       ],
+       "literal": {
+        "articulo": "777",
+        "texto": "solo podrán ser recurridos, en interés de los hijos menores"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué juzgado es competente en el mutuo acuerdo?",
+      "a": "El del último domicilio común o el del domicilio de cualquiera de los solicitantes.",
+      "articulos": [
+       "769"
+      ],
+      "literal": {
+       "articulo": "769",
+       "texto": "será competente el Juzgado del último domicilio común o el del domicilio de cualquiera de los solicitantes"
+      }
+     },
+     "conexiones": [
+      "769",
+      "777"
+     ]
+    },
+    {
+     "id": "mat-modificacion",
+     "fase": "Modificación de medidas",
+     "subtitulo": "Cambio sustancial de circunstancias",
+     "descripcion": "Puede pedirse si han variado sustancialmente las circunstancias. Contenciosa por el art. 770; de mutuo acuerdo con propuesta de convenio, por el art. 777.",
+     "articulos": [
+      "775"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Lo piden ambos de común acuerdo con propuesta de convenio",
+       "entonces": "Procedimiento del art. 777.",
+       "articulos": [
+        "775"
+       ],
+       "literal": {
+        "articulo": "775",
+        "texto": "regirá el procedimiento establecido en el artículo 777"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo pueden modificarse las medidas definitivas?",
+      "a": "Cuando hayan variado sustancialmente las circunstancias tenidas en cuenta al aprobarlas o acordarlas.",
+      "articulos": [
+       "775"
+      ],
+      "literal": {
+       "articulo": "775",
+       "texto": "siempre que hayan variado sustancialmente las circunstancias tenidas en cuenta al aprobarlas o acordarlas"
+      }
+     },
+     "conexiones": [
+      "770",
+      "775",
+      "777"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "filiacion",
+   "nombre": "Filiación, paternidad y maternidad",
+   "bloque": "familia y capacidad",
+   "grupo": "Libro IV · Procesos especiales",
+   "resumen": "Determinación e impugnación de la filiación: admisión con principio de prueba, legitimación, prueba (incluida la biológica) y medidas cautelares.",
+   "ambito": {
+    "corto": "Arts. 764-768, con las reglas comunes del Título I",
+    "texto": "Determinación legal o impugnación de la filiación en los casos de la legislación civil. Se sigue el verbal con las especialidades del Título I (contestación en 20 días; Ministerio Fiscal siempre parte).",
+    "articulos": [
+     "764",
+     "749",
+     "753"
+    ],
+    "literal": [
+     {
+      "articulo": "764",
+      "texto": "Podrá pedirse de los tribunales la determinación legal de la filiación, así como impugnarse ante ellos la filiación legalmente determinada"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "fil-admision",
+     "fase": "Demanda y admisión",
+     "subtitulo": "Principio de prueba y cosa juzgada",
+     "descripcion": "La demanda solo se admite con un principio de prueba de los hechos. No se admite la que impugne una filiación declarada por sentencia firme o pretenda otra contradictoria.",
+     "articulos": [
+      "767",
+      "764",
+      "753",
+      "749"
+     ],
+     "plazos": [
+      {
+       "acto": "Contestar a la demanda",
+       "plazo": "20 días",
+       "articulo": "753",
+       "literal": "emplazándoles para que la contesten en el plazo de veinte días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No se aporta principio de prueba",
+       "entonces": "No se admite la demanda.",
+       "articulos": [
+        "767"
+       ],
+       "literal": {
+        "articulo": "767",
+        "texto": "En ningún caso se admitirá la demanda sobre determinación o impugnación de la filiación si con ella no se presenta un principio de prueba de los hechos en que se funde."
+       }
+      },
+      {
+       "si": "Ya hay sentencia firme sobre esa filiación",
+       "entonces": "Inadmisión; si se acredita después, archivo de plano.",
+       "articulos": [
+        "764"
+       ],
+       "literal": {
+        "articulo": "764",
+        "texto": "el tribunal procederá de plano al archivo de éste"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Es parte el Ministerio Fiscal en los procesos de filiación?",
+      "a": "Sí, siempre, en los de determinación e impugnación de la filiación.",
+      "articulos": [
+       "749"
+      ],
+      "literal": {
+       "articulo": "749",
+       "texto": "en los de determinación e impugnación de la filiación, será siempre parte el Ministerio Fiscal"
+      }
+     },
+     "conexiones": [
+      "749",
+      "753",
+      "764",
+      "767"
+     ]
+    },
+    {
+     "id": "fil-partes",
+     "fase": "Legitimación",
+     "subtitulo": "Quién demanda y a quién",
+     "descripcion": "Por el hijo menor pueden actuar su representante legal o el Fiscal. Son demandados quienes figuren como progenitores e hijo (o sus herederos). Si muere el actor, sus herederos pueden continuar.",
+     "articulos": [
+      "765",
+      "766"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El hijo es menor de edad",
+       "entonces": "Pueden ejercitar las acciones su representante legal o el Ministerio Fiscal, indistintamente.",
+       "articulos": [
+        "765"
+       ],
+       "literal": {
+        "articulo": "765",
+        "texto": "podrán ser ejercitadas por su representante legal o por el Ministerio Fiscal, indistintamente"
+       }
+      },
+      {
+       "si": "Fallece el actor durante el proceso",
+       "entonces": "Sus herederos pueden continuar la acción.",
+       "articulos": [
+        "765"
+       ],
+       "literal": {
+        "articulo": "765",
+        "texto": "a la muerte del actor, sus herederos podrán continuar las acciones ya entabladas"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si ha fallecido el supuesto progenitor, ¿a quién se demanda?",
+      "a": "A sus herederos.",
+      "articulos": [
+       "766"
+      ],
+      "literal": {
+       "articulo": "766",
+       "texto": "Si cualquiera de ellos hubiere fallecido, serán parte demandada sus herederos."
+      }
+     },
+     "conexiones": [
+      "765",
+      "766"
+     ]
+    },
+    {
+     "id": "fil-prueba",
+     "fase": "Prueba",
+     "subtitulo": "Toda clase de pruebas, incluidas las biológicas",
+     "descripcion": "Se admite toda prueba, incluidas las biológicas. Sin prueba directa, la filiación puede declararse por reconocimiento, posesión de estado, convivencia con la madre en la concepción u otros hechos.",
+     "articulos": [
+      "767",
+      "752"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El demandado se niega sin justificación a la prueba biológica",
+       "entonces": "El tribunal puede declarar la filiación si hay otros indicios y no se ha probado por otros medios.",
+       "articulos": [
+        "767"
+       ],
+       "literal": {
+        "articulo": "767",
+        "texto": "La negativa injustificada a someterse a la prueba biológica de paternidad o maternidad permitirá al tribunal declarar la filiación reclamada"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Basta la negativa a la prueba biológica para declarar la filiación?",
+      "a": "No por sí sola: hacen falta otros indicios y que la prueba no se haya obtenido por otros medios.",
+      "articulos": [
+       "767"
+      ],
+      "literal": {
+       "articulo": "767",
+       "texto": "siempre que existan otros indicios de la paternidad o maternidad y la prueba de ésta no se haya obtenido por otros medios"
+      }
+     },
+     "conexiones": [
+      "752",
+      "767"
+     ]
+    },
+    {
+     "id": "fil-cautelares",
+     "fase": "Medidas cautelares",
+     "subtitulo": "Protección y alimentos provisionales",
+     "descripcion": "Durante la impugnación, medidas de protección del sometido a la potestad. Reclamada la filiación, alimentos provisionales. Como regla, con audiencia previa; si hay urgencia, sin ella y comparecencia posterior. Puede no exigirse caución.",
+     "articulos": [
+      "768"
+     ],
+     "plazos": [
+      {
+       "acto": "Comparecencia tras medidas urgentes",
+       "plazo": "Dentro de 10 días",
+       "articulo": "768",
+       "literal": "que se celebrará dentro de los diez días siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se reclama la filiación",
+       "entonces": "El tribunal puede acordar alimentos provisionales a cargo del demandado.",
+       "articulos": [
+        "768"
+       ],
+       "literal": {
+        "articulo": "768",
+        "texto": "el tribunal podrá acordar alimentos provisionales a cargo del demandado"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Es obligatoria la caución para estas medidas cautelares?",
+      "a": "No necesariamente: podrá no exigirse.",
+      "articulos": [
+       "768"
+      ],
+      "literal": {
+       "articulo": "768",
+       "texto": "podrá no exigirse caución a quien las solicite"
+      }
+     },
+     "conexiones": [
+      "734",
+      "768"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "menores",
+   "nombre": "Protección de menores y adopción",
+   "bloque": "familia y capacidad",
+   "grupo": "Libro IV · Procesos especiales",
+   "resumen": "Oposición a resoluciones administrativas de protección, asentimiento en la adopción, ingreso en centros específicos y entrada en domicilios.",
+   "ambito": {
+    "corto": "Arts. 778 bis-ter y 779-781",
+    "texto": "Procedimientos preferentes sobre medidas de protección de menores adoptadas por la Entidad Pública y sobre la necesidad de asentimiento de los progenitores en la adopción.",
+    "articulos": [
+     "779",
+     "780",
+     "781",
+     "778 bis",
+     "778 ter"
+    ],
+    "literal": [
+     {
+      "articulo": "779",
+      "texto": "tendrán carácter preferente y deberán realizarse en el plazo de tres meses desde la fecha en que se hubieren iniciado"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "men-oposicion",
+     "fase": "Oposición a resoluciones administrativas",
+     "subtitulo": "Sin reclamación previa",
+     "descripcion": "Se formula sin reclamación administrativa previa, con un escrito inicial sucinto. Se reclama el expediente, se emplaza para demandar y se tramita por el art. 753. Debe terminar en tres meses.",
+     "articulos": [
+      "779",
+      "780"
+     ],
+     "plazos": [
+      {
+       "acto": "Formular la oposición",
+       "plazo": "2 meses desde la notificación",
+       "articulo": "780",
+       "literal": "La oposición a las mismas podrá formularse en el plazo de dos meses desde su notificación."
+      },
+      {
+       "acto": "Aportación del expediente por la Administración",
+       "plazo": "10 días",
+       "articulo": "780",
+       "literal": "que deberá ser aportado en el plazo de diez días"
+      },
+      {
+       "acto": "Presentar la demanda tras recibir el expediente",
+       "plazo": "10 días",
+       "articulo": "780",
+       "literal": "emplazará al actor por diez días para que presente la demanda"
+      },
+      {
+       "acto": "Dictar sentencia",
+       "plazo": "10 días desde el juicio",
+       "articulo": "780",
+       "literal": "El Tribunal dictará sentencia dentro de los diez días siguientes a la terminación del juicio."
+      },
+      {
+       "acto": "Duración máxima del procedimiento",
+       "plazo": "3 meses",
+       "articulo": "779",
+       "literal": "deberán realizarse en el plazo de tres meses desde la fecha en que se hubieren iniciado"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay varios procedimientos sobre el mismo menor",
+       "entonces": "Acumulación ante el juzgado del más antiguo, incluso de oficio.",
+       "articulos": [
+        "780"
+       ],
+       "literal": {
+        "articulo": "780",
+        "texto": "la acumulación ante el Juzgado que estuviera conociendo del procedimiento más antiguo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hace falta reclamación previa en vía administrativa?",
+      "a": "No.",
+      "articulos": [
+       "780"
+      ],
+      "literal": {
+       "articulo": "780",
+       "texto": "No será necesaria reclamación previa en vía administrativa"
+      }
+     },
+     "conexiones": [
+      "753",
+      "779",
+      "780"
+     ]
+    },
+    {
+     "id": "men-asentimiento",
+     "fase": "Necesidad de asentimiento en la adopción",
+     "subtitulo": "Pieza separada",
+     "descripcion": "Los progenitores comparecen en el expediente de adopción. Se suspende y tienen plazo para demandar. Si no demandan, sigue la adopción. Si demandan, se declara contencioso y se tramita como pieza separada.",
+     "articulos": [
+      "781"
+     ],
+     "plazos": [
+      {
+       "acto": "Presentar la demanda",
+       "plazo": "15 días",
+       "articulo": "781",
+       "literal": "otorgará el plazo de quince días para la presentación de la demanda"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No se presenta la demanda en plazo",
+       "entonces": "Decreto que da por finalizado el trámite y alza la suspensión; recurrible en revisión.",
+       "articulos": [
+        "781"
+       ],
+       "literal": {
+        "articulo": "781",
+        "texto": "El decreto será recurrible directamente en revisión ante el Tribunal."
+       }
+      },
+      {
+       "si": "Se recurre el auto final",
+       "entonces": "Apelación con efectos suspensivos.",
+       "articulos": [
+        "781"
+       ],
+       "literal": {
+        "articulo": "781",
+        "texto": "El auto que ponga fin al procedimiento será susceptible de recurso de apelación, que tendrá efectos suspensivos."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Con arreglo a qué artículo se tramita la demanda sobre el asentimiento?",
+      "a": "Al art. 753 (verbal del Título I), como pieza separada.",
+      "articulos": [
+       "781"
+      ],
+      "literal": {
+       "articulo": "781",
+       "texto": "como pieza separada, con arreglo a lo previsto en el artículo 753"
+      }
+     },
+     "conexiones": [
+      "753",
+      "781"
+     ]
+    },
+    {
+     "id": "men-ingreso",
+     "fase": "Ingreso en centros de protección específicos",
+     "subtitulo": "Menores con problemas de conducta",
+     "descripcion": "Lo solicitan la Entidad Pública o el Fiscal, con valoración psicosocial. Autorización judicial previa salvo urgencia, en cuyo caso se comunica en 24 horas y se ratifica en 72.",
+     "articulos": [
+      "778 bis"
+     ],
+     "plazos": [
+      {
+       "acto": "Comunicar el ingreso urgente al juzgado",
+       "plazo": "24 horas",
+       "articulo": "778 bis",
+       "literal": "dentro de las veinticuatro horas siguientes"
+      },
+      {
+       "acto": "Ratificación judicial",
+       "plazo": "Máximo 72 horas",
+       "articulo": "778 bis",
+       "literal": "en el plazo máximo de setenta y dos horas desde que llegue el ingreso a conocimiento del Juzgado"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El juzgado no autoriza el ingreso urgente",
+       "entonces": "El ingreso queda sin efecto de inmediato.",
+       "articulos": [
+        "778 bis"
+       ],
+       "literal": {
+        "articulo": "778 bis",
+        "texto": "dejándose de inmediato sin efecto el ingreso en caso de que no sea autorizado"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué juzgado autoriza el ingreso?",
+      "a": "El de Primera Instancia del lugar donde radique el centro.",
+      "articulos": [
+       "778 bis"
+      ],
+      "literal": {
+       "articulo": "778 bis",
+       "texto": "los Juzgados de Primera Instancia del lugar donde radique el centro"
+      }
+     },
+     "conexiones": [
+      "778 bis"
+     ]
+    },
+    {
+     "id": "men-entrada",
+     "fase": "Entrada en domicilios",
+     "subtitulo": "Ejecución forzosa de medidas de protección",
+     "descripcion": "La Entidad Pública pide autorización para entrar en un domicilio cuando sea necesario para ejecutar sus medidas. Se da traslado al titular u ocupante para alegar en 24 horas, salvo urgencia.",
+     "articulos": [
+      "778 ter"
+     ],
+     "plazos": [
+      {
+       "acto": "Alegaciones del titular u ocupante",
+       "plazo": "24 horas",
+       "articulo": "778 ter",
+       "literal": "para que en el plazo de las 24 horas siguientes alegue lo que a su derecho convenga"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay urgencia por riesgo para el menor",
+       "entonces": "El juez puede acordar la entrada de inmediato, como máximo en 24 horas, previo informe del Fiscal.",
+       "articulos": [
+        "778 ter"
+       ],
+       "literal": {
+        "articulo": "778 ter",
+        "texto": "el Juez podrá acordarla mediante auto dictado de forma inmediata"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué debe justificar la solicitud respecto del consentimiento del titular?",
+      "a": "Que se intentó recabarlo sin resultado o con resultado negativo (o razonar por qué no procede).",
+      "articulos": [
+       "778 ter"
+      ],
+      "literal": {
+       "articulo": "778 ter",
+       "texto": "La justificación de que se ha intentado recabar dicho consentimiento sin resultado o con resultado negativo."
+      }
+     },
+     "conexiones": [
+      "778 ter"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sustraccion",
+   "nombre": "Sustracción internacional de menores",
+   "bloque": "familia y capacidad",
+   "grupo": "Libro IV · Procesos especiales",
+   "resumen": "Restitución o retorno del menor trasladado o retenido ilícitamente que se encuentra en España (convenios internacionales o normas UE). Procedimiento urgente.",
+   "ambito": {
+    "corto": "Arts. 778 quáter-sexies · plazo total 6 semanas",
+    "texto": "Se aplica cuando hay convenio internacional o norma de la UE aplicable y el menor está en España. Urgente y preferente: seis semanas en total, ambas instancias incluidas, salvo circunstancias excepcionales.",
+    "articulos": [
+     "778 quáter"
+    ],
+    "literal": [
+     {
+      "articulo": "778 quáter",
+      "texto": "en el inexcusable plazo total de seis semanas desde la fecha de la presentación de la solicitud"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "sus-ambito",
+     "fase": "Competencia y partes",
+     "subtitulo": "Juzgado de la capital de provincia",
+     "descripcion": "Competente el Juzgado de Primera Instancia de la capital de la provincia (o Ceuta y Melilla) con competencias en familia donde esté el menor. Abogado y procurador obligatorios. No se suspende por prejudicialidad penal.",
+     "articulos": [
+      "778 quáter"
+     ],
+     "plazos": [
+      {
+       "acto": "Duración total del procedimiento (ambas instancias)",
+       "plazo": "6 semanas",
+       "articulo": "778 quáter",
+       "literal": "en el inexcusable plazo total de seis semanas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay un proceso penal por sustracción",
+       "entonces": "No se suspenden las actuaciones civiles.",
+       "articulos": [
+        "778 quáter"
+       ],
+       "literal": {
+        "articulo": "778 quáter",
+        "texto": "En ningún caso se ordenará la suspensión de las actuaciones civiles por la existencia de prejudicialidad penal"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quién puede promover el procedimiento?",
+      "a": "Quien tenga la guarda y custodia o un régimen de estancia o visitas, la Autoridad Central española o la persona que esta designe.",
+      "articulos": [
+       "778 quáter"
+      ],
+      "literal": {
+       "articulo": "778 quáter",
+       "texto": "la Autoridad Central española encargada del cumplimiento de las obligaciones impuestas por el correspondiente convenio"
+      }
+     },
+     "conexiones": [
+      "778 quáter"
+     ]
+    },
+    {
+     "id": "sus-admision",
+     "fase": "Demanda, admisión y requerimiento",
+     "subtitulo": "24 horas y comparecencia en 3 días",
+     "descripcion": "El LAJ resuelve sobre la admisión en 24 horas y requiere al sustractor para que comparezca con el menor y diga si accede o se opone.",
+     "articulos": [
+      "778 quinquies"
+     ],
+     "plazos": [
+      {
+       "acto": "Resolver sobre la admisión",
+       "plazo": "24 horas",
+       "articulo": "778 quinquies",
+       "literal": "resolverá sobre la admisión de la demanda en el plazo de las 24 horas siguientes"
+      },
+      {
+       "acto": "Comparecencia del requerido con el menor",
+       "plazo": "No más de 3 días",
+       "articulo": "778 quinquies",
+       "literal": "que no podrá exceder de los tres días siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El menor no es hallado",
+       "entonces": "Archivo provisional hasta que sea encontrado.",
+       "articulos": [
+        "778 quinquies"
+       ],
+       "literal": {
+        "articulo": "778 quinquies",
+        "texto": "se archivará provisionalmente el procedimiento hasta ser encontrado"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué se entrega al requerido junto con el requerimiento?",
+      "a": "El texto del convenio o norma internacional aplicable.",
+      "articulos": [
+       "778 quinquies"
+      ],
+      "literal": {
+       "articulo": "778 quinquies",
+       "texto": "con entrega al requerido del texto del correspondiente convenio o norma internacional aplicable"
+      }
+     },
+     "conexiones": [
+      "778 quinquies"
+     ]
+    },
+    {
+     "id": "sus-respuesta",
+     "fase": "Respuesta del requerido",
+     "subtitulo": "Accede / no comparece / se opone",
+     "descripcion": "Si accede, auto el mismo día con la restitución. Si no comparece, rebeldía y vista sin él. Si se opone por escrito con las causas del convenio, vista en 5 días.",
+     "articulos": [
+      "778 quinquies"
+     ],
+     "plazos": [
+      {
+       "acto": "Vista si se opone",
+       "plazo": "Dentro de 5 días improrrogables",
+       "articulo": "778 quinquies",
+       "literal": "que se celebrará dentro del improrrogable plazo de los cinco días siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Accede a la restitución",
+       "entonces": "Auto el mismo día acordando la conclusión y la restitución o retorno.",
+       "articulos": [
+        "778 quinquies"
+       ],
+       "literal": {
+        "articulo": "778 quinquies",
+        "texto": "el Juez dictará auto el mismo día acordando la conclusión del proceso y la restitución o el retorno del menor"
+       }
+      },
+      {
+       "si": "No comparece",
+       "entonces": "Rebeldía en el mismo día y vista con el demandante y el Fiscal.",
+       "articulos": [
+        "778 quinquies"
+       ],
+       "literal": {
+        "articulo": "778 quinquies",
+        "texto": "en el mismo día le declarará en rebeldía y dispondrá la continuación del procedimiento sin el mismo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si el demandado que se opuso no acude a la vista, ¿qué ocurre?",
+      "a": "Se le tiene por desistido de la oposición y la vista continúa.",
+      "articulos": [
+       "778 quinquies"
+      ],
+      "literal": {
+       "articulo": "778 quinquies",
+       "texto": "el Juez le tendrá por desistido de la oposición y continuará la vista"
+      }
+     },
+     "conexiones": [
+      "773",
+      "778 quinquies"
+     ]
+    },
+    {
+     "id": "sus-sentencia",
+     "fase": "Vista, sentencia y apelación",
+     "subtitulo": "Oír al menor; resolver en 3 días",
+     "descripcion": "Prueba en 6 días improrrogables. Antes de decidir, el juez oye al menor por separado (salvo que no sea conveniente por su edad o madurez). Sentencia en 3 días solo sobre la ilicitud y la restitución. Apelación con efectos suspensivos.",
+     "articulos": [
+      "778 quinquies"
+     ],
+     "plazos": [
+      {
+       "acto": "Práctica de la prueba",
+       "plazo": "6 días improrrogables",
+       "articulo": "778 quinquies",
+       "literal": "dentro del plazo improrrogable de seis días"
+      },
+      {
+       "acto": "Dictar sentencia",
+       "plazo": "3 días",
+       "articulo": "778 quinquies",
+       "literal": "dentro de los tres días siguientes a su finalización, el Juez dictará sentencia"
+      },
+      {
+       "acto": "Interponer apelación",
+       "plazo": "10 días",
+       "articulo": "778 quinquies",
+       "literal": "en el plazo de diez días contados desde el día siguiente a la notificación de la resolución"
+      },
+      {
+       "acto": "Resolver la apelación",
+       "plazo": "30 días improrrogables",
+       "articulo": "778 quinquies",
+       "literal": "debiendo ser resuelto en el improrrogable plazo de treinta días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se acuerda la restitución",
+       "entonces": "Costas, gastos de viaje y de retorno a cargo de quien trasladó o retuvo al menor.",
+       "articulos": [
+        "778 quinquies"
+       ],
+       "literal": {
+        "articulo": "778 quinquies",
+        "texto": "se establecerá que la persona que hubiere trasladado o retenido al menor abone las costas procesales"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué recurso cabe contra la resolución, y con qué efectos?",
+      "a": "Solo apelación, con efectos suspensivos y tramitación preferente.",
+      "articulos": [
+       "778 quinquies"
+      ],
+      "literal": {
+       "articulo": "778 quinquies",
+       "texto": "Contra la resolución que se dicte sólo cabrá recurso de apelación con efectos suspensivos"
+      }
+     },
+     "conexiones": [
+      "778 quinquies",
+      "778 sexies"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "apoyos",
+   "nombre": "Medidas judiciales de apoyo (discapacidad)",
+   "bloque": "familia y capacidad",
+   "grupo": "Libro IV · Procesos especiales",
+   "resumen": "Proceso contencioso para la provisión de medidas de apoyo cuando hay oposición en el expediente de jurisdicción voluntaria o este no se resuelve; e internamiento no voluntario.",
+   "ambito": {
+    "corto": "Tras oposición o fracaso del expediente de jurisdicción voluntaria",
+    "texto": "Se sigue este proceso cuando, siendo pertinente nombrar curador, hubo oposición en el expediente de jurisdicción voluntaria o este no pudo resolverse.",
+    "articulos": [
+     "756"
+    ],
+    "literal": [
+     {
+      "articulo": "756",
+      "texto": "y en el expediente de jurisdicción voluntaria dirigido a tal efecto se haya formulado oposición, o cuando el expediente no haya podido resolverse"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "apo-inicio",
+     "fase": "Legitimación y competencia",
+     "subtitulo": "Quién puede promoverlo",
+     "descripcion": "La propia persona, su cónyuge o pareja de hecho, descendientes, ascendientes o hermanos; subsidiariamente, el Ministerio Fiscal. Competente el juez que conoció del expediente previo (salvo cambio de residencia).",
+     "articulos": [
+      "757",
+      "756",
+      "749"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "No hay familiares o no demandan",
+       "entonces": "Debe promoverlo el Ministerio Fiscal, salvo que existan otras vías de apoyo.",
+       "articulos": [
+        "757"
+       ],
+       "literal": {
+        "articulo": "757",
+        "texto": "El Ministerio Fiscal deberá promover dicho proceso si las personas mencionadas en el apartado anterior no existieran o no hubieran presentado la correspondiente demanda"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede la propia persona con discapacidad promover el proceso?",
+      "a": "Sí.",
+      "articulos": [
+       "757"
+      ],
+      "literal": {
+       "articulo": "757",
+       "texto": "puede promoverlo la propia persona interesada"
+      }
+     },
+     "conexiones": [
+      "749",
+      "756",
+      "757"
+     ]
+    },
+    {
+     "id": "apo-tramite",
+     "fase": "Admisión y defensa",
+     "subtitulo": "Certificación registral y defensor judicial",
+     "descripcion": "El LAJ recaba certificación del Registro Civil. Si la persona no comparece con su propia defensa en el plazo de contestación, se le designa defensor judicial, que tiene un nuevo plazo para contestar. Se tramita como verbal con contestación en 20 días.",
+     "articulos": [
+      "758",
+      "753",
+      "7 bis"
+     ],
+     "plazos": [
+      {
+       "acto": "Contestar a la demanda",
+       "plazo": "20 días",
+       "articulo": "753",
+       "literal": "emplazándoles para que la contesten en el plazo de veinte días"
+      },
+      {
+       "acto": "Contestación del defensor judicial",
+       "plazo": "20 días",
+       "articulo": "758",
+       "literal": "se le dará al defensor judicial un nuevo plazo de veinte días para que conteste a la demanda si lo considera procedente"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La persona no comparece con su propia defensa",
+       "entonces": "Se le designa defensor judicial (salvo que su defensa corresponda al Fiscal).",
+       "articulos": [
+        "758"
+       ],
+       "literal": {
+        "articulo": "758",
+        "texto": "el letrado de la Administración de Justicia procederá a designarle un defensor judicial"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué debe procurar el LAJ respecto de la persona con discapacidad?",
+      "a": "Que comprenda el objeto, la finalidad y los trámites del procedimiento (art. 7 bis).",
+      "articulos": [
+       "758"
+      ],
+      "literal": {
+       "articulo": "758",
+       "texto": "llevará a cabo las actuaciones necesarias para que la persona con discapacidad comprenda el objeto, la finalidad y los trámites del procedimiento"
+      }
+     },
+     "conexiones": [
+      "7 bis",
+      "753",
+      "758"
+     ]
+    },
+    {
+     "id": "apo-prueba",
+     "fase": "Pruebas preceptivas",
+     "subtitulo": "Entrevista, audiencias y dictamen pericial",
+     "descripcion": "El tribunal se entrevista con la persona, oye a cónyuge y parientes próximos y acuerda dictamen pericial (no puede decidir sin él). Se repiten de oficio en segunda instancia.",
+     "articulos": [
+      "759",
+      "752"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "La demanda la presentó la propia persona",
+       "entonces": "Excepcionalmente, y a petición suya, pueden omitirse las audiencias preceptivas.",
+       "articulos": [
+        "759"
+       ],
+       "literal": {
+        "articulo": "759",
+        "texto": "el Tribunal podrá, previa solicitud de esta y de forma excepcional, no practicar las audiencias preceptivas"
+       }
+      },
+      {
+       "si": "Se apela la sentencia",
+       "entonces": "Las pruebas preceptivas se practican también de oficio en segunda instancia.",
+       "articulos": [
+        "759"
+       ],
+       "literal": {
+        "articulo": "759",
+        "texto": "se ordenará también de oficio en la segunda instancia la práctica de las pruebas preceptivas"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el tribunal decidir las medidas de apoyo sin dictamen pericial?",
+      "a": "No: es preceptivo el dictamen acordado por el tribunal.",
+      "articulos": [
+       "759"
+      ],
+      "literal": {
+       "articulo": "759",
+       "texto": "no pudiendo decidirse sobre las medidas que deben adoptarse sin previo dictamen pericial acordado por el Tribunal"
+      }
+     },
+     "conexiones": [
+      "752",
+      "759"
+     ]
+    },
+    {
+     "id": "apo-cautelares",
+     "fase": "Medidas cautelares",
+     "subtitulo": "Incluso de oficio",
+     "descripcion": "El tribunal adopta de oficio las medidas necesarias de protección de la persona o su patrimonio, en cualquier estado del procedimiento, con audiencia previa salvo urgencia.",
+     "articulos": [
+      "762"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Hay urgencia",
+       "entonces": "Pueden acordarse sin audiencia previa de la persona.",
+       "articulos": [
+        "762"
+       ],
+       "literal": {
+        "articulo": "762",
+        "texto": "Siempre que la urgencia de la situación no lo impida, las medidas a que se refieren los apartados anteriores se acordarán previa audiencia de las personas con discapacidad."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Pueden acordarse de oficio estas medidas cautelares, a diferencia de la regla general del art. 721?",
+      "a": "Sí: el tribunal las adopta de oficio.",
+      "articulos": [
+       "762",
+       "721"
+      ],
+      "literal": {
+       "articulo": "762",
+       "texto": "adoptará de oficio las que estime necesarias para la adecuada protección de aquella o de su patrimonio"
+      }
+     },
+     "conexiones": [
+      "721",
+      "734",
+      "762"
+     ]
+    },
+    {
+     "id": "apo-sentencia",
+     "fase": "Sentencia y revisión",
+     "subtitulo": "Conforme a la legislación civil",
+     "descripcion": "Las medidas se ajustan al Derecho civil aplicable y se revisan por jurisdicción voluntaria; si hay oposición en la revisión, nuevo proceso contencioso.",
+     "articulos": [
+      "760",
+      "761"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Hay oposición en el expediente de revisión",
+       "entonces": "Debe instarse el proceso contencioso de este capítulo.",
+       "articulos": [
+        "761"
+       ],
+       "literal": {
+        "articulo": "761",
+        "texto": "se deberá instar el correspondiente proceso contencioso conforme a lo previsto en el presente Capítulo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Por qué trámite se revisan las medidas de apoyo adoptadas en sentencia?",
+      "a": "Por los de la Ley de Jurisdicción Voluntaria, conforme a la legislación civil.",
+      "articulos": [
+       "761"
+      ],
+      "literal": {
+       "articulo": "761",
+       "texto": "debiendo seguirse los trámites previstos a tal efecto en la Ley de Jurisdicción Voluntaria"
+      }
+     },
+     "conexiones": [
+      "760",
+      "761"
+     ]
+    },
+    {
+     "id": "apo-internamiento",
+     "fase": "Internamiento no voluntario",
+     "subtitulo": "Autorización previa o ratificación urgente",
+     "descripcion": "El internamiento por trastorno psíquico de quien no puede decidir requiere autorización judicial previa; si es urgente, el centro comunica en 24 horas y el tribunal ratifica en un máximo de 72 horas. La decisión es apelable.",
+     "articulos": [
+      "763"
+     ],
+     "plazos": [
+      {
+       "acto": "Comunicación del centro al tribunal (urgencia)",
+       "plazo": "24 horas",
+       "articulo": "763",
+       "literal": "dentro del plazo de veinticuatro horas"
+      },
+      {
+       "acto": "Ratificación judicial (urgencia)",
+       "plazo": "Máximo 72 horas",
+       "articulo": "763",
+       "literal": "en el plazo máximo de setenta y dos horas desde que el internamiento llegue a conocimiento del tribunal"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se recurre la decisión sobre el internamiento",
+       "entonces": "Recurso de apelación.",
+       "articulos": [
+        "763"
+       ],
+       "literal": {
+        "articulo": "763",
+        "texto": "la decisión que el tribunal adopte en relación con el internamiento será susceptible de recurso de apelación"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Antes de autorizar el internamiento, ¿debe el juez examinar personalmente a la persona?",
+      "a": "Sí, además de oír al afectado, al Fiscal y el dictamen de un facultativo designado por él.",
+      "articulos": [
+       "763"
+      ],
+      "literal": {
+       "articulo": "763",
+       "texto": "el tribunal deberá examinar por sí mismo a la persona de cuyo internamiento se trate"
+      }
+     },
+     "conexiones": [
+      "758",
+      "763"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "liquidacion",
+   "nombre": "Liquidación del régimen económico matrimonial",
+   "bloque": "familia y capacidad",
+   "grupo": "Libro IV · Procesos especiales",
+   "resumen": "Inventario y liquidación de la masa común (gananciales y similares) y liquidación del régimen de participación, a falta de acuerdo entre los cónyuges.",
+   "ambito": {
+    "corto": "Arts. 806-811 · a falta de acuerdo",
+    "texto": "Liquidación de cualquier régimen con masa común de bienes, en defecto de acuerdo entre los cónyuges. Competente el juzgado del proceso de nulidad, separación o divorcio o de la disolución.",
+    "articulos": [
+     "806",
+     "807"
+    ],
+    "literal": [
+     {
+      "articulo": "806",
+      "texto": "se llevará a cabo, en defecto de acuerdo entre los cónyuges, con arreglo a lo dispuesto en el presente capítulo"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "liq-solicitud",
+     "fase": "Solicitud de inventario",
+     "subtitulo": "Desde la admisión de la demanda matrimonial",
+     "descripcion": "Admitida la demanda de nulidad, separación o divorcio (o iniciado el proceso de disolución), cualquiera de los cónyuges o sus herederos puede pedir el inventario con una propuesta de partidas y sus documentos.",
+     "articulos": [
+      "808",
+      "807"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Aún no se ha admitido la demanda matrimonial",
+       "entonces": "Todavía no puede pedirse el inventario por esta vía.",
+       "articulos": [
+        "808"
+       ],
+       "literal": {
+        "articulo": "808",
+        "texto": "Admitida la demanda de nulidad, separación o divorcio, o iniciado el proceso en que se haya demandado la disolución del régimen económico matrimonial"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué debe acompañar a la solicitud de inventario?",
+      "a": "Una propuesta con las partidas separadas y los documentos que las justifiquen.",
+      "articulos": [
+       "808"
+      ],
+      "literal": {
+       "articulo": "808",
+       "texto": "A la solicitud se acompañarán también los documentos que justifiquen las diferentes partidas incluidas en la propuesta."
+      }
+     },
+     "conexiones": [
+      "807",
+      "808"
+     ]
+    },
+    {
+     "id": "liq-inventario",
+     "fase": "Formación del inventario",
+     "subtitulo": "Comparecencia ante el LAJ",
+     "descripcion": "El LAJ cita a los cónyuges para formar el inventario. Si hay acuerdo, se recoge en acta. Si hay controversia sobre partidas, vista y juicio verbal; la sentencia aprueba el inventario.",
+     "articulos": [
+      "809"
+     ],
+     "plazos": [
+      {
+       "acto": "Comparecencia para formar el inventario",
+       "plazo": "Máximo 10 días",
+       "articulo": "809",
+       "literal": "en el plazo máximo de diez días, se proceda a la formación de inventario"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Un cónyuge no comparece sin causa",
+       "entonces": "Se le tiene por conforme con la propuesta del que comparece.",
+       "articulos": [
+        "809"
+       ],
+       "literal": {
+        "articulo": "809",
+        "texto": "se le tendrá por conforme con la propuesta de inventario que efectúe el cónyuge que haya comparecido"
+       }
+      },
+      {
+       "si": "Hay controversia sobre alguna partida",
+       "entonces": "Vista y tramitación como juicio verbal.",
+       "articulos": [
+        "809"
+       ],
+       "literal": {
+        "articulo": "809",
+        "texto": "citará a los interesados a una vista, continuando la tramitación con arreglo a lo previsto para el juicio verbal"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo resuelve el tribunal sobre la administración de los bienes inventariados?",
+      "a": "En el mismo día o en el siguiente.",
+      "articulos": [
+       "809"
+      ],
+      "literal": {
+       "articulo": "809",
+       "texto": "En el mismo día o en el siguiente, se resolverá por el Tribunal lo que proceda sobre la administración y disposición de los bienes incluidos en el inventario."
+      }
+     },
+     "conexiones": [
+      "809"
+     ]
+    },
+    {
+     "id": "liq-liquidacion",
+     "fase": "Liquidación",
+     "subtitulo": "Propuesta, comparecencia y, sin acuerdo, contador",
+     "descripcion": "Concluido el inventario y firme la disolución, se pide la liquidación con propuesta (indemnizaciones, reintegros y división). Comparecencia; sin acuerdo, contador y peritos como en la herencia.",
+     "articulos": [
+      "810",
+      "784",
+      "788"
+     ],
+     "plazos": [
+      {
+       "acto": "Comparecencia para intentar acuerdo",
+       "plazo": "Máximo 10 días",
+       "articulo": "810",
+       "literal": "señalará, dentro del plazo máximo de diez días, el día y hora"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Un cónyuge no comparece sin causa",
+       "entonces": "Se le tiene por conforme con la propuesta del otro.",
+       "articulos": [
+        "810"
+       ],
+       "literal": {
+        "articulo": "810",
+        "texto": "se le tendrá por conforme con la propuesta de liquidación"
+       }
+      },
+      {
+       "si": "No hay acuerdo",
+       "entonces": "Nombramiento de contador y, en su caso, peritos (art. 784).",
+       "articulos": [
+        "810"
+       ],
+       "literal": {
+        "articulo": "810",
+        "texto": "se procederá, mediante diligencia, al nombramiento de contador y, en su caso, peritos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo puede pedirse la liquidación?",
+      "a": "Concluido el inventario y, en su caso, firme la resolución que declare disuelto el régimen.",
+      "articulos": [
+       "810"
+      ],
+      "literal": {
+       "articulo": "810",
+       "texto": "Concluido el inventario y, en su caso, una vez firme la resolución que declare disuelto el régimen económico matrimonial"
+      }
+     },
+     "conexiones": [
+      "784",
+      "788",
+      "810"
+     ]
+    },
+    {
+     "id": "liq-participacion",
+     "fase": "Régimen de participación",
+     "subtitulo": "Patrimonios inicial y final",
+     "descripcion": "Solo tras la firmeza de la disolución. La propuesta estima patrimonios inicial y final y la cantidad a pagar. Sin acuerdo, juicio verbal.",
+     "articulos": [
+      "811"
+     ],
+     "plazos": [
+      {
+       "acto": "Comparecencia para intentar acuerdo",
+       "plazo": "Máximo 10 días",
+       "articulo": "811",
+       "literal": "señalará, dentro del plazo máximo de diez días, el día y hora"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No hay acuerdo",
+       "entonces": "Vista y juicio verbal; la sentencia fija patrimonios y cantidad a pagar.",
+       "articulos": [
+        "811"
+       ],
+       "literal": {
+        "articulo": "811",
+        "texto": "les citará a una vista, y continuará la tramitación con arreglo a lo previsto para el juicio verbal"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede pedirse la liquidación de la participación antes de la firmeza de la disolución?",
+      "a": "No.",
+      "articulos": [
+       "811"
+      ],
+      "literal": {
+       "articulo": "811",
+       "texto": "No podrá solicitarse la liquidación de régimen de participación hasta que no sea firme la resolución que declare disuelto el régimen económico matrimonial."
+      }
+     },
+     "conexiones": [
+      "811"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "herencia",
+   "nombre": "División judicial de la herencia",
+   "bloque": "división de herencia",
+   "grupo": "Libro IV · Procesos especiales",
+   "resumen": "Solicitud, Junta para designar contador y peritos, operaciones divisorias, oposición y entrega de bienes. Incluye la intervención del caudal.",
+   "ambito": {
+    "corto": "Coheredero o legatario de parte alícuota (art. 782)",
+    "texto": "Cualquier coheredero o legatario de parte alícuota, salvo que la partición corresponda a un contador-partidor designado, a acuerdo de los coherederos, al LAJ o al notario. Los acreedores no pueden instarla.",
+    "articulos": [
+     "782"
+    ],
+    "literal": [
+     {
+      "articulo": "782",
+      "texto": "Cualquier coheredero o legatario de parte alícuota podrá reclamar judicialmente la división de la herencia"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "her-solicitud",
+     "fase": "Solicitud",
+     "subtitulo": "Documentos y posición de los acreedores",
+     "descripcion": "Se acompaña certificado de defunción y documento que acredite la condición de heredero o legatario. Los acreedores no pueden pedir la división; los reconocidos o con título ejecutivo pueden oponerse a la partición hasta que se les pague o afiance.",
+     "articulos": [
+      "782"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Un acreedor de la herencia quiere instar la división",
+       "entonces": "No puede; ejercitará sus acciones en el declarativo correspondiente.",
+       "articulos": [
+        "782"
+       ],
+       "literal": {
+        "articulo": "782",
+        "texto": "Los acreedores no podrán instar la división"
+       }
+      },
+      {
+       "si": "Un acreedor reconocido en el testamento o con título ejecutivo",
+       "entonces": "Puede oponerse a la partición hasta que se le pague o afiance.",
+       "articulos": [
+        "782"
+       ],
+       "literal": {
+        "articulo": "782",
+        "texto": "podrán oponerse a que se lleve a efecto la partición de la herencia hasta que se les pague o afiance el importe de sus créditos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué documentos acompañan la solicitud de división?",
+      "a": "El certificado de defunción y el que acredite la condición de heredero o legatario del solicitante.",
+      "articulos": [
+       "782"
+      ],
+      "literal": {
+       "articulo": "782",
+       "texto": "A la solicitud deberá acompañarse el certificado de defunción de la persona de cuya sucesión se trate y el documento que acredite la condición de heredero o legatario del solicitante."
+      }
+     },
+     "conexiones": [
+      "782",
+      "792"
+     ]
+    },
+    {
+     "id": "her-junta",
+     "fase": "Junta: contador y peritos",
+     "subtitulo": "Acuerdo o sorteo",
+     "descripcion": "Si se pidió, intervención del caudal e inventario. El LAJ convoca Junta de herederos, legatarios de parte alícuota y cónyuge viudo para designar contador y peritos (uno por clase de bienes). Sin acuerdo, sorteo.",
+     "articulos": [
+      "783",
+      "784",
+      "792"
+     ],
+     "plazos": [
+      {
+       "acto": "Celebración de la Junta",
+       "plazo": "Dentro de 10 días",
+       "articulo": "783",
+       "literal": "señalando día dentro de los diez siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No hay acuerdo sobre el contador",
+       "entonces": "Se designa por sorteo entre abogados ejercientes con conocimientos en la materia.",
+       "articulos": [
+        "784"
+       ],
+       "literal": {
+        "articulo": "784",
+        "texto": "se designará uno por sorteo, conforme a lo dispuesto en el artículo 341"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuántos peritos pueden designarse por cada clase de bienes?",
+      "a": "No más de uno.",
+      "articulos": [
+       "784"
+      ],
+      "literal": {
+       "articulo": "784",
+       "texto": "No podrá designarse más de un perito para cada clase de bienes que hayan de ser justipreciados."
+      }
+     },
+     "conexiones": [
+      "341",
+      "783",
+      "784",
+      "792"
+     ],
+     "continua_en": [
+      "caudal"
+     ]
+    },
+    {
+     "id": "her-operaciones",
+     "fase": "Operaciones divisorias",
+     "subtitulo": "Inventario, avalúo, liquidación y adjudicación",
+     "descripcion": "El contador practica las operaciones conforme a la ley de la sucesión y a las reglas del testador (sin perjudicar legítimas), evitando la indivisión y la excesiva división de fincas.",
+     "articulos": [
+      "785",
+      "786"
+     ],
+     "plazos": [
+      {
+       "acto": "Presentar las operaciones divisorias",
+       "plazo": "Máximo 2 meses desde su inicio",
+       "articulo": "786",
+       "literal": "Las operaciones divisorias deberán presentarse en el plazo máximo de dos meses desde que fueron iniciadas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El contador no presenta las operaciones en el plazo fijado",
+       "entonces": "Responde de los daños y perjuicios.",
+       "articulos": [
+        "785"
+       ],
+       "literal": {
+        "articulo": "785",
+        "texto": "si no lo verificare, será responsable de los daños y perjuicios"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué debe contener el escrito de operaciones divisorias?",
+      "a": "Relación de bienes del caudal partible, su avalúo y la liquidación, división y adjudicación a cada partícipe.",
+      "articulos": [
+       "786"
+      ],
+      "literal": {
+       "articulo": "786",
+       "texto": "La liquidación del caudal, su división y adjudicación a cada uno de los partícipes."
+      }
+     },
+     "conexiones": [
+      "785",
+      "786"
+     ]
+    },
+    {
+     "id": "her-oposicion",
+     "fase": "Aprobación u oposición",
+     "subtitulo": "Decreto o comparecencia y verbal",
+     "descripcion": "Traslado a las partes para oponerse. Sin oposición, decreto aprobatorio y protocolización. Con oposición, comparecencia; si no hay conformidad, se sigue por el verbal y la sentencia no produce cosa juzgada.",
+     "articulos": [
+      "787"
+     ],
+     "plazos": [
+      {
+       "acto": "Oponerse a las operaciones divisorias",
+       "plazo": "10 días",
+       "articulo": "787",
+       "literal": "emplazándolas por diez días para que formulen oposición"
+      },
+      {
+       "acto": "Comparecencia si hay oposición",
+       "plazo": "Dentro de 10 días",
+       "articulo": "787",
+       "literal": "que se celebrará dentro de los diez días siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Nadie se opone",
+       "entonces": "Decreto del LAJ aprobando y mandando protocolizar.",
+       "articulos": [
+        "787"
+       ],
+       "literal": {
+        "articulo": "787",
+        "texto": "dictará decreto aprobando las operaciones divisorias, mandando protocolizarlas"
+       }
+      },
+      {
+       "si": "Hay oposición y no se alcanza conformidad",
+       "entonces": "Juicio verbal; la sentencia no tiene eficacia de cosa juzgada.",
+       "articulos": [
+        "787"
+       ],
+       "literal": {
+        "articulo": "787",
+        "texto": "pero no tendrá eficacia de cosa juzgada"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Produce cosa juzgada la sentencia que resuelve la oposición a las operaciones divisorias?",
+      "a": "No: los interesados pueden hacer valer sus derechos en el juicio ordinario.",
+      "articulos": [
+       "787"
+      ],
+      "literal": {
+       "articulo": "787",
+       "texto": "pudiendo los interesados hacer valer los derechos que crean corresponderles sobre los bienes adjudicados en el juicio ordinario que corresponda"
+      }
+     },
+     "conexiones": [
+      "787",
+      "437"
+     ]
+    },
+    {
+     "id": "her-entrega",
+     "fase": "Entrega o terminación por acuerdo",
+     "subtitulo": "Adjudicación de los bienes",
+     "descripcion": "Aprobada la partición, el LAJ entrega a cada uno lo adjudicado (salvo acreedor opositor no pagado). En cualquier momento los interesados pueden terminar por acuerdo.",
+     "articulos": [
+      "788",
+      "789"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Los coherederos lo piden de común acuerdo",
+       "entonces": "Sobreseimiento y bienes a disposición de los herederos.",
+       "articulos": [
+        "789"
+       ],
+       "literal": {
+        "articulo": "789",
+        "texto": "deberá el Letrado de la Administración de Justicia sobreseer el juicio y poner los bienes a disposición de los herederos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si un acreedor se opuso a la partición (art. 782.4), ¿se entregan los bienes?",
+      "a": "No, hasta que esté completamente pagado o garantizado.",
+      "articulos": [
+       "788"
+      ],
+      "literal": {
+       "articulo": "788",
+       "texto": "no se hará la entrega de los bienes a ninguno de los herederos ni legatarios sin estar aquéllos completamente pagados o garantizados a su satisfacción"
+      }
+     },
+     "conexiones": [
+      "782",
+      "788",
+      "789"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "caudal",
+   "nombre": "Intervención y administración del caudal hereditario",
+   "bloque": "división de herencia",
+   "grupo": "Libro IV · Procesos especiales",
+   "resumen": "Aseguramiento de bienes del difunto, intervención judicial de la herencia y administración (nombramiento, representación, cuentas, enajenación y retribución).",
+   "ambito": {
+    "corto": "Arts. 790-805",
+    "texto": "Medidas de aseguramiento cuando no constan herederos próximos, intervención a instancia de parte durante la declaración de herederos o la división, y régimen del administrador.",
+    "articulos": [
+     "790",
+     "792"
+    ],
+    "literal": [
+     {
+      "articulo": "790",
+      "texto": "adoptará de oficio las medidas más indispensables para el enterramiento del difunto si fuere necesario y para la seguridad de los bienes"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "cau-aseguramiento",
+     "fase": "Aseguramiento de oficio",
+     "subtitulo": "Sin testamento ni parientes conocidos",
+     "descripcion": "Si el tribunal sabe del fallecimiento y no constan testamento ni parientes hasta el cuarto grado (o están ausentes o son menores sin representante), asegura de oficio bienes y documentos. Cuando comparecen, se les entregan y se acude al notario para la declaración de herederos.",
+     "articulos": [
+      "790"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Comparecen los parientes",
+       "entonces": "Se les entregan los bienes y cesa la intervención; declaración de herederos ante notario.",
+       "articulos": [
+        "790"
+       ],
+       "literal": {
+        "articulo": "790",
+        "texto": "debiendo acudir al Notario a fin de que proceda a la incoación del expediente de declaración de herederos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hasta qué grado de colaterales se mira para decidir el aseguramiento de oficio?",
+      "a": "Hasta el cuarto grado.",
+      "articulos": [
+       "790"
+      ],
+      "literal": {
+       "articulo": "790",
+       "texto": "ni de colaterales dentro del cuarto grado"
+      }
+     },
+     "conexiones": [
+      "790"
+     ]
+    },
+    {
+     "id": "cau-intervencion",
+     "fase": "Intervención a instancia de parte",
+     "subtitulo": "Durante la declaración de herederos o la división",
+     "descripcion": "Pueden pedirla el cónyuge o parientes que promuevan la declaración notarial de herederos, cualquier coheredero o legatario de parte alícuota al pedir la división (salvo prohibición testamentaria), la Administración y ciertos acreedores.",
+     "articulos": [
+      "792"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El testador prohibió la intervención",
+       "entonces": "El coheredero que pide la división no puede solicitarla.",
+       "articulos": [
+        "792"
+       ],
+       "literal": {
+        "articulo": "792",
+        "texto": "salvo que la intervención hubiera sido expresamente prohibida por disposición testamentaria"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué acreedores pueden pedir la intervención del caudal?",
+      "a": "Los reconocidos en el testamento o por los coherederos y los que tengan su derecho en un título ejecutivo.",
+      "articulos": [
+       "792"
+      ],
+      "literal": {
+       "articulo": "792",
+       "texto": "los acreedores reconocidos como tales en el testamento o por los coherederos y los que tengan su derecho documentado en un título ejecutivo"
+      }
+     },
+     "conexiones": [
+      "782",
+      "792"
+     ]
+    },
+    {
+     "id": "cau-administracion",
+     "fase": "Administración del caudal",
+     "subtitulo": "Nombramiento, representación y cuentas",
+     "descripcion": "Hecho el inventario, el tribunal decide por auto sobre la administración. Administrador: el viudo o viuda y, en su defecto, el heredero o legatario de mayor parte, con caución. Representa a la herencia; no puede enajenar ni gravar salvo excepciones; rinde cuentas.",
+     "articulos": [
+      "795",
+      "797",
+      "798",
+      "800",
+      "803",
+      "804"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "No hay oposición a las cuentas finales",
+       "entonces": "Decreto que las aprueba, exonera al administrador y devuelve la caución.",
+       "articulos": [
+        "800"
+       ],
+       "literal": {
+        "articulo": "800",
+        "texto": "dictará decreto aprobándolas y declarando exento de responsabilidad al administrador"
+       }
+      },
+      {
+       "si": "El administrador quiere vender bienes inventariados",
+       "entonces": "Solo en los casos tasados, con providencia del tribunal y pública subasta.",
+       "articulos": [
+        "803"
+       ],
+       "literal": {
+        "articulo": "803",
+        "texto": "El administrador no podrá enajenar ni gravar los bienes inventariados."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿A quién se nombra administrador en primer lugar?",
+      "a": "Al viudo o viuda; en su defecto, al heredero o legatario de parte alícuota con mayor parte.",
+      "articulos": [
+       "795"
+      ],
+      "literal": {
+       "articulo": "795",
+       "texto": "Se nombrará administrador al viudo o viuda"
+      }
+     },
+     "conexiones": [
+      "795",
+      "797",
+      "798",
+      "800",
+      "803",
+      "804"
+     ]
+    }
+   ]
+  }
+ ]
+}

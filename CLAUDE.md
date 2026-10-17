@@ -80,13 +80,15 @@ repaso:         [{id, pregunta, respuesta, articulos, origen, revisado}]
 - Publicación con GitHub Pages desde la rama principal, carpeta raíz.
 
 ## Vistas de la app LEC
-1. Árbol navegable (Libros > Títulos > Capítulos > Secciones > Artículos) con el texto literal.
-2. Buscador por número de artículo y por texto.
-3. Esquemas de procedimientos por fases, con el artículo de cada fase enlazado.
-4. Tabla de plazos filtrable por bloque y por acto procesal.
-5. Mapa de recursos: qué recurso cabe, contra qué resolución, plazo y órgano.
-6. Marcadores y notas personales, guardados en el almacenamiento local del navegador. No se sincronizan entre el móvil y el PC; el usuario lo sabe.
-7. Modo repaso con tarjetas generadas a partir de plazos, procedimientos y recursos, con su progreso guardado en local.
+Enfoque acordado con el usuario: app para **aprender**, no solo para leer la ley. El centro es el **mapa procesal**.
+1. **Procesos** (pantalla de inicio): cada procedimiento como ruta de fases en vista de conjunto. Cada fase abre una ficha con: qué ocurre, plazos (con la frase literal del artículo), alternativas desplegables («¿y si no contesta?»), pregunta «Ponte a prueba», conexiones y enlaces a otros procesos. En móvil la ficha se abre como hoja inferior; en ordenador, como panel lateral.
+2. **Ley**: árbol navegable (Libros > Títulos > Capítulos > Secciones > Artículos) con el texto literal.
+3. **Buscar**: por número de artículo, por texto de la ley y por fases y plazos del mapa.
+4. **Repaso**: tarjetas generadas de preguntas, alternativas y plazos, con progreso guardado en local.
+5. **Recursos**: selector por resolución (qué recurso cabe, plazo y órgano, con frase literal), fichas de cada recurso y test de opción múltiple.
+6. **Notas**: marcadores y notas personales en artículos, fases y recursos, guardados en el almacenamiento local del navegador. No se sincronizan entre el móvil y el PC; para pasarlos hay copia de seguridad (descargar / importar archivo JSON).
+
+Datos del mapa: `lec/datos/procedimientos.json` (contenido elaborado, `revisado: false`). Cada plazo, alternativa y respuesta lleva una frase `literal`; `scripts/insertar_datos.py` comprueba que esa frase está en el artículo citado y, si no, no publica.
 
 Todo artículo citado en cualquier vista es un enlace que abre su texto literal.
 
@@ -104,6 +106,9 @@ Todo artículo citado en cualquier vista es un enlace que abre su texto literal.
 - Botón de modo claro/oscuro, recordado en local.
 - Diseño adaptado a móvil (prioridad) y a ordenador. Texto legible y zoom cómodo.
 
+## Pendientes
+Las dudas de interpretación y los puntos a revisar se anotan en `PENDIENTES.md` (el usuario los repasará al final). No se elige una interpretación: se anota y se sigue.
+
 ## Fases de trabajo
 Una fase cada vez. Al cerrar cada fase:
 - haz commit con un mensaje claro;
@@ -118,10 +123,11 @@ No empieces la siguiente fase sin su visto bueno.
   - buscador;
   - fecha de versión y aviso del BOE.
   - Incluye un informe de control: número de artículos extraídos y artículos con posibles problemas de extracción.
-- **F2** — Tabla de plazos de los bloques núcleo.
-- **F3** — Esquemas de procedimientos: ordinario, verbal, monitorio, ejecución y cautelares.
-- **F4** — Mapa de recursos.
-- **F5** — Marcadores, notas y modo repaso.
-- **F6** — Procesos especiales: familia y capacidad, división de herencia, cambiario y ejecución hipotecaria (plazos, esquemas y repaso).
-- **F7** — Portada (`/index.html`) que enlaza a cada ley, preparada para añadir LECrim, LRJS y ET.
+- **F2** — Mapa procesal (prototipo hecho): juicio ordinario, juicio verbal y monitorio, con plazos, alternativas y repaso. Pendiente de revisión del usuario.
+- **F3** — Mapa procesal: ejecución y embargo (arts. 517-680, sin la hipotecaria) y medidas cautelares (arts. 721-747). Hecha; pendiente de revisión del usuario.
+- **F4** — Mapa de recursos (`lec/datos/recursos.json`): selector «¿qué recurso cabe?» por resolución, fichas de cada recurso y test interactivo. Hecha; pendiente de revisión del usuario.
+- **F5** — Marcadores y notas (☆ y ✎ en artículos, fases y recursos; pestaña «Notas»; búsqueda en notas; copia de seguridad descargable e importable para pasar del móvil al PC). Hecha.
+- **F6** — Procesos especiales: nulidad, separación y divorcio (arts. 748-777), medidas judiciales de apoyo (756-763), división de herencia (782-789), cambiario (819-827) y ejecución hipotecaria (681-698). Hecha; pendiente de revisión del usuario.
+- **Ampliación (hecha)** — Procesos añadidos a petición del usuario: desahucio por falta de pago (arts. 22.4, 437-441, 447, 449, 549), filiación (764-768), protección de menores y adopción (778 bis-ter, 779-781), sustracción internacional de menores (778 quáter-sexies), liquidación del régimen económico matrimonial (806-811) e intervención y administración del caudal hereditario (790-805). Pendientes de revisión del usuario.
+- **F7** — Portada (`/index.html`) que enlaza a cada ley, preparada para añadir LECrim, LRJS y ET. Hecha: se genera con `python3 scripts/generar_portada.py` a partir de `scripts/leyes.json`. Para añadir una ley: crear su carpeta con su `index.html` y poner su estado a «disponible» en `leyes.json`. Los enlaces apuntan a `carpeta/index.html` para que funcionen también en local.
 - **Segunda parte** — Calculadora de plazos con calendario.

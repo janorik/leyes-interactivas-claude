@@ -1,0 +1,168 @@
+#!/usr/bin/env python3
+"""Inserta lec/datos/lec.json y el logo dentro de lec/index.html.
+
+Uso:  python3 scripts/insertar_datos.py
+Se puede ejecutar cuantas veces se quiera: sustituye los datos anteriores.
+El logo (assets/logo.*) se recorta al emblema, se reduce y se incrusta en base64,
+para que lec/index.html funcione sin conexión y sin archivos externos.
+"""
+import base64
+import glob
+import io
+import json
+import os
+import re
+import sys
+
+RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+HTML = os.path.join(RAIZ, "lec", "index.html")
+JSON_LEY = os.path.join(RAIZ, "lec", "datos", "lec.json")
+JSON_PROC = os.path.join(RAIZ, "lec", "datos", "procedimientos.json")
+JSON_REC = os.path.join(RAIZ, "lec", "datos", "recursos.json")
+
+# Recorte del emblema "N" en el logo cuadrado de 2048 px (proporciones relativas).
+RECORTE = (680 / 2048, 930 / 2048, 1420 / 2048, 1500 / 2048)
+
+
+def logo_base64():
+    candidatos = sorted(glob.glob(os.path.join(RAIZ, "assets", "logo.*")))
+    if not candidatos:
+        print("Aviso: no hay logo en assets/; la cabecera irá sin imagen.")
+        return ""
+    try:
+        from PIL import Image
+    except ImportError:
+        print("Aviso: falta Pillow; la cabecera irá sin imagen.")
+        return ""
+    im = Image.open(candidatos[0]).convert("RGB")
+    w, h = im.size
+    if w == h:  # logo cuadrado del usuario: se usa el emblema
+        im = im.crop((int(RECORTE[0] * w), int(RECORTE[1] * h), int(RECORTE[2] * w), int(RECORTE[3] * h)))
+    im.thumbnail((160, 120))
+    buf = io.BytesIO()
+    im.save(buf, "PNG", optimize=True)
+    return "data:image/png;base64," + base64.b64encode(buf.getvalue()).decode("ascii")
+
+
+def _norm(t):
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def validar_y_anadir_procedimientos(datos):
+    """Comprueba el contenido elaborado contra el texto literal y lo añade a los datos.
+
+    - Todo artículo citado debe existir en la LEC extraída.
+    - Toda frase 'literal' debe aparecer tal cual en el artículo citado.
+    - Todo procedimiento debe llevar revisado (false hasta que lo valide el usuario).
+    Si algo falla, el script se detiene: no se publica nada sin comprobar.
+    """
+    if not os.path.exists(JSON_PROC):
+        return
+    with open(JSON_PROC, encoding="utf-8") as f:
+        proc = json.load(f)["procedimientos"]
+    arts = datos["articulos"]
+    errores = []
+
+    def art(k, donde):
+        if k not in arts:
+            errores.append(f"{donde}: el artículo {k} no existe")
+
+    def lit(articulo, texto, donde):
+        art(articulo, donde)
+        if articulo in arts and _norm(texto) not in _norm(arts[articulo]["texto_literal"]):
+            errores.append(f"{donde}: la frase no está en el art. {articulo}: «{texto[:70]}»")
+
+    plazos = []
+    for p in proc:
+        if "revisado" not in p:
+            errores.append(f"{p['id']}: falta 'revisado'")
+        for k in p["ambito"]["articulos"]:
+            art(k, p["id"])
+        for l in p["ambito"].get("literal", []):
+            lit(l["articulo"], l["texto"], p["id"] + "/ámbito")
+        for f in p["fases"]:
+            d = f["id"]
+            for k in f["articulos"] + f.get("conexiones", []):
+                art(k, d)
+            for pl in f["plazos"]:
+                lit(pl["articulo"], pl["literal"], d + "/plazo")
+                plazos.append({"id": f"{d}-{len(plazos) + 1}", "acto": pl["acto"], "plazo": pl["plazo"],
+                               "computo": "", "articulos": [pl["articulo"]], "bloque": p["bloque"],
+                               "procedimiento": p["id"], "fase": f["fase"], "literal": pl["literal"],
+                               "revisado": p["revisado"]})
+            for r in f["ramas"]:
+                for k in r["articulos"]:
+                    art(k, d)
+                lit(r["literal"]["articulo"], r["literal"]["texto"], d + "/rama")
+            q = f.get("pregunta")
+            if q:
+                lit(q["literal"]["articulo"], q["literal"]["texto"], d + "/pregunta")
+    if errores:
+        sys.exit("ERROR en procedimientos.json:\n- " + "\n- ".join(errores))
+    datos["procedimientos"] = proc
+    datos["plazos"] = plazos
+    print(f"Procedimientos comprobados: {len(proc)} ({sum(len(p['fases']) for p in proc)} fases, "
+          f"{len(plazos)} plazos). Todas las frases literales están en su artículo.")
+
+
+def validar_y_anadir_recursos(datos):
+    """Igual que con los procedimientos: artículos existentes y frases literales comprobadas."""
+    if not os.path.exists(JSON_REC):
+        return
+    with open(JSON_REC, encoding="utf-8") as f:
+        rec = json.load(f)
+    arts = datos["articulos"]
+    errores = []
+    ids = {r["id"] for r in rec["recursos"]}
+
+    def lit(l, donde):
+        a, t = l["articulo"], l["texto"]
+        if a not in arts:
+            errores.append(f"{donde}: el artículo {a} no existe")
+        elif _norm(t) not in _norm(arts[a]["texto_literal"]):
+            errores.append(f"{donde}: la frase no está en el art. {a}: «{t[:70]}»")
+
+    for r in rec["recursos"]:
+        for k in r["articulos"]:
+            if k not in arts:
+                errores.append(f"{r['id']}: el artículo {k} no existe")
+        for l in r["literales"]:
+            lit(l, r["id"])
+    for s in rec["selector"]:
+        if s["recurso"] is not None and s["recurso"] not in ids:
+            errores.append(f"selector «{s['res']}»: recurso {s['recurso']} no definido")
+        lit(s["literal"], "selector «" + s["res"] + "»")
+    if errores:
+        sys.exit("ERROR en recursos.json:\n- " + "\n- ".join(errores))
+    datos["recursos"] = rec["recursos"]
+    datos["selector_recursos"] = rec["selector"]
+    datos["recursos_revisado"] = rec["revisado"]
+    print(f"Recursos comprobados: {len(rec['recursos'])} recursos, {len(rec['selector'])} casos del selector.")
+
+
+def main():
+    with open(JSON_LEY, encoding="utf-8") as f:
+        datos = json.load(f)
+    validar_y_anadir_procedimientos(datos)
+    validar_y_anadir_recursos(datos)
+    js = json.dumps(datos, ensure_ascii=False, separators=(",", ":"))
+    js = js.replace("</", "<\\/")  # no puede cerrar la etiqueta <script>
+    with open(HTML, encoding="utf-8") as f:
+        html = f.read()
+    patron = re.compile(r'(<script id="datos-ley" type="application/json">)(.*?)(</script>)', re.S)
+    if not patron.search(html):
+        sys.exit("ERROR: no encuentro el bloque de datos en lec/index.html")
+    html = patron.sub(lambda m: m.group(1) + js + m.group(3), html, count=1)
+    patron_logo = re.compile(r'const LOGO_SRC = "[^"]*";')
+    if not patron_logo.search(html):
+        sys.exit("ERROR: no encuentro LOGO_SRC en lec/index.html")
+    logo = logo_base64()
+    html = patron_logo.sub(lambda m: f'const LOGO_SRC = "{logo}";', html, count=1)
+    with open(HTML, "w", encoding="utf-8") as f:
+        f.write(html)
+    print(f"lec/index.html actualizado: {len(datos['articulos'])} unidades, "
+          f"{os.path.getsize(HTML) / 1e6:.2f} MB.")
+
+
+if __name__ == "__main__":
+    main()
