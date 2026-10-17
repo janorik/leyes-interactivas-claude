@@ -74,6 +74,25 @@ def claves_rango(est, rango):
     return orden[orden.index(rango[0]): orden.index(rango[1]) + 1]
 
 
+# Pestañas «Procedimientos» y «Recursos»: qué bloques (o fases sueltas) se muestran y en qué grupo.
+# Un elemento es el id de un bloque, {"proc", "fase"} para una fase concreta o {"externo"} para otra ley.
+VISTA_PROCEDIMIENTOS = [
+    {"grupo": "Sumario ordinario",
+     "nota": "La ley lo reparte entre el Libro II (sumario) y el Libro III (juicio oral): se recorre en estos tres bloques, por orden.",
+     "items": ["instruccion", "conclusion", "juicio-oral"]},
+    {"grupo": "Procedimiento abreviado", "items": ["abreviado"]},
+    {"grupo": "Enjuiciamiento rápido", "items": ["rapido"]},
+    {"grupo": "Delitos leves", "items": ["leves"]},
+    {"grupo": "Otros procedimientos", "items": [{"proc": "especiales", "fase": "especiales-803_bis_a"},
+                                                {"externo": "jurado"}, "especiales"]},
+]
+VISTA_RECURSOS = [
+    {"grupo": "Recursos contra sentencias", "items": ["recursos"]},
+    {"grupo": "Recursos contra las resoluciones procesales (Libro I)",
+     "items": [{"proc": "generales", "fase": "generales-216"}]},
+]
+
+
 def hijo(nodos, rotulo):
     for n in nodos:
         if n.get("rotulo") == rotulo:
@@ -158,7 +177,8 @@ def main():
                        "articulos": [todos[0]], "literal": []},
             "revisado": False, "fases": fases})
     with open(destino, "w", encoding="utf-8") as f:
-        json.dump({"procedimientos": procs, "externos": EXTERNOS}, f, ensure_ascii=False, indent=1)
+        json.dump({"procedimientos": procs, "externos": EXTERNOS, "vista_procedimientos": VISTA_PROCEDIMIENTOS,
+                   "vista_recursos": VISTA_RECURSOS}, f, ensure_ascii=False, indent=1)
     print(f"Esqueleto: {len(procs)} bloques, {sum(len(p['fases']) for p in procs)} fases; "
           f"{len(EXTERNOS)} ley(es) externa(s) enlazada(s).")
 

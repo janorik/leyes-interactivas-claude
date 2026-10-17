@@ -83,7 +83,9 @@ repaso:         [{id, pregunta, respuesta, articulos, origen, revisado}]
 
 ## Vistas de la app LEC
 Enfoque acordado con el usuario: app para **aprender**, no solo para leer la ley. El centro es el **mapa procesal**.
-1. **Procesos** (pantalla de inicio): cada procedimiento como ruta de fases en vista de conjunto. Cada fase abre una ficha con: qué ocurre, plazos (con la frase literal del artículo), alternativas desplegables («¿y si no contesta?»), pregunta «Ponte a prueba», conexiones y enlaces a otros procesos. En móvil la ficha se abre como hoja inferior; en ordenador, como panel lateral.
+1. **Mapa** (pantalla de inicio; antes «Procesos»): cada procedimiento como ruta de fases en vista de conjunto. Cada fase abre una ficha con: qué ocurre, plazos (con la frase literal del artículo), alternativas desplegables («¿y si no contesta?»), pregunta «Ponte a prueba», conexiones y enlaces a otros procesos. En móvil la ficha se abre como hoja inferior; en ordenador, como panel lateral.
+1 bis. **Procedimientos**: los mismos bloques del mapa agrupados por tipo de juicio (declarativos, especiales, ejecución, cautelares…), definidos en `vista_procedimientos` de `procedimientos.json`. Pedido por el usuario para estudiar por tipo de juicio.
+1 ter. **Recursos**: pestaña propia. En la LEC abre el selector, las fichas y el test; en una ley sin `recursos.json` muestra los bloques de `vista_recursos`.
 2. **Ley**: árbol navegable (Libros > Títulos > Capítulos > Secciones > Artículos) con el texto literal.
 3. **Buscar**: por número de artículo, por texto de la ley y por fases y plazos del mapa.
 4. **Repaso**: tarjetas generadas de preguntas, alternativas y plazos, con progreso guardado en local.

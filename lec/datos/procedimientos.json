@@ -7227,5 +7227,53 @@
     }
    ]
   }
+ ],
+ "vista_procedimientos": [
+  {
+   "grupo": "Procesos declarativos",
+   "items": [
+    "ordinario",
+    "verbal",
+    "desahucio"
+   ]
+  },
+  {
+   "grupo": "Procesos especiales de reclamación de deudas",
+   "items": [
+    "monitorio",
+    "cambiario"
+   ]
+  },
+  {
+   "grupo": "Familia, menores y capacidad",
+   "items": [
+    "matrimonial",
+    "filiacion",
+    "menores",
+    "sustraccion",
+    "apoyos",
+    "liquidacion"
+   ]
+  },
+  {
+   "grupo": "Herencia",
+   "items": [
+    "herencia",
+    "caudal"
+   ]
+  },
+  {
+   "grupo": "Ejecución",
+   "items": [
+    "ejecucion",
+    "hipotecaria"
+   ]
+  },
+  {
+   "grupo": "Medidas cautelares",
+   "items": [
+    "cautelares"
+   ]
+  }
  ]
 }
