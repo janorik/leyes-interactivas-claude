@@ -2051,7 +2051,7 @@
       "399",
       "403"
      ],
-     "aviso": "Qué casos exigen el MASC lo regula otra ley (no incluida en esta app). Aquí solo se recoge lo que dice la LEC."
+     "aviso": "Qué casos exigen el MASC se regula en la [[Ley Orgánica 1/2025, de 2 de enero, de medidas en materia de eficiencia del Servicio Público de Justicia|https://www.boe.es/buscar/act.php?id=BOE-A-2025-76]]. Aquí solo se recoge lo que dice la LEC."
     },
     {
      "id": "ord-demanda",
@@ -3810,7 +3810,7 @@
      "id": "hip-requisitos",
      "fase": "Requisitos y vencimiento",
      "subtitulo": "Escritura, tasación, domicilio; vencimiento anticipado",
-     "descripcion": "La escritura debe fijar el tipo de subasta (no inferior al 75 % de la tasación) y un domicilio para requerimientos y notificaciones. Para préstamos de personas físicas sobre vivienda rige además la Ley 5/2019.",
+     "descripcion": "La escritura debe fijar el tipo de subasta (no inferior al 75 % de la tasación) y un domicilio para requerimientos y notificaciones. Para préstamos de personas físicas sobre vivienda rige además la [[Ley 5/2019, reguladora de los contratos de crédito inmobiliario|https://www.boe.es/buscar/act.php?id=BOE-A-2019-3814]].",
      "articulos": [
       "682",
       "693"
@@ -3844,7 +3844,7 @@
       "682",
       "693"
      ],
-     "aviso": "Para préstamos de personas físicas sobre vivienda, el art. 693.2 remite al art. 24 de la Ley 5/2019 y al art. 129 bis de la Ley Hipotecaria, que no están en esta app."
+     "aviso": "Para préstamos de personas físicas sobre vivienda, el art. 693.2 remite al art. 24 de la [[Ley 5/2019, reguladora de los contratos de crédito inmobiliario|https://www.boe.es/buscar/act.php?id=BOE-A-2019-3814]] y al art. 129 bis de la [[Ley Hipotecaria|https://www.boe.es/buscar/act.php?id=BOE-A-1946-2453]]."
     },
     {
      "id": "hip-demanda",

@@ -41,6 +41,8 @@ leyes-interactivas-claude/
 - Extrae del PDF la fecha de la versión consolidada. Si no la encuentras, pregunta al usuario.
 - La app muestra esa fecha y el aviso: "Texto consolidado del BOE de carácter informativo, sin valor jurídico".
 - Solo versión vigente. No se comparan reformas.
+- **Otras leyes citadas.** Cuando la LEC (u otra ley de la app) remita a una ley distinta, o el contenido elaborado necesite mencionarla, no se escribe «otra ley»: se pone «se regula en la [nombre de la ley]» con un enlace a su texto consolidado en el BOE (`https://www.boe.es/buscar/act.php?id=BOE-A-…`). Formato en los JSON: `[[Nombre de la ley|URL del BOE]]` dentro de `descripcion` o `aviso`; `scripts/insertar_datos.py` rechaza enlaces mal formados. No se copia el texto de esa otra ley. Si el nombre, la fecha o la referencia BOE no salen del texto consolidado de la app, se anota en `PENDIENTES.md` para que el usuario los compruebe.
+- **Si una regla impide algo útil, avisa y pregunta.** Cuando una regla de este archivo te lleve a dejar fuera algo que al usuario le serviría (por ejemplo, nombrar o enlazar otra ley), no lo omitas en silencio: díselo, explica qué regla lo impide y pregúntale qué prefiere.
 
 ## Alcance de la LEC
 **Texto literal:** la LEC completa en el árbol y el buscador. Se extrae por script, así no quedan huecos cuando un artículo remite a otro.

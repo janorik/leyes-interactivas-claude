@@ -48,6 +48,10 @@ def _norm(t):
     return re.sub(r"\s+", " ", t).strip()
 
 
+# Enlace a una ley distinta de la LEC: [[Nombre de la ley|https://www.boe.es/...]]
+RE_LEY_EXT = re.compile(r"\[\[[^|\]]+\|https://www\.boe\.es/[^\]\s]+\]\]")
+
+
 def validar_y_anadir_procedimientos(datos):
     """Comprueba el contenido elaborado contra el texto literal y lo añade a los datos.
 
@@ -82,6 +86,10 @@ def validar_y_anadir_procedimientos(datos):
             lit(l["articulo"], l["texto"], p["id"] + "/ámbito")
         for f in p["fases"]:
             d = f["id"]
+            for campo in ("descripcion", "aviso"):
+                txt = f.get(campo, "")
+                if txt.count("[[") != len(RE_LEY_EXT.findall(txt)):
+                    errores.append(f"{d}/{campo}: enlace a otra ley mal formado (use [[Nombre|https://www.boe.es/...]])")
             for k in f["articulos"] + f.get("conexiones", []):
                 art(k, d)
             for pl in f["plazos"]:
