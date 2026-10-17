@@ -134,3 +134,10 @@ No empieces la siguiente fase sin su visto bueno.
 - **Ampliación 2 (hecha)** — Bloques del núcleo que faltaban: disposiciones generales (competencia, arts. 36-67; partes y postulación, 6-35; actuaciones, plazos, comunicaciones y nulidad, 129-247; costas, 241-246 y 394-398) y prueba (arts. 217 y 281-386). Pendientes de revisión del usuario.
 - **F7** — Portada (`/index.html`) que enlaza a cada ley, preparada para añadir LECrim, LRJS y ET. Hecha: se genera con `python3 scripts/generar_portada.py` a partir de `scripts/leyes.json`. Para añadir una ley: crear su carpeta con su `index.html` y poner su estado a «disponible» en `leyes.json`. Los enlaces apuntan a `carpeta/index.html` para que funcionen también en local.
 - **Segunda parte** — Calculadora de plazos con calendario.
+
+## LECrim
+- Fuente: `fuentes/LECrim_BOE-A-1882-6036.pdf` (Real Decreto de 14 de septiembre de 1882, BOE-A-1882-6036), texto consolidado con última modificación de 09 de abril de 2026. Sin XML: se extrae solo del PDF con `python3 scripts/extraer_lecrim.py`, que lo contrasta con pdftotext y escribe `lecrim/datos/informe_control.md`.
+- App: `lecrim/index.html`, generada con `python3 scripts/insertar_datos.py lecrim`. La app es la misma para todas las leyes: `lec/index.html` es la plantilla y el script la copia con los datos de cada ley. Una mejora de la app se hace en `lec/index.html` y se regeneran todas.
+- Mientras una ley no tenga mapa procesal, la app abre en «Ley» y oculta «Procesos» y «Repaso».
+- **F1 LECrim (hecha):** texto literal completo (1059 artículos y 10 disposiciones), árbol, buscador, notas y portada. Pendiente de revisión del usuario.
+- **Contenido elaborado de la LECrim:** bloques por decidir con el usuario a partir del índice real del PDF. No empezar sin su visto bueno.

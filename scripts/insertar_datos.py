@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-"""Inserta lec/datos/lec.json y el logo dentro de lec/index.html.
+"""Inserta los datos de una ley y el logo dentro de su index.html.
 
-Uso:  python3 scripts/insertar_datos.py
+Uso:  python3 scripts/insertar_datos.py           (LEC)
+      python3 scripts/insertar_datos.py lecrim    (LECrim; vale para cualquier ley con carpeta propia)
 Se puede ejecutar cuantas veces se quiera: sustituye los datos anteriores.
+La app es la misma para todas las leyes: lec/index.html hace de plantilla y se copia a la
+carpeta de cada ley con sus datos (así una mejora de la app llega a todas).
 El logo (assets/logo.*) se recorta al emblema, se reduce y se incrusta en base64,
 para que lec/index.html funcione sin conexión y sin archivos externos.
 """
@@ -15,10 +18,12 @@ import re
 import sys
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-HTML = os.path.join(RAIZ, "lec", "index.html")
-JSON_LEY = os.path.join(RAIZ, "lec", "datos", "lec.json")
-JSON_PROC = os.path.join(RAIZ, "lec", "datos", "procedimientos.json")
-JSON_REC = os.path.join(RAIZ, "lec", "datos", "recursos.json")
+LEY = sys.argv[1] if len(sys.argv) > 1 else "lec"
+PLANTILLA = os.path.join(RAIZ, "lec", "index.html")
+HTML = os.path.join(RAIZ, LEY, "index.html")
+JSON_LEY = os.path.join(RAIZ, LEY, "datos", LEY + ".json")
+JSON_PROC = os.path.join(RAIZ, LEY, "datos", "procedimientos.json")
+JSON_REC = os.path.join(RAIZ, LEY, "datos", "recursos.json")
 
 # Recorte del emblema "N" en el logo cuadrado de 2048 px (proporciones relativas).
 RECORTE = (680 / 2048, 930 / 2048, 1420 / 2048, 1500 / 2048)
@@ -151,24 +156,29 @@ def validar_y_anadir_recursos(datos):
 def main():
     with open(JSON_LEY, encoding="utf-8") as f:
         datos = json.load(f)
+    # Nombre corto de la ley (cabecera del árbol), el mismo que en la portada.
+    with open(os.path.join(RAIZ, "scripts", "leyes.json"), encoding="utf-8") as f:
+        ficha = next((l for l in json.load(f)["leyes"] if l["id"] == LEY), None)
+    if ficha:
+        datos["ley"]["nombre_corto"] = ficha["nombre"]
     validar_y_anadir_procedimientos(datos)
     validar_y_anadir_recursos(datos)
     js = json.dumps(datos, ensure_ascii=False, separators=(",", ":"))
     js = js.replace("</", "<\\/")  # no puede cerrar la etiqueta <script>
-    with open(HTML, encoding="utf-8") as f:
+    with open(PLANTILLA, encoding="utf-8") as f:
         html = f.read()
     patron = re.compile(r'(<script id="datos-ley" type="application/json">)(.*?)(</script>)', re.S)
     if not patron.search(html):
-        sys.exit("ERROR: no encuentro el bloque de datos en lec/index.html")
+        sys.exit("ERROR: no encuentro el bloque de datos en la plantilla lec/index.html")
     html = patron.sub(lambda m: m.group(1) + js + m.group(3), html, count=1)
     patron_logo = re.compile(r'const LOGO_SRC = "[^"]*";')
     if not patron_logo.search(html):
-        sys.exit("ERROR: no encuentro LOGO_SRC en lec/index.html")
+        sys.exit("ERROR: no encuentro LOGO_SRC en la plantilla lec/index.html")
     logo = logo_base64()
     html = patron_logo.sub(lambda m: f'const LOGO_SRC = "{logo}";', html, count=1)
     with open(HTML, "w", encoding="utf-8") as f:
         f.write(html)
-    print(f"lec/index.html actualizado: {len(datos['articulos'])} unidades, "
+    print(f"{LEY}/index.html actualizado: {len(datos['articulos'])} unidades, "
           f"{os.path.getsize(HTML) / 1e6:.2f} MB.")
 
 

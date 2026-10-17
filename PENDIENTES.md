@@ -93,4 +93,10 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 ## LECrim — Ley de Enjuiciamiento Criminal
 
-(Se irá llenando al empezar la LECrim.)
+### Puntos de extracción (F1)
+
+- [ ] **Fuente solo PDF:** no hay XML de la LECrim y desde aquí no hay acceso a la API del BOE. El texto se ha extraído del PDF y se ha contrastado con una segunda lectura independiente del mismo PDF (pdftotext): 7 tramos distintos, todos de maquetación (ver `lecrim/datos/informe_control.md`). Si quieres más seguridad, exporta el XML del PDF como hiciste con la LEC.
+- [ ] **Real Decreto de aprobación:** sus artículos 1.º a 5.º van como «Real Decreto de aprobación» (al principio del árbol), para que no se confundan con los arts. 1 a 5 de la ley.
+- [ ] **Rangos de artículos:** el BOE agrupa algunos derogados o sin contenido en una sola entrada (por ejemplo, «Artículos 48 a 50»). En la app aparecen así; buscar «49» lleva a esa entrada.
+- [ ] **Nota «(*)» sobre el Libro V/VII:** el BOE la sitúa junto al art. 784; se muestra como nota de ese artículo.
+- [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).
