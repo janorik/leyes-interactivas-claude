@@ -41,6 +41,8 @@ leyes-interactivas-claude/
 - Extrae del PDF la fecha de la versión consolidada. Si no la encuentras, pregunta al usuario.
 - La app muestra esa fecha y el aviso: "Texto consolidado del BOE de carácter informativo, sin valor jurídico".
 - Solo versión vigente. No se comparan reformas.
+- **Otras leyes citadas.** Cuando la LEC (u otra ley de la app) remita a una ley distinta, o el contenido elaborado necesite mencionarla, no se escribe «otra ley»: se pone «se regula en la [nombre de la ley]» con un enlace a su texto consolidado en el BOE (`https://www.boe.es/buscar/act.php?id=BOE-A-…`). Formato en los JSON: `[[Nombre de la ley|URL del BOE]]` dentro de `descripcion` o `aviso`; `scripts/insertar_datos.py` rechaza enlaces mal formados. No se copia el texto de esa otra ley. Si el nombre, la fecha o la referencia BOE no salen del texto consolidado de la app, se anota en `PENDIENTES.md` para que el usuario los compruebe.
+- **Si una regla impide algo útil, avisa y pregunta.** Cuando una regla de este archivo te lleve a dejar fuera algo que al usuario le serviría (por ejemplo, nombrar o enlazar otra ley), no lo omitas en silencio: díselo, explica qué regla lo impide y pregúntale qué prefiere.
 
 ## Alcance de la LEC
 **Texto literal:** la LEC completa en el árbol y el buscador. Se extrae por script, así no quedan huecos cuando un artículo remite a otro.
@@ -129,5 +131,6 @@ No empieces la siguiente fase sin su visto bueno.
 - **F5** — Marcadores y notas (☆ y ✎ en artículos, fases y recursos; pestaña «Notas»; búsqueda en notas; copia de seguridad descargable e importable para pasar del móvil al PC). Hecha.
 - **F6** — Procesos especiales: nulidad, separación y divorcio (arts. 748-777), medidas judiciales de apoyo (756-763), división de herencia (782-789), cambiario (819-827) y ejecución hipotecaria (681-698). Hecha; pendiente de revisión del usuario.
 - **Ampliación (hecha)** — Procesos añadidos a petición del usuario: desahucio por falta de pago (arts. 22.4, 437-441, 447, 449, 549), filiación (764-768), protección de menores y adopción (778 bis-ter, 779-781), sustracción internacional de menores (778 quáter-sexies), liquidación del régimen económico matrimonial (806-811) e intervención y administración del caudal hereditario (790-805). Pendientes de revisión del usuario.
+- **Ampliación 2 (hecha)** — Bloques del núcleo que faltaban: disposiciones generales (competencia, arts. 36-67; partes y postulación, 6-35; actuaciones, plazos, comunicaciones y nulidad, 129-247; costas, 241-246 y 394-398) y prueba (arts. 217 y 281-386). Pendientes de revisión del usuario.
 - **F7** — Portada (`/index.html`) que enlaza a cada ley, preparada para añadir LECrim, LRJS y ET. Hecha: se genera con `python3 scripts/generar_portada.py` a partir de `scripts/leyes.json`. Para añadir una ley: crear su carpeta con su `index.html` y poner su estado a «disponible» en `leyes.json`. Los enlaces apuntan a `carpeta/index.html` para que funcionen también en local.
 - **Segunda parte** — Calculadora de plazos con calendario.

@@ -2,6 +2,1980 @@
  "_nota": "Contenido ELABORADO (no literal). Todo con revisado:false hasta que el usuario lo valide. Cada 'literal' debe aparecer tal cual en el artículo citado: lo comprueba scripts/insertar_datos.py.",
  "procedimientos": [
   {
+   "id": "competencia",
+   "nombre": "Jurisdicción y competencia",
+   "bloque": "disposiciones generales",
+   "grupo": "Libro I · Disposiciones generales",
+   "resumen": "Jurisdicción, prejudicialidad, competencia objetiva, territorial y funcional, declinatoria y recursos. Temas, no fases de un procedimiento.",
+   "ambito": {
+    "corto": "Arts. 36-67",
+    "texto": "Título II del Libro I. Cada «fase» es un tema de estudio.",
+    "articulos": [
+     "36",
+     "45",
+     "50",
+     "63"
+    ],
+    "literal": [
+     {
+      "articulo": "45",
+      "texto": "Corresponde a los Juzgados de Primera Instancia el conocimiento, en primera instancia, de todos los asuntos civiles que por disposición legal expresa no se hallen atribuidos a otros tribunales."
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "com-jurisdiccion",
+     "fase": "Jurisdicción y prejudicialidad",
+     "subtitulo": "Abstención y suspensión por causa penal",
+     "descripcion": "El tribunal civil se abstiene, de oficio y oídas las partes y el Fiscal, si el asunto corresponde a otro orden, a otro Estado o hay inmunidad. Ante apariencia de delito lo comunica al Fiscal; solo suspende si hay causa criminal con influencia decisiva y el pleito está pendiente solo de sentencia.",
+     "articulos": [
+      "36",
+      "37",
+      "38",
+      "40"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Aparece un hecho con apariencia de delito",
+       "entonces": "Se pone en conocimiento del Fiscal; la suspensión solo si se dan los requisitos del art. 40.2.",
+       "articulos": [
+        "40"
+       ],
+       "literal": {
+        "articulo": "40",
+        "texto": "no se ordenará la suspensión de las actuaciones del proceso civil sino cuando concurran las siguientes circunstancias"
+       }
+      },
+      {
+       "si": "Procede suspender por prejudicialidad penal",
+       "entonces": "Se acuerda por auto cuando el proceso esté pendiente solo de sentencia (salvo falsedad documental).",
+       "articulos": [
+        "40"
+       ],
+       "literal": {
+        "articulo": "40",
+        "texto": "se acordará, mediante auto, una vez que el proceso esté pendiente sólo de sentencia"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se aprecia de oficio la falta de jurisdicción?",
+      "a": "Sí, tan pronto como se advierta, con audiencia de las partes y del Fiscal.",
+      "articulos": [
+       "38"
+      ],
+      "literal": {
+       "articulo": "38",
+       "texto": "se acordará de oficio, con audiencia de las partes y del Ministerio Fiscal"
+      }
+     },
+     "conexiones": [
+      "36",
+      "37",
+      "38",
+      "40",
+      "41"
+     ]
+    },
+    {
+     "id": "com-objetiva",
+     "fase": "Competencia objetiva",
+     "subtitulo": "Primera Instancia como regla",
+     "descripcion": "Los Juzgados de Primera Instancia conocen de todo lo no atribuido a otros tribunales. La falta de competencia objetiva se aprecia de oficio en cualquier momento; el demandado puede alegarla por declinatoria.",
+     "articulos": [
+      "45",
+      "48",
+      "49"
+     ],
+     "plazos": [
+      {
+       "acto": "Vista a las partes y al Fiscal sobre la falta de competencia objetiva",
+       "plazo": "10 días",
+       "articulo": "48",
+       "literal": "dará vista a las partes y al Ministerio Fiscal por plazo común de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "En apelación o casación se ve que el juzgado de instancia no era objetivamente competente",
+       "entonces": "Nulidad de todo lo actuado, con reserva de acciones.",
+       "articulos": [
+        "48"
+       ],
+       "literal": {
+        "articulo": "48",
+        "texto": "decretará la nulidad de todo lo actuado"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo puede el demandado denunciar la falta de competencia objetiva?",
+      "a": "Mediante la declinatoria.",
+      "articulos": [
+       "49"
+      ],
+      "literal": {
+       "articulo": "49",
+       "texto": "El demandado podrá denunciar la falta de competencia objetiva mediante la declinatoria."
+      }
+     },
+     "conexiones": [
+      "45",
+      "48",
+      "49",
+      "225"
+     ]
+    },
+    {
+     "id": "com-territorial",
+     "fase": "Competencia territorial y sumisión",
+     "subtitulo": "Fueros generales, sumisión expresa y tácita",
+     "descripcion": "Regla: domicilio del demandado (personas físicas) o del domicilio social (jurídicas), con fueros adicionales. Las reglas territoriales son dispositivas salvo las imperativas. No vale la sumisión en el verbal, ni la expresa en contratos de adhesión o con consumidores.",
+     "articulos": [
+      "50",
+      "51",
+      "54",
+      "55",
+      "56",
+      "58",
+      "59"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Es un juicio verbal",
+       "entonces": "No es válida la sumisión expresa ni tácita.",
+       "articulos": [
+        "54"
+       ],
+       "literal": {
+        "articulo": "54",
+        "texto": "Tampoco será válida la sumisión expresa o tácita en los asuntos que deban decidirse por el juicio verbal."
+       }
+      },
+      {
+       "si": "El demandado se persona y hace cualquier gestión distinta de la declinatoria",
+       "entonces": "Queda sometido tácitamente.",
+       "articulos": [
+        "56"
+       ],
+       "literal": {
+        "articulo": "56",
+        "texto": "cualquier gestión que no sea la de proponer en forma la declinatoria"
+       }
+      },
+      {
+       "si": "Contrato con consumidor con cláusula de sumisión",
+       "entonces": "La sumisión expresa no es válida.",
+       "articulos": [
+        "54"
+       ],
+       "literal": {
+        "articulo": "54",
+        "texto": "No será válida la sumisión expresa contenida en contratos de adhesión, o que contengan condiciones generales impuestas por una de las partes, o que se hayan celebrado con consumidores o usuarios."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Fuera de las reglas imperativas, ¿puede el juez apreciar de oficio su falta de competencia territorial?",
+      "a": "No: solo si el demandado la propone en tiempo y forma por declinatoria.",
+      "articulos": [
+       "59"
+      ],
+      "literal": {
+       "articulo": "59",
+       "texto": "solamente podrá ser apreciada cuando el demandado o quienes puedan ser parte legítima en el juicio propusieren en tiempo y forma la declinatoria"
+      }
+     },
+     "conexiones": [
+      "50",
+      "51",
+      "52",
+      "54",
+      "55",
+      "56",
+      "58",
+      "59",
+      "60"
+     ]
+    },
+    {
+     "id": "com-funcional",
+     "fase": "Competencia funcional",
+     "subtitulo": "Por conexión",
+     "descripcion": "El tribunal competente para el pleito lo es también para sus incidencias, para ejecutar sus resoluciones y la sentencia, y los convenios y transacciones que apruebe.",
+     "articulos": [
+      "61"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "pregunta": {
+      "q": "¿Quién ejecuta la sentencia, como regla?",
+      "a": "El mismo tribunal competente para conocer del pleito.",
+      "articulos": [
+       "61"
+      ],
+      "literal": {
+       "articulo": "61",
+       "texto": "y para la ejecución de la sentencia o convenios y transacciones que aprobare"
+      }
+     },
+     "conexiones": [
+      "61",
+      "545"
+     ]
+    },
+    {
+     "id": "com-declinatoria",
+     "fase": "Declinatoria",
+     "subtitulo": "Plazo, efectos y tramitación",
+     "descripcion": "Sirve para denunciar falta de jurisdicción (tribunales extranjeros, otro orden, arbitraje o mediación) y de competencia de todo tipo. Se presenta en los primeros 10 días del plazo para contestar y suspende ese plazo y el procedimiento.",
+     "articulos": [
+      "63",
+      "64",
+      "65"
+     ],
+     "plazos": [
+      {
+       "acto": "Proponer la declinatoria",
+       "plazo": "Primeros 10 días del plazo para contestar",
+       "articulo": "64",
+       "literal": "La declinatoria se habrá de proponer dentro de los diez primeros días del plazo para contestar a la demanda"
+      },
+      {
+       "acto": "Alegaciones de los demás litigantes",
+       "plazo": "5 días",
+       "articulo": "65",
+       "literal": "que dispondrán de un plazo de cinco días, contados desde la notificación de la declinatoria"
+      },
+      {
+       "acto": "Decisión del tribunal",
+       "plazo": "Dentro del quinto día",
+       "articulo": "65",
+       "literal": "que decidirá la cuestión dentro del quinto día siguiente"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se presenta la declinatoria",
+       "entonces": "Se suspenden el plazo para contestar y el curso del procedimiento hasta que se resuelva.",
+       "articulos": [
+        "64"
+       ],
+       "literal": {
+        "articulo": "64",
+        "texto": "surtirá el efecto de suspender, hasta que sea resuelta, el plazo para contestar y el curso del procedimiento principal"
+       }
+      },
+      {
+       "si": "Se basa en falta de competencia territorial",
+       "entonces": "Debe indicar el tribunal que se considera competente.",
+       "articulos": [
+        "63"
+       ],
+       "literal": {
+        "articulo": "63",
+        "texto": "habrá de indicar el tribunal al que, por considerarse territorialmente competente, habrían de remitirse las actuaciones"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Impide la declinatoria pedir medidas cautelares urgentes?",
+      "a": "No: pueden practicarse aseguramiento de prueba y cautelares urgentes, salvo que el demandado preste caución.",
+      "articulos": [
+       "64"
+      ],
+      "literal": {
+       "articulo": "64",
+       "texto": "no obstará a que el tribunal ante el que penda el asunto pueda practicar, a instancia de parte legítima, cualesquiera actuaciones de aseguramiento de prueba"
+      }
+     },
+     "conexiones": [
+      "63",
+      "64",
+      "65"
+     ]
+    },
+    {
+     "id": "com-recursos",
+     "fase": "Recursos en materia de competencia",
+     "subtitulo": "Apelación, reposición o ninguno",
+     "descripcion": "Contra el auto que se abstiene por falta de competencia internacional, jurisdicción, arbitraje o mediación o competencia objetiva: apelación. Contra el que las rechaza: solo reposición. En competencia territorial: ningún recurso.",
+     "articulos": [
+      "66",
+      "67"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El auto se abstiene por falta de competencia objetiva",
+       "entonces": "Apelación.",
+       "articulos": [
+        "66"
+       ],
+       "literal": {
+        "articulo": "66",
+        "texto": "cabrá recurso de apelación"
+       }
+      },
+      {
+       "si": "El auto rechaza la falta de jurisdicción o de competencia objetiva",
+       "entonces": "Solo reposición; puede alegarse en la apelación contra la sentencia.",
+       "articulos": [
+        "66"
+       ],
+       "literal": {
+        "articulo": "66",
+        "texto": "sólo cabrá recurso de reposición, sin perjuicio de alegar la falta de esos presupuestos procesales en la apelación contra la sentencia definitiva"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué recurso cabe contra el auto que resuelve sobre la competencia territorial?",
+      "a": "Ninguno.",
+      "articulos": [
+       "67"
+      ],
+      "literal": {
+       "articulo": "67",
+       "texto": "Contra los autos que resuelvan sobre la competencia territorial no se dará recurso alguno."
+      }
+     },
+     "conexiones": [
+      "66",
+      "67"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "partes",
+   "nombre": "Partes, postulación y disposición del proceso",
+   "bloque": "disposiciones generales",
+   "grupo": "Libro I · Disposiciones generales",
+   "resumen": "Capacidad y legitimación, litisconsorcio e intervención, sucesión procesal, renuncia, desistimiento, allanamiento y transacción, procurador y abogado.",
+   "ambito": {
+    "corto": "Arts. 6-35",
+    "texto": "Título I del Libro I. Cada «fase» es un tema de estudio.",
+    "articulos": [
+     "6",
+     "10",
+     "23",
+     "31"
+    ],
+    "literal": [
+     {
+      "articulo": "10",
+      "texto": "Serán considerados partes legítimas quienes comparezcan y actúen en juicio como titulares de la relación jurídica u objeto litigioso."
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "par-capacidad",
+     "fase": "Capacidad y legitimación",
+     "subtitulo": "Quién puede ser parte",
+     "descripcion": "Capacidad para ser parte (art. 6) y procesal (art. 7), apreciables de oficio. Son partes legítimas los titulares de la relación jurídica, salvo legitimación legal distinta.",
+     "articulos": [
+      "6",
+      "7",
+      "9",
+      "10"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El tribunal advierte falta de capacidad",
+       "entonces": "Puede apreciarla de oficio en cualquier momento.",
+       "articulos": [
+        "9"
+       ],
+       "literal": {
+        "articulo": "9",
+        "texto": "podrá ser apreciada de oficio por el tribunal en cualquier momento del proceso"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Pueden ser parte las entidades sin personalidad jurídica?",
+      "a": "Sí, aquellas a las que la ley reconozca capacidad para ser parte (y las del art. 6.2 como demandadas).",
+      "articulos": [
+       "6"
+      ],
+      "literal": {
+       "articulo": "6",
+       "texto": "Las entidades sin personalidad jurídica a las que la ley reconozca capacidad para ser parte."
+      }
+     },
+     "conexiones": [
+      "6",
+      "7",
+      "9",
+      "10",
+      "11"
+     ]
+    },
+    {
+     "id": "par-pluralidad",
+     "fase": "Litisconsorcio e intervención",
+     "subtitulo": "Varias partes y terceros",
+     "descripcion": "Litisconsorcio voluntario si las acciones nacen del mismo título o causa; necesario cuando la tutela solo pueda darse frente a todos. Puede intervenir quien tenga interés directo y legítimo; el demandado puede llamar a terceros cuando la ley lo permita.",
+     "articulos": [
+      "12",
+      "13",
+      "14"
+     ],
+     "plazos": [
+      {
+       "acto": "Resolver sobre la intervención",
+       "plazo": "10 días (audiencia común)",
+       "articulo": "13",
+       "literal": "previa audiencia de las partes personadas, en el plazo común de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La tutela solo puede hacerse efectiva frente a varios conjuntamente",
+       "entonces": "Todos han de ser demandados (litisconsorcio necesario).",
+       "articulos": [
+        "12"
+       ],
+       "literal": {
+        "articulo": "12",
+        "texto": "todos ellos habrán de ser demandados, como litisconsortes"
+       }
+      },
+      {
+       "si": "El demandado pide llamar a un tercero",
+       "entonces": "Lo solicita en el plazo de contestación, que se interrumpe.",
+       "articulos": [
+        "14"
+       ],
+       "literal": {
+        "articulo": "14",
+        "texto": "ordenará la interrupción del plazo para contestar a la demanda"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Retrotrae las actuaciones la admisión de un interviniente?",
+      "a": "No, pero será parte a todos los efectos.",
+      "articulos": [
+       "13"
+      ],
+      "literal": {
+       "articulo": "13",
+       "texto": "Admitida la intervención, no se retrotraerán las actuaciones"
+      }
+     },
+     "conexiones": [
+      "12",
+      "13",
+      "14",
+      "416"
+     ]
+    },
+    {
+     "id": "par-sucesion",
+     "fase": "Sucesión procesal",
+     "subtitulo": "Muerte de un litigante",
+     "descripcion": "Si fallece un litigante, sus sucesores pueden ocupar su posición. Se suspende el proceso hasta que se personen o se les emplace.",
+     "articulos": [
+      "16"
+     ],
+     "plazos": [
+      {
+       "acto": "Personación del sucesor (si consta la defunción)",
+       "plazo": "5 días",
+       "articulo": "16",
+       "literal": "no se personare el sucesor en el plazo de los cinco días siguientes"
+      },
+      {
+       "acto": "Comparecencia de los sucesores emplazados",
+       "plazo": "10 días",
+       "articulo": "16",
+       "literal": "emplazándoles para comparecer en el plazo de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se comunica la defunción de un litigante",
+       "entonces": "El LAJ suspende el proceso y da traslado a las demás partes.",
+       "articulos": [
+        "16"
+       ],
+       "literal": {
+        "articulo": "16",
+        "texto": "el Letrado de la Administración de Justicia acordará la suspensión del proceso"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quién ocupa la posición del litigante fallecido?",
+      "a": "Quienes le sucedan mortis causa en lo que sea objeto del juicio.",
+      "articulos": [
+       "16"
+      ],
+      "literal": {
+       "articulo": "16",
+       "texto": "la persona o personas que sucedan al causante podrán continuar ocupando en dicho juicio la misma posición que éste"
+      }
+     },
+     "conexiones": [
+      "16",
+      "17",
+      "18"
+     ]
+    },
+    {
+     "id": "par-disposicion",
+     "fase": "Renuncia, desistimiento, allanamiento y transacción",
+     "subtitulo": "Poder de disposición",
+     "descripcion": "Las partes pueden disponer del objeto salvo prohibición legal. Renuncia: sentencia absolutoria. Desistimiento: unilateral antes del emplazamiento o con demandado rebelde; si no, traslado al demandado. Allanamiento total: sentencia condenatoria.",
+     "articulos": [
+      "19",
+      "20",
+      "21"
+     ],
+     "plazos": [
+      {
+       "acto": "Traslado al demandado del desistimiento",
+       "plazo": "10 días",
+       "articulo": "20",
+       "literal": "del escrito de desistimiento se le dará traslado por plazo de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El actor renuncia a la acción",
+       "entonces": "Sentencia absolviendo al demandado.",
+       "articulos": [
+        "20"
+       ],
+       "literal": {
+        "articulo": "20",
+        "texto": "el tribunal dictará sentencia absolviendo al demandado"
+       }
+      },
+      {
+       "si": "El demandado no se opone al desistimiento",
+       "entonces": "Decreto de sobreseimiento; el actor puede promover nuevo juicio.",
+       "articulos": [
+        "20"
+       ],
+       "literal": {
+        "articulo": "20",
+        "texto": "el actor podrá promover nuevo juicio sobre el mismo objeto"
+       }
+      },
+      {
+       "si": "Allanamiento parcial",
+       "entonces": "Puede dictarse auto ejecutable sobre lo allanado si cabe pronunciamiento separado.",
+       "articulos": [
+        "21"
+       ],
+       "literal": {
+        "articulo": "21",
+        "texto": "podrá dictar de inmediato auto acogiendo las pretensiones que hayan sido objeto de dicho allanamiento"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hasta cuándo pueden realizarse actos de disposición?",
+      "a": "En cualquier momento de la instancia, recursos o ejecución, salvo una vez señalada la deliberación, votación y fallo de la casación.",
+      "articulos": [
+       "19"
+      ],
+      "literal": {
+       "articulo": "19",
+       "texto": "no podrán realizarse una vez señalado día para la deliberación, votación y fallo del recurso de casación"
+      }
+     },
+     "conexiones": [
+      "19",
+      "20",
+      "21",
+      "22",
+      "395",
+      "396",
+      "751"
+     ]
+    },
+    {
+     "id": "par-postulacion",
+     "fase": "Procurador y abogado",
+     "subtitulo": "Cuándo son preceptivos",
+     "descripcion": "Regla: procurador y abogado. Excepciones: juicios verbales por cuantía no superior a 2.000 € y petición inicial del monitorio, entre otras. Si no son preceptivos y una parte los usa, debe comunicarlo para que la otra pueda hacer lo mismo.",
+     "articulos": [
+      "23",
+      "24",
+      "31",
+      "32"
+     ],
+     "plazos": [
+      {
+       "acto": "Comunicar que el demandado se valdrá de abogado y procurador (no preceptivos)",
+       "plazo": "3 días",
+       "articulo": "32",
+       "literal": "lo comunicará al tribunal dentro de los tres días siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Verbal por cuantía de hasta 2.000 €",
+       "entonces": "Pueden comparecer por sí mismos, sin procurador ni abogado.",
+       "articulos": [
+        "23",
+        "31"
+       ],
+       "literal": {
+        "articulo": "23",
+        "texto": "En los juicios verbales cuya determinación se haya efectuado por razón de la cuantía y ésta no exceda de 2.000 euros"
+       }
+      },
+      {
+       "si": "Un escrito carece de firma de abogado cuando es preceptiva",
+       "entonces": "No puede proveerse.",
+       "articulos": [
+        "31"
+       ],
+       "literal": {
+        "articulo": "31",
+        "texto": "No podrá proveerse a ninguna solicitud que no lleve la firma de abogado."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo puede otorgarse el poder al procurador?",
+      "a": "Apud acta por comparecencia electrónica en el registro de apoderamientos, o ante notario o ante el LAJ, con inscripción en el registro.",
+      "articulos": [
+       "24"
+      ],
+      "literal": {
+       "articulo": "24",
+       "texto": "Por comparecencia electrónica, a través de una sede judicial electrónica, en el registro electrónico de apoderamientos judiciales apud acta."
+      }
+     },
+     "conexiones": [
+      "23",
+      "24",
+      "31",
+      "32",
+      "225"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "actuaciones",
+   "nombre": "Actuaciones procesales: plazos, comunicaciones y nulidad",
+   "bloque": "disposiciones generales",
+   "grupo": "Libro I · Disposiciones generales",
+   "resumen": "Días y horas hábiles, cómputo de plazos, preclusión, actos de comunicación, nulidad de actuaciones, caducidad de la instancia y buena fe procesal.",
+   "ambito": {
+    "corto": "Arts. 129-247",
+    "texto": "Título V a VIII del Libro I. Cada «fase» es un tema de estudio. Útil para todos los plazos del mapa procesal.",
+    "articulos": [
+     "130",
+     "133",
+     "225"
+    ],
+    "literal": [
+     {
+      "articulo": "130",
+      "texto": "Las actuaciones judiciales habrán de practicarse en días y horas hábiles."
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "act-habiles",
+     "fase": "Días y horas hábiles",
+     "subtitulo": "Agosto, Navidad, fines de semana y festivos",
+     "descripcion": "Son inhábiles los sábados, domingos, del 24 de diciembre al 6 de enero, fiestas nacionales y festivos autonómicos o locales, y todo agosto. Horas hábiles de 8 a 20 (hasta las 22 para comunicaciones y ejecución). Puede habilitarse por urgencia.",
+     "articulos": [
+      "130",
+      "131"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "La actuación es urgente",
+       "entonces": "Agosto es hábil sin necesidad de habilitación.",
+       "articulos": [
+        "131"
+       ],
+       "literal": {
+        "articulo": "131",
+        "texto": "serán hábiles los días del mes de agosto, sin necesidad de expresa habilitación"
+       }
+      },
+      {
+       "si": "Se recurre la habilitación de días u horas",
+       "entonces": "No se admite recurso.",
+       "articulos": [
+        "131"
+       ],
+       "literal": {
+        "articulo": "131",
+        "texto": "Contra las resoluciones de habilitación de días y horas inhábiles no se admitirá recurso alguno."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Es hábil agosto a efectos procesales?",
+      "a": "No, salvo para actuaciones urgentes.",
+      "articulos": [
+       "130"
+      ],
+      "literal": {
+       "articulo": "130",
+       "texto": "También serán inhábiles los días del mes de agosto."
+      }
+     },
+     "conexiones": [
+      "130",
+      "131"
+     ]
+    },
+    {
+     "id": "act-computo",
+     "fase": "Cómputo de los plazos",
+     "subtitulo": "Día siguiente, hábiles, de fecha a fecha",
+     "descripcion": "Los plazos empiezan a correr el día siguiente a la comunicación y vencen a las 24 horas del último día. Por días: se excluyen los inhábiles. Por meses o años: de fecha a fecha. Si vencen en inhábil, se prorrogan al siguiente hábil. Son improrrogables, salvo fuerza mayor.",
+     "articulos": [
+      "133",
+      "134",
+      "136"
+     ],
+     "plazos": [
+      {
+       "acto": "Interrupción por fuerza mayor que afecte al abogado o procurador",
+       "plazo": "3 días hábiles",
+       "articulo": "134",
+       "literal": "durante un plazo de tres días hábiles"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El plazo es por meses",
+       "entonces": "Se computa de fecha a fecha; si no hay día equivalente, vence el último del mes.",
+       "articulos": [
+        "133"
+       ],
+       "literal": {
+        "articulo": "133",
+        "texto": "Los plazos señalados por meses o por años se computarán de fecha a fecha."
+       }
+      },
+      {
+       "si": "El plazo termina en sábado o festivo",
+       "entonces": "Se prorroga hasta el siguiente hábil.",
+       "articulos": [
+        "133"
+       ],
+       "literal": {
+        "articulo": "133",
+        "texto": "Los plazos que concluyan en sábado, domingo u otro día inhábil se entenderán prorrogados hasta el siguiente hábil."
+       }
+      },
+      {
+       "si": "Transcurre el plazo sin realizar el acto",
+       "entonces": "Preclusión: se pierde la oportunidad.",
+       "articulos": [
+        "136"
+       ],
+       "literal": {
+        "articulo": "136",
+        "texto": "se producirá la preclusión y se perderá la oportunidad de realizar el acto de que se trate"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo empieza a correr un plazo?",
+      "a": "Desde el día siguiente al acto de comunicación del que dependa su inicio.",
+      "articulos": [
+       "133"
+      ],
+      "literal": {
+       "articulo": "133",
+       "texto": "Los plazos comenzarán a correr desde el día siguiente a aquel en que se hubiere efectuado el acto de comunicación"
+      }
+     },
+     "conexiones": [
+      "133",
+      "134",
+      "135",
+      "136"
+     ],
+     "aviso": "El cálculo con calendario (festivos locales, agosto…) no está automatizado: es la «Segunda parte» del plan."
+    },
+    {
+     "id": "act-presentacion",
+     "fase": "Presentación de escritos",
+     "subtitulo": "Electrónica, 24 horas",
+     "descripcion": "Quienes deban relacionarse electrónicamente presentan por medios telemáticos, todos los días a cualquier hora. Lo presentado en día u hora inhábil se entiende presentado el primer día y hora hábil siguiente.",
+     "articulos": [
+      "135",
+      "273"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Se presenta un escrito en día inhábil por vía telemática",
+       "entonces": "Se entiende presentado el primer día y hora hábil siguiente.",
+       "articulos": [
+        "135"
+       ],
+       "literal": {
+        "articulo": "135",
+        "texto": "se entenderá efectuada el primer día y hora hábil siguiente"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo pueden presentarse escritos en formato electrónico?",
+      "a": "Todos los días del año, durante las veinticuatro horas.",
+      "articulos": [
+       "135"
+      ],
+      "literal": {
+       "articulo": "135",
+       "texto": "Se podrán presentar escritos y documentos en formato electrónico todos los días del año durante las veinticuatro horas."
+      }
+     },
+     "conexiones": [
+      "135",
+      "273"
+     ]
+    },
+    {
+     "id": "act-comunicacion",
+     "fase": "Actos de comunicación",
+     "subtitulo": "Notificación, entrega, edictos",
+     "descripcion": "Las resoluciones se notifican en 3 días. Con procurador, a través de él; sin él, electrónica o en el domicilio; si no se halla, entrega del art. 161 y, en último término, edictos en el Tablón Edictal Judicial Único. La comunicación defectuosa que cause indefensión es nula, salvo que se subsane por conocimiento.",
+     "articulos": [
+      "151",
+      "155",
+      "158",
+      "161",
+      "164",
+      "166"
+     ],
+     "plazos": [
+      {
+       "acto": "Notificar las resoluciones",
+       "plazo": "Máximo 3 días",
+       "articulo": "151",
+       "literal": "se notificarán en el plazo máximo de tres días desde su fecha o publicación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El destinatario se niega a recibir la cédula",
+       "entonces": "Queda a su disposición en la oficina judicial y produce efectos.",
+       "articulos": [
+        "161"
+       ],
+       "literal": {
+        "articulo": "161",
+        "texto": "produciéndose los efectos de la comunicación"
+       }
+      },
+      {
+       "si": "No se conoce el domicilio tras las averiguaciones",
+       "entonces": "Comunicación en el Tablón Edictal Judicial Único.",
+       "articulos": [
+        "164"
+       ],
+       "literal": {
+        "articulo": "164",
+        "texto": "mandará que se haga la comunicación, a través del Tablón Edictal Judicial Único"
+       }
+      },
+      {
+       "si": "El notificado se da por enterado y no denuncia el defecto",
+       "entonces": "El acto surte efectos desde entonces.",
+       "articulos": [
+        "166"
+       ],
+       "literal": {
+        "articulo": "166",
+        "texto": "surtirá ésta desde entonces todos sus efectos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo es nulo un acto de comunicación?",
+      "a": "Cuando no se practica conforme a la ley y puede causar indefensión.",
+      "articulos": [
+       "166"
+      ],
+      "literal": {
+       "articulo": "166",
+       "texto": "Serán nulos los actos de comunicación que no se practicaren con arreglo a lo dispuesto en este capítulo y pudieren causar indefensión."
+      }
+     },
+     "conexiones": [
+      "151",
+      "152",
+      "155",
+      "156",
+      "158",
+      "161",
+      "162",
+      "164",
+      "166"
+     ]
+    },
+    {
+     "id": "act-nulidad",
+     "fase": "Nulidad de actuaciones",
+     "subtitulo": "Causas, vías y conservación",
+     "descripcion": "Nulidad de pleno derecho en los casos del art. 225. Se hace valer por los recursos; además, el tribunal puede declararla antes de la resolución final. Contra resoluciones firmes, solo el incidente excepcional del art. 228 por vulneración de derechos fundamentales.",
+     "articulos": [
+      "225",
+      "227",
+      "228",
+      "230"
+     ],
+     "plazos": [
+      {
+       "acto": "Incidente excepcional de nulidad",
+       "plazo": "20 días (máximo 5 años)",
+       "articulo": "228",
+       "literal": "El plazo para pedir la nulidad será de veinte días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se actuó sin abogado siendo preceptivo",
+       "entonces": "Nulidad de pleno derecho.",
+       "articulos": [
+        "225"
+       ],
+       "literal": {
+        "articulo": "225",
+        "texto": "Cuando se realicen sin intervención de abogado, en los casos en que la ley la establezca como obligatoria."
+       }
+      },
+      {
+       "si": "Se anula un acto",
+       "entonces": "No arrastra a los independientes ni a los que no habrían cambiado.",
+       "articulos": [
+        "230"
+       ],
+       "literal": {
+        "articulo": "230",
+        "texto": "La nulidad de un acto no implicará la de los sucesivos que fueren independientes de aquél"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el tribunal, al resolver un recurso, declarar de oficio una nulidad no pedida?",
+      "a": "No, salvo falta de jurisdicción o de competencia objetiva o funcional, o violencia o intimidación.",
+      "articulos": [
+       "227"
+      ],
+      "literal": {
+       "articulo": "227",
+       "texto": "En ningún caso podrá el tribunal, con ocasión de un recurso, decretar de oficio una nulidad de las actuaciones que no haya sido solicitada en dicho recurso"
+      }
+     },
+     "conexiones": [
+      "225",
+      "226",
+      "227",
+      "228",
+      "230",
+      "231"
+     ]
+    },
+    {
+     "id": "act-caducidad",
+     "fase": "Caducidad de la instancia y buena fe",
+     "subtitulo": "Inactividad y multas",
+     "descripcion": "Se tienen por abandonadas las instancias sin actividad durante 2 años (primera instancia) o 1 año (segunda instancia o casación), salvo fuerza mayor. Quien actúe contra la buena fe procesal puede ser multado.",
+     "articulos": [
+      "237",
+      "238",
+      "247"
+     ],
+     "plazos": [
+      {
+       "acto": "Caducidad en primera instancia",
+       "plazo": "2 años sin actividad",
+       "articulo": "237",
+       "literal": "no se produce actividad procesal alguna en el plazo de dos años, cuando el pleito se hallare en primera instancia"
+      },
+      {
+       "acto": "Caducidad en segunda instancia o casación",
+       "plazo": "1 año sin actividad",
+       "articulo": "237",
+       "literal": "y de uno, si estuviere en segunda instancia o pendiente de recurso de casación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La paralización se debe a fuerza mayor",
+       "entonces": "No hay caducidad.",
+       "articulos": [
+        "238"
+       ],
+       "literal": {
+        "articulo": "238",
+        "texto": "No se producirá caducidad de la instancia o del recurso si el procedimiento hubiere quedado paralizado por fuerza mayor"
+       }
+      },
+      {
+       "si": "Una parte litiga de mala fe o con abuso",
+       "entonces": "Multa de 180 a 6.000 €, sin superar un tercio de la cuantía.",
+       "articulos": [
+        "247"
+       ],
+       "literal": {
+        "articulo": "247",
+        "texto": "una multa que podrá oscilar de ciento ochenta a seis mil euros, sin que en ningún caso pueda superar la tercera parte de la cuantía del litigio"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué recurso cabe contra el decreto que declara la caducidad de la instancia?",
+      "a": "Solo revisión.",
+      "articulos": [
+       "237"
+      ],
+      "literal": {
+       "articulo": "237",
+       "texto": "Contra el decreto que declare la caducidad solo cabrá recurso de revisión."
+      }
+     },
+     "conexiones": [
+      "236",
+      "237",
+      "238",
+      "240",
+      "247"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "costas",
+   "nombre": "Costas procesales",
+   "bloque": "disposiciones generales",
+   "grupo": "Libro I · Disposiciones generales",
+   "resumen": "Qué son las costas, criterios de condena (vencimiento, allanamiento, desistimiento, recursos) y tasación e impugnación.",
+   "ambito": {
+    "corto": "Arts. 241-246 y 394-398",
+    "texto": "Pago y tasación (Título VII del Libro I) y condena en costas (arts. 394-398). Cada «fase» es un tema de estudio.",
+    "articulos": [
+     "241",
+     "394"
+    ],
+    "literal": [
+     {
+      "articulo": "394",
+      "texto": "las costas de la primera instancia se impondrán a la parte que haya visto rechazadas todas sus pretensiones"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "cos-concepto",
+     "fase": "Gastos y costas",
+     "subtitulo": "Qué se incluye",
+     "descripcion": "Cada parte paga los gastos a su instancia a medida que se producen. Son costas, entre otros, los honorarios de defensa y representación cuando son preceptivas, edictos obligatorios, depósitos para recurrir, peritos, copias y aranceles.",
+     "articulos": [
+      "241"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Abogado y procurador no eran preceptivos",
+       "entonces": "Sus honorarios no son costas según el art. 241.1.1.º (que exige que sean preceptivas).",
+       "articulos": [
+        "241"
+       ],
+       "literal": {
+        "articulo": "241",
+        "texto": "Honorarios de la defensa y de la representación técnica cuando sean preceptivas."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Son costas los depósitos para recurrir?",
+      "a": "Sí.",
+      "articulos": [
+       "241"
+      ],
+      "literal": {
+       "articulo": "241",
+       "texto": "Depósitos necesarios para la presentación de recursos."
+      }
+     },
+     "conexiones": [
+      "241"
+     ]
+    },
+    {
+     "id": "cos-condena",
+     "fase": "Condena en costas en primera instancia",
+     "subtitulo": "Vencimiento y sus matices",
+     "descripcion": "Regla del vencimiento: paga quien ve rechazadas todas sus pretensiones, salvo serias dudas de hecho o de derecho razonadas. Estimación parcial: cada uno las suyas y las comunes por mitad, salvo temeridad. Incidencia del rechazo injustificado a un MASC.",
+     "articulos": [
+      "394"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Estimación parcial",
+       "entonces": "Cada parte paga las suyas y las comunes por mitad, salvo temeridad.",
+       "articulos": [
+        "394"
+       ],
+       "literal": {
+        "articulo": "394",
+        "texto": "cada parte abonará las costas causadas a su instancia y las comunes por mitad"
+       }
+      },
+      {
+       "si": "La parte vencedora rehusó sin causa un MASC al que fue convocado",
+       "entonces": "No hay pronunciamiento de costas a su favor (en los casos del art. 394.1, párr. 3).",
+       "articulos": [
+        "394"
+       ],
+       "literal": {
+        "articulo": "394",
+        "texto": "no habrá pronunciamiento de costas a favor de aquella parte que hubiere rehusado expresamente o por actos concluyentes"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo se valora que el caso era jurídicamente dudoso?",
+      "a": "Teniendo en cuenta la jurisprudencia recaída en casos similares.",
+      "articulos": [
+       "394"
+      ],
+      "literal": {
+       "articulo": "394",
+       "texto": "se tendrá en cuenta la jurisprudencia recaída en casos similares"
+      }
+     },
+     "conexiones": [
+      "394"
+     ]
+    },
+    {
+     "id": "cos-allanamiento",
+     "fase": "Allanamiento y desistimiento",
+     "subtitulo": "Costas según cómo termina el proceso",
+     "descripcion": "Allanamiento antes de contestar: sin costas, salvo mala fe (requerimiento fehaciente previo o rechazo de acuerdo o MASC). Después de contestar: regla general. Desistimiento no consentido: costas al actor; consentido: sin costas.",
+     "articulos": [
+      "395",
+      "396"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El demandado se allana antes de contestar",
+       "entonces": "No hay costas, salvo mala fe o abuso apreciado razonadamente.",
+       "articulos": [
+        "395"
+       ],
+       "literal": {
+        "articulo": "395",
+        "texto": "no procederá la imposición de costas salvo que el tribunal, razonándolo debidamente, aprecie mala fe"
+       }
+      },
+      {
+       "si": "El actor desiste sin necesidad del consentimiento del demandado",
+       "entonces": "Se le condena a todas las costas.",
+       "articulos": [
+        "396"
+       ],
+       "literal": {
+        "articulo": "396",
+        "texto": "aquél será condenado a todas las costas"
+       }
+      },
+      {
+       "si": "El desistimiento es consentido por el demandado",
+       "entonces": "Sin condena en costas.",
+       "articulos": [
+        "396"
+       ],
+       "literal": {
+        "articulo": "396",
+        "texto": "no se condenará en costas a ninguno de los litigantes"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo hay mala fe a efectos del allanamiento previo a contestar?",
+      "a": "Cuando hubo requerimiento fehaciente y justificado antes de la demanda, o se rechazó el acuerdo o el MASC ofrecido.",
+      "articulos": [
+       "395"
+      ],
+      "literal": {
+       "articulo": "395",
+       "texto": "cuando, antes de presentada la demanda, se hubiese requerido al demandado para el cumplimiento de la obligación de forma fehaciente y justificada"
+      }
+     },
+     "conexiones": [
+      "395",
+      "396"
+     ]
+    },
+    {
+     "id": "cos-recursos",
+     "fase": "Costas en los recursos",
+     "subtitulo": "Apelación y casación",
+     "descripcion": "En apelación se aplica el art. 394 a las costas del recurso. En casación: desestimación total, costas al recurrente salvo circunstancias especiales; estimación total o parcial, sin costas.",
+     "articulos": [
+      "397",
+      "398"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Se desestima totalmente la casación",
+       "entonces": "Costas al recurrente, salvo circunstancias especiales.",
+       "articulos": [
+        "398"
+       ],
+       "literal": {
+        "articulo": "398",
+        "texto": "La desestimación total del recurso de casación llevará aparejada la imposición de costas a la parte recurrente"
+       }
+      },
+      {
+       "si": "Se estima, total o parcialmente, la casación",
+       "entonces": "No se imponen costas a ninguna parte.",
+       "articulos": [
+        "398"
+       ],
+       "literal": {
+        "articulo": "398",
+        "texto": "no se impondrán las costas a ninguna de las partes"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué regla rige las costas del recurso de apelación?",
+      "a": "La del art. 394.",
+      "articulos": [
+       "398"
+      ],
+      "literal": {
+       "articulo": "398",
+       "texto": "En los casos de un recurso de apelación, en cuanto a las costas del recurso, se aplicará lo dispuesto en el artículo 394."
+      }
+     },
+     "conexiones": [
+      "394",
+      "397",
+      "398"
+     ]
+    },
+    {
+     "id": "cos-tasacion",
+     "fase": "Tasación de costas",
+     "subtitulo": "Solicitud, traslado e impugnación",
+     "descripcion": "Firme la condena, se pide la tasación con justificantes. La practica el LAJ y da traslado por 10 días. Puede impugnarse por partidas indebidas o por honorarios excesivos (informe del Colegio). Sin impugnación, decreto de aprobación (recurso directo de revisión).",
+     "articulos": [
+      "242",
+      "243",
+      "244",
+      "245",
+      "246"
+     ],
+     "plazos": [
+      {
+       "acto": "Traslado de la tasación a las partes",
+       "plazo": "10 días",
+       "articulo": "244",
+       "literal": "se dará traslado de ella a las partes por plazo común de diez días"
+      },
+      {
+       "acto": "Audiencia al abogado si se impugnan sus honorarios por excesivos",
+       "plazo": "5 días",
+       "articulo": "246",
+       "literal": "se oirá en el plazo de cinco días al abogado o abogada de que se trate"
+      },
+      {
+       "acto": "Traslado si se impugnan partidas indebidas",
+       "plazo": "3 días",
+       "articulo": "246",
+       "literal": "dará traslado a la otra parte por tres días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se impugnan los honorarios del abogado por excesivos",
+       "entonces": "Se le oye y, si no acepta la reducción, informa el Colegio de Abogados.",
+       "articulos": [
+        "246"
+       ],
+       "literal": {
+        "articulo": "246",
+        "texto": "se pasará testimonio de los autos, o de la parte de ellos que resulte necesaria, al Colegio de Abogados para que emita informe"
+       }
+      },
+      {
+       "si": "Nadie impugna la tasación",
+       "entonces": "Decreto que la aprueba; cabe recurso directo de revisión.",
+       "articulos": [
+        "244"
+       ],
+       "literal": {
+        "articulo": "244",
+        "texto": "Contra esta resolución cabe recurso directo de revisión"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se pueden añadir partidas después del traslado de la tasación?",
+      "a": "No; se reserva al interesado su derecho a reclamarlas por otra vía.",
+      "articulos": [
+       "244"
+      ],
+      "literal": {
+       "articulo": "244",
+       "texto": "no se admitirá la inclusión o adición de partida alguna"
+      }
+     },
+     "conexiones": [
+      "242",
+      "243",
+      "244",
+      "245",
+      "246"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "prueba",
+   "nombre": "La prueba",
+   "bloque": "prueba",
+   "grupo": "Libro II · Disposiciones comunes: la prueba",
+   "resumen": "Objeto y carga de la prueba, proposición y admisión, práctica, prueba anticipada y medios de prueba con su valoración. Se aplica a todos los procesos declarativos.",
+   "ambito": {
+    "corto": "Arts. 281-386 y 217 (carga de la prueba)",
+    "texto": "Disposiciones generales (arts. 281-298), medios de prueba y presunciones (arts. 299-386) y carga de la prueba (art. 217). No es un procedimiento: cada «fase» es un tema.",
+    "articulos": [
+     "281",
+     "299",
+     "217"
+    ],
+    "literal": [
+     {
+      "articulo": "281",
+      "texto": "La prueba tendrá como objeto los hechos que guarden relación con la tutela judicial que se pretenda obtener en el proceso."
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "pru-objeto",
+     "fase": "Objeto, necesidad e iniciativa",
+     "subtitulo": "Qué hay que probar y quién la pide",
+     "descripcion": "Se prueban los hechos relacionados con la tutela pedida, la costumbre y el Derecho extranjero. No necesitan prueba los hechos admitidos (salvo materias indisponibles) ni los notorios. Regla: a instancia de parte; de oficio solo cuando la ley lo prevea.",
+     "articulos": [
+      "281",
+      "282"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Ambas partes admiten un hecho",
+       "entonces": "Queda exento de prueba, salvo que la materia esté fuera de su poder de disposición.",
+       "articulos": [
+        "281"
+       ],
+       "literal": {
+        "articulo": "281",
+        "texto": "Están exentos de prueba los hechos sobre los que exista plena conformidad de las partes"
+       }
+      },
+      {
+       "si": "Se invoca Derecho extranjero",
+       "entonces": "Debe probarse su contenido y vigencia.",
+       "articulos": [
+        "281"
+       ],
+       "literal": {
+        "articulo": "281",
+        "texto": "El derecho extranjero deberá ser probado en lo que respecta a su contenido y vigencia"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hay que probar los hechos notorios?",
+      "a": "No, si gozan de notoriedad absoluta y general.",
+      "articulos": [
+       "281"
+      ],
+      "literal": {
+       "articulo": "281",
+       "texto": "No será necesario probar los hechos que gocen de notoriedad absoluta y general."
+      }
+     },
+     "conexiones": [
+      "281",
+      "282"
+     ]
+    },
+    {
+     "id": "pru-carga",
+     "fase": "Carga de la prueba",
+     "subtitulo": "Quién soporta la falta de prueba",
+     "descripcion": "Si al sentenciar un hecho relevante sigue dudoso, pierde quien tenía la carga de probarlo. El actor prueba los hechos constitutivos; el demandado, los impeditivos, extintivos o excluyentes. Hay inversiones legales (competencia desleal, publicidad, discriminación).",
+     "articulos": [
+      "217"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Un hecho constitutivo de la demanda queda dudoso",
+       "entonces": "Se desestiman las pretensiones del actor.",
+       "articulos": [
+        "217"
+       ],
+       "literal": {
+        "articulo": "217",
+        "texto": "desestimará las pretensiones del actor o del reconviniente, o las del demandado o reconvenido, según corresponda a unos u otros la carga de probar"
+       }
+      },
+      {
+       "si": "Proceso por publicidad ilícita",
+       "entonces": "El demandado prueba la exactitud y veracidad de lo anunciado.",
+       "articulos": [
+        "217"
+       ],
+       "literal": {
+        "articulo": "217",
+        "texto": "En los procesos sobre competencia desleal y sobre publicidad ilícita corresponderá al demandado la carga de la prueba"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿A quién corresponde probar los hechos que extinguen la eficacia de los alegados por el actor?",
+      "a": "Al demandado (y al actor reconvenido).",
+      "articulos": [
+       "217"
+      ],
+      "literal": {
+       "articulo": "217",
+       "texto": "Incumbe al demandado y al actor reconvenido la carga de probar los hechos que, conforme a las normas que les sean aplicables, impidan, extingan o enerven la eficacia jurídica"
+      }
+     },
+     "conexiones": [
+      "217"
+     ]
+    },
+    {
+     "id": "pru-admision",
+     "fase": "Proposición y admisión",
+     "subtitulo": "Pertinencia, utilidad, licitud",
+     "descripcion": "Los medios se proponen por separado, con el domicilio de quienes deban ser citados. No se admiten las pruebas impertinentes, las inútiles ni las prohibidas por la ley. Contra la admisión o inadmisión, solo reposición y protesta.",
+     "articulos": [
+      "283",
+      "284",
+      "285"
+     ],
+     "plazos": [
+      {
+       "acto": "Aportar datos de las personas a citar (ordinario)",
+       "plazo": "5 días",
+       "articulo": "284",
+       "literal": "podrán aportarlos al tribunal dentro de los cinco días siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La prueba no guarda relación con el objeto del proceso",
+       "entonces": "Se inadmite por impertinente.",
+       "articulos": [
+        "283"
+       ],
+       "literal": {
+        "articulo": "283",
+        "texto": "No deberá admitirse ninguna prueba que, por no guardar relación con lo que sea objeto del proceso, haya de considerarse impertinente."
+       }
+      },
+      {
+       "si": "Se inadmite una prueba",
+       "entonces": "Solo reposición en el acto y, si se desestima, protesta para la segunda instancia.",
+       "articulos": [
+        "285"
+       ],
+       "literal": {
+        "articulo": "285",
+        "texto": "sólo cabrá recurso de reposición, que se sustanciará y resolverá en el acto"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se admite como prueba una actividad prohibida por la ley?",
+      "a": "Nunca.",
+      "articulos": [
+       "283"
+      ],
+      "literal": {
+       "articulo": "283",
+       "texto": "Nunca se admitirá como prueba cualquier actividad prohibida por la ley."
+      }
+     },
+     "conexiones": [
+      "283",
+      "284",
+      "285"
+     ]
+    },
+    {
+     "id": "pru-ilicita",
+     "fase": "Prueba ilícita y hechos nuevos",
+     "subtitulo": "Derechos fundamentales; ampliación de hechos",
+     "descripcion": "Si se alega que una prueba se obtuvo vulnerando derechos fundamentales, se resuelve en el acto del juicio (en el verbal, por el art. 438.10). Los hechos nuevos o de nueva noticia se introducen con escrito de ampliación de hechos.",
+     "articulos": [
+      "287",
+      "286"
+     ],
+     "plazos": [
+      {
+       "acto": "Contestar al escrito de ampliación de hechos",
+       "plazo": "Dentro del quinto día",
+       "articulo": "286",
+       "literal": "dentro del quinto día, manifieste si reconoce como cierto el hecho alegado o lo niega"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se resuelve sobre la ilicitud de una prueba",
+       "entonces": "Solo reposición en el mismo acto; la impugnación puede reproducirse en la apelación.",
+       "articulos": [
+        "287"
+       ],
+       "literal": {
+        "articulo": "287",
+        "texto": "quedando a salvo el derecho de las partes a reproducir la impugnación de la prueba ilícita en la apelación contra la sentencia definitiva"
+       }
+      },
+      {
+       "si": "La cuestión de ilicitud surge en un juicio verbal",
+       "entonces": "Se resuelve conforme al art. 438.10.",
+       "articulos": [
+        "287"
+       ],
+       "literal": {
+        "articulo": "287",
+        "texto": "se resolverá conforme a lo dispuesto en el artículo 438.10"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el tribunal plantear de oficio la ilicitud de una prueba?",
+      "a": "Sí.",
+      "articulos": [
+       "287"
+      ],
+      "literal": {
+       "articulo": "287",
+       "texto": "que también podrá ser suscitada de oficio por el tribunal"
+      }
+     },
+     "conexiones": [
+      "286",
+      "287",
+      "438"
+     ]
+    },
+    {
+     "id": "pru-practica",
+     "fase": "Práctica de la prueba",
+     "subtitulo": "Contradicción, publicidad e inmediación",
+     "descripcion": "Las pruebas se practican contradictoriamente en vista pública. Es inexcusable la presencia judicial en interrogatorios, reconocimientos, reproducciones y explicaciones periciales. Multa a quien cause que una prueba admitida no se practique a tiempo.",
+     "articulos": [
+      "289",
+      "288"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Una parte impide por su causa que se practique una prueba admitida",
+       "entonces": "Multa de 60 a 600 €, salvo falta de culpa o desistimiento.",
+       "articulos": [
+        "288"
+       ],
+       "literal": {
+        "articulo": "288",
+        "texto": "será sancionado por el tribunal con multa que no podrá ser inferior a 60 euros ni exceder de 600"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Ante quién se presentan los documentos originales fuera de la vista?",
+      "a": "Ante el Letrado de la Administración de Justicia; pero el tribunal debe examinarlos por sí mismo.",
+      "articulos": [
+       "289"
+      ],
+      "literal": {
+       "articulo": "289",
+       "texto": "Pero el Tribunal habrá de examinar por sí mismo la prueba documental"
+      }
+     },
+     "conexiones": [
+      "288",
+      "289"
+     ]
+    },
+    {
+     "id": "pru-anticipada",
+     "fase": "Prueba anticipada y aseguramiento",
+     "subtitulo": "Antes del proceso o durante él",
+     "descripcion": "Puede pedirse la práctica anticipada de una prueba si hay temor fundado de que no pueda hacerse en su momento, y medidas para asegurar fuentes de prueba que puedan destruirse o alterarse.",
+     "articulos": [
+      "293",
+      "294",
+      "296",
+      "297"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Se pide antes de iniciar el proceso",
+       "entonces": "Ante el tribunal competente para el asunto principal; no cabe declinatoria.",
+       "articulos": [
+        "293"
+       ],
+       "literal": {
+        "articulo": "293",
+        "texto": "se dirigirá al tribunal que se considere competente para el asunto principal"
+       }
+      },
+      {
+       "si": "Riesgo de que se destruyan objetos o estados de cosas",
+       "entonces": "Medidas de aseguramiento de la prueba, incluso mandatos de hacer o no hacer.",
+       "articulos": [
+        "297"
+       ],
+       "literal": {
+        "articulo": "297",
+        "texto": "podrán también dirigirse mandatos de hacer o no hacer"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo se practica la prueba anticipada acordada?",
+      "a": "Cuando se considere necesario, siempre antes del juicio o vista.",
+      "articulos": [
+       "294"
+      ],
+      "literal": {
+       "articulo": "294",
+       "texto": "siempre con anterioridad a la celebración del juicio o vista"
+      }
+     },
+     "conexiones": [
+      "293",
+      "294",
+      "296",
+      "297"
+     ]
+    },
+    {
+     "id": "pru-interrogatorio",
+     "fase": "Interrogatorio de las partes",
+     "subtitulo": "Ficta confessio",
+     "descripcion": "Cada parte puede pedir el interrogatorio de las demás. Si la parte citada no comparece, o se niega a declarar o responde con evasivas, pueden tenerse por reconocidos los hechos personales que le perjudiquen.",
+     "articulos": [
+      "301",
+      "304",
+      "307",
+      "316"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "La parte citada no comparece al juicio",
+       "entonces": "El tribunal puede tener por reconocidos los hechos personales enteramente perjudiciales, y multarla.",
+       "articulos": [
+        "304"
+       ],
+       "literal": {
+        "articulo": "304",
+        "texto": "el tribunal podrá considerar reconocidos los hechos en que dicha parte hubiese intervenido personalmente y cuya fijación como ciertos le sea enteramente perjudicial"
+       }
+      },
+      {
+       "si": "Responde con evasivas",
+       "entonces": "Se le apercibe del mismo efecto.",
+       "articulos": [
+        "307"
+       ],
+       "literal": {
+        "articulo": "307",
+        "texto": "Cuando las respuestas que diere el declarante fuesen evasivas o inconcluyentes"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo se valora el interrogatorio de las partes?",
+      "a": "Los hechos personales reconocidos y perjudiciales se tienen por ciertos si no lo contradicen otras pruebas; en lo demás, sana crítica.",
+      "articulos": [
+       "316"
+      ],
+      "literal": {
+       "articulo": "316",
+       "texto": "Si no lo contradice el resultado de las demás pruebas, en la sentencia se considerarán ciertos los hechos que una parte haya reconocido como tales"
+      }
+     },
+     "conexiones": [
+      "301",
+      "304",
+      "307",
+      "316"
+     ]
+    },
+    {
+     "id": "pru-documentos",
+     "fase": "Documentos públicos y privados",
+     "subtitulo": "Prueba plena e impugnación",
+     "descripcion": "Los documentos públicos del art. 317 hacen prueba plena del hecho, fecha e identidad de fedatarios. Los privados hacen prueba plena si no se impugna su autenticidad; si se impugna, cotejo u otra prueba, y en su defecto sana crítica.",
+     "articulos": [
+      "317",
+      "319",
+      "326"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Se impugna la autenticidad de un documento privado",
+       "entonces": "Quien lo presentó puede pedir cotejo pericial u otra prueba; sin ella, sana crítica.",
+       "articulos": [
+        "326"
+       ],
+       "literal": {
+        "articulo": "326",
+        "texto": "el que lo haya presentado podrá pedir el cotejo pericial de letras o proponer cualquier otro medio de prueba"
+       }
+      },
+      {
+       "si": "Asunto de usura",
+       "entonces": "El tribunal forma libremente su convicción, sin la prueba plena del art. 319.1.",
+       "articulos": [
+        "319"
+       ],
+       "literal": {
+        "articulo": "319",
+        "texto": "En materia de usura, los tribunales resolverán en cada caso formando libremente su convicción"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo hace prueba plena un documento privado?",
+      "a": "Cuando su autenticidad no sea impugnada por la parte a quien perjudique.",
+      "articulos": [
+       "326"
+      ],
+      "literal": {
+       "articulo": "326",
+       "texto": "cuando su autenticidad no sea impugnada por la parte a quien perjudiquen"
+      }
+     },
+     "conexiones": [
+      "317",
+      "319",
+      "320",
+      "326"
+     ]
+    },
+    {
+     "id": "pru-peritos",
+     "fase": "Dictamen de peritos",
+     "subtitulo": "De parte o judicial",
+     "descripcion": "Los dictámenes de parte se aportan con la demanda o la contestación; si no es posible, se anuncian y se aportan después. Puede pedirse perito judicial en los escritos iniciales. Se valoran según la sana crítica.",
+     "articulos": [
+      "335",
+      "336",
+      "337",
+      "338",
+      "339",
+      "347",
+      "348"
+     ],
+     "plazos": [
+      {
+       "acto": "Aportar dictamen anunciado (ordinario)",
+       "plazo": "5 días antes de la audiencia previa",
+       "articulo": "337",
+       "literal": "y en todo caso cinco días antes de iniciarse la audiencia previa al juicio ordinario"
+      },
+      {
+       "acto": "Aportar dictamen anunciado (verbal)",
+       "plazo": "30 días desde la demanda o contestación",
+       "articulo": "337",
+       "literal": "en treinta días desde la presentación de la demanda o de la contestación en el juicio verbal"
+      },
+      {
+       "acto": "Dictamen motivado por la contestación o la audiencia previa",
+       "plazo": "Al menos 5 días antes del juicio o vista",
+       "articulo": "338",
+       "literal": "con al menos cinco días de antelación a la celebración del juicio o de la vista"
+      },
+      {
+       "acto": "Designación judicial de perito",
+       "plazo": "5 días desde la contestación",
+       "articulo": "339",
+       "literal": "La designación judicial de perito deberá realizarse en el plazo de cinco días desde la presentación de la contestación a la demanda"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El demandante no aporta el dictamen con la demanda",
+       "entonces": "Se entiende que podía hacerlo, salvo que justifique que no podía demorar la demanda.",
+       "articulos": [
+        "336"
+       ],
+       "literal": {
+        "articulo": "336",
+        "texto": "si no justifica cumplidamente que la defensa de su derecho no ha permitido demorar la interposición de aquélla hasta la obtención del dictamen"
+       }
+      },
+      {
+       "si": "La parte tiene asistencia jurídica gratuita",
+       "entonces": "Basta con anunciar el dictamen para que se designe perito judicial.",
+       "articulos": [
+        "339"
+       ],
+       "literal": {
+        "articulo": "339",
+        "texto": "no tendrá que aportar con la demanda o la contestación el dictamen pericial, sino simplemente anunciarlo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo se valoran los dictámenes periciales?",
+      "a": "Según las reglas de la sana crítica.",
+      "articulos": [
+       "348"
+      ],
+      "literal": {
+       "articulo": "348",
+       "texto": "El tribunal valorará los dictámenes periciales según las reglas de la sana crítica."
+      }
+     },
+     "conexiones": [
+      "335",
+      "336",
+      "337",
+      "338",
+      "339",
+      "347",
+      "348"
+     ]
+    },
+    {
+     "id": "pru-testigos",
+     "fase": "Testigos y reconocimiento judicial",
+     "subtitulo": "Número de testigos y valoración",
+     "descripcion": "Testigos: personas con noticia de hechos controvertidos; los gastos de más de tres por hecho los paga quien los propone. Reconocimiento judicial: el tribunal examina por sí mismo lugares, objetos o personas.",
+     "articulos": [
+      "360",
+      "363",
+      "376",
+      "353"
+     ],
+     "plazos": [
+      {
+       "acto": "Señalamiento del reconocimiento judicial",
+       "plazo": "Al menos 5 días de antelación",
+       "articulo": "353",
+       "literal": "señalará con cinco días de antelación, por lo menos, el día y hora"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Ya declararon tres testigos sobre un hecho",
+       "entonces": "El tribunal puede prescindir de los restantes sobre ese hecho.",
+       "articulos": [
+        "363"
+       ],
+       "literal": {
+        "articulo": "363",
+        "texto": "podrá obviar las declaraciones testificales que faltaren, referentes a ese mismo hecho"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo se valoran las declaraciones de los testigos?",
+      "a": "Según la sana crítica, atendiendo a la razón de ciencia, sus circunstancias y las tachas.",
+      "articulos": [
+       "376"
+      ],
+      "literal": {
+       "articulo": "376",
+       "texto": "conforme a las reglas de la sana crítica, tomando en consideración la razón de ciencia que hubieren dado"
+      }
+     },
+     "conexiones": [
+      "353",
+      "360",
+      "363",
+      "376"
+     ]
+    },
+    {
+     "id": "pru-presunciones",
+     "fase": "Presunciones",
+     "subtitulo": "Legales y judiciales",
+     "descripcion": "Las presunciones legales dispensan de probar el hecho presunto si el indicio está probado o admitido, y admiten prueba en contrario salvo prohibición. Las judiciales exigen un enlace preciso y directo y que la sentencia razone la presunción.",
+     "articulos": [
+      "385",
+      "386"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El tribunal aplica una presunción judicial",
+       "entonces": "La sentencia debe incluir el razonamiento que la justifica.",
+       "articulos": [
+        "386"
+       ],
+       "literal": {
+        "articulo": "386",
+        "texto": "La sentencia en la que se aplique el párrafo anterior deberá incluir el razonamiento en virtud del cual el tribunal ha establecido la presunción."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Admiten prueba en contrario las presunciones legales?",
+      "a": "Sí, salvo que la ley expresamente lo prohíba.",
+      "articulos": [
+       "385"
+      ],
+      "literal": {
+       "articulo": "385",
+       "texto": "Las presunciones establecidas por la ley admitirán la prueba en contrario, salvo en los casos en que aquélla expresamente lo prohíba."
+      }
+     },
+     "conexiones": [
+      "385",
+      "386"
+     ]
+    }
+   ]
+  },
+  {
    "id": "ordinario",
    "nombre": "Juicio ordinario",
    "bloque": "juicio ordinario",
@@ -77,7 +2051,7 @@
       "399",
       "403"
      ],
-     "aviso": "Qué casos exigen el MASC lo regula otra ley (no incluida en esta app). Aquí solo se recoge lo que dice la LEC."
+     "aviso": "Qué casos exigen el MASC se regula en la [[Ley Orgánica 1/2025, de 2 de enero, de medidas en materia de eficiencia del Servicio Público de Justicia|https://www.boe.es/buscar/act.php?id=BOE-A-2025-76]]. Aquí solo se recoge lo que dice la LEC."
     },
     {
      "id": "ord-demanda",
@@ -155,6 +2129,10 @@
      "conexiones": [
       "403",
       "404"
+     ],
+     "continua_en": [
+      "competencia",
+      "actuaciones"
      ]
     },
     {
@@ -338,6 +2316,9 @@
       "421",
       "428",
       "429"
+     ],
+     "continua_en": [
+      "prueba"
      ]
     },
     {
@@ -469,7 +2450,8 @@
       "434"
      ],
      "continua_en": [
-      "ejecucion"
+      "ejecucion",
+      "costas"
      ]
     },
     {
@@ -1828,7 +3810,7 @@
      "id": "hip-requisitos",
      "fase": "Requisitos y vencimiento",
      "subtitulo": "Escritura, tasación, domicilio; vencimiento anticipado",
-     "descripcion": "La escritura debe fijar el tipo de subasta (no inferior al 75 % de la tasación) y un domicilio para requerimientos y notificaciones. Para préstamos de personas físicas sobre vivienda rige además la Ley 5/2019.",
+     "descripcion": "La escritura debe fijar el tipo de subasta (no inferior al 75 % de la tasación) y un domicilio para requerimientos y notificaciones. Para préstamos de personas físicas sobre vivienda rige además la [[Ley 5/2019, reguladora de los contratos de crédito inmobiliario|https://www.boe.es/buscar/act.php?id=BOE-A-2019-3814]].",
      "articulos": [
       "682",
       "693"
@@ -1862,7 +3844,7 @@
       "682",
       "693"
      ],
-     "aviso": "Para préstamos de personas físicas sobre vivienda, el art. 693.2 remite al art. 24 de la Ley 5/2019 y al art. 129 bis de la Ley Hipotecaria, que no están en esta app."
+     "aviso": "Para préstamos de personas físicas sobre vivienda, el art. 693.2 remite al art. 24 de la [[Ley 5/2019, reguladora de los contratos de crédito inmobiliario|https://www.boe.es/buscar/act.php?id=BOE-A-2019-3814]] y al art. 129 bis de la [[Ley Hipotecaria|https://www.boe.es/buscar/act.php?id=BOE-A-1946-2453]]."
     },
     {
      "id": "hip-demanda",
