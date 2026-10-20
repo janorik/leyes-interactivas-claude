@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de cookies · NOrlexia</title>
+<link rel="stylesheet" href="assets/legal.css">
+<script>try{var t=localStorage.getItem("lec:tema");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+<header><div class="in cab">
+  <a class="marca" href="index.html"><b>NORLEXIA</b><span>Leyes interactivas</span></a>
+  <div class="acc"><a href="index.html">‹ Todas las leyes</a>
+    <button id="tema" type="button" aria-label="Cambiar modo claro u oscuro" title="Modo claro/oscuro">◐</button></div>
+</div></header>
+
+<main class="in">
+  <span class="etq">Información legal</span>
+  <h1>Política de cookies</h1>
+  <p class="fecha">Última actualización: octubre de 2026</p>
+
+  <p>Esta política explica qué guardan estas aplicaciones en tu navegador, ya sean cookies o tecnologías similares
+    como el almacenamiento local, conforme al artículo 22.2 de la
+    <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758" target="_blank" rel="noopener">Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico</a> (LSSI-CE).</p>
+  <p class="resumen">Estas aplicaciones no usan cookies de análisis, de publicidad ni de terceros. Solo guardan en
+    tu navegador lo necesario para funcionar como pides: tus notas, tu progreso y tus preferencias. Nada de eso sale
+    de tu dispositivo. Por eso no aparece un aviso para aceptar cookies.</p>
+
+  <h2>1. Qué se guarda</h2>
+  <p>Todo se guarda en el almacenamiento local del navegador (localStorage), propio de este sitio. Cada ley guarda lo
+    suyo por separado: el nombre empieza por su abreviatura (<code>lec:</code>, <code>lecrim:</code>…). Todo dura hasta
+    que lo borres.</p>
+  <div class="ficha"><dl>
+    <div><dt><code>…:tema</code></dt><dd>Si elegiste el modo claro o el oscuro. Se guarda cuando pulsas ◐.</dd></div>
+    <div><dt><code>…:tam</code></dt><dd>El tamaño de letra. Se guarda al abrir la aplicación y cuando pulsas A− o
+      A+.</dd></div>
+    <div><dt><code>…:mis</code></dt><dd>Tus marcadores (☆) y notas (✎). Se guardan cuando los creas.</dd></div>
+    <div><dt><code>…:progreso</code></dt><dd>Las tarjetas del repaso que has marcado.</dd></div>
+    <div><dt><code>…:q</code></dt><dd>Tu última búsqueda, para recuperarla al volver.</dd></div>
+  </dl></div>
+  <p><strong>Consentimiento:</strong> no es necesario. El art. 22.2 LSSI-CE exceptúa del consentimiento el
+    almacenamiento estrictamente necesario para prestar un servicio expresamente solicitado por el usuario, y estos
+    datos solo sirven para que la aplicación haga lo que tú le pides.</p>
+
+  <h2>2. Terceros</h2>
+  <p>Estas aplicaciones no cargan servicios de terceros que instalen cookies, ni tipografías externas. Los enlaces al
+    BOE abren su web, que tiene su propia política de cookies.</p>
+
+  <h2>3. Cómo borrarlo</h2>
+  <p>Puedes borrar tus preferencias de tema y tamaño de letra con este botón. No toca tus notas ni tu progreso.</p>
+  <button class="btn" type="button" id="borrarPref">Borrar mis preferencias de tema y letra</button>
+  <p class="estado" id="estado" role="status"></p>
+  <p>Para borrarlo todo, incluidas las notas y el progreso, elimina los datos de este sitio desde la configuración de
+    tu navegador. Antes, si quieres conservar tus notas, descarga una copia de seguridad desde la pestaña «Notas» de
+    cada ley.</p>
+
+  <h2>4. Si esto cambia</h2>
+  <p>Si en el futuro se incorporan analíticas u otras cookies que requieran consentimiento, no se activarán hasta
+    que las aceptes en un aviso que te permitirá aceptarlas, rechazarlas o configurarlas, y esta página se
+    actualizará.</p>
+</main>
+
+<footer><div class="in">
+  <p class="pie-marca">NORLEXIA · Leyes interactivas</p>
+  <nav class="pie-links" aria-label="Información legal">
+    <span>© 2026 J A Noriega (Norik)</span>
+    <a href="aviso-legal.html">Aviso legal</a>
+    <a href="politica-privacidad.html">Privacidad</a>
+    <a href="cookies.html" aria-current="page">Cookies</a>
+  </nav>
+</div></footer>
+<script>
+document.getElementById("tema").onclick=function(){
+  var r=document.documentElement, a=r.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");
+  var n=a==="dark"?"light":"dark"; r.setAttribute("data-theme",n); try{localStorage.setItem("lec:tema",n)}catch(e){}
+};
+document.getElementById("borrarPref").onclick=function(){
+  var n=0;
+  try{
+    for(var i=localStorage.length-1;i>=0;i--){
+      var k=localStorage.key(i);
+      if(/:(tema|tam)$/.test(k)){ localStorage.removeItem(k); n++; }
+    }
+    document.documentElement.removeAttribute("data-theme");
+    document.getElementById("estado").textContent = n ? "Preferencias borradas." : "No había preferencias guardadas.";
+  }catch(e){ document.getElementById("estado").textContent = "Este navegador no permite acceder al almacenamiento local."; }
+};
+</script>
+</body>
+</html>

@@ -122,3 +122,19 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [ ] **Orden de desarrollo:** dime por qué bloque empezamos.
 - [x] **Recursos de la LECrim como en la LEC (hecho):** 14 recursos y 27 casos del selector, con «Por resolución», «Recursos» y «Ponte a prueba». Antes: al usuario le gusta la pestaña Recursos de la LEC (selector «Por resolución», fichas de cada recurso y «Ponte a prueba»). En la LECrim ahora solo hay tarjetas de bloques en esqueleto. Hacer `lecrim/datos/recursos.json` con el mismo formato (recursos, selector por resolución con frase literal, test), a partir de los arts. 216-238 ter (recursos contra resoluciones procesales), 846 bis a-846 ter (apelación), 847-933 (casación) y 954-961 (revisión), y los recursos propios del abreviado, juicio rápido y delitos leves. Todo con `revisado: false` y las dudas anotadas aquí.
 - [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).
+
+## Páginas legales (todas las leyes)
+
+Aviso legal, Política de privacidad y Política de cookies (`aviso-legal.html`, `politica-privacidad.html`, `cookies.html`), y la ventana «© 2026 J A Noriega (Norik)» del pie. Hechas a partir de las de norlexia.es (repositorio WEB-NORLEXIA, `bocetos/`), adaptadas a esta app: sin formulario, sin Google Fonts y sin cookies.
+
+- [ ] **NIF y domicilio.** Por decisión tuya no se copian aquí (el repositorio es público): el aviso legal remite al de norlexia.es. Sí figura el correo janorlex@gmail.com, necesario para ejercer derechos. Comprueba que el enlace https://norlexia.es/aviso-legal.html funciona y que te vale así.
+  - **Tu respuesta:**
+- [ ] **Alojamiento.** Los textos dicen que el sitio se aloja en GitHub Pages (así lo dice CLAUDE.md) y que GitHub registra IP, fecha y página. No he podido comprobar que GitHub Pages esté activado ni qué registros guarda GitHub (No verificable).
+  - **Tu respuesta:**
+- [ ] **Transferencias a EE. UU.** Se dice que GitHub y Google se apoyan en las cláusulas contractuales tipo o en el Marco de Privacidad de Datos UE-EE. UU. cuando les resulte aplicable (No verificable para GitHub).
+  - **Tu respuesta:**
+- [ ] **Enlaces al BOE de otras leyes** (no salen del texto consolidado de la app): LSSI-CE `BOE-A-2002-13758`, RGPD `DOUE-L-2016-80807`, LOPDGDD `BOE-A-2018-16673`. Comprueba que abren la ley correcta.
+  - **Tu respuesta:**
+- [ ] **Ventana ©.** Lleva literales los cuatro primeros párrafos de la de norlexia.es; se ha quitado el de «capturas y demostraciones con documento ficticio», que aquí no se aplica.
+- [ ] **Línea del pie.** En la web pone «NORLEXIA · DERECHO ESPAÑOL · SEPTIEMBRE 2026»; aquí pone «NORLEXIA · LEYES INTERACTIVAS». Dime si prefieres otro texto.
+  - **Tu respuesta:**
