@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aviso legal · NOrlexia</title>
+<link rel="stylesheet" href="assets/legal.css">
+<script>try{var t=localStorage.getItem("lec:tema");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+<header><div class="in cab">
+  <a class="marca" href="index.html"><b>NORLEXIA</b><span>Leyes interactivas</span></a>
+  <div class="acc"><a href="index.html">‹ Todas las leyes</a>
+    <button id="tema" type="button" aria-label="Cambiar modo claro u oscuro" title="Modo claro/oscuro">◐</button></div>
+</div></header>
+
+<main class="in">
+  <span class="etq">Información legal</span>
+  <h1>Aviso legal</h1>
+  <p class="fecha">Última actualización: octubre de 2026</p>
+
+  <p>Este aviso identifica al titular de NORLEXia · Leyes interactivas y fija sus condiciones de uso, conforme al
+    artículo 10 de la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758" target="_blank" rel="noopener">Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico</a>
+    (LSSI-CE).</p>
+
+  <h2>1. Titular</h2>
+  <div class="ficha"><dl>
+    <div><dt>Titular</dt><dd>J A Noriega (Norik), desarrollador de NORLEXia</dd></div>
+    <div><dt>Datos identificativos</dt><dd>Nombre completo, NIF y domicilio en el
+      <a href="https://norlexia.es/aviso-legal.html" target="_blank" rel="noopener">aviso legal de norlexia.es</a></dd></div>
+    <div><dt>Correo</dt><dd><a href="mailto:janorlex@gmail.com">janorlex@gmail.com</a></dd></div>
+  </dl></div>
+
+  <h2>2. Qué es este sitio</h2>
+  <p>Estas aplicaciones sirven para estudiar, repasar y consultar leyes españolas a partir de su texto consolidado
+    del BOE. NORLEXia desarrolla software: no es un despacho de abogados y no presta asesoramiento jurídico.</p>
+
+  <h2>3. Contenidos</h2>
+  <ul>
+    <li>El texto de cada ley procede del texto consolidado del BOE, tiene carácter informativo y no tiene valor
+      jurídico. Cada aplicación indica la fecha de la versión consolidada que usa. La fuente oficial es el
+      <a href="https://www.boe.es" target="_blank" rel="noopener">BOE</a>.</li>
+    <li>Los esquemas, plazos, recursos y preguntas de repaso son material de estudio elaborado. Mientras no se
+      revisan, llevan la etiqueta «Pendiente de revisión». No sustituyen la lectura de la norma.</li>
+    <li>Las leyes marcadas «Próximamente» todavía no están disponibles y no tienen fecha comprometida.</li>
+  </ul>
+
+  <h2>4. Propiedad intelectual e industrial</h2>
+  <p>El diseño, el código, la estructura y el contenido elaborado de estas aplicaciones (mapas procesales, esquemas,
+    fichas y preguntas) pertenecen a su titular. No se permite reproducirlos, distribuirlos, comunicarlos
+    públicamente ni transformarlos, en todo o en parte, sin su autorización previa y por escrito, salvo en los casos
+    que permita la ley, como el derecho de cita. Que el código pueda verse en GitHub no autoriza a copiarlo ni a
+    reutilizarlo.</p>
+  <p>Las normas, los datos públicos y los enlaces a fuentes oficiales conservan su propio régimen jurídico y no se
+    reivindican como contenido exclusivo.</p>
+  <p>El nombre NORLEXia identifica los productos del titular.</p>
+
+  <h2>5. Responsabilidad</h2>
+  <p>El titular procura que la información de este sitio sea exacta y esté actualizada, pero no garantiza que esté
+    libre de errores, que coincida en todo momento con la última versión publicada en el BOE ni que el sitio funcione
+    sin interrupciones. Respecto de los enlaces a sitios de terceros, como el BOE, se aplica el artículo 17 de la
+    LSSI-CE. Nada de lo anterior limita la responsabilidad que la ley no permita excluir.</p>
+
+  <h2>6. Datos personales y cookies</h2>
+  <p>El tratamiento de datos personales se explica en la <a href="politica-privacidad.html">Política de
+    privacidad</a>, y lo que se guarda en tu navegador, en la <a href="cookies.html">Política de cookies</a>.</p>
+
+  <h2>7. Legislación aplicable</h2>
+  <p>Este aviso se rige por la legislación española. Las controversias se someterán a los juzgados y tribunales que
+    resulten competentes conforme a la ley.</p>
+</main>
+
+<footer><div class="in">
+  <p class="pie-marca">NORLEXIA · Leyes interactivas</p>
+  <nav class="pie-links" aria-label="Información legal">
+    <span>© 2026 J A Noriega (Norik)</span>
+    <a href="aviso-legal.html" aria-current="page">Aviso legal</a>
+    <a href="politica-privacidad.html">Privacidad</a>
+    <a href="cookies.html">Cookies</a>
+  </nav>
+</div></footer>
+<script>
+document.getElementById("tema").onclick=function(){
+  var r=document.documentElement, a=r.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");
+  var n=a==="dark"?"light":"dark"; r.setAttribute("data-theme",n); try{localStorage.setItem("lec:tema",n)}catch(e){}
+};
+</script>
+</body>
+</html>

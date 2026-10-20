@@ -38,6 +38,22 @@ a.ley:hover{border-color:var(--acento)}
 .ley.prox{opacity:.6}
 .ley.prox .ir{background:transparent;color:var(--suave);border:1px dashed var(--borde)}
 .aviso{font-size:.8rem;color:var(--suave);margin-top:26px;border-top:1px solid var(--borde);padding-top:12px}
+/* pie legal y ventana © (igual que norlexia.es) */
+:root{--pie-oro:#8a6a1f}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--pie-oro:#c9a04a}}
+:root[data-theme="dark"]{--pie-oro:#c9a04a}
+.pie-legal{border-top:1px solid var(--borde);margin-top:18px;padding-top:16px}
+.pie-marca{font:500 .72rem/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--suave);margin:0 0 10px}
+.pie-links{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;margin:0;font-size:.88rem}
+.pie-links a{color:var(--pie-oro)}
+.pie-copy{background:none;border:0;padding:0;cursor:pointer;color:var(--pie-oro);text-decoration:underline;font:500 .78rem/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.08em;text-transform:uppercase}
+.ip{max-width:600px;width:calc(100% - 32px);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:22px 24px 10px;background:#062e2b;color:#e3ded2;box-shadow:0 20px 50px rgba(0,0,0,.45);font-size:16px}
+.ip::backdrop{background:rgba(5,20,18,.55)}
+.ip-cab{display:flex;justify-content:space-between;align-items:flex-start;gap:14px}
+.ip h2{font-family:Georgia,serif;font-size:1.25rem;font-weight:500;line-height:1.3;margin:0 0 14px;color:#f5f0e8}
+.ip-cerrar{flex:none;background:transparent;border:1px solid rgba(255,255,255,.25);color:#e3ded2;border-radius:6px;padding:7px 12px;cursor:pointer;font:500 .72rem ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase}
+.ip p{margin:0 0 12px;font-size:.95rem;line-height:1.6}
+.ip strong{color:#f5f0e8}
 </style>
 </head>
 <body>
@@ -52,7 +68,33 @@ a.ley:hover{border-color:var(--acento)}
   <div class="grid"><a class="ley" href="lec/index.html"><div class="ab">LEC</div><h2>Ley de Enjuiciamiento Civil</h2><div class="ref">Ley 1/2000, de 7 de enero · BOE-A-2000-323</div><p>Mapa procesal (ordinario, verbal, ejecución, cautelares, monitorio, cambiario, familia, herencia, hipotecaria), sistema de recursos, texto literal completo, repaso y notas.</p><span class="ir">Abrir ›</span></a><a class="ley" href="lecrim/index.html"><div class="ab">LECrim</div><h2>Ley de Enjuiciamiento Criminal</h2><div class="ref">Real Decreto de 14 de septiembre de 1882 · BOE-A-1882-6036</div><p>Mapa procesal en esqueleto (sumario, juicio oral, abreviado, juicio rápido, recursos…), texto literal completo, buscador y notas.</p><span class="ir">Abrir ›</span></a><div class="ley prox"><div class="ab">LRJS</div><h2>Ley reguladora de la Jurisdicción Social</h2><p>En preparación.</p><span class="ir">Próximamente</span></div><div class="ley prox"><div class="ab">ET</div><h2>Estatuto de los Trabajadores</h2><p>En preparación.</p><span class="ir">Próximamente</span></div></div>
   <p class="aviso">Textos consolidados del BOE de carácter informativo, sin valor jurídico. Los esquemas, plazos y preguntas son material de estudio elaborado: cada app indica qué está pendiente de revisión. Tus notas y tu progreso se guardan solo en este navegador.</p>
 </main>
+<footer class="in" style="padding-bottom:30px"><div class="pie-legal">
+  <p class="pie-marca">NORLEXIA · Leyes interactivas</p>
+  <nav class="pie-links" aria-label="Información legal">
+    <button type="button" class="pie-copy" id="ipAbrir" aria-haspopup="dialog">© 2026 J A Noriega (Norik)</button>
+    <a href="aviso-legal.html">Aviso legal</a>
+    <a href="politica-privacidad.html">Privacidad</a>
+    <a href="cookies.html">Cookies</a>
+  </nav>
+</div></footer>
+<dialog class="ip" id="ip" aria-labelledby="ipTit">
+  <div class="ip-cab"><h2 id="ipTit">Propiedad intelectual y condiciones de uso</h2>
+    <button type="button" class="ip-cerrar" id="ipCerrar">Cerrar</button></div>
+  <p><strong>© 2026 J A Noriega (Norik). Desarrollador de NORLEXia.</strong></p>
+  <p>Se autoriza consultar esta web y compartir su dirección libremente.</p>
+  <p>No se autoriza copiar ni modificar el código, la estructura, el diseño ni el desarrollo original, ni
+    explotarlos comercialmente, sin autorización previa y expresa de su desarrollador.</p>
+  <p>Las normas, los datos públicos y los enlaces a fuentes oficiales conservan su propio régimen jurídico y no se
+    reivindican como contenido exclusivo.</p>
+</dialog>
 <script>
+(function(){
+  var d=document.getElementById("ip");
+  document.getElementById("ipAbrir").onclick=function(){ if(d.showModal) d.showModal(); else d.setAttribute("open",""); };
+  var cerrar=function(){ if(d.close) d.close(); else d.removeAttribute("open"); };
+  document.getElementById("ipCerrar").onclick=cerrar;
+  d.addEventListener("click",function(e){ if(e.target===d) cerrar(); });  // pulsar fuera de la ventana
+})();
 (function(){
   var g=function(k){try{return localStorage.getItem(k)}catch(e){return null}}, s=function(k,v){try{localStorage.setItem(k,v)}catch(e){}};
   var t=g("lec:tema"); if(t) document.documentElement.setAttribute("data-theme",t);
