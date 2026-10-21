@@ -123,6 +123,28 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [x] **Recursos de la LECrim como en la LEC (hecho):** 14 recursos y 27 casos del selector, con «Por resolución», «Recursos» y «Ponte a prueba». Antes: al usuario le gusta la pestaña Recursos de la LEC (selector «Por resolución», fichas de cada recurso y «Ponte a prueba»). En la LECrim ahora solo hay tarjetas de bloques en esqueleto. Hacer `lecrim/datos/recursos.json` con el mismo formato (recursos, selector por resolución con frase literal, test), a partir de los arts. 216-238 ter (recursos contra resoluciones procesales), 846 bis a-846 ter (apelación), 847-933 (casación) y 954-961 (revisión), y los recursos propios del abreviado, juicio rápido y delitos leves. Todo con `revisado: false` y las dudas anotadas aquí.
 - [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).
 
+### Instrucción del sumario (contenido elaborado, pendiente de revisión)
+
+> Bloque desarrollado: 12 fases y 18 plazos (arts. 299 a 485). Sus fases aparecen también en «Procedimientos › Sumario ordinario». Las propuestas son de Claude (No verificable hasta que las confirmes). Contesta: **sí**, **no** u **otra**.
+
+- [ ] **Secreto del sumario: ¿se puede prorrogar?** El art. 302 permite declarar el secreto «por tiempo no superior a un mes» y obliga a alzarlo «con al menos diez días de antelación a la conclusión del sumario». No dice nada de prórrogas (Verificable: no hay más texto en el art. 302).
+  En la app: Procesos › Instrucción del sumario › fase 1.
+  - **Propuesta:** mostrar solo lo que dice el artículo (un mes como máximo, sin hablar de prórrogas). Si en la práctica aplicas prórrogas sucesivas por nuevos autos, dime con qué base y añado una nota como lectura tuya, sin ponerla como texto de la ley.
+  - **Tu respuesta:**
+- [ ] **Artículos con referencias de 1882 que no he llevado al mapa.** El art. 375 habla de la «partida de bautismo»; el art. 380, de procesados «mayor de nueve años y menor de quince»; el art. 345, del «Ministro de Gracia y Justicia», y el art. 346, de multas en pesetas. Siguen en el texto literal de la app (Verificable).
+  En la app: fase 7 (Identidad y circunstancias del procesado), aviso «Duda de interpretación».
+  - **Propuesta:** dejarlos fuera de las fichas y las preguntas, porque chocan con otras normas vigentes. Por ejemplo, el art. 779.1.3.ª manda al Fiscal de Menores a los menores de edad penal. Siguen disponibles en el árbol «Ley».
+  - **Tu respuesta:**
+- [ ] **Ámbito del sumario.** En la cabecera del bloque he puesto «delitos que no van por el procedimiento abreviado (pena de prisión superior a nueve años, art. 757)». Lo deduzco de los arts. 757 y 760; ninguno de los arts. 299 a 485 lo dice expresamente. Tampoco he mencionado el Jurado.
+  - **Propuesta:** mantenerlo como resumen orientativo.
+  - **Tu respuesta:**
+- [ ] **«Audiencia» en los recursos del art. 384.** El artículo dice «recurrir en queja a la Audiencia» y «apelar para ante la misma», sin concretar cuál.
+  En la app: fase 8 (Auto de procesamiento).
+  - **Propuesta:** mantener la palabra «Audiencia» tal cual, sin precisar el órgano.
+  - **Tu respuesta:**
+- [ ] **Fases del bloque.** He sustituido las 10 fases del esqueleto (capítulos del BOE) por 12. He separado el plazo de la instrucción (art. 324) y el auto de procesamiento (art. 384) por su importancia práctica. Dime si prefieres otra división.
+- [ ] **Revisa las 12 fases:** las frases entre « » son literales; las descripciones y los rótulos son resumen mío.
+
 ### Procedimiento abreviado (contenido elaborado, pendiente de revisión)
 
 > Bloque desarrollado: 10 fases y 32 plazos, de la Policía Judicial a la ejecución (arts. 757 a 794). Cada plazo, alternativa y pregunta lleva su frase literal, comprobada por el script. Las propuestas son de Claude (No verificable hasta que las confirmes), hechas solo con el texto de la LECrim de la app. Contesta en cada una: **sí**, **no** u **otra**.

@@ -330,187 +330,1166 @@
    "nombre": "Instrucción del sumario",
    "bloque": "lecrim",
    "grupo": "Libro II · Sumario",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "La instrucción del sumario ordinario: quién instruye, plazo, diligencias de investigación, procesamiento, declaraciones y pericias (arts. 299 a 485).",
    "ambito": {
     "corto": "Arts. 299 a 485",
-    "texto": "TÍTULO IV. De la instrucción · TÍTULO V. De la comprobación del delito y averiguación del delincuente",
+    "texto": "Sumario ordinario: delitos que no van por el procedimiento abreviado (pena de prisión superior a nueve años, art. 757). TÍTULO IV. De la instrucción · TÍTULO V. De la comprobación del delito y averiguación del delincuente",
     "articulos": [
-     "299"
+     "299",
+     "757"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "299",
+      "texto": "Constituyen el sumario las actuaciones encaminadas a preparar el juicio"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "instruccion-299",
-     "fase": "Del sumario y de las autoridades competentes para instruirlo",
-     "subtitulo": "TÍTULO IV · CAPÍTULO I · arts. 299 a 305",
-     "descripcion": "",
+     "id": "ins-sumario",
+     "fase": "El sumario y el juez instructor",
+     "subtitulo": "Qué es · reserva y secreto · quién instruye",
+     "descripcion": "El sumario son las actuaciones para preparar el juicio: averiguar el delito y sus circunstancias, la culpabilidad, y asegurar a las personas y las responsabilidades pecuniarias. Es reservado hasta que se abre el juicio oral, pero las partes personadas pueden conocer las actuaciones e intervenir en las diligencias, salvo que se declare secreto. Lo instruye el Juez de Instrucción del lugar del delito; cabe un instructor especial.",
      "articulos": [
       "299",
+      "301",
+      "302",
+      "303",
+      "304",
       "305"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Duración del secreto del sumario",
+       "plazo": "No más de 1 mes",
+       "articulo": "302",
+       "literal": "por tiempo no superior a un mes"
+      },
+      {
+       "acto": "Alzamiento del secreto antes de la conclusión",
+       "plazo": "Al menos 10 días antes",
+       "articulo": "302",
+       "literal": "El secreto del sumario deberá alzarse necesariamente con al menos diez días de antelación a la conclusión del sumario."
+      },
+      {
+       "acto": "Remisión al tribunal competente si el delito solo puede cometerlo un aforado",
+       "plazo": "No más de 3 días",
+       "articulo": "303",
+       "literal": "que en ningún caso podrá exceder de tres días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay riesgo grave para la vida o la integridad de alguien, o para el resultado de la investigación (delito público)",
+       "entonces": "El Juez puede declarar el sumario secreto, total o parcialmente, por auto.",
+       "articulos": [
+        "302"
+       ],
+       "literal": {
+        "articulo": "302",
+        "texto": "declararlo, mediante auto, total o parcialmente secreto para todas las partes personadas"
+       }
+      },
+      {
+       "si": "Un abogado o procurador revela indebidamente el sumario",
+       "entonces": "Multa de 500 a 10.000 euros.",
+       "articulos": [
+        "301"
+       ],
+       "literal": {
+        "articulo": "301",
+        "texto": "será corregido con multa de 500 a 10.000 euros"
+       }
+      },
+      {
+       "si": "Hay que proteger la intimidad de la víctima",
+       "entonces": "El Juez puede acordar medidas del art. 681.2.",
+       "articulos": [
+        "301 bis",
+        "681"
+       ],
+       "literal": {
+        "articulo": "301 bis",
+        "texto": "cuando resulte necesario para proteger la intimidad de la víctima"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Por cuánto tiempo puede declararse secreto el sumario y cuándo debe alzarse?",
+      "a": "Por tiempo no superior a un mes; debe alzarse al menos diez días antes de la conclusión del sumario.",
+      "articulos": [
+       "302"
+      ],
+      "literal": {
+       "articulo": "302",
+       "texto": "con al menos diez días de antelación a la conclusión del sumario"
+      }
+     },
+     "conexiones": [
       "299",
-      "305"
+      "301",
+      "301 bis",
+      "302",
+      "303",
+      "304",
+      "305",
+      "505",
+      "681"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "inicio"
+     ],
+     "duda": "El art. 302 fija el secreto «por tiempo no superior a un mes», pero no dice si cabe prorrogarlo. Ver PENDIENTES.md."
     },
     {
-     "id": "instruccion-306",
-     "fase": "De la formación del sumario",
-     "subtitulo": "TÍTULO IV · CAPÍTULO II · arts. 306 a 325",
-     "descripcion": "",
+     "id": "ins-formacion",
+     "fase": "Formación del sumario",
+     "subtitulo": "Inicio · diligencias pedidas por las partes · querella",
+     "descripcion": "El Juez de Instrucción forma el sumario bajo la inspección del Fiscal y da parte de su inicio al Fiscal y al Presidente de la Audiencia. Practica las diligencias que propongan el Fiscal o las partes si no son inútiles o perjudiciales. Si la querella no describe un delito o no es competente, la desestima. Si la imputación es de un delito del Jurado, incoa ese procedimiento.",
      "articulos": [
       "306",
-      "325"
+      "307",
+      "308",
+      "309 bis",
+      "311",
+      "312",
+      "313",
+      "314",
+      "320"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Parte al Presidente de la Audiencia sobre la formación del sumario",
+       "plazo": "2 días",
+       "articulo": "308",
+       "literal": "dentro de los dos días siguientes al en que hubieren principiado a instruirle"
+      },
+      {
+       "acto": "El Juez municipal (de paz) remite la causa al de Instrucción",
+       "plazo": "No más de 3 días",
+       "articulo": "307",
+       "literal": "que nunca podrá retener más de tres días"
+      },
+      {
+       "acto": "Resolver la petición de incoar el procedimiento del Jurado",
+       "plazo": "Una audiencia",
+       "articulo": "309 bis",
+       "literal": "debiendo el Juez resolver en plazo de una audiencia"
+      },
+      {
+       "acto": "La Audiencia Provincial resuelve la queja (Jurado)",
+       "plazo": "Antes de 8 días",
+       "articulo": "309 bis",
+       "literal": "resolverá antes de ocho días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El Juez deniega las diligencias pedidas por una parte",
+       "entonces": "Apelación en un solo efecto ante la Audiencia (el Fiscal de otra localidad, queja). Pueden volver a proponerse en el juicio oral.",
+       "articulos": [
+        "311",
+        "314"
+       ],
+       "literal": {
+        "articulo": "311",
+        "texto": "Contra el auto denegatorio de las diligencias pedidas podrá interponerse recurso de apelación, que será admitido en un solo efecto"
+       }
+      },
+      {
+       "si": "Los hechos de la querella no son delito o el Juez no es competente",
+       "entonces": "Desestima la querella; contra el auto, apelación en ambos efectos.",
+       "articulos": [
+        "313"
+       ],
+       "literal": {
+        "articulo": "313",
+        "texto": "procederá el recurso de apelación, que será admisible en ambos efectos"
+       }
+      },
+      {
+       "si": "Resulta la imputación de un delito competencia del Jurado",
+       "entonces": "Incoación del procedimiento de su ley reguladora; si el Juez no lo hace, queja ante la Audiencia Provincial.",
+       "articulos": [
+        "309 bis"
+       ],
+       "literal": {
+        "articulo": "309 bis",
+        "texto": "procederá el Juez a la incoación del procedimiento previsto en su ley reguladora"
+       }
+      },
+      {
+       "si": "Interviene un actor civil",
+       "entonces": "Solo puede procurar las diligencias útiles para su acción, a juicio del Juez.",
+       "articulos": [
+        "320"
+       ],
+       "literal": {
+        "articulo": "320",
+        "texto": "se limitará a procurar la práctica de aquellas diligencias que puedan conducir al mejor éxito de su acción"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si el Juez de Instrucción deniega una diligencia pedida en el sumario, ¿qué recurso cabe y con qué efecto?",
+      "a": "Apelación, admitida en un solo efecto, ante la Audiencia o Tribunal competente.",
+      "articulos": [
+       "311"
+      ],
+      "literal": {
+       "articulo": "311",
+       "texto": "será admitido en un solo efecto para ante la respectiva Audiencia o Tribunal competente"
+      }
+     },
+     "conexiones": [
       "306",
+      "307",
+      "308",
+      "309 bis",
+      "311",
+      "312",
+      "313",
+      "314",
+      "315",
+      "318",
+      "319",
+      "320",
       "325"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "inicio",
+      "recursos"
+     ]
     },
     {
-     "id": "instruccion-326",
-     "fase": "De la inspección ocular",
-     "subtitulo": "TÍTULO V · CAPÍTULO I · arts. 326 a 333",
-     "descripcion": "",
+     "id": "ins-plazo",
+     "fase": "Duración de la instrucción",
+     "subtitulo": "Plazo máximo y prórrogas (art. 324)",
+     "descripcion": "La investigación judicial tiene un plazo máximo de doce meses desde la incoación. Si no va a poder terminarse, el Juez puede acordar prórrogas sucesivas, por auto motivado y oídas las partes. Las diligencias acordadas antes de que venza el plazo valen aunque se reciban después; las acordadas después de vencer sin prórroga, no. Vencido el plazo, el instructor dicta auto de conclusión.",
+     "articulos": [
+      "324"
+     ],
+     "plazos": [
+      {
+       "acto": "Plazo máximo de la investigación",
+       "plazo": "12 meses desde la incoación",
+       "articulo": "324",
+       "literal": "La investigación judicial se desarrollará en un plazo máximo de doce meses desde la incoación de la causa."
+      },
+      {
+       "acto": "Cada prórroga",
+       "plazo": "6 meses o menos",
+       "articulo": "324",
+       "literal": "prórrogas sucesivas por periodos iguales o inferiores a seis meses"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El plazo o la prórroga vence sin auto de prórroga (o el auto se revoca)",
+       "entonces": "No son válidas las diligencias acordadas a partir de esa fecha.",
+       "articulos": [
+        "324"
+       ],
+       "literal": {
+        "articulo": "324",
+        "texto": "no serán válidas las diligencias acordadas a partir de dicha fecha"
+       }
+      },
+      {
+       "si": "Diligencia acordada en plazo pero recibida después",
+       "entonces": "Es válida.",
+       "articulos": [
+        "324"
+       ],
+       "literal": {
+        "articulo": "324",
+        "texto": "serán válidas, aunque se reciban tras la expiración del mismo"
+       }
+      },
+      {
+       "si": "Transcurre el plazo máximo o sus prórrogas",
+       "entonces": "Auto de conclusión del sumario (en el abreviado, la resolución que proceda).",
+       "articulos": [
+        "324",
+        "622"
+       ],
+       "literal": {
+        "articulo": "324",
+        "texto": "el instructor dictará auto de conclusión del sumario"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuál es el plazo máximo de la instrucción y cómo se prorroga?",
+      "a": "Doce meses desde la incoación, con prórrogas sucesivas de seis meses o menos, por auto motivado y oídas las partes.",
+      "articulos": [
+       "324"
+      ],
+      "literal": {
+       "articulo": "324",
+       "texto": "en un plazo máximo de doce meses desde la incoación de la causa"
+      }
+     },
+     "conexiones": [
+      "324",
+      "622",
+      "779"
+     ],
+     "continua_en": [
+      "conclusion",
+      "abreviado"
+     ]
+    },
+    {
+     "id": "ins-inspeccion",
+     "fase": "Inspección ocular",
+     "subtitulo": "Vestigios y lugar del delito",
+     "descripcion": "Si el delito dejó vestigios, el Juez los recoge y conserva para el juicio y describe el lugar, los objetos y todo lo útil para la acusación o la defensa, con planos o retratos si conviene. Las muestras biológicas se recogen y custodian garantizando su autenticidad. Todo se extiende por escrito en el acto.",
      "articulos": [
       "326",
+      "327",
+      "328",
+      "329",
+      "330",
+      "331",
+      "332",
       "333"
      ],
-     "rango": [
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "No quedan huellas del delito",
+       "entonces": "El Juez averigua por qué desaparecieron y recoge las pruebas que pueda.",
+       "articulos": [
+        "330"
+       ],
+       "literal": {
+        "articulo": "330",
+        "texto": "Cuando no hayan quedado huellas o vestigios del delito"
+       }
+      },
+      {
+       "si": "El delito no deja huellas por su naturaleza",
+       "entonces": "Se acredita por testigos y demás medios de comprobación.",
+       "articulos": [
+        "331"
+       ],
+       "literal": {
+        "articulo": "331",
+        "texto": "Cuando el delito fuere de los que no dejan huellas de su perpetración"
+       }
+      },
+      {
+       "si": "Hay un procesado como presunto autor",
+       "entonces": "Puede presenciar la diligencia, solo o con defensor, si lo pide; su falta no la suspende.",
+       "articulos": [
+        "333"
+       ],
+       "literal": {
+        "articulo": "333",
+        "texto": "no se suspenderá por la falta de comparecencia del procesado o de su defensor"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el procesado presenciar la inspección ocular?",
+      "a": "Sí, si lo solicita, solo o asistido de su defensor, y ambos pueden hacer observaciones.",
+      "articulos": [
+       "333"
+      ],
+      "literal": {
+       "articulo": "333",
+       "texto": "podrá presenciarlas, ya sola, ya asistida del defensor que eligiese o le fuese nombrado de oficio, si así lo solicitara"
+      }
+     },
+     "conexiones": [
+      "282",
       "326",
+      "327",
+      "328",
+      "329",
+      "330",
+      "331",
+      "332",
       "333"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
-     "id": "instruccion-334",
-     "fase": "Del cuerpo del delito",
-     "subtitulo": "TÍTULO V · CAPÍTULO II · arts. 334 a 367",
-     "descripcion": "",
+     "id": "ins-cuerpo",
+     "fase": "Cuerpo del delito",
+     "subtitulo": "Efectos, autopsia, análisis y ADN",
+     "descripcion": "El Juez manda recoger desde el primer momento armas, instrumentos y efectos relacionados con el delito, y describe la persona o cosa objeto del delito, con reconocimiento pericial cuando convenga. En caso de muerte violenta o sospechosa, identificación del cadáver y autopsia. Puede ordenar análisis químicos y, por resolución motivada, la toma de muestras biológicas del sospechoso para su perfil de ADN. Estas diligencias tienen preferencia.",
      "articulos": [
       "334",
+      "335",
+      "336",
+      "340",
+      "341",
+      "343",
+      "363",
+      "365",
+      "366",
       "367"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Exposición al público del cadáver no reconocido, antes de la autopsia",
+       "plazo": "Al menos 24 horas",
+       "articulo": "341",
+       "literal": "por tiempo a lo menos de veinticuatro horas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se incautan bienes a una persona",
+       "entonces": "Puede recurrir la medida en cualquier momento ante el Juez de Instrucción.",
+       "articulos": [
+        "334"
+       ],
+       "literal": {
+        "articulo": "334",
+        "texto": "La persona afectada por la incautación podrá recurrir en cualquier momento la medida ante el Juez de Instrucción."
+       }
+      },
+      {
+       "si": "Los efectos pertenecen a la víctima",
+       "entonces": "Se le restituyen de inmediato, salvo que deban conservarse como prueba.",
+       "articulos": [
+        "334"
+       ],
+       "literal": {
+        "articulo": "334",
+        "texto": "Los efectos que pertenecieran a la víctima del delito serán restituidos inmediatamente a la misma"
+       }
+      },
+      {
+       "si": "Muerte violenta o sospechosa de criminalidad",
+       "entonces": "Autopsia, aunque la causa de la muerte parezca clara.",
+       "articulos": [
+        "340",
+        "343"
+       ],
+       "literal": {
+        "articulo": "343",
+        "texto": "se procederá a la autopsia del cadáver"
+       }
+      },
+      {
+       "si": "Hace falta el perfil de ADN del sospechoso",
+       "entonces": "Resolución motivada del Juez de Instrucción, con proporcionalidad.",
+       "articulos": [
+        "363"
+       ],
+       "literal": {
+        "articulo": "363",
+        "texto": "podrá acordar, en resolución motivada, la obtención de muestras biológicas del sospechoso"
+       }
+      },
+      {
+       "si": "Un tercero reclama los efectos durante el sumario",
+       "entonces": "No se admiten reclamaciones ni tercerías.",
+       "articulos": [
+        "367"
+       ],
+       "literal": {
+        "articulo": "367",
+        "texto": "En ningún caso admitirá el Juez durante el sumario reclamaciones ni tercerías"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Admite el Juez, durante el sumario, tercerías para la devolución de los efectos del cuerpo del delito?",
+      "a": "No, en ningún caso, cualquiera que sea la clase de efectos y quien los reclame.",
+      "articulos": [
+       "367"
+      ],
+      "literal": {
+       "articulo": "367",
+       "texto": "En ningún caso admitirá el Juez durante el sumario reclamaciones ni tercerías que tengan por objeto la devolución de los efectos que constituyen el cuerpo del delito"
+      }
+     },
+     "conexiones": [
       "334",
+      "335",
+      "336",
+      "338",
+      "340",
+      "341",
+      "343",
+      "353",
+      "363",
+      "364",
+      "365",
+      "366",
       "367"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "investigacion"
+     ]
     },
     {
-     "id": "instruccion-367_bis",
-     "fase": "De la destrucción y la realización anticipada de los efectos judiciales",
-     "subtitulo": "TÍTULO V · CAPÍTULO II BIS · arts. 367 bis a 367 septies",
-     "descripcion": "",
+     "id": "ins-efectos",
+     "fase": "Destrucción y realización anticipada de efectos",
+     "subtitulo": "Efectos judiciales (arts. 367 bis a 367 septies)",
+     "descripcion": "Son efectos judiciales los bienes puestos a disposición judicial, embargados, incautados o aprehendidos. Pueden destruirse dejando muestras, realizarse antes de la sentencia (si son de lícito comercio y no son piezas de convicción) o cederse en uso provisional. La Oficina de Recuperación y Gestión de Activos puede encargarse de su gestión.",
      "articulos": [
       "367 bis",
+      "367 ter",
+      "367 quáter",
+      "367 quinquies",
+      "367 sexies",
       "367 septies"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Drogas: destrucción si el juez no ordena conservarlas",
+       "plazo": "1 mes desde los análisis",
+       "articulo": "367 ter",
+       "literal": "trascurrido el plazo de un mes desde que se efectuó aquella"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Su naturaleza o su custodia es peligrosa",
+       "entonces": "Destrucción, dejando muestras suficientes y previa audiencia del Fiscal y del propietario.",
+       "articulos": [
+        "367 ter"
+       ],
+       "literal": {
+        "articulo": "367 ter",
+        "texto": "Podrá decretarse la destrucción de los efectos judiciales, dejando muestras suficientes"
+       }
+      },
+      {
+       "si": "Son perecederos, abandonados, costosos de conservar o se deprecian",
+       "entonces": "Realización anticipada sin esperar a la sentencia.",
+       "articulos": [
+        "367 quáter"
+       ],
+       "literal": {
+        "articulo": "367 quáter",
+        "texto": "Podrán realizarse los efectos judiciales de lícito comercio, sin esperar al pronunciamiento o firmeza del fallo"
+       }
+      },
+      {
+       "si": "Está pendiente el recurso del interesado contra el embargo o decomiso",
+       "entonces": "No se acuerda la realización.",
+       "articulos": [
+        "367 quáter"
+       ],
+       "literal": {
+        "articulo": "367 quáter",
+        "texto": "Esté pendiente de resolución el recurso interpuesto por el interesado contra el embargo o decomiso de los bienes o efectos."
+       }
+      },
+      {
+       "si": "Los efectos sirven a un servicio público",
+       "entonces": "Utilización provisional de los bienes decomisados cautelarmente.",
+       "articulos": [
+        "367 sexies"
+       ],
+       "literal": {
+        "articulo": "367 sexies",
+        "texto": "Podrá autorizarse la utilización provisional de los bienes o efectos decomisados cautelarmente"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿En qué puede consistir la realización de los efectos judiciales?",
+      "a": "En la entrega a entidades sin ánimo de lucro o Administraciones públicas, la realización por persona o entidad especializada, o la subasta pública.",
+      "articulos": [
+       "367 quinquies"
+      ],
+      "literal": {
+       "articulo": "367 quinquies",
+       "texto": "La realización de los efectos judiciales podrá consistir en:"
+      }
+     },
+     "conexiones": [
       "367 bis",
+      "367 ter",
+      "367 quáter",
+      "367 quinquies",
+      "367 sexies",
       "367 septies"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "fianzas"
+     ]
     },
     {
-     "id": "instruccion-368",
-     "fase": "De la identidad del delincuente y de sus circunstancias personales",
-     "subtitulo": "TÍTULO V · CAPÍTULO III · arts. 368 a 384 bis",
-     "descripcion": "",
+     "id": "ins-identidad",
+     "fase": "Identidad y circunstancias del procesado",
+     "subtitulo": "Rueda de reconocimiento · antecedentes · salud mental",
+     "descripcion": "Quien acusa a una persona debe reconocerla judicialmente si hay duda sobre su identidad, en rueda con personas de aspecto semejante. Se hacen constar las señas del procesado, se acredita su edad y se traen sus antecedentes penales. Si hay indicios de enajenación mental, observación por los médicos forenses.",
      "articulos": [
       "368",
-      "384 bis"
+      "369",
+      "370",
+      "373",
+      "374",
+      "379",
+      "381",
+      "383"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "El Registro Central de Penados envía los antecedentes",
+       "plazo": "3 días (improrrogable)",
+       "articulo": "379",
+       "literal": "en el improrrogable término de tres días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Varias personas deben reconocer a la misma",
+       "entonces": "Reconocimiento por separado, sin que se comuniquen entre sí.",
+       "articulos": [
+        "370"
+       ],
+       "literal": {
+        "articulo": "370",
+        "texto": "deberá practicarse separadamente con cada uno de ellos"
+       }
+      },
+      {
+       "si": "Indicios de enajenación mental del procesado",
+       "entonces": "Observación inmediata por los médicos forenses.",
+       "articulos": [
+        "381"
+       ],
+       "literal": {
+        "articulo": "381",
+        "texto": "le someterá inmediatamente a la observación de los Médicos forenses"
+       }
+      },
+      {
+       "si": "La demencia sobreviene después del delito",
+       "entonces": "Concluso el sumario, se archiva la causa hasta que el procesado recobre la salud.",
+       "articulos": [
+        "383"
+       ],
+       "literal": {
+        "articulo": "383",
+        "texto": "se mandará archivar la causa por el Tribunal competente hasta que el procesado recobre la salud"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo se practica la rueda de reconocimiento?",
+      "a": "Poniendo a la persona junto con otras de circunstancias exteriores semejantes, y quien reconoce dice si está en la rueda y la designa.",
+      "articulos": [
+       "369"
+      ],
+      "literal": {
+       "articulo": "369",
+       "texto": "haciéndola comparecer en unión con otras de circunstancias exteriores semejantes"
+      }
+     },
+     "conexiones": [
       "368",
+      "369",
+      "370",
+      "373",
+      "374",
+      "375",
+      "376",
+      "379",
+      "381",
+      "382",
+      "383"
+     ],
+     "continua_en": [],
+     "duda": "Los arts. 375, 376 y 380 conservan referencias de 1882 (partida de bautismo, procesados de nueve a quince años). No las he incluido en la ficha. Ver PENDIENTES.md."
+    },
+    {
+     "id": "ins-procesamiento",
+     "fase": "Auto de procesamiento",
+     "subtitulo": "Indicio racional de criminalidad · recursos",
+     "descripcion": "En cuanto resulta del sumario un indicio racional de criminalidad contra una persona, el Juez dicta auto declarándola procesada. Desde entonces puede valerse de letrado para pedir la pronta terminación del sumario, solicitar diligencias y formular pretensiones sobre su situación. El régimen de recursos es distinto si el auto acuerda o deniega el procesamiento.",
+     "articulos": [
+      "384",
       "384 bis"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Reforma contra el auto de procesamiento",
+       "plazo": "3 días",
+       "articulo": "384",
+       "literal": "recurso de reforma dentro de los tres días siguientes al de haberle sido notificada la resolución"
+      },
+      {
+       "acto": "Apelación contra el auto que deniega esa reforma",
+       "plazo": "5 días",
+       "articulo": "384",
+       "literal": "dentro de los cinco días siguientes al de la notificación del auto denegatorio a la representación recurrente"
+      },
+      {
+       "acto": "Reforma contra el auto que deniega el procesamiento (solo quien lo pidió)",
+       "plazo": "3 días",
+       "articulo": "384",
+       "literal": "el recurso de reforma, utilizándolo dentro de los tres días siguientes al de la notificación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se acuerda el procesamiento",
+       "entonces": "Reforma en 3 días y apelación en un efecto (también subsidiaria con la reforma).",
+       "articulos": [
+        "384"
+       ],
+       "literal": {
+        "articulo": "384",
+        "texto": "También podrá ser interpuesto el recurso de apelación en un efecto subsidiariamente con el de reforma"
+       }
+      },
+      {
+       "si": "Se deniega el procesamiento y también la reforma",
+       "entonces": "No cabe apelación ni otro recurso, pero puede reproducirse la petición ante la Audiencia en el traslado del art. 627.",
+       "articulos": [
+        "384",
+        "627",
+        "630"
+       ],
+       "literal": {
+        "articulo": "384",
+        "texto": "no se podrá utilizar recurso de apelación ni ningún otro recurso"
+       }
+      },
+      {
+       "si": "El Juez no accede a la pronta terminación del sumario pedida por el procesado",
+       "entonces": "Queja ante la Audiencia (para diligencias o pretensiones, apelación en un solo efecto).",
+       "articulos": [
+        "384"
+       ],
+       "literal": {
+        "articulo": "384",
+        "texto": "En el primer caso podrán recurrir en queja a la Audiencia"
+       }
+      },
+      {
+       "si": "Procesado con cargo público, en prisión, por delito de bandas armadas o terrorismo",
+       "entonces": "Suspensión automática en el cargo mientras dure la prisión.",
+       "articulos": [
+        "384 bis"
+       ],
+       "literal": {
+        "articulo": "384 bis",
+        "texto": "quedará automáticamente suspendido en el ejercicio del mismo mientras dure la situación de prisión"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo se dicta el auto de procesamiento?",
+      "a": "Desde que resulta del sumario algún indicio racional de criminalidad contra una persona determinada.",
+      "articulos": [
+       "384"
+      ],
+      "literal": {
+       "articulo": "384",
+       "texto": "Desde que resultare del sumario algún indicio racional de criminalidad contra determinada persona, se dictará auto declarándola procesada"
+      }
+     },
+     "conexiones": [
+      "384",
+      "384 bis",
+      "627",
+      "630"
+     ],
+     "continua_en": [
+      "recursos",
+      "cautelares",
+      "conclusion"
+     ]
     },
     {
-     "id": "instruccion-385",
-     "fase": "De las declaraciones de los procesados",
-     "subtitulo": "TÍTULO V · CAPÍTULO IV · arts. 385 a 409 bis",
-     "descripcion": "",
+     "id": "ins-declaracion",
+     "fase": "Declaraciones del procesado",
+     "subtitulo": "Primera declaración y sucesivas",
+     "descripcion": "El Juez toma al procesado cuantas declaraciones considere convenientes. Las preguntas han de ser directas, sin coacción ni amenaza; el procesado puede manifestar cuanto convenga a su defensa y declarar cuantas veces quiera. La confesión no exime de comprobar el delito. La persona jurídica declara por su representante especialmente designado.",
      "articulos": [
       "385",
+      "386",
+      "389",
+      "392",
+      "396",
+      "400",
+      "405",
+      "406",
       "409 bis"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Primera declaración del procesado detenido",
+       "plazo": "24 horas",
+       "articulo": "386",
+       "literal": "Si el procesado estuviere detenido, se le recibirá la primera declaración dentro del término de veinticuatro horas."
+      },
+      {
+       "acto": "Prórroga si media causa grave",
+       "plazo": "48 horas más",
+       "articulo": "386",
+       "literal": "Este plazo podrá prorrogarse por otras cuarenta y ocho, si mediare causa grave"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El procesado rehúsa contestar o finge una enfermedad",
+       "entonces": "Se le advierte de que la instrucción continúa.",
+       "articulos": [
+        "392"
+       ],
+       "literal": {
+        "articulo": "392",
+        "texto": "se continuará la instrucción del proceso"
+       }
+      },
+      {
+       "si": "El procesado confiesa",
+       "entonces": "El Juez debe seguir practicando las diligencias para comprobar la confesión y el delito.",
+       "articulos": [
+        "406"
+       ],
+       "literal": {
+        "articulo": "406",
+        "texto": "La confesión del procesado no dispensará al Juez de instrucción de practicar todas las diligencias necesarias"
+       }
+      },
+      {
+       "si": "Se contradice o se retracta",
+       "entonces": "Se le interroga sobre el motivo de la contradicción o la retractación.",
+       "articulos": [
+        "405"
+       ],
+       "literal": {
+        "articulo": "405",
+        "texto": "deberá ser interrogado sobre el móvil de sus contradicciones y sobre las causas de su retractación"
+       }
+      },
+      {
+       "si": "No comparece el representante de la persona jurídica investigada",
+       "entonces": "Se tiene por celebrado el acto y por ejercido el derecho a no declarar.",
+       "articulos": [
+        "409 bis"
+       ],
+       "literal": {
+        "articulo": "409 bis",
+        "texto": "se tenga por celebrado este acto, entendiéndose que se acoge a su derecho a no declarar"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo deben ser las preguntas al procesado?",
+      "a": "Directas, nunca capciosas ni sugestivas, y sin coacción ni amenaza.",
+      "articulos": [
+       "389"
+      ],
+      "literal": {
+       "articulo": "389",
+       "texto": "Las preguntas serán directas, sin que por ningún concepto puedan hacérsele de un modo capcioso o sugestivo."
+      }
+     },
+     "conexiones": [
       "385",
-      "409 bis"
+      "386",
+      "388",
+      "389",
+      "390",
+      "391",
+      "392",
+      "393",
+      "396",
+      "397",
+      "400",
+      "405",
+      "406",
+      "407",
+      "409 bis",
+      "506"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "cautelares"
+     ]
     },
     {
-     "id": "instruccion-410",
-     "fase": "De las declaraciones de los testigos",
-     "subtitulo": "TÍTULO V · CAPÍTULO V · arts. 410 a 450",
-     "descripcion": "",
+     "id": "ins-testigos",
+     "fase": "Declaraciones de los testigos",
+     "subtitulo": "Deber de declarar · dispensas · declaración anticipada",
+     "descripcion": "Quien reside en España y no está impedido debe acudir al llamamiento y declarar. Hay exentos de comparecer (que declaran por escrito o en su despacho) y dispensados de declarar, como los parientes próximos del procesado y su abogado. Los testigos declaran por separado, en secreto, bajo juramento o promesa, y la declaración se graba. Si un testigo no podrá ir al juicio, su declaración se practica de inmediato con contradicción.",
      "articulos": [
       "410",
-      "450"
+      "412",
+      "416",
+      "417",
+      "418",
+      "420",
+      "433",
+      "435",
+      "446",
+      "448",
+      "449",
+      "449 bis",
+      "449 ter"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "El procesado nombra abogado para la declaración anticipada del testigo",
+       "plazo": "24 horas",
+       "articulo": "448",
+       "literal": "que nombre abogado en el término de veinticuatro horas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El testigo es pariente próximo del procesado",
+       "entonces": "Está dispensado de declarar en su contra; el Juez se lo advierte.",
+       "articulos": [
+        "416"
+       ],
+       "literal": {
+        "articulo": "416",
+        "texto": "no tiene obligación de declarar en contra del procesado"
+       }
+      },
+      {
+       "si": "No acude al primer llamamiento sin estar impedido, o se niega a declarar",
+       "entonces": "Multa de 200 a 5.000 euros; si persiste, conducción y persecución penal.",
+       "articulos": [
+        "420"
+       ],
+       "literal": {
+        "articulo": "420",
+        "texto": "incurrirá en la multa de 200 a 5.000 euros"
+       }
+      },
+      {
+       "si": "Es de temer que el testigo no podrá ir al juicio oral (ausencia, muerte, incapacidad)",
+       "entonces": "Declaración inmediata con posibilidad de contradicción.",
+       "articulos": [
+        "448"
+       ],
+       "literal": {
+        "articulo": "448",
+        "texto": "el Juez instructor mandará practicar inmediatamente la declaración, asegurando en todo caso la posibilidad de contradicción de las partes"
+       }
+      },
+      {
+       "si": "Peligro inminente de muerte del testigo",
+       "entonces": "Declaración urgente, aunque el procesado no pueda estar asistido de letrado.",
+       "articulos": [
+        "449"
+       ],
+       "literal": {
+        "articulo": "449",
+        "texto": "aunque el procesado no pudiese ser asistido de Letrado"
+       }
+      },
+      {
+       "si": "Testigo menor de catorce años o con discapacidad necesitada de especial protección, en los delitos del art. 449 ter",
+       "entonces": "Prueba preconstituida obligatoria, grabada y con contradicción.",
+       "articulos": [
+        "449 ter",
+        "449 bis"
+       ],
+       "literal": {
+        "articulo": "449 ter",
+        "texto": "la autoridad judicial acordará, en todo caso, practicar la audiencia del menor como prueba preconstituida"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede acogerse a la dispensa del art. 416 el pariente que está o ha estado personado como acusación particular?",
+      "a": "No: la dispensa no se aplica a quien esté o haya estado personado como acusación particular.",
+      "articulos": [
+       "416"
+      ],
+      "literal": {
+       "articulo": "416",
+       "texto": "Cuando el testigo esté o haya estado personado en el procedimiento como acusación particular."
+      }
+     },
+     "conexiones": [
       "410",
-      "450"
+      "411",
+      "412",
+      "416",
+      "417",
+      "418",
+      "419",
+      "420",
+      "421",
+      "433",
+      "435",
+      "436",
+      "439",
+      "440",
+      "446",
+      "448",
+      "449",
+      "449 bis",
+      "449 ter",
+      "730"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
-     "id": "instruccion-451",
-     "fase": "Del careo de los testigos y procesados",
-     "subtitulo": "TÍTULO V · CAPÍTULO VI · arts. 451 a 455",
-     "descripcion": "",
+     "id": "ins-careo",
+     "fase": "Careo",
+     "subtitulo": "Entre testigos o procesados discordes",
+     "descripcion": "Cuando testigos o procesados discrepan sobre un hecho importante, el Juez puede carearlos, por regla general de dos en dos: se leen sus declaraciones, se les pregunta si se ratifican y se les invita a ponerse de acuerdo. Es un medio subsidiario.",
      "articulos": [
       "451",
-      "455"
-     ],
-     "rango": [
-      "451",
+      "452",
       "455"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Hay otro modo de comprobar el delito o la culpabilidad",
+       "entonces": "No se practica el careo.",
+       "articulos": [
+        "455"
+       ],
+       "literal": {
+        "articulo": "455",
+        "texto": "No se practicarán careos sino cuando no fuere conocido otro modo de comprobar la existencia del delito o la culpabilidad de alguno de los procesados."
+       }
+      },
+      {
+       "si": "Uno de los testigos es menor de edad",
+       "entonces": "No se carea, salvo que el Juez lo considere imprescindible y no lesivo, previo informe pericial.",
+       "articulos": [
+        "455"
+       ],
+       "literal": {
+        "articulo": "455",
+        "texto": "No se practicarán careos con testigos que sean menores de edad"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo procede el careo en el sumario?",
+      "a": "Solo cuando no se conoce otro modo de comprobar la existencia del delito o la culpabilidad de algún procesado.",
+      "articulos": [
+       "455"
+      ],
+      "literal": {
+       "articulo": "455",
+       "texto": "No se practicarán careos sino cuando no fuere conocido otro modo de comprobar la existencia del delito"
+      }
+     },
+     "conexiones": [
+      "451",
+      "452",
+      "453",
+      "454",
+      "455"
+     ],
+     "continua_en": []
     },
     {
-     "id": "instruccion-456",
-     "fase": "Del informe pericial",
-     "subtitulo": "TÍTULO V · CAPÍTULO VII · arts. 456 a 485",
-     "descripcion": "",
+     "id": "ins-pericial",
+     "fase": "Informe pericial",
+     "subtitulo": "Nombramiento · recusación · peritos de parte",
+     "descripcion": "El Juez acuerda el informe pericial cuando hacen falta conocimientos científicos o artísticos, preferentemente con peritos titulares y, como regla, con dos peritos. El nombramiento se notifica a las partes. Si la pericia puede repetirse en el juicio oral, no cabe recusación; si no puede repetirse, cabe recusar y las partes pueden nombrar su propio perito.",
      "articulos": [
       "456",
-      "485"
-     ],
-     "rango": [
-      "456",
-      "485"
+      "458",
+      "459",
+      "466",
+      "467",
+      "468",
+      "469",
+      "471",
+      "478",
+      "484"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "La pericia podrá repetirse en el juicio oral",
+       "entonces": "Los peritos no pueden ser recusados.",
+       "articulos": [
+        "467"
+       ],
+       "literal": {
+        "articulo": "467",
+        "texto": "los peritos nombrados no podrán ser recusados por las partes"
+       }
+      },
+      {
+       "si": "La pericia no podrá repetirse en el juicio oral",
+       "entonces": "Cabe recusación, por escrito antes de empezar la diligencia, y querellante y procesado pueden nombrar un perito a su costa.",
+       "articulos": [
+        "467",
+        "469",
+        "471"
+       ],
+       "literal": {
+        "articulo": "469",
+        "texto": "deberá hacerlo por escrito antes de empezar la diligencia pericial"
+       }
+      },
+      {
+       "si": "Solo hay un perito en el lugar y no se puede esperar a otro",
+       "entonces": "Excepción a la regla de dos peritos.",
+       "articulos": [
+        "459"
+       ],
+       "literal": {
+        "articulo": "459",
+        "texto": "Se exceptúa el caso en que no hubiese más de uno en el lugar"
+       }
+      },
+      {
+       "si": "Los peritos discrepan y son número par",
+       "entonces": "El Juez nombra otro.",
+       "articulos": [
+        "484"
+       ],
+       "literal": {
+        "articulo": "484",
+        "texto": "Si los peritos estuviesen discordes y su número fuere par, nombrará otro el Juez."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo pueden las partes recusar a los peritos en el sumario?",
+      "a": "Cuando el reconocimiento y el informe no puedan reproducirse en el juicio oral.",
+      "articulos": [
+       "467"
+      ],
+      "literal": {
+       "articulo": "467",
+       "texto": "Si no pudiere reproducirse en el juicio oral, habrá lugar a la recusación."
+      }
+     },
+     "conexiones": [
+      "456",
+      "457",
+      "458",
+      "459",
+      "462",
+      "463",
+      "464",
+      "466",
+      "467",
+      "468",
+      "469",
+      "470",
+      "471",
+      "474",
+      "478",
+      "479",
+      "483",
+      "484"
+     ],
+     "continua_en": [
+      "abreviado"
+     ]
     }
    ]
   },
@@ -2622,192 +3601,1169 @@
    ],
    "ambito": {
     "corto": "Arts. 299 a 749",
-    "texto": "TÍTULO IV. De la instrucción · TÍTULO V. De la comprobación del delito y averiguación del delincuente · TÍTULO XI. De la conclusión del sumario y del sobreseimiento · TÍTULO XII. Disposiciones generales referentes a los anteriores títulos · TÍTULO I. De la calificación del delito · TÍTULO II. De los artículos de previo pronunciamiento · TÍTULO III. De la celebración del juicio oral",
+    "texto": "Sumario ordinario: delitos que no van por el procedimiento abreviado (pena de prisión superior a nueve años, art. 757). TÍTULO IV. De la instrucción · TÍTULO V. De la comprobación del delito y averiguación del delincuente · TÍTULO XI. De la conclusión del sumario y del sobreseimiento · TÍTULO XII. Disposiciones generales referentes a los anteriores títulos · TÍTULO I. De la calificación del delito · TÍTULO II. De los artículos de previo pronunciamiento · TÍTULO III. De la celebración del juicio oral",
     "articulos": [
-     "299"
+     "299",
+     "757"
     ],
     "literal": []
    },
    "revisado": false,
    "fases": [
     {
-     "id": "sumario-instruccion-299",
-     "fase": "Del sumario y de las autoridades competentes para instruirlo",
-     "subtitulo": "TÍTULO IV · CAPÍTULO I · arts. 299 a 305",
-     "descripcion": "",
+     "id": "sumario-ins-sumario",
+     "fase": "El sumario y el juez instructor",
+     "subtitulo": "Qué es · reserva y secreto · quién instruye",
+     "descripcion": "El sumario son las actuaciones para preparar el juicio: averiguar el delito y sus circunstancias, la culpabilidad, y asegurar a las personas y las responsabilidades pecuniarias. Es reservado hasta que se abre el juicio oral, pero las partes personadas pueden conocer las actuaciones e intervenir en las diligencias, salvo que se declare secreto. Lo instruye el Juez de Instrucción del lugar del delito; cabe un instructor especial.",
      "articulos": [
       "299",
+      "301",
+      "302",
+      "303",
+      "304",
       "305"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Duración del secreto del sumario",
+       "plazo": "No más de 1 mes",
+       "articulo": "302",
+       "literal": "por tiempo no superior a un mes"
+      },
+      {
+       "acto": "Alzamiento del secreto antes de la conclusión",
+       "plazo": "Al menos 10 días antes",
+       "articulo": "302",
+       "literal": "El secreto del sumario deberá alzarse necesariamente con al menos diez días de antelación a la conclusión del sumario."
+      },
+      {
+       "acto": "Remisión al tribunal competente si el delito solo puede cometerlo un aforado",
+       "plazo": "No más de 3 días",
+       "articulo": "303",
+       "literal": "que en ningún caso podrá exceder de tres días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay riesgo grave para la vida o la integridad de alguien, o para el resultado de la investigación (delito público)",
+       "entonces": "El Juez puede declarar el sumario secreto, total o parcialmente, por auto.",
+       "articulos": [
+        "302"
+       ],
+       "literal": {
+        "articulo": "302",
+        "texto": "declararlo, mediante auto, total o parcialmente secreto para todas las partes personadas"
+       }
+      },
+      {
+       "si": "Un abogado o procurador revela indebidamente el sumario",
+       "entonces": "Multa de 500 a 10.000 euros.",
+       "articulos": [
+        "301"
+       ],
+       "literal": {
+        "articulo": "301",
+        "texto": "será corregido con multa de 500 a 10.000 euros"
+       }
+      },
+      {
+       "si": "Hay que proteger la intimidad de la víctima",
+       "entonces": "El Juez puede acordar medidas del art. 681.2.",
+       "articulos": [
+        "301 bis",
+        "681"
+       ],
+       "literal": {
+        "articulo": "301 bis",
+        "texto": "cuando resulte necesario para proteger la intimidad de la víctima"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Por cuánto tiempo puede declararse secreto el sumario y cuándo debe alzarse?",
+      "a": "Por tiempo no superior a un mes; debe alzarse al menos diez días antes de la conclusión del sumario.",
+      "articulos": [
+       "302"
+      ],
+      "literal": {
+       "articulo": "302",
+       "texto": "con al menos diez días de antelación a la conclusión del sumario"
+      }
+     },
+     "conexiones": [
       "299",
-      "305"
+      "301",
+      "301 bis",
+      "302",
+      "303",
+      "304",
+      "305",
+      "505",
+      "681"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [
+      "inicio"
+     ],
+     "duda": "El art. 302 fija el secreto «por tiempo no superior a un mes», pero no dice si cabe prorrogarlo. Ver PENDIENTES.md.",
      "origen": "instruccion"
     },
     {
-     "id": "sumario-instruccion-306",
-     "fase": "De la formación del sumario",
-     "subtitulo": "TÍTULO IV · CAPÍTULO II · arts. 306 a 325",
-     "descripcion": "",
+     "id": "sumario-ins-formacion",
+     "fase": "Formación del sumario",
+     "subtitulo": "Inicio · diligencias pedidas por las partes · querella",
+     "descripcion": "El Juez de Instrucción forma el sumario bajo la inspección del Fiscal y da parte de su inicio al Fiscal y al Presidente de la Audiencia. Practica las diligencias que propongan el Fiscal o las partes si no son inútiles o perjudiciales. Si la querella no describe un delito o no es competente, la desestima. Si la imputación es de un delito del Jurado, incoa ese procedimiento.",
      "articulos": [
       "306",
-      "325"
+      "307",
+      "308",
+      "309 bis",
+      "311",
+      "312",
+      "313",
+      "314",
+      "320"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Parte al Presidente de la Audiencia sobre la formación del sumario",
+       "plazo": "2 días",
+       "articulo": "308",
+       "literal": "dentro de los dos días siguientes al en que hubieren principiado a instruirle"
+      },
+      {
+       "acto": "El Juez municipal (de paz) remite la causa al de Instrucción",
+       "plazo": "No más de 3 días",
+       "articulo": "307",
+       "literal": "que nunca podrá retener más de tres días"
+      },
+      {
+       "acto": "Resolver la petición de incoar el procedimiento del Jurado",
+       "plazo": "Una audiencia",
+       "articulo": "309 bis",
+       "literal": "debiendo el Juez resolver en plazo de una audiencia"
+      },
+      {
+       "acto": "La Audiencia Provincial resuelve la queja (Jurado)",
+       "plazo": "Antes de 8 días",
+       "articulo": "309 bis",
+       "literal": "resolverá antes de ocho días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El Juez deniega las diligencias pedidas por una parte",
+       "entonces": "Apelación en un solo efecto ante la Audiencia (el Fiscal de otra localidad, queja). Pueden volver a proponerse en el juicio oral.",
+       "articulos": [
+        "311",
+        "314"
+       ],
+       "literal": {
+        "articulo": "311",
+        "texto": "Contra el auto denegatorio de las diligencias pedidas podrá interponerse recurso de apelación, que será admitido en un solo efecto"
+       }
+      },
+      {
+       "si": "Los hechos de la querella no son delito o el Juez no es competente",
+       "entonces": "Desestima la querella; contra el auto, apelación en ambos efectos.",
+       "articulos": [
+        "313"
+       ],
+       "literal": {
+        "articulo": "313",
+        "texto": "procederá el recurso de apelación, que será admisible en ambos efectos"
+       }
+      },
+      {
+       "si": "Resulta la imputación de un delito competencia del Jurado",
+       "entonces": "Incoación del procedimiento de su ley reguladora; si el Juez no lo hace, queja ante la Audiencia Provincial.",
+       "articulos": [
+        "309 bis"
+       ],
+       "literal": {
+        "articulo": "309 bis",
+        "texto": "procederá el Juez a la incoación del procedimiento previsto en su ley reguladora"
+       }
+      },
+      {
+       "si": "Interviene un actor civil",
+       "entonces": "Solo puede procurar las diligencias útiles para su acción, a juicio del Juez.",
+       "articulos": [
+        "320"
+       ],
+       "literal": {
+        "articulo": "320",
+        "texto": "se limitará a procurar la práctica de aquellas diligencias que puedan conducir al mejor éxito de su acción"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si el Juez de Instrucción deniega una diligencia pedida en el sumario, ¿qué recurso cabe y con qué efecto?",
+      "a": "Apelación, admitida en un solo efecto, ante la Audiencia o Tribunal competente.",
+      "articulos": [
+       "311"
+      ],
+      "literal": {
+       "articulo": "311",
+       "texto": "será admitido en un solo efecto para ante la respectiva Audiencia o Tribunal competente"
+      }
+     },
+     "conexiones": [
       "306",
+      "307",
+      "308",
+      "309 bis",
+      "311",
+      "312",
+      "313",
+      "314",
+      "315",
+      "318",
+      "319",
+      "320",
       "325"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [
+      "inicio",
+      "recursos"
+     ],
      "origen": "instruccion"
     },
     {
-     "id": "sumario-instruccion-326",
-     "fase": "De la inspección ocular",
-     "subtitulo": "TÍTULO V · CAPÍTULO I · arts. 326 a 333",
-     "descripcion": "",
+     "id": "sumario-ins-plazo",
+     "fase": "Duración de la instrucción",
+     "subtitulo": "Plazo máximo y prórrogas (art. 324)",
+     "descripcion": "La investigación judicial tiene un plazo máximo de doce meses desde la incoación. Si no va a poder terminarse, el Juez puede acordar prórrogas sucesivas, por auto motivado y oídas las partes. Las diligencias acordadas antes de que venza el plazo valen aunque se reciban después; las acordadas después de vencer sin prórroga, no. Vencido el plazo, el instructor dicta auto de conclusión.",
+     "articulos": [
+      "324"
+     ],
+     "plazos": [
+      {
+       "acto": "Plazo máximo de la investigación",
+       "plazo": "12 meses desde la incoación",
+       "articulo": "324",
+       "literal": "La investigación judicial se desarrollará en un plazo máximo de doce meses desde la incoación de la causa."
+      },
+      {
+       "acto": "Cada prórroga",
+       "plazo": "6 meses o menos",
+       "articulo": "324",
+       "literal": "prórrogas sucesivas por periodos iguales o inferiores a seis meses"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El plazo o la prórroga vence sin auto de prórroga (o el auto se revoca)",
+       "entonces": "No son válidas las diligencias acordadas a partir de esa fecha.",
+       "articulos": [
+        "324"
+       ],
+       "literal": {
+        "articulo": "324",
+        "texto": "no serán válidas las diligencias acordadas a partir de dicha fecha"
+       }
+      },
+      {
+       "si": "Diligencia acordada en plazo pero recibida después",
+       "entonces": "Es válida.",
+       "articulos": [
+        "324"
+       ],
+       "literal": {
+        "articulo": "324",
+        "texto": "serán válidas, aunque se reciban tras la expiración del mismo"
+       }
+      },
+      {
+       "si": "Transcurre el plazo máximo o sus prórrogas",
+       "entonces": "Auto de conclusión del sumario (en el abreviado, la resolución que proceda).",
+       "articulos": [
+        "324",
+        "622"
+       ],
+       "literal": {
+        "articulo": "324",
+        "texto": "el instructor dictará auto de conclusión del sumario"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuál es el plazo máximo de la instrucción y cómo se prorroga?",
+      "a": "Doce meses desde la incoación, con prórrogas sucesivas de seis meses o menos, por auto motivado y oídas las partes.",
+      "articulos": [
+       "324"
+      ],
+      "literal": {
+       "articulo": "324",
+       "texto": "en un plazo máximo de doce meses desde la incoación de la causa"
+      }
+     },
+     "conexiones": [
+      "324",
+      "622",
+      "779"
+     ],
+     "continua_en": [
+      "conclusion",
+      "abreviado"
+     ],
+     "origen": "instruccion"
+    },
+    {
+     "id": "sumario-ins-inspeccion",
+     "fase": "Inspección ocular",
+     "subtitulo": "Vestigios y lugar del delito",
+     "descripcion": "Si el delito dejó vestigios, el Juez los recoge y conserva para el juicio y describe el lugar, los objetos y todo lo útil para la acusación o la defensa, con planos o retratos si conviene. Las muestras biológicas se recogen y custodian garantizando su autenticidad. Todo se extiende por escrito en el acto.",
      "articulos": [
       "326",
+      "327",
+      "328",
+      "329",
+      "330",
+      "331",
+      "332",
       "333"
      ],
-     "rango": [
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "No quedan huellas del delito",
+       "entonces": "El Juez averigua por qué desaparecieron y recoge las pruebas que pueda.",
+       "articulos": [
+        "330"
+       ],
+       "literal": {
+        "articulo": "330",
+        "texto": "Cuando no hayan quedado huellas o vestigios del delito"
+       }
+      },
+      {
+       "si": "El delito no deja huellas por su naturaleza",
+       "entonces": "Se acredita por testigos y demás medios de comprobación.",
+       "articulos": [
+        "331"
+       ],
+       "literal": {
+        "articulo": "331",
+        "texto": "Cuando el delito fuere de los que no dejan huellas de su perpetración"
+       }
+      },
+      {
+       "si": "Hay un procesado como presunto autor",
+       "entonces": "Puede presenciar la diligencia, solo o con defensor, si lo pide; su falta no la suspende.",
+       "articulos": [
+        "333"
+       ],
+       "literal": {
+        "articulo": "333",
+        "texto": "no se suspenderá por la falta de comparecencia del procesado o de su defensor"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el procesado presenciar la inspección ocular?",
+      "a": "Sí, si lo solicita, solo o asistido de su defensor, y ambos pueden hacer observaciones.",
+      "articulos": [
+       "333"
+      ],
+      "literal": {
+       "articulo": "333",
+       "texto": "podrá presenciarlas, ya sola, ya asistida del defensor que eligiese o le fuese nombrado de oficio, si así lo solicitara"
+      }
+     },
+     "conexiones": [
+      "282",
       "326",
+      "327",
+      "328",
+      "329",
+      "330",
+      "331",
+      "332",
       "333"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [],
      "origen": "instruccion"
     },
     {
-     "id": "sumario-instruccion-334",
-     "fase": "Del cuerpo del delito",
-     "subtitulo": "TÍTULO V · CAPÍTULO II · arts. 334 a 367",
-     "descripcion": "",
+     "id": "sumario-ins-cuerpo",
+     "fase": "Cuerpo del delito",
+     "subtitulo": "Efectos, autopsia, análisis y ADN",
+     "descripcion": "El Juez manda recoger desde el primer momento armas, instrumentos y efectos relacionados con el delito, y describe la persona o cosa objeto del delito, con reconocimiento pericial cuando convenga. En caso de muerte violenta o sospechosa, identificación del cadáver y autopsia. Puede ordenar análisis químicos y, por resolución motivada, la toma de muestras biológicas del sospechoso para su perfil de ADN. Estas diligencias tienen preferencia.",
      "articulos": [
       "334",
+      "335",
+      "336",
+      "340",
+      "341",
+      "343",
+      "363",
+      "365",
+      "366",
       "367"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Exposición al público del cadáver no reconocido, antes de la autopsia",
+       "plazo": "Al menos 24 horas",
+       "articulo": "341",
+       "literal": "por tiempo a lo menos de veinticuatro horas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se incautan bienes a una persona",
+       "entonces": "Puede recurrir la medida en cualquier momento ante el Juez de Instrucción.",
+       "articulos": [
+        "334"
+       ],
+       "literal": {
+        "articulo": "334",
+        "texto": "La persona afectada por la incautación podrá recurrir en cualquier momento la medida ante el Juez de Instrucción."
+       }
+      },
+      {
+       "si": "Los efectos pertenecen a la víctima",
+       "entonces": "Se le restituyen de inmediato, salvo que deban conservarse como prueba.",
+       "articulos": [
+        "334"
+       ],
+       "literal": {
+        "articulo": "334",
+        "texto": "Los efectos que pertenecieran a la víctima del delito serán restituidos inmediatamente a la misma"
+       }
+      },
+      {
+       "si": "Muerte violenta o sospechosa de criminalidad",
+       "entonces": "Autopsia, aunque la causa de la muerte parezca clara.",
+       "articulos": [
+        "340",
+        "343"
+       ],
+       "literal": {
+        "articulo": "343",
+        "texto": "se procederá a la autopsia del cadáver"
+       }
+      },
+      {
+       "si": "Hace falta el perfil de ADN del sospechoso",
+       "entonces": "Resolución motivada del Juez de Instrucción, con proporcionalidad.",
+       "articulos": [
+        "363"
+       ],
+       "literal": {
+        "articulo": "363",
+        "texto": "podrá acordar, en resolución motivada, la obtención de muestras biológicas del sospechoso"
+       }
+      },
+      {
+       "si": "Un tercero reclama los efectos durante el sumario",
+       "entonces": "No se admiten reclamaciones ni tercerías.",
+       "articulos": [
+        "367"
+       ],
+       "literal": {
+        "articulo": "367",
+        "texto": "En ningún caso admitirá el Juez durante el sumario reclamaciones ni tercerías"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Admite el Juez, durante el sumario, tercerías para la devolución de los efectos del cuerpo del delito?",
+      "a": "No, en ningún caso, cualquiera que sea la clase de efectos y quien los reclame.",
+      "articulos": [
+       "367"
+      ],
+      "literal": {
+       "articulo": "367",
+       "texto": "En ningún caso admitirá el Juez durante el sumario reclamaciones ni tercerías que tengan por objeto la devolución de los efectos que constituyen el cuerpo del delito"
+      }
+     },
+     "conexiones": [
       "334",
+      "335",
+      "336",
+      "338",
+      "340",
+      "341",
+      "343",
+      "353",
+      "363",
+      "364",
+      "365",
+      "366",
       "367"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [
+      "investigacion"
+     ],
      "origen": "instruccion"
     },
     {
-     "id": "sumario-instruccion-367_bis",
-     "fase": "De la destrucción y la realización anticipada de los efectos judiciales",
-     "subtitulo": "TÍTULO V · CAPÍTULO II BIS · arts. 367 bis a 367 septies",
-     "descripcion": "",
+     "id": "sumario-ins-efectos",
+     "fase": "Destrucción y realización anticipada de efectos",
+     "subtitulo": "Efectos judiciales (arts. 367 bis a 367 septies)",
+     "descripcion": "Son efectos judiciales los bienes puestos a disposición judicial, embargados, incautados o aprehendidos. Pueden destruirse dejando muestras, realizarse antes de la sentencia (si son de lícito comercio y no son piezas de convicción) o cederse en uso provisional. La Oficina de Recuperación y Gestión de Activos puede encargarse de su gestión.",
      "articulos": [
       "367 bis",
+      "367 ter",
+      "367 quáter",
+      "367 quinquies",
+      "367 sexies",
       "367 septies"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Drogas: destrucción si el juez no ordena conservarlas",
+       "plazo": "1 mes desde los análisis",
+       "articulo": "367 ter",
+       "literal": "trascurrido el plazo de un mes desde que se efectuó aquella"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Su naturaleza o su custodia es peligrosa",
+       "entonces": "Destrucción, dejando muestras suficientes y previa audiencia del Fiscal y del propietario.",
+       "articulos": [
+        "367 ter"
+       ],
+       "literal": {
+        "articulo": "367 ter",
+        "texto": "Podrá decretarse la destrucción de los efectos judiciales, dejando muestras suficientes"
+       }
+      },
+      {
+       "si": "Son perecederos, abandonados, costosos de conservar o se deprecian",
+       "entonces": "Realización anticipada sin esperar a la sentencia.",
+       "articulos": [
+        "367 quáter"
+       ],
+       "literal": {
+        "articulo": "367 quáter",
+        "texto": "Podrán realizarse los efectos judiciales de lícito comercio, sin esperar al pronunciamiento o firmeza del fallo"
+       }
+      },
+      {
+       "si": "Está pendiente el recurso del interesado contra el embargo o decomiso",
+       "entonces": "No se acuerda la realización.",
+       "articulos": [
+        "367 quáter"
+       ],
+       "literal": {
+        "articulo": "367 quáter",
+        "texto": "Esté pendiente de resolución el recurso interpuesto por el interesado contra el embargo o decomiso de los bienes o efectos."
+       }
+      },
+      {
+       "si": "Los efectos sirven a un servicio público",
+       "entonces": "Utilización provisional de los bienes decomisados cautelarmente.",
+       "articulos": [
+        "367 sexies"
+       ],
+       "literal": {
+        "articulo": "367 sexies",
+        "texto": "Podrá autorizarse la utilización provisional de los bienes o efectos decomisados cautelarmente"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿En qué puede consistir la realización de los efectos judiciales?",
+      "a": "En la entrega a entidades sin ánimo de lucro o Administraciones públicas, la realización por persona o entidad especializada, o la subasta pública.",
+      "articulos": [
+       "367 quinquies"
+      ],
+      "literal": {
+       "articulo": "367 quinquies",
+       "texto": "La realización de los efectos judiciales podrá consistir en:"
+      }
+     },
+     "conexiones": [
       "367 bis",
+      "367 ter",
+      "367 quáter",
+      "367 quinquies",
+      "367 sexies",
       "367 septies"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [
+      "fianzas"
+     ],
      "origen": "instruccion"
     },
     {
-     "id": "sumario-instruccion-368",
-     "fase": "De la identidad del delincuente y de sus circunstancias personales",
-     "subtitulo": "TÍTULO V · CAPÍTULO III · arts. 368 a 384 bis",
-     "descripcion": "",
+     "id": "sumario-ins-identidad",
+     "fase": "Identidad y circunstancias del procesado",
+     "subtitulo": "Rueda de reconocimiento · antecedentes · salud mental",
+     "descripcion": "Quien acusa a una persona debe reconocerla judicialmente si hay duda sobre su identidad, en rueda con personas de aspecto semejante. Se hacen constar las señas del procesado, se acredita su edad y se traen sus antecedentes penales. Si hay indicios de enajenación mental, observación por los médicos forenses.",
      "articulos": [
       "368",
-      "384 bis"
+      "369",
+      "370",
+      "373",
+      "374",
+      "379",
+      "381",
+      "383"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "El Registro Central de Penados envía los antecedentes",
+       "plazo": "3 días (improrrogable)",
+       "articulo": "379",
+       "literal": "en el improrrogable término de tres días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Varias personas deben reconocer a la misma",
+       "entonces": "Reconocimiento por separado, sin que se comuniquen entre sí.",
+       "articulos": [
+        "370"
+       ],
+       "literal": {
+        "articulo": "370",
+        "texto": "deberá practicarse separadamente con cada uno de ellos"
+       }
+      },
+      {
+       "si": "Indicios de enajenación mental del procesado",
+       "entonces": "Observación inmediata por los médicos forenses.",
+       "articulos": [
+        "381"
+       ],
+       "literal": {
+        "articulo": "381",
+        "texto": "le someterá inmediatamente a la observación de los Médicos forenses"
+       }
+      },
+      {
+       "si": "La demencia sobreviene después del delito",
+       "entonces": "Concluso el sumario, se archiva la causa hasta que el procesado recobre la salud.",
+       "articulos": [
+        "383"
+       ],
+       "literal": {
+        "articulo": "383",
+        "texto": "se mandará archivar la causa por el Tribunal competente hasta que el procesado recobre la salud"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo se practica la rueda de reconocimiento?",
+      "a": "Poniendo a la persona junto con otras de circunstancias exteriores semejantes, y quien reconoce dice si está en la rueda y la designa.",
+      "articulos": [
+       "369"
+      ],
+      "literal": {
+       "articulo": "369",
+       "texto": "haciéndola comparecer en unión con otras de circunstancias exteriores semejantes"
+      }
+     },
+     "conexiones": [
       "368",
+      "369",
+      "370",
+      "373",
+      "374",
+      "375",
+      "376",
+      "379",
+      "381",
+      "382",
+      "383"
+     ],
+     "continua_en": [],
+     "duda": "Los arts. 375, 376 y 380 conservan referencias de 1882 (partida de bautismo, procesados de nueve a quince años). No las he incluido en la ficha. Ver PENDIENTES.md.",
+     "origen": "instruccion"
+    },
+    {
+     "id": "sumario-ins-procesamiento",
+     "fase": "Auto de procesamiento",
+     "subtitulo": "Indicio racional de criminalidad · recursos",
+     "descripcion": "En cuanto resulta del sumario un indicio racional de criminalidad contra una persona, el Juez dicta auto declarándola procesada. Desde entonces puede valerse de letrado para pedir la pronta terminación del sumario, solicitar diligencias y formular pretensiones sobre su situación. El régimen de recursos es distinto si el auto acuerda o deniega el procesamiento.",
+     "articulos": [
+      "384",
       "384 bis"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "plazos": [
+      {
+       "acto": "Reforma contra el auto de procesamiento",
+       "plazo": "3 días",
+       "articulo": "384",
+       "literal": "recurso de reforma dentro de los tres días siguientes al de haberle sido notificada la resolución"
+      },
+      {
+       "acto": "Apelación contra el auto que deniega esa reforma",
+       "plazo": "5 días",
+       "articulo": "384",
+       "literal": "dentro de los cinco días siguientes al de la notificación del auto denegatorio a la representación recurrente"
+      },
+      {
+       "acto": "Reforma contra el auto que deniega el procesamiento (solo quien lo pidió)",
+       "plazo": "3 días",
+       "articulo": "384",
+       "literal": "el recurso de reforma, utilizándolo dentro de los tres días siguientes al de la notificación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se acuerda el procesamiento",
+       "entonces": "Reforma en 3 días y apelación en un efecto (también subsidiaria con la reforma).",
+       "articulos": [
+        "384"
+       ],
+       "literal": {
+        "articulo": "384",
+        "texto": "También podrá ser interpuesto el recurso de apelación en un efecto subsidiariamente con el de reforma"
+       }
+      },
+      {
+       "si": "Se deniega el procesamiento y también la reforma",
+       "entonces": "No cabe apelación ni otro recurso, pero puede reproducirse la petición ante la Audiencia en el traslado del art. 627.",
+       "articulos": [
+        "384",
+        "627",
+        "630"
+       ],
+       "literal": {
+        "articulo": "384",
+        "texto": "no se podrá utilizar recurso de apelación ni ningún otro recurso"
+       }
+      },
+      {
+       "si": "El Juez no accede a la pronta terminación del sumario pedida por el procesado",
+       "entonces": "Queja ante la Audiencia (para diligencias o pretensiones, apelación en un solo efecto).",
+       "articulos": [
+        "384"
+       ],
+       "literal": {
+        "articulo": "384",
+        "texto": "En el primer caso podrán recurrir en queja a la Audiencia"
+       }
+      },
+      {
+       "si": "Procesado con cargo público, en prisión, por delito de bandas armadas o terrorismo",
+       "entonces": "Suspensión automática en el cargo mientras dure la prisión.",
+       "articulos": [
+        "384 bis"
+       ],
+       "literal": {
+        "articulo": "384 bis",
+        "texto": "quedará automáticamente suspendido en el ejercicio del mismo mientras dure la situación de prisión"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo se dicta el auto de procesamiento?",
+      "a": "Desde que resulta del sumario algún indicio racional de criminalidad contra una persona determinada.",
+      "articulos": [
+       "384"
+      ],
+      "literal": {
+       "articulo": "384",
+       "texto": "Desde que resultare del sumario algún indicio racional de criminalidad contra determinada persona, se dictará auto declarándola procesada"
+      }
+     },
+     "conexiones": [
+      "384",
+      "384 bis",
+      "627",
+      "630"
+     ],
+     "continua_en": [
+      "recursos",
+      "cautelares",
+      "conclusion"
+     ],
      "origen": "instruccion"
     },
     {
-     "id": "sumario-instruccion-385",
-     "fase": "De las declaraciones de los procesados",
-     "subtitulo": "TÍTULO V · CAPÍTULO IV · arts. 385 a 409 bis",
-     "descripcion": "",
+     "id": "sumario-ins-declaracion",
+     "fase": "Declaraciones del procesado",
+     "subtitulo": "Primera declaración y sucesivas",
+     "descripcion": "El Juez toma al procesado cuantas declaraciones considere convenientes. Las preguntas han de ser directas, sin coacción ni amenaza; el procesado puede manifestar cuanto convenga a su defensa y declarar cuantas veces quiera. La confesión no exime de comprobar el delito. La persona jurídica declara por su representante especialmente designado.",
      "articulos": [
       "385",
+      "386",
+      "389",
+      "392",
+      "396",
+      "400",
+      "405",
+      "406",
       "409 bis"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Primera declaración del procesado detenido",
+       "plazo": "24 horas",
+       "articulo": "386",
+       "literal": "Si el procesado estuviere detenido, se le recibirá la primera declaración dentro del término de veinticuatro horas."
+      },
+      {
+       "acto": "Prórroga si media causa grave",
+       "plazo": "48 horas más",
+       "articulo": "386",
+       "literal": "Este plazo podrá prorrogarse por otras cuarenta y ocho, si mediare causa grave"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El procesado rehúsa contestar o finge una enfermedad",
+       "entonces": "Se le advierte de que la instrucción continúa.",
+       "articulos": [
+        "392"
+       ],
+       "literal": {
+        "articulo": "392",
+        "texto": "se continuará la instrucción del proceso"
+       }
+      },
+      {
+       "si": "El procesado confiesa",
+       "entonces": "El Juez debe seguir practicando las diligencias para comprobar la confesión y el delito.",
+       "articulos": [
+        "406"
+       ],
+       "literal": {
+        "articulo": "406",
+        "texto": "La confesión del procesado no dispensará al Juez de instrucción de practicar todas las diligencias necesarias"
+       }
+      },
+      {
+       "si": "Se contradice o se retracta",
+       "entonces": "Se le interroga sobre el motivo de la contradicción o la retractación.",
+       "articulos": [
+        "405"
+       ],
+       "literal": {
+        "articulo": "405",
+        "texto": "deberá ser interrogado sobre el móvil de sus contradicciones y sobre las causas de su retractación"
+       }
+      },
+      {
+       "si": "No comparece el representante de la persona jurídica investigada",
+       "entonces": "Se tiene por celebrado el acto y por ejercido el derecho a no declarar.",
+       "articulos": [
+        "409 bis"
+       ],
+       "literal": {
+        "articulo": "409 bis",
+        "texto": "se tenga por celebrado este acto, entendiéndose que se acoge a su derecho a no declarar"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo deben ser las preguntas al procesado?",
+      "a": "Directas, nunca capciosas ni sugestivas, y sin coacción ni amenaza.",
+      "articulos": [
+       "389"
+      ],
+      "literal": {
+       "articulo": "389",
+       "texto": "Las preguntas serán directas, sin que por ningún concepto puedan hacérsele de un modo capcioso o sugestivo."
+      }
+     },
+     "conexiones": [
       "385",
-      "409 bis"
+      "386",
+      "388",
+      "389",
+      "390",
+      "391",
+      "392",
+      "393",
+      "396",
+      "397",
+      "400",
+      "405",
+      "406",
+      "407",
+      "409 bis",
+      "506"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [
+      "cautelares"
+     ],
      "origen": "instruccion"
     },
     {
-     "id": "sumario-instruccion-410",
-     "fase": "De las declaraciones de los testigos",
-     "subtitulo": "TÍTULO V · CAPÍTULO V · arts. 410 a 450",
-     "descripcion": "",
+     "id": "sumario-ins-testigos",
+     "fase": "Declaraciones de los testigos",
+     "subtitulo": "Deber de declarar · dispensas · declaración anticipada",
+     "descripcion": "Quien reside en España y no está impedido debe acudir al llamamiento y declarar. Hay exentos de comparecer (que declaran por escrito o en su despacho) y dispensados de declarar, como los parientes próximos del procesado y su abogado. Los testigos declaran por separado, en secreto, bajo juramento o promesa, y la declaración se graba. Si un testigo no podrá ir al juicio, su declaración se practica de inmediato con contradicción.",
      "articulos": [
       "410",
-      "450"
+      "412",
+      "416",
+      "417",
+      "418",
+      "420",
+      "433",
+      "435",
+      "446",
+      "448",
+      "449",
+      "449 bis",
+      "449 ter"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "El procesado nombra abogado para la declaración anticipada del testigo",
+       "plazo": "24 horas",
+       "articulo": "448",
+       "literal": "que nombre abogado en el término de veinticuatro horas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El testigo es pariente próximo del procesado",
+       "entonces": "Está dispensado de declarar en su contra; el Juez se lo advierte.",
+       "articulos": [
+        "416"
+       ],
+       "literal": {
+        "articulo": "416",
+        "texto": "no tiene obligación de declarar en contra del procesado"
+       }
+      },
+      {
+       "si": "No acude al primer llamamiento sin estar impedido, o se niega a declarar",
+       "entonces": "Multa de 200 a 5.000 euros; si persiste, conducción y persecución penal.",
+       "articulos": [
+        "420"
+       ],
+       "literal": {
+        "articulo": "420",
+        "texto": "incurrirá en la multa de 200 a 5.000 euros"
+       }
+      },
+      {
+       "si": "Es de temer que el testigo no podrá ir al juicio oral (ausencia, muerte, incapacidad)",
+       "entonces": "Declaración inmediata con posibilidad de contradicción.",
+       "articulos": [
+        "448"
+       ],
+       "literal": {
+        "articulo": "448",
+        "texto": "el Juez instructor mandará practicar inmediatamente la declaración, asegurando en todo caso la posibilidad de contradicción de las partes"
+       }
+      },
+      {
+       "si": "Peligro inminente de muerte del testigo",
+       "entonces": "Declaración urgente, aunque el procesado no pueda estar asistido de letrado.",
+       "articulos": [
+        "449"
+       ],
+       "literal": {
+        "articulo": "449",
+        "texto": "aunque el procesado no pudiese ser asistido de Letrado"
+       }
+      },
+      {
+       "si": "Testigo menor de catorce años o con discapacidad necesitada de especial protección, en los delitos del art. 449 ter",
+       "entonces": "Prueba preconstituida obligatoria, grabada y con contradicción.",
+       "articulos": [
+        "449 ter",
+        "449 bis"
+       ],
+       "literal": {
+        "articulo": "449 ter",
+        "texto": "la autoridad judicial acordará, en todo caso, practicar la audiencia del menor como prueba preconstituida"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede acogerse a la dispensa del art. 416 el pariente que está o ha estado personado como acusación particular?",
+      "a": "No: la dispensa no se aplica a quien esté o haya estado personado como acusación particular.",
+      "articulos": [
+       "416"
+      ],
+      "literal": {
+       "articulo": "416",
+       "texto": "Cuando el testigo esté o haya estado personado en el procedimiento como acusación particular."
+      }
+     },
+     "conexiones": [
       "410",
-      "450"
+      "411",
+      "412",
+      "416",
+      "417",
+      "418",
+      "419",
+      "420",
+      "421",
+      "433",
+      "435",
+      "436",
+      "439",
+      "440",
+      "446",
+      "448",
+      "449",
+      "449 bis",
+      "449 ter",
+      "730"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [],
      "origen": "instruccion"
     },
     {
-     "id": "sumario-instruccion-451",
-     "fase": "Del careo de los testigos y procesados",
-     "subtitulo": "TÍTULO V · CAPÍTULO VI · arts. 451 a 455",
-     "descripcion": "",
+     "id": "sumario-ins-careo",
+     "fase": "Careo",
+     "subtitulo": "Entre testigos o procesados discordes",
+     "descripcion": "Cuando testigos o procesados discrepan sobre un hecho importante, el Juez puede carearlos, por regla general de dos en dos: se leen sus declaraciones, se les pregunta si se ratifican y se les invita a ponerse de acuerdo. Es un medio subsidiario.",
      "articulos": [
       "451",
-      "455"
-     ],
-     "rango": [
-      "451",
+      "452",
       "455"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "ramas": [
+      {
+       "si": "Hay otro modo de comprobar el delito o la culpabilidad",
+       "entonces": "No se practica el careo.",
+       "articulos": [
+        "455"
+       ],
+       "literal": {
+        "articulo": "455",
+        "texto": "No se practicarán careos sino cuando no fuere conocido otro modo de comprobar la existencia del delito o la culpabilidad de alguno de los procesados."
+       }
+      },
+      {
+       "si": "Uno de los testigos es menor de edad",
+       "entonces": "No se carea, salvo que el Juez lo considere imprescindible y no lesivo, previo informe pericial.",
+       "articulos": [
+        "455"
+       ],
+       "literal": {
+        "articulo": "455",
+        "texto": "No se practicarán careos con testigos que sean menores de edad"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo procede el careo en el sumario?",
+      "a": "Solo cuando no se conoce otro modo de comprobar la existencia del delito o la culpabilidad de algún procesado.",
+      "articulos": [
+       "455"
+      ],
+      "literal": {
+       "articulo": "455",
+       "texto": "No se practicarán careos sino cuando no fuere conocido otro modo de comprobar la existencia del delito"
+      }
+     },
+     "conexiones": [
+      "451",
+      "452",
+      "453",
+      "454",
+      "455"
+     ],
+     "continua_en": [],
      "origen": "instruccion"
     },
     {
-     "id": "sumario-instruccion-456",
-     "fase": "Del informe pericial",
-     "subtitulo": "TÍTULO V · CAPÍTULO VII · arts. 456 a 485",
-     "descripcion": "",
+     "id": "sumario-ins-pericial",
+     "fase": "Informe pericial",
+     "subtitulo": "Nombramiento · recusación · peritos de parte",
+     "descripcion": "El Juez acuerda el informe pericial cuando hacen falta conocimientos científicos o artísticos, preferentemente con peritos titulares y, como regla, con dos peritos. El nombramiento se notifica a las partes. Si la pericia puede repetirse en el juicio oral, no cabe recusación; si no puede repetirse, cabe recusar y las partes pueden nombrar su propio perito.",
      "articulos": [
       "456",
-      "485"
-     ],
-     "rango": [
-      "456",
-      "485"
+      "458",
+      "459",
+      "466",
+      "467",
+      "468",
+      "469",
+      "471",
+      "478",
+      "484"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "ramas": [
+      {
+       "si": "La pericia podrá repetirse en el juicio oral",
+       "entonces": "Los peritos no pueden ser recusados.",
+       "articulos": [
+        "467"
+       ],
+       "literal": {
+        "articulo": "467",
+        "texto": "los peritos nombrados no podrán ser recusados por las partes"
+       }
+      },
+      {
+       "si": "La pericia no podrá repetirse en el juicio oral",
+       "entonces": "Cabe recusación, por escrito antes de empezar la diligencia, y querellante y procesado pueden nombrar un perito a su costa.",
+       "articulos": [
+        "467",
+        "469",
+        "471"
+       ],
+       "literal": {
+        "articulo": "469",
+        "texto": "deberá hacerlo por escrito antes de empezar la diligencia pericial"
+       }
+      },
+      {
+       "si": "Solo hay un perito en el lugar y no se puede esperar a otro",
+       "entonces": "Excepción a la regla de dos peritos.",
+       "articulos": [
+        "459"
+       ],
+       "literal": {
+        "articulo": "459",
+        "texto": "Se exceptúa el caso en que no hubiese más de uno en el lugar"
+       }
+      },
+      {
+       "si": "Los peritos discrepan y son número par",
+       "entonces": "El Juez nombra otro.",
+       "articulos": [
+        "484"
+       ],
+       "literal": {
+        "articulo": "484",
+        "texto": "Si los peritos estuviesen discordes y su número fuere par, nombrará otro el Juez."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo pueden las partes recusar a los peritos en el sumario?",
+      "a": "Cuando el reconocimiento y el informe no puedan reproducirse en el juicio oral.",
+      "articulos": [
+       "467"
+      ],
+      "literal": {
+       "articulo": "467",
+       "texto": "Si no pudiere reproducirse en el juicio oral, habrá lugar a la recusación."
+      }
+     },
+     "conexiones": [
+      "456",
+      "457",
+      "458",
+      "459",
+      "462",
+      "463",
+      "464",
+      "466",
+      "467",
+      "468",
+      "469",
+      "470",
+      "471",
+      "474",
+      "478",
+      "479",
+      "483",
+      "484"
+     ],
+     "continua_en": [
+      "abreviado"
+     ],
      "origen": "instruccion"
     },
     {
