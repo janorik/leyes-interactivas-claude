@@ -1860,68 +1860,480 @@
    "nombre": "Conclusión del sumario y sobreseimiento",
    "bloque": "lecrim",
    "grupo": "Libro II · Sumario",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Fase intermedia del sumario ordinario: conclusión del sumario, revisión por la Audiencia y decisión entre juicio oral y sobreseimiento (arts. 622 a 648).",
    "ambito": {
     "corto": "Arts. 622 a 648",
     "texto": "TÍTULO XI. De la conclusión del sumario y del sobreseimiento · TÍTULO XII. Disposiciones generales referentes a los anteriores títulos",
     "articulos": [
      "622"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "622",
+      "texto": "si éste considerase terminado el sumario, lo declarará así"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "conclusion-622",
-     "fase": "De la conclusión del sumario",
-     "subtitulo": "TÍTULO XI · CAPÍTULO I · arts. 622 a 633",
-     "descripcion": "",
+     "id": "con-auto",
+     "fase": "Auto de conclusión del sumario",
+     "subtitulo": "Remisión al Tribunal y emplazamiento",
+     "descripcion": "Practicadas las diligencias, si el Juez de Instrucción considera terminado el sumario, lo declara concluso por auto y remite los autos y las piezas de convicción al Tribunal competente. El Fiscal puede pedir la remisión si, sin acusador privado, ya hay elementos para calificar. El auto se notifica y se emplaza a las partes ante la Audiencia.",
      "articulos": [
       "622",
-      "633"
+      "623",
+      "624",
+      "625"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Emplazamiento para comparecer ante la Audiencia",
+       "plazo": "10 días (15 ante el Supremo)",
+       "articulo": "623",
+       "literal": "emplazándoles para que comparezcan ante la respectiva Audiencia en el término de diez días, o en el de quince si el emplazamiento fuese ante el Supremo"
+      },
+      {
+       "acto": "Comparecer ante el juez de delitos leves, si el hecho es falta",
+       "plazo": "5 días",
+       "articulo": "625",
+       "literal": "se emplazará a las partes para que en el término de cinco días comparezcan ante el Juez municipal a quien corresponda su conocimiento"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay apelaciones en un solo efecto pendientes",
+       "entonces": "No impiden concluir el sumario; la Audiencia deja en suspenso los arts. 627 y siguientes hasta resolverlas.",
+       "articulos": [
+        "622"
+       ],
+       "literal": {
+        "articulo": "622",
+        "texto": "La sustanciación de los recursos de apelación admitidos sólo en un efecto no impedirá nunca la terminación del sumario"
+       }
+      },
+      {
+       "si": "Se estima alguna de esas apelaciones",
+       "entonces": "Se revoca el auto de conclusión y se devuelve el sumario al Juez para las diligencias que procedan.",
+       "articulos": [
+        "622"
+       ],
+       "literal": {
+        "articulo": "622",
+        "texto": "se revocará sin más trámite el auto del Juez declarando concluso el sumario"
+       }
+      },
+      {
+       "si": "El Juez considera que el hecho es falta (delito leve)",
+       "entonces": "Remite el proceso al juez competente, consultando el auto con el Tribunal superior; después, juicio del Libro VI.",
+       "articulos": [
+        "624",
+        "625"
+       ],
+       "literal": {
+        "articulo": "624",
+        "texto": "Si el Juez instructor reputare falta el hecho que hubiese dado lugar al sumario"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Concluido el sumario, ¿en qué plazo deben comparecer las partes ante la Audiencia?",
+      "a": "En diez días (quince si el emplazamiento es ante el Supremo).",
+      "articulos": [
+       "623"
+      ],
+      "literal": {
+       "articulo": "623",
+       "texto": "en el término de diez días, o en el de quince si el emplazamiento fuese ante el Supremo"
+      }
+     },
+     "conexiones": [
+      "227",
       "622",
-      "633"
+      "623",
+      "624",
+      "625",
+      "627"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "instruccion",
+      "leves"
+     ],
+     "duda": "Los arts. 624 y 625 hablan de «falta» y de «Juez municipal», y prevén consultar el auto y un recurso de casación. Ver PENDIENTES.md."
     },
     {
-     "id": "conclusion-634",
-     "fase": "Del sobreseimiento",
-     "subtitulo": "TÍTULO XI · CAPÍTULO II · arts. 634 a 645",
-     "descripcion": "",
+     "id": "con-traslado",
+     "fase": "Instrucción de las partes y revisión por la Audiencia",
+     "subtitulo": "Traslado de la causa · confirmación o revocación",
+     "descripcion": "En la Audiencia se designa ponente, que abre los pliegos cerrados remitidos por el Juez. Vencido el emplazamiento, la causa pasa sucesivamente al Fiscal, al querellante y a la defensa. Cada uno se conforma con el auto de conclusión (y pide apertura del juicio oral o sobreseimiento) o pide nuevas diligencias. Después, el Tribunal confirma o revoca la conclusión.",
      "articulos": [
+      "626",
+      "627",
+      "628",
+      "629",
+      "630",
+      "631"
+     ],
+     "plazos": [
+      {
+       "acto": "Traslado sucesivo a Fiscal, querellante y defensa",
+       "plazo": "Entre 3 y 10 días, según el volumen",
+       "articulo": "627",
+       "literal": "que no bajará de tres días ni excederá de diez, según el volumen del proceso"
+      },
+      {
+       "acto": "Prórroga si la causa excede de mil folios",
+       "plazo": "Como máximo, otro tanto",
+       "articulo": "627",
+       "literal": "sin que en ningún caso pueda exceder la prórroga de otro tanto más"
+      },
+      {
+       "acto": "Examen por el ponente",
+       "plazo": "3 días",
+       "articulo": "628",
+       "literal": "la pasará inmediatamente al ponente, con los escritos presentados, por término de tres días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La parte está conforme con el auto de conclusión",
+       "entonces": "En el mismo escrito pide la apertura del juicio oral o el sobreseimiento.",
+       "articulos": [
+        "627"
+       ],
+       "literal": {
+        "articulo": "627",
+        "texto": "se solicitará por el Ministerio Fiscal, cuando intervenga, por el Procurador del querellante, si lo hubiere, y por la defensa del procesado o procesados, lo que estimen conveniente a su derecho"
+       }
+      },
+      {
+       "si": "La parte no está conforme",
+       "entonces": "Pide la práctica de nuevas diligencias.",
+       "articulos": [
+        "627"
+       ],
+       "literal": {
+        "articulo": "627",
+        "texto": "o pidiendo la práctica de nuevas diligencias"
+       }
+      },
+      {
+       "si": "El Tribunal revoca el auto de conclusión",
+       "entonces": "Devuelve el proceso al Juez, indicando las diligencias que deben practicarse.",
+       "articulos": [
+        "631"
+       ],
+       "literal": {
+        "articulo": "631",
+        "texto": "se mandará devolver el proceso al Juez que lo hubiere remitido, expresando las diligencias que hayan de practicarse"
+       }
+      },
+      {
+       "si": "Se denegó el procesamiento en la instrucción",
+       "entonces": "La parte puede reproducir aquí la petición, al evacuar este traslado.",
+       "articulos": [
+        "384",
+        "627",
+        "630"
+       ],
+       "literal": {
+        "articulo": "384",
+        "texto": "evacue el traslado a que se refiere el artículo 627 de esta misma Ley"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En la conclusión del sumario, ¿cuánto dura el traslado de la causa a cada parte?",
+      "a": "Entre tres y diez días según el volumen del proceso; si excede de mil folios, prorrogable como máximo por otro tanto.",
+      "articulos": [
+       "627"
+      ],
+      "literal": {
+       "articulo": "627",
+       "texto": "que no bajará de tres días ni excederá de diez"
+      }
+     },
+     "conexiones": [
+      "384",
+      "626",
+      "627",
+      "628",
+      "629",
+      "630",
+      "631"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "con-decision",
+     "fase": "Apertura del juicio oral o sobreseimiento",
+     "subtitulo": "Decisión del Tribunal",
+     "descripcion": "Confirmada la conclusión del sumario, el Tribunal resuelve sobre la petición de juicio oral o de sobreseimiento. Si abre el juicio oral, da traslado para calificar (art. 649). Si alguna acusación sostiene la acción, solo puede sobreseer porque el hecho no es delito.",
+     "articulos": [
+      "632",
+      "633",
       "634",
       "645"
      ],
-     "rango": [
-      "634",
-      "645"
+     "plazos": [
+      {
+       "acto": "El Tribunal resuelve sobre juicio oral o sobreseimiento",
+       "plazo": "Dentro del tercer día",
+       "articulo": "632",
+       "literal": "el Tribunal resolverá, dentro del tercer día, respecto a la solicitud del juicio oral o de sobreseimiento"
+      }
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Se abre el juicio oral",
+       "entonces": "Traslado para calificar por escrito (art. 649).",
+       "articulos": [
+        "633",
+        "649"
+       ],
+       "literal": {
+        "articulo": "633",
+        "texto": "se dispondrá el traslado al que se refiere el artículo 649"
+       }
+      },
+      {
+       "si": "Una acusación sostiene la acción o el Fiscal pide el juicio oral",
+       "entonces": "Solo cabe sobreseer si el hecho no es constitutivo de delito; en otro caso, hay que abrir el juicio.",
+       "articulos": [
+        "645",
+        "637"
+       ],
+       "literal": {
+        "articulo": "645",
+        "texto": "En cualquier otro caso no podrá prescindir de la apertura del juicio."
+       }
+      },
+      {
+       "si": "El sobreseimiento es parcial",
+       "entonces": "Se abre el juicio oral respecto de los procesados a quienes no favorece.",
+       "articulos": [
+        "634"
+       ],
+       "literal": {
+        "articulo": "634",
+        "texto": "se mandará abrir el juicio oral respecto de los procesados a quienes no favorezca"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si el querellante sostiene la acusación, ¿por qué causa puede aun así el Tribunal sobreseer?",
+      "a": "Solo porque el hecho no sea constitutivo de delito (art. 637.2.º).",
+      "articulos": [
+       "645",
+       "637"
+      ],
+      "literal": {
+       "articulo": "645",
+       "texto": "acordar el sobreseimiento a que se refiere el número 2.º del artículo 637"
+      }
+     },
+     "conexiones": [
+      "632",
+      "633",
+      "634",
+      "637",
+      "645",
+      "649"
+     ],
+     "continua_en": [
+      "juicio-oral"
+     ]
     },
     {
-     "id": "conclusion-646",
-     "fase": "Disposiciones generales referentes a los anteriores títulos",
-     "subtitulo": "TÍTULO XII · arts. 646 a 648",
-     "descripcion": "",
+     "id": "con-sobreseimiento",
+     "fase": "El sobreseimiento",
+     "subtitulo": "Libre o provisional · total o parcial · recursos",
+     "descripcion": "El sobreseimiento libre procede si no hay indicios de que el hecho se cometiera, si no es delito o si los procesados están exentos de responsabilidad. El provisional, si no está justificada la perpetración o no hay motivos para acusar a personas determinadas. Si es total, se archiva la causa. Se comunica a las víctimas, que pueden recurrirlo aunque no sean parte.",
+     "articulos": [
+      "634",
+      "635",
+      "636",
+      "637",
+      "638",
+      "639",
+      "640",
+      "641",
+      "642",
+      "643",
+      "644"
+     ],
+     "plazos": [
+      {
+       "acto": "Recurso de las víctimas contra el auto de sobreseimiento",
+       "plazo": "20 días",
+       "articulo": "636",
+       "literal": "Las víctimas podrán recurrir el auto de sobreseimiento dentro del plazo de veinte días aunque no se hubieran mostrado como parte en la causa."
+      },
+      {
+       "acto": "La comunicación a la víctima se tiene por hecha (empieza el plazo del recurso)",
+       "plazo": "5 días desde la comunicación",
+       "articulo": "636",
+       "literal": "Transcurridos cinco días desde la comunicación, se entenderá que ha sido efectuada válidamente y desplegará todos sus efectos, iniciándose el cómputo del plazo de interposición del recurso."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No hay indicios del hecho, no es delito o los procesados están exentos",
+       "entonces": "Sobreseimiento libre.",
+       "articulos": [
+        "637"
+       ],
+       "literal": {
+        "articulo": "637",
+        "texto": "Procederá el sobreseimiento libre:"
+       }
+      },
+      {
+       "si": "No está justificada la perpetración o no hay motivos para acusar a personas determinadas",
+       "entonces": "Sobreseimiento provisional.",
+       "articulos": [
+        "641"
+       ],
+       "literal": {
+        "articulo": "641",
+        "texto": "Procederá el sobreseimiento provisional:"
+       }
+      },
+      {
+       "si": "Se quiere recurrir el auto de sobreseimiento",
+       "entonces": "Solo casación, en su caso: contra autos definitivos de sobreseimiento libre, con imputación fundada.",
+       "articulos": [
+        "636",
+        "848"
+       ],
+       "literal": {
+        "articulo": "636",
+        "texto": "Contra los autos de sobreseimiento sólo procederá, en su caso, el recurso de casación."
+       }
+      },
+      {
+       "si": "El Fiscal pide el sobreseimiento y no hay querellante",
+       "entonces": "El Tribunal puede llamar a los interesados (por edictos si se ignora su paradero) o consultar al Fiscal superior.",
+       "articulos": [
+        "642",
+        "643",
+        "644"
+       ],
+       "literal": {
+        "articulo": "642",
+        "texto": "podrá el Tribunal acordar que se haga saber la pretensión del Ministerio fiscal a los interesados en el ejercicio de la acción penal"
+       }
+      },
+      {
+       "si": "Sobreseimiento libre por no haber hecho o no ser delito",
+       "entonces": "Puede declararse que la causa no perjudica la reputación del procesado y reservarse su acción por calumnia.",
+       "articulos": [
+        "638"
+       ],
+       "literal": {
+        "articulo": "638",
+        "texto": "podrá declararse, al decretar el sobreseimiento, que la formación de la causa no perjudica a la reputación de los procesados"
+       }
+      },
+      {
+       "si": "Piezas de convicción con dueño conocido",
+       "entonces": "Se devuelven, salvo que un tercero pida retenerlas para entablar la acción civil.",
+       "articulos": [
+        "635"
+       ],
+       "literal": {
+        "articulo": "635",
+        "texto": "continuarán retenidas si un tercero lo solicitare, hasta que se resuelva la acción civil que se propusiere entablar"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué recurso cabe contra el auto de sobreseimiento en el sumario ordinario?",
+      "a": "Solo, en su caso, el de casación; el art. 848 lo admite contra los autos definitivos de sobreseimiento libre de las Audiencias cuando hubo imputación fundada.",
+      "articulos": [
+       "636",
+       "848"
+      ],
+      "literal": {
+       "articulo": "636",
+       "texto": "Contra los autos de sobreseimiento sólo procederá, en su caso, el recurso de casación."
+      }
+     },
+     "conexiones": [
+      "109 bis",
+      "634",
+      "635",
+      "636",
+      "637",
+      "638",
+      "639",
+      "640",
+      "641",
+      "642",
+      "643",
+      "644",
+      "848"
+     ],
+     "continua_en": [
+      "recursos"
+     ],
+     "duda": "El art. 636 da a las víctimas 20 días para «recurrir» el sobreseimiento, pero en el mismo artículo el único recurso es la casación. Y el art. 644 cita órganos que ya no existen. Ver PENDIENTES.md."
+    },
+    {
+     "id": "con-fiscal",
+     "fase": "El Fiscal en el sumario",
+     "subtitulo": "Testimonios y plazo de apelación (arts. 646 a 648)",
+     "descripcion": "El Letrado de la Administración de Justicia remite al Fiscal testimonio de las resoluciones apelables y de las diligencias periciales o de reconocimiento que le interesen, cuando no puede notificárselas directamente. Para el Fiscal que no está en el lugar de la instrucción, el plazo de apelación corre desde que recibe el testimonio.",
      "articulos": [
       "646",
+      "647",
       "648"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Inicio del plazo de apelación del Fiscal que no está en el lugar del Juez",
+       "plazo": "Desde el día siguiente a recibir el testimonio",
+       "articulo": "647",
+       "literal": "empezará a contarse desde el siguiente día al en que reciba el testimonio de la providencia o auto apelables"
+      },
+      {
+       "acto": "Acuse de recibo de los testimonios",
+       "plazo": "El mismo día",
+       "articulo": "647",
+       "literal": "acusará recibo de los testimonios de esta clase en el mismo día que los recibiere"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El Fiscal se reservó intervenir en una diligencia pericial",
+       "entonces": "La diligencia puede suspenderse si la suspensión no causa perjuicio.",
+       "articulos": [
+        "646"
+       ],
+       "literal": {
+        "articulo": "646",
+        "texto": "a no ser que el Fiscal se hubiese reservado anticipadamente el derecho de intervenir en ellas"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Desde cuándo corre el plazo de apelación para el Fiscal que no está en el mismo lugar que el Juez instructor?",
+      "a": "Desde el día siguiente a aquel en que recibe el testimonio de la resolución apelable.",
+      "articulos": [
+       "647"
+      ],
+      "literal": {
+       "articulo": "647",
+       "texto": "empezará a contarse desde el siguiente día al en que reciba el testimonio de la providencia o auto apelables"
+      }
+     },
+     "conexiones": [
       "646",
+      "647",
       "648"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     }
    ]
   },
@@ -4767,57 +5179,467 @@
      "origen": "instruccion"
     },
     {
-     "id": "sumario-conclusion-622",
-     "fase": "De la conclusión del sumario",
-     "subtitulo": "TÍTULO XI · CAPÍTULO I · arts. 622 a 633",
-     "descripcion": "",
+     "id": "sumario-con-auto",
+     "fase": "Auto de conclusión del sumario",
+     "subtitulo": "Remisión al Tribunal y emplazamiento",
+     "descripcion": "Practicadas las diligencias, si el Juez de Instrucción considera terminado el sumario, lo declara concluso por auto y remite los autos y las piezas de convicción al Tribunal competente. El Fiscal puede pedir la remisión si, sin acusador privado, ya hay elementos para calificar. El auto se notifica y se emplaza a las partes ante la Audiencia.",
      "articulos": [
       "622",
-      "633"
+      "623",
+      "624",
+      "625"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Emplazamiento para comparecer ante la Audiencia",
+       "plazo": "10 días (15 ante el Supremo)",
+       "articulo": "623",
+       "literal": "emplazándoles para que comparezcan ante la respectiva Audiencia en el término de diez días, o en el de quince si el emplazamiento fuese ante el Supremo"
+      },
+      {
+       "acto": "Comparecer ante el juez de delitos leves, si el hecho es falta",
+       "plazo": "5 días",
+       "articulo": "625",
+       "literal": "se emplazará a las partes para que en el término de cinco días comparezcan ante el Juez municipal a quien corresponda su conocimiento"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay apelaciones en un solo efecto pendientes",
+       "entonces": "No impiden concluir el sumario; la Audiencia deja en suspenso los arts. 627 y siguientes hasta resolverlas.",
+       "articulos": [
+        "622"
+       ],
+       "literal": {
+        "articulo": "622",
+        "texto": "La sustanciación de los recursos de apelación admitidos sólo en un efecto no impedirá nunca la terminación del sumario"
+       }
+      },
+      {
+       "si": "Se estima alguna de esas apelaciones",
+       "entonces": "Se revoca el auto de conclusión y se devuelve el sumario al Juez para las diligencias que procedan.",
+       "articulos": [
+        "622"
+       ],
+       "literal": {
+        "articulo": "622",
+        "texto": "se revocará sin más trámite el auto del Juez declarando concluso el sumario"
+       }
+      },
+      {
+       "si": "El Juez considera que el hecho es falta (delito leve)",
+       "entonces": "Remite el proceso al juez competente, consultando el auto con el Tribunal superior; después, juicio del Libro VI.",
+       "articulos": [
+        "624",
+        "625"
+       ],
+       "literal": {
+        "articulo": "624",
+        "texto": "Si el Juez instructor reputare falta el hecho que hubiese dado lugar al sumario"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Concluido el sumario, ¿en qué plazo deben comparecer las partes ante la Audiencia?",
+      "a": "En diez días (quince si el emplazamiento es ante el Supremo).",
+      "articulos": [
+       "623"
+      ],
+      "literal": {
+       "articulo": "623",
+       "texto": "en el término de diez días, o en el de quince si el emplazamiento fuese ante el Supremo"
+      }
+     },
+     "conexiones": [
+      "227",
       "622",
-      "633"
+      "623",
+      "624",
+      "625",
+      "627"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [
+      "instruccion",
+      "leves"
+     ],
+     "duda": "Los arts. 624 y 625 hablan de «falta» y de «Juez municipal», y prevén consultar el auto y un recurso de casación. Ver PENDIENTES.md.",
      "origen": "conclusion"
     },
     {
-     "id": "sumario-conclusion-634",
-     "fase": "Del sobreseimiento",
-     "subtitulo": "TÍTULO XI · CAPÍTULO II · arts. 634 a 645",
-     "descripcion": "",
+     "id": "sumario-con-traslado",
+     "fase": "Instrucción de las partes y revisión por la Audiencia",
+     "subtitulo": "Traslado de la causa · confirmación o revocación",
+     "descripcion": "En la Audiencia se designa ponente, que abre los pliegos cerrados remitidos por el Juez. Vencido el emplazamiento, la causa pasa sucesivamente al Fiscal, al querellante y a la defensa. Cada uno se conforma con el auto de conclusión (y pide apertura del juicio oral o sobreseimiento) o pide nuevas diligencias. Después, el Tribunal confirma o revoca la conclusión.",
      "articulos": [
-      "634",
-      "645"
+      "626",
+      "627",
+      "628",
+      "629",
+      "630",
+      "631"
      ],
-     "rango": [
-      "634",
-      "645"
+     "plazos": [
+      {
+       "acto": "Traslado sucesivo a Fiscal, querellante y defensa",
+       "plazo": "Entre 3 y 10 días, según el volumen",
+       "articulo": "627",
+       "literal": "que no bajará de tres días ni excederá de diez, según el volumen del proceso"
+      },
+      {
+       "acto": "Prórroga si la causa excede de mil folios",
+       "plazo": "Como máximo, otro tanto",
+       "articulo": "627",
+       "literal": "sin que en ningún caso pueda exceder la prórroga de otro tanto más"
+      },
+      {
+       "acto": "Examen por el ponente",
+       "plazo": "3 días",
+       "articulo": "628",
+       "literal": "la pasará inmediatamente al ponente, con los escritos presentados, por término de tres días"
+      }
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "ramas": [
+      {
+       "si": "La parte está conforme con el auto de conclusión",
+       "entonces": "En el mismo escrito pide la apertura del juicio oral o el sobreseimiento.",
+       "articulos": [
+        "627"
+       ],
+       "literal": {
+        "articulo": "627",
+        "texto": "se solicitará por el Ministerio Fiscal, cuando intervenga, por el Procurador del querellante, si lo hubiere, y por la defensa del procesado o procesados, lo que estimen conveniente a su derecho"
+       }
+      },
+      {
+       "si": "La parte no está conforme",
+       "entonces": "Pide la práctica de nuevas diligencias.",
+       "articulos": [
+        "627"
+       ],
+       "literal": {
+        "articulo": "627",
+        "texto": "o pidiendo la práctica de nuevas diligencias"
+       }
+      },
+      {
+       "si": "El Tribunal revoca el auto de conclusión",
+       "entonces": "Devuelve el proceso al Juez, indicando las diligencias que deben practicarse.",
+       "articulos": [
+        "631"
+       ],
+       "literal": {
+        "articulo": "631",
+        "texto": "se mandará devolver el proceso al Juez que lo hubiere remitido, expresando las diligencias que hayan de practicarse"
+       }
+      },
+      {
+       "si": "Se denegó el procesamiento en la instrucción",
+       "entonces": "La parte puede reproducir aquí la petición, al evacuar este traslado.",
+       "articulos": [
+        "384",
+        "627",
+        "630"
+       ],
+       "literal": {
+        "articulo": "384",
+        "texto": "evacue el traslado a que se refiere el artículo 627 de esta misma Ley"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En la conclusión del sumario, ¿cuánto dura el traslado de la causa a cada parte?",
+      "a": "Entre tres y diez días según el volumen del proceso; si excede de mil folios, prorrogable como máximo por otro tanto.",
+      "articulos": [
+       "627"
+      ],
+      "literal": {
+       "articulo": "627",
+       "texto": "que no bajará de tres días ni excederá de diez"
+      }
+     },
+     "conexiones": [
+      "384",
+      "626",
+      "627",
+      "628",
+      "629",
+      "630",
+      "631"
+     ],
+     "continua_en": [],
      "origen": "conclusion"
     },
     {
-     "id": "sumario-conclusion-646",
-     "fase": "Disposiciones generales referentes a los anteriores títulos",
-     "subtitulo": "TÍTULO XII · arts. 646 a 648",
-     "descripcion": "",
+     "id": "sumario-con-decision",
+     "fase": "Apertura del juicio oral o sobreseimiento",
+     "subtitulo": "Decisión del Tribunal",
+     "descripcion": "Confirmada la conclusión del sumario, el Tribunal resuelve sobre la petición de juicio oral o de sobreseimiento. Si abre el juicio oral, da traslado para calificar (art. 649). Si alguna acusación sostiene la acción, solo puede sobreseer porque el hecho no es delito.",
+     "articulos": [
+      "632",
+      "633",
+      "634",
+      "645"
+     ],
+     "plazos": [
+      {
+       "acto": "El Tribunal resuelve sobre juicio oral o sobreseimiento",
+       "plazo": "Dentro del tercer día",
+       "articulo": "632",
+       "literal": "el Tribunal resolverá, dentro del tercer día, respecto a la solicitud del juicio oral o de sobreseimiento"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se abre el juicio oral",
+       "entonces": "Traslado para calificar por escrito (art. 649).",
+       "articulos": [
+        "633",
+        "649"
+       ],
+       "literal": {
+        "articulo": "633",
+        "texto": "se dispondrá el traslado al que se refiere el artículo 649"
+       }
+      },
+      {
+       "si": "Una acusación sostiene la acción o el Fiscal pide el juicio oral",
+       "entonces": "Solo cabe sobreseer si el hecho no es constitutivo de delito; en otro caso, hay que abrir el juicio.",
+       "articulos": [
+        "645",
+        "637"
+       ],
+       "literal": {
+        "articulo": "645",
+        "texto": "En cualquier otro caso no podrá prescindir de la apertura del juicio."
+       }
+      },
+      {
+       "si": "El sobreseimiento es parcial",
+       "entonces": "Se abre el juicio oral respecto de los procesados a quienes no favorece.",
+       "articulos": [
+        "634"
+       ],
+       "literal": {
+        "articulo": "634",
+        "texto": "se mandará abrir el juicio oral respecto de los procesados a quienes no favorezca"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si el querellante sostiene la acusación, ¿por qué causa puede aun así el Tribunal sobreseer?",
+      "a": "Solo porque el hecho no sea constitutivo de delito (art. 637.2.º).",
+      "articulos": [
+       "645",
+       "637"
+      ],
+      "literal": {
+       "articulo": "645",
+       "texto": "acordar el sobreseimiento a que se refiere el número 2.º del artículo 637"
+      }
+     },
+     "conexiones": [
+      "632",
+      "633",
+      "634",
+      "637",
+      "645",
+      "649"
+     ],
+     "continua_en": [
+      "juicio-oral"
+     ],
+     "origen": "conclusion"
+    },
+    {
+     "id": "sumario-con-sobreseimiento",
+     "fase": "El sobreseimiento",
+     "subtitulo": "Libre o provisional · total o parcial · recursos",
+     "descripcion": "El sobreseimiento libre procede si no hay indicios de que el hecho se cometiera, si no es delito o si los procesados están exentos de responsabilidad. El provisional, si no está justificada la perpetración o no hay motivos para acusar a personas determinadas. Si es total, se archiva la causa. Se comunica a las víctimas, que pueden recurrirlo aunque no sean parte.",
+     "articulos": [
+      "634",
+      "635",
+      "636",
+      "637",
+      "638",
+      "639",
+      "640",
+      "641",
+      "642",
+      "643",
+      "644"
+     ],
+     "plazos": [
+      {
+       "acto": "Recurso de las víctimas contra el auto de sobreseimiento",
+       "plazo": "20 días",
+       "articulo": "636",
+       "literal": "Las víctimas podrán recurrir el auto de sobreseimiento dentro del plazo de veinte días aunque no se hubieran mostrado como parte en la causa."
+      },
+      {
+       "acto": "La comunicación a la víctima se tiene por hecha (empieza el plazo del recurso)",
+       "plazo": "5 días desde la comunicación",
+       "articulo": "636",
+       "literal": "Transcurridos cinco días desde la comunicación, se entenderá que ha sido efectuada válidamente y desplegará todos sus efectos, iniciándose el cómputo del plazo de interposición del recurso."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No hay indicios del hecho, no es delito o los procesados están exentos",
+       "entonces": "Sobreseimiento libre.",
+       "articulos": [
+        "637"
+       ],
+       "literal": {
+        "articulo": "637",
+        "texto": "Procederá el sobreseimiento libre:"
+       }
+      },
+      {
+       "si": "No está justificada la perpetración o no hay motivos para acusar a personas determinadas",
+       "entonces": "Sobreseimiento provisional.",
+       "articulos": [
+        "641"
+       ],
+       "literal": {
+        "articulo": "641",
+        "texto": "Procederá el sobreseimiento provisional:"
+       }
+      },
+      {
+       "si": "Se quiere recurrir el auto de sobreseimiento",
+       "entonces": "Solo casación, en su caso: contra autos definitivos de sobreseimiento libre, con imputación fundada.",
+       "articulos": [
+        "636",
+        "848"
+       ],
+       "literal": {
+        "articulo": "636",
+        "texto": "Contra los autos de sobreseimiento sólo procederá, en su caso, el recurso de casación."
+       }
+      },
+      {
+       "si": "El Fiscal pide el sobreseimiento y no hay querellante",
+       "entonces": "El Tribunal puede llamar a los interesados (por edictos si se ignora su paradero) o consultar al Fiscal superior.",
+       "articulos": [
+        "642",
+        "643",
+        "644"
+       ],
+       "literal": {
+        "articulo": "642",
+        "texto": "podrá el Tribunal acordar que se haga saber la pretensión del Ministerio fiscal a los interesados en el ejercicio de la acción penal"
+       }
+      },
+      {
+       "si": "Sobreseimiento libre por no haber hecho o no ser delito",
+       "entonces": "Puede declararse que la causa no perjudica la reputación del procesado y reservarse su acción por calumnia.",
+       "articulos": [
+        "638"
+       ],
+       "literal": {
+        "articulo": "638",
+        "texto": "podrá declararse, al decretar el sobreseimiento, que la formación de la causa no perjudica a la reputación de los procesados"
+       }
+      },
+      {
+       "si": "Piezas de convicción con dueño conocido",
+       "entonces": "Se devuelven, salvo que un tercero pida retenerlas para entablar la acción civil.",
+       "articulos": [
+        "635"
+       ],
+       "literal": {
+        "articulo": "635",
+        "texto": "continuarán retenidas si un tercero lo solicitare, hasta que se resuelva la acción civil que se propusiere entablar"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué recurso cabe contra el auto de sobreseimiento en el sumario ordinario?",
+      "a": "Solo, en su caso, el de casación; el art. 848 lo admite contra los autos definitivos de sobreseimiento libre de las Audiencias cuando hubo imputación fundada.",
+      "articulos": [
+       "636",
+       "848"
+      ],
+      "literal": {
+       "articulo": "636",
+       "texto": "Contra los autos de sobreseimiento sólo procederá, en su caso, el recurso de casación."
+      }
+     },
+     "conexiones": [
+      "109 bis",
+      "634",
+      "635",
+      "636",
+      "637",
+      "638",
+      "639",
+      "640",
+      "641",
+      "642",
+      "643",
+      "644",
+      "848"
+     ],
+     "continua_en": [
+      "recursos"
+     ],
+     "duda": "El art. 636 da a las víctimas 20 días para «recurrir» el sobreseimiento, pero en el mismo artículo el único recurso es la casación. Y el art. 644 cita órganos que ya no existen. Ver PENDIENTES.md.",
+     "origen": "conclusion"
+    },
+    {
+     "id": "sumario-con-fiscal",
+     "fase": "El Fiscal en el sumario",
+     "subtitulo": "Testimonios y plazo de apelación (arts. 646 a 648)",
+     "descripcion": "El Letrado de la Administración de Justicia remite al Fiscal testimonio de las resoluciones apelables y de las diligencias periciales o de reconocimiento que le interesen, cuando no puede notificárselas directamente. Para el Fiscal que no está en el lugar de la instrucción, el plazo de apelación corre desde que recibe el testimonio.",
      "articulos": [
       "646",
+      "647",
       "648"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Inicio del plazo de apelación del Fiscal que no está en el lugar del Juez",
+       "plazo": "Desde el día siguiente a recibir el testimonio",
+       "articulo": "647",
+       "literal": "empezará a contarse desde el siguiente día al en que reciba el testimonio de la providencia o auto apelables"
+      },
+      {
+       "acto": "Acuse de recibo de los testimonios",
+       "plazo": "El mismo día",
+       "articulo": "647",
+       "literal": "acusará recibo de los testimonios de esta clase en el mismo día que los recibiere"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El Fiscal se reservó intervenir en una diligencia pericial",
+       "entonces": "La diligencia puede suspenderse si la suspensión no causa perjuicio.",
+       "articulos": [
+        "646"
+       ],
+       "literal": {
+        "articulo": "646",
+        "texto": "a no ser que el Fiscal se hubiese reservado anticipadamente el derecho de intervenir en ellas"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Desde cuándo corre el plazo de apelación para el Fiscal que no está en el mismo lugar que el Juez instructor?",
+      "a": "Desde el día siguiente a aquel en que recibe el testimonio de la resolución apelable.",
+      "articulos": [
+       "647"
+      ],
+      "literal": {
+       "articulo": "647",
+       "texto": "empezará a contarse desde el siguiente día al en que reciba el testimonio de la providencia o auto apelables"
+      }
+     },
+     "conexiones": [
       "646",
+      "647",
       "648"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [],
      "origen": "conclusion"
     },
     {

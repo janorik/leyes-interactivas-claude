@@ -123,6 +123,24 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [x] **Recursos de la LECrim como en la LEC (hecho):** 14 recursos y 27 casos del selector, con «Por resolución», «Recursos» y «Ponte a prueba». Antes: al usuario le gusta la pestaña Recursos de la LEC (selector «Por resolución», fichas de cada recurso y «Ponte a prueba»). En la LECrim ahora solo hay tarjetas de bloques en esqueleto. Hacer `lecrim/datos/recursos.json` con el mismo formato (recursos, selector por resolución con frase literal, test), a partir de los arts. 216-238 ter (recursos contra resoluciones procesales), 846 bis a-846 ter (apelación), 847-933 (casación) y 954-961 (revisión), y los recursos propios del abreviado, juicio rápido y delitos leves. Todo con `revisado: false` y las dudas anotadas aquí.
 - [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).
 
+### Conclusión del sumario y sobreseimiento (contenido elaborado, pendiente de revisión)
+
+> Bloque desarrollado: 5 fases y 10 plazos (arts. 622 a 648). Va unido a la instrucción en «Procedimientos › Sumario ordinario». Las propuestas son de Claude (No verificable hasta que las confirmes). Contesta: **sí**, **no** u **otra**.
+
+- [ ] **«Falta» y «Juez municipal» (arts. 624, 625 y 639).** Si el hecho es falta, se remite al «Juez municipal», «consultando el auto» con el Tribunal superior, y el art. 625 menciona un posible recurso de casación.
+  En la app: Procesos › Conclusión del sumario › fase 1.
+  - **Propuesta:** leer «falta» como delito leve (nota general del BOE, Verificable) y «Juez municipal» como el juez competente para los delitos leves. La consulta y la casación del art. 625 las he dejado tal como las dice el texto, sin explicarlas.
+  - **Tu respuesta:**
+- [ ] **Recurso de las víctimas contra el sobreseimiento (art. 636).** El párrafo primero dice que contra el sobreseimiento «sólo procederá, en su caso, el recurso de casación». El último párrafo da a las víctimas «veinte días» para «recurrir» aunque no sean parte. El art. 848 limita la casación al sobreseimiento libre dictado por las Audiencias con imputación fundada (Verificable).
+  En la app: fase 4 (El sobreseimiento).
+  - **Propuesta:** los 20 días son el plazo propio de las víctimas para el recurso que proceda, que en el sumario solo es la casación cuando la admite el art. 848. No he puesto que las víctimas tengan otro recurso distinto.
+  - **Tu respuesta:**
+- [ ] **Órganos que ya no existen (art. 644).** Habla del «Fiscal de la Audiencia Territorial», de la «Audiencia de lo criminal» y de la «Audiencia territorial».
+  En la app: fase 4, alternativa «El Fiscal pide el sobreseimiento y no hay querellante» («consultar al Fiscal superior»).
+  - **Propuesta:** leerlo como el superior jerárquico del Fiscal, como dice el art. 782.2.b) del abreviado.
+  - **Tu respuesta:**
+- [ ] **Revisa las 5 fases:** las frases entre « » son literales; las descripciones son resumen mío.
+
 ### Instrucción del sumario (contenido elaborado, pendiente de revisión)
 
 > Bloque desarrollado: 12 fases y 18 plazos (arts. 299 a 485). Sus fases aparecen también en «Procedimientos › Sumario ordinario». Las propuestas son de Claude (No verificable hasta que las confirmes). Contesta: **sí**, **no** u **otra**.
