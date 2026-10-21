@@ -3878,7 +3878,7 @@
       "cautelares"
      ],
      "duda": "El art. 784.4 remite al «párrafo segundo del apartado 1 del artículo 786» para los límites del juicio en ausencia; tras la reforma están en el art. 787.1. Ver PENDIENTES.md.",
-     "aviso": "El art. 784.3 remite al «artículo 787» para la conformidad; se lee como remisión al art. 787 ter."
+     "aviso": "El art. 784.3 remite al «artículo 787» para la conformidad; se lee como remisión al art. 787 ter. Así lo interpreta la Circular 2/2025 de la Fiscalía General del Estado."
     },
     {
      "id": "abr-audiencia-preliminar",
@@ -4743,7 +4743,7 @@
      "continua_en": [
       "cautelares"
      ],
-     "aviso": "El art. 800.3 remite al «785.2» para el señalamiento; se lee como remisión al art. 786.2, donde están hoy los criterios de señalamiento."
+     "aviso": "El art. 800.3 remite al «785.2» para el señalamiento; se lee como remisión al art. 786.2, donde están hoy los criterios de señalamiento. Así lo interpreta la Circular 2/2025 de la Fiscalía General del Estado."
     },
     {
      "id": "rap-conformidad",
@@ -4810,7 +4810,7 @@
      "continua_en": [
       "ejecucion"
      ],
-     "aviso": "Las remisiones del art. 801 al «artículo 787» sobre la conformidad se leen como hechas al art. 787 ter (conformidad antes de la prueba)."
+     "aviso": "Las remisiones del art. 801 al «artículo 787» sobre la conformidad se leen como hechas al art. 787 ter (conformidad antes de la prueba). Así lo interpreta la Circular 2/2025 de la Fiscalía General del Estado."
     },
     {
      "id": "rap-juicio",
@@ -4884,7 +4884,8 @@
      ],
      "continua_en": [
       "abreviado"
-     ]
+     ],
+     "aviso": "No hay audiencia preliminar (art. 802.1). La remisión del art. 800.6 al art. 785 se entiende hecha en parte al art. 785.3: el órgano de enjuiciamiento admite la prueba y resuelve las cuestiones planteadas, sin convocar audiencia. Así lo interpreta la Circular 2/2025 de la Fiscalía General del Estado."
     },
     {
      "id": "rap-apelacion",

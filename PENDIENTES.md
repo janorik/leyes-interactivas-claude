@@ -132,6 +132,8 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [x] **Señalamiento: el art. 800.3 remite al «785.2». Resuelta por el usuario (21-10-2026):** se lee como remisión al art. 786.2. Fuente que aporta el usuario: Circular 2/2025 de la FGE (No verificable desde aquí). En la app: nota «Ojo» en Juicio rápido › fase 5.
 - [x] **Conformidad: los arts. 801.1, 801.2 y 784.3 remiten al «artículo 787». Resuelta por el usuario (21-10-2026):** se leen como remisiones al art. 787 ter. En la app: nota «Ojo» en Juicio rápido › fase 6 y Abreviado › fase 6.
 - [x] **«Falta» en el art. 798.2.1.º. Resuelta por el usuario (21-10-2026):** se lee como delito leve, aunque el inciso no se haya modificado literalmente; respaldo en la nota general del BOE (disposición adicional segunda de la LO 1/2015, Verificable en la app). En la app: nota «Ojo» en Juicio rápido › fase 4.
+- [ ] **Enlace a la Circular 2/2025 de la FGE.** Se menciona en Juicio rápido (fases 5, 6 y 7) y Abreviado (fase 6), sin enlace: no conozco su referencia en el BOE y desde aquí no puedo buscarla. Pásame la referencia BOE (BOE-A-…) o la dirección y lo enlazo.
+  - **Tu respuesta:**
 - [ ] **Revisa las 8 fases:** las frases entre « » son literales; las descripciones son resumen mío.
 
 ### Juicio oral del sumario (contenido elaborado, pendiente de revisión)
