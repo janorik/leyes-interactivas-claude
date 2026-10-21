@@ -10,7 +10,7 @@
 - Si el usuario se equivoca, dile "estás equivocado" y explica por qué. Si te corrige con razón, di "tienes razón" y corrige.
 - No suenes seguro de algo que no lo estás. Cierra cada respuesta con tu nivel de certeza.
 - **Memoria del proyecto en este archivo.** Cada chat empieza sin recordar los anteriores. Cuando en un chat se acuerde algo nuevo (una decisión del usuario, una forma de trabajar, un bloque hecho, dónde está algo), anótalo aquí en el mismo commit, de forma breve y en su sección. Las dudas jurídicas van a `PENDIENTES.md`, no aquí.
-- **Forma de trabajar con GitHub (acordada con el usuario).** Un solo chat cada vez para este proyecto. Al terminar cada tarea, Claude une él mismo los cambios a la rama principal (PR y merge con las herramientas de GitHub), sin que el usuario tenga que entrar en GitHub. Antes de unir, trae la rama principal (`git fetch origin main`) y, si ha cambiado, la integra y regenera lo necesario.
+- **Forma de trabajar con GitHub (acordada con el usuario; sustituye a la anterior, en la que Claude unía los cambios).** Un solo chat cada vez para este proyecto. Claude hace el código, lo prueba, anota lo acordado aquí, sube a la rama del chat y crea la PR a la rama principal; **el usuario la une él mismo** («Merge pull request» y «Confirm merge»). Claude no une PRs. Antes de crear la PR, trae la rama principal (`git fetch origin main`) y, si ha cambiado, la integra y regenera lo necesario. Al entregar, da el enlace de la PR y la dirección para verlo con `?v=N`.
 
 ## Objetivo
 Una app interactiva por cada ley para estudiarla, repasarla y consultarla a diario. La primera es la Ley de Enjuiciamiento Civil (LEC). Después vendrán LECrim, LRJS, Estatuto de los Trabajadores y otras.
