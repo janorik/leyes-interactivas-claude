@@ -127,10 +127,8 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > Bloque desarrollado: 8 fases y 12 plazos (arts. 795 a 803). Los arts. 803 bis (aceptación de decreto) y 803 ter (decomiso) son otros procesos y no van aquí. Las propuestas son de Claude (No verificable hasta que las confirmes). Contesta: **sí**, **no** u **otra**.
 
-- [ ] **¿Audiencia preliminar en el juicio rápido? (arts. 800.6 y 802.1).** El art. 800.6 dice que, recibido el escrito de defensa, el órgano enjuiciador procederá «conforme a lo previsto en el apartado 1 del artículo 785». Hoy el art. 785.1 regula la convocatoria de la audiencia preliminar. Pero el art. 802.1 dice que el juicio sigue el abreviado «salvo en lo que se refiere a la audiencia preliminar previa del artículo 785» (Verificable).
-  En la app: Procesos › Juicio rápido › fases 5 y 7.
-  - **Propuesta:** no hay audiencia preliminar en el juicio rápido. El art. 802.1 lo excluye de forma expresa y es la norma propia del juicio. La remisión del 800.6 parece hecha a la redacción anterior del 785.1 y no se ha actualizado. Así figura en la app.
-  - **Tu respuesta:**
+- [x] **¿Audiencia preliminar en el juicio rápido? (arts. 800.6 y 802.1). Resuelta por el usuario (21-10-2026).** No se celebra audiencia preliminar (art. 802.1). La remisión del art. 800.6 al art. 785 vale solo en parte: el órgano de enjuiciamiento admite la prueba y resuelve las cuestiones planteadas (función del art. 785.3 vigente), sin convocar la audiencia. Fuente que aporta el usuario: Circular 2/2025 de la Fiscalía General del Estado (No verificable desde este entorno; no figura en la app).
+  En la app: Procesos › Juicio rápido › fase 7, con una alternativa nueva (art. 785.3 literal).
 - [ ] **Señalamiento: el art. 800.3 remite al «785.2».** Los criterios de señalamiento están hoy en el art. 786.2. Es la misma duda que en el abreviado (art. 788.1).
   - **Propuesta:** leerlo como remisión al art. 786.2.
   - **Tu respuesta:**

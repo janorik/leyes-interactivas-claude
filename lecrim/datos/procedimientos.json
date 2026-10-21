@@ -4742,7 +4742,7 @@
      "continua_en": [
       "cautelares"
      ],
-     "duda": "El art. 800.3 remite al «785.2» para el señalamiento (hoy en el 786.2), y el art. 800.6 al «apartado 1 del artículo 785», que hoy es la audiencia preliminar que el art. 802.1 excluye en el juicio rápido. Ver PENDIENTES.md."
+     "duda": "El art. 800.3 remite al «785.2» para el señalamiento (hoy en el 786.2). Ver PENDIENTES.md."
     },
     {
      "id": "rap-conformidad",
@@ -4815,9 +4815,11 @@
      "id": "rap-juicio",
      "fase": "Juicio oral y sentencia",
      "subtitulo": "Como en el abreviado, sin audiencia preliminar",
-     "descripcion": "El juicio ante el Juzgado de lo Penal sigue las reglas del procedimiento abreviado, salvo la audiencia preliminar del art. 785. Si no puede celebrarse o terminarse en un solo acto, se señala nueva fecha dentro de quince días. La sentencia se dicta en tres días.",
+     "descripcion": "El juicio ante el Juzgado de lo Penal sigue las reglas del procedimiento abreviado, salvo la audiencia preliminar del art. 785, que no se celebra. Recibido el escrito de defensa, el órgano de enjuiciamiento resuelve sobre la admisión de la prueba y las cuestiones planteadas (lo que hace el art. 785.3), sin convocar audiencia. Si el juicio no puede celebrarse o terminarse en un solo acto, se señala nueva fecha dentro de quince días. La sentencia se dicta en tres días.",
      "articulos": [
-      "802"
+      "802",
+      "800",
+      "785"
      ],
      "plazos": [
       {
@@ -4844,6 +4846,19 @@
        "literal": {
         "articulo": "802",
         "texto": "salvo en lo que se refiere a la audiencia preliminar previa del artículo 785"
+       }
+      },
+      {
+       "si": "Recibido el escrito de defensa (art. 800.6)",
+       "entonces": "El órgano de enjuiciamiento admite o rechaza la prueba y resuelve las cuestiones planteadas, como en el art. 785.3, pero sin audiencia preliminar.",
+       "articulos": [
+        "800",
+        "785",
+        "802"
+       ],
+       "literal": {
+        "articulo": "785",
+        "texto": "examinará las pruebas propuestas y resolverá admitiendo las que considere pertinentes y rechazando las demás"
        }
       }
      ],
