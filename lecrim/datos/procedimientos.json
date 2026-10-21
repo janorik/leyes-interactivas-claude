@@ -2342,136 +2342,929 @@
    "nombre": "Juicio oral",
    "bloque": "lecrim",
    "grupo": "Libro III · Juicio oral",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Juicio oral del sumario ordinario: calificaciones, conformidad, cuestiones previas, prueba, informes, sentencia y suspensión (arts. 649 a 749).",
    "ambito": {
     "corto": "Arts. 649 a 749",
     "texto": "TÍTULO I. De la calificación del delito · TÍTULO II. De los artículos de previo pronunciamiento · TÍTULO III. De la celebración del juicio oral",
     "articulos": [
      "649"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "649",
+      "texto": "Cuando se mande abrir el juicio oral"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "juicio-oral-649",
-     "fase": "De la calificación del delito",
-     "subtitulo": "TÍTULO I · arts. 649 a 665",
-     "descripcion": "",
+     "id": "jo-calificacion",
+     "fase": "Escritos de calificación",
+     "subtitulo": "Acusaciones, actor civil y defensa",
+     "descripcion": "Abierto el juicio oral, todo el proceso es público. La causa pasa sucesivamente al Fiscal, al acusador particular, al actor civil y, después, a los procesados y terceros responsables civiles. Cada uno califica en conclusiones numeradas (hechos, delito, participación, circunstancias, pena y responsabilidad civil) y propone su prueba con listas de peritos y testigos.",
      "articulos": [
       "649",
-      "665"
+      "650",
+      "651",
+      "652",
+      "653",
+      "656",
+      "657"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Calificación del Fiscal (y por igual término las demás partes, por su orden)",
+       "plazo": "5 días",
+       "articulo": "649",
+       "literal": "para que en el término de cinco días califiquen por escrito los hechos"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La parte no está segura de qué calificación prosperará",
+       "entonces": "Puede formular conclusiones alternativas.",
+       "articulos": [
+        "653"
+       ],
+       "literal": {
+        "articulo": "653",
+        "texto": "dos o más conclusiones en forma alternativa"
+       }
+      },
+      {
+       "si": "Se teme que una prueba no podrá practicarse en el juicio oral",
+       "entonces": "Puede pedirse que se practique desde luego (prueba anticipada).",
+       "articulos": [
+        "657"
+       ],
+       "literal": {
+        "articulo": "657",
+        "texto": "Podrán pedir además las partes que se practiquen desde luego aquellas diligencias de prueba"
+       }
+      },
+      {
+       "si": "El procesado no tiene abogado ni procurador",
+       "entonces": "El LAJ interesa su designación.",
+       "articulos": [
+        "652"
+       ],
+       "literal": {
+        "articulo": "652",
+        "texto": "se interesará la designación al efecto de Abogado y Procurador, si no los tuviesen"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué debe contener el escrito de calificación de la acusación?",
+      "a": "Conclusiones precisas y numeradas sobre los hechos punibles, su calificación legal, la participación del procesado, las circunstancias modificativas y la pena; y, si se ejerce la acción civil, la cuantía y los responsables.",
+      "articulos": [
+       "650"
+      ],
+      "literal": {
+       "articulo": "650",
+       "texto": "El escrito de calificación se limitará a determinar en conclusiones precisas y numeradas"
+      }
+     },
+     "conexiones": [
       "649",
-      "665"
+      "650",
+      "651",
+      "652",
+      "653",
+      "654",
+      "656",
+      "657"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "conclusion"
+     ]
     },
     {
-     "id": "juicio-oral-666",
-     "fase": "De los artículos de previo pronunciamiento",
-     "subtitulo": "TÍTULO II · arts. 666 a 679",
-     "descripcion": "",
+     "id": "jo-conformidad-escrito",
+     "fase": "Conformidad en el escrito de defensa",
+     "subtitulo": "Art. 655",
+     "descripcion": "Al calificar, la defensa puede manifestar su conformidad absoluta con la calificación más grave y con la pena. Si el letrado no considera necesario continuar y el Tribunal ve correctas la calificación y la pena, dicta sentencia de conformidad, oyendo antes al acusado sobre si la presta libremente. El Fiscal oye antes a la víctima en los casos del apartado 2.",
+     "articulos": [
+      "655"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El Tribunal considera incorrecta la calificación o improcedente la pena",
+       "entonces": "Requiere a la acusación más grave; si no corrige y el acusado no vuelve a conformarse, se celebra el juicio.",
+       "articulos": [
+        "655"
+       ],
+       "literal": {
+        "articulo": "655",
+        "texto": "requerirá a la parte que presentó el escrito de acusación más grave para que manifieste si se ratifica o no en él"
+       }
+      },
+      {
+       "si": "Hay varios procesados y no todos se conforman igual",
+       "entonces": "Continúa el juicio.",
+       "articulos": [
+        "655"
+       ],
+       "literal": {
+        "articulo": "655",
+        "texto": "También continuará el juicio si fuesen varios los procesados y no todos manifestaren igual conformidad."
+       }
+      },
+      {
+       "si": "El procesado solo discrepa de la responsabilidad civil",
+       "entonces": "El juicio se limita a la prueba y discusión de la responsabilidad civil.",
+       "articulos": [
+        "655"
+       ],
+       "literal": {
+        "articulo": "655",
+        "texto": "se limitará el juicio a la prueba y discusión de los puntos relativos a dicha responsabilidad"
+       }
+      },
+      {
+       "si": "Se quiere recurrir la sentencia de conformidad",
+       "entonces": "Solo si no respetó los requisitos o términos de la conformidad, nunca por razones de fondo.",
+       "articulos": [
+        "655"
+       ],
+       "literal": {
+        "articulo": "655",
+        "texto": "Únicamente serán recurribles las sentencias de conformidad cuando no hayan respetado los requisitos o términos de la conformidad"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el acusado recurrir por razones de fondo la sentencia de conformidad que aceptó libremente?",
+      "a": "No. Solo es recurrible si no se respetaron los requisitos o términos de la conformidad.",
+      "articulos": [
+       "655"
+      ],
+      "literal": {
+       "articulo": "655",
+       "texto": "sin que la persona acusada pueda impugnar por razones de fondo su conformidad libremente prestada"
+      }
+     },
+     "conexiones": [
+      "655",
+      "694",
+      "787 ter"
+     ],
+     "continua_en": [
+      "abreviado"
+     ],
+     "duda": "El art. 655 repite al final, tras el apartado 8, tres párrafos sueltos que ya están en los apartados anteriores. Ver PENDIENTES.md."
+    },
+    {
+     "id": "jo-admision-prueba",
+     "fase": "Admisión de la prueba y señalamiento",
+     "subtitulo": "Auto sobre pruebas · citaciones · recusación de peritos",
+     "descripcion": "Presentadas las calificaciones, la causa pasa al ponente y el Tribunal dicta auto admitiendo las pruebas pertinentes y rechazando las demás. El LAJ señala el juicio con los criterios del art. 659 e informa a la víctima por escrito de la fecha y el lugar. Se cita a peritos, testigos y procesados.",
+     "articulos": [
+      "658",
+      "659",
+      "660",
+      "661",
+      "662",
+      "663",
+      "664"
+     ],
+     "plazos": [
+      {
+       "acto": "Examen de las pruebas por el ponente",
+       "plazo": "Tercer día",
+       "articulo": "658",
+       "literal": "por término de tercer día, para el examen de las pruebas propuestas"
+      },
+      {
+       "acto": "Recusación de peritos de las listas",
+       "plazo": "3 días desde la entrega de la lista",
+       "articulo": "662",
+       "literal": "La recusación se hará dentro de los tres días siguientes al de la entrega al recusante de la lista"
+      },
+      {
+       "acto": "Prueba del incidente de recusación",
+       "plazo": "6 días",
+       "articulo": "662",
+       "literal": "se recibirán a prueba por seis días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El auto admite las pruebas",
+       "entonces": "No cabe recurso.",
+       "articulos": [
+        "659"
+       ],
+       "literal": {
+        "articulo": "659",
+        "texto": "no procederá recurso alguno"
+       }
+      },
+      {
+       "si": "El auto rechaza alguna prueba",
+       "entonces": "Casación en su día, si se prepara con la protesta oportuna.",
+       "articulos": [
+        "659"
+       ],
+       "literal": {
+        "articulo": "659",
+        "texto": "podrá interponerse en su día el recurso de casación, si se prepara oportunamente con la correspondiente protesta"
+       }
+      },
+      {
+       "si": "Un perito o testigo citado no comparece sin causa legítima",
+       "entonces": "Multa; si, citado de nuevo, tampoco comparece, proceso por obstrucción a la justicia.",
+       "articulos": [
+        "661"
+       ],
+       "literal": {
+        "articulo": "661",
+        "texto": "serán procesados por el delito de obstrucción a la justicia"
+       }
+      },
+      {
+       "si": "No se recusó al perito en plazo",
+       "entonces": "Ya no puede recusarse, salvo causa posterior.",
+       "articulos": [
+        "663"
+       ],
+       "literal": {
+        "articulo": "663",
+        "texto": "no podrá serlo después, a no ser que incurriera con posterioridad en alguna de las causas de recusación"
+       }
+      },
+      {
+       "si": "Una parte no fue citada y no comparece al juicio",
+       "entonces": "Motivo de casación.",
+       "articulos": [
+        "664"
+       ],
+       "literal": {
+        "articulo": "664",
+        "texto": "La falta de la citación expresada en el párrafo anterior será motivo de casación"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué puede hacer la parte a la que el Tribunal rechaza una prueba en el sumario ordinario?",
+      "a": "Formular protesta y preparar en su día el recurso de casación; contra la admisión no cabe recurso.",
+      "articulos": [
+       "659"
+      ],
+      "literal": {
+       "articulo": "659",
+       "texto": "si se prepara oportunamente con la correspondiente protesta"
+      }
+     },
+     "conexiones": [
+      "175",
+      "468",
+      "658",
+      "659",
+      "660",
+      "661",
+      "662",
+      "663",
+      "664"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "jo-previo",
+     "fase": "Artículos de previo pronunciamiento",
+     "subtitulo": "Declinatoria, cosa juzgada, prescripción, amnistía o indulto, autorización",
+     "descripcion": "Antes del juicio pueden plantearse solo cinco cuestiones: declinatoria de jurisdicción, cosa juzgada, prescripción del delito, amnistía o indulto, y falta de autorización administrativa para procesar. Se tramitan con documentos (no se admite prueba testifical) y vista, y el Tribunal resuelve por auto.",
      "articulos": [
       "666",
+      "667",
+      "668",
+      "669",
+      "670",
+      "671",
+      "672",
+      "673",
+      "674",
+      "675",
+      "676",
+      "677",
+      "678",
       "679"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Proponer el artículo de previo pronunciamiento",
+       "plazo": "3 días desde la entrega de los autos para calificar",
+       "articulo": "667",
+       "literal": "podrán proponerse en el término de tres días, a contar desde el de la entrega de los autos para la calificación de los hechos"
+      },
+      {
+       "acto": "Contestación de las demás partes",
+       "plazo": "3 días",
+       "articulo": "669",
+       "literal": "contestarán en el término de tres días"
+      },
+      {
+       "acto": "Prueba documental del artículo",
+       "plazo": "No más de 8 días",
+       "articulo": "671",
+       "literal": "que no podrá exceder de ocho días"
+      },
+      {
+       "acto": "Auto que resuelve",
+       "plazo": "Día siguiente a la vista",
+       "articulo": "674",
+       "literal": "En el día siguiente al de la vista, el Tribunal dictará auto resolviendo sobre las cuestiones propuestas."
+      },
+      {
+       "acto": "Calificar si se desestiman las cuestiones",
+       "plazo": "3 días",
+       "articulo": "679",
+       "literal": "se comunicará nuevamente la causa por término de tres días a la parte que las hubiere alegado"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se estima la declinatoria",
+       "entonces": "Se remiten los autos al órgano competente, sin resolver las demás cuestiones.",
+       "articulos": [
+        "674"
+       ],
+       "literal": {
+        "articulo": "674",
+        "texto": "mandará remitir los autos al Tribunal o Juez que considere competente"
+       }
+      },
+      {
+       "si": "Se estima la cosa juzgada, la prescripción o la amnistía o indulto",
+       "entonces": "Sobreseimiento libre y libertad del procesado no preso por otra causa.",
+       "articulos": [
+        "675"
+       ],
+       "literal": {
+        "articulo": "675",
+        "texto": "se sobreseerá libremente"
+       }
+      },
+      {
+       "si": "Se estima la falta de autorización para procesar",
+       "entonces": "Se suspende la causa hasta que se subsane; si se deniega la autorización, nulidad y sobreseimiento libre.",
+       "articulos": [
+        "677"
+       ],
+       "literal": {
+        "articulo": "677",
+        "texto": "quedará nulo todo lo actuado y se sobreseerá libremente la causa"
+       }
+      },
+      {
+       "si": "Se resuelve la declinatoria, o se admite la cosa juzgada, la prescripción o la amnistía",
+       "entonces": "Recurso de apelación.",
+       "articulos": [
+        "676"
+       ],
+       "literal": {
+        "articulo": "676",
+        "texto": "procede el recurso de apelación"
+       }
+      },
+      {
+       "si": "Se desestima otra cuestión",
+       "entonces": "No hay recurso, pero puede reproducirse en el juicio oral como medio de defensa (salvo la declinatoria).",
+       "articulos": [
+        "676",
+        "678"
+       ],
+       "literal": {
+        "articulo": "678",
+        "texto": "Las partes podrán reproducir en el juicio oral, como medios de defensa, las cuestiones previas que se hubiesen desestimado, excepto la de declinatoria."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué cuestiones pueden plantearse como artículos de previo pronunciamiento?",
+      "a": "Solo cinco: declinatoria de jurisdicción, cosa juzgada, prescripción del delito, amnistía o indulto, y falta de autorización administrativa para procesar.",
+      "articulos": [
+       "666"
+      ],
+      "literal": {
+       "articulo": "666",
+       "texto": "Serán tan sólo objeto de artículos de previo pronunciamiento las cuestiones o excepciones siguientes:"
+      }
+     },
+     "conexiones": [
       "666",
+      "667",
+      "668",
+      "669",
+      "670",
+      "671",
+      "672",
+      "673",
+      "674",
+      "675",
+      "676",
+      "677",
+      "678",
       "679"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "recursos"
+     ]
     },
     {
-     "id": "juicio-oral-680",
-     "fase": "De la publicidad de los debates",
-     "subtitulo": "TÍTULO III · CAPÍTULO I · arts. 680 a 682",
-     "descripcion": "",
+     "id": "jo-publicidad",
+     "fase": "Publicidad y dirección de los debates",
+     "subtitulo": "Puerta cerrada · facultades del Presidente",
+     "descripcion": "Los debates son públicos bajo pena de nulidad. Por seguridad, orden público o protección de los derechos de los intervinientes, sobre todo de la víctima, pueden celebrarse a puerta cerrada o limitarse la presencia de medios. El Presidente dirige los debates, mantiene el orden y puede expulsar a quien lo altere.",
      "articulos": [
       "680",
-      "682"
-     ],
-     "rango": [
-      "680",
-      "682"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
-    },
-    {
-     "id": "juicio-oral-683",
-     "fase": "De las facultades del Presidente del Tribunal",
-     "subtitulo": "TÍTULO III · CAPÍTULO II · arts. 683 a 687",
-     "descripcion": "",
-     "articulos": [
+      "681",
+      "682",
       "683",
-      "687"
-     ],
-     "rango": [
-      "683",
+      "684",
       "687"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Hay que proteger la intimidad o la seguridad de la víctima o el orden",
+       "entonces": "Sesiones a puerta cerrada, previa audiencia de las partes (no afecta a las partes ni a sus defensores).",
+       "articulos": [
+        "681"
+       ],
+       "literal": {
+        "articulo": "681",
+        "texto": "se celebren a puerta cerrada"
+       }
+      },
+      {
+       "si": "Víctima menor de edad, con discapacidad necesitada de especial protección o de violencia sexual",
+       "entonces": "Prohibida en todo caso la divulgación de su identidad y de su imagen.",
+       "articulos": [
+        "681"
+       ],
+       "literal": {
+        "articulo": "681",
+        "texto": "Queda prohibida, en todo caso, la divulgación o publicación de información relativa a la identidad de víctimas menores de edad"
+       }
+      },
+      {
+       "si": "El acusado altera el orden y persiste pese a las advertencias",
+       "entonces": "Puede ser expulsado y las sesiones continúan en su ausencia.",
+       "articulos": [
+        "687"
+       ],
+       "literal": {
+        "articulo": "687",
+        "texto": "el Tribunal podrá decidir que sea expulsado por cierto tiempo o por toda la duración de las sesiones, continuando éstas en su ausencia"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué consecuencia tiene celebrar el juicio oral sin publicidad fuera de los casos permitidos?",
+      "a": "La nulidad: los debates del juicio oral serán públicos bajo pena de nulidad.",
+      "articulos": [
+       "680"
+      ],
+      "literal": {
+       "articulo": "680",
+       "texto": "Los debates del juicio oral serán públicos, bajo pena de nulidad"
+      }
+     },
+     "conexiones": [
+      "680",
+      "681",
+      "682",
+      "683",
+      "684",
+      "685",
+      "686",
+      "687"
+     ],
+     "continua_en": [],
+     "duda": "El art. 684 fija la multa del Presidente en pesetas («de 5.000 a 25.000 pesetas»). Ver PENDIENTES.md."
     },
     {
-     "id": "juicio-oral-688",
-     "fase": "Del modo de practicar las pruebas durante el juicio oral",
-     "subtitulo": "TÍTULO III · CAPÍTULO III · arts. 688 a 731 bis",
-     "descripcion": "",
+     "id": "jo-apertura",
+     "fase": "Apertura de las sesiones y conformidad",
+     "subtitulo": "«¿Se confiesa reo del delito?»",
+     "descripcion": "Abierta la sesión, el Presidente pregunta a cada acusado si se confiesa reo del delito según la calificación más grave y responsable civil por la cantidad mayor. Si el único procesado contesta que sí y su defensor no considera necesario continuar, se dicta sentencia como en el art. 655. En otro caso, se celebra el juicio.",
      "articulos": [
       "688",
-      "731 bis"
+      "689",
+      "694",
+      "695",
+      "696",
+      "697",
+      "698",
+      "699",
+      "700"
      ],
-     "rango": [
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Confiesa y el defensor no considera necesario seguir",
+       "entonces": "Sentencia en los términos del art. 655.",
+       "articulos": [
+        "694",
+        "655"
+       ],
+       "literal": {
+        "articulo": "694",
+        "texto": "el Tribunal procederá a dictar sentencia en los términos expresados en el artículo 655"
+       }
+      },
+      {
+       "si": "Confiesa la responsabilidad penal pero no la civil (o su cuantía)",
+       "entonces": "Continúa el juicio solo sobre la responsabilidad civil.",
+       "articulos": [
+        "695"
+       ],
+       "literal": {
+        "articulo": "695",
+        "texto": "la discusión y la producción de pruebas se concretarán al extremo relativo a la responsabilidad civil"
+       }
+      },
+      {
+       "si": "No se confiesa culpable o su defensor pide continuar",
+       "entonces": "Se celebra el juicio.",
+       "articulos": [
+        "696"
+       ],
+       "literal": {
+        "articulo": "696",
+        "texto": "se procederá a la celebración de éste"
+       }
+      },
+      {
+       "si": "No quiere responder a las preguntas del Presidente",
+       "entonces": "Continúa el juicio.",
+       "articulos": [
+        "698"
+       ],
+       "literal": {
+        "articulo": "698",
+        "texto": "Se continuará también el juicio cuando el procesado o procesados no quieran responder a las preguntas que les hiciere el Presidente."
+       }
+      },
+      {
+       "si": "No consta en el sumario el cuerpo del delito que debería existir",
+       "entonces": "Continúa el juicio aunque haya conformidad.",
+       "articulos": [
+        "699"
+       ],
+       "literal": {
+        "articulo": "699",
+        "texto": "aunque hayan prestado su conformidad el procesado o procesados y sus defensores"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si el único procesado se confiesa reo al inicio de las sesiones, ¿basta para dictar sentencia sin juicio?",
+      "a": "No basta: el Presidente pregunta además al defensor si considera necesaria la continuación; solo si dice que no, se dicta sentencia como en el art. 655.",
+      "articulos": [
+       "694"
+      ],
+      "literal": {
+       "articulo": "694",
+       "texto": "el Presidente del Tribunal preguntará al defensor si considera necesaria la continuación del juicio oral"
+      }
+     },
+     "conexiones": [
+      "655",
       "688",
+      "689",
+      "690",
+      "691",
+      "692",
+      "693",
+      "694",
+      "695",
+      "696",
+      "697",
+      "698",
+      "699",
+      "700"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "jo-prueba",
+     "fase": "Práctica de la prueba",
+     "subtitulo": "Testigos, peritos, documentos e inspección",
+     "descripcion": "Se da cuenta del hecho, se leen las calificaciones y se practica la prueba: primero la del Fiscal, después la de los demás acusadores y por último la de los procesados; el acusado puede pedir declarar en último lugar. Los testigos declaran uno a uno, aislados entre sí. Solo se practican las pruebas propuestas, con las excepciones del art. 729.",
+     "articulos": [
+      "701",
+      "703 bis",
+      "704",
+      "707",
+      "708",
+      "709",
+      "710",
+      "714",
+      "716",
+      "717",
+      "724",
+      "728",
+      "729",
+      "730"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El acusado pide declarar en último lugar",
+       "entonces": "El Presidente lo acuerda expresamente.",
+       "articulos": [
+        "701"
+       ],
+       "literal": {
+        "articulo": "701",
+        "texto": "si a propuesta de su defensa el acusado solicitara declarar en último lugar, el Presidente así lo acordará expresamente"
+       }
+      },
+      {
+       "si": "El Presidente no deja contestar una pregunta",
+       "entonces": "Protesta en el acto para preparar la casación; la pregunta consta en el acta.",
+       "articulos": [
+        "709"
+       ],
+       "literal": {
+        "articulo": "709",
+        "texto": "podrá interponerse en su día el recurso de casación, si se hiciere en el acto la correspondiente protesta"
+       }
+      },
+      {
+       "si": "El testigo declara distinto que en el sumario",
+       "entonces": "Cualquier parte puede pedir que se lea su declaración anterior y se le invita a explicar la contradicción.",
+       "articulos": [
+        "714"
+       ],
+       "literal": {
+        "articulo": "714",
+        "texto": "podrá pedirse la lectura de ésta por cualquiera de las partes"
+       }
+      },
+      {
+       "si": "Diligencia del sumario que no puede reproducirse en el juicio por causas ajenas a las partes",
+       "entonces": "Puede leerse o reproducirse; también la grabación de la prueba preconstituida.",
+       "articulos": [
+        "730",
+        "703 bis"
+       ],
+       "literal": {
+        "articulo": "730",
+        "texto": "no puedan ser reproducidas en el juicio oral"
+       }
+      },
+      {
+       "si": "El testigo se niega a declarar",
+       "entonces": "Multa de 200 a 5.000 euros y, si persiste, desobediencia grave.",
+       "articulos": [
+        "716"
+       ],
+       "literal": {
+        "articulo": "716",
+        "texto": "El testigo que se niegue a declarar incurrirá en la multa de 200 a 5.000 euros"
+       }
+      },
+      {
+       "si": "Prueba no propuesta por las partes",
+       "entonces": "No se practica, salvo careos, las que el Tribunal considere necesarias sobre hechos calificados y las relativas al valor de un testimonio.",
+       "articulos": [
+        "728",
+        "729"
+       ],
+       "literal": {
+        "articulo": "728",
+        "texto": "No podrán practicarse otras diligencias de prueba que las propuestas por las partes"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué valor tienen las declaraciones de los agentes de Policía judicial en el juicio oral?",
+      "a": "El de declaraciones testificales, apreciables según las reglas del criterio racional.",
+      "articulos": [
+       "717"
+      ],
+      "literal": {
+       "articulo": "717",
+       "texto": "tendrán el valor de declaraciones testificales, apreciables como éstas según las reglas del criterio racional"
+      }
+     },
+     "conexiones": [
+      "410",
+      "416",
+      "449 bis",
+      "449 ter",
+      "701",
+      "702",
+      "703 bis",
+      "704",
+      "706",
+      "707",
+      "708",
+      "709",
+      "710",
+      "713",
+      "714",
+      "715",
+      "716",
+      "717",
+      "718",
+      "723",
+      "724",
+      "726",
+      "727",
+      "728",
+      "729",
+      "730",
       "731 bis"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
-     "id": "juicio-oral-732",
-     "fase": "De la acusación de la defensa y de la sentencia",
-     "subtitulo": "TÍTULO III · CAPÍTULO IV · arts. 732 a 743",
-     "descripcion": "",
+     "id": "jo-informes-sentencia",
+     "fase": "Conclusiones definitivas, informes y sentencia",
+     "subtitulo": "Tesis del art. 733 · última palabra · sentencia",
+     "descripcion": "Tras la prueba, las partes pueden modificar sus conclusiones. Si el Tribunal aprecia un error manifiesto de calificación, puede plantear la tesis del art. 733. Informan el Fiscal, los acusadores, el actor civil y las defensas; el acusado tiene la última palabra. El Tribunal aprecia la prueba en conciencia y resuelve en la sentencia todas las cuestiones, sin poder sobreseer.",
      "articulos": [
       "732",
-      "743"
+      "733",
+      "734",
+      "736",
+      "739",
+      "740",
+      "741",
+      "742",
+      "203"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Suspensión si las partes no están preparadas para la tesis del Tribunal",
+       "plazo": "Hasta el día siguiente",
+       "articulo": "733",
+       "literal": "se suspenderá la sesión hasta el siguiente día"
+      },
+      {
+       "acto": "Sentencia (regla general de la ley)",
+       "plazo": "3 días desde el fin del juicio",
+       "articulo": "203",
+       "literal": "Las sentencias se dictarán y firmarán dentro de los tres días siguientes al en que se hubiese celebrado la vista del incidente o se hubiese terminado el juicio."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El Tribunal cree que el hecho se calificó con error manifiesto",
+       "entonces": "Puede plantear la tesis del art. 733, salvo en delitos solo perseguibles a instancia de parte.",
+       "articulos": [
+        "733"
+       ],
+       "literal": {
+        "articulo": "733",
+        "texto": "Sin que sea visto prejuzgar el fallo definitivo"
+       }
+      },
+      {
+       "si": "Terminan acusación y defensa",
+       "entonces": "El Presidente pregunta a los procesados si tienen algo que manifestar (última palabra).",
+       "articulos": [
+        "739"
+       ],
+       "literal": {
+        "articulo": "739",
+        "texto": "el Presidente preguntará a los procesados si tienen algo que manifestar al Tribunal"
+       }
+      },
+      {
+       "si": "El Tribunal no quiere condenar a un acusado",
+       "entonces": "Debe absolver; no puede sobreseer en sentencia.",
+       "articulos": [
+        "742"
+       ],
+       "literal": {
+        "articulo": "742",
+        "texto": "sin que pueda el Tribunal emplear en este estado la fórmula del sobreseimiento"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el Tribunal, al dictar sentencia, sobreseer respecto de un acusado al que no quiere condenar?",
+      "a": "No: debe absolver o condenar; no puede usar en ese momento la fórmula del sobreseimiento.",
+      "articulos": [
+       "742"
+      ],
+      "literal": {
+       "articulo": "742",
+       "texto": "sin que pueda el Tribunal emplear en este estado la fórmula del sobreseimiento respecto de los acusados a quienes crea que no debe condenar"
+      }
+     },
+     "conexiones": [
+      "203",
+      "653",
       "732",
+      "733",
+      "734",
+      "735",
+      "736",
+      "737",
+      "738",
+      "739",
+      "740",
+      "741",
+      "742",
       "743"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "recursos",
+      "ejecucion"
+     ],
+     "duda": "El art. 741 manda dictar sentencia «dentro del término fijado en esta Ley», sin decir cuál. Muestro el plazo general del art. 203 (tres días). Ver PENDIENTES.md."
     },
     {
-     "id": "juicio-oral-744",
-     "fase": "De la suspensión del juicio oral",
-     "subtitulo": "TÍTULO III · CAPÍTULO V · arts. 744 a 749",
-     "descripcion": "",
+     "id": "jo-suspension",
+     "fase": "Suspensión del juicio oral",
+     "subtitulo": "Causas tasadas del art. 746",
+     "descripcion": "El juicio, una vez abierto, sigue en sesiones consecutivas hasta terminar. Solo se suspende por las causas del art. 746: cuestión incidental que no puede resolverse en el acto, diligencia fuera del lugar, incomparecencia de testigos necesarios, enfermedad repentina de un miembro del Tribunal, del Fiscal, de un defensor o del procesado, revelaciones o retractaciones inesperadas, y sustitución del abogado de oficio.",
      "articulos": [
       "744",
-      "749"
-     ],
-     "rango": [
-      "744",
+      "745",
+      "746",
+      "747",
+      "748",
       "749"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "No comparecen testigos necesarios",
+       "entonces": "Puede seguir con las demás pruebas y suspender después hasta que comparezcan.",
+       "articulos": [
+        "746"
+       ],
+       "literal": {
+        "articulo": "746",
+        "texto": "Podrá, sin embargo, el Tribunal acordar en este caso la continuación del juicio y la práctica de las demás pruebas"
+       }
+      },
+      {
+       "si": "Un procesado citado personalmente enferma o no comparece",
+       "entonces": "No se suspende si hay elementos para juzgarle con independencia.",
+       "articulos": [
+        "746"
+       ],
+       "literal": {
+        "articulo": "746",
+        "texto": "No se suspenderá el juicio por la enfermedad o incomparecencia de alguno de los procesados citados personalmente"
+       }
+      },
+      {
+       "si": "Se quiere recurrir el auto de suspensión",
+       "entonces": "No cabe recurso.",
+       "articulos": [
+        "748"
+       ],
+       "literal": {
+        "articulo": "748",
+        "texto": "Contra estos autos no se dará recurso alguno."
+       }
+      },
+      {
+       "si": "La suspensión por enfermedad se prolonga indefinidamente o demasiado",
+       "entonces": "Se deja sin efecto la parte celebrada y se señala nuevo juicio.",
+       "articulos": [
+        "749"
+       ],
+       "literal": {
+        "articulo": "749",
+        "texto": "se declarará sin efecto la parte del juicio celebrada"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué causas de suspensión del art. 746 puede acordar el Tribunal de oficio?",
+      "a": "La cuestión incidental, la diligencia fuera del lugar y la enfermedad repentina de un miembro del Tribunal, del Fiscal, de un defensor o del procesado (números 1.º, 2.º, 4.º y 5.º); las demás, a instancia de parte.",
+      "articulos": [
+       "747"
+      ],
+      "literal": {
+       "articulo": "747",
+       "texto": "En los casos 1.º, 2.º, 4.º y 5.º, del artículo anterior, el Tribunal podrá decretar de oficio la suspensión."
+      }
+     },
+     "conexiones": [
+      "718",
+      "744",
+      "745",
+      "746",
+      "747",
+      "748",
+      "749",
+      "788"
+     ],
+     "continua_en": [],
+     "duda": "El art. 746.6.º remite al «artículo 786 bis» para el procesado persona jurídica, pero ese artículo no existe en el texto vigente. Ver PENDIENTES.md."
     }
    ]
   },
@@ -4004,7 +4797,7 @@
    "bloque": "lecrim",
    "grupo": "Libros II y III · Sumario y juicio oral",
    "solo_procedimientos": true,
-   "esqueleto": true,
+   "esqueleto": false,
    "resumen": "Una sola ruta: instrucción del sumario, conclusión y sobreseimiento, y juicio oral. Las medidas cautelares, de investigación y las fianzas son comunes a varios procedimientos y van aparte.",
    "relacionados": [
     "cautelares",
@@ -5643,129 +6436,920 @@
      "origen": "conclusion"
     },
     {
-     "id": "sumario-juicio-oral-649",
-     "fase": "De la calificación del delito",
-     "subtitulo": "TÍTULO I · arts. 649 a 665",
-     "descripcion": "",
+     "id": "sumario-jo-calificacion",
+     "fase": "Escritos de calificación",
+     "subtitulo": "Acusaciones, actor civil y defensa",
+     "descripcion": "Abierto el juicio oral, todo el proceso es público. La causa pasa sucesivamente al Fiscal, al acusador particular, al actor civil y, después, a los procesados y terceros responsables civiles. Cada uno califica en conclusiones numeradas (hechos, delito, participación, circunstancias, pena y responsabilidad civil) y propone su prueba con listas de peritos y testigos.",
      "articulos": [
       "649",
-      "665"
+      "650",
+      "651",
+      "652",
+      "653",
+      "656",
+      "657"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Calificación del Fiscal (y por igual término las demás partes, por su orden)",
+       "plazo": "5 días",
+       "articulo": "649",
+       "literal": "para que en el término de cinco días califiquen por escrito los hechos"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La parte no está segura de qué calificación prosperará",
+       "entonces": "Puede formular conclusiones alternativas.",
+       "articulos": [
+        "653"
+       ],
+       "literal": {
+        "articulo": "653",
+        "texto": "dos o más conclusiones en forma alternativa"
+       }
+      },
+      {
+       "si": "Se teme que una prueba no podrá practicarse en el juicio oral",
+       "entonces": "Puede pedirse que se practique desde luego (prueba anticipada).",
+       "articulos": [
+        "657"
+       ],
+       "literal": {
+        "articulo": "657",
+        "texto": "Podrán pedir además las partes que se practiquen desde luego aquellas diligencias de prueba"
+       }
+      },
+      {
+       "si": "El procesado no tiene abogado ni procurador",
+       "entonces": "El LAJ interesa su designación.",
+       "articulos": [
+        "652"
+       ],
+       "literal": {
+        "articulo": "652",
+        "texto": "se interesará la designación al efecto de Abogado y Procurador, si no los tuviesen"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué debe contener el escrito de calificación de la acusación?",
+      "a": "Conclusiones precisas y numeradas sobre los hechos punibles, su calificación legal, la participación del procesado, las circunstancias modificativas y la pena; y, si se ejerce la acción civil, la cuantía y los responsables.",
+      "articulos": [
+       "650"
+      ],
+      "literal": {
+       "articulo": "650",
+       "texto": "El escrito de calificación se limitará a determinar en conclusiones precisas y numeradas"
+      }
+     },
+     "conexiones": [
       "649",
-      "665"
+      "650",
+      "651",
+      "652",
+      "653",
+      "654",
+      "656",
+      "657"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [
+      "conclusion"
+     ],
      "origen": "juicio-oral"
     },
     {
-     "id": "sumario-juicio-oral-666",
-     "fase": "De los artículos de previo pronunciamiento",
-     "subtitulo": "TÍTULO II · arts. 666 a 679",
-     "descripcion": "",
+     "id": "sumario-jo-conformidad-escrito",
+     "fase": "Conformidad en el escrito de defensa",
+     "subtitulo": "Art. 655",
+     "descripcion": "Al calificar, la defensa puede manifestar su conformidad absoluta con la calificación más grave y con la pena. Si el letrado no considera necesario continuar y el Tribunal ve correctas la calificación y la pena, dicta sentencia de conformidad, oyendo antes al acusado sobre si la presta libremente. El Fiscal oye antes a la víctima en los casos del apartado 2.",
+     "articulos": [
+      "655"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El Tribunal considera incorrecta la calificación o improcedente la pena",
+       "entonces": "Requiere a la acusación más grave; si no corrige y el acusado no vuelve a conformarse, se celebra el juicio.",
+       "articulos": [
+        "655"
+       ],
+       "literal": {
+        "articulo": "655",
+        "texto": "requerirá a la parte que presentó el escrito de acusación más grave para que manifieste si se ratifica o no en él"
+       }
+      },
+      {
+       "si": "Hay varios procesados y no todos se conforman igual",
+       "entonces": "Continúa el juicio.",
+       "articulos": [
+        "655"
+       ],
+       "literal": {
+        "articulo": "655",
+        "texto": "También continuará el juicio si fuesen varios los procesados y no todos manifestaren igual conformidad."
+       }
+      },
+      {
+       "si": "El procesado solo discrepa de la responsabilidad civil",
+       "entonces": "El juicio se limita a la prueba y discusión de la responsabilidad civil.",
+       "articulos": [
+        "655"
+       ],
+       "literal": {
+        "articulo": "655",
+        "texto": "se limitará el juicio a la prueba y discusión de los puntos relativos a dicha responsabilidad"
+       }
+      },
+      {
+       "si": "Se quiere recurrir la sentencia de conformidad",
+       "entonces": "Solo si no respetó los requisitos o términos de la conformidad, nunca por razones de fondo.",
+       "articulos": [
+        "655"
+       ],
+       "literal": {
+        "articulo": "655",
+        "texto": "Únicamente serán recurribles las sentencias de conformidad cuando no hayan respetado los requisitos o términos de la conformidad"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el acusado recurrir por razones de fondo la sentencia de conformidad que aceptó libremente?",
+      "a": "No. Solo es recurrible si no se respetaron los requisitos o términos de la conformidad.",
+      "articulos": [
+       "655"
+      ],
+      "literal": {
+       "articulo": "655",
+       "texto": "sin que la persona acusada pueda impugnar por razones de fondo su conformidad libremente prestada"
+      }
+     },
+     "conexiones": [
+      "655",
+      "694",
+      "787 ter"
+     ],
+     "continua_en": [
+      "abreviado"
+     ],
+     "duda": "El art. 655 repite al final, tras el apartado 8, tres párrafos sueltos que ya están en los apartados anteriores. Ver PENDIENTES.md.",
+     "origen": "juicio-oral"
+    },
+    {
+     "id": "sumario-jo-admision-prueba",
+     "fase": "Admisión de la prueba y señalamiento",
+     "subtitulo": "Auto sobre pruebas · citaciones · recusación de peritos",
+     "descripcion": "Presentadas las calificaciones, la causa pasa al ponente y el Tribunal dicta auto admitiendo las pruebas pertinentes y rechazando las demás. El LAJ señala el juicio con los criterios del art. 659 e informa a la víctima por escrito de la fecha y el lugar. Se cita a peritos, testigos y procesados.",
+     "articulos": [
+      "658",
+      "659",
+      "660",
+      "661",
+      "662",
+      "663",
+      "664"
+     ],
+     "plazos": [
+      {
+       "acto": "Examen de las pruebas por el ponente",
+       "plazo": "Tercer día",
+       "articulo": "658",
+       "literal": "por término de tercer día, para el examen de las pruebas propuestas"
+      },
+      {
+       "acto": "Recusación de peritos de las listas",
+       "plazo": "3 días desde la entrega de la lista",
+       "articulo": "662",
+       "literal": "La recusación se hará dentro de los tres días siguientes al de la entrega al recusante de la lista"
+      },
+      {
+       "acto": "Prueba del incidente de recusación",
+       "plazo": "6 días",
+       "articulo": "662",
+       "literal": "se recibirán a prueba por seis días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El auto admite las pruebas",
+       "entonces": "No cabe recurso.",
+       "articulos": [
+        "659"
+       ],
+       "literal": {
+        "articulo": "659",
+        "texto": "no procederá recurso alguno"
+       }
+      },
+      {
+       "si": "El auto rechaza alguna prueba",
+       "entonces": "Casación en su día, si se prepara con la protesta oportuna.",
+       "articulos": [
+        "659"
+       ],
+       "literal": {
+        "articulo": "659",
+        "texto": "podrá interponerse en su día el recurso de casación, si se prepara oportunamente con la correspondiente protesta"
+       }
+      },
+      {
+       "si": "Un perito o testigo citado no comparece sin causa legítima",
+       "entonces": "Multa; si, citado de nuevo, tampoco comparece, proceso por obstrucción a la justicia.",
+       "articulos": [
+        "661"
+       ],
+       "literal": {
+        "articulo": "661",
+        "texto": "serán procesados por el delito de obstrucción a la justicia"
+       }
+      },
+      {
+       "si": "No se recusó al perito en plazo",
+       "entonces": "Ya no puede recusarse, salvo causa posterior.",
+       "articulos": [
+        "663"
+       ],
+       "literal": {
+        "articulo": "663",
+        "texto": "no podrá serlo después, a no ser que incurriera con posterioridad en alguna de las causas de recusación"
+       }
+      },
+      {
+       "si": "Una parte no fue citada y no comparece al juicio",
+       "entonces": "Motivo de casación.",
+       "articulos": [
+        "664"
+       ],
+       "literal": {
+        "articulo": "664",
+        "texto": "La falta de la citación expresada en el párrafo anterior será motivo de casación"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué puede hacer la parte a la que el Tribunal rechaza una prueba en el sumario ordinario?",
+      "a": "Formular protesta y preparar en su día el recurso de casación; contra la admisión no cabe recurso.",
+      "articulos": [
+       "659"
+      ],
+      "literal": {
+       "articulo": "659",
+       "texto": "si se prepara oportunamente con la correspondiente protesta"
+      }
+     },
+     "conexiones": [
+      "175",
+      "468",
+      "658",
+      "659",
+      "660",
+      "661",
+      "662",
+      "663",
+      "664"
+     ],
+     "continua_en": [],
+     "origen": "juicio-oral"
+    },
+    {
+     "id": "sumario-jo-previo",
+     "fase": "Artículos de previo pronunciamiento",
+     "subtitulo": "Declinatoria, cosa juzgada, prescripción, amnistía o indulto, autorización",
+     "descripcion": "Antes del juicio pueden plantearse solo cinco cuestiones: declinatoria de jurisdicción, cosa juzgada, prescripción del delito, amnistía o indulto, y falta de autorización administrativa para procesar. Se tramitan con documentos (no se admite prueba testifical) y vista, y el Tribunal resuelve por auto.",
      "articulos": [
       "666",
+      "667",
+      "668",
+      "669",
+      "670",
+      "671",
+      "672",
+      "673",
+      "674",
+      "675",
+      "676",
+      "677",
+      "678",
       "679"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Proponer el artículo de previo pronunciamiento",
+       "plazo": "3 días desde la entrega de los autos para calificar",
+       "articulo": "667",
+       "literal": "podrán proponerse en el término de tres días, a contar desde el de la entrega de los autos para la calificación de los hechos"
+      },
+      {
+       "acto": "Contestación de las demás partes",
+       "plazo": "3 días",
+       "articulo": "669",
+       "literal": "contestarán en el término de tres días"
+      },
+      {
+       "acto": "Prueba documental del artículo",
+       "plazo": "No más de 8 días",
+       "articulo": "671",
+       "literal": "que no podrá exceder de ocho días"
+      },
+      {
+       "acto": "Auto que resuelve",
+       "plazo": "Día siguiente a la vista",
+       "articulo": "674",
+       "literal": "En el día siguiente al de la vista, el Tribunal dictará auto resolviendo sobre las cuestiones propuestas."
+      },
+      {
+       "acto": "Calificar si se desestiman las cuestiones",
+       "plazo": "3 días",
+       "articulo": "679",
+       "literal": "se comunicará nuevamente la causa por término de tres días a la parte que las hubiere alegado"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se estima la declinatoria",
+       "entonces": "Se remiten los autos al órgano competente, sin resolver las demás cuestiones.",
+       "articulos": [
+        "674"
+       ],
+       "literal": {
+        "articulo": "674",
+        "texto": "mandará remitir los autos al Tribunal o Juez que considere competente"
+       }
+      },
+      {
+       "si": "Se estima la cosa juzgada, la prescripción o la amnistía o indulto",
+       "entonces": "Sobreseimiento libre y libertad del procesado no preso por otra causa.",
+       "articulos": [
+        "675"
+       ],
+       "literal": {
+        "articulo": "675",
+        "texto": "se sobreseerá libremente"
+       }
+      },
+      {
+       "si": "Se estima la falta de autorización para procesar",
+       "entonces": "Se suspende la causa hasta que se subsane; si se deniega la autorización, nulidad y sobreseimiento libre.",
+       "articulos": [
+        "677"
+       ],
+       "literal": {
+        "articulo": "677",
+        "texto": "quedará nulo todo lo actuado y se sobreseerá libremente la causa"
+       }
+      },
+      {
+       "si": "Se resuelve la declinatoria, o se admite la cosa juzgada, la prescripción o la amnistía",
+       "entonces": "Recurso de apelación.",
+       "articulos": [
+        "676"
+       ],
+       "literal": {
+        "articulo": "676",
+        "texto": "procede el recurso de apelación"
+       }
+      },
+      {
+       "si": "Se desestima otra cuestión",
+       "entonces": "No hay recurso, pero puede reproducirse en el juicio oral como medio de defensa (salvo la declinatoria).",
+       "articulos": [
+        "676",
+        "678"
+       ],
+       "literal": {
+        "articulo": "678",
+        "texto": "Las partes podrán reproducir en el juicio oral, como medios de defensa, las cuestiones previas que se hubiesen desestimado, excepto la de declinatoria."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué cuestiones pueden plantearse como artículos de previo pronunciamiento?",
+      "a": "Solo cinco: declinatoria de jurisdicción, cosa juzgada, prescripción del delito, amnistía o indulto, y falta de autorización administrativa para procesar.",
+      "articulos": [
+       "666"
+      ],
+      "literal": {
+       "articulo": "666",
+       "texto": "Serán tan sólo objeto de artículos de previo pronunciamiento las cuestiones o excepciones siguientes:"
+      }
+     },
+     "conexiones": [
       "666",
+      "667",
+      "668",
+      "669",
+      "670",
+      "671",
+      "672",
+      "673",
+      "674",
+      "675",
+      "676",
+      "677",
+      "678",
       "679"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [
+      "recursos"
+     ],
      "origen": "juicio-oral"
     },
     {
-     "id": "sumario-juicio-oral-680",
-     "fase": "De la publicidad de los debates",
-     "subtitulo": "TÍTULO III · CAPÍTULO I · arts. 680 a 682",
-     "descripcion": "",
+     "id": "sumario-jo-publicidad",
+     "fase": "Publicidad y dirección de los debates",
+     "subtitulo": "Puerta cerrada · facultades del Presidente",
+     "descripcion": "Los debates son públicos bajo pena de nulidad. Por seguridad, orden público o protección de los derechos de los intervinientes, sobre todo de la víctima, pueden celebrarse a puerta cerrada o limitarse la presencia de medios. El Presidente dirige los debates, mantiene el orden y puede expulsar a quien lo altere.",
      "articulos": [
       "680",
-      "682"
-     ],
-     "rango": [
-      "680",
-      "682"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
-     "origen": "juicio-oral"
-    },
-    {
-     "id": "sumario-juicio-oral-683",
-     "fase": "De las facultades del Presidente del Tribunal",
-     "subtitulo": "TÍTULO III · CAPÍTULO II · arts. 683 a 687",
-     "descripcion": "",
-     "articulos": [
+      "681",
+      "682",
       "683",
-      "687"
-     ],
-     "rango": [
-      "683",
+      "684",
       "687"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "ramas": [
+      {
+       "si": "Hay que proteger la intimidad o la seguridad de la víctima o el orden",
+       "entonces": "Sesiones a puerta cerrada, previa audiencia de las partes (no afecta a las partes ni a sus defensores).",
+       "articulos": [
+        "681"
+       ],
+       "literal": {
+        "articulo": "681",
+        "texto": "se celebren a puerta cerrada"
+       }
+      },
+      {
+       "si": "Víctima menor de edad, con discapacidad necesitada de especial protección o de violencia sexual",
+       "entonces": "Prohibida en todo caso la divulgación de su identidad y de su imagen.",
+       "articulos": [
+        "681"
+       ],
+       "literal": {
+        "articulo": "681",
+        "texto": "Queda prohibida, en todo caso, la divulgación o publicación de información relativa a la identidad de víctimas menores de edad"
+       }
+      },
+      {
+       "si": "El acusado altera el orden y persiste pese a las advertencias",
+       "entonces": "Puede ser expulsado y las sesiones continúan en su ausencia.",
+       "articulos": [
+        "687"
+       ],
+       "literal": {
+        "articulo": "687",
+        "texto": "el Tribunal podrá decidir que sea expulsado por cierto tiempo o por toda la duración de las sesiones, continuando éstas en su ausencia"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué consecuencia tiene celebrar el juicio oral sin publicidad fuera de los casos permitidos?",
+      "a": "La nulidad: los debates del juicio oral serán públicos bajo pena de nulidad.",
+      "articulos": [
+       "680"
+      ],
+      "literal": {
+       "articulo": "680",
+       "texto": "Los debates del juicio oral serán públicos, bajo pena de nulidad"
+      }
+     },
+     "conexiones": [
+      "680",
+      "681",
+      "682",
+      "683",
+      "684",
+      "685",
+      "686",
+      "687"
+     ],
+     "continua_en": [],
+     "duda": "El art. 684 fija la multa del Presidente en pesetas («de 5.000 a 25.000 pesetas»). Ver PENDIENTES.md.",
      "origen": "juicio-oral"
     },
     {
-     "id": "sumario-juicio-oral-688",
-     "fase": "Del modo de practicar las pruebas durante el juicio oral",
-     "subtitulo": "TÍTULO III · CAPÍTULO III · arts. 688 a 731 bis",
-     "descripcion": "",
+     "id": "sumario-jo-apertura",
+     "fase": "Apertura de las sesiones y conformidad",
+     "subtitulo": "«¿Se confiesa reo del delito?»",
+     "descripcion": "Abierta la sesión, el Presidente pregunta a cada acusado si se confiesa reo del delito según la calificación más grave y responsable civil por la cantidad mayor. Si el único procesado contesta que sí y su defensor no considera necesario continuar, se dicta sentencia como en el art. 655. En otro caso, se celebra el juicio.",
      "articulos": [
       "688",
-      "731 bis"
+      "689",
+      "694",
+      "695",
+      "696",
+      "697",
+      "698",
+      "699",
+      "700"
      ],
-     "rango": [
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Confiesa y el defensor no considera necesario seguir",
+       "entonces": "Sentencia en los términos del art. 655.",
+       "articulos": [
+        "694",
+        "655"
+       ],
+       "literal": {
+        "articulo": "694",
+        "texto": "el Tribunal procederá a dictar sentencia en los términos expresados en el artículo 655"
+       }
+      },
+      {
+       "si": "Confiesa la responsabilidad penal pero no la civil (o su cuantía)",
+       "entonces": "Continúa el juicio solo sobre la responsabilidad civil.",
+       "articulos": [
+        "695"
+       ],
+       "literal": {
+        "articulo": "695",
+        "texto": "la discusión y la producción de pruebas se concretarán al extremo relativo a la responsabilidad civil"
+       }
+      },
+      {
+       "si": "No se confiesa culpable o su defensor pide continuar",
+       "entonces": "Se celebra el juicio.",
+       "articulos": [
+        "696"
+       ],
+       "literal": {
+        "articulo": "696",
+        "texto": "se procederá a la celebración de éste"
+       }
+      },
+      {
+       "si": "No quiere responder a las preguntas del Presidente",
+       "entonces": "Continúa el juicio.",
+       "articulos": [
+        "698"
+       ],
+       "literal": {
+        "articulo": "698",
+        "texto": "Se continuará también el juicio cuando el procesado o procesados no quieran responder a las preguntas que les hiciere el Presidente."
+       }
+      },
+      {
+       "si": "No consta en el sumario el cuerpo del delito que debería existir",
+       "entonces": "Continúa el juicio aunque haya conformidad.",
+       "articulos": [
+        "699"
+       ],
+       "literal": {
+        "articulo": "699",
+        "texto": "aunque hayan prestado su conformidad el procesado o procesados y sus defensores"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si el único procesado se confiesa reo al inicio de las sesiones, ¿basta para dictar sentencia sin juicio?",
+      "a": "No basta: el Presidente pregunta además al defensor si considera necesaria la continuación; solo si dice que no, se dicta sentencia como en el art. 655.",
+      "articulos": [
+       "694"
+      ],
+      "literal": {
+       "articulo": "694",
+       "texto": "el Presidente del Tribunal preguntará al defensor si considera necesaria la continuación del juicio oral"
+      }
+     },
+     "conexiones": [
+      "655",
       "688",
+      "689",
+      "690",
+      "691",
+      "692",
+      "693",
+      "694",
+      "695",
+      "696",
+      "697",
+      "698",
+      "699",
+      "700"
+     ],
+     "continua_en": [],
+     "origen": "juicio-oral"
+    },
+    {
+     "id": "sumario-jo-prueba",
+     "fase": "Práctica de la prueba",
+     "subtitulo": "Testigos, peritos, documentos e inspección",
+     "descripcion": "Se da cuenta del hecho, se leen las calificaciones y se practica la prueba: primero la del Fiscal, después la de los demás acusadores y por último la de los procesados; el acusado puede pedir declarar en último lugar. Los testigos declaran uno a uno, aislados entre sí. Solo se practican las pruebas propuestas, con las excepciones del art. 729.",
+     "articulos": [
+      "701",
+      "703 bis",
+      "704",
+      "707",
+      "708",
+      "709",
+      "710",
+      "714",
+      "716",
+      "717",
+      "724",
+      "728",
+      "729",
+      "730"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El acusado pide declarar en último lugar",
+       "entonces": "El Presidente lo acuerda expresamente.",
+       "articulos": [
+        "701"
+       ],
+       "literal": {
+        "articulo": "701",
+        "texto": "si a propuesta de su defensa el acusado solicitara declarar en último lugar, el Presidente así lo acordará expresamente"
+       }
+      },
+      {
+       "si": "El Presidente no deja contestar una pregunta",
+       "entonces": "Protesta en el acto para preparar la casación; la pregunta consta en el acta.",
+       "articulos": [
+        "709"
+       ],
+       "literal": {
+        "articulo": "709",
+        "texto": "podrá interponerse en su día el recurso de casación, si se hiciere en el acto la correspondiente protesta"
+       }
+      },
+      {
+       "si": "El testigo declara distinto que en el sumario",
+       "entonces": "Cualquier parte puede pedir que se lea su declaración anterior y se le invita a explicar la contradicción.",
+       "articulos": [
+        "714"
+       ],
+       "literal": {
+        "articulo": "714",
+        "texto": "podrá pedirse la lectura de ésta por cualquiera de las partes"
+       }
+      },
+      {
+       "si": "Diligencia del sumario que no puede reproducirse en el juicio por causas ajenas a las partes",
+       "entonces": "Puede leerse o reproducirse; también la grabación de la prueba preconstituida.",
+       "articulos": [
+        "730",
+        "703 bis"
+       ],
+       "literal": {
+        "articulo": "730",
+        "texto": "no puedan ser reproducidas en el juicio oral"
+       }
+      },
+      {
+       "si": "El testigo se niega a declarar",
+       "entonces": "Multa de 200 a 5.000 euros y, si persiste, desobediencia grave.",
+       "articulos": [
+        "716"
+       ],
+       "literal": {
+        "articulo": "716",
+        "texto": "El testigo que se niegue a declarar incurrirá en la multa de 200 a 5.000 euros"
+       }
+      },
+      {
+       "si": "Prueba no propuesta por las partes",
+       "entonces": "No se practica, salvo careos, las que el Tribunal considere necesarias sobre hechos calificados y las relativas al valor de un testimonio.",
+       "articulos": [
+        "728",
+        "729"
+       ],
+       "literal": {
+        "articulo": "728",
+        "texto": "No podrán practicarse otras diligencias de prueba que las propuestas por las partes"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué valor tienen las declaraciones de los agentes de Policía judicial en el juicio oral?",
+      "a": "El de declaraciones testificales, apreciables según las reglas del criterio racional.",
+      "articulos": [
+       "717"
+      ],
+      "literal": {
+       "articulo": "717",
+       "texto": "tendrán el valor de declaraciones testificales, apreciables como éstas según las reglas del criterio racional"
+      }
+     },
+     "conexiones": [
+      "410",
+      "416",
+      "449 bis",
+      "449 ter",
+      "701",
+      "702",
+      "703 bis",
+      "704",
+      "706",
+      "707",
+      "708",
+      "709",
+      "710",
+      "713",
+      "714",
+      "715",
+      "716",
+      "717",
+      "718",
+      "723",
+      "724",
+      "726",
+      "727",
+      "728",
+      "729",
+      "730",
       "731 bis"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [],
      "origen": "juicio-oral"
     },
     {
-     "id": "sumario-juicio-oral-732",
-     "fase": "De la acusación de la defensa y de la sentencia",
-     "subtitulo": "TÍTULO III · CAPÍTULO IV · arts. 732 a 743",
-     "descripcion": "",
+     "id": "sumario-jo-informes-sentencia",
+     "fase": "Conclusiones definitivas, informes y sentencia",
+     "subtitulo": "Tesis del art. 733 · última palabra · sentencia",
+     "descripcion": "Tras la prueba, las partes pueden modificar sus conclusiones. Si el Tribunal aprecia un error manifiesto de calificación, puede plantear la tesis del art. 733. Informan el Fiscal, los acusadores, el actor civil y las defensas; el acusado tiene la última palabra. El Tribunal aprecia la prueba en conciencia y resuelve en la sentencia todas las cuestiones, sin poder sobreseer.",
      "articulos": [
       "732",
-      "743"
+      "733",
+      "734",
+      "736",
+      "739",
+      "740",
+      "741",
+      "742",
+      "203"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Suspensión si las partes no están preparadas para la tesis del Tribunal",
+       "plazo": "Hasta el día siguiente",
+       "articulo": "733",
+       "literal": "se suspenderá la sesión hasta el siguiente día"
+      },
+      {
+       "acto": "Sentencia (regla general de la ley)",
+       "plazo": "3 días desde el fin del juicio",
+       "articulo": "203",
+       "literal": "Las sentencias se dictarán y firmarán dentro de los tres días siguientes al en que se hubiese celebrado la vista del incidente o se hubiese terminado el juicio."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El Tribunal cree que el hecho se calificó con error manifiesto",
+       "entonces": "Puede plantear la tesis del art. 733, salvo en delitos solo perseguibles a instancia de parte.",
+       "articulos": [
+        "733"
+       ],
+       "literal": {
+        "articulo": "733",
+        "texto": "Sin que sea visto prejuzgar el fallo definitivo"
+       }
+      },
+      {
+       "si": "Terminan acusación y defensa",
+       "entonces": "El Presidente pregunta a los procesados si tienen algo que manifestar (última palabra).",
+       "articulos": [
+        "739"
+       ],
+       "literal": {
+        "articulo": "739",
+        "texto": "el Presidente preguntará a los procesados si tienen algo que manifestar al Tribunal"
+       }
+      },
+      {
+       "si": "El Tribunal no quiere condenar a un acusado",
+       "entonces": "Debe absolver; no puede sobreseer en sentencia.",
+       "articulos": [
+        "742"
+       ],
+       "literal": {
+        "articulo": "742",
+        "texto": "sin que pueda el Tribunal emplear en este estado la fórmula del sobreseimiento"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el Tribunal, al dictar sentencia, sobreseer respecto de un acusado al que no quiere condenar?",
+      "a": "No: debe absolver o condenar; no puede usar en ese momento la fórmula del sobreseimiento.",
+      "articulos": [
+       "742"
+      ],
+      "literal": {
+       "articulo": "742",
+       "texto": "sin que pueda el Tribunal emplear en este estado la fórmula del sobreseimiento respecto de los acusados a quienes crea que no debe condenar"
+      }
+     },
+     "conexiones": [
+      "203",
+      "653",
       "732",
+      "733",
+      "734",
+      "735",
+      "736",
+      "737",
+      "738",
+      "739",
+      "740",
+      "741",
+      "742",
       "743"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [
+      "recursos",
+      "ejecucion"
+     ],
+     "duda": "El art. 741 manda dictar sentencia «dentro del término fijado en esta Ley», sin decir cuál. Muestro el plazo general del art. 203 (tres días). Ver PENDIENTES.md.",
      "origen": "juicio-oral"
     },
     {
-     "id": "sumario-juicio-oral-744",
-     "fase": "De la suspensión del juicio oral",
-     "subtitulo": "TÍTULO III · CAPÍTULO V · arts. 744 a 749",
-     "descripcion": "",
+     "id": "sumario-jo-suspension",
+     "fase": "Suspensión del juicio oral",
+     "subtitulo": "Causas tasadas del art. 746",
+     "descripcion": "El juicio, una vez abierto, sigue en sesiones consecutivas hasta terminar. Solo se suspende por las causas del art. 746: cuestión incidental que no puede resolverse en el acto, diligencia fuera del lugar, incomparecencia de testigos necesarios, enfermedad repentina de un miembro del Tribunal, del Fiscal, de un defensor o del procesado, revelaciones o retractaciones inesperadas, y sustitución del abogado de oficio.",
      "articulos": [
       "744",
-      "749"
-     ],
-     "rango": [
-      "744",
+      "745",
+      "746",
+      "747",
+      "748",
       "749"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "ramas": [
+      {
+       "si": "No comparecen testigos necesarios",
+       "entonces": "Puede seguir con las demás pruebas y suspender después hasta que comparezcan.",
+       "articulos": [
+        "746"
+       ],
+       "literal": {
+        "articulo": "746",
+        "texto": "Podrá, sin embargo, el Tribunal acordar en este caso la continuación del juicio y la práctica de las demás pruebas"
+       }
+      },
+      {
+       "si": "Un procesado citado personalmente enferma o no comparece",
+       "entonces": "No se suspende si hay elementos para juzgarle con independencia.",
+       "articulos": [
+        "746"
+       ],
+       "literal": {
+        "articulo": "746",
+        "texto": "No se suspenderá el juicio por la enfermedad o incomparecencia de alguno de los procesados citados personalmente"
+       }
+      },
+      {
+       "si": "Se quiere recurrir el auto de suspensión",
+       "entonces": "No cabe recurso.",
+       "articulos": [
+        "748"
+       ],
+       "literal": {
+        "articulo": "748",
+        "texto": "Contra estos autos no se dará recurso alguno."
+       }
+      },
+      {
+       "si": "La suspensión por enfermedad se prolonga indefinidamente o demasiado",
+       "entonces": "Se deja sin efecto la parte celebrada y se señala nuevo juicio.",
+       "articulos": [
+        "749"
+       ],
+       "literal": {
+        "articulo": "749",
+        "texto": "se declarará sin efecto la parte del juicio celebrada"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué causas de suspensión del art. 746 puede acordar el Tribunal de oficio?",
+      "a": "La cuestión incidental, la diligencia fuera del lugar y la enfermedad repentina de un miembro del Tribunal, del Fiscal, de un defensor o del procesado (números 1.º, 2.º, 4.º y 5.º); las demás, a instancia de parte.",
+      "articulos": [
+       "747"
+      ],
+      "literal": {
+       "articulo": "747",
+       "texto": "En los casos 1.º, 2.º, 4.º y 5.º, del artículo anterior, el Tribunal podrá decretar de oficio la suspensión."
+      }
+     },
+     "conexiones": [
+      "718",
+      "744",
+      "745",
+      "746",
+      "747",
+      "748",
+      "749",
+      "788"
+     ],
+     "continua_en": [],
+     "duda": "El art. 746.6.º remite al «artículo 786 bis» para el procesado persona jurídica, pero ese artículo no existe en el texto vigente. Ver PENDIENTES.md.",
      "origen": "juicio-oral"
     }
    ]
