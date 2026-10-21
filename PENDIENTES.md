@@ -93,6 +93,8 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 ## LECrim — Ley de Enjuiciamiento Criminal
 
+> **Estados de las dudas (criterio del usuario, 21-10-2026):** **Resuelta** (equivalencia funcional clara y respaldada por una fuente) · **Resuelta con criterio interpretativo** (adaptación razonable, sin sustitución literal formal) · **Pendiente de revisión individual** (depende del contexto o de la vigencia del precepto). Las remisiones desfasadas no se resuelven por analogía: se coteja cada inciso.
+
 ### Puntos de extracción (F1)
 
 - [ ] **Fuente solo PDF:** no hay XML de la LECrim y desde aquí no hay acceso a la API del BOE. El texto se ha extraído del PDF y se ha contrastado con una segunda lectura independiente del mismo PDF (pdftotext): 7 tramos distintos, todos de maquetación (ver `lecrim/datos/informe_control.md`). Si quieres más seguridad, exporta el XML del PDF como hiciste con la LEC.
@@ -123,6 +125,19 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [x] **Recursos de la LECrim como en la LEC (hecho):** 14 recursos y 27 casos del selector, con «Por resolución», «Recursos» y «Ponte a prueba». Antes: al usuario le gusta la pestaña Recursos de la LEC (selector «Por resolución», fichas de cada recurso y «Ponte a prueba»). En la LECrim ahora solo hay tarjetas de bloques en esqueleto. Hacer `lecrim/datos/recursos.json` con el mismo formato (recursos, selector por resolución con frase literal, test), a partir de los arts. 216-238 ter (recursos contra resoluciones procesales), 846 bis a-846 ter (apelación), 847-933 (casación) y 954-961 (revisión), y los recursos propios del abreviado, juicio rápido y delitos leves. Todo con `revisado: false` y las dudas anotadas aquí.
 - [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).
 
+### Juicio rápido (contenido elaborado, pendiente de revisión)
+
+> Bloque desarrollado: 8 fases y 12 plazos (arts. 795 a 803). Los arts. 803 bis (aceptación de decreto) y 803 ter (decomiso) son otros procesos y no van aquí. Las propuestas son de Claude (No verificable hasta que las confirmes). Contesta: **sí**, **no** u **otra**.
+
+- [x] **¿Audiencia preliminar en el juicio rápido? (arts. 800.6 y 802.1). Resuelta por el usuario (21-10-2026).** No se celebra audiencia preliminar (art. 802.1). La remisión del art. 800.6 al art. 785 vale solo en parte: el órgano de enjuiciamiento admite la prueba y resuelve las cuestiones planteadas (función del art. 785.3 vigente), sin convocar la audiencia. Fuente que aporta el usuario: Circular 2/2025 de la Fiscalía General del Estado (No verificable desde este entorno; no figura en la app).
+  En la app: Procesos › Juicio rápido › fase 7, con una alternativa nueva (art. 785.3 literal).
+- [x] **Señalamiento: el art. 800.3 remite al «785.2». Resuelta por el usuario (21-10-2026):** se lee como remisión al art. 786.2. Fuente que aporta el usuario: Circular 2/2025 de la FGE (No verificable desde aquí). En la app: nota «Ojo» en Juicio rápido › fase 5.
+- [x] **Conformidad: los arts. 801.1, 801.2 y 784.3 remiten al «artículo 787». Resuelta por el usuario (21-10-2026):** se leen como remisiones al art. 787 ter. En la app: nota «Ojo» en Juicio rápido › fase 6 y Abreviado › fase 6.
+- [x] **«Falta» en el art. 798.2.1.º. Resuelta por el usuario (21-10-2026):** se lee como delito leve, aunque el inciso no se haya modificado literalmente; respaldo en la nota general del BOE (disposición adicional segunda de la LO 1/2015, Verificable en la app). En la app: nota «Ojo» en Juicio rápido › fase 4.
+- [ ] **Enlace a la Circular 2/2025 de la FGE.** Se menciona en Juicio rápido (fases 5, 6 y 7) y Abreviado (fase 6), sin enlace: no conozco su referencia en el BOE y desde aquí no puedo buscarla. Pásame la referencia BOE (BOE-A-…) o la dirección y lo enlazo.
+  - **Tu respuesta:**
+- [ ] **Revisa las 8 fases:** las frases entre « » son literales; las descripciones son resumen mío.
+
 ### Juicio oral del sumario (contenido elaborado, pendiente de revisión)
 
 > Bloque desarrollado: 9 fases y 11 plazos (arts. 649 a 749). Con él, «Procedimientos › Sumario ordinario» queda completo (26 fases). Las propuestas son de Claude (No verificable hasta que las confirmes). Contesta: **sí**, **no** u **otra**.
@@ -131,10 +146,7 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
   En la app: Procesos › Juicio oral › fase 8, plazo «3 días» con el art. 203.
   - **Propuesta:** aplicar el art. 203 (tres días), como está en la app.
   - **Tu respuesta:**
-- [ ] **«Artículo 786 bis» que no existe (art. 746.6.º).** Para el procesado persona jurídica remite al «artículo 786 bis», que no está en el texto vigente (Verificable: en la app solo hay art. 786). La comparecencia de la persona jurídica está hoy en el art. 787 bis.
-  En la app: fase 9 (Suspensión), aviso «Duda de interpretación».
-  - **Propuesta:** leerlo como remisión al art. 787 bis. Es la misma renumeración que en las dudas del abreviado.
-  - **Tu respuesta:**
+- [x] **«Artículo 786 bis» (art. 746.6.º). Resuelta por el usuario (21-10-2026):** se lee como art. 787 bis (misma materia: representación e incomparecencia de la persona jurídica). Fuente que aporta el usuario: Circular 2/2025 de la FGE. En la app: nota «Ojo» en Juicio oral › fase 9.
 - [ ] **Párrafos repetidos al final del art. 655.** Tras el apartado 8 vienen tres párrafos sueltos («Si ésta no fuese la procedente…», «También continuará el juicio…», «Cuando el procesado o procesados disintiesen…»). Los dos últimos repiten lo que ya dicen los apartados 1 y 4. Así figuran en el PDF (Verificable).
   En la app: fase 2 (Conformidad en el escrito de defensa).
   - **Propuesta:** en la ficha uso solo los apartados numerados; el texto literal se mantiene completo en «Ley».
@@ -149,9 +161,8 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > Bloque desarrollado: 5 fases y 10 plazos (arts. 622 a 648). Va unido a la instrucción en «Procedimientos › Sumario ordinario». Las propuestas son de Claude (No verificable hasta que las confirmes). Contesta: **sí**, **no** u **otra**.
 
-- [ ] **«Falta» y «Juez municipal» (arts. 624, 625 y 639).** Si el hecho es falta, se remite al «Juez municipal», «consultando el auto» con el Tribunal superior, y el art. 625 menciona un posible recurso de casación.
-  En la app: Procesos › Conclusión del sumario › fase 1.
-  - **Propuesta:** leer «falta» como delito leve (nota general del BOE, Verificable) y «Juez municipal» como el juez competente para los delitos leves. La consulta y la casación del art. 625 las he dejado tal como las dice el texto, sin explicarlas.
+- [ ] **«Falta» y «Juez municipal» (arts. 624, 625 y 639). Pendiente de revisión individual (decisión del usuario (21-10-2026)).** Art. 639: mantiene «falta» y «Juez municipal»; hay que comprobar el mecanismo procesal completo y la competencia actual, no solo cambiar los términos. Arts. 624 y 625: además, comprobar si subsisten la consulta del auto al Tribunal superior y la vía de casación. Cambiar solo la terminología podría ocultar un problema de vigencia.
+  En la app: Conclusión del sumario › fase 1, aviso «Duda de interpretación»; la ficha no presenta una lectura como cierta.
   - **Tu respuesta:**
 - [ ] **Recurso de las víctimas contra el sobreseimiento (art. 636).** El párrafo primero dice que contra el sobreseimiento «sólo procederá, en su caso, el recurso de casación». El último párrafo da a las víctimas «veinte días» para «recurrir» aunque no sean parte. El art. 848 limita la casación al sobreseimiento libre dictado por las Audiencias con imputación fundada (Verificable).
   En la app: fase 4 (El sobreseimiento).
@@ -189,22 +200,12 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > Bloque desarrollado: 10 fases y 32 plazos, de la Policía Judicial a la ejecución (arts. 757 a 794). Cada plazo, alternativa y pregunta lleva su frase literal, comprobada por el script. Las propuestas son de Claude (No verificable hasta que las confirmes), hechas solo con el texto de la LECrim de la app. Contesta en cada una: **sí**, **no** u **otra**.
 
-- [ ] **Juicio en ausencia: remisiones al art. 786 que ya no cuadran.** Los arts. 775.1, 784.4 y 793.1 remiten al art. 786 (o a su «párrafo segundo del apartado 1») para el juicio en ausencia. En el texto vigente, el art. 786 trata del señalamiento del juicio, y los requisitos del juicio en ausencia están en el art. 787.1, párrafo segundo: pena más grave de hasta dos años de prisión (o seis si es de otra naturaleza, o multa) y suma total de hasta cinco años (Verificable, arts. 786 y 787 en la app).
-  En la app: Procesos › Procedimiento abreviado › fases 3, 6 y 9 (aviso «Duda de interpretación») y fase 8 (alternativa del juicio en ausencia, con el art. 787).
-  - **Propuesta:** leer esas remisiones como hechas al art. 787.1, párrafo segundo. Parecen no haberse actualizado al renumerarse los artículos en la última reforma.
+- [x] **Juicio en ausencia: remisiones al art. 786 (arts. 775.1, 784.4 y 793.1). Resuelta por el usuario (21-10-2026):** se leen como remisiones al art. 787.1, párrafo segundo (límites del juicio en ausencia). En la app: notas «Ojo» en Abreviado › fases 3, 6 y 9.
+- [x] **Criterios de señalamiento: el art. 788.1 remite al «785.2». Resuelta por el usuario (21-10-2026):** se lee como art. 786.2 (no el 786.3, que trata de informar a la víctima). En la app: nota «Ojo» en Abreviado › fase 8.
+- [x] **Preguntas del juez a las partes: el art. 789.3 remite al «párrafo segundo del artículo 788.3». Resuelta con criterio interpretativo por el usuario (21-10-2026):** el trámite está hoy en el art. 788.4, párrafo segundo; es lectura funcional, no modificación literal. Según el usuario, la discordancia viene de la reorganización del art. 788 hecha por la LO 8/2021, no de la LO 1/2025 (No verificable desde aquí: el PDF no indica qué reforma tocó cada apartado). En la app: nota «Ojo» en Abreviado › fase 8, sin atribuirla a ninguna reforma.
+- [ ] **Verificar el origen de la discordancia del art. 789.3 (LO 8/2021).** Según el usuario, la reorganización del art. 788 que dejó desfasada la remisión del 789.3 la hizo la LO 8/2021, no la LO 1/2025. Pendiente de comprobar en el BOE (desde este entorno no hay acceso). Hasta entonces, la app no atribuye la discordancia a ninguna reforma.
   - **Tu respuesta:**
-- [ ] **Criterios de señalamiento: el art. 788.1 remite al «785.2».** El art. 785.2 vigente trata de la asistencia a la audiencia preliminar. Los criterios de señalamiento (prisión del acusado, prioridad de otras causas…) están en el art. 786.2 (Verificable).
-  En la app: fase 8 (Juicio oral y sentencia).
-  - **Propuesta:** leerlo como remisión al art. 786.2.
-  - **Tu respuesta:**
-- [ ] **Preguntas del juez a las partes: el art. 789.3 remite al «párrafo segundo del artículo 788.3».** El art. 788.3 vigente trata del perito único. El trámite de someter a debate «una o varias preguntas sobre puntos determinados» está en el art. 788.4, párrafo segundo (Verificable).
-  En la app: fase 8.
-  - **Propuesta:** leerlo como remisión al art. 788.4, párrafo segundo.
-  - **Tu respuesta:**
-- [ ] **«Falta» en el art. 779.1.2.ª (y en el 781.1).** El auto que pone fin a las diligencias previas remite al juez competente «si reputare falta el hecho».
-  En la app: fase 4, alternativa «El hecho es falta (delito leve)».
-  - **Propuesta:** entenderlo como delito leve, según la nota general del BOE que equipara las referencias a las faltas con los delitos leves (el mismo criterio que en Recursos › delitos leves).
-  - **Tu respuesta:**
+- [x] **«Falta» en el art. 779.1.2.ª. Resuelta con criterio interpretativo por el usuario (21-10-2026):** se lee como delito leve (nota general del BOE); el texto conserva «falta». En la app: nota «Ojo» en Abreviado › fase 4. El art. 781.1 («La acusación se extenderá a las faltas…») no se ha revisado todavía.
 - [ ] **Recurso de las víctimas contra el sobreseimiento: ¿20 días para todas?** El art. 779.1.1.ª dice: «Las víctimas podrán recurrir el auto de sobreseimiento dentro del plazo de veinte días aunque no se hubieran mostrado como parte en la causa». Para las partes, la apelación contra autos es de cinco días (art. 766.3).
   En la app: fase 4, plazo «20 días».
   - **Propuesta:** el «aunque» incluye a las víctimas personadas y a las no personadas, así que todas tendrían 20 días. Las demás partes (por ejemplo, el Fiscal o una acusación popular) seguirían con los plazos ordinarios. La app solo muestra los 20 días «para las víctimas», sin afirmar nada más.
