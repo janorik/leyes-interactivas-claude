@@ -161,9 +161,8 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > Bloque desarrollado: 5 fases y 10 plazos (arts. 622 a 648). Va unido a la instrucción en «Procedimientos › Sumario ordinario». Las propuestas son de Claude (No verificable hasta que las confirmes). Contesta: **sí**, **no** u **otra**.
 
-- [ ] **«Falta» y «Juez municipal» (arts. 624, 625 y 639).** Si el hecho es falta, se remite al «Juez municipal», «consultando el auto» con el Tribunal superior, y el art. 625 menciona un posible recurso de casación.
-  En la app: Procesos › Conclusión del sumario › fase 1.
-  - **Propuesta:** leer «falta» como delito leve (nota general del BOE, Verificable) y «Juez municipal» como el juez competente para los delitos leves. La consulta y la casación del art. 625 las he dejado tal como las dice el texto, sin explicarlas.
+- [ ] **«Falta» y «Juez municipal» (arts. 624, 625 y 639). Pendiente de revisión individual (decisión del usuario (21-10-2026)).** Art. 639: mantiene «falta» y «Juez municipal»; hay que comprobar el mecanismo procesal completo y la competencia actual, no solo cambiar los términos. Arts. 624 y 625: además, comprobar si subsisten la consulta del auto al Tribunal superior y la vía de casación. Cambiar solo la terminología podría ocultar un problema de vigencia.
+  En la app: Conclusión del sumario › fase 1, aviso «Duda de interpretación»; la ficha no presenta una lectura como cierta.
   - **Tu respuesta:**
 - [ ] **Recurso de las víctimas contra el sobreseimiento (art. 636).** El párrafo primero dice que contra el sobreseimiento «sólo procederá, en su caso, el recurso de casación». El último párrafo da a las víctimas «veinte días» para «recurrir» aunque no sean parte. El art. 848 limita la casación al sobreseimiento libre dictado por las Audiencias con imputación fundada (Verificable).
   En la app: fase 4 (El sobreseimiento).
@@ -201,22 +200,10 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > Bloque desarrollado: 10 fases y 32 plazos, de la Policía Judicial a la ejecución (arts. 757 a 794). Cada plazo, alternativa y pregunta lleva su frase literal, comprobada por el script. Las propuestas son de Claude (No verificable hasta que las confirmes), hechas solo con el texto de la LECrim de la app. Contesta en cada una: **sí**, **no** u **otra**.
 
-- [ ] **Juicio en ausencia: remisiones al art. 786 que ya no cuadran.** Los arts. 775.1, 784.4 y 793.1 remiten al art. 786 (o a su «párrafo segundo del apartado 1») para el juicio en ausencia. En el texto vigente, el art. 786 trata del señalamiento del juicio, y los requisitos del juicio en ausencia están en el art. 787.1, párrafo segundo: pena más grave de hasta dos años de prisión (o seis si es de otra naturaleza, o multa) y suma total de hasta cinco años (Verificable, arts. 786 y 787 en la app).
-  En la app: Procesos › Procedimiento abreviado › fases 3, 6 y 9 (aviso «Duda de interpretación») y fase 8 (alternativa del juicio en ausencia, con el art. 787).
-  - **Propuesta:** leer esas remisiones como hechas al art. 787.1, párrafo segundo. Parecen no haberse actualizado al renumerarse los artículos en la última reforma.
-  - **Tu respuesta:**
-- [ ] **Criterios de señalamiento: el art. 788.1 remite al «785.2».** El art. 785.2 vigente trata de la asistencia a la audiencia preliminar. Los criterios de señalamiento (prisión del acusado, prioridad de otras causas…) están en el art. 786.2 (Verificable).
-  En la app: fase 8 (Juicio oral y sentencia).
-  - **Propuesta:** leerlo como remisión al art. 786.2.
-  - **Tu respuesta:**
-- [ ] **Preguntas del juez a las partes: el art. 789.3 remite al «párrafo segundo del artículo 788.3».** El art. 788.3 vigente trata del perito único. El trámite de someter a debate «una o varias preguntas sobre puntos determinados» está en el art. 788.4, párrafo segundo (Verificable).
-  En la app: fase 8.
-  - **Propuesta:** leerlo como remisión al art. 788.4, párrafo segundo.
-  - **Tu respuesta:**
-- [ ] **«Falta» en el art. 779.1.2.ª (y en el 781.1).** El auto que pone fin a las diligencias previas remite al juez competente «si reputare falta el hecho».
-  En la app: fase 4, alternativa «El hecho es falta (delito leve)».
-  - **Propuesta:** entenderlo como delito leve, según la nota general del BOE que equipara las referencias a las faltas con los delitos leves (el mismo criterio que en Recursos › delitos leves).
-  - **Tu respuesta:**
+- [x] **Juicio en ausencia: remisiones al art. 786 (arts. 775.1, 784.4 y 793.1). Resuelta por el usuario (21-10-2026):** se leen como remisiones al art. 787.1, párrafo segundo (límites del juicio en ausencia). En la app: notas «Ojo» en Abreviado › fases 3, 6 y 9.
+- [x] **Criterios de señalamiento: el art. 788.1 remite al «785.2». Resuelta por el usuario (21-10-2026):** se lee como art. 786.2 (no el 786.3, que trata de informar a la víctima). En la app: nota «Ojo» en Abreviado › fase 8.
+- [x] **Preguntas del juez a las partes: el art. 789.3 remite al «párrafo segundo del artículo 788.3». Resuelta con criterio interpretativo por el usuario (21-10-2026):** el trámite está hoy en el art. 788.4, párrafo segundo; es lectura funcional, no modificación literal. Según el usuario, la discordancia viene de la reorganización del art. 788 hecha por la LO 8/2021, no de la LO 1/2025 (No verificable desde aquí: el PDF no indica qué reforma tocó cada apartado). En la app: nota «Ojo» en Abreviado › fase 8, sin atribuirla a ninguna reforma.
+- [x] **«Falta» en el art. 779.1.2.ª. Resuelta con criterio interpretativo por el usuario (21-10-2026):** se lee como delito leve (nota general del BOE); el texto conserva «falta». En la app: nota «Ojo» en Abreviado › fase 4. El art. 781.1 («La acusación se extenderá a las faltas…») no se ha revisado todavía.
 - [ ] **Recurso de las víctimas contra el sobreseimiento: ¿20 días para todas?** El art. 779.1.1.ª dice: «Las víctimas podrán recurrir el auto de sobreseimiento dentro del plazo de veinte días aunque no se hubieran mostrado como parte en la causa». Para las partes, la apelación contra autos es de cinco días (art. 766.3).
   En la app: fase 4, plazo «20 días».
   - **Propuesta:** el «aunque» incluye a las víctimas personadas y a las no personadas, así que todas tendrían 20 días. Las demás partes (por ejemplo, el Fiscal o una acusación popular) seguirían con los plazos ordinarios. La app solo muestra los 20 días «para las víctimas», sin afirmar nada más.

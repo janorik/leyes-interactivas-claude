@@ -3545,7 +3545,7 @@
       "investigacion",
       "cautelares"
      ],
-     "duda": "El art. 775.1 remite al «artículo 786» para el juicio en ausencia, pero tras la última reforma esos requisitos están en el art. 787.1 (párrafo segundo). Ver PENDIENTES.md."
+     "aviso": "El art. 775.1 remite al «artículo 786» para el juicio en ausencia; se lee como remisión al art. 787.1, párrafo segundo, que regula hoy los límites del juicio en ausencia."
     },
     {
      "id": "abr-779",
@@ -3659,7 +3659,7 @@
       "leves",
       "recursos"
      ],
-     "duda": "El art. 779.1.2.ª habla de «falta». Propuesta: entenderlo como delito leve, según la nota general del BOE sobre las faltas. Ver PENDIENTES.md."
+     "aviso": "El art. 779.1.2.ª dice «falta»: se lee como delito leve (nota general del BOE). El texto literal conserva «falta»."
     },
     {
      "id": "abr-acusacion",
@@ -3877,8 +3877,7 @@
       "fianzas",
       "cautelares"
      ],
-     "duda": "El art. 784.4 remite al «párrafo segundo del apartado 1 del artículo 786» para los límites del juicio en ausencia; tras la reforma están en el art. 787.1. Ver PENDIENTES.md.",
-     "aviso": "El art. 784.3 remite al «artículo 787» para la conformidad; se lee como remisión al art. 787 ter. Así lo interpreta la Circular 2/2025 de la Fiscalía General del Estado."
+     "aviso": "El art. 784.4 remite al «párrafo segundo del apartado 1 del artículo 786»; se lee como remisión al art. 787.1, párrafo segundo, que regula hoy los límites del juicio en ausencia. El art. 784.3 remite al «artículo 787» para la conformidad; se lee como remisión al art. 787 ter. Así lo interpreta la Circular 2/2025 de la Fiscalía General del Estado."
     },
     {
      "id": "abr-audiencia-preliminar",
@@ -4079,7 +4078,7 @@
      "continua_en": [
       "juicio-oral"
      ],
-     "duda": "El art. 788.1 remite al «785.2» para los criterios de señalamiento (hoy en el 786.2) y el art. 789.3 al «párrafo segundo del artículo 788.3» para las preguntas del juez (hoy en el 788.4). Ver PENDIENTES.md."
+     "aviso": "El art. 788.1 remite al «785.2» para el señalamiento; se lee como remisión al art. 786.2. El art. 789.3 remite al «párrafo segundo del artículo 788.3», pero el trámite de someter preguntas a debate está hoy en el art. 788.4, párrafo segundo: es una lectura funcional, no una modificación literal de la ley."
     },
     {
      "id": "abr-apelacion",
@@ -4218,7 +4217,7 @@
      "continua_en": [
       "recursos"
      ],
-     "duda": "El art. 793.1 remite al «párrafo segundo del apartado 1 del artículo 786» para la condena en ausencia; tras la reforma esos requisitos están en el art. 787.1. Ver PENDIENTES.md."
+     "aviso": "El art. 793.1 remite al «párrafo segundo del apartado 1 del artículo 786»; se lee como remisión al art. 787.1, párrafo segundo, que regula hoy los límites del juicio en ausencia."
     },
     {
      "id": "abr-ejecucion",
