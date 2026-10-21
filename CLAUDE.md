@@ -10,7 +10,7 @@
 - Si el usuario se equivoca, dile "estás equivocado" y explica por qué. Si te corrige con razón, di "tienes razón" y corrige.
 - No suenes seguro de algo que no lo estás. Cierra cada respuesta con tu nivel de certeza.
 - **Memoria del proyecto en este archivo.** Cada chat empieza sin recordar los anteriores. Cuando en un chat se acuerde algo nuevo (una decisión del usuario, una forma de trabajar, un bloque hecho, dónde está algo), anótalo aquí en el mismo commit, de forma breve y en su sección. Las dudas jurídicas van a `PENDIENTES.md`, no aquí.
-- **Forma de trabajar con GitHub (acordada con el usuario).** Un solo chat cada vez para este proyecto. Al terminar cada tarea, Claude une él mismo los cambios a la rama principal (PR y merge con las herramientas de GitHub), sin que el usuario tenga que entrar en GitHub. Antes de unir, trae la rama principal (`git fetch origin main`) y, si ha cambiado, la integra y regenera lo necesario.
+- **Forma de trabajar con GitHub (decisión final del usuario, 21-10-2026; sustituye a la versión en que el usuario unía las PR).** Un solo chat cada vez para este proyecto. Claude hace el código, lo prueba, anota lo acordado aquí, sube a la rama del chat, crea la PR y **la une él mismo** a la rama principal con las herramientas de GitHub; el usuario no tiene que entrar en GitHub. Antes de unir, trae la rama principal (`git fetch origin main`) y, si ha cambiado, la integra y regenera lo necesario. Si hay una PR abierta de otro chat, Claude la integra o avisa al usuario; no la deja olvidada. Al entregar, da el enlace de la PR y la dirección para verlo con `?v=N`.
 
 ## Objetivo
 Una app interactiva por cada ley para estudiarla, repasarla y consultarla a diario. La primera es la Ley de Enjuiciamiento Civil (LEC). Después vendrán LECrim, LRJS, Estatuto de los Trabajadores y otras.
@@ -34,6 +34,7 @@ leyes-interactivas-claude/
 - La portada (`/index.html`) solo enlaza a cada ley. No contiene datos de ninguna.
 - Rutas siempre relativas, para que funcione en GitHub Pages y abriendo el archivo en local.
 - Si el PDF o el XML del BOE o el logo están en la raíz del repositorio, muévelos a `fuentes/` y `assets/` antes de empezar (renombra el PDF a `LEC_BOE-A-2000-323.pdf` y el XML a `LEC_BOE-A-2000-323.xml`).
+- **Dónde está cada cosa (además del árbol):** `PENDIENTES.md` (dudas de todas las leyes); `lecrim/` (app y datos de la LECrim, igual que `lec/`); `scripts/extraer_lec.py` y `scripts/extraer_lecrim.py` (texto literal → `<ley>/datos/<ley>.json` e `informe_control.md`); `scripts/esqueleto_lecrim.py` (esqueleto del mapa de la LECrim); `scripts/insertar_datos.py <ley>` (valida y mete los datos en `<ley>/index.html`); `scripts/generar_portada.py` + `scripts/leyes.json` (portada; `leyes.json` también da el nombre corto y el título del mapa de cada ley). `*/datos/lineas_pdf.json` es caché y no se sube.
 
 ## Fuente única
 - Solo el texto consolidado del BOE subido en `fuentes/` (Ley 1/2000, de 7 de enero, BOE-A-2000-323), versión vigente.
@@ -43,6 +44,8 @@ leyes-interactivas-claude/
 - Extrae del PDF la fecha de la versión consolidada. Si no la encuentras, pregunta al usuario.
 - La app muestra esa fecha y el aviso: "Texto consolidado del BOE de carácter informativo, sin valor jurídico".
 - Solo versión vigente. No se comparan reformas.
+- **LEC, fuente usada:** `fuentes/LEC_BOE-A-2000-323.xml` es una exportación a XML del PDF consolidado hecha por el usuario (el XML original del BOE que subió primero era el texto de 2000 y se descartó); se contrasta palabra por palabra con el PDF. Versión consolidada: 07 de octubre de 2026.
+- **Red desde la nube:** este entorno no llega a boe.es, google.com ni janorik.github.io (bloqueados por el proxy). Las comprobaciones en el BOE (por ejemplo, los enlaces a otras leyes) las hace el usuario; se anotan en `PENDIENTES.md`.
 - **Otras leyes citadas.** Cuando la LEC (u otra ley de la app) remita a una ley distinta, o el contenido elaborado necesite mencionarla, no se escribe «otra ley»: se pone «se regula en la [nombre de la ley]» con un enlace a su texto consolidado en el BOE (`https://www.boe.es/buscar/act.php?id=BOE-A-…`). Formato en los JSON: `[[Nombre de la ley|URL del BOE]]` dentro de `descripcion` o `aviso`; `scripts/insertar_datos.py` rechaza enlaces mal formados. No se copia el texto de esa otra ley. Si el nombre, la fecha o la referencia BOE no salen del texto consolidado de la app, se anota en `PENDIENTES.md` para que el usuario los compruebe.
 - **Si una regla impide algo útil, avisa y pregunta.** Cuando una regla de este archivo te lleve a dejar fuera algo que al usuario le serviría (por ejemplo, nombrar o enlazar otra ley), no lo omitas en silencio: díselo, explica qué regla lo impide y pregúntale qué prefiere.
 
@@ -81,7 +84,9 @@ repaso:         [{id, pregunta, respuesta, articulos, origen, revisado}]
 ```
 - El texto de los artículos se extrae siempre con un script (en `scripts/`), nunca copiándolo a mano.
 - Un script inserta el JSON final dentro de `lec/index.html`.
-- Publicación con GitHub Pages desde la rama principal, carpeta raíz.
+- Publicación con GitHub Pages desde la rama principal, carpeta raíz: `https://janorik.github.io/leyes-interactivas-claude/` (portada) y `…/lec/index.html`, `…/lecrim/index.html`. Al darle una dirección al usuario, añadir `?v=N` (número nuevo) para que el navegador no muestre una versión guardada.
+- **Antes de publicar, probar en navegador** (Playwright con el Chromium instalado, ancho 390 px de móvil): todas las fases abren, sin errores de JavaScript y sin desplazamiento lateral. También la LEC cuando se toca la plantilla.
+- **Volver a una versión anterior:** botón «Revert» de la PR ya unida en GitHub, o pedírselo a Claude (cada versión queda en el historial). No se pueden crear etiquetas de versión desde aquí (GitHub devuelve 403).
 
 ## Vistas de la app LEC
 Enfoque acordado con el usuario: app para **aprender**, no solo para leer la ley. El centro es el **mapa procesal**.
@@ -104,6 +109,7 @@ Todo artículo citado en cualquier vista es un enlace que abre su texto literal.
 - La app lo muestra con la etiqueta "Pendiente de revisión" hasta que el usuario lo valide.
 - Si el texto legal admite varias lecturas, o un plazo depende de supuestos, no elijas: anótalo y pregunta.
 - Nunca presentes un plazo como seguro si no sale literalmente del artículo citado.
+- **Comprueba quién dicta cada resolución** antes de clasificarla (corrección del usuario: el LAJ solo dicta diligencias de ordenación y decretos, nunca autos). `insertar_datos.py` rechaza un auto o una sentencia en el grupo «LAJ» del selector de recursos.
 - La calculadora de plazos con calendario (días hábiles, agosto, festivos) NO se hace ahora. Es una segunda parte.
 
 ## Diseño
@@ -111,6 +117,9 @@ Todo artículo citado en cualquier vista es un enlace que abre su texto literal.
 - Logo de `assets/`, en la cabecera.
 - Botón de modo claro/oscuro, recordado en local.
 - Diseño adaptado a móvil (prioridad) y a ordenador. Texto legible y zoom cómodo.
+- Botón flotante «‹ Atrás» propio de la app (pedido por el usuario): vuelve a la pantalla anterior o, si se entró por enlace, sube un nivel. Oculto en la pantalla de inicio y con una ficha abierta.
+- Barra de pestañas desplazable en el móvil (Mapa, Procedimientos, Recursos, Ley, Buscar, Repaso, Notas). Las pestañas sin contenido se ocultan.
+- Almacenamiento local con prefijo de la ley (`lec:`, `lecrim:`): `tema`, `tam`, `q`, `progreso`, `mis`. Si se añade otra clave, ponerla en `cookies.html`.
 
 ## Pendientes
 Las dudas de interpretación y los puntos a revisar se anotan en `PENDIENTES.md` (el usuario los repasará al final). No se elige una interpretación: se anota y se sigue. Un único `PENDIENTES.md` para todas las leyes, con una sección por ley (`## LEC`, `## LECrim`…). Cada duda de interpretación lleva una **propuesta** argumentada con artículos (No verificable hasta que el usuario la confirme) y un hueco «Tu respuesta».
@@ -149,7 +158,7 @@ No empieces la siguiente fase sin su visto bueno.
 ## LECrim
 - Fuente: `fuentes/LECrim_BOE-A-1882-6036.pdf` (Real Decreto de 14 de septiembre de 1882, BOE-A-1882-6036), texto consolidado con última modificación de 09 de abril de 2026. Sin XML: se extrae solo del PDF con `python3 scripts/extraer_lecrim.py`, que lo contrasta con pdftotext y escribe `lecrim/datos/informe_control.md`.
 - App: `lecrim/index.html`, generada con `python3 scripts/insertar_datos.py lecrim`. La app es la misma para todas las leyes: `lec/index.html` es la plantilla y el script la copia con los datos de cada ley. Una mejora de la app se hace en `lec/index.html` y se regeneran todas.
-- Mientras una ley no tenga mapa procesal, la app abre en «Ley» y oculta «Procesos» y «Repaso».
+- Mientras una ley no tenga mapa procesal, la app abre en «Ley» y oculta «Mapa»; «Repaso» se oculta si no hay tarjetas.
 - **F1 LECrim (hecha):** texto literal completo (1059 artículos y 10 disposiciones), árbol, buscador, notas y portada. Pendiente de revisión del usuario.
 - **Esqueleto del mapa (hecho):** `python3 scripts/esqueleto_lecrim.py` genera `lecrim/datos/procedimientos.json` con 14 bloques y 86 fases sacados del índice del BOE (nombre literal y rango de artículos, `"esqueleto": true`, sin plazos ni alternativas). Al desarrollar un bloque se quita su `"esqueleto": true` y el script deja de regenerarlo.
 - **Método acordado con el usuario:** primero el esqueleto completo del mapa; después se desarrolla un bloque cada vez (plazos con frase literal, alternativas, preguntas), con su visto bueno.
@@ -158,5 +167,6 @@ No empieces la siguiente fase sin su visto bueno.
 - **Instrucción del sumario (hecho):** segundo bloque desarrollado (arts. 299-485, 12 fases, 18 plazos), elegido por el usuario. Sus fases pasan solas a «Procedimientos › Sumario ordinario» al regenerar con `esqueleto_lecrim.py`; el ámbito corto debe seguir siendo «Arts. 299 a 485» porque ese script lo usa. Dudas en `PENDIENTES.md › LECrim › Instrucción del sumario`. Pendiente de revisión del usuario.
 - **Conclusión del sumario (hecho):** tercer bloque desarrollado (arts. 622-648, 5 fases, 10 plazos). Con la instrucción, forma parte de la ruta «Procedimientos › Sumario ordinario». Ámbito corto «Arts. 622 a 648» (lo usa el script). Dudas en `PENDIENTES.md`. Pendiente de revisión del usuario.
 - **Juicio oral del sumario (hecho):** cuarto bloque desarrollado (arts. 649-749, 9 fases, 11 plazos). Con él, «Procedimientos › Sumario ordinario» queda completo: 26 fases sin esqueleto. Ámbito corto «Arts. 649 a 749» (lo usa el script). Dudas en `PENDIENTES.md`. Pendiente de revisión del usuario.
-- **Recursos de la LECrim (hecho):** `lecrim/datos/recursos.json` con el mismo formato que la LEC: 14 recursos, 27 casos del selector agrupados en `grupos_selector` (LAJ, Juez de Instrucción, Tribunales, Sentencias) y test. Pendiente de revisión del usuario; dudas en `PENDIENTES.md › LECrim`.
+- **Recursos de la LECrim (hecho):** `lecrim/datos/recursos.json` con el mismo formato que la LEC: 14 recursos, 27 casos del selector agrupados en `grupos_selector` (LAJ, Juez de Instrucción, Tribunales, Juez o Tribunal, Sentencias) y test. El usuario quiere que cada ley tenga las tres secciones de la LEC: «Por resolución», «Recursos» y «Ponte a prueba». Pendiente de revisión del usuario; dudas en `PENDIENTES.md › LECrim`.
 - **Leyes relacionadas:** el Tribunal del Jurado se muestra como tarjeta «otra ley» con enlace al BOE (campo `externos` de `procedimientos.json`), no se desarrolla.
+- **Fuera del esqueleto:** fases que solo tienen artículos derogados o sin contenido (caps. II-IV del título II del libro V). El Real Decreto de aprobación (arts. 1.º-5.º) va como «Real Decreto de aprobación», separado de la ley. Los rangos del BOE («Artículos 48 a 50») son una sola entrada; buscar «49» lleva a ella.
