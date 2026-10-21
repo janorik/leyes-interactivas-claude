@@ -123,6 +123,28 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [x] **Recursos de la LECrim como en la LEC (hecho):** 14 recursos y 27 casos del selector, con «Por resolución», «Recursos» y «Ponte a prueba». Antes: al usuario le gusta la pestaña Recursos de la LEC (selector «Por resolución», fichas de cada recurso y «Ponte a prueba»). En la LECrim ahora solo hay tarjetas de bloques en esqueleto. Hacer `lecrim/datos/recursos.json` con el mismo formato (recursos, selector por resolución con frase literal, test), a partir de los arts. 216-238 ter (recursos contra resoluciones procesales), 846 bis a-846 ter (apelación), 847-933 (casación) y 954-961 (revisión), y los recursos propios del abreviado, juicio rápido y delitos leves. Todo con `revisado: false` y las dudas anotadas aquí.
 - [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).
 
+### Juicio oral del sumario (contenido elaborado, pendiente de revisión)
+
+> Bloque desarrollado: 9 fases y 11 plazos (arts. 649 a 749). Con él, «Procedimientos › Sumario ordinario» queda completo (26 fases). Las propuestas son de Claude (No verificable hasta que las confirmes). Contesta: **sí**, **no** u **otra**.
+
+- [ ] **Plazo de la sentencia (art. 741).** Dice que se dictará «dentro del término fijado en esta Ley», sin decir cuál. El art. 203 fija, con carácter general, «los tres días siguientes» a la terminación del juicio (Verificable).
+  En la app: Procesos › Juicio oral › fase 8, plazo «3 días» con el art. 203.
+  - **Propuesta:** aplicar el art. 203 (tres días), como está en la app.
+  - **Tu respuesta:**
+- [ ] **«Artículo 786 bis» que no existe (art. 746.6.º).** Para el procesado persona jurídica remite al «artículo 786 bis», que no está en el texto vigente (Verificable: en la app solo hay art. 786). La comparecencia de la persona jurídica está hoy en el art. 787 bis.
+  En la app: fase 9 (Suspensión), aviso «Duda de interpretación».
+  - **Propuesta:** leerlo como remisión al art. 787 bis. Es la misma renumeración que en las dudas del abreviado.
+  - **Tu respuesta:**
+- [ ] **Párrafos repetidos al final del art. 655.** Tras el apartado 8 vienen tres párrafos sueltos («Si ésta no fuese la procedente…», «También continuará el juicio…», «Cuando el procesado o procesados disintiesen…»). Los dos últimos repiten lo que ya dicen los apartados 1 y 4. Así figuran en el PDF (Verificable).
+  En la app: fase 2 (Conformidad en el escrito de defensa).
+  - **Propuesta:** en la ficha uso solo los apartados numerados; el texto literal se mantiene completo en «Ley».
+  - **Tu respuesta:**
+- [ ] **Multa en pesetas (art. 684).** El Presidente puede multar «de 5.000 a 25.000 pesetas».
+  - **Propuesta:** no poner la cuantía en la ficha; queda en el texto literal.
+  - **Tu respuesta:**
+- [ ] **Recurso contra el auto de la declinatoria (art. 676).** Es la misma duda que ya está en «Recursos» (no dice ante quién se apela). En la fase 4 solo pongo «Recurso de apelación», sin órgano.
+- [ ] **Revisa las 9 fases:** las frases entre « » son literales; las descripciones son resumen mío.
+
 ### Conclusión del sumario y sobreseimiento (contenido elaborado, pendiente de revisión)
 
 > Bloque desarrollado: 5 fases y 10 plazos (arts. 622 a 648). Va unido a la instrucción en «Procedimientos › Sumario ordinario». Las propuestas son de Claude (No verificable hasta que las confirmes). Contesta: **sí**, **no** u **otra**.
