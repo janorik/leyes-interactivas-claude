@@ -3877,7 +3877,8 @@
       "fianzas",
       "cautelares"
      ],
-     "duda": "El art. 784.4 remite al «párrafo segundo del apartado 1 del artículo 786» para los límites del juicio en ausencia; tras la reforma están en el art. 787.1. Ver PENDIENTES.md."
+     "duda": "El art. 784.4 remite al «párrafo segundo del apartado 1 del artículo 786» para los límites del juicio en ausencia; tras la reforma están en el art. 787.1. Ver PENDIENTES.md.",
+     "aviso": "El art. 784.3 remite al «artículo 787» para la conformidad; se lee como remisión al art. 787 ter."
     },
     {
      "id": "abr-audiencia-preliminar",
@@ -4636,7 +4637,7 @@
       "leves",
       "cautelares"
      ],
-     "duda": "El art. 798.2.1.º habla de «falta». Propuesta: entenderla como delito leve, según la nota general del BOE. Ver PENDIENTES.md."
+     "aviso": "El art. 798 dice «falta»: se lee como delito leve, porque según la nota general del BOE las menciones a las faltas se entienden referidas a los delitos leves. El inciso no se ha modificado literalmente."
     },
     {
      "id": "rap-preparacion",
@@ -4742,7 +4743,7 @@
      "continua_en": [
       "cautelares"
      ],
-     "duda": "El art. 800.3 remite al «785.2» para el señalamiento (hoy en el 786.2). Ver PENDIENTES.md."
+     "aviso": "El art. 800.3 remite al «785.2» para el señalamiento; se lee como remisión al art. 786.2, donde están hoy los criterios de señalamiento."
     },
     {
      "id": "rap-conformidad",
@@ -4809,7 +4810,7 @@
      "continua_en": [
       "ejecucion"
      ],
-     "duda": "El art. 801 remite al «artículo 787» para la conformidad y su control, pero hoy la conformidad en el juicio está en el art. 787 ter (el 787 trata de la asistencia del acusado). Ver PENDIENTES.md."
+     "aviso": "Las remisiones del art. 801 al «artículo 787» sobre la conformidad se leen como hechas al art. 787 ter (conformidad antes de la prueba)."
     },
     {
      "id": "rap-juicio",

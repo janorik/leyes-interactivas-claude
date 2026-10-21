@@ -129,16 +129,9 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 - [x] **¿Audiencia preliminar en el juicio rápido? (arts. 800.6 y 802.1). Resuelta por el usuario (21-10-2026).** No se celebra audiencia preliminar (art. 802.1). La remisión del art. 800.6 al art. 785 vale solo en parte: el órgano de enjuiciamiento admite la prueba y resuelve las cuestiones planteadas (función del art. 785.3 vigente), sin convocar la audiencia. Fuente que aporta el usuario: Circular 2/2025 de la Fiscalía General del Estado (No verificable desde este entorno; no figura en la app).
   En la app: Procesos › Juicio rápido › fase 7, con una alternativa nueva (art. 785.3 literal).
-- [ ] **Señalamiento: el art. 800.3 remite al «785.2».** Los criterios de señalamiento están hoy en el art. 786.2. Es la misma duda que en el abreviado (art. 788.1).
-  - **Propuesta:** leerlo como remisión al art. 786.2.
-  - **Tu respuesta:**
-- [ ] **Conformidad: los arts. 801.1, 801.2 y 784.3 remiten al «artículo 787».** Hoy el art. 787 regula la asistencia del acusado al juicio; la conformidad antes de la prueba está en el art. 787 ter, con el mismo control que el art. 785.4 a 7 (Verificable).
-  En la app: Procesos › Juicio rápido › fase 6, y Abreviado › fase 6.
-  - **Propuesta:** leer esas remisiones como hechas al art. 787 ter. Es la misma renumeración que en las dudas del art. 786.
-  - **Tu respuesta:**
-- [ ] **«Falta» en el art. 798.2.1.º.** Si el juez de guardia «reputa falta» el hecho, lo enjuicia de inmediato (art. 963).
-  - **Propuesta:** entenderlo como delito leve (nota general del BOE).
-  - **Tu respuesta:**
+- [x] **Señalamiento: el art. 800.3 remite al «785.2». Resuelta por el usuario (21-10-2026):** se lee como remisión al art. 786.2. Fuente que aporta el usuario: Circular 2/2025 de la FGE (No verificable desde aquí). En la app: nota «Ojo» en Juicio rápido › fase 5.
+- [x] **Conformidad: los arts. 801.1, 801.2 y 784.3 remiten al «artículo 787». Resuelta por el usuario (21-10-2026):** se leen como remisiones al art. 787 ter. En la app: nota «Ojo» en Juicio rápido › fase 6 y Abreviado › fase 6.
+- [x] **«Falta» en el art. 798.2.1.º. Resuelta por el usuario (21-10-2026):** se lee como delito leve, aunque el inciso no se haya modificado literalmente; respaldo en la nota general del BOE (disposición adicional segunda de la LO 1/2015, Verificable en la app). En la app: nota «Ojo» en Juicio rápido › fase 4.
 - [ ] **Revisa las 8 fases:** las frases entre « » son literales; las descripciones son resumen mío.
 
 ### Juicio oral del sumario (contenido elaborado, pendiente de revisión)
