@@ -119,9 +119,76 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 ### Mapa procesal (esqueleto)
 
 - [ ] **Esqueleto de 14 bloques y 86 fases:** cada fase es un título, capítulo o sección del índice del BOE, con su nombre literal y sus artículos. Se han quitado las fases que solo tienen artículos derogados o sin contenido (casación, caps. II a IV del título II del libro V). Revisa si la agrupación en bloques te sirve antes de desarrollar el primero.
-- [ ] **Orden de desarrollo:** dime por qué bloque empezamos.
+- [x] **Orden de desarrollo:** empezamos por el procedimiento abreviado (elegido por el usuario). Hecho; ver la sección siguiente.
 - [x] **Recursos de la LECrim como en la LEC (hecho):** 14 recursos y 27 casos del selector, con «Por resolución», «Recursos» y «Ponte a prueba». Antes: al usuario le gusta la pestaña Recursos de la LEC (selector «Por resolución», fichas de cada recurso y «Ponte a prueba»). En la LECrim ahora solo hay tarjetas de bloques en esqueleto. Hacer `lecrim/datos/recursos.json` con el mismo formato (recursos, selector por resolución con frase literal, test), a partir de los arts. 216-238 ter (recursos contra resoluciones procesales), 846 bis a-846 ter (apelación), 847-933 (casación) y 954-961 (revisión), y los recursos propios del abreviado, juicio rápido y delitos leves. Todo con `revisado: false` y las dudas anotadas aquí.
 - [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).
+
+### Conclusión del sumario y sobreseimiento (contenido elaborado, pendiente de revisión)
+
+> Bloque desarrollado: 5 fases y 10 plazos (arts. 622 a 648). Va unido a la instrucción en «Procedimientos › Sumario ordinario». Las propuestas son de Claude (No verificable hasta que las confirmes). Contesta: **sí**, **no** u **otra**.
+
+- [ ] **«Falta» y «Juez municipal» (arts. 624, 625 y 639).** Si el hecho es falta, se remite al «Juez municipal», «consultando el auto» con el Tribunal superior, y el art. 625 menciona un posible recurso de casación.
+  En la app: Procesos › Conclusión del sumario › fase 1.
+  - **Propuesta:** leer «falta» como delito leve (nota general del BOE, Verificable) y «Juez municipal» como el juez competente para los delitos leves. La consulta y la casación del art. 625 las he dejado tal como las dice el texto, sin explicarlas.
+  - **Tu respuesta:**
+- [ ] **Recurso de las víctimas contra el sobreseimiento (art. 636).** El párrafo primero dice que contra el sobreseimiento «sólo procederá, en su caso, el recurso de casación». El último párrafo da a las víctimas «veinte días» para «recurrir» aunque no sean parte. El art. 848 limita la casación al sobreseimiento libre dictado por las Audiencias con imputación fundada (Verificable).
+  En la app: fase 4 (El sobreseimiento).
+  - **Propuesta:** los 20 días son el plazo propio de las víctimas para el recurso que proceda, que en el sumario solo es la casación cuando la admite el art. 848. No he puesto que las víctimas tengan otro recurso distinto.
+  - **Tu respuesta:**
+- [ ] **Órganos que ya no existen (art. 644).** Habla del «Fiscal de la Audiencia Territorial», de la «Audiencia de lo criminal» y de la «Audiencia territorial».
+  En la app: fase 4, alternativa «El Fiscal pide el sobreseimiento y no hay querellante» («consultar al Fiscal superior»).
+  - **Propuesta:** leerlo como el superior jerárquico del Fiscal, como dice el art. 782.2.b) del abreviado.
+  - **Tu respuesta:**
+- [ ] **Revisa las 5 fases:** las frases entre « » son literales; las descripciones son resumen mío.
+
+### Instrucción del sumario (contenido elaborado, pendiente de revisión)
+
+> Bloque desarrollado: 12 fases y 18 plazos (arts. 299 a 485). Sus fases aparecen también en «Procedimientos › Sumario ordinario». Las propuestas son de Claude (No verificable hasta que las confirmes). Contesta: **sí**, **no** u **otra**.
+
+- [ ] **Secreto del sumario: ¿se puede prorrogar?** El art. 302 permite declarar el secreto «por tiempo no superior a un mes» y obliga a alzarlo «con al menos diez días de antelación a la conclusión del sumario». No dice nada de prórrogas (Verificable: no hay más texto en el art. 302).
+  En la app: Procesos › Instrucción del sumario › fase 1.
+  - **Propuesta:** mostrar solo lo que dice el artículo (un mes como máximo, sin hablar de prórrogas). Si en la práctica aplicas prórrogas sucesivas por nuevos autos, dime con qué base y añado una nota como lectura tuya, sin ponerla como texto de la ley.
+  - **Tu respuesta:**
+- [ ] **Artículos con referencias de 1882 que no he llevado al mapa.** El art. 375 habla de la «partida de bautismo»; el art. 380, de procesados «mayor de nueve años y menor de quince»; el art. 345, del «Ministro de Gracia y Justicia», y el art. 346, de multas en pesetas. Siguen en el texto literal de la app (Verificable).
+  En la app: fase 7 (Identidad y circunstancias del procesado), aviso «Duda de interpretación».
+  - **Propuesta:** dejarlos fuera de las fichas y las preguntas, porque chocan con otras normas vigentes. Por ejemplo, el art. 779.1.3.ª manda al Fiscal de Menores a los menores de edad penal. Siguen disponibles en el árbol «Ley».
+  - **Tu respuesta:**
+- [ ] **Ámbito del sumario.** En la cabecera del bloque he puesto «delitos que no van por el procedimiento abreviado (pena de prisión superior a nueve años, art. 757)». Lo deduzco de los arts. 757 y 760; ninguno de los arts. 299 a 485 lo dice expresamente. Tampoco he mencionado el Jurado.
+  - **Propuesta:** mantenerlo como resumen orientativo.
+  - **Tu respuesta:**
+- [ ] **«Audiencia» en los recursos del art. 384.** El artículo dice «recurrir en queja a la Audiencia» y «apelar para ante la misma», sin concretar cuál.
+  En la app: fase 8 (Auto de procesamiento).
+  - **Propuesta:** mantener la palabra «Audiencia» tal cual, sin precisar el órgano.
+  - **Tu respuesta:**
+- [ ] **Fases del bloque.** He sustituido las 10 fases del esqueleto (capítulos del BOE) por 12. He separado el plazo de la instrucción (art. 324) y el auto de procesamiento (art. 384) por su importancia práctica. Dime si prefieres otra división.
+- [ ] **Revisa las 12 fases:** las frases entre « » son literales; las descripciones y los rótulos son resumen mío.
+
+### Procedimiento abreviado (contenido elaborado, pendiente de revisión)
+
+> Bloque desarrollado: 10 fases y 32 plazos, de la Policía Judicial a la ejecución (arts. 757 a 794). Cada plazo, alternativa y pregunta lleva su frase literal, comprobada por el script. Las propuestas son de Claude (No verificable hasta que las confirmes), hechas solo con el texto de la LECrim de la app. Contesta en cada una: **sí**, **no** u **otra**.
+
+- [ ] **Juicio en ausencia: remisiones al art. 786 que ya no cuadran.** Los arts. 775.1, 784.4 y 793.1 remiten al art. 786 (o a su «párrafo segundo del apartado 1») para el juicio en ausencia. En el texto vigente, el art. 786 trata del señalamiento del juicio, y los requisitos del juicio en ausencia están en el art. 787.1, párrafo segundo: pena más grave de hasta dos años de prisión (o seis si es de otra naturaleza, o multa) y suma total de hasta cinco años (Verificable, arts. 786 y 787 en la app).
+  En la app: Procesos › Procedimiento abreviado › fases 3, 6 y 9 (aviso «Duda de interpretación») y fase 8 (alternativa del juicio en ausencia, con el art. 787).
+  - **Propuesta:** leer esas remisiones como hechas al art. 787.1, párrafo segundo. Parecen no haberse actualizado al renumerarse los artículos en la última reforma.
+  - **Tu respuesta:**
+- [ ] **Criterios de señalamiento: el art. 788.1 remite al «785.2».** El art. 785.2 vigente trata de la asistencia a la audiencia preliminar. Los criterios de señalamiento (prisión del acusado, prioridad de otras causas…) están en el art. 786.2 (Verificable).
+  En la app: fase 8 (Juicio oral y sentencia).
+  - **Propuesta:** leerlo como remisión al art. 786.2.
+  - **Tu respuesta:**
+- [ ] **Preguntas del juez a las partes: el art. 789.3 remite al «párrafo segundo del artículo 788.3».** El art. 788.3 vigente trata del perito único. El trámite de someter a debate «una o varias preguntas sobre puntos determinados» está en el art. 788.4, párrafo segundo (Verificable).
+  En la app: fase 8.
+  - **Propuesta:** leerlo como remisión al art. 788.4, párrafo segundo.
+  - **Tu respuesta:**
+- [ ] **«Falta» en el art. 779.1.2.ª (y en el 781.1).** El auto que pone fin a las diligencias previas remite al juez competente «si reputare falta el hecho».
+  En la app: fase 4, alternativa «El hecho es falta (delito leve)».
+  - **Propuesta:** entenderlo como delito leve, según la nota general del BOE que equipara las referencias a las faltas con los delitos leves (el mismo criterio que en Recursos › delitos leves).
+  - **Tu respuesta:**
+- [ ] **Recurso de las víctimas contra el sobreseimiento: ¿20 días para todas?** El art. 779.1.1.ª dice: «Las víctimas podrán recurrir el auto de sobreseimiento dentro del plazo de veinte días aunque no se hubieran mostrado como parte en la causa». Para las partes, la apelación contra autos es de cinco días (art. 766.3).
+  En la app: fase 4, plazo «20 días».
+  - **Propuesta:** el «aunque» incluye a las víctimas personadas y a las no personadas, así que todas tendrían 20 días. Las demás partes (por ejemplo, el Fiscal o una acusación popular) seguirían con los plazos ordinarios. La app solo muestra los 20 días «para las víctimas», sin afirmar nada más.
+  - **Tu respuesta:**
+- [ ] **Fases del bloque.** He sustituido las 7 fases del esqueleto (capítulos del BOE) por 10 fases según el recorrido del proceso. He separado el auto del art. 779, la audiencia preliminar (arts. 785-786), la apelación y la ejecución. Dime si prefieres otra división.
+- [ ] **Revisa las 10 fases:** las frases entre « » son literales; las descripciones y los rótulos de las alternativas son resumen mío.
 
 ## Páginas legales (todas las leyes)
 

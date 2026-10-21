@@ -9,6 +9,8 @@
 - Si una petición admite varias interpretaciones, pregunta; no elijas por él.
 - Si el usuario se equivoca, dile "estás equivocado" y explica por qué. Si te corrige con razón, di "tienes razón" y corrige.
 - No suenes seguro de algo que no lo estás. Cierra cada respuesta con tu nivel de certeza.
+- **Memoria del proyecto en este archivo.** Cada chat empieza sin recordar los anteriores. Cuando en un chat se acuerde algo nuevo (una decisión del usuario, una forma de trabajar, un bloque hecho, dónde está algo), anótalo aquí en el mismo commit, de forma breve y en su sección. Las dudas jurídicas van a `PENDIENTES.md`, no aquí.
+- **Forma de trabajar con GitHub (acordada con el usuario).** Un solo chat cada vez para este proyecto. Al terminar cada tarea, Claude une él mismo los cambios a la rama principal (PR y merge con las herramientas de GitHub), sin que el usuario tenga que entrar en GitHub. Antes de unir, trae la rama principal (`git fetch origin main`) y, si ha cambiado, la integra y regenera lo necesario.
 
 ## Objetivo
 Una app interactiva por cada ley para estudiarla, repasarla y consultarla a diario. La primera es la Ley de Enjuiciamiento Civil (LEC). Después vendrán LECrim, LRJS, Estatuto de los Trabajadores y otras.
@@ -137,6 +139,13 @@ No empieces la siguiente fase sin su visto bueno.
 - **F7** — Portada (`/index.html`) que enlaza a cada ley, preparada para añadir LECrim, LRJS y ET. Hecha: se genera con `python3 scripts/generar_portada.py` a partir de `scripts/leyes.json`. Para añadir una ley: crear su carpeta con su `index.html` y poner su estado a «disponible» en `leyes.json`. Los enlaces apuntan a `carpeta/index.html` para que funcionen también en local.
 - **Segunda parte** — Calculadora de plazos con calendario.
 
+## Pie legal y páginas legales (todas las leyes)
+- Pie igual que el de norlexia.es en la portada y en cada ley: «© 2026 J A Noriega (Norik)» abre la ventana «Propiedad intelectual y condiciones de uso»; enlaces a Aviso legal, Privacidad y Cookies. Está en la plantilla `lec/index.html` y en `scripts/generar_portada.py`.
+- Páginas `aviso-legal.html`, `politica-privacidad.html` y `cookies.html` en la raíz, con estilo en `assets/legal.css`. Adaptadas de las de la web (repositorio privado `janorik/WEB-NORLEXIA`, carpeta `bocetos/`) a esta app: sin formulario, sin fuentes externas, solo almacenamiento local.
+- Decisiones del usuario: el pie en la portada y en cada ley; páginas propias adaptadas, no copia ni enlace a la web; la ventana © lleva los cuatro primeros párrafos de la web (sin el de las demostraciones); **el NIF y el domicilio no se copian aquí** porque este repositorio es público: el aviso legal remite al de norlexia.es. El correo janorlex@gmail.com sí figura.
+- Si la app guarda algo nuevo en el navegador (otra clave de localStorage), hay que añadirlo a `cookies.html`.
+- Dudas en `PENDIENTES.md › Páginas legales`.
+
 ## LECrim
 - Fuente: `fuentes/LECrim_BOE-A-1882-6036.pdf` (Real Decreto de 14 de septiembre de 1882, BOE-A-1882-6036), texto consolidado con última modificación de 09 de abril de 2026. Sin XML: se extrae solo del PDF con `python3 scripts/extraer_lecrim.py`, que lo contrasta con pdftotext y escribe `lecrim/datos/informe_control.md`.
 - App: `lecrim/index.html`, generada con `python3 scripts/insertar_datos.py lecrim`. La app es la misma para todas las leyes: `lec/index.html` es la plantilla y el script la copia con los datos de cada ley. Una mejora de la app se hace en `lec/index.html` y se regeneran todas.
@@ -145,5 +154,8 @@ No empieces la siguiente fase sin su visto bueno.
 - **Esqueleto del mapa (hecho):** `python3 scripts/esqueleto_lecrim.py` genera `lecrim/datos/procedimientos.json` con 14 bloques y 86 fases sacados del índice del BOE (nombre literal y rango de artículos, `"esqueleto": true`, sin plazos ni alternativas). Al desarrollar un bloque se quita su `"esqueleto": true` y el script deja de regenerarlo.
 - **Método acordado con el usuario:** primero el esqueleto completo del mapa; después se desarrolla un bloque cada vez (plazos con frase literal, alternativas, preguntas), con su visto bueno.
 - **Sumario ordinario (solo en «Procedimientos»):** une en una ruta las fases de instrucción, conclusión y juicio oral (`UNIDOS` en `esqueleto_lecrim.py`, marca `solo_procedimientos`). El Mapa sigue la ley por libros y no se toca: decisión del usuario («son dos cosas diferentes»). El bloque unido se regenera siempre desde los tres del Mapa; el contenido se desarrolla en esos tres. Temas comunes enlazados aparte: detención y prisión, medidas de investigación, fianzas.
+- **Procedimiento abreviado (hecho):** primer bloque desarrollado del mapa (arts. 757-794, 10 fases, 32 plazos), elegido por el usuario. Se genera editando `lecrim/datos/procedimientos.json`; ya no lleva `"esqueleto": true`. Dudas en `PENDIENTES.md › LECrim › Procedimiento abreviado`. Pendiente de revisión del usuario.
+- **Instrucción del sumario (hecho):** segundo bloque desarrollado (arts. 299-485, 12 fases, 18 plazos), elegido por el usuario. Sus fases pasan solas a «Procedimientos › Sumario ordinario» al regenerar con `esqueleto_lecrim.py`; el ámbito corto debe seguir siendo «Arts. 299 a 485» porque ese script lo usa. Dudas en `PENDIENTES.md › LECrim › Instrucción del sumario`. Pendiente de revisión del usuario.
+- **Conclusión del sumario (hecho):** tercer bloque desarrollado (arts. 622-648, 5 fases, 10 plazos). Con la instrucción, forma ya 17 de las 24 fases de «Procedimientos › Sumario ordinario»; falta el juicio oral. Ámbito corto «Arts. 622 a 648» (lo usa el script). Dudas en `PENDIENTES.md`. Pendiente de revisión del usuario.
 - **Recursos de la LECrim (hecho):** `lecrim/datos/recursos.json` con el mismo formato que la LEC: 14 recursos, 27 casos del selector agrupados en `grupos_selector` (LAJ, Juez de Instrucción, Tribunales, Sentencias) y test. Pendiente de revisión del usuario; dudas en `PENDIENTES.md › LECrim`.
 - **Leyes relacionadas:** el Tribunal del Jurado se muestra como tarjeta «otra ley» con enlace al BOE (campo `externos` de `procedimientos.json`), no se desarrolla.

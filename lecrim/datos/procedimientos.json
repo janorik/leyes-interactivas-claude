@@ -330,187 +330,1166 @@
    "nombre": "Instrucción del sumario",
    "bloque": "lecrim",
    "grupo": "Libro II · Sumario",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "La instrucción del sumario ordinario: quién instruye, plazo, diligencias de investigación, procesamiento, declaraciones y pericias (arts. 299 a 485).",
    "ambito": {
     "corto": "Arts. 299 a 485",
-    "texto": "TÍTULO IV. De la instrucción · TÍTULO V. De la comprobación del delito y averiguación del delincuente",
+    "texto": "Sumario ordinario: delitos que no van por el procedimiento abreviado (pena de prisión superior a nueve años, art. 757). TÍTULO IV. De la instrucción · TÍTULO V. De la comprobación del delito y averiguación del delincuente",
     "articulos": [
-     "299"
+     "299",
+     "757"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "299",
+      "texto": "Constituyen el sumario las actuaciones encaminadas a preparar el juicio"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "instruccion-299",
-     "fase": "Del sumario y de las autoridades competentes para instruirlo",
-     "subtitulo": "TÍTULO IV · CAPÍTULO I · arts. 299 a 305",
-     "descripcion": "",
+     "id": "ins-sumario",
+     "fase": "El sumario y el juez instructor",
+     "subtitulo": "Qué es · reserva y secreto · quién instruye",
+     "descripcion": "El sumario son las actuaciones para preparar el juicio: averiguar el delito y sus circunstancias, la culpabilidad, y asegurar a las personas y las responsabilidades pecuniarias. Es reservado hasta que se abre el juicio oral, pero las partes personadas pueden conocer las actuaciones e intervenir en las diligencias, salvo que se declare secreto. Lo instruye el Juez de Instrucción del lugar del delito; cabe un instructor especial.",
      "articulos": [
       "299",
+      "301",
+      "302",
+      "303",
+      "304",
       "305"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Duración del secreto del sumario",
+       "plazo": "No más de 1 mes",
+       "articulo": "302",
+       "literal": "por tiempo no superior a un mes"
+      },
+      {
+       "acto": "Alzamiento del secreto antes de la conclusión",
+       "plazo": "Al menos 10 días antes",
+       "articulo": "302",
+       "literal": "El secreto del sumario deberá alzarse necesariamente con al menos diez días de antelación a la conclusión del sumario."
+      },
+      {
+       "acto": "Remisión al tribunal competente si el delito solo puede cometerlo un aforado",
+       "plazo": "No más de 3 días",
+       "articulo": "303",
+       "literal": "que en ningún caso podrá exceder de tres días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay riesgo grave para la vida o la integridad de alguien, o para el resultado de la investigación (delito público)",
+       "entonces": "El Juez puede declarar el sumario secreto, total o parcialmente, por auto.",
+       "articulos": [
+        "302"
+       ],
+       "literal": {
+        "articulo": "302",
+        "texto": "declararlo, mediante auto, total o parcialmente secreto para todas las partes personadas"
+       }
+      },
+      {
+       "si": "Un abogado o procurador revela indebidamente el sumario",
+       "entonces": "Multa de 500 a 10.000 euros.",
+       "articulos": [
+        "301"
+       ],
+       "literal": {
+        "articulo": "301",
+        "texto": "será corregido con multa de 500 a 10.000 euros"
+       }
+      },
+      {
+       "si": "Hay que proteger la intimidad de la víctima",
+       "entonces": "El Juez puede acordar medidas del art. 681.2.",
+       "articulos": [
+        "301 bis",
+        "681"
+       ],
+       "literal": {
+        "articulo": "301 bis",
+        "texto": "cuando resulte necesario para proteger la intimidad de la víctima"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Por cuánto tiempo puede declararse secreto el sumario y cuándo debe alzarse?",
+      "a": "Por tiempo no superior a un mes; debe alzarse al menos diez días antes de la conclusión del sumario.",
+      "articulos": [
+       "302"
+      ],
+      "literal": {
+       "articulo": "302",
+       "texto": "con al menos diez días de antelación a la conclusión del sumario"
+      }
+     },
+     "conexiones": [
       "299",
-      "305"
+      "301",
+      "301 bis",
+      "302",
+      "303",
+      "304",
+      "305",
+      "505",
+      "681"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "inicio"
+     ],
+     "duda": "El art. 302 fija el secreto «por tiempo no superior a un mes», pero no dice si cabe prorrogarlo. Ver PENDIENTES.md."
     },
     {
-     "id": "instruccion-306",
-     "fase": "De la formación del sumario",
-     "subtitulo": "TÍTULO IV · CAPÍTULO II · arts. 306 a 325",
-     "descripcion": "",
+     "id": "ins-formacion",
+     "fase": "Formación del sumario",
+     "subtitulo": "Inicio · diligencias pedidas por las partes · querella",
+     "descripcion": "El Juez de Instrucción forma el sumario bajo la inspección del Fiscal y da parte de su inicio al Fiscal y al Presidente de la Audiencia. Practica las diligencias que propongan el Fiscal o las partes si no son inútiles o perjudiciales. Si la querella no describe un delito o no es competente, la desestima. Si la imputación es de un delito del Jurado, incoa ese procedimiento.",
      "articulos": [
       "306",
-      "325"
+      "307",
+      "308",
+      "309 bis",
+      "311",
+      "312",
+      "313",
+      "314",
+      "320"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Parte al Presidente de la Audiencia sobre la formación del sumario",
+       "plazo": "2 días",
+       "articulo": "308",
+       "literal": "dentro de los dos días siguientes al en que hubieren principiado a instruirle"
+      },
+      {
+       "acto": "El Juez municipal (de paz) remite la causa al de Instrucción",
+       "plazo": "No más de 3 días",
+       "articulo": "307",
+       "literal": "que nunca podrá retener más de tres días"
+      },
+      {
+       "acto": "Resolver la petición de incoar el procedimiento del Jurado",
+       "plazo": "Una audiencia",
+       "articulo": "309 bis",
+       "literal": "debiendo el Juez resolver en plazo de una audiencia"
+      },
+      {
+       "acto": "La Audiencia Provincial resuelve la queja (Jurado)",
+       "plazo": "Antes de 8 días",
+       "articulo": "309 bis",
+       "literal": "resolverá antes de ocho días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El Juez deniega las diligencias pedidas por una parte",
+       "entonces": "Apelación en un solo efecto ante la Audiencia (el Fiscal de otra localidad, queja). Pueden volver a proponerse en el juicio oral.",
+       "articulos": [
+        "311",
+        "314"
+       ],
+       "literal": {
+        "articulo": "311",
+        "texto": "Contra el auto denegatorio de las diligencias pedidas podrá interponerse recurso de apelación, que será admitido en un solo efecto"
+       }
+      },
+      {
+       "si": "Los hechos de la querella no son delito o el Juez no es competente",
+       "entonces": "Desestima la querella; contra el auto, apelación en ambos efectos.",
+       "articulos": [
+        "313"
+       ],
+       "literal": {
+        "articulo": "313",
+        "texto": "procederá el recurso de apelación, que será admisible en ambos efectos"
+       }
+      },
+      {
+       "si": "Resulta la imputación de un delito competencia del Jurado",
+       "entonces": "Incoación del procedimiento de su ley reguladora; si el Juez no lo hace, queja ante la Audiencia Provincial.",
+       "articulos": [
+        "309 bis"
+       ],
+       "literal": {
+        "articulo": "309 bis",
+        "texto": "procederá el Juez a la incoación del procedimiento previsto en su ley reguladora"
+       }
+      },
+      {
+       "si": "Interviene un actor civil",
+       "entonces": "Solo puede procurar las diligencias útiles para su acción, a juicio del Juez.",
+       "articulos": [
+        "320"
+       ],
+       "literal": {
+        "articulo": "320",
+        "texto": "se limitará a procurar la práctica de aquellas diligencias que puedan conducir al mejor éxito de su acción"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si el Juez de Instrucción deniega una diligencia pedida en el sumario, ¿qué recurso cabe y con qué efecto?",
+      "a": "Apelación, admitida en un solo efecto, ante la Audiencia o Tribunal competente.",
+      "articulos": [
+       "311"
+      ],
+      "literal": {
+       "articulo": "311",
+       "texto": "será admitido en un solo efecto para ante la respectiva Audiencia o Tribunal competente"
+      }
+     },
+     "conexiones": [
       "306",
+      "307",
+      "308",
+      "309 bis",
+      "311",
+      "312",
+      "313",
+      "314",
+      "315",
+      "318",
+      "319",
+      "320",
       "325"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "inicio",
+      "recursos"
+     ]
     },
     {
-     "id": "instruccion-326",
-     "fase": "De la inspección ocular",
-     "subtitulo": "TÍTULO V · CAPÍTULO I · arts. 326 a 333",
-     "descripcion": "",
+     "id": "ins-plazo",
+     "fase": "Duración de la instrucción",
+     "subtitulo": "Plazo máximo y prórrogas (art. 324)",
+     "descripcion": "La investigación judicial tiene un plazo máximo de doce meses desde la incoación. Si no va a poder terminarse, el Juez puede acordar prórrogas sucesivas, por auto motivado y oídas las partes. Las diligencias acordadas antes de que venza el plazo valen aunque se reciban después; las acordadas después de vencer sin prórroga, no. Vencido el plazo, el instructor dicta auto de conclusión.",
+     "articulos": [
+      "324"
+     ],
+     "plazos": [
+      {
+       "acto": "Plazo máximo de la investigación",
+       "plazo": "12 meses desde la incoación",
+       "articulo": "324",
+       "literal": "La investigación judicial se desarrollará en un plazo máximo de doce meses desde la incoación de la causa."
+      },
+      {
+       "acto": "Cada prórroga",
+       "plazo": "6 meses o menos",
+       "articulo": "324",
+       "literal": "prórrogas sucesivas por periodos iguales o inferiores a seis meses"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El plazo o la prórroga vence sin auto de prórroga (o el auto se revoca)",
+       "entonces": "No son válidas las diligencias acordadas a partir de esa fecha.",
+       "articulos": [
+        "324"
+       ],
+       "literal": {
+        "articulo": "324",
+        "texto": "no serán válidas las diligencias acordadas a partir de dicha fecha"
+       }
+      },
+      {
+       "si": "Diligencia acordada en plazo pero recibida después",
+       "entonces": "Es válida.",
+       "articulos": [
+        "324"
+       ],
+       "literal": {
+        "articulo": "324",
+        "texto": "serán válidas, aunque se reciban tras la expiración del mismo"
+       }
+      },
+      {
+       "si": "Transcurre el plazo máximo o sus prórrogas",
+       "entonces": "Auto de conclusión del sumario (en el abreviado, la resolución que proceda).",
+       "articulos": [
+        "324",
+        "622"
+       ],
+       "literal": {
+        "articulo": "324",
+        "texto": "el instructor dictará auto de conclusión del sumario"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuál es el plazo máximo de la instrucción y cómo se prorroga?",
+      "a": "Doce meses desde la incoación, con prórrogas sucesivas de seis meses o menos, por auto motivado y oídas las partes.",
+      "articulos": [
+       "324"
+      ],
+      "literal": {
+       "articulo": "324",
+       "texto": "en un plazo máximo de doce meses desde la incoación de la causa"
+      }
+     },
+     "conexiones": [
+      "324",
+      "622",
+      "779"
+     ],
+     "continua_en": [
+      "conclusion",
+      "abreviado"
+     ]
+    },
+    {
+     "id": "ins-inspeccion",
+     "fase": "Inspección ocular",
+     "subtitulo": "Vestigios y lugar del delito",
+     "descripcion": "Si el delito dejó vestigios, el Juez los recoge y conserva para el juicio y describe el lugar, los objetos y todo lo útil para la acusación o la defensa, con planos o retratos si conviene. Las muestras biológicas se recogen y custodian garantizando su autenticidad. Todo se extiende por escrito en el acto.",
      "articulos": [
       "326",
+      "327",
+      "328",
+      "329",
+      "330",
+      "331",
+      "332",
       "333"
      ],
-     "rango": [
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "No quedan huellas del delito",
+       "entonces": "El Juez averigua por qué desaparecieron y recoge las pruebas que pueda.",
+       "articulos": [
+        "330"
+       ],
+       "literal": {
+        "articulo": "330",
+        "texto": "Cuando no hayan quedado huellas o vestigios del delito"
+       }
+      },
+      {
+       "si": "El delito no deja huellas por su naturaleza",
+       "entonces": "Se acredita por testigos y demás medios de comprobación.",
+       "articulos": [
+        "331"
+       ],
+       "literal": {
+        "articulo": "331",
+        "texto": "Cuando el delito fuere de los que no dejan huellas de su perpetración"
+       }
+      },
+      {
+       "si": "Hay un procesado como presunto autor",
+       "entonces": "Puede presenciar la diligencia, solo o con defensor, si lo pide; su falta no la suspende.",
+       "articulos": [
+        "333"
+       ],
+       "literal": {
+        "articulo": "333",
+        "texto": "no se suspenderá por la falta de comparecencia del procesado o de su defensor"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el procesado presenciar la inspección ocular?",
+      "a": "Sí, si lo solicita, solo o asistido de su defensor, y ambos pueden hacer observaciones.",
+      "articulos": [
+       "333"
+      ],
+      "literal": {
+       "articulo": "333",
+       "texto": "podrá presenciarlas, ya sola, ya asistida del defensor que eligiese o le fuese nombrado de oficio, si así lo solicitara"
+      }
+     },
+     "conexiones": [
+      "282",
       "326",
+      "327",
+      "328",
+      "329",
+      "330",
+      "331",
+      "332",
       "333"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
-     "id": "instruccion-334",
-     "fase": "Del cuerpo del delito",
-     "subtitulo": "TÍTULO V · CAPÍTULO II · arts. 334 a 367",
-     "descripcion": "",
+     "id": "ins-cuerpo",
+     "fase": "Cuerpo del delito",
+     "subtitulo": "Efectos, autopsia, análisis y ADN",
+     "descripcion": "El Juez manda recoger desde el primer momento armas, instrumentos y efectos relacionados con el delito, y describe la persona o cosa objeto del delito, con reconocimiento pericial cuando convenga. En caso de muerte violenta o sospechosa, identificación del cadáver y autopsia. Puede ordenar análisis químicos y, por resolución motivada, la toma de muestras biológicas del sospechoso para su perfil de ADN. Estas diligencias tienen preferencia.",
      "articulos": [
       "334",
+      "335",
+      "336",
+      "340",
+      "341",
+      "343",
+      "363",
+      "365",
+      "366",
       "367"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Exposición al público del cadáver no reconocido, antes de la autopsia",
+       "plazo": "Al menos 24 horas",
+       "articulo": "341",
+       "literal": "por tiempo a lo menos de veinticuatro horas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se incautan bienes a una persona",
+       "entonces": "Puede recurrir la medida en cualquier momento ante el Juez de Instrucción.",
+       "articulos": [
+        "334"
+       ],
+       "literal": {
+        "articulo": "334",
+        "texto": "La persona afectada por la incautación podrá recurrir en cualquier momento la medida ante el Juez de Instrucción."
+       }
+      },
+      {
+       "si": "Los efectos pertenecen a la víctima",
+       "entonces": "Se le restituyen de inmediato, salvo que deban conservarse como prueba.",
+       "articulos": [
+        "334"
+       ],
+       "literal": {
+        "articulo": "334",
+        "texto": "Los efectos que pertenecieran a la víctima del delito serán restituidos inmediatamente a la misma"
+       }
+      },
+      {
+       "si": "Muerte violenta o sospechosa de criminalidad",
+       "entonces": "Autopsia, aunque la causa de la muerte parezca clara.",
+       "articulos": [
+        "340",
+        "343"
+       ],
+       "literal": {
+        "articulo": "343",
+        "texto": "se procederá a la autopsia del cadáver"
+       }
+      },
+      {
+       "si": "Hace falta el perfil de ADN del sospechoso",
+       "entonces": "Resolución motivada del Juez de Instrucción, con proporcionalidad.",
+       "articulos": [
+        "363"
+       ],
+       "literal": {
+        "articulo": "363",
+        "texto": "podrá acordar, en resolución motivada, la obtención de muestras biológicas del sospechoso"
+       }
+      },
+      {
+       "si": "Un tercero reclama los efectos durante el sumario",
+       "entonces": "No se admiten reclamaciones ni tercerías.",
+       "articulos": [
+        "367"
+       ],
+       "literal": {
+        "articulo": "367",
+        "texto": "En ningún caso admitirá el Juez durante el sumario reclamaciones ni tercerías"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Admite el Juez, durante el sumario, tercerías para la devolución de los efectos del cuerpo del delito?",
+      "a": "No, en ningún caso, cualquiera que sea la clase de efectos y quien los reclame.",
+      "articulos": [
+       "367"
+      ],
+      "literal": {
+       "articulo": "367",
+       "texto": "En ningún caso admitirá el Juez durante el sumario reclamaciones ni tercerías que tengan por objeto la devolución de los efectos que constituyen el cuerpo del delito"
+      }
+     },
+     "conexiones": [
       "334",
+      "335",
+      "336",
+      "338",
+      "340",
+      "341",
+      "343",
+      "353",
+      "363",
+      "364",
+      "365",
+      "366",
       "367"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "investigacion"
+     ]
     },
     {
-     "id": "instruccion-367_bis",
-     "fase": "De la destrucción y la realización anticipada de los efectos judiciales",
-     "subtitulo": "TÍTULO V · CAPÍTULO II BIS · arts. 367 bis a 367 septies",
-     "descripcion": "",
+     "id": "ins-efectos",
+     "fase": "Destrucción y realización anticipada de efectos",
+     "subtitulo": "Efectos judiciales (arts. 367 bis a 367 septies)",
+     "descripcion": "Son efectos judiciales los bienes puestos a disposición judicial, embargados, incautados o aprehendidos. Pueden destruirse dejando muestras, realizarse antes de la sentencia (si son de lícito comercio y no son piezas de convicción) o cederse en uso provisional. La Oficina de Recuperación y Gestión de Activos puede encargarse de su gestión.",
      "articulos": [
       "367 bis",
+      "367 ter",
+      "367 quáter",
+      "367 quinquies",
+      "367 sexies",
       "367 septies"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Drogas: destrucción si el juez no ordena conservarlas",
+       "plazo": "1 mes desde los análisis",
+       "articulo": "367 ter",
+       "literal": "trascurrido el plazo de un mes desde que se efectuó aquella"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Su naturaleza o su custodia es peligrosa",
+       "entonces": "Destrucción, dejando muestras suficientes y previa audiencia del Fiscal y del propietario.",
+       "articulos": [
+        "367 ter"
+       ],
+       "literal": {
+        "articulo": "367 ter",
+        "texto": "Podrá decretarse la destrucción de los efectos judiciales, dejando muestras suficientes"
+       }
+      },
+      {
+       "si": "Son perecederos, abandonados, costosos de conservar o se deprecian",
+       "entonces": "Realización anticipada sin esperar a la sentencia.",
+       "articulos": [
+        "367 quáter"
+       ],
+       "literal": {
+        "articulo": "367 quáter",
+        "texto": "Podrán realizarse los efectos judiciales de lícito comercio, sin esperar al pronunciamiento o firmeza del fallo"
+       }
+      },
+      {
+       "si": "Está pendiente el recurso del interesado contra el embargo o decomiso",
+       "entonces": "No se acuerda la realización.",
+       "articulos": [
+        "367 quáter"
+       ],
+       "literal": {
+        "articulo": "367 quáter",
+        "texto": "Esté pendiente de resolución el recurso interpuesto por el interesado contra el embargo o decomiso de los bienes o efectos."
+       }
+      },
+      {
+       "si": "Los efectos sirven a un servicio público",
+       "entonces": "Utilización provisional de los bienes decomisados cautelarmente.",
+       "articulos": [
+        "367 sexies"
+       ],
+       "literal": {
+        "articulo": "367 sexies",
+        "texto": "Podrá autorizarse la utilización provisional de los bienes o efectos decomisados cautelarmente"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿En qué puede consistir la realización de los efectos judiciales?",
+      "a": "En la entrega a entidades sin ánimo de lucro o Administraciones públicas, la realización por persona o entidad especializada, o la subasta pública.",
+      "articulos": [
+       "367 quinquies"
+      ],
+      "literal": {
+       "articulo": "367 quinquies",
+       "texto": "La realización de los efectos judiciales podrá consistir en:"
+      }
+     },
+     "conexiones": [
       "367 bis",
+      "367 ter",
+      "367 quáter",
+      "367 quinquies",
+      "367 sexies",
       "367 septies"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "fianzas"
+     ]
     },
     {
-     "id": "instruccion-368",
-     "fase": "De la identidad del delincuente y de sus circunstancias personales",
-     "subtitulo": "TÍTULO V · CAPÍTULO III · arts. 368 a 384 bis",
-     "descripcion": "",
+     "id": "ins-identidad",
+     "fase": "Identidad y circunstancias del procesado",
+     "subtitulo": "Rueda de reconocimiento · antecedentes · salud mental",
+     "descripcion": "Quien acusa a una persona debe reconocerla judicialmente si hay duda sobre su identidad, en rueda con personas de aspecto semejante. Se hacen constar las señas del procesado, se acredita su edad y se traen sus antecedentes penales. Si hay indicios de enajenación mental, observación por los médicos forenses.",
      "articulos": [
       "368",
-      "384 bis"
+      "369",
+      "370",
+      "373",
+      "374",
+      "379",
+      "381",
+      "383"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "El Registro Central de Penados envía los antecedentes",
+       "plazo": "3 días (improrrogable)",
+       "articulo": "379",
+       "literal": "en el improrrogable término de tres días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Varias personas deben reconocer a la misma",
+       "entonces": "Reconocimiento por separado, sin que se comuniquen entre sí.",
+       "articulos": [
+        "370"
+       ],
+       "literal": {
+        "articulo": "370",
+        "texto": "deberá practicarse separadamente con cada uno de ellos"
+       }
+      },
+      {
+       "si": "Indicios de enajenación mental del procesado",
+       "entonces": "Observación inmediata por los médicos forenses.",
+       "articulos": [
+        "381"
+       ],
+       "literal": {
+        "articulo": "381",
+        "texto": "le someterá inmediatamente a la observación de los Médicos forenses"
+       }
+      },
+      {
+       "si": "La demencia sobreviene después del delito",
+       "entonces": "Concluso el sumario, se archiva la causa hasta que el procesado recobre la salud.",
+       "articulos": [
+        "383"
+       ],
+       "literal": {
+        "articulo": "383",
+        "texto": "se mandará archivar la causa por el Tribunal competente hasta que el procesado recobre la salud"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo se practica la rueda de reconocimiento?",
+      "a": "Poniendo a la persona junto con otras de circunstancias exteriores semejantes, y quien reconoce dice si está en la rueda y la designa.",
+      "articulos": [
+       "369"
+      ],
+      "literal": {
+       "articulo": "369",
+       "texto": "haciéndola comparecer en unión con otras de circunstancias exteriores semejantes"
+      }
+     },
+     "conexiones": [
       "368",
+      "369",
+      "370",
+      "373",
+      "374",
+      "375",
+      "376",
+      "379",
+      "381",
+      "382",
+      "383"
+     ],
+     "continua_en": [],
+     "duda": "Los arts. 375, 376 y 380 conservan referencias de 1882 (partida de bautismo, procesados de nueve a quince años). No las he incluido en la ficha. Ver PENDIENTES.md."
+    },
+    {
+     "id": "ins-procesamiento",
+     "fase": "Auto de procesamiento",
+     "subtitulo": "Indicio racional de criminalidad · recursos",
+     "descripcion": "En cuanto resulta del sumario un indicio racional de criminalidad contra una persona, el Juez dicta auto declarándola procesada. Desde entonces puede valerse de letrado para pedir la pronta terminación del sumario, solicitar diligencias y formular pretensiones sobre su situación. El régimen de recursos es distinto si el auto acuerda o deniega el procesamiento.",
+     "articulos": [
+      "384",
       "384 bis"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Reforma contra el auto de procesamiento",
+       "plazo": "3 días",
+       "articulo": "384",
+       "literal": "recurso de reforma dentro de los tres días siguientes al de haberle sido notificada la resolución"
+      },
+      {
+       "acto": "Apelación contra el auto que deniega esa reforma",
+       "plazo": "5 días",
+       "articulo": "384",
+       "literal": "dentro de los cinco días siguientes al de la notificación del auto denegatorio a la representación recurrente"
+      },
+      {
+       "acto": "Reforma contra el auto que deniega el procesamiento (solo quien lo pidió)",
+       "plazo": "3 días",
+       "articulo": "384",
+       "literal": "el recurso de reforma, utilizándolo dentro de los tres días siguientes al de la notificación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se acuerda el procesamiento",
+       "entonces": "Reforma en 3 días y apelación en un efecto (también subsidiaria con la reforma).",
+       "articulos": [
+        "384"
+       ],
+       "literal": {
+        "articulo": "384",
+        "texto": "También podrá ser interpuesto el recurso de apelación en un efecto subsidiariamente con el de reforma"
+       }
+      },
+      {
+       "si": "Se deniega el procesamiento y también la reforma",
+       "entonces": "No cabe apelación ni otro recurso, pero puede reproducirse la petición ante la Audiencia en el traslado del art. 627.",
+       "articulos": [
+        "384",
+        "627",
+        "630"
+       ],
+       "literal": {
+        "articulo": "384",
+        "texto": "no se podrá utilizar recurso de apelación ni ningún otro recurso"
+       }
+      },
+      {
+       "si": "El Juez no accede a la pronta terminación del sumario pedida por el procesado",
+       "entonces": "Queja ante la Audiencia (para diligencias o pretensiones, apelación en un solo efecto).",
+       "articulos": [
+        "384"
+       ],
+       "literal": {
+        "articulo": "384",
+        "texto": "En el primer caso podrán recurrir en queja a la Audiencia"
+       }
+      },
+      {
+       "si": "Procesado con cargo público, en prisión, por delito de bandas armadas o terrorismo",
+       "entonces": "Suspensión automática en el cargo mientras dure la prisión.",
+       "articulos": [
+        "384 bis"
+       ],
+       "literal": {
+        "articulo": "384 bis",
+        "texto": "quedará automáticamente suspendido en el ejercicio del mismo mientras dure la situación de prisión"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo se dicta el auto de procesamiento?",
+      "a": "Desde que resulta del sumario algún indicio racional de criminalidad contra una persona determinada.",
+      "articulos": [
+       "384"
+      ],
+      "literal": {
+       "articulo": "384",
+       "texto": "Desde que resultare del sumario algún indicio racional de criminalidad contra determinada persona, se dictará auto declarándola procesada"
+      }
+     },
+     "conexiones": [
+      "384",
+      "384 bis",
+      "627",
+      "630"
+     ],
+     "continua_en": [
+      "recursos",
+      "cautelares",
+      "conclusion"
+     ]
     },
     {
-     "id": "instruccion-385",
-     "fase": "De las declaraciones de los procesados",
-     "subtitulo": "TÍTULO V · CAPÍTULO IV · arts. 385 a 409 bis",
-     "descripcion": "",
+     "id": "ins-declaracion",
+     "fase": "Declaraciones del procesado",
+     "subtitulo": "Primera declaración y sucesivas",
+     "descripcion": "El Juez toma al procesado cuantas declaraciones considere convenientes. Las preguntas han de ser directas, sin coacción ni amenaza; el procesado puede manifestar cuanto convenga a su defensa y declarar cuantas veces quiera. La confesión no exime de comprobar el delito. La persona jurídica declara por su representante especialmente designado.",
      "articulos": [
       "385",
+      "386",
+      "389",
+      "392",
+      "396",
+      "400",
+      "405",
+      "406",
       "409 bis"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Primera declaración del procesado detenido",
+       "plazo": "24 horas",
+       "articulo": "386",
+       "literal": "Si el procesado estuviere detenido, se le recibirá la primera declaración dentro del término de veinticuatro horas."
+      },
+      {
+       "acto": "Prórroga si media causa grave",
+       "plazo": "48 horas más",
+       "articulo": "386",
+       "literal": "Este plazo podrá prorrogarse por otras cuarenta y ocho, si mediare causa grave"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El procesado rehúsa contestar o finge una enfermedad",
+       "entonces": "Se le advierte de que la instrucción continúa.",
+       "articulos": [
+        "392"
+       ],
+       "literal": {
+        "articulo": "392",
+        "texto": "se continuará la instrucción del proceso"
+       }
+      },
+      {
+       "si": "El procesado confiesa",
+       "entonces": "El Juez debe seguir practicando las diligencias para comprobar la confesión y el delito.",
+       "articulos": [
+        "406"
+       ],
+       "literal": {
+        "articulo": "406",
+        "texto": "La confesión del procesado no dispensará al Juez de instrucción de practicar todas las diligencias necesarias"
+       }
+      },
+      {
+       "si": "Se contradice o se retracta",
+       "entonces": "Se le interroga sobre el motivo de la contradicción o la retractación.",
+       "articulos": [
+        "405"
+       ],
+       "literal": {
+        "articulo": "405",
+        "texto": "deberá ser interrogado sobre el móvil de sus contradicciones y sobre las causas de su retractación"
+       }
+      },
+      {
+       "si": "No comparece el representante de la persona jurídica investigada",
+       "entonces": "Se tiene por celebrado el acto y por ejercido el derecho a no declarar.",
+       "articulos": [
+        "409 bis"
+       ],
+       "literal": {
+        "articulo": "409 bis",
+        "texto": "se tenga por celebrado este acto, entendiéndose que se acoge a su derecho a no declarar"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo deben ser las preguntas al procesado?",
+      "a": "Directas, nunca capciosas ni sugestivas, y sin coacción ni amenaza.",
+      "articulos": [
+       "389"
+      ],
+      "literal": {
+       "articulo": "389",
+       "texto": "Las preguntas serán directas, sin que por ningún concepto puedan hacérsele de un modo capcioso o sugestivo."
+      }
+     },
+     "conexiones": [
       "385",
-      "409 bis"
+      "386",
+      "388",
+      "389",
+      "390",
+      "391",
+      "392",
+      "393",
+      "396",
+      "397",
+      "400",
+      "405",
+      "406",
+      "407",
+      "409 bis",
+      "506"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "cautelares"
+     ]
     },
     {
-     "id": "instruccion-410",
-     "fase": "De las declaraciones de los testigos",
-     "subtitulo": "TÍTULO V · CAPÍTULO V · arts. 410 a 450",
-     "descripcion": "",
+     "id": "ins-testigos",
+     "fase": "Declaraciones de los testigos",
+     "subtitulo": "Deber de declarar · dispensas · declaración anticipada",
+     "descripcion": "Quien reside en España y no está impedido debe acudir al llamamiento y declarar. Hay exentos de comparecer (que declaran por escrito o en su despacho) y dispensados de declarar, como los parientes próximos del procesado y su abogado. Los testigos declaran por separado, en secreto, bajo juramento o promesa, y la declaración se graba. Si un testigo no podrá ir al juicio, su declaración se practica de inmediato con contradicción.",
      "articulos": [
       "410",
-      "450"
+      "412",
+      "416",
+      "417",
+      "418",
+      "420",
+      "433",
+      "435",
+      "446",
+      "448",
+      "449",
+      "449 bis",
+      "449 ter"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "El procesado nombra abogado para la declaración anticipada del testigo",
+       "plazo": "24 horas",
+       "articulo": "448",
+       "literal": "que nombre abogado en el término de veinticuatro horas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El testigo es pariente próximo del procesado",
+       "entonces": "Está dispensado de declarar en su contra; el Juez se lo advierte.",
+       "articulos": [
+        "416"
+       ],
+       "literal": {
+        "articulo": "416",
+        "texto": "no tiene obligación de declarar en contra del procesado"
+       }
+      },
+      {
+       "si": "No acude al primer llamamiento sin estar impedido, o se niega a declarar",
+       "entonces": "Multa de 200 a 5.000 euros; si persiste, conducción y persecución penal.",
+       "articulos": [
+        "420"
+       ],
+       "literal": {
+        "articulo": "420",
+        "texto": "incurrirá en la multa de 200 a 5.000 euros"
+       }
+      },
+      {
+       "si": "Es de temer que el testigo no podrá ir al juicio oral (ausencia, muerte, incapacidad)",
+       "entonces": "Declaración inmediata con posibilidad de contradicción.",
+       "articulos": [
+        "448"
+       ],
+       "literal": {
+        "articulo": "448",
+        "texto": "el Juez instructor mandará practicar inmediatamente la declaración, asegurando en todo caso la posibilidad de contradicción de las partes"
+       }
+      },
+      {
+       "si": "Peligro inminente de muerte del testigo",
+       "entonces": "Declaración urgente, aunque el procesado no pueda estar asistido de letrado.",
+       "articulos": [
+        "449"
+       ],
+       "literal": {
+        "articulo": "449",
+        "texto": "aunque el procesado no pudiese ser asistido de Letrado"
+       }
+      },
+      {
+       "si": "Testigo menor de catorce años o con discapacidad necesitada de especial protección, en los delitos del art. 449 ter",
+       "entonces": "Prueba preconstituida obligatoria, grabada y con contradicción.",
+       "articulos": [
+        "449 ter",
+        "449 bis"
+       ],
+       "literal": {
+        "articulo": "449 ter",
+        "texto": "la autoridad judicial acordará, en todo caso, practicar la audiencia del menor como prueba preconstituida"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede acogerse a la dispensa del art. 416 el pariente que está o ha estado personado como acusación particular?",
+      "a": "No: la dispensa no se aplica a quien esté o haya estado personado como acusación particular.",
+      "articulos": [
+       "416"
+      ],
+      "literal": {
+       "articulo": "416",
+       "texto": "Cuando el testigo esté o haya estado personado en el procedimiento como acusación particular."
+      }
+     },
+     "conexiones": [
       "410",
-      "450"
+      "411",
+      "412",
+      "416",
+      "417",
+      "418",
+      "419",
+      "420",
+      "421",
+      "433",
+      "435",
+      "436",
+      "439",
+      "440",
+      "446",
+      "448",
+      "449",
+      "449 bis",
+      "449 ter",
+      "730"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
-     "id": "instruccion-451",
-     "fase": "Del careo de los testigos y procesados",
-     "subtitulo": "TÍTULO V · CAPÍTULO VI · arts. 451 a 455",
-     "descripcion": "",
+     "id": "ins-careo",
+     "fase": "Careo",
+     "subtitulo": "Entre testigos o procesados discordes",
+     "descripcion": "Cuando testigos o procesados discrepan sobre un hecho importante, el Juez puede carearlos, por regla general de dos en dos: se leen sus declaraciones, se les pregunta si se ratifican y se les invita a ponerse de acuerdo. Es un medio subsidiario.",
      "articulos": [
       "451",
-      "455"
-     ],
-     "rango": [
-      "451",
+      "452",
       "455"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Hay otro modo de comprobar el delito o la culpabilidad",
+       "entonces": "No se practica el careo.",
+       "articulos": [
+        "455"
+       ],
+       "literal": {
+        "articulo": "455",
+        "texto": "No se practicarán careos sino cuando no fuere conocido otro modo de comprobar la existencia del delito o la culpabilidad de alguno de los procesados."
+       }
+      },
+      {
+       "si": "Uno de los testigos es menor de edad",
+       "entonces": "No se carea, salvo que el Juez lo considere imprescindible y no lesivo, previo informe pericial.",
+       "articulos": [
+        "455"
+       ],
+       "literal": {
+        "articulo": "455",
+        "texto": "No se practicarán careos con testigos que sean menores de edad"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo procede el careo en el sumario?",
+      "a": "Solo cuando no se conoce otro modo de comprobar la existencia del delito o la culpabilidad de algún procesado.",
+      "articulos": [
+       "455"
+      ],
+      "literal": {
+       "articulo": "455",
+       "texto": "No se practicarán careos sino cuando no fuere conocido otro modo de comprobar la existencia del delito"
+      }
+     },
+     "conexiones": [
+      "451",
+      "452",
+      "453",
+      "454",
+      "455"
+     ],
+     "continua_en": []
     },
     {
-     "id": "instruccion-456",
-     "fase": "Del informe pericial",
-     "subtitulo": "TÍTULO V · CAPÍTULO VII · arts. 456 a 485",
-     "descripcion": "",
+     "id": "ins-pericial",
+     "fase": "Informe pericial",
+     "subtitulo": "Nombramiento · recusación · peritos de parte",
+     "descripcion": "El Juez acuerda el informe pericial cuando hacen falta conocimientos científicos o artísticos, preferentemente con peritos titulares y, como regla, con dos peritos. El nombramiento se notifica a las partes. Si la pericia puede repetirse en el juicio oral, no cabe recusación; si no puede repetirse, cabe recusar y las partes pueden nombrar su propio perito.",
      "articulos": [
       "456",
-      "485"
-     ],
-     "rango": [
-      "456",
-      "485"
+      "458",
+      "459",
+      "466",
+      "467",
+      "468",
+      "469",
+      "471",
+      "478",
+      "484"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "La pericia podrá repetirse en el juicio oral",
+       "entonces": "Los peritos no pueden ser recusados.",
+       "articulos": [
+        "467"
+       ],
+       "literal": {
+        "articulo": "467",
+        "texto": "los peritos nombrados no podrán ser recusados por las partes"
+       }
+      },
+      {
+       "si": "La pericia no podrá repetirse en el juicio oral",
+       "entonces": "Cabe recusación, por escrito antes de empezar la diligencia, y querellante y procesado pueden nombrar un perito a su costa.",
+       "articulos": [
+        "467",
+        "469",
+        "471"
+       ],
+       "literal": {
+        "articulo": "469",
+        "texto": "deberá hacerlo por escrito antes de empezar la diligencia pericial"
+       }
+      },
+      {
+       "si": "Solo hay un perito en el lugar y no se puede esperar a otro",
+       "entonces": "Excepción a la regla de dos peritos.",
+       "articulos": [
+        "459"
+       ],
+       "literal": {
+        "articulo": "459",
+        "texto": "Se exceptúa el caso en que no hubiese más de uno en el lugar"
+       }
+      },
+      {
+       "si": "Los peritos discrepan y son número par",
+       "entonces": "El Juez nombra otro.",
+       "articulos": [
+        "484"
+       ],
+       "literal": {
+        "articulo": "484",
+        "texto": "Si los peritos estuviesen discordes y su número fuere par, nombrará otro el Juez."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo pueden las partes recusar a los peritos en el sumario?",
+      "a": "Cuando el reconocimiento y el informe no puedan reproducirse en el juicio oral.",
+      "articulos": [
+       "467"
+      ],
+      "literal": {
+       "articulo": "467",
+       "texto": "Si no pudiere reproducirse en el juicio oral, habrá lugar a la recusación."
+      }
+     },
+     "conexiones": [
+      "456",
+      "457",
+      "458",
+      "459",
+      "462",
+      "463",
+      "464",
+      "466",
+      "467",
+      "468",
+      "469",
+      "470",
+      "471",
+      "474",
+      "478",
+      "479",
+      "483",
+      "484"
+     ],
+     "continua_en": [
+      "abreviado"
+     ]
     }
    ]
   },
@@ -881,68 +1860,480 @@
    "nombre": "Conclusión del sumario y sobreseimiento",
    "bloque": "lecrim",
    "grupo": "Libro II · Sumario",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Fase intermedia del sumario ordinario: conclusión del sumario, revisión por la Audiencia y decisión entre juicio oral y sobreseimiento (arts. 622 a 648).",
    "ambito": {
     "corto": "Arts. 622 a 648",
     "texto": "TÍTULO XI. De la conclusión del sumario y del sobreseimiento · TÍTULO XII. Disposiciones generales referentes a los anteriores títulos",
     "articulos": [
      "622"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "622",
+      "texto": "si éste considerase terminado el sumario, lo declarará así"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "conclusion-622",
-     "fase": "De la conclusión del sumario",
-     "subtitulo": "TÍTULO XI · CAPÍTULO I · arts. 622 a 633",
-     "descripcion": "",
+     "id": "con-auto",
+     "fase": "Auto de conclusión del sumario",
+     "subtitulo": "Remisión al Tribunal y emplazamiento",
+     "descripcion": "Practicadas las diligencias, si el Juez de Instrucción considera terminado el sumario, lo declara concluso por auto y remite los autos y las piezas de convicción al Tribunal competente. El Fiscal puede pedir la remisión si, sin acusador privado, ya hay elementos para calificar. El auto se notifica y se emplaza a las partes ante la Audiencia.",
      "articulos": [
       "622",
-      "633"
+      "623",
+      "624",
+      "625"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Emplazamiento para comparecer ante la Audiencia",
+       "plazo": "10 días (15 ante el Supremo)",
+       "articulo": "623",
+       "literal": "emplazándoles para que comparezcan ante la respectiva Audiencia en el término de diez días, o en el de quince si el emplazamiento fuese ante el Supremo"
+      },
+      {
+       "acto": "Comparecer ante el juez de delitos leves, si el hecho es falta",
+       "plazo": "5 días",
+       "articulo": "625",
+       "literal": "se emplazará a las partes para que en el término de cinco días comparezcan ante el Juez municipal a quien corresponda su conocimiento"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay apelaciones en un solo efecto pendientes",
+       "entonces": "No impiden concluir el sumario; la Audiencia deja en suspenso los arts. 627 y siguientes hasta resolverlas.",
+       "articulos": [
+        "622"
+       ],
+       "literal": {
+        "articulo": "622",
+        "texto": "La sustanciación de los recursos de apelación admitidos sólo en un efecto no impedirá nunca la terminación del sumario"
+       }
+      },
+      {
+       "si": "Se estima alguna de esas apelaciones",
+       "entonces": "Se revoca el auto de conclusión y se devuelve el sumario al Juez para las diligencias que procedan.",
+       "articulos": [
+        "622"
+       ],
+       "literal": {
+        "articulo": "622",
+        "texto": "se revocará sin más trámite el auto del Juez declarando concluso el sumario"
+       }
+      },
+      {
+       "si": "El Juez considera que el hecho es falta (delito leve)",
+       "entonces": "Remite el proceso al juez competente, consultando el auto con el Tribunal superior; después, juicio del Libro VI.",
+       "articulos": [
+        "624",
+        "625"
+       ],
+       "literal": {
+        "articulo": "624",
+        "texto": "Si el Juez instructor reputare falta el hecho que hubiese dado lugar al sumario"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Concluido el sumario, ¿en qué plazo deben comparecer las partes ante la Audiencia?",
+      "a": "En diez días (quince si el emplazamiento es ante el Supremo).",
+      "articulos": [
+       "623"
+      ],
+      "literal": {
+       "articulo": "623",
+       "texto": "en el término de diez días, o en el de quince si el emplazamiento fuese ante el Supremo"
+      }
+     },
+     "conexiones": [
+      "227",
       "622",
-      "633"
+      "623",
+      "624",
+      "625",
+      "627"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "instruccion",
+      "leves"
+     ],
+     "duda": "Los arts. 624 y 625 hablan de «falta» y de «Juez municipal», y prevén consultar el auto y un recurso de casación. Ver PENDIENTES.md."
     },
     {
-     "id": "conclusion-634",
-     "fase": "Del sobreseimiento",
-     "subtitulo": "TÍTULO XI · CAPÍTULO II · arts. 634 a 645",
-     "descripcion": "",
+     "id": "con-traslado",
+     "fase": "Instrucción de las partes y revisión por la Audiencia",
+     "subtitulo": "Traslado de la causa · confirmación o revocación",
+     "descripcion": "En la Audiencia se designa ponente, que abre los pliegos cerrados remitidos por el Juez. Vencido el emplazamiento, la causa pasa sucesivamente al Fiscal, al querellante y a la defensa. Cada uno se conforma con el auto de conclusión (y pide apertura del juicio oral o sobreseimiento) o pide nuevas diligencias. Después, el Tribunal confirma o revoca la conclusión.",
      "articulos": [
+      "626",
+      "627",
+      "628",
+      "629",
+      "630",
+      "631"
+     ],
+     "plazos": [
+      {
+       "acto": "Traslado sucesivo a Fiscal, querellante y defensa",
+       "plazo": "Entre 3 y 10 días, según el volumen",
+       "articulo": "627",
+       "literal": "que no bajará de tres días ni excederá de diez, según el volumen del proceso"
+      },
+      {
+       "acto": "Prórroga si la causa excede de mil folios",
+       "plazo": "Como máximo, otro tanto",
+       "articulo": "627",
+       "literal": "sin que en ningún caso pueda exceder la prórroga de otro tanto más"
+      },
+      {
+       "acto": "Examen por el ponente",
+       "plazo": "3 días",
+       "articulo": "628",
+       "literal": "la pasará inmediatamente al ponente, con los escritos presentados, por término de tres días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La parte está conforme con el auto de conclusión",
+       "entonces": "En el mismo escrito pide la apertura del juicio oral o el sobreseimiento.",
+       "articulos": [
+        "627"
+       ],
+       "literal": {
+        "articulo": "627",
+        "texto": "se solicitará por el Ministerio Fiscal, cuando intervenga, por el Procurador del querellante, si lo hubiere, y por la defensa del procesado o procesados, lo que estimen conveniente a su derecho"
+       }
+      },
+      {
+       "si": "La parte no está conforme",
+       "entonces": "Pide la práctica de nuevas diligencias.",
+       "articulos": [
+        "627"
+       ],
+       "literal": {
+        "articulo": "627",
+        "texto": "o pidiendo la práctica de nuevas diligencias"
+       }
+      },
+      {
+       "si": "El Tribunal revoca el auto de conclusión",
+       "entonces": "Devuelve el proceso al Juez, indicando las diligencias que deben practicarse.",
+       "articulos": [
+        "631"
+       ],
+       "literal": {
+        "articulo": "631",
+        "texto": "se mandará devolver el proceso al Juez que lo hubiere remitido, expresando las diligencias que hayan de practicarse"
+       }
+      },
+      {
+       "si": "Se denegó el procesamiento en la instrucción",
+       "entonces": "La parte puede reproducir aquí la petición, al evacuar este traslado.",
+       "articulos": [
+        "384",
+        "627",
+        "630"
+       ],
+       "literal": {
+        "articulo": "384",
+        "texto": "evacue el traslado a que se refiere el artículo 627 de esta misma Ley"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En la conclusión del sumario, ¿cuánto dura el traslado de la causa a cada parte?",
+      "a": "Entre tres y diez días según el volumen del proceso; si excede de mil folios, prorrogable como máximo por otro tanto.",
+      "articulos": [
+       "627"
+      ],
+      "literal": {
+       "articulo": "627",
+       "texto": "que no bajará de tres días ni excederá de diez"
+      }
+     },
+     "conexiones": [
+      "384",
+      "626",
+      "627",
+      "628",
+      "629",
+      "630",
+      "631"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "con-decision",
+     "fase": "Apertura del juicio oral o sobreseimiento",
+     "subtitulo": "Decisión del Tribunal",
+     "descripcion": "Confirmada la conclusión del sumario, el Tribunal resuelve sobre la petición de juicio oral o de sobreseimiento. Si abre el juicio oral, da traslado para calificar (art. 649). Si alguna acusación sostiene la acción, solo puede sobreseer porque el hecho no es delito.",
+     "articulos": [
+      "632",
+      "633",
       "634",
       "645"
      ],
-     "rango": [
-      "634",
-      "645"
+     "plazos": [
+      {
+       "acto": "El Tribunal resuelve sobre juicio oral o sobreseimiento",
+       "plazo": "Dentro del tercer día",
+       "articulo": "632",
+       "literal": "el Tribunal resolverá, dentro del tercer día, respecto a la solicitud del juicio oral o de sobreseimiento"
+      }
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Se abre el juicio oral",
+       "entonces": "Traslado para calificar por escrito (art. 649).",
+       "articulos": [
+        "633",
+        "649"
+       ],
+       "literal": {
+        "articulo": "633",
+        "texto": "se dispondrá el traslado al que se refiere el artículo 649"
+       }
+      },
+      {
+       "si": "Una acusación sostiene la acción o el Fiscal pide el juicio oral",
+       "entonces": "Solo cabe sobreseer si el hecho no es constitutivo de delito; en otro caso, hay que abrir el juicio.",
+       "articulos": [
+        "645",
+        "637"
+       ],
+       "literal": {
+        "articulo": "645",
+        "texto": "En cualquier otro caso no podrá prescindir de la apertura del juicio."
+       }
+      },
+      {
+       "si": "El sobreseimiento es parcial",
+       "entonces": "Se abre el juicio oral respecto de los procesados a quienes no favorece.",
+       "articulos": [
+        "634"
+       ],
+       "literal": {
+        "articulo": "634",
+        "texto": "se mandará abrir el juicio oral respecto de los procesados a quienes no favorezca"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si el querellante sostiene la acusación, ¿por qué causa puede aun así el Tribunal sobreseer?",
+      "a": "Solo porque el hecho no sea constitutivo de delito (art. 637.2.º).",
+      "articulos": [
+       "645",
+       "637"
+      ],
+      "literal": {
+       "articulo": "645",
+       "texto": "acordar el sobreseimiento a que se refiere el número 2.º del artículo 637"
+      }
+     },
+     "conexiones": [
+      "632",
+      "633",
+      "634",
+      "637",
+      "645",
+      "649"
+     ],
+     "continua_en": [
+      "juicio-oral"
+     ]
     },
     {
-     "id": "conclusion-646",
-     "fase": "Disposiciones generales referentes a los anteriores títulos",
-     "subtitulo": "TÍTULO XII · arts. 646 a 648",
-     "descripcion": "",
+     "id": "con-sobreseimiento",
+     "fase": "El sobreseimiento",
+     "subtitulo": "Libre o provisional · total o parcial · recursos",
+     "descripcion": "El sobreseimiento libre procede si no hay indicios de que el hecho se cometiera, si no es delito o si los procesados están exentos de responsabilidad. El provisional, si no está justificada la perpetración o no hay motivos para acusar a personas determinadas. Si es total, se archiva la causa. Se comunica a las víctimas, que pueden recurrirlo aunque no sean parte.",
+     "articulos": [
+      "634",
+      "635",
+      "636",
+      "637",
+      "638",
+      "639",
+      "640",
+      "641",
+      "642",
+      "643",
+      "644"
+     ],
+     "plazos": [
+      {
+       "acto": "Recurso de las víctimas contra el auto de sobreseimiento",
+       "plazo": "20 días",
+       "articulo": "636",
+       "literal": "Las víctimas podrán recurrir el auto de sobreseimiento dentro del plazo de veinte días aunque no se hubieran mostrado como parte en la causa."
+      },
+      {
+       "acto": "La comunicación a la víctima se tiene por hecha (empieza el plazo del recurso)",
+       "plazo": "5 días desde la comunicación",
+       "articulo": "636",
+       "literal": "Transcurridos cinco días desde la comunicación, se entenderá que ha sido efectuada válidamente y desplegará todos sus efectos, iniciándose el cómputo del plazo de interposición del recurso."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No hay indicios del hecho, no es delito o los procesados están exentos",
+       "entonces": "Sobreseimiento libre.",
+       "articulos": [
+        "637"
+       ],
+       "literal": {
+        "articulo": "637",
+        "texto": "Procederá el sobreseimiento libre:"
+       }
+      },
+      {
+       "si": "No está justificada la perpetración o no hay motivos para acusar a personas determinadas",
+       "entonces": "Sobreseimiento provisional.",
+       "articulos": [
+        "641"
+       ],
+       "literal": {
+        "articulo": "641",
+        "texto": "Procederá el sobreseimiento provisional:"
+       }
+      },
+      {
+       "si": "Se quiere recurrir el auto de sobreseimiento",
+       "entonces": "Solo casación, en su caso: contra autos definitivos de sobreseimiento libre, con imputación fundada.",
+       "articulos": [
+        "636",
+        "848"
+       ],
+       "literal": {
+        "articulo": "636",
+        "texto": "Contra los autos de sobreseimiento sólo procederá, en su caso, el recurso de casación."
+       }
+      },
+      {
+       "si": "El Fiscal pide el sobreseimiento y no hay querellante",
+       "entonces": "El Tribunal puede llamar a los interesados (por edictos si se ignora su paradero) o consultar al Fiscal superior.",
+       "articulos": [
+        "642",
+        "643",
+        "644"
+       ],
+       "literal": {
+        "articulo": "642",
+        "texto": "podrá el Tribunal acordar que se haga saber la pretensión del Ministerio fiscal a los interesados en el ejercicio de la acción penal"
+       }
+      },
+      {
+       "si": "Sobreseimiento libre por no haber hecho o no ser delito",
+       "entonces": "Puede declararse que la causa no perjudica la reputación del procesado y reservarse su acción por calumnia.",
+       "articulos": [
+        "638"
+       ],
+       "literal": {
+        "articulo": "638",
+        "texto": "podrá declararse, al decretar el sobreseimiento, que la formación de la causa no perjudica a la reputación de los procesados"
+       }
+      },
+      {
+       "si": "Piezas de convicción con dueño conocido",
+       "entonces": "Se devuelven, salvo que un tercero pida retenerlas para entablar la acción civil.",
+       "articulos": [
+        "635"
+       ],
+       "literal": {
+        "articulo": "635",
+        "texto": "continuarán retenidas si un tercero lo solicitare, hasta que se resuelva la acción civil que se propusiere entablar"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué recurso cabe contra el auto de sobreseimiento en el sumario ordinario?",
+      "a": "Solo, en su caso, el de casación; el art. 848 lo admite contra los autos definitivos de sobreseimiento libre de las Audiencias cuando hubo imputación fundada.",
+      "articulos": [
+       "636",
+       "848"
+      ],
+      "literal": {
+       "articulo": "636",
+       "texto": "Contra los autos de sobreseimiento sólo procederá, en su caso, el recurso de casación."
+      }
+     },
+     "conexiones": [
+      "109 bis",
+      "634",
+      "635",
+      "636",
+      "637",
+      "638",
+      "639",
+      "640",
+      "641",
+      "642",
+      "643",
+      "644",
+      "848"
+     ],
+     "continua_en": [
+      "recursos"
+     ],
+     "duda": "El art. 636 da a las víctimas 20 días para «recurrir» el sobreseimiento, pero en el mismo artículo el único recurso es la casación. Y el art. 644 cita órganos que ya no existen. Ver PENDIENTES.md."
+    },
+    {
+     "id": "con-fiscal",
+     "fase": "El Fiscal en el sumario",
+     "subtitulo": "Testimonios y plazo de apelación (arts. 646 a 648)",
+     "descripcion": "El Letrado de la Administración de Justicia remite al Fiscal testimonio de las resoluciones apelables y de las diligencias periciales o de reconocimiento que le interesen, cuando no puede notificárselas directamente. Para el Fiscal que no está en el lugar de la instrucción, el plazo de apelación corre desde que recibe el testimonio.",
      "articulos": [
       "646",
+      "647",
       "648"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Inicio del plazo de apelación del Fiscal que no está en el lugar del Juez",
+       "plazo": "Desde el día siguiente a recibir el testimonio",
+       "articulo": "647",
+       "literal": "empezará a contarse desde el siguiente día al en que reciba el testimonio de la providencia o auto apelables"
+      },
+      {
+       "acto": "Acuse de recibo de los testimonios",
+       "plazo": "El mismo día",
+       "articulo": "647",
+       "literal": "acusará recibo de los testimonios de esta clase en el mismo día que los recibiere"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El Fiscal se reservó intervenir en una diligencia pericial",
+       "entonces": "La diligencia puede suspenderse si la suspensión no causa perjuicio.",
+       "articulos": [
+        "646"
+       ],
+       "literal": {
+        "articulo": "646",
+        "texto": "a no ser que el Fiscal se hubiese reservado anticipadamente el derecho de intervenir en ellas"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Desde cuándo corre el plazo de apelación para el Fiscal que no está en el mismo lugar que el Juez instructor?",
+      "a": "Desde el día siguiente a aquel en que recibe el testimonio de la resolución apelable.",
+      "articulos": [
+       "647"
+      ],
+      "literal": {
+       "articulo": "647",
+       "texto": "empezará a contarse desde el siguiente día al en que reciba el testimonio de la providencia o auto apelables"
+      }
+     },
+     "conexiones": [
       "646",
+      "647",
       "648"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     }
    ]
   },
@@ -1089,135 +2480,1022 @@
    "nombre": "Procedimiento abreviado",
    "bloque": "lecrim",
    "grupo": "Libro IV · Procedimientos especiales",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Recorrido del procedimiento abreviado: de las diligencias policiales y previas a la apelación y la ejecución (arts. 757 a 794).",
    "ambito": {
-    "corto": "Arts. 757 a 794",
-    "texto": "TÍTULO II. Del procedimiento abreviado",
+    "corto": "Delitos con prisión de hasta 9 años (art. 757)",
+    "texto": "Delitos castigados con pena privativa de libertad no superior a nueve años, o con penas de otra naturaleza, cualquiera que sea su cuantía o duración. Salvo lo previsto para los procesos especiales.",
     "articulos": [
      "757"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "757",
+      "texto": "delitos castigados con pena privativa de libertad no superior a nueve años"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "abreviado-757",
-     "fase": "Disposiciones generales",
-     "subtitulo": "TÍTULO II · CAPÍTULO I · arts. 757 a 768",
-     "descripcion": "",
+     "id": "abr-generales",
+     "fase": "Ámbito y reglas generales",
+     "subtitulo": "Qué causas van por este cauce · recursos contra autos",
+     "descripcion": "Se sigue para los delitos con pena de prisión de hasta nueve años (o penas de otra naturaleza). Si cambia la calificación, se pasa al cauce que corresponda sin cambiar de instructor. Contra los autos del Juez de Instrucción y del Juez de lo Penal caben reforma y apelación, que no suspenden el procedimiento salvo que la ley diga otra cosa. Asistencia letrada desde la detención o la imputación; el abogado también representa hasta la apertura del juicio oral.",
      "articulos": [
       "757",
+      "758",
+      "760",
+      "766",
+      "767",
       "768"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Apelación contra autos (interposición)",
+       "plazo": "5 días",
+       "articulo": "766",
+       "literal": "El recurso de apelación se presentará dentro de los cinco días siguientes a la notificación del auto recurrido o del resolutorio del recurso de reforma"
+      },
+      {
+       "acto": "Alegaciones de las demás partes a la apelación",
+       "plazo": "5 días (común)",
+       "articulo": "766",
+       "literal": "dará traslado a las demás partes personadas por un plazo común de cinco días"
+      },
+      {
+       "acto": "La Audiencia resuelve la apelación",
+       "plazo": "5 días",
+       "articulo": "766",
+       "literal": "resolverá dentro de los cinco días siguientes"
+      },
+      {
+       "acto": "Alegaciones del recurrente si se desestima la reforma (apelación subsidiaria)",
+       "plazo": "5 días",
+       "articulo": "766",
+       "literal": "dará traslado al recurrente por un plazo de cinco días para que formule alegaciones"
+      },
+      {
+       "acto": "Vista en apelación sobre prisión provisional (señalamiento)",
+       "plazo": "10 días",
+       "articulo": "766",
+       "literal": "señalará la vista dentro de los diez siguientes a la recepción de la causa en dicha Audiencia"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El hecho no está comprendido en el art. 757",
+       "entonces": "Se continúa por las disposiciones generales (sumario), sin retroceder salvo que haga falta practicar diligencias.",
+       "articulos": [
+        "760"
+       ],
+       "literal": {
+        "articulo": "760",
+        "texto": "se continuará conforme a las disposiciones generales de esta Ley"
+       }
+      },
+      {
+       "si": "El hecho podría ser competencia del Tribunal del Jurado",
+       "entonces": "Se aplica el art. 309 bis.",
+       "articulos": [
+        "760",
+        "309 bis"
+       ],
+       "literal": {
+        "articulo": "760",
+        "texto": "se estará a lo dispuesto en el artículo 309 bis"
+       }
+      },
+      {
+       "si": "Se quiere apelar un auto sin pedir antes reforma",
+       "entonces": "Se puede: la reforma previa no es necesaria.",
+       "articulos": [
+        "766"
+       ],
+       "literal": {
+        "articulo": "766",
+        "texto": "En ningún caso será necesario interponer previamente el de reforma para presentar la apelación."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En el abreviado, ¿hay que interponer reforma antes de apelar un auto del Juez de Instrucción?",
+      "a": "No. La apelación puede interponerse subsidiariamente con la reforma o por separado, y nunca es necesaria la reforma previa.",
+      "articulos": [
+       "766"
+      ],
+      "literal": {
+       "articulo": "766",
+       "texto": "En ningún caso será necesario interponer previamente el de reforma para presentar la apelación."
+      }
+     },
+     "conexiones": [
       "757",
-      "768"
+      "759",
+      "760",
+      "763",
+      "764",
+      "765",
+      "766",
+      "767",
+      "768",
+      "309 bis"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "sumario",
+      "recursos",
+      "cautelares"
+     ]
     },
     {
-     "id": "abreviado-769",
-     "fase": "De las actuaciones de la Policía Judicial y del Ministerio Fiscal",
-     "subtitulo": "TÍTULO II · CAPÍTULO II · arts. 769 a 773",
-     "descripcion": "",
+     "id": "abr-policia-fiscal",
+     "fase": "Policía Judicial y Ministerio Fiscal",
+     "subtitulo": "Primeras diligencias y atestado",
+     "descripcion": "La Policía Judicial acude al lugar, asegura pruebas y efectos, identifica a los presentes, informa de sus derechos a víctimas e investigado y entrega el atestado al Juzgado (copia al Fiscal). El Fiscal puede practicar diligencias, archivar si el hecho no es delito o instar del Juez la incoación; cesa en cuanto conoce que hay procedimiento judicial sobre los mismos hechos.",
      "articulos": [
       "769",
+      "770",
+      "771",
+      "772",
       "773"
      ],
-     "rango": [
-      "769",
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Para el Fiscal el hecho no es delito",
+       "entonces": "Decreta el archivo y lo comunica al perjudicado u ofendido, que puede reiterar la denuncia ante el Juez de Instrucción.",
+       "articulos": [
+        "773"
+       ],
+       "literal": {
+        "articulo": "773",
+        "texto": "El Fiscal decretará el archivo de las actuaciones cuando el hecho no revista los caracteres de delito"
+       }
+      },
+      {
+       "si": "Para el Fiscal sí es delito",
+       "entonces": "Insta del Juez de Instrucción la incoación del procedimiento, remitiendo lo actuado y poniendo a su disposición al detenido y los efectos.",
+       "articulos": [
+        "773"
+       ],
+       "literal": {
+        "articulo": "773",
+        "texto": "En otro caso instará del Juez de Instrucción la incoación del procedimiento que corresponda"
+       }
+      },
+      {
+       "si": "Ya existe un procedimiento judicial sobre los mismos hechos",
+       "entonces": "El Fiscal cesa en sus diligencias.",
+       "articulos": [
+        "773"
+       ],
+       "literal": {
+        "articulo": "773",
+        "texto": "Cesará el Fiscal en sus diligencias tan pronto como tenga conocimiento de la existencia de un procedimiento judicial sobre los mismos hechos."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿A quién entrega la Policía Judicial el atestado en el abreviado y a quién remite copia?",
+      "a": "Lo entrega al Juzgado competente y remite copia al Ministerio Fiscal.",
+      "articulos": [
+       "772"
+      ],
+      "literal": {
+       "articulo": "772",
+       "texto": "lo entregará al Juzgado competente, pondrá a su disposición a los detenidos, si los hubiere, y remitirá copia al Ministerio Fiscal"
+      }
+     },
+     "conexiones": [
+      "520",
+      "109",
+      "110",
       "773"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "inicio"
+     ]
     },
     {
-     "id": "abreviado-774",
-     "fase": "De las diligencias previas",
-     "subtitulo": "TÍTULO II · CAPÍTULO III · arts. 774 a 779",
-     "descripcion": "",
+     "id": "abr-diligencias",
+     "fase": "Diligencias previas",
+     "subtitulo": "Instrucción del abreviado",
+     "descripcion": "Las actuaciones se registran como diligencias previas (secreto y publicidad de los arts. 301 y 302). En la primera comparecencia se informa al investigado de los hechos y derechos y se le requiere para que designe domicilio en España. El Juez practica las diligencias necesarias para determinar el hecho, los partícipes y el órgano competente. El ofendido puede personarse e instar diligencias.",
      "articulos": [
       "774",
-      "779"
+      "775",
+      "776",
+      "777",
+      "778"
      ],
-     "rango": [
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Es de temer que una prueba no podrá practicarse en el juicio oral",
+       "entonces": "El Juez la practica de inmediato, con contradicción; en el juicio hay que pedir su reproducción o lectura (art. 730).",
+       "articulos": [
+        "777",
+        "730"
+       ],
+       "literal": {
+        "articulo": "777",
+        "texto": "el Juez de Instrucción practicará inmediatamente la misma, asegurando en todo caso la posibilidad de contradicción de las partes"
+       }
+      },
+      {
+       "si": "Testigo menor de catorce años o persona con discapacidad necesitada de especial protección",
+       "entonces": "Prueba preconstituida conforme al art. 449 ter, si el delito es de los allí relacionados.",
+       "articulos": [
+        "777",
+        "449 ter"
+       ],
+       "literal": {
+        "articulo": "777",
+        "texto": "será de aplicación lo dispuesto en el artículo 449 ter"
+       }
+      },
+      {
+       "si": "Lesiones y procede archivo o sobreseimiento",
+       "entonces": "No hace falta esperar a la sanidad del lesionado.",
+       "articulos": [
+        "778"
+       ],
+       "literal": {
+        "articulo": "778",
+        "texto": "En los casos de lesiones no será preciso esperar a la sanidad del lesionado cuando fuera procedente el archivo o el sobreseimiento."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Para qué se requiere al investigado que designe un domicilio en España en la primera comparecencia?",
+      "a": "Para las notificaciones: la citación en ese domicilio o a la persona designada permite celebrar el juicio en su ausencia en los supuestos legales.",
+      "articulos": [
+       "775"
+      ],
+      "literal": {
+       "articulo": "775",
+       "texto": "la citación realizada en dicho domicilio o a la persona designada permitirá la celebración del juicio en su ausencia"
+      }
+     },
+     "conexiones": [
+      "301",
+      "302",
+      "118",
+      "449 ter",
+      "730",
       "774",
+      "775",
+      "776",
+      "777",
+      "778"
+     ],
+     "continua_en": [
+      "investigacion",
+      "cautelares"
+     ],
+     "duda": "El art. 775.1 remite al «artículo 786» para el juicio en ausencia, pero tras la última reforma esos requisitos están en el art. 787.1 (párrafo segundo). Ver PENDIENTES.md."
+    },
+    {
+     "id": "abr-779",
+     "fase": "Auto que pone fin a las diligencias previas",
+     "subtitulo": "Las cinco salidas del art. 779",
+     "descripcion": "Practicadas las diligencias, el Juez dicta auto con una de estas salidas: sobreseimiento, remisión al juez de delitos leves, inhibición (jurisdicción militar o menores), continuación como procedimiento abreviado o, si el investigado ha reconocido los hechos, paso a diligencias urgentes con conformidad.",
+     "articulos": [
       "779"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Recurso de las víctimas contra el auto de sobreseimiento (aunque no sean parte)",
+       "plazo": "20 días",
+       "articulo": "779",
+       "literal": "Las víctimas podrán recurrir el auto de sobreseimiento dentro del plazo de veinte días aunque no se hubieran mostrado como parte en la causa."
+      },
+      {
+       "acto": "Comunicación del sobreseimiento a la víctima: se tiene por hecha",
+       "plazo": "5 días desde la comunicación",
+       "articulo": "779",
+       "literal": "Transcurridos cinco días desde la comunicación, se entenderá que ha sido efectuada válidamente"
+      },
+      {
+       "acto": "Fiscal de la Audiencia (supuestos 1.º a 3.º, sin fiscal en el Juzgado ni recurso)",
+       "plazo": "3 días",
+       "articulo": "779",
+       "literal": "dentro de los tres días siguientes a su recepción"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El hecho no es infracción penal o no está justificada su perpetración",
+       "entonces": "Sobreseimiento que corresponda; si no hay autor conocido, sobreseimiento provisional y archivo.",
+       "articulos": [
+        "779"
+       ],
+       "literal": {
+        "articulo": "779",
+        "texto": "acordará el sobreseimiento que corresponda"
+       }
+      },
+      {
+       "si": "El hecho es falta (delito leve)",
+       "entonces": "Remisión al Juez competente, si no le corresponde enjuiciarlo.",
+       "articulos": [
+        "779"
+       ],
+       "literal": {
+        "articulo": "779",
+        "texto": "Si reputare falta el hecho que hubiere dado lugar a la formación de las diligencias"
+       }
+      },
+      {
+       "si": "Jurisdicción militar o todos los investigados menores de edad penal",
+       "entonces": "Inhibición a favor del órgano militar o traslado al Fiscal de Menores.",
+       "articulos": [
+        "779"
+       ],
+       "literal": {
+        "articulo": "779",
+        "texto": "Si el hecho estuviese atribuido a la jurisdicción militar, se inhibirá a favor del órgano competente."
+       }
+      },
+      {
+       "si": "El hecho es delito del art. 757",
+       "entonces": "Se sigue el procedimiento del capítulo siguiente (preparación del juicio oral). Antes hay que haber tomado declaración al investigado.",
+       "articulos": [
+        "779",
+        "775"
+       ],
+       "literal": {
+        "articulo": "779",
+        "texto": "no podrá adoptarse sin haber tomado declaración a aquélla en los términos previstos en el artículo 775"
+       }
+      },
+      {
+       "si": "El investigado, con abogado, reconoció los hechos ante el Juez y la pena entra en los límites del art. 801",
+       "entonces": "Convocatoria al Fiscal y partes; si acusan con conformidad, diligencias urgentes por los arts. 800 y 801.",
+       "articulos": [
+        "779",
+        "800",
+        "801"
+       ],
+       "literal": {
+        "articulo": "779",
+        "texto": "incoará diligencias urgentes y ordenará la continuación de las actuaciones por los trámites previstos en los artículos 800 y 801"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿De qué plazo dispone la víctima no personada para recurrir el auto de sobreseimiento en el abreviado?",
+      "a": "De veinte días, aunque no se haya mostrado parte en la causa.",
+      "articulos": [
+       "779"
+      ],
+      "literal": {
+       "articulo": "779",
+       "texto": "Las víctimas podrán recurrir el auto de sobreseimiento dentro del plazo de veinte días"
+      }
+     },
+     "conexiones": [
+      "637",
+      "641",
+      "775",
+      "800",
+      "801",
+      "109 bis"
+     ],
+     "continua_en": [
+      "rapido",
+      "leves",
+      "recursos"
+     ],
+     "duda": "El art. 779.1.2.ª habla de «falta». Propuesta: entenderlo como delito leve, según la nota general del BOE sobre las faltas. Ver PENDIENTES.md."
     },
     {
-     "id": "abreviado-780",
-     "fase": "De la preparación del juicio oral",
-     "subtitulo": "TÍTULO II · CAPÍTULO IV · arts. 780 a 784",
-     "descripcion": "",
+     "id": "abr-acusacion",
+     "fase": "Acusación o sobreseimiento",
+     "subtitulo": "Escritos de las acusaciones (fase intermedia)",
+     "descripcion": "Con el auto de continuación se da traslado al Fiscal y a las acusaciones personadas para que pidan la apertura del juicio oral (escrito de acusación), el sobreseimiento o, excepcionalmente, diligencias complementarias indispensables. El escrito de acusación sigue el art. 650 y propone la prueba para el juicio.",
      "articulos": [
       "780",
-      "784"
+      "781",
+      "782"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Escrito de acusación o petición de sobreseimiento",
+       "plazo": "10 días (común)",
+       "articulo": "780",
+       "literal": "en el plazo común de diez días, soliciten la apertura del juicio oral formulando escrito de acusación o el sobreseimiento de la causa"
+      },
+      {
+       "acto": "Prórroga del plazo para acusar",
+       "plazo": "Máximo otros 10 días",
+       "articulo": "781",
+       "literal": "podrá acordar la prórroga de dicho plazo por un máximo de otros diez días"
+      },
+      {
+       "acto": "Superior jerárquico, si el Fiscal no presentó su escrito",
+       "plazo": "10 días",
+       "articulo": "781",
+       "literal": "para que en el plazo de diez días presente el escrito que proceda"
+      },
+      {
+       "acto": "Ofendidos o perjudicados no personados, si solo el Fiscal pide sobreseimiento",
+       "plazo": "Máximo 15 días",
+       "articulo": "782",
+       "literal": "para que dentro del plazo máximo de quince días comparezcan a defender su acción"
+      },
+      {
+       "acto": "Superior jerárquico del Fiscal decide si sostiene la acusación",
+       "plazo": "10 días",
+       "articulo": "782",
+       "literal": "quien comunicará su decisión al Juez de Instrucción en el plazo de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El Fiscal no puede acusar por falta de elementos esenciales",
+       "entonces": "Puede pedir antes diligencias indispensables; el Juez las acuerda y se da nuevo traslado.",
+       "articulos": [
+        "780"
+       ],
+       "literal": {
+        "articulo": "780",
+        "texto": "se podrá instar, con carácter previo, la práctica de aquellas diligencias indispensables para formular acusación"
+       }
+      },
+      {
+       "si": "Fiscal y acusador particular piden el sobreseimiento",
+       "entonces": "El Juez lo acuerda, salvo eximentes del art. 20.1.º, 2.º, 3.º, 5.º y 6.º CP, en que se sigue hasta sentencia para medidas de seguridad y acción civil.",
+       "articulos": [
+        "782"
+       ],
+       "literal": {
+        "articulo": "782",
+        "texto": "Si el Ministerio Fiscal y el acusador particular solicitaren el sobreseimiento de la causa"
+       }
+      },
+      {
+       "si": "Solo el Fiscal pide el sobreseimiento y no hay acusador particular",
+       "entonces": "El Juez puede llamar a los ofendidos no personados o remitir la causa al superior jerárquico del Fiscal.",
+       "articulos": [
+        "782"
+       ],
+       "literal": {
+        "articulo": "782",
+        "texto": "Si el Ministerio Fiscal solicitare el sobreseimiento de la causa y no se hubiere personado en la misma acusador particular dispuesto a sostener la acusación"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué plazo tienen el Fiscal y las acusaciones para presentar escrito de acusación en el abreviado, y cuánto puede prorrogarse?",
+      "a": "Diez días comunes, prorrogables por un máximo de otros diez.",
+      "articulos": [
+       "780",
+       "781"
+      ],
+      "literal": {
+       "articulo": "780",
+       "texto": "en el plazo común de diez días"
+      }
+     },
+     "conexiones": [
+      "637",
+      "641",
+      "650",
+      "763",
+      "764",
+      "765",
       "780",
+      "781",
+      "782"
+     ],
+     "continua_en": [
+      "conclusion"
+     ]
+    },
+    {
+     "id": "abr-apertura",
+     "fase": "Apertura del juicio oral y escrito de defensa",
+     "subtitulo": "Auto de apertura · emplazamiento · defensa",
+     "descripcion": "Pedida la apertura por una acusación, el Juez de Instrucción la acuerda, salvo que no haya indicios racionales o concurra el art. 637.2. En el mismo auto resuelve sobre medidas cautelares y fianzas y señala el órgano de enjuiciamiento. Después se emplaza al acusado para que comparezca con abogado y procurador y se da traslado a la defensa para su escrito.",
+     "articulos": [
+      "783",
       "784"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Nuevo traslado al que pidió el sobreseimiento, para acusar",
+       "plazo": "3 días",
+       "articulo": "783",
+       "literal": "por plazo de tres días para que formule escrito de acusación"
+      },
+      {
+       "acto": "Comparecer con abogado y procurador tras el emplazamiento",
+       "plazo": "3 días",
+       "articulo": "784",
+       "literal": "para que en el plazo de tres días comparezca en la causa con Abogado que le defienda y Procurador que le represente"
+      },
+      {
+       "acto": "Escrito de defensa",
+       "plazo": "10 días (común)",
+       "articulo": "784",
+       "literal": "para que en plazo común de diez días presenten escrito de defensa frente a las acusaciones formuladas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No hay indicios racionales de criminalidad o concurre el art. 637.2",
+       "entonces": "El Juez no abre el juicio y acuerda el sobreseimiento que corresponda.",
+       "articulos": [
+        "783",
+        "637",
+        "641"
+       ],
+       "literal": {
+        "articulo": "783",
+        "texto": "en cuyo caso acordará el sobreseimiento que corresponda conforme a los artículos 637 y 641"
+       }
+      },
+      {
+       "si": "Se quiere recurrir el auto de apertura",
+       "entonces": "No cabe recurso, salvo en lo relativo a la situación personal; las peticiones no atendidas se reproducen ante el órgano de enjuiciamiento.",
+       "articulos": [
+        "783"
+       ],
+       "literal": {
+        "articulo": "783",
+        "texto": "Contra el auto que acuerde la apertura del juicio oral no se dará recurso alguno, excepto en lo relativo a la situación personal"
+       }
+      },
+      {
+       "si": "La defensa no presenta su escrito",
+       "entonces": "Se entiende que se opone a las acusaciones y el procedimiento sigue; solo podrá proponer la prueba que aporte en el acto del juicio.",
+       "articulos": [
+        "784"
+       ],
+       "literal": {
+        "articulo": "784",
+        "texto": "se entenderá que se opone a las acusaciones y seguirá su curso el procedimiento"
+       }
+      },
+      {
+       "si": "La defensa se conforma con la acusación",
+       "entonces": "Conformidad en el escrito de defensa (firmado también por el acusado) o en un nuevo escrito conjunto antes del juicio.",
+       "articulos": [
+        "784",
+        "787"
+       ],
+       "literal": {
+        "articulo": "784",
+        "texto": "la defensa podrá manifestar su conformidad con la acusación en los términos previstos en el artículo 787"
+       }
+      },
+      {
+       "si": "El acusado está en ignorado paradero sin domicilio designado (o la pena excede los límites del juicio en ausencia)",
+       "entonces": "Requisitoria y declaración de rebeldía si no comparece.",
+       "articulos": [
+        "784"
+       ],
+       "literal": {
+        "articulo": "784",
+        "texto": "el Juez mandará expedir requisitoria para su llamamiento y busca, declarándolos rebeldes"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué ocurre si la defensa no presenta el escrito de defensa en plazo en el abreviado?",
+      "a": "Se entiende que se opone a las acusaciones y el procedimiento sigue su curso.",
+      "articulos": [
+       "784"
+      ],
+      "literal": {
+       "articulo": "784",
+       "texto": "se entenderá que se opone a las acusaciones y seguirá su curso el procedimiento"
+      }
+     },
+     "conexiones": [
+      "637",
+      "641",
+      "775",
+      "783",
+      "784",
+      "787"
+     ],
+     "continua_en": [
+      "fianzas",
+      "cautelares"
+     ],
+     "duda": "El art. 784.4 remite al «párrafo segundo del apartado 1 del artículo 786» para los límites del juicio en ausencia; tras la reforma están en el art. 787.1. Ver PENDIENTES.md."
     },
     {
-     "id": "abreviado-785",
-     "fase": "De la audiencia preliminar, del juicio oral y de la sentencia",
-     "subtitulo": "TÍTULO II · CAPÍTULO V · arts. 785 a 789",
-     "descripcion": "",
+     "id": "abr-audiencia-preliminar",
+     "fase": "Audiencia preliminar",
+     "subtitulo": "Ante el órgano de enjuiciamiento · conformidad · señalamiento",
+     "descripcion": "Con las actuaciones ya en el órgano de enjuiciamiento, se convoca a una audiencia preliminar sobre conformidad, competencia, derechos fundamentales, artículos de previo pronunciamiento, suspensión, nulidad y pruebas. Requiere la asistencia del acusado y su abogado, pero no se suspende por su incomparecencia injustificada. Se resuelve oralmente, o por auto si es complejo. Si no hay conformidad, se señala el juicio.",
      "articulos": [
       "785",
-      "789"
+      "786"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Auto escrito, si las cuestiones son complejas",
+       "plazo": "10 días",
+       "articulo": "785",
+       "literal": "en cuyo caso el auto habrá de ser dictado en el plazo de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se quiere recurrir lo resuelto en la audiencia preliminar",
+       "entonces": "No cabe recurso: protesta y reproducción en el recurso contra la sentencia.",
+       "articulos": [
+        "785"
+       ],
+       "literal": {
+        "articulo": "785",
+        "texto": "Contra la resolución adoptada no cabrá recurso alguno, sin perjuicio de la pertinente protesta"
+       }
+      },
+      {
+       "si": "La resolución pone fin al procedimiento",
+       "entonces": "Apelación, con el plazo y las formalidades de los arts. 790 y siguientes.",
+       "articulos": [
+        "785",
+        "790"
+       ],
+       "literal": {
+        "articulo": "785",
+        "texto": "salvo que dicha resolución ponga fin al procedimiento, en cuyo caso será susceptible de recurso de apelación"
+       }
+      },
+      {
+       "si": "Las partes piden sentencia de conformidad",
+       "entonces": "Si la calificación es correcta, la pena procedente y la conformidad libre, sentencia de conformidad oral; si no, juicio.",
+       "articulos": [
+        "785"
+       ],
+       "literal": {
+        "articulo": "785",
+        "texto": "dictará sentencia de conformidad"
+       }
+      },
+      {
+       "si": "La persona acusada no acude sin justificación",
+       "entonces": "La audiencia no se suspende; se tratan las cuestiones que pueden resolverse en ausencia.",
+       "articulos": [
+        "785"
+       ],
+       "literal": {
+        "articulo": "785",
+        "texto": "no se suspenderá por la inasistencia injustificada de la persona acusada que haya sido debidamente citada"
+       }
+      },
+      {
+       "si": "No hay conformidad",
+       "entonces": "Señalamiento del juicio oral, en el mismo acto si es posible o por el LAJ.",
+       "articulos": [
+        "786"
+       ],
+       "literal": {
+        "articulo": "786",
+        "texto": "se establecerá el día y la hora en que deban comenzar las sesiones del juicio oral"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cabe recurso contra lo resuelto en la audiencia preliminar del abreviado?",
+      "a": "No, salvo que la resolución ponga fin al procedimiento (apelación). Queda la protesta y reproducir la cuestión en el recurso contra la sentencia.",
+      "articulos": [
+       "785"
+      ],
+      "literal": {
+       "articulo": "785",
+       "texto": "Contra la resolución adoptada no cabrá recurso alguno"
+      }
+     },
+     "conexiones": [
+      "743",
       "785",
+      "786",
+      "787 ter",
       "789"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
-     "id": "abreviado-790",
-     "fase": "De la impugnación de la sentencia",
-     "subtitulo": "TÍTULO II · CAPÍTULO VI · arts. 790 a 793",
-     "descripcion": "",
+     "id": "abr-juicio",
+     "fase": "Juicio oral y sentencia",
+     "subtitulo": "Asistencia · prueba concentrada · conclusiones · sentencia",
+     "descripcion": "El juicio requiere la asistencia del acusado y su abogado, con la excepción del juicio en ausencia. Empieza con la lectura de los escritos de acusación y defensa; al inicio solo cabe aportar documentos o prueba desconocida en la audiencia preliminar. Antes de la prueba cabe aún la conformidad. Tras la prueba, conclusiones definitivas e informes. Sentencia en cinco días, u oral si es el Juez de lo Penal.",
+     "articulos": [
+      "787",
+      "787 bis",
+      "787 ter",
+      "788",
+      "789"
+     ],
+     "plazos": [
+      {
+       "acto": "Suspensión o aplazamiento de la sesión (supuestos del art. 746)",
+       "plazo": "Máximo 30 días",
+       "articulo": "788",
+       "literal": "hasta el límite máximo de treinta días"
+      },
+      {
+       "acto": "Aplazamiento a petición de la defensa si la acusación agrava sus conclusiones",
+       "plazo": "Máximo 10 días",
+       "articulo": "788",
+       "literal": "hasta el límite de diez días, a petición de la defensa"
+      },
+      {
+       "acto": "Sentencia",
+       "plazo": "5 días desde el fin del juicio",
+       "articulo": "789",
+       "literal": "La sentencia se dictará dentro de los cinco días siguientes a la finalización del juicio oral."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El acusado no comparece sin justificación",
+       "entonces": "Puede celebrarse el juicio en su ausencia si fue citado en forma, hay elementos suficientes y la pena pedida no excede de dos años de prisión (o seis si es de otra naturaleza, o multa), y la suma no pasa de cinco años.",
+       "articulos": [
+        "787"
+       ],
+       "literal": {
+        "articulo": "787",
+        "texto": "Que la pena más grave solicitada no exceda de dos años de privación de libertad"
+       }
+      },
+      {
+       "si": "Conformidad antes de empezar la prueba",
+       "entonces": "La defensa, con el acusado, puede pedir sentencia de conformidad con el escrito de acusación más grave.",
+       "articulos": [
+        "787 ter"
+       ],
+       "literal": {
+        "articulo": "787 ter",
+        "texto": "Antes de iniciarse la práctica de la prueba, la defensa, con la conformidad del acusado presente, podrá pedir"
+       }
+      },
+      {
+       "si": "Todas las acusaciones piden una pena que excede la competencia del Juez de lo Penal",
+       "entonces": "Se declara incompetente y remite a la Audiencia.",
+       "articulos": [
+        "788"
+       ],
+       "literal": {
+        "articulo": "788",
+        "texto": "se declarará éste incompetente para juzgar"
+       }
+      },
+      {
+       "si": "El Juez de lo Penal dicta sentencia oral y nadie recurre",
+       "entonces": "Declara la firmeza en el acto y resuelve sobre suspensión o sustitución de la pena.",
+       "articulos": [
+        "789"
+       ],
+       "literal": {
+        "articulo": "789",
+        "texto": "el Juez, en el mismo acto, declarará la firmeza de la sentencia"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En el abreviado, ¿cuál es el límite de pena para celebrar el juicio en ausencia del acusado si es privativa de libertad?",
+      "a": "Que la pena más grave pedida no exceda de dos años y que la suma total no exceda de cinco años.",
+      "articulos": [
+       "787"
+      ],
+      "literal": {
+       "articulo": "787",
+       "texto": "la suma total de las penas solicitadas no exceda de cinco años"
+      }
+     },
+     "conexiones": [
+      "703 bis",
+      "730",
+      "743",
+      "746",
+      "775",
+      "787",
+      "787 bis",
+      "787 ter",
+      "788",
+      "789"
+     ],
+     "continua_en": [
+      "juicio-oral"
+     ],
+     "duda": "El art. 788.1 remite al «785.2» para los criterios de señalamiento (hoy en el 786.2) y el art. 789.3 al «párrafo segundo del artículo 788.3» para las preguntas del juez (hoy en el 788.4). Ver PENDIENTES.md."
+    },
+    {
+     "id": "abr-apelacion",
+     "fase": "Apelación de la sentencia",
+     "subtitulo": "Ante la Audiencia Provincial o la Audiencia Nacional",
+     "descripcion": "La sentencia del Juez de lo Penal se apela ante la Audiencia Provincial, y la del Juez Central de lo Penal ante la Sala de lo Penal de la Audiencia Nacional. El escrito de formalización se presenta ante el juez que dictó la sentencia, con los motivos (quebrantamiento de garantías, error en la prueba o infracción de normas) y, en su caso, petición de prueba. La otra parte puede adherirse en sus alegaciones.",
      "articulos": [
       "790",
+      "791",
+      "792",
       "793"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Interponer la apelación",
+       "plazo": "10 días desde la notificación",
+       "articulo": "790",
+       "literal": "dentro de los diez días siguientes a aquel en que se les hubiere notificado la sentencia"
+      },
+      {
+       "acto": "Pedir copia de las grabaciones (suspende el plazo)",
+       "plazo": "3 días desde la notificación",
+       "articulo": "790",
+       "literal": "en el plazo de los tres días siguientes a la notificación de la sentencia podrán solicitar copia de los soportes en los que se hayan grabado las sesiones, con suspensión del plazo para la interposición del recurso"
+      },
+      {
+       "acto": "Impugnar la adhesión",
+       "plazo": "2 días",
+       "articulo": "790",
+       "literal": "Las demás partes podrán impugnar la adhesión, en el plazo de dos días"
+      },
+      {
+       "acto": "Subsanar defectos del escrito de formalización",
+       "plazo": "No más de 3 días",
+       "articulo": "790",
+       "literal": "concederá al recurrente un plazo no superior a tres días para la subsanación"
+      },
+      {
+       "acto": "Alegaciones de las demás partes",
+       "plazo": "10 días (común)",
+       "articulo": "790",
+       "literal": "dará traslado del escrito de formalización a las demás partes por un plazo común de diez días"
+      },
+      {
+       "acto": "Elevación de los autos a la Audiencia",
+       "plazo": "2 días",
+       "articulo": "790",
+       "literal": "en los dos días siguientes, dará traslado de cada uno de ellos a las demás partes y elevará a la Audiencia los autos originales"
+      },
+      {
+       "acto": "La Audiencia resuelve sobre la prueba propuesta",
+       "plazo": "3 días",
+       "articulo": "791",
+       "literal": "el Tribunal resolverá en tres días sobre la admisión de la propuesta"
+      },
+      {
+       "acto": "Señalamiento de la vista",
+       "plazo": "15 días",
+       "articulo": "791",
+       "literal": "El Secretario judicial señalará la vista dentro de los quince días siguientes"
+      },
+      {
+       "acto": "Sentencia de apelación",
+       "plazo": "5 días tras la vista o 10 desde la recepción si no hay vista",
+       "articulo": "792",
+       "literal": "La sentencia de apelación se dictará dentro de los cinco días siguientes a la vista oral, o dentro de los diez días siguientes a la recepción de las actuaciones por la Audiencia cuando no hubiere resultado procedente su celebración."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La parte no apeló en plazo",
+       "entonces": "Puede adherirse a la apelación en el trámite de alegaciones, supeditada a que el apelante mantenga su recurso.",
+       "articulos": [
+        "790"
+       ],
+       "literal": {
+        "articulo": "790",
+        "texto": "La parte que no hubiera apelado en el plazo señalado podrá adherirse a la apelación"
+       }
+      },
+      {
+       "si": "La acusación recurre una absolución por error en la prueba",
+       "entonces": "La Audiencia no puede condenar al absuelto ni agravar la condena por ese motivo; solo anular y devolver.",
+       "articulos": [
+        "790",
+        "792"
+       ],
+       "literal": {
+        "articulo": "792",
+        "texto": "La sentencia de apelación no podrá condenar al encausado que resultó absuelto en primera instancia"
+       }
+      },
+      {
+       "si": "Se recurre la sentencia de apelación",
+       "entonces": "Solo casación en los supuestos del art. 847 (además de la revisión y la anulación del art. 793).",
+       "articulos": [
+        "792",
+        "847"
+       ],
+       "literal": {
+        "articulo": "792",
+        "texto": "Contra la sentencia dictada en apelación solo cabrá recurso de casación en los supuestos previstos en el artículo 847"
+       }
+      },
+      {
+       "si": "El condenado en ausencia comparece o es habido",
+       "entonces": "Puede interponer recurso de anulación, con el plazo y requisitos de la apelación, contado desde que conoció la sentencia.",
+       "articulos": [
+        "793"
+       ],
+       "literal": {
+        "articulo": "793",
+        "texto": "es susceptible de ser recurrida en anulación por el condenado en el mismo plazo y con iguales requisitos y efectos que los establecidos en el recurso de apelación"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué plazo hay para apelar la sentencia del Juez de lo Penal y qué lo suspende?",
+      "a": "Diez días desde la notificación. Lo suspende pedir, dentro de los tres días siguientes, copia de las grabaciones del juicio.",
+      "articulos": [
+       "790"
+      ],
+      "literal": {
+       "articulo": "790",
+       "texto": "dentro de los diez días siguientes a aquel en que se les hubiere notificado la sentencia"
+      }
+     },
+     "conexiones": [
+      "743",
       "790",
-      "793"
+      "791",
+      "792",
+      "793",
+      "847"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "recursos"
+     ],
+     "duda": "El art. 793.1 remite al «párrafo segundo del apartado 1 del artículo 786» para la condena en ausencia; tras la reforma esos requisitos están en el art. 787.1. Ver PENDIENTES.md."
     },
     {
-     "id": "abreviado-794",
-     "fase": "De la ejecución de sentencias",
-     "subtitulo": "TÍTULO II · CAPÍTULO VII · art. 794",
-     "descripcion": "",
+     "id": "abr-ejecucion",
+     "fase": "Ejecución de la sentencia",
+     "subtitulo": "Reglas propias del abreviado",
+     "descripcion": "Firme la sentencia, la ejecuta el Juez o la Audiencia que la dictó, con las reglas generales y dos especialidades: la fijación de la indemnización en ejecución cuando el fallo solo dio las bases, y la retirada inmediata del permiso de conducir si se impuso esa privación.",
      "articulos": [
       "794"
      ],
-     "rango": [
-      "794",
+     "plazos": [
+      {
+       "acto": "Partes, sobre la prueba para fijar la indemnización",
+       "plazo": "10 días (común)",
+       "articulo": "794",
+       "literal": "en el plazo común de diez días, pidan por escrito lo que a su derecho convenga"
+      },
+      {
+       "acto": "Audiencia a las partes tras la prueba",
+       "plazo": "5 días (común)",
+       "articulo": "794",
+       "literal": "oídas las partes por un plazo común de cinco días"
+      },
+      {
+       "acto": "Auto que fija la responsabilidad civil",
+       "plazo": "5 días",
+       "articulo": "794",
+       "literal": "se fijará mediante auto, en los cinco días siguientes, la cuantía de la responsabilidad civil"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se recurre el auto del Juez de lo Penal que fija la indemnización",
+       "entonces": "Apelación ante la Audiencia respectiva.",
+       "articulos": [
+        "794"
+       ],
+       "literal": {
+        "articulo": "794",
+        "texto": "El auto dictado por el Juez de lo Penal será apelable ante la Audiencia respectiva."
+       }
+      },
+      {
+       "si": "Condena a privación del derecho a conducir",
+       "entonces": "Retirada inmediata del permiso y mandamiento a la Jefatura Central de Tráfico.",
+       "articulos": [
+        "794"
+       ],
+       "literal": {
+        "articulo": "794",
+        "texto": "procederá a la inmediata retirada del permiso y licencia habilitante"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si el fallo no fijó la cuantía de la indemnización, ¿qué pruebas rechaza el juez en ejecución?",
+      "a": "Las que no se refieran a las bases fijadas en la sentencia.",
+      "articulos": [
+       "794"
+      ],
+      "literal": {
+       "articulo": "794",
+       "texto": "El Juez o Tribunal rechazará la práctica de pruebas que no se refieran a las bases fijadas en la sentencia."
+      }
+     },
+     "conexiones": [
+      "788",
       "794"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "ejecucion"
+     ]
     }
    ]
   },
@@ -1735,246 +4013,1633 @@
    ],
    "ambito": {
     "corto": "Arts. 299 a 749",
-    "texto": "TÍTULO IV. De la instrucción · TÍTULO V. De la comprobación del delito y averiguación del delincuente · TÍTULO XI. De la conclusión del sumario y del sobreseimiento · TÍTULO XII. Disposiciones generales referentes a los anteriores títulos · TÍTULO I. De la calificación del delito · TÍTULO II. De los artículos de previo pronunciamiento · TÍTULO III. De la celebración del juicio oral",
+    "texto": "Sumario ordinario: delitos que no van por el procedimiento abreviado (pena de prisión superior a nueve años, art. 757). TÍTULO IV. De la instrucción · TÍTULO V. De la comprobación del delito y averiguación del delincuente · TÍTULO XI. De la conclusión del sumario y del sobreseimiento · TÍTULO XII. Disposiciones generales referentes a los anteriores títulos · TÍTULO I. De la calificación del delito · TÍTULO II. De los artículos de previo pronunciamiento · TÍTULO III. De la celebración del juicio oral",
     "articulos": [
-     "299"
+     "299",
+     "757"
     ],
     "literal": []
    },
    "revisado": false,
    "fases": [
     {
-     "id": "sumario-instruccion-299",
-     "fase": "Del sumario y de las autoridades competentes para instruirlo",
-     "subtitulo": "TÍTULO IV · CAPÍTULO I · arts. 299 a 305",
-     "descripcion": "",
+     "id": "sumario-ins-sumario",
+     "fase": "El sumario y el juez instructor",
+     "subtitulo": "Qué es · reserva y secreto · quién instruye",
+     "descripcion": "El sumario son las actuaciones para preparar el juicio: averiguar el delito y sus circunstancias, la culpabilidad, y asegurar a las personas y las responsabilidades pecuniarias. Es reservado hasta que se abre el juicio oral, pero las partes personadas pueden conocer las actuaciones e intervenir en las diligencias, salvo que se declare secreto. Lo instruye el Juez de Instrucción del lugar del delito; cabe un instructor especial.",
      "articulos": [
       "299",
+      "301",
+      "302",
+      "303",
+      "304",
       "305"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Duración del secreto del sumario",
+       "plazo": "No más de 1 mes",
+       "articulo": "302",
+       "literal": "por tiempo no superior a un mes"
+      },
+      {
+       "acto": "Alzamiento del secreto antes de la conclusión",
+       "plazo": "Al menos 10 días antes",
+       "articulo": "302",
+       "literal": "El secreto del sumario deberá alzarse necesariamente con al menos diez días de antelación a la conclusión del sumario."
+      },
+      {
+       "acto": "Remisión al tribunal competente si el delito solo puede cometerlo un aforado",
+       "plazo": "No más de 3 días",
+       "articulo": "303",
+       "literal": "que en ningún caso podrá exceder de tres días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay riesgo grave para la vida o la integridad de alguien, o para el resultado de la investigación (delito público)",
+       "entonces": "El Juez puede declarar el sumario secreto, total o parcialmente, por auto.",
+       "articulos": [
+        "302"
+       ],
+       "literal": {
+        "articulo": "302",
+        "texto": "declararlo, mediante auto, total o parcialmente secreto para todas las partes personadas"
+       }
+      },
+      {
+       "si": "Un abogado o procurador revela indebidamente el sumario",
+       "entonces": "Multa de 500 a 10.000 euros.",
+       "articulos": [
+        "301"
+       ],
+       "literal": {
+        "articulo": "301",
+        "texto": "será corregido con multa de 500 a 10.000 euros"
+       }
+      },
+      {
+       "si": "Hay que proteger la intimidad de la víctima",
+       "entonces": "El Juez puede acordar medidas del art. 681.2.",
+       "articulos": [
+        "301 bis",
+        "681"
+       ],
+       "literal": {
+        "articulo": "301 bis",
+        "texto": "cuando resulte necesario para proteger la intimidad de la víctima"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Por cuánto tiempo puede declararse secreto el sumario y cuándo debe alzarse?",
+      "a": "Por tiempo no superior a un mes; debe alzarse al menos diez días antes de la conclusión del sumario.",
+      "articulos": [
+       "302"
+      ],
+      "literal": {
+       "articulo": "302",
+       "texto": "con al menos diez días de antelación a la conclusión del sumario"
+      }
+     },
+     "conexiones": [
       "299",
-      "305"
+      "301",
+      "301 bis",
+      "302",
+      "303",
+      "304",
+      "305",
+      "505",
+      "681"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [
+      "inicio"
+     ],
+     "duda": "El art. 302 fija el secreto «por tiempo no superior a un mes», pero no dice si cabe prorrogarlo. Ver PENDIENTES.md.",
      "origen": "instruccion"
     },
     {
-     "id": "sumario-instruccion-306",
-     "fase": "De la formación del sumario",
-     "subtitulo": "TÍTULO IV · CAPÍTULO II · arts. 306 a 325",
-     "descripcion": "",
+     "id": "sumario-ins-formacion",
+     "fase": "Formación del sumario",
+     "subtitulo": "Inicio · diligencias pedidas por las partes · querella",
+     "descripcion": "El Juez de Instrucción forma el sumario bajo la inspección del Fiscal y da parte de su inicio al Fiscal y al Presidente de la Audiencia. Practica las diligencias que propongan el Fiscal o las partes si no son inútiles o perjudiciales. Si la querella no describe un delito o no es competente, la desestima. Si la imputación es de un delito del Jurado, incoa ese procedimiento.",
      "articulos": [
       "306",
-      "325"
+      "307",
+      "308",
+      "309 bis",
+      "311",
+      "312",
+      "313",
+      "314",
+      "320"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Parte al Presidente de la Audiencia sobre la formación del sumario",
+       "plazo": "2 días",
+       "articulo": "308",
+       "literal": "dentro de los dos días siguientes al en que hubieren principiado a instruirle"
+      },
+      {
+       "acto": "El Juez municipal (de paz) remite la causa al de Instrucción",
+       "plazo": "No más de 3 días",
+       "articulo": "307",
+       "literal": "que nunca podrá retener más de tres días"
+      },
+      {
+       "acto": "Resolver la petición de incoar el procedimiento del Jurado",
+       "plazo": "Una audiencia",
+       "articulo": "309 bis",
+       "literal": "debiendo el Juez resolver en plazo de una audiencia"
+      },
+      {
+       "acto": "La Audiencia Provincial resuelve la queja (Jurado)",
+       "plazo": "Antes de 8 días",
+       "articulo": "309 bis",
+       "literal": "resolverá antes de ocho días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El Juez deniega las diligencias pedidas por una parte",
+       "entonces": "Apelación en un solo efecto ante la Audiencia (el Fiscal de otra localidad, queja). Pueden volver a proponerse en el juicio oral.",
+       "articulos": [
+        "311",
+        "314"
+       ],
+       "literal": {
+        "articulo": "311",
+        "texto": "Contra el auto denegatorio de las diligencias pedidas podrá interponerse recurso de apelación, que será admitido en un solo efecto"
+       }
+      },
+      {
+       "si": "Los hechos de la querella no son delito o el Juez no es competente",
+       "entonces": "Desestima la querella; contra el auto, apelación en ambos efectos.",
+       "articulos": [
+        "313"
+       ],
+       "literal": {
+        "articulo": "313",
+        "texto": "procederá el recurso de apelación, que será admisible en ambos efectos"
+       }
+      },
+      {
+       "si": "Resulta la imputación de un delito competencia del Jurado",
+       "entonces": "Incoación del procedimiento de su ley reguladora; si el Juez no lo hace, queja ante la Audiencia Provincial.",
+       "articulos": [
+        "309 bis"
+       ],
+       "literal": {
+        "articulo": "309 bis",
+        "texto": "procederá el Juez a la incoación del procedimiento previsto en su ley reguladora"
+       }
+      },
+      {
+       "si": "Interviene un actor civil",
+       "entonces": "Solo puede procurar las diligencias útiles para su acción, a juicio del Juez.",
+       "articulos": [
+        "320"
+       ],
+       "literal": {
+        "articulo": "320",
+        "texto": "se limitará a procurar la práctica de aquellas diligencias que puedan conducir al mejor éxito de su acción"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si el Juez de Instrucción deniega una diligencia pedida en el sumario, ¿qué recurso cabe y con qué efecto?",
+      "a": "Apelación, admitida en un solo efecto, ante la Audiencia o Tribunal competente.",
+      "articulos": [
+       "311"
+      ],
+      "literal": {
+       "articulo": "311",
+       "texto": "será admitido en un solo efecto para ante la respectiva Audiencia o Tribunal competente"
+      }
+     },
+     "conexiones": [
       "306",
+      "307",
+      "308",
+      "309 bis",
+      "311",
+      "312",
+      "313",
+      "314",
+      "315",
+      "318",
+      "319",
+      "320",
       "325"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [
+      "inicio",
+      "recursos"
+     ],
      "origen": "instruccion"
     },
     {
-     "id": "sumario-instruccion-326",
-     "fase": "De la inspección ocular",
-     "subtitulo": "TÍTULO V · CAPÍTULO I · arts. 326 a 333",
-     "descripcion": "",
+     "id": "sumario-ins-plazo",
+     "fase": "Duración de la instrucción",
+     "subtitulo": "Plazo máximo y prórrogas (art. 324)",
+     "descripcion": "La investigación judicial tiene un plazo máximo de doce meses desde la incoación. Si no va a poder terminarse, el Juez puede acordar prórrogas sucesivas, por auto motivado y oídas las partes. Las diligencias acordadas antes de que venza el plazo valen aunque se reciban después; las acordadas después de vencer sin prórroga, no. Vencido el plazo, el instructor dicta auto de conclusión.",
+     "articulos": [
+      "324"
+     ],
+     "plazos": [
+      {
+       "acto": "Plazo máximo de la investigación",
+       "plazo": "12 meses desde la incoación",
+       "articulo": "324",
+       "literal": "La investigación judicial se desarrollará en un plazo máximo de doce meses desde la incoación de la causa."
+      },
+      {
+       "acto": "Cada prórroga",
+       "plazo": "6 meses o menos",
+       "articulo": "324",
+       "literal": "prórrogas sucesivas por periodos iguales o inferiores a seis meses"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El plazo o la prórroga vence sin auto de prórroga (o el auto se revoca)",
+       "entonces": "No son válidas las diligencias acordadas a partir de esa fecha.",
+       "articulos": [
+        "324"
+       ],
+       "literal": {
+        "articulo": "324",
+        "texto": "no serán válidas las diligencias acordadas a partir de dicha fecha"
+       }
+      },
+      {
+       "si": "Diligencia acordada en plazo pero recibida después",
+       "entonces": "Es válida.",
+       "articulos": [
+        "324"
+       ],
+       "literal": {
+        "articulo": "324",
+        "texto": "serán válidas, aunque se reciban tras la expiración del mismo"
+       }
+      },
+      {
+       "si": "Transcurre el plazo máximo o sus prórrogas",
+       "entonces": "Auto de conclusión del sumario (en el abreviado, la resolución que proceda).",
+       "articulos": [
+        "324",
+        "622"
+       ],
+       "literal": {
+        "articulo": "324",
+        "texto": "el instructor dictará auto de conclusión del sumario"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuál es el plazo máximo de la instrucción y cómo se prorroga?",
+      "a": "Doce meses desde la incoación, con prórrogas sucesivas de seis meses o menos, por auto motivado y oídas las partes.",
+      "articulos": [
+       "324"
+      ],
+      "literal": {
+       "articulo": "324",
+       "texto": "en un plazo máximo de doce meses desde la incoación de la causa"
+      }
+     },
+     "conexiones": [
+      "324",
+      "622",
+      "779"
+     ],
+     "continua_en": [
+      "conclusion",
+      "abreviado"
+     ],
+     "origen": "instruccion"
+    },
+    {
+     "id": "sumario-ins-inspeccion",
+     "fase": "Inspección ocular",
+     "subtitulo": "Vestigios y lugar del delito",
+     "descripcion": "Si el delito dejó vestigios, el Juez los recoge y conserva para el juicio y describe el lugar, los objetos y todo lo útil para la acusación o la defensa, con planos o retratos si conviene. Las muestras biológicas se recogen y custodian garantizando su autenticidad. Todo se extiende por escrito en el acto.",
      "articulos": [
       "326",
+      "327",
+      "328",
+      "329",
+      "330",
+      "331",
+      "332",
       "333"
      ],
-     "rango": [
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "No quedan huellas del delito",
+       "entonces": "El Juez averigua por qué desaparecieron y recoge las pruebas que pueda.",
+       "articulos": [
+        "330"
+       ],
+       "literal": {
+        "articulo": "330",
+        "texto": "Cuando no hayan quedado huellas o vestigios del delito"
+       }
+      },
+      {
+       "si": "El delito no deja huellas por su naturaleza",
+       "entonces": "Se acredita por testigos y demás medios de comprobación.",
+       "articulos": [
+        "331"
+       ],
+       "literal": {
+        "articulo": "331",
+        "texto": "Cuando el delito fuere de los que no dejan huellas de su perpetración"
+       }
+      },
+      {
+       "si": "Hay un procesado como presunto autor",
+       "entonces": "Puede presenciar la diligencia, solo o con defensor, si lo pide; su falta no la suspende.",
+       "articulos": [
+        "333"
+       ],
+       "literal": {
+        "articulo": "333",
+        "texto": "no se suspenderá por la falta de comparecencia del procesado o de su defensor"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el procesado presenciar la inspección ocular?",
+      "a": "Sí, si lo solicita, solo o asistido de su defensor, y ambos pueden hacer observaciones.",
+      "articulos": [
+       "333"
+      ],
+      "literal": {
+       "articulo": "333",
+       "texto": "podrá presenciarlas, ya sola, ya asistida del defensor que eligiese o le fuese nombrado de oficio, si así lo solicitara"
+      }
+     },
+     "conexiones": [
+      "282",
       "326",
+      "327",
+      "328",
+      "329",
+      "330",
+      "331",
+      "332",
       "333"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [],
      "origen": "instruccion"
     },
     {
-     "id": "sumario-instruccion-334",
-     "fase": "Del cuerpo del delito",
-     "subtitulo": "TÍTULO V · CAPÍTULO II · arts. 334 a 367",
-     "descripcion": "",
+     "id": "sumario-ins-cuerpo",
+     "fase": "Cuerpo del delito",
+     "subtitulo": "Efectos, autopsia, análisis y ADN",
+     "descripcion": "El Juez manda recoger desde el primer momento armas, instrumentos y efectos relacionados con el delito, y describe la persona o cosa objeto del delito, con reconocimiento pericial cuando convenga. En caso de muerte violenta o sospechosa, identificación del cadáver y autopsia. Puede ordenar análisis químicos y, por resolución motivada, la toma de muestras biológicas del sospechoso para su perfil de ADN. Estas diligencias tienen preferencia.",
      "articulos": [
       "334",
+      "335",
+      "336",
+      "340",
+      "341",
+      "343",
+      "363",
+      "365",
+      "366",
       "367"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Exposición al público del cadáver no reconocido, antes de la autopsia",
+       "plazo": "Al menos 24 horas",
+       "articulo": "341",
+       "literal": "por tiempo a lo menos de veinticuatro horas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se incautan bienes a una persona",
+       "entonces": "Puede recurrir la medida en cualquier momento ante el Juez de Instrucción.",
+       "articulos": [
+        "334"
+       ],
+       "literal": {
+        "articulo": "334",
+        "texto": "La persona afectada por la incautación podrá recurrir en cualquier momento la medida ante el Juez de Instrucción."
+       }
+      },
+      {
+       "si": "Los efectos pertenecen a la víctima",
+       "entonces": "Se le restituyen de inmediato, salvo que deban conservarse como prueba.",
+       "articulos": [
+        "334"
+       ],
+       "literal": {
+        "articulo": "334",
+        "texto": "Los efectos que pertenecieran a la víctima del delito serán restituidos inmediatamente a la misma"
+       }
+      },
+      {
+       "si": "Muerte violenta o sospechosa de criminalidad",
+       "entonces": "Autopsia, aunque la causa de la muerte parezca clara.",
+       "articulos": [
+        "340",
+        "343"
+       ],
+       "literal": {
+        "articulo": "343",
+        "texto": "se procederá a la autopsia del cadáver"
+       }
+      },
+      {
+       "si": "Hace falta el perfil de ADN del sospechoso",
+       "entonces": "Resolución motivada del Juez de Instrucción, con proporcionalidad.",
+       "articulos": [
+        "363"
+       ],
+       "literal": {
+        "articulo": "363",
+        "texto": "podrá acordar, en resolución motivada, la obtención de muestras biológicas del sospechoso"
+       }
+      },
+      {
+       "si": "Un tercero reclama los efectos durante el sumario",
+       "entonces": "No se admiten reclamaciones ni tercerías.",
+       "articulos": [
+        "367"
+       ],
+       "literal": {
+        "articulo": "367",
+        "texto": "En ningún caso admitirá el Juez durante el sumario reclamaciones ni tercerías"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Admite el Juez, durante el sumario, tercerías para la devolución de los efectos del cuerpo del delito?",
+      "a": "No, en ningún caso, cualquiera que sea la clase de efectos y quien los reclame.",
+      "articulos": [
+       "367"
+      ],
+      "literal": {
+       "articulo": "367",
+       "texto": "En ningún caso admitirá el Juez durante el sumario reclamaciones ni tercerías que tengan por objeto la devolución de los efectos que constituyen el cuerpo del delito"
+      }
+     },
+     "conexiones": [
       "334",
+      "335",
+      "336",
+      "338",
+      "340",
+      "341",
+      "343",
+      "353",
+      "363",
+      "364",
+      "365",
+      "366",
       "367"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [
+      "investigacion"
+     ],
      "origen": "instruccion"
     },
     {
-     "id": "sumario-instruccion-367_bis",
-     "fase": "De la destrucción y la realización anticipada de los efectos judiciales",
-     "subtitulo": "TÍTULO V · CAPÍTULO II BIS · arts. 367 bis a 367 septies",
-     "descripcion": "",
+     "id": "sumario-ins-efectos",
+     "fase": "Destrucción y realización anticipada de efectos",
+     "subtitulo": "Efectos judiciales (arts. 367 bis a 367 septies)",
+     "descripcion": "Son efectos judiciales los bienes puestos a disposición judicial, embargados, incautados o aprehendidos. Pueden destruirse dejando muestras, realizarse antes de la sentencia (si son de lícito comercio y no son piezas de convicción) o cederse en uso provisional. La Oficina de Recuperación y Gestión de Activos puede encargarse de su gestión.",
      "articulos": [
       "367 bis",
+      "367 ter",
+      "367 quáter",
+      "367 quinquies",
+      "367 sexies",
       "367 septies"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Drogas: destrucción si el juez no ordena conservarlas",
+       "plazo": "1 mes desde los análisis",
+       "articulo": "367 ter",
+       "literal": "trascurrido el plazo de un mes desde que se efectuó aquella"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Su naturaleza o su custodia es peligrosa",
+       "entonces": "Destrucción, dejando muestras suficientes y previa audiencia del Fiscal y del propietario.",
+       "articulos": [
+        "367 ter"
+       ],
+       "literal": {
+        "articulo": "367 ter",
+        "texto": "Podrá decretarse la destrucción de los efectos judiciales, dejando muestras suficientes"
+       }
+      },
+      {
+       "si": "Son perecederos, abandonados, costosos de conservar o se deprecian",
+       "entonces": "Realización anticipada sin esperar a la sentencia.",
+       "articulos": [
+        "367 quáter"
+       ],
+       "literal": {
+        "articulo": "367 quáter",
+        "texto": "Podrán realizarse los efectos judiciales de lícito comercio, sin esperar al pronunciamiento o firmeza del fallo"
+       }
+      },
+      {
+       "si": "Está pendiente el recurso del interesado contra el embargo o decomiso",
+       "entonces": "No se acuerda la realización.",
+       "articulos": [
+        "367 quáter"
+       ],
+       "literal": {
+        "articulo": "367 quáter",
+        "texto": "Esté pendiente de resolución el recurso interpuesto por el interesado contra el embargo o decomiso de los bienes o efectos."
+       }
+      },
+      {
+       "si": "Los efectos sirven a un servicio público",
+       "entonces": "Utilización provisional de los bienes decomisados cautelarmente.",
+       "articulos": [
+        "367 sexies"
+       ],
+       "literal": {
+        "articulo": "367 sexies",
+        "texto": "Podrá autorizarse la utilización provisional de los bienes o efectos decomisados cautelarmente"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿En qué puede consistir la realización de los efectos judiciales?",
+      "a": "En la entrega a entidades sin ánimo de lucro o Administraciones públicas, la realización por persona o entidad especializada, o la subasta pública.",
+      "articulos": [
+       "367 quinquies"
+      ],
+      "literal": {
+       "articulo": "367 quinquies",
+       "texto": "La realización de los efectos judiciales podrá consistir en:"
+      }
+     },
+     "conexiones": [
       "367 bis",
+      "367 ter",
+      "367 quáter",
+      "367 quinquies",
+      "367 sexies",
       "367 septies"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [
+      "fianzas"
+     ],
      "origen": "instruccion"
     },
     {
-     "id": "sumario-instruccion-368",
-     "fase": "De la identidad del delincuente y de sus circunstancias personales",
-     "subtitulo": "TÍTULO V · CAPÍTULO III · arts. 368 a 384 bis",
-     "descripcion": "",
+     "id": "sumario-ins-identidad",
+     "fase": "Identidad y circunstancias del procesado",
+     "subtitulo": "Rueda de reconocimiento · antecedentes · salud mental",
+     "descripcion": "Quien acusa a una persona debe reconocerla judicialmente si hay duda sobre su identidad, en rueda con personas de aspecto semejante. Se hacen constar las señas del procesado, se acredita su edad y se traen sus antecedentes penales. Si hay indicios de enajenación mental, observación por los médicos forenses.",
      "articulos": [
       "368",
-      "384 bis"
+      "369",
+      "370",
+      "373",
+      "374",
+      "379",
+      "381",
+      "383"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "El Registro Central de Penados envía los antecedentes",
+       "plazo": "3 días (improrrogable)",
+       "articulo": "379",
+       "literal": "en el improrrogable término de tres días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Varias personas deben reconocer a la misma",
+       "entonces": "Reconocimiento por separado, sin que se comuniquen entre sí.",
+       "articulos": [
+        "370"
+       ],
+       "literal": {
+        "articulo": "370",
+        "texto": "deberá practicarse separadamente con cada uno de ellos"
+       }
+      },
+      {
+       "si": "Indicios de enajenación mental del procesado",
+       "entonces": "Observación inmediata por los médicos forenses.",
+       "articulos": [
+        "381"
+       ],
+       "literal": {
+        "articulo": "381",
+        "texto": "le someterá inmediatamente a la observación de los Médicos forenses"
+       }
+      },
+      {
+       "si": "La demencia sobreviene después del delito",
+       "entonces": "Concluso el sumario, se archiva la causa hasta que el procesado recobre la salud.",
+       "articulos": [
+        "383"
+       ],
+       "literal": {
+        "articulo": "383",
+        "texto": "se mandará archivar la causa por el Tribunal competente hasta que el procesado recobre la salud"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo se practica la rueda de reconocimiento?",
+      "a": "Poniendo a la persona junto con otras de circunstancias exteriores semejantes, y quien reconoce dice si está en la rueda y la designa.",
+      "articulos": [
+       "369"
+      ],
+      "literal": {
+       "articulo": "369",
+       "texto": "haciéndola comparecer en unión con otras de circunstancias exteriores semejantes"
+      }
+     },
+     "conexiones": [
       "368",
+      "369",
+      "370",
+      "373",
+      "374",
+      "375",
+      "376",
+      "379",
+      "381",
+      "382",
+      "383"
+     ],
+     "continua_en": [],
+     "duda": "Los arts. 375, 376 y 380 conservan referencias de 1882 (partida de bautismo, procesados de nueve a quince años). No las he incluido en la ficha. Ver PENDIENTES.md.",
+     "origen": "instruccion"
+    },
+    {
+     "id": "sumario-ins-procesamiento",
+     "fase": "Auto de procesamiento",
+     "subtitulo": "Indicio racional de criminalidad · recursos",
+     "descripcion": "En cuanto resulta del sumario un indicio racional de criminalidad contra una persona, el Juez dicta auto declarándola procesada. Desde entonces puede valerse de letrado para pedir la pronta terminación del sumario, solicitar diligencias y formular pretensiones sobre su situación. El régimen de recursos es distinto si el auto acuerda o deniega el procesamiento.",
+     "articulos": [
+      "384",
       "384 bis"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "plazos": [
+      {
+       "acto": "Reforma contra el auto de procesamiento",
+       "plazo": "3 días",
+       "articulo": "384",
+       "literal": "recurso de reforma dentro de los tres días siguientes al de haberle sido notificada la resolución"
+      },
+      {
+       "acto": "Apelación contra el auto que deniega esa reforma",
+       "plazo": "5 días",
+       "articulo": "384",
+       "literal": "dentro de los cinco días siguientes al de la notificación del auto denegatorio a la representación recurrente"
+      },
+      {
+       "acto": "Reforma contra el auto que deniega el procesamiento (solo quien lo pidió)",
+       "plazo": "3 días",
+       "articulo": "384",
+       "literal": "el recurso de reforma, utilizándolo dentro de los tres días siguientes al de la notificación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se acuerda el procesamiento",
+       "entonces": "Reforma en 3 días y apelación en un efecto (también subsidiaria con la reforma).",
+       "articulos": [
+        "384"
+       ],
+       "literal": {
+        "articulo": "384",
+        "texto": "También podrá ser interpuesto el recurso de apelación en un efecto subsidiariamente con el de reforma"
+       }
+      },
+      {
+       "si": "Se deniega el procesamiento y también la reforma",
+       "entonces": "No cabe apelación ni otro recurso, pero puede reproducirse la petición ante la Audiencia en el traslado del art. 627.",
+       "articulos": [
+        "384",
+        "627",
+        "630"
+       ],
+       "literal": {
+        "articulo": "384",
+        "texto": "no se podrá utilizar recurso de apelación ni ningún otro recurso"
+       }
+      },
+      {
+       "si": "El Juez no accede a la pronta terminación del sumario pedida por el procesado",
+       "entonces": "Queja ante la Audiencia (para diligencias o pretensiones, apelación en un solo efecto).",
+       "articulos": [
+        "384"
+       ],
+       "literal": {
+        "articulo": "384",
+        "texto": "En el primer caso podrán recurrir en queja a la Audiencia"
+       }
+      },
+      {
+       "si": "Procesado con cargo público, en prisión, por delito de bandas armadas o terrorismo",
+       "entonces": "Suspensión automática en el cargo mientras dure la prisión.",
+       "articulos": [
+        "384 bis"
+       ],
+       "literal": {
+        "articulo": "384 bis",
+        "texto": "quedará automáticamente suspendido en el ejercicio del mismo mientras dure la situación de prisión"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo se dicta el auto de procesamiento?",
+      "a": "Desde que resulta del sumario algún indicio racional de criminalidad contra una persona determinada.",
+      "articulos": [
+       "384"
+      ],
+      "literal": {
+       "articulo": "384",
+       "texto": "Desde que resultare del sumario algún indicio racional de criminalidad contra determinada persona, se dictará auto declarándola procesada"
+      }
+     },
+     "conexiones": [
+      "384",
+      "384 bis",
+      "627",
+      "630"
+     ],
+     "continua_en": [
+      "recursos",
+      "cautelares",
+      "conclusion"
+     ],
      "origen": "instruccion"
     },
     {
-     "id": "sumario-instruccion-385",
-     "fase": "De las declaraciones de los procesados",
-     "subtitulo": "TÍTULO V · CAPÍTULO IV · arts. 385 a 409 bis",
-     "descripcion": "",
+     "id": "sumario-ins-declaracion",
+     "fase": "Declaraciones del procesado",
+     "subtitulo": "Primera declaración y sucesivas",
+     "descripcion": "El Juez toma al procesado cuantas declaraciones considere convenientes. Las preguntas han de ser directas, sin coacción ni amenaza; el procesado puede manifestar cuanto convenga a su defensa y declarar cuantas veces quiera. La confesión no exime de comprobar el delito. La persona jurídica declara por su representante especialmente designado.",
      "articulos": [
       "385",
+      "386",
+      "389",
+      "392",
+      "396",
+      "400",
+      "405",
+      "406",
       "409 bis"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Primera declaración del procesado detenido",
+       "plazo": "24 horas",
+       "articulo": "386",
+       "literal": "Si el procesado estuviere detenido, se le recibirá la primera declaración dentro del término de veinticuatro horas."
+      },
+      {
+       "acto": "Prórroga si media causa grave",
+       "plazo": "48 horas más",
+       "articulo": "386",
+       "literal": "Este plazo podrá prorrogarse por otras cuarenta y ocho, si mediare causa grave"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El procesado rehúsa contestar o finge una enfermedad",
+       "entonces": "Se le advierte de que la instrucción continúa.",
+       "articulos": [
+        "392"
+       ],
+       "literal": {
+        "articulo": "392",
+        "texto": "se continuará la instrucción del proceso"
+       }
+      },
+      {
+       "si": "El procesado confiesa",
+       "entonces": "El Juez debe seguir practicando las diligencias para comprobar la confesión y el delito.",
+       "articulos": [
+        "406"
+       ],
+       "literal": {
+        "articulo": "406",
+        "texto": "La confesión del procesado no dispensará al Juez de instrucción de practicar todas las diligencias necesarias"
+       }
+      },
+      {
+       "si": "Se contradice o se retracta",
+       "entonces": "Se le interroga sobre el motivo de la contradicción o la retractación.",
+       "articulos": [
+        "405"
+       ],
+       "literal": {
+        "articulo": "405",
+        "texto": "deberá ser interrogado sobre el móvil de sus contradicciones y sobre las causas de su retractación"
+       }
+      },
+      {
+       "si": "No comparece el representante de la persona jurídica investigada",
+       "entonces": "Se tiene por celebrado el acto y por ejercido el derecho a no declarar.",
+       "articulos": [
+        "409 bis"
+       ],
+       "literal": {
+        "articulo": "409 bis",
+        "texto": "se tenga por celebrado este acto, entendiéndose que se acoge a su derecho a no declarar"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo deben ser las preguntas al procesado?",
+      "a": "Directas, nunca capciosas ni sugestivas, y sin coacción ni amenaza.",
+      "articulos": [
+       "389"
+      ],
+      "literal": {
+       "articulo": "389",
+       "texto": "Las preguntas serán directas, sin que por ningún concepto puedan hacérsele de un modo capcioso o sugestivo."
+      }
+     },
+     "conexiones": [
       "385",
-      "409 bis"
+      "386",
+      "388",
+      "389",
+      "390",
+      "391",
+      "392",
+      "393",
+      "396",
+      "397",
+      "400",
+      "405",
+      "406",
+      "407",
+      "409 bis",
+      "506"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [
+      "cautelares"
+     ],
      "origen": "instruccion"
     },
     {
-     "id": "sumario-instruccion-410",
-     "fase": "De las declaraciones de los testigos",
-     "subtitulo": "TÍTULO V · CAPÍTULO V · arts. 410 a 450",
-     "descripcion": "",
+     "id": "sumario-ins-testigos",
+     "fase": "Declaraciones de los testigos",
+     "subtitulo": "Deber de declarar · dispensas · declaración anticipada",
+     "descripcion": "Quien reside en España y no está impedido debe acudir al llamamiento y declarar. Hay exentos de comparecer (que declaran por escrito o en su despacho) y dispensados de declarar, como los parientes próximos del procesado y su abogado. Los testigos declaran por separado, en secreto, bajo juramento o promesa, y la declaración se graba. Si un testigo no podrá ir al juicio, su declaración se practica de inmediato con contradicción.",
      "articulos": [
       "410",
-      "450"
+      "412",
+      "416",
+      "417",
+      "418",
+      "420",
+      "433",
+      "435",
+      "446",
+      "448",
+      "449",
+      "449 bis",
+      "449 ter"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "El procesado nombra abogado para la declaración anticipada del testigo",
+       "plazo": "24 horas",
+       "articulo": "448",
+       "literal": "que nombre abogado en el término de veinticuatro horas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El testigo es pariente próximo del procesado",
+       "entonces": "Está dispensado de declarar en su contra; el Juez se lo advierte.",
+       "articulos": [
+        "416"
+       ],
+       "literal": {
+        "articulo": "416",
+        "texto": "no tiene obligación de declarar en contra del procesado"
+       }
+      },
+      {
+       "si": "No acude al primer llamamiento sin estar impedido, o se niega a declarar",
+       "entonces": "Multa de 200 a 5.000 euros; si persiste, conducción y persecución penal.",
+       "articulos": [
+        "420"
+       ],
+       "literal": {
+        "articulo": "420",
+        "texto": "incurrirá en la multa de 200 a 5.000 euros"
+       }
+      },
+      {
+       "si": "Es de temer que el testigo no podrá ir al juicio oral (ausencia, muerte, incapacidad)",
+       "entonces": "Declaración inmediata con posibilidad de contradicción.",
+       "articulos": [
+        "448"
+       ],
+       "literal": {
+        "articulo": "448",
+        "texto": "el Juez instructor mandará practicar inmediatamente la declaración, asegurando en todo caso la posibilidad de contradicción de las partes"
+       }
+      },
+      {
+       "si": "Peligro inminente de muerte del testigo",
+       "entonces": "Declaración urgente, aunque el procesado no pueda estar asistido de letrado.",
+       "articulos": [
+        "449"
+       ],
+       "literal": {
+        "articulo": "449",
+        "texto": "aunque el procesado no pudiese ser asistido de Letrado"
+       }
+      },
+      {
+       "si": "Testigo menor de catorce años o con discapacidad necesitada de especial protección, en los delitos del art. 449 ter",
+       "entonces": "Prueba preconstituida obligatoria, grabada y con contradicción.",
+       "articulos": [
+        "449 ter",
+        "449 bis"
+       ],
+       "literal": {
+        "articulo": "449 ter",
+        "texto": "la autoridad judicial acordará, en todo caso, practicar la audiencia del menor como prueba preconstituida"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede acogerse a la dispensa del art. 416 el pariente que está o ha estado personado como acusación particular?",
+      "a": "No: la dispensa no se aplica a quien esté o haya estado personado como acusación particular.",
+      "articulos": [
+       "416"
+      ],
+      "literal": {
+       "articulo": "416",
+       "texto": "Cuando el testigo esté o haya estado personado en el procedimiento como acusación particular."
+      }
+     },
+     "conexiones": [
       "410",
-      "450"
+      "411",
+      "412",
+      "416",
+      "417",
+      "418",
+      "419",
+      "420",
+      "421",
+      "433",
+      "435",
+      "436",
+      "439",
+      "440",
+      "446",
+      "448",
+      "449",
+      "449 bis",
+      "449 ter",
+      "730"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [],
      "origen": "instruccion"
     },
     {
-     "id": "sumario-instruccion-451",
-     "fase": "Del careo de los testigos y procesados",
-     "subtitulo": "TÍTULO V · CAPÍTULO VI · arts. 451 a 455",
-     "descripcion": "",
+     "id": "sumario-ins-careo",
+     "fase": "Careo",
+     "subtitulo": "Entre testigos o procesados discordes",
+     "descripcion": "Cuando testigos o procesados discrepan sobre un hecho importante, el Juez puede carearlos, por regla general de dos en dos: se leen sus declaraciones, se les pregunta si se ratifican y se les invita a ponerse de acuerdo. Es un medio subsidiario.",
      "articulos": [
       "451",
+      "452",
       "455"
      ],
-     "rango": [
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Hay otro modo de comprobar el delito o la culpabilidad",
+       "entonces": "No se practica el careo.",
+       "articulos": [
+        "455"
+       ],
+       "literal": {
+        "articulo": "455",
+        "texto": "No se practicarán careos sino cuando no fuere conocido otro modo de comprobar la existencia del delito o la culpabilidad de alguno de los procesados."
+       }
+      },
+      {
+       "si": "Uno de los testigos es menor de edad",
+       "entonces": "No se carea, salvo que el Juez lo considere imprescindible y no lesivo, previo informe pericial.",
+       "articulos": [
+        "455"
+       ],
+       "literal": {
+        "articulo": "455",
+        "texto": "No se practicarán careos con testigos que sean menores de edad"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo procede el careo en el sumario?",
+      "a": "Solo cuando no se conoce otro modo de comprobar la existencia del delito o la culpabilidad de algún procesado.",
+      "articulos": [
+       "455"
+      ],
+      "literal": {
+       "articulo": "455",
+       "texto": "No se practicarán careos sino cuando no fuere conocido otro modo de comprobar la existencia del delito"
+      }
+     },
+     "conexiones": [
       "451",
+      "452",
+      "453",
+      "454",
       "455"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [],
      "origen": "instruccion"
     },
     {
-     "id": "sumario-instruccion-456",
-     "fase": "Del informe pericial",
-     "subtitulo": "TÍTULO V · CAPÍTULO VII · arts. 456 a 485",
-     "descripcion": "",
+     "id": "sumario-ins-pericial",
+     "fase": "Informe pericial",
+     "subtitulo": "Nombramiento · recusación · peritos de parte",
+     "descripcion": "El Juez acuerda el informe pericial cuando hacen falta conocimientos científicos o artísticos, preferentemente con peritos titulares y, como regla, con dos peritos. El nombramiento se notifica a las partes. Si la pericia puede repetirse en el juicio oral, no cabe recusación; si no puede repetirse, cabe recusar y las partes pueden nombrar su propio perito.",
      "articulos": [
       "456",
-      "485"
-     ],
-     "rango": [
-      "456",
-      "485"
+      "458",
+      "459",
+      "466",
+      "467",
+      "468",
+      "469",
+      "471",
+      "478",
+      "484"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "ramas": [
+      {
+       "si": "La pericia podrá repetirse en el juicio oral",
+       "entonces": "Los peritos no pueden ser recusados.",
+       "articulos": [
+        "467"
+       ],
+       "literal": {
+        "articulo": "467",
+        "texto": "los peritos nombrados no podrán ser recusados por las partes"
+       }
+      },
+      {
+       "si": "La pericia no podrá repetirse en el juicio oral",
+       "entonces": "Cabe recusación, por escrito antes de empezar la diligencia, y querellante y procesado pueden nombrar un perito a su costa.",
+       "articulos": [
+        "467",
+        "469",
+        "471"
+       ],
+       "literal": {
+        "articulo": "469",
+        "texto": "deberá hacerlo por escrito antes de empezar la diligencia pericial"
+       }
+      },
+      {
+       "si": "Solo hay un perito en el lugar y no se puede esperar a otro",
+       "entonces": "Excepción a la regla de dos peritos.",
+       "articulos": [
+        "459"
+       ],
+       "literal": {
+        "articulo": "459",
+        "texto": "Se exceptúa el caso en que no hubiese más de uno en el lugar"
+       }
+      },
+      {
+       "si": "Los peritos discrepan y son número par",
+       "entonces": "El Juez nombra otro.",
+       "articulos": [
+        "484"
+       ],
+       "literal": {
+        "articulo": "484",
+        "texto": "Si los peritos estuviesen discordes y su número fuere par, nombrará otro el Juez."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo pueden las partes recusar a los peritos en el sumario?",
+      "a": "Cuando el reconocimiento y el informe no puedan reproducirse en el juicio oral.",
+      "articulos": [
+       "467"
+      ],
+      "literal": {
+       "articulo": "467",
+       "texto": "Si no pudiere reproducirse en el juicio oral, habrá lugar a la recusación."
+      }
+     },
+     "conexiones": [
+      "456",
+      "457",
+      "458",
+      "459",
+      "462",
+      "463",
+      "464",
+      "466",
+      "467",
+      "468",
+      "469",
+      "470",
+      "471",
+      "474",
+      "478",
+      "479",
+      "483",
+      "484"
+     ],
+     "continua_en": [
+      "abreviado"
+     ],
      "origen": "instruccion"
     },
     {
-     "id": "sumario-conclusion-622",
-     "fase": "De la conclusión del sumario",
-     "subtitulo": "TÍTULO XI · CAPÍTULO I · arts. 622 a 633",
-     "descripcion": "",
+     "id": "sumario-con-auto",
+     "fase": "Auto de conclusión del sumario",
+     "subtitulo": "Remisión al Tribunal y emplazamiento",
+     "descripcion": "Practicadas las diligencias, si el Juez de Instrucción considera terminado el sumario, lo declara concluso por auto y remite los autos y las piezas de convicción al Tribunal competente. El Fiscal puede pedir la remisión si, sin acusador privado, ya hay elementos para calificar. El auto se notifica y se emplaza a las partes ante la Audiencia.",
      "articulos": [
       "622",
-      "633"
+      "623",
+      "624",
+      "625"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Emplazamiento para comparecer ante la Audiencia",
+       "plazo": "10 días (15 ante el Supremo)",
+       "articulo": "623",
+       "literal": "emplazándoles para que comparezcan ante la respectiva Audiencia en el término de diez días, o en el de quince si el emplazamiento fuese ante el Supremo"
+      },
+      {
+       "acto": "Comparecer ante el juez de delitos leves, si el hecho es falta",
+       "plazo": "5 días",
+       "articulo": "625",
+       "literal": "se emplazará a las partes para que en el término de cinco días comparezcan ante el Juez municipal a quien corresponda su conocimiento"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay apelaciones en un solo efecto pendientes",
+       "entonces": "No impiden concluir el sumario; la Audiencia deja en suspenso los arts. 627 y siguientes hasta resolverlas.",
+       "articulos": [
+        "622"
+       ],
+       "literal": {
+        "articulo": "622",
+        "texto": "La sustanciación de los recursos de apelación admitidos sólo en un efecto no impedirá nunca la terminación del sumario"
+       }
+      },
+      {
+       "si": "Se estima alguna de esas apelaciones",
+       "entonces": "Se revoca el auto de conclusión y se devuelve el sumario al Juez para las diligencias que procedan.",
+       "articulos": [
+        "622"
+       ],
+       "literal": {
+        "articulo": "622",
+        "texto": "se revocará sin más trámite el auto del Juez declarando concluso el sumario"
+       }
+      },
+      {
+       "si": "El Juez considera que el hecho es falta (delito leve)",
+       "entonces": "Remite el proceso al juez competente, consultando el auto con el Tribunal superior; después, juicio del Libro VI.",
+       "articulos": [
+        "624",
+        "625"
+       ],
+       "literal": {
+        "articulo": "624",
+        "texto": "Si el Juez instructor reputare falta el hecho que hubiese dado lugar al sumario"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Concluido el sumario, ¿en qué plazo deben comparecer las partes ante la Audiencia?",
+      "a": "En diez días (quince si el emplazamiento es ante el Supremo).",
+      "articulos": [
+       "623"
+      ],
+      "literal": {
+       "articulo": "623",
+       "texto": "en el término de diez días, o en el de quince si el emplazamiento fuese ante el Supremo"
+      }
+     },
+     "conexiones": [
+      "227",
       "622",
-      "633"
+      "623",
+      "624",
+      "625",
+      "627"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [
+      "instruccion",
+      "leves"
+     ],
+     "duda": "Los arts. 624 y 625 hablan de «falta» y de «Juez municipal», y prevén consultar el auto y un recurso de casación. Ver PENDIENTES.md.",
      "origen": "conclusion"
     },
     {
-     "id": "sumario-conclusion-634",
-     "fase": "Del sobreseimiento",
-     "subtitulo": "TÍTULO XI · CAPÍTULO II · arts. 634 a 645",
-     "descripcion": "",
+     "id": "sumario-con-traslado",
+     "fase": "Instrucción de las partes y revisión por la Audiencia",
+     "subtitulo": "Traslado de la causa · confirmación o revocación",
+     "descripcion": "En la Audiencia se designa ponente, que abre los pliegos cerrados remitidos por el Juez. Vencido el emplazamiento, la causa pasa sucesivamente al Fiscal, al querellante y a la defensa. Cada uno se conforma con el auto de conclusión (y pide apertura del juicio oral o sobreseimiento) o pide nuevas diligencias. Después, el Tribunal confirma o revoca la conclusión.",
      "articulos": [
-      "634",
-      "645"
+      "626",
+      "627",
+      "628",
+      "629",
+      "630",
+      "631"
      ],
-     "rango": [
-      "634",
-      "645"
+     "plazos": [
+      {
+       "acto": "Traslado sucesivo a Fiscal, querellante y defensa",
+       "plazo": "Entre 3 y 10 días, según el volumen",
+       "articulo": "627",
+       "literal": "que no bajará de tres días ni excederá de diez, según el volumen del proceso"
+      },
+      {
+       "acto": "Prórroga si la causa excede de mil folios",
+       "plazo": "Como máximo, otro tanto",
+       "articulo": "627",
+       "literal": "sin que en ningún caso pueda exceder la prórroga de otro tanto más"
+      },
+      {
+       "acto": "Examen por el ponente",
+       "plazo": "3 días",
+       "articulo": "628",
+       "literal": "la pasará inmediatamente al ponente, con los escritos presentados, por término de tres días"
+      }
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "ramas": [
+      {
+       "si": "La parte está conforme con el auto de conclusión",
+       "entonces": "En el mismo escrito pide la apertura del juicio oral o el sobreseimiento.",
+       "articulos": [
+        "627"
+       ],
+       "literal": {
+        "articulo": "627",
+        "texto": "se solicitará por el Ministerio Fiscal, cuando intervenga, por el Procurador del querellante, si lo hubiere, y por la defensa del procesado o procesados, lo que estimen conveniente a su derecho"
+       }
+      },
+      {
+       "si": "La parte no está conforme",
+       "entonces": "Pide la práctica de nuevas diligencias.",
+       "articulos": [
+        "627"
+       ],
+       "literal": {
+        "articulo": "627",
+        "texto": "o pidiendo la práctica de nuevas diligencias"
+       }
+      },
+      {
+       "si": "El Tribunal revoca el auto de conclusión",
+       "entonces": "Devuelve el proceso al Juez, indicando las diligencias que deben practicarse.",
+       "articulos": [
+        "631"
+       ],
+       "literal": {
+        "articulo": "631",
+        "texto": "se mandará devolver el proceso al Juez que lo hubiere remitido, expresando las diligencias que hayan de practicarse"
+       }
+      },
+      {
+       "si": "Se denegó el procesamiento en la instrucción",
+       "entonces": "La parte puede reproducir aquí la petición, al evacuar este traslado.",
+       "articulos": [
+        "384",
+        "627",
+        "630"
+       ],
+       "literal": {
+        "articulo": "384",
+        "texto": "evacue el traslado a que se refiere el artículo 627 de esta misma Ley"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En la conclusión del sumario, ¿cuánto dura el traslado de la causa a cada parte?",
+      "a": "Entre tres y diez días según el volumen del proceso; si excede de mil folios, prorrogable como máximo por otro tanto.",
+      "articulos": [
+       "627"
+      ],
+      "literal": {
+       "articulo": "627",
+       "texto": "que no bajará de tres días ni excederá de diez"
+      }
+     },
+     "conexiones": [
+      "384",
+      "626",
+      "627",
+      "628",
+      "629",
+      "630",
+      "631"
+     ],
+     "continua_en": [],
      "origen": "conclusion"
     },
     {
-     "id": "sumario-conclusion-646",
-     "fase": "Disposiciones generales referentes a los anteriores títulos",
-     "subtitulo": "TÍTULO XII · arts. 646 a 648",
-     "descripcion": "",
+     "id": "sumario-con-decision",
+     "fase": "Apertura del juicio oral o sobreseimiento",
+     "subtitulo": "Decisión del Tribunal",
+     "descripcion": "Confirmada la conclusión del sumario, el Tribunal resuelve sobre la petición de juicio oral o de sobreseimiento. Si abre el juicio oral, da traslado para calificar (art. 649). Si alguna acusación sostiene la acción, solo puede sobreseer porque el hecho no es delito.",
+     "articulos": [
+      "632",
+      "633",
+      "634",
+      "645"
+     ],
+     "plazos": [
+      {
+       "acto": "El Tribunal resuelve sobre juicio oral o sobreseimiento",
+       "plazo": "Dentro del tercer día",
+       "articulo": "632",
+       "literal": "el Tribunal resolverá, dentro del tercer día, respecto a la solicitud del juicio oral o de sobreseimiento"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se abre el juicio oral",
+       "entonces": "Traslado para calificar por escrito (art. 649).",
+       "articulos": [
+        "633",
+        "649"
+       ],
+       "literal": {
+        "articulo": "633",
+        "texto": "se dispondrá el traslado al que se refiere el artículo 649"
+       }
+      },
+      {
+       "si": "Una acusación sostiene la acción o el Fiscal pide el juicio oral",
+       "entonces": "Solo cabe sobreseer si el hecho no es constitutivo de delito; en otro caso, hay que abrir el juicio.",
+       "articulos": [
+        "645",
+        "637"
+       ],
+       "literal": {
+        "articulo": "645",
+        "texto": "En cualquier otro caso no podrá prescindir de la apertura del juicio."
+       }
+      },
+      {
+       "si": "El sobreseimiento es parcial",
+       "entonces": "Se abre el juicio oral respecto de los procesados a quienes no favorece.",
+       "articulos": [
+        "634"
+       ],
+       "literal": {
+        "articulo": "634",
+        "texto": "se mandará abrir el juicio oral respecto de los procesados a quienes no favorezca"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si el querellante sostiene la acusación, ¿por qué causa puede aun así el Tribunal sobreseer?",
+      "a": "Solo porque el hecho no sea constitutivo de delito (art. 637.2.º).",
+      "articulos": [
+       "645",
+       "637"
+      ],
+      "literal": {
+       "articulo": "645",
+       "texto": "acordar el sobreseimiento a que se refiere el número 2.º del artículo 637"
+      }
+     },
+     "conexiones": [
+      "632",
+      "633",
+      "634",
+      "637",
+      "645",
+      "649"
+     ],
+     "continua_en": [
+      "juicio-oral"
+     ],
+     "origen": "conclusion"
+    },
+    {
+     "id": "sumario-con-sobreseimiento",
+     "fase": "El sobreseimiento",
+     "subtitulo": "Libre o provisional · total o parcial · recursos",
+     "descripcion": "El sobreseimiento libre procede si no hay indicios de que el hecho se cometiera, si no es delito o si los procesados están exentos de responsabilidad. El provisional, si no está justificada la perpetración o no hay motivos para acusar a personas determinadas. Si es total, se archiva la causa. Se comunica a las víctimas, que pueden recurrirlo aunque no sean parte.",
+     "articulos": [
+      "634",
+      "635",
+      "636",
+      "637",
+      "638",
+      "639",
+      "640",
+      "641",
+      "642",
+      "643",
+      "644"
+     ],
+     "plazos": [
+      {
+       "acto": "Recurso de las víctimas contra el auto de sobreseimiento",
+       "plazo": "20 días",
+       "articulo": "636",
+       "literal": "Las víctimas podrán recurrir el auto de sobreseimiento dentro del plazo de veinte días aunque no se hubieran mostrado como parte en la causa."
+      },
+      {
+       "acto": "La comunicación a la víctima se tiene por hecha (empieza el plazo del recurso)",
+       "plazo": "5 días desde la comunicación",
+       "articulo": "636",
+       "literal": "Transcurridos cinco días desde la comunicación, se entenderá que ha sido efectuada válidamente y desplegará todos sus efectos, iniciándose el cómputo del plazo de interposición del recurso."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No hay indicios del hecho, no es delito o los procesados están exentos",
+       "entonces": "Sobreseimiento libre.",
+       "articulos": [
+        "637"
+       ],
+       "literal": {
+        "articulo": "637",
+        "texto": "Procederá el sobreseimiento libre:"
+       }
+      },
+      {
+       "si": "No está justificada la perpetración o no hay motivos para acusar a personas determinadas",
+       "entonces": "Sobreseimiento provisional.",
+       "articulos": [
+        "641"
+       ],
+       "literal": {
+        "articulo": "641",
+        "texto": "Procederá el sobreseimiento provisional:"
+       }
+      },
+      {
+       "si": "Se quiere recurrir el auto de sobreseimiento",
+       "entonces": "Solo casación, en su caso: contra autos definitivos de sobreseimiento libre, con imputación fundada.",
+       "articulos": [
+        "636",
+        "848"
+       ],
+       "literal": {
+        "articulo": "636",
+        "texto": "Contra los autos de sobreseimiento sólo procederá, en su caso, el recurso de casación."
+       }
+      },
+      {
+       "si": "El Fiscal pide el sobreseimiento y no hay querellante",
+       "entonces": "El Tribunal puede llamar a los interesados (por edictos si se ignora su paradero) o consultar al Fiscal superior.",
+       "articulos": [
+        "642",
+        "643",
+        "644"
+       ],
+       "literal": {
+        "articulo": "642",
+        "texto": "podrá el Tribunal acordar que se haga saber la pretensión del Ministerio fiscal a los interesados en el ejercicio de la acción penal"
+       }
+      },
+      {
+       "si": "Sobreseimiento libre por no haber hecho o no ser delito",
+       "entonces": "Puede declararse que la causa no perjudica la reputación del procesado y reservarse su acción por calumnia.",
+       "articulos": [
+        "638"
+       ],
+       "literal": {
+        "articulo": "638",
+        "texto": "podrá declararse, al decretar el sobreseimiento, que la formación de la causa no perjudica a la reputación de los procesados"
+       }
+      },
+      {
+       "si": "Piezas de convicción con dueño conocido",
+       "entonces": "Se devuelven, salvo que un tercero pida retenerlas para entablar la acción civil.",
+       "articulos": [
+        "635"
+       ],
+       "literal": {
+        "articulo": "635",
+        "texto": "continuarán retenidas si un tercero lo solicitare, hasta que se resuelva la acción civil que se propusiere entablar"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué recurso cabe contra el auto de sobreseimiento en el sumario ordinario?",
+      "a": "Solo, en su caso, el de casación; el art. 848 lo admite contra los autos definitivos de sobreseimiento libre de las Audiencias cuando hubo imputación fundada.",
+      "articulos": [
+       "636",
+       "848"
+      ],
+      "literal": {
+       "articulo": "636",
+       "texto": "Contra los autos de sobreseimiento sólo procederá, en su caso, el recurso de casación."
+      }
+     },
+     "conexiones": [
+      "109 bis",
+      "634",
+      "635",
+      "636",
+      "637",
+      "638",
+      "639",
+      "640",
+      "641",
+      "642",
+      "643",
+      "644",
+      "848"
+     ],
+     "continua_en": [
+      "recursos"
+     ],
+     "duda": "El art. 636 da a las víctimas 20 días para «recurrir» el sobreseimiento, pero en el mismo artículo el único recurso es la casación. Y el art. 644 cita órganos que ya no existen. Ver PENDIENTES.md.",
+     "origen": "conclusion"
+    },
+    {
+     "id": "sumario-con-fiscal",
+     "fase": "El Fiscal en el sumario",
+     "subtitulo": "Testimonios y plazo de apelación (arts. 646 a 648)",
+     "descripcion": "El Letrado de la Administración de Justicia remite al Fiscal testimonio de las resoluciones apelables y de las diligencias periciales o de reconocimiento que le interesen, cuando no puede notificárselas directamente. Para el Fiscal que no está en el lugar de la instrucción, el plazo de apelación corre desde que recibe el testimonio.",
      "articulos": [
       "646",
+      "647",
       "648"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Inicio del plazo de apelación del Fiscal que no está en el lugar del Juez",
+       "plazo": "Desde el día siguiente a recibir el testimonio",
+       "articulo": "647",
+       "literal": "empezará a contarse desde el siguiente día al en que reciba el testimonio de la providencia o auto apelables"
+      },
+      {
+       "acto": "Acuse de recibo de los testimonios",
+       "plazo": "El mismo día",
+       "articulo": "647",
+       "literal": "acusará recibo de los testimonios de esta clase en el mismo día que los recibiere"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El Fiscal se reservó intervenir en una diligencia pericial",
+       "entonces": "La diligencia puede suspenderse si la suspensión no causa perjuicio.",
+       "articulos": [
+        "646"
+       ],
+       "literal": {
+        "articulo": "646",
+        "texto": "a no ser que el Fiscal se hubiese reservado anticipadamente el derecho de intervenir en ellas"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Desde cuándo corre el plazo de apelación para el Fiscal que no está en el mismo lugar que el Juez instructor?",
+      "a": "Desde el día siguiente a aquel en que recibe el testimonio de la resolución apelable.",
+      "articulos": [
+       "647"
+      ],
+      "literal": {
+       "articulo": "647",
+       "texto": "empezará a contarse desde el siguiente día al en que reciba el testimonio de la providencia o auto apelables"
+      }
+     },
+     "conexiones": [
       "646",
+      "647",
       "648"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true,
+     "continua_en": [],
      "origen": "conclusion"
     },
     {
