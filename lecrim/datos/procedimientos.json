@@ -4297,115 +4297,657 @@
    "nombre": "Enjuiciamiento rápido de determinados delitos",
    "bloque": "lecrim",
    "grupo": "Libro IV · Procedimientos especiales",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Juicio rápido: del atestado y las diligencias urgentes en el Juzgado de guardia a la conformidad, el juicio y la apelación (arts. 795 a 803).",
    "ambito": {
-    "corto": "Arts. 795 a 803",
-    "texto": "TÍTULO III. Del procedimiento para el enjuiciamiento rápido de determinados delitos",
+    "corto": "Prisión hasta 5 años, con atestado (art. 795)",
+    "texto": "Delitos con pena de prisión de hasta cinco años (u otras penas de hasta diez años), iniciados por atestado con el investigado detenido o citado ante el Juzgado de guardia, si el delito es flagrante, está en la lista del art. 795.1.2.ª o su instrucción se presume sencilla.",
     "articulos": [
      "795"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "795",
+      "texto": "delitos castigados con pena privativa de libertad que no exceda de cinco años"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "rapido-795",
-     "fase": "Ámbito de aplicación",
-     "subtitulo": "TÍTULO III · CAPÍTULO I · art. 795",
-     "descripcion": "",
+     "id": "rap-ambito",
+     "fase": "Ámbito del juicio rápido",
+     "subtitulo": "Pena, atestado y una de las tres circunstancias",
+     "descripcion": "Se aplica a los delitos con prisión de hasta cinco años (u otras penas de hasta diez años), si el proceso empieza por atestado policial con el investigado detenido o citado ante el Juzgado de guardia, y además el delito es flagrante, es uno de los de la lista del art. 795.1.2.ª (violencia doméstica, hurto, robo, seguridad vial…) o su instrucción se presume sencilla. En lo no previsto rige el procedimiento abreviado.",
      "articulos": [
-      "795"
-     ],
-     "rango": [
-      "795",
       "795"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "El delito es conexo con otro no comprendido en el art. 795.1",
+       "entonces": "No se sigue el juicio rápido.",
+       "articulos": [
+        "795"
+       ],
+       "literal": {
+        "articulo": "795",
+        "texto": "no será de aplicación a la investigación y enjuiciamiento de aquellos delitos que fueren conexos con otro u otros delitos no comprendidos en el apartado anterior"
+       }
+      },
+      {
+       "si": "Procede declarar secretas las actuaciones",
+       "entonces": "No se aplica este procedimiento.",
+       "articulos": [
+        "795",
+        "302"
+       ],
+       "literal": {
+        "articulo": "795",
+        "texto": "No se aplicará este procedimiento en aquellos casos en que sea procedente acordar el secreto de las actuaciones"
+       }
+      },
+      {
+       "si": "Algo no está previsto en este Título",
+       "entonces": "Se aplican supletoriamente las normas del procedimiento abreviado.",
+       "articulos": [
+        "795"
+       ],
+       "literal": {
+        "articulo": "795",
+        "texto": "se aplicarán supletoriamente las normas del Título II de este mismo Libro, relativas al procedimiento abreviado"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué límite de pena de prisión tiene el juicio rápido?",
+      "a": "Delitos castigados con pena privativa de libertad que no exceda de cinco años (u otras penas cuya duración no exceda de diez años).",
+      "articulos": [
+       "795"
+      ],
+      "literal": {
+       "articulo": "795",
+       "texto": "delitos castigados con pena privativa de libertad que no exceda de cinco años"
+      }
+     },
+     "conexiones": [
+      "302",
+      "795"
+     ],
+     "continua_en": [
+      "abreviado"
+     ]
     },
     {
-     "id": "rapido-796",
-     "fase": "De las actuaciones de la Policía Judicial",
-     "subtitulo": "TÍTULO III · CAPÍTULO II · art. 796",
-     "descripcion": "",
+     "id": "rap-policia",
+     "fase": "Actuaciones de la Policía Judicial",
+     "subtitulo": "Atestado y citaciones ante el Juzgado de guardia",
+     "descripcion": "Durante la detención, o en el tiempo imprescindible, la Policía recaba el parte médico, informa al investigado de su derecho a comparecer con abogado, le cita (si no está detenido) junto con los testigos y los responsables civiles ante el Juzgado de guardia en día y hora coordinados, y envía a analizar las sustancias aprehendidas.",
      "articulos": [
       "796"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Remisión del atestado si el responsable no fue detenido ni localizado al principio",
+       "plazo": "Dentro de 5 días",
+       "articulo": "796",
+       "literal": "y en cualquier caso, dentro de los cinco días siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El investigado no dice expresamente que quiere comparecer con abogado",
+       "entonces": "La Policía pide al Colegio un letrado de oficio.",
+       "articulos": [
+        "796"
+       ],
+       "literal": {
+        "articulo": "796",
+        "texto": "la Policía Judicial recabará del Colegio de Abogados la designación de un letrado de oficio"
+       }
+      },
+      {
+       "si": "El análisis de sustancias no llega a tiempo",
+       "entonces": "La Policía puede practicarlo ella misma, con control judicial.",
+       "articulos": [
+        "796"
+       ],
+       "literal": {
+        "articulo": "796",
+        "texto": "la Policía Judicial podrá practicar por sí misma dicho análisis, sin perjuicio del debido control judicial del mismo"
+       }
+      },
+      {
+       "si": "Prueba de drogas a un conductor",
+       "entonces": "Test salival y, si es positivo, saliva para laboratorio; el conductor puede pedir prueba de contraste.",
+       "articulos": [
+        "796"
+       ],
+       "literal": {
+        "articulo": "796",
+        "texto": "Todo conductor podrá solicitar prueba de contraste consistente en análisis de sangre, orina u otras análogas."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿De qué derecho informa la Policía a la persona a la que se atribuye el hecho en el juicio rápido, aunque no la detenga?",
+      "a": "Del derecho a comparecer ante el Juzgado de guardia asistida de abogado.",
+      "articulos": [
+       "796"
+      ],
+      "literal": {
+       "articulo": "796",
+       "texto": "del derecho que le asiste de comparecer ante el Juzgado de guardia asistido de abogado"
+      }
+     },
+     "conexiones": [
+      "770",
       "796",
-      "796"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
-    },
-    {
-     "id": "rapido-797",
-     "fase": "De las diligencias urgentes ante el Juzgado de guardia",
-     "subtitulo": "TÍTULO III · CAPÍTULO III · arts. 797 a 799",
-     "descripcion": "",
-     "articulos": [
-      "797",
       "799"
      ],
-     "rango": [
-      "797",
-      "799"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "inicio"
+     ]
     },
     {
-     "id": "rapido-800",
-     "fase": "De la preparación del juicio oral",
-     "subtitulo": "TÍTULO III · CAPÍTULO IV · arts. 800 a 801",
-     "descripcion": "",
+     "id": "rap-guardia",
+     "fase": "Diligencias urgentes en el Juzgado de guardia",
+     "subtitulo": "Instrucción concentrada",
+     "descripcion": "Recibido el atestado, el Juez de guardia incoa diligencias urgentes y, con el Fiscal, practica lo necesario: antecedentes penales, informes periciales y forenses, tasación, declaración del investigado (art. 775) y de los testigos, rueda de reconocimiento y careos. Si es competente el Juzgado de Violencia sobre la Mujer, se actúa en horas de audiencia.",
      "articulos": [
+      "797",
+      "797 bis"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Se quiere recurrir el auto que incoa diligencias urgentes",
+       "entonces": "No cabe recurso.",
+       "articulos": [
+        "797"
+       ],
+       "literal": {
+        "articulo": "797",
+        "texto": "Contra este auto no cabrá recurso alguno."
+       }
+      },
+      {
+       "si": "El investigado no comparece a la citación policial",
+       "entonces": "El Juez puede aplicar el art. 487.",
+       "articulos": [
+        "797",
+        "487"
+       ],
+       "literal": {
+        "articulo": "797",
+        "texto": "podrá éste aplicar lo previsto en el artículo 487"
+       }
+      },
+      {
+       "si": "Un testigo no comparece",
+       "entonces": "El Juez puede aplicar el art. 420.",
+       "articulos": [
+        "797",
+        "420"
+       ],
+       "literal": {
+        "articulo": "797",
+        "texto": "podrá éste aplicar lo previsto en el artículo 420"
+       }
+      },
+      {
+       "si": "Es de temer que una prueba no podrá practicarse en el juicio oral",
+       "entonces": "El Juez de guardia la practica de inmediato, con contradicción.",
+       "articulos": [
+        "797",
+        "730"
+       ],
+       "literal": {
+        "articulo": "797",
+        "texto": "el Juez de guardia practicará inmediatamente la misma asegurando, en todo caso, la posibilidad de contradicción de las partes"
+       }
+      },
+      {
+       "si": "Es competente el Juzgado de Violencia sobre la Mujer",
+       "entonces": "Diligencias en horas de audiencia; el detenido pasa al de guardia solo para regularizar su situación personal si no puede presentarse ante el de Violencia.",
+       "articulos": [
+        "797 bis"
+       ],
+       "literal": {
+        "articulo": "797 bis",
+        "texto": "deberán ser practicadas y adoptadas durante las horas de audiencia"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cabe recurso contra el auto que incoa diligencias urgentes?",
+      "a": "No, no cabe recurso alguno.",
+      "articulos": [
+       "797"
+      ],
+      "literal": {
+       "articulo": "797",
+       "texto": "Contra este auto no cabrá recurso alguno."
+      }
+     },
+     "conexiones": [
+      "420",
+      "487",
+      "730",
+      "775",
+      "776",
+      "797",
+      "797 bis"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "rap-798",
+     "fase": "Decisión del Juez de guardia",
+     "subtitulo": "Seguir el juicio rápido, abreviado, sobreseer o delito leve",
+     "descripcion": "Tras oír a las partes y al Fiscal, que pueden pedir medidas cautelares, el Juez decide. Si las diligencias bastan, ordena seguir el juicio rápido por auto oral. Si no bastan, el asunto pasa a diligencias previas del abreviado. Todo debe hacerse durante el servicio de guardia.",
+     "articulos": [
+      "798",
+      "799"
+     ],
+     "plazos": [
+      {
+       "acto": "Diligencias y resoluciones",
+       "plazo": "Durante el servicio de guardia",
+       "articulo": "799",
+       "literal": "deberán ser practicadas y adoptadas durante el servicio de guardia del Juzgado de Instrucción"
+      },
+      {
+       "acto": "Prórroga en guardias no permanentes de más de 24 horas (atestado recibido en las 48 horas finales)",
+       "plazo": "72 horas más",
+       "articulo": "799",
+       "literal": "podrá prorrogarse por el Juez por un período adicional de setenta y dos horas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Las diligencias son suficientes",
+       "entonces": "Auto oral, sin recurso, para seguir el juicio rápido (salvo sobreseimiento o inhibición del art. 779).",
+       "articulos": [
+        "798",
+        "779"
+       ],
+       "literal": {
+        "articulo": "798",
+        "texto": "dictará auto en forma oral, que deberá documentarse y no será susceptible de recurso alguno"
+       }
+      },
+      {
+       "si": "Las diligencias son insuficientes",
+       "entonces": "Continúa como diligencias previas del abreviado, indicando qué diligencias faltan.",
+       "articulos": [
+        "798"
+       ],
+       "literal": {
+        "articulo": "798",
+        "texto": "ordenará que el procedimiento continúe como diligencias previas del procedimiento abreviado"
+       }
+      },
+      {
+       "si": "El hecho es falta (delito leve)",
+       "entonces": "Enjuiciamiento inmediato conforme al art. 963.",
+       "articulos": [
+        "798",
+        "963"
+       ],
+       "literal": {
+        "articulo": "798",
+        "texto": "procederá a su enjuiciamiento inmediato conforme a lo previsto en el artículo 963"
+       }
+      },
+      {
+       "si": "Se recurre lo resuelto sobre medidas cautelares (auto del art. 779.1, reglas 1.ª a 3.ª)",
+       "entonces": "Recursos del art. 766.",
+       "articulos": [
+        "798",
+        "766"
+       ],
+       "literal": {
+        "articulo": "798",
+        "texto": "Frente al pronunciamiento del Juez sobre medidas cautelares, cabrán los recursos previstos en el artículo 766."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si el Juez de guardia considera insuficientes las diligencias urgentes, ¿qué ocurre?",
+      "a": "El procedimiento continúa como diligencias previas del procedimiento abreviado, y el Juez indica motivadamente qué diligencias faltan.",
+      "articulos": [
+       "798"
+      ],
+      "literal": {
+       "articulo": "798",
+       "texto": "ordenará que el procedimiento continúe como diligencias previas del procedimiento abreviado"
+      }
+     },
+     "conexiones": [
+      "766",
+      "779",
+      "798",
+      "799",
+      "800",
+      "963"
+     ],
+     "continua_en": [
+      "abreviado",
+      "leves",
+      "cautelares"
+     ],
+     "duda": "El art. 798.2.1.º habla de «falta». Propuesta: entenderla como delito leve, según la nota general del BOE. Ver PENDIENTES.md."
+    },
+    {
+     "id": "rap-preparacion",
+     "fase": "Preparación del juicio oral",
+     "subtitulo": "Acusación, defensa y señalamiento en la guardia",
+     "descripcion": "En el mismo acto, Fiscal y partes se pronuncian sobre apertura del juicio oral o sobreseimiento y sobre medidas cautelares. Si se abre el juicio (auto oral sin recurso), el Fiscal acusa en el acto y la defensa contesta en el acto o en el plazo que se le dé. El LAJ de guardia cita a las partes y señala el juicio ante el Juzgado de lo Penal.",
+     "articulos": [
+      "800"
+     ],
+     "plazos": [
+      {
+       "acto": "Escrito de defensa, si el acusado pide plazo",
+       "plazo": "Dentro de 5 días",
+       "articulo": "800",
+       "literal": "el Juez fijará prudencialmente el mismo dentro de los cinco días siguientes"
+      },
+      {
+       "acto": "Señalamiento del juicio oral",
+       "plazo": "Dentro de 15 días",
+       "articulo": "800",
+       "literal": "en la fecha más próxima posible y, en cualquier caso, dentro de los quince días siguientes"
+      },
+      {
+       "acto": "Escritos de acusación si hay acusación particular",
+       "plazo": "No más de 2 días (improrrogable)",
+       "articulo": "800",
+       "literal": "dentro de un plazo improrrogable y no superior a dos días"
+      },
+      {
+       "acto": "Superior jerárquico, si el Fiscal no acusa",
+       "plazo": "2 días",
+       "articulo": "800",
+       "literal": "requerirá inmediatamente al superior jerárquico del Fiscal para que, en el plazo de dos días, presente el escrito que proceda"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Fiscal y acusador particular piden el sobreseimiento",
+       "entonces": "Se procede como en el art. 782.",
+       "articulos": [
+        "800",
+        "782"
+       ],
+       "literal": {
+        "articulo": "800",
+        "texto": "el Juez procederá conforme a lo previsto en el artículo 782"
+       }
+      },
+      {
+       "si": "Se acuerda la apertura del juicio oral",
+       "entonces": "Auto oral motivado, sin recurso.",
+       "articulos": [
+        "800"
+       ],
+       "literal": {
+        "articulo": "800",
+        "texto": "dictará en forma oral auto motivado, que deberá documentarse y no será susceptible de recurso alguno"
+       }
+      },
+      {
+       "si": "Ni el Fiscal ni su superior presentan escrito en plazo",
+       "entonces": "Se entiende que no piden el juicio y que procede el sobreseimiento libre.",
+       "articulos": [
+        "800"
+       ],
+       "literal": {
+        "articulo": "800",
+        "texto": "se entenderá que no pide la apertura de juicio oral y que considera procedente el sobreseimiento libre"
+       }
+      },
+      {
+       "si": "El acusado se conforma con la acusación en el acto",
+       "entonces": "Conformidad ante el Juzgado de guardia (art. 801).",
+       "articulos": [
+        "800",
+        "801"
+       ],
+       "literal": {
+        "articulo": "800",
+        "texto": "podrá en el mismo acto prestar su conformidad con arreglo a lo dispuesto en el artículo siguiente"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En el juicio rápido, ¿en qué plazo debe señalarse el juicio oral?",
+      "a": "En la fecha más próxima posible y, en todo caso, dentro de los quince días siguientes.",
+      "articulos": [
+       "800"
+      ],
+      "literal": {
+       "articulo": "800",
+       "texto": "dentro de los quince días siguientes"
+      }
+     },
+     "conexiones": [
+      "782",
+      "783",
+      "785",
+      "786",
       "800",
       "801"
      ],
-     "rango": [
-      "800",
+     "continua_en": [
+      "cautelares"
+     ],
+     "duda": "El art. 800.3 remite al «785.2» para el señalamiento (hoy en el 786.2), y el art. 800.6 al «apartado 1 del artículo 785», que hoy es la audiencia preliminar que el art. 802.1 excluye en el juicio rápido. Ver PENDIENTES.md."
+    },
+    {
+     "id": "rap-conformidad",
+     "fase": "Conformidad ante el Juzgado de guardia",
+     "subtitulo": "Reducción de la pena en un tercio (art. 801)",
+     "descripcion": "Si no hay acusación particular, el Fiscal ha acusado en el acto y la pena pedida está dentro de los límites del art. 801, el acusado puede conformarse ante el propio Juez de guardia, que dicta sentencia oral imponiendo la pena pedida reducida en un tercio, aunque quede por debajo del mínimo legal. Puede declarar la firmeza y resolver sobre la suspensión en el mismo acto.",
+     "articulos": [
       "801"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "La pena pedida es de hasta tres años de prisión, multa u otra de hasta diez años, y la de prisión no supera dos años reducida en un tercio",
+       "entonces": "Cabe la conformidad ante el Juzgado de guardia.",
+       "articulos": [
+        "801"
+       ],
+       "literal": {
+        "articulo": "801",
+        "texto": "no supere, reducida en un tercio, los dos años de prisión"
+       }
+      },
+      {
+       "si": "Hay acusador particular",
+       "entonces": "El acusado puede conformarse con la acusación más grave en su escrito de defensa.",
+       "articulos": [
+        "801"
+       ],
+       "literal": {
+        "articulo": "801",
+        "texto": "el acusado podrá, en su escrito de defensa, prestar su conformidad con la más grave de las acusaciones"
+       }
+      },
+      {
+       "si": "Se quiere suspender la pena de prisión impuesta",
+       "entonces": "Basta el compromiso del acusado de pagar la responsabilidad civil en el plazo que fije el juzgado.",
+       "articulos": [
+        "801"
+       ],
+       "literal": {
+        "articulo": "801",
+        "texto": "bastará, a los efectos de lo dispuesto en el artículo 81.3.ª del Código Penal, con el compromiso del acusado de satisfacer las responsabilidades civiles"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En la conformidad ante el Juzgado de guardia, ¿qué pena se impone?",
+      "a": "La pena solicitada reducida en un tercio, aunque quede por debajo del mínimo previsto en el Código Penal.",
+      "articulos": [
+       "801"
+      ],
+      "literal": {
+       "articulo": "801",
+       "texto": "impondrá la pena solicitada reducida en un tercio, aun cuando suponga la imposición de una pena inferior al límite mínimo previsto en el Código Penal"
+      }
+     },
+     "conexiones": [
+      "779",
+      "787",
+      "787 ter",
+      "789",
+      "801"
+     ],
+     "continua_en": [
+      "ejecucion"
+     ],
+     "duda": "El art. 801 remite al «artículo 787» para la conformidad y su control, pero hoy la conformidad en el juicio está en el art. 787 ter (el 787 trata de la asistencia del acusado). Ver PENDIENTES.md."
     },
     {
-     "id": "rapido-802",
-     "fase": "Del juicio oral y de la sentencia",
-     "subtitulo": "TÍTULO III · CAPÍTULO V · art. 802",
-     "descripcion": "",
+     "id": "rap-juicio",
+     "fase": "Juicio oral y sentencia",
+     "subtitulo": "Como en el abreviado, sin audiencia preliminar",
+     "descripcion": "El juicio ante el Juzgado de lo Penal sigue las reglas del procedimiento abreviado, salvo la audiencia preliminar del art. 785. Si no puede celebrarse o terminarse en un solo acto, se señala nueva fecha dentro de quince días. La sentencia se dicta en tres días.",
      "articulos": [
       "802"
      ],
-     "rango": [
-      "802",
+     "plazos": [
+      {
+       "acto": "Nueva fecha si no puede celebrarse o concluirse el juicio",
+       "plazo": "Dentro de 15 días",
+       "articulo": "802",
+       "literal": "el día más inmediato posible y, en todo caso, dentro de los quince siguientes"
+      },
+      {
+       "acto": "Sentencia",
+       "plazo": "3 días desde la terminación de la vista",
+       "articulo": "802",
+       "literal": "La sentencia se dictará dentro de los tres días siguientes a la terminación de la vista"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se pregunta si hay audiencia preliminar",
+       "entonces": "No: el juicio rápido la excluye.",
+       "articulos": [
+        "802",
+        "785"
+       ],
+       "literal": {
+        "articulo": "802",
+        "texto": "salvo en lo que se refiere a la audiencia preliminar previa del artículo 785"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se celebra la audiencia preliminar del art. 785 en el juicio rápido?",
+      "a": "No. El juicio sigue el abreviado salvo en lo relativo a esa audiencia preliminar.",
+      "articulos": [
+       "802"
+      ],
+      "literal": {
+       "articulo": "802",
+       "texto": "salvo en lo que se refiere a la audiencia preliminar previa del artículo 785"
+      }
+     },
+     "conexiones": [
+      "785",
+      "786",
+      "787",
+      "788",
+      "789",
       "802"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "abreviado"
+     ]
     },
     {
-     "id": "rapido-803",
-     "fase": "De la impugnación de la sentencia",
-     "subtitulo": "TÍTULO III · CAPÍTULO VI · art. 803",
-     "descripcion": "",
+     "id": "rap-apelacion",
+     "fase": "Apelación y ejecución",
+     "subtitulo": "Apelación con plazos abreviados",
+     "descripcion": "Contra la sentencia del Juzgado de lo Penal cabe apelación por los arts. 790 a 792, con plazos más cortos y tramitación preferente. La sentencia dictada en ausencia sigue el art. 793. Firme la sentencia, se ejecuta con las reglas generales y las del art. 794.",
      "articulos": [
       "803"
      ],
-     "rango": [
-      "803",
+     "plazos": [
+      {
+       "acto": "Escrito de formalización de la apelación",
+       "plazo": "5 días",
+       "articulo": "803",
+       "literal": "El plazo para presentar el escrito de formalización será de cinco días."
+      },
+      {
+       "acto": "Alegaciones de las demás partes",
+       "plazo": "5 días",
+       "articulo": "803",
+       "literal": "El plazo de las demás partes para presentar escrito de alegaciones será de cinco días."
+      },
+      {
+       "acto": "Sentencia de apelación",
+       "plazo": "3 días tras la vista o 5 desde la recepción si no hay vista",
+       "articulo": "803",
+       "literal": "La sentencia habrá de dictarse dentro de los tres días siguientes a la celebración de la vista, o bien dentro de los cinco días siguientes a la recepción de las actuaciones, si no se celebrare vista."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Sentencia dictada en ausencia del acusado",
+       "entonces": "Se aplica el art. 793 (recurso de anulación).",
+       "articulos": [
+        "803",
+        "793"
+       ],
+       "literal": {
+        "articulo": "803",
+        "texto": "Respecto de las sentencias dictadas en ausencia del acusado se estará a lo dispuesto en el artículo 793."
+       }
+      },
+      {
+       "si": "La sentencia es firme",
+       "entonces": "Ejecución por las reglas generales y las especiales del art. 794.",
+       "articulos": [
+        "803",
+        "794"
+       ],
+       "literal": {
+        "articulo": "803",
+        "texto": "conforme a las reglas generales y a las especiales del artículo 794"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué plazo hay para formalizar la apelación contra la sentencia del juicio rápido?",
+      "a": "Cinco días (frente a los diez del abreviado), con tramitación preferente.",
+      "articulos": [
+       "803",
+       "790"
+      ],
+      "literal": {
+       "articulo": "803",
+       "texto": "El plazo para presentar el escrito de formalización será de cinco días."
+      }
+     },
+     "conexiones": [
+      "790",
+      "791",
+      "792",
+      "793",
+      "794",
       "803"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "recursos",
+      "ejecucion"
+     ]
     }
    ]
   },

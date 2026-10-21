@@ -123,6 +123,26 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [x] **Recursos de la LECrim como en la LEC (hecho):** 14 recursos y 27 casos del selector, con «Por resolución», «Recursos» y «Ponte a prueba». Antes: al usuario le gusta la pestaña Recursos de la LEC (selector «Por resolución», fichas de cada recurso y «Ponte a prueba»). En la LECrim ahora solo hay tarjetas de bloques en esqueleto. Hacer `lecrim/datos/recursos.json` con el mismo formato (recursos, selector por resolución con frase literal, test), a partir de los arts. 216-238 ter (recursos contra resoluciones procesales), 846 bis a-846 ter (apelación), 847-933 (casación) y 954-961 (revisión), y los recursos propios del abreviado, juicio rápido y delitos leves. Todo con `revisado: false` y las dudas anotadas aquí.
 - [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).
 
+### Juicio rápido (contenido elaborado, pendiente de revisión)
+
+> Bloque desarrollado: 8 fases y 12 plazos (arts. 795 a 803). Los arts. 803 bis (aceptación de decreto) y 803 ter (decomiso) son otros procesos y no van aquí. Las propuestas son de Claude (No verificable hasta que las confirmes). Contesta: **sí**, **no** u **otra**.
+
+- [ ] **¿Audiencia preliminar en el juicio rápido? (arts. 800.6 y 802.1).** El art. 800.6 dice que, recibido el escrito de defensa, el órgano enjuiciador procederá «conforme a lo previsto en el apartado 1 del artículo 785». Hoy el art. 785.1 regula la convocatoria de la audiencia preliminar. Pero el art. 802.1 dice que el juicio sigue el abreviado «salvo en lo que se refiere a la audiencia preliminar previa del artículo 785» (Verificable).
+  En la app: Procesos › Juicio rápido › fases 5 y 7.
+  - **Propuesta:** no hay audiencia preliminar en el juicio rápido. El art. 802.1 lo excluye de forma expresa y es la norma propia del juicio. La remisión del 800.6 parece hecha a la redacción anterior del 785.1 y no se ha actualizado. Así figura en la app.
+  - **Tu respuesta:**
+- [ ] **Señalamiento: el art. 800.3 remite al «785.2».** Los criterios de señalamiento están hoy en el art. 786.2. Es la misma duda que en el abreviado (art. 788.1).
+  - **Propuesta:** leerlo como remisión al art. 786.2.
+  - **Tu respuesta:**
+- [ ] **Conformidad: los arts. 801.1, 801.2 y 784.3 remiten al «artículo 787».** Hoy el art. 787 regula la asistencia del acusado al juicio; la conformidad antes de la prueba está en el art. 787 ter, con el mismo control que el art. 785.4 a 7 (Verificable).
+  En la app: Procesos › Juicio rápido › fase 6, y Abreviado › fase 6.
+  - **Propuesta:** leer esas remisiones como hechas al art. 787 ter. Es la misma renumeración que en las dudas del art. 786.
+  - **Tu respuesta:**
+- [ ] **«Falta» en el art. 798.2.1.º.** Si el juez de guardia «reputa falta» el hecho, lo enjuicia de inmediato (art. 963).
+  - **Propuesta:** entenderlo como delito leve (nota general del BOE).
+  - **Tu respuesta:**
+- [ ] **Revisa las 8 fases:** las frases entre « » son literales; las descripciones son resumen mío.
+
 ### Juicio oral del sumario (contenido elaborado, pendiente de revisión)
 
 > Bloque desarrollado: 9 fases y 11 plazos (arts. 649 a 749). Con él, «Procedimientos › Sumario ordinario» queda completo (26 fases). Las propuestas son de Claude (No verificable hasta que las confirmes). Contesta: **sí**, **no** u **otra**.
