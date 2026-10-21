@@ -9,6 +9,7 @@
 - Si una petición admite varias interpretaciones, pregunta; no elijas por él.
 - Si el usuario se equivoca, dile "estás equivocado" y explica por qué. Si te corrige con razón, di "tienes razón" y corrige.
 - No suenes seguro de algo que no lo estás. Cierra cada respuesta con tu nivel de certeza.
+- **Memoria del proyecto en este archivo.** Cada chat empieza sin recordar los anteriores. Cuando en un chat se acuerde algo nuevo (una decisión del usuario, una forma de trabajar, un bloque hecho, dónde está algo), anótalo aquí en el mismo commit, de forma breve y en su sección. Las dudas jurídicas van a `PENDIENTES.md`, no aquí.
 
 ## Objetivo
 Una app interactiva por cada ley para estudiarla, repasarla y consultarla a diario. La primera es la Ley de Enjuiciamiento Civil (LEC). Después vendrán LECrim, LRJS, Estatuto de los Trabajadores y otras.
@@ -136,6 +137,13 @@ No empieces la siguiente fase sin su visto bueno.
 - **Ampliación 2 (hecha)** — Bloques del núcleo que faltaban: disposiciones generales (competencia, arts. 36-67; partes y postulación, 6-35; actuaciones, plazos, comunicaciones y nulidad, 129-247; costas, 241-246 y 394-398) y prueba (arts. 217 y 281-386). Pendientes de revisión del usuario.
 - **F7** — Portada (`/index.html`) que enlaza a cada ley, preparada para añadir LECrim, LRJS y ET. Hecha: se genera con `python3 scripts/generar_portada.py` a partir de `scripts/leyes.json`. Para añadir una ley: crear su carpeta con su `index.html` y poner su estado a «disponible» en `leyes.json`. Los enlaces apuntan a `carpeta/index.html` para que funcionen también en local.
 - **Segunda parte** — Calculadora de plazos con calendario.
+
+## Pie legal y páginas legales (todas las leyes)
+- Pie igual que el de norlexia.es en la portada y en cada ley: «© 2026 J A Noriega (Norik)» abre la ventana «Propiedad intelectual y condiciones de uso»; enlaces a Aviso legal, Privacidad y Cookies. Está en la plantilla `lec/index.html` y en `scripts/generar_portada.py`.
+- Páginas `aviso-legal.html`, `politica-privacidad.html` y `cookies.html` en la raíz, con estilo en `assets/legal.css`. Adaptadas de las de la web (repositorio privado `janorik/WEB-NORLEXIA`, carpeta `bocetos/`) a esta app: sin formulario, sin fuentes externas, solo almacenamiento local.
+- Decisiones del usuario: el pie en la portada y en cada ley; páginas propias adaptadas, no copia ni enlace a la web; la ventana © lleva los cuatro primeros párrafos de la web (sin el de las demostraciones); **el NIF y el domicilio no se copian aquí** porque este repositorio es público: el aviso legal remite al de norlexia.es. El correo janorlex@gmail.com sí figura.
+- Si la app guarda algo nuevo en el navegador (otra clave de localStorage), hay que añadirlo a `cookies.html`.
+- Dudas en `PENDIENTES.md › Páginas legales`.
 
 ## LECrim
 - Fuente: `fuentes/LECrim_BOE-A-1882-6036.pdf` (Real Decreto de 14 de septiembre de 1882, BOE-A-1882-6036), texto consolidado con última modificación de 09 de abril de 2026. Sin XML: se extrae solo del PDF con `python3 scripts/extraer_lecrim.py`, que lo contrasta con pdftotext y escribe `lecrim/datos/informe_control.md`.
