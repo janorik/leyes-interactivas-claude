@@ -93,6 +93,8 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 ## LECrim — Ley de Enjuiciamiento Criminal
 
+> **Estados de las dudas (criterio del usuario, 21-10-2026):** **Resuelta** (equivalencia funcional clara y respaldada por una fuente) · **Resuelta con criterio interpretativo** (adaptación razonable, sin sustitución literal formal) · **Pendiente de revisión individual** (depende del contexto o de la vigencia del precepto). Las remisiones desfasadas no se resuelven por analogía: se coteja cada inciso.
+
 ### Puntos de extracción (F1)
 
 - [ ] **Fuente solo PDF:** no hay XML de la LECrim y desde aquí no hay acceso a la API del BOE. El texto se ha extraído del PDF y se ha contrastado con una segunda lectura independiente del mismo PDF (pdftotext): 7 tramos distintos, todos de maquetación (ver `lecrim/datos/informe_control.md`). Si quieres más seguridad, exporta el XML del PDF como hiciste con la LEC.
@@ -144,10 +146,7 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
   En la app: Procesos › Juicio oral › fase 8, plazo «3 días» con el art. 203.
   - **Propuesta:** aplicar el art. 203 (tres días), como está en la app.
   - **Tu respuesta:**
-- [ ] **«Artículo 786 bis» que no existe (art. 746.6.º).** Para el procesado persona jurídica remite al «artículo 786 bis», que no está en el texto vigente (Verificable: en la app solo hay art. 786). La comparecencia de la persona jurídica está hoy en el art. 787 bis.
-  En la app: fase 9 (Suspensión), aviso «Duda de interpretación».
-  - **Propuesta:** leerlo como remisión al art. 787 bis. Es la misma renumeración que en las dudas del abreviado.
-  - **Tu respuesta:**
+- [x] **«Artículo 786 bis» (art. 746.6.º). Resuelta por el usuario (21-10-2026):** se lee como art. 787 bis (misma materia: representación e incomparecencia de la persona jurídica). Fuente que aporta el usuario: Circular 2/2025 de la FGE. En la app: nota «Ojo» en Juicio oral › fase 9.
 - [ ] **Párrafos repetidos al final del art. 655.** Tras el apartado 8 vienen tres párrafos sueltos («Si ésta no fuese la procedente…», «También continuará el juicio…», «Cuando el procesado o procesados disintiesen…»). Los dos últimos repiten lo que ya dicen los apartados 1 y 4. Así figuran en el PDF (Verificable).
   En la app: fase 2 (Conformidad en el escrito de defensa).
   - **Propuesta:** en la ficha uso solo los apartados numerados; el texto literal se mantiene completo en «Ley».
