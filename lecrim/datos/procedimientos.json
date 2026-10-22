@@ -6278,15 +6278,19 @@
    "nombre": "Otros procedimientos especiales",
    "bloque": "lecrim",
    "grupo": "Libro IV · Procedimientos especiales",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Procedimientos especiales del Libro IV. Desarrollados, según el canon: el proceso por aceptación de decreto (arts. 803 bis a a 803 bis j) y el de injuria y calumnia contra particulares (arts. 804 a 815). El resto (aforados, decomiso, imprenta, extradición y reos ausentes) queda como índice.",
    "ambito": {
     "corto": "Libro IV, varios títulos",
     "texto": "TÍTULO I. Del modo de proceder cuando fuere procesado un Senador o Diputado a Cortes · TÍTULO III BIS. Proceso por aceptación de decreto · TÍTULO III TER. De la intervención de terceros afectados por el decomiso y del procedimiento de decomiso autónomo · TÍTULO IV. Del procedimiento por delitos de injuria y calumnia contra particulares · TÍTULO V. Del procedimiento por delitos cometidos por medio de la imprenta, el grabado u otro medio mecánico de publicación · TÍTULO VI. Del procedimiento para la extradición · TÍTULO VII. Del procedimiento contra reos ausentes",
     "articulos": [
      "750"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "803 bis a",
+      "texto": "podrá seguirse el proceso por aceptación de decreto"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
@@ -6309,20 +6313,180 @@
     },
     {
      "id": "especiales-803_bis_a",
-     "fase": "Proceso por aceptación de decreto",
-     "subtitulo": "TÍTULO III BIS · arts. 803 bis a a 803 bis j",
-     "descripcion": "",
+     "fase": "Aceptación de decreto: requisitos y propuesta del Fiscal",
+     "subtitulo": "Multa o trabajos · sin acusación personada · pena reducida hasta un tercio",
+     "descripcion": "El Ministerio Fiscal puede proponer, mediante decreto, la imposición de una pena de multa o de trabajos en beneficio de la comunidad (y, en su caso, de privación del derecho a conducir). Deben cumplirse tres requisitos a la vez. El primero, que el delito tenga pena de multa, trabajos en beneficio de la comunidad o prisión de hasta un año suspendible conforme al art. 80 del Código Penal. El segundo, que el Fiscal entienda aplicable en concreto la multa o los trabajos. El tercero, que no haya acusación popular ni particular personada. El decreto identifica al investigado, describe el hecho y el delito con la prueba existente, propone las penas y, en su caso, la restitución y la indemnización. Se remite al Juzgado de Instrucción para que lo autorice y lo notifique.",
      "articulos": [
       "803 bis a",
-      "803 bis j"
+      "803 bis b",
+      "803 bis c",
+      "803 bis d"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Momento para seguir este proceso (desde que se inician diligencias de la fiscalía o un procedimiento judicial)",
+       "plazo": "Hasta el fin de la instrucción",
+       "articulo": "803 bis a",
+       "literal": "hasta la finalización de la fase de instrucción"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay acusación popular o particular personada",
+       "entonces": "No cabe el proceso por aceptación de decreto.",
+       "articulos": [
+        "803 bis a"
+       ],
+       "literal": {
+        "articulo": "803 bis a",
+        "texto": "Que no esté personada acusación popular o particular en la causa"
+       }
+      },
+      {
+       "si": "El delito tiene pena de prisión",
+       "entonces": "El Fiscal expone brevemente por qué debe sustituirse y propone multa o trabajos en beneficio de la comunidad.",
+       "articulos": [
+        "803 bis c"
+       ],
+       "literal": {
+        "articulo": "803 bis c",
+        "texto": "la pena de prisión debe ser sustituida"
+       }
+      },
+      {
+       "si": "Hay perjuicios que reparar",
+       "entonces": "El proceso puede incluir la acción civil de restitución e indemnización.",
+       "articulos": [
+        "803 bis b"
+       ],
+       "literal": {
+        "articulo": "803 bis b",
+        "texto": "Además puede tener por objeto la acción civil"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuánto puede reducir el Fiscal la pena que propone en el decreto?",
+      "a": "Hasta un tercio de la legalmente prevista, aunque quede por debajo del mínimo del Código Penal.",
+      "articulos": [
+       "803 bis c"
+      ],
+      "literal": {
+       "articulo": "803 bis c",
+       "texto": "reducida hasta en un tercio respecto de la legalmente prevista"
+      }
+     },
+     "conexiones": [
       "803 bis a",
+      "803 bis b",
+      "803 bis c",
+      "803 bis d"
+     ],
+     "continua_en": [],
+     "aviso": "Según la nota general del BOE a esta ley, las referencias a los Juzgados de Instrucción se entienden hechas a las Secciones del orden jurisdiccional correspondiente de los Tribunales de Instancia (disposición adicional primera de la [[Ley Orgánica 1/2025, de 2 de enero|https://www.boe.es/buscar/act.php?id=BOE-A-2025-76]])."
+    },
+    {
+     "id": "especiales-803_bis_e",
+     "fase": "Aceptación de decreto: autorización, comparecencia y sentencia",
+     "subtitulo": "El encausado acepta o rechaza con abogado · sentencia sin recurso",
+     "descripcion": "El Juzgado de Instrucción autoriza el decreto si se cumplen los requisitos del art. 803 bis a. Lo notifica al encausado y le cita a una comparecencia, informándole de su finalidad, de que necesita abogado y de los efectos de no comparecer, aceptar o rechazar. Si no tiene abogado, se le designa uno de oficio. En la comparecencia, que se graba, el juez se asegura de que el encausado entiende el decreto y los efectos de aceptarlo. Si acepta en todos sus términos, el decreto adquiere carácter de resolución judicial firme y se documenta como sentencia condenatoria.",
+     "articulos": [
+      "803 bis e",
+      "803 bis f",
+      "803 bis g",
+      "803 bis h",
+      "803 bis i",
       "803 bis j"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Pedir abogado de oficio para que pueda celebrarse la comparecencia",
+       "plazo": "5 días hábiles antes de la fecha señalada",
+       "articulo": "803 bis g",
+       "literal": "en el término de cinco días hábiles antes de la fecha para la que esté señalada"
+      },
+      {
+       "acto": "Documentar la aceptación como sentencia condenatoria",
+       "plazo": "3 días",
+       "articulo": "803 bis i",
+       "literal": "en el plazo de tres días documentará en la forma y con todos los efectos de sentencia condenatoria"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El Juzgado no autoriza el decreto",
+       "entonces": "El decreto queda sin efecto.",
+       "articulos": [
+        "803 bis e"
+       ],
+       "literal": {
+        "articulo": "803 bis e",
+        "texto": "Si el Juzgado de Instrucción no autoriza el decreto, éste quedará sin efecto"
+       }
+      },
+      {
+       "si": "El encausado comparece sin abogado",
+       "entonces": "El juez suspende la comparecencia (art. 746) y señala nueva fecha.",
+       "articulos": [
+        "803 bis h",
+        "746"
+       ],
+       "literal": {
+        "articulo": "803 bis h",
+        "texto": "el juez suspenderá la comparecencia"
+       }
+      },
+      {
+       "si": "No comparece o rechaza la propuesta, aunque sea en parte",
+       "entonces": "La propuesta queda sin efecto; el Fiscal no queda vinculado y la causa sigue por el cauce que corresponda.",
+       "articulos": [
+        "803 bis h",
+        "803 bis j"
+       ],
+       "literal": {
+        "articulo": "803 bis j",
+        "texto": "el Ministerio Fiscal no se encontrará vinculado por su contenido"
+       }
+      },
+      {
+       "si": "Acepta la propuesta en todos sus términos",
+       "entonces": "Sentencia condenatoria firme, sin recurso.",
+       "articulos": [
+        "803 bis i"
+       ],
+       "literal": {
+        "articulo": "803 bis i",
+        "texto": "la cual no será susceptible de recurso alguno"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el encausado aceptar la propuesta del Fiscal sin abogado?",
+      "a": "No: debe comparecer en el juzgado asistido de letrado; si viene sin él, se suspende la comparecencia.",
+      "articulos": [
+       "803 bis h"
+      ],
+      "literal": {
+       "articulo": "803 bis h",
+       "texto": "habrá de comparecer en el juzgado de instrucción asistido de letrado"
+      }
+     },
+     "conexiones": [
+      "803 bis a",
+      "803 bis e",
+      "803 bis f",
+      "803 bis g",
+      "803 bis h",
+      "803 bis i",
+      "803 bis j",
+      "746"
+     ],
+     "continua_en": [
+      "abreviado",
+      "leves"
+     ],
+     "duda": "El art. 803 bis g dice que el abogado de oficio debe pedirse «en el término de cinco días hábiles antes de la fecha»: no está claro si es como mínimo cinco días antes o dentro de los cinco días anteriores. Ver PENDIENTES.md.",
+     "aviso": "Según la nota general del BOE a esta ley, las referencias a los Juzgados de Instrucción se entienden hechas a las Secciones del orden jurisdiccional correspondiente de los Tribunales de Instancia (disposición adicional primera de la [[Ley Orgánica 1/2025, de 2 de enero|https://www.boe.es/buscar/act.php?id=BOE-A-2025-76]])."
     },
     {
      "id": "especiales-803_ter_a",
@@ -6360,20 +6524,162 @@
     },
     {
      "id": "especiales-804",
-     "fase": "Del procedimiento por delitos de injuria y calumnia contra particulares",
-     "subtitulo": "TÍTULO IV · arts. 804 a 815",
-     "descripcion": "",
+     "fase": "Injuria y calumnia: la querella",
+     "subtitulo": "Conciliación previa · autorización si se vertieron en juicio",
+     "descripcion": "Para querellarse por injuria o calumnia contra particulares hay que presentar la certificación de haber celebrado el acto de conciliación con el querellado, o de haberlo intentado sin efecto. Si se vertieron en un juicio, también la autorización del Juez o Tribunal ante el que se profirieron (que no prueba la imputación). Si se hicieron por escrito, se aporta el documento si es posible. Se acompaña copia de la querella para entregarla al querellado. En las injurias o calumnias por escrito, reconocido el escrito y comprobada la publicidad, se da por terminado el sumario tras procesar al querellado.",
      "articulos": [
       "804",
-      "815"
-     ],
-     "rango": [
-      "804",
-      "815"
+      "805",
+      "806",
+      "807",
+      "811"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Se vertieron en un juicio",
+       "entonces": "Hace falta, además, la autorización del Juez o Tribunal ante quien se profirieron.",
+       "articulos": [
+        "805"
+       ],
+       "literal": {
+        "articulo": "805",
+        "texto": "será necesario acreditar, además, la autorización del Juez o Tribunal ante quien hubiesen sido inferidas"
+       }
+      },
+      {
+       "si": "Se hicieron por escrito",
+       "entonces": "Se presenta el documento; reconocido y comprobada la publicidad, se procesa al querellado y se termina el sumario.",
+       "articulos": [
+        "806",
+        "807"
+       ],
+       "literal": {
+        "articulo": "807",
+        "texto": "se dará por terminado el sumario, previo el procesamiento del querellado"
+       }
+      },
+      {
+       "si": "Se hicieron de palabra",
+       "entonces": "El Juez instructor convoca un juicio verbal (fase siguiente).",
+       "articulos": [
+        "808"
+       ],
+       "literal": {
+        "articulo": "808",
+        "texto": "el Juez instructor mandará convocar a juicio verbal al querellante, al querellado y a los testigos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué requisito previo exige la querella por injuria o calumnia contra particulares?",
+      "a": "La certificación de haber celebrado el acto de conciliación con el querellado, o de haberlo intentado sin efecto.",
+      "articulos": [
+       "804"
+      ],
+      "literal": {
+       "articulo": "804",
+       "texto": "si no se presenta certificación de haber celebrado el querellante acto de conciliación"
+      }
+     },
+     "conexiones": [
+      "804",
+      "805",
+      "806",
+      "807",
+      "811"
+     ],
+     "continua_en": [],
+     "duda": "El art. 807 remite a «la publicidad a que se refiere el respectivo artículo del Código Penal», sin decir cuál. Ver PENDIENTES.md."
+    },
+    {
+     "id": "especiales-808",
+     "fase": "Injuria y calumnia verbales: el juicio verbal",
+     "subtitulo": "Juicio ante el instructor en 3 días",
+     "descripcion": "Presentada la querella por injurias o calumnias verbales, el Juez instructor convoca a juicio verbal al querellante, al querellado y a los testigos; el Secretario judicial señala día y hora. En el juicio, el querellante presenta sus pruebas y el Juez decide sobre el procesamiento del querellado y da por terminado el sumario. No se admiten testigos de referencia. La ausencia del querellado citado en forma no suspende el juicio.",
+     "articulos": [
+      "808",
+      "809",
+      "810",
+      "812",
+      "813",
+      "814"
+     ],
+     "plazos": [
+      {
+       "acto": "Celebración del juicio verbal",
+       "plazo": "3 días desde la presentación de la querella",
+       "articulo": "809",
+       "literal": "dentro de los tres días siguientes al de la presentación de la querella"
+      },
+      {
+       "acto": "Ampliación por causa justa (certificada por el Secretario)",
+       "plazo": "Hasta 8 días",
+       "articulo": "809",
+       "literal": "podrá ampliarse hasta ocho días el término para la celebración del juicio verbal"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Injurias a funcionarios sobre su cargo, o calumnia cuya verdad quiere probar el acusado antes del juicio oral",
+       "entonces": "No se aplican estas reglas: el querellante debe precisar los hechos para que el procesado prepare sus pruebas.",
+       "articulos": [
+        "810"
+       ],
+       "literal": {
+        "articulo": "810",
+        "texto": "cuando los acusados manifiesten querer probar antes del juicio oral la certeza de la imputación"
+       }
+      },
+      {
+       "si": "El querellado no acude, pero fue citado en forma",
+       "entonces": "El juicio se celebra y se resuelve igualmente.",
+       "articulos": [
+        "814"
+       ],
+       "literal": {
+        "articulo": "814",
+        "texto": "La ausencia del querellado no suspenderá la celebración ni la resolución del juicio"
+       }
+      },
+      {
+       "si": "Se celebra el juicio",
+       "entonces": "El Juez decide sobre el procesamiento y da por terminado el sumario.",
+       "articulos": [
+        "812"
+       ],
+       "literal": {
+        "articulo": "812",
+        "texto": "el Juez acordará lo que corresponda respecto al procesamiento del querellado"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En una causa por injurias o calumnias de palabra, ¿se admiten testigos de referencia?",
+      "a": "No.",
+      "articulos": [
+       "813"
+      ],
+      "literal": {
+       "articulo": "813",
+       "texto": "No se admitirán testigos de referencia en las causas por injuria o calumnia vertidas de palabra"
+      }
+     },
+     "conexiones": [
+      "808",
+      "809",
+      "810",
+      "811",
+      "812",
+      "813",
+      "814",
+      "815"
+     ],
+     "continua_en": [
+      "conclusion",
+      "juicio-oral"
+     ],
+     "aviso": "Según la nota general del BOE a esta ley, las referencias a los Secretarios judiciales se entienden hechas a los Letrados de la Administración de Justicia (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
     },
     {
      "id": "especiales-816",

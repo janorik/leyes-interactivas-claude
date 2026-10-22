@@ -132,6 +132,23 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [x] **Recursos de la LECrim como en la LEC (hecho):** 14 recursos y 27 casos del selector, con «Por resolución», «Recursos» y «Ponte a prueba». Antes: al usuario le gusta la pestaña Recursos de la LEC (selector «Por resolución», fichas de cada recurso y «Ponte a prueba»). En la LECrim ahora solo hay tarjetas de bloques en esqueleto. Hacer `lecrim/datos/recursos.json` con el mismo formato (recursos, selector por resolución con frase literal, test), a partir de los arts. 216-238 ter (recursos contra resoluciones procesales), 846 bis a-846 ter (apelación), 847-933 (casación) y 954-961 (revisión), y los recursos propios del abreviado, juicio rápido y delitos leves. Todo con `revisado: false` y las dudas anotadas aquí.
 - [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).
 
+### Aceptación de decreto, e injuria y calumnia (contenido elaborado, pendiente de revisión)
+
+> Desarrolladas 4 fases y 5 plazos dentro del bloque «Otros procedimientos especiales», según el canon (bloques 28 y 30): aceptación de decreto (arts. 803 bis a-j, 2 fases) e injuria y calumnia contra particulares (arts. 804-815, 2 fases). Aforados, decomiso, imprenta, extradición y reos ausentes quedan como índice (canon: NO). Propuestas de Claude, No verificables hasta que las confirmes.
+
+- [ ] **«Cinco días hábiles antes de la fecha» (art. 803 bis g). Pendiente de revisión individual.** Puede leerse como «al menos cinco días hábiles antes» o «dentro de los cinco días hábiles anteriores». **Propuesta:** «al menos cinco días hábiles antes», porque el artículo lo pone como condición para que la comparecencia pueda celebrarse. En la app la etiqueta dice «5 días hábiles antes de la fecha señalada», con la frase literal y nota de duda.
+  - **Tu respuesta:**
+- [ ] **«El respectivo artículo del Código Penal» (art. 807). Pendiente de revisión individual.** Remisión genérica a la publicidad de la injuria o calumnia; la LECrim no dice qué artículo. No lo concreto de memoria.
+  - **Tu respuesta:**
+- [ ] **Enlace al Código Penal.** Las fases citan el art. 80 del Código Penal (803 bis a) y el Código Penal en general (807) sin enlace, porque la referencia BOE no sale del texto de la LECrim. Creo que es BOE-A-1995-25444 (Ley Orgánica 10/1995, de 23 de noviembre), pero lo digo de memoria (No verificable). Si lo confirmas, añado el enlace.
+  - **Tu respuesta:**
+- [ ] **Acto de conciliación (art. 804).** La LECrim exige la certificación, pero no dice dónde se regula hoy ese acto. No lo cito de memoria. ¿Quieres que la ficha lo indique con su enlace? Dime la norma.
+  - **Tu respuesta:**
+- [ ] **Injuria y calumnia: «sumario» y «Juez instructor» (arts. 807-812).** El título habla de sumario y procesamiento. Queda por revisar cómo encaja hoy con el procedimiento que corresponda por la pena (por ejemplo, el abreviado). En la app las fases usan los términos literales de la ley y enlazan con la conclusión del sumario y el juicio oral. **Pendiente de revisión individual.**
+  - **Tu respuesta:**
+- [x] **«Juzgado de Instrucción» (aceptación de decreto).** La nota general del BOE manda entenderlo referido a las Secciones de los Tribunales de Instancia (LO 1/2025, ref. BOE-A-2025-76). En la app: nota «Ojo» en las dos fases, con enlace.
+- [ ] **Revisa las 4 fases:** las frases entre « » son literales (comprobadas por el script); las descripciones y etiquetas son resumen mío.
+
 ### Apelación, casación y revisión (contenido elaborado, pendiente de revisión)
 
 > Bloque desarrollado: 7 fases y 15 plazos (arts. 846 bis a a 961), según el canon (bloques 31, 32 y 33). La fase «Recurso de queja por denegación del testimonio» (arts. 862-872) queda como índice: el canon no marca ninguno de sus artículos (su ficha resumida sigue en la pestaña Recursos). Propuestas de Claude, No verificables hasta que las confirmes.
