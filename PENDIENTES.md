@@ -95,6 +95,14 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > **Estados de las dudas (criterio del usuario, 21-10-2026):** **Resuelta** (equivalencia funcional clara y respaldada por una fuente) · **Resuelta con criterio interpretativo** (adaptación razonable, sin sustitución literal formal) · **Pendiente de revisión individual** (depende del contexto o de la vigencia del precepto). Las remisiones desfasadas no se resuelven por analogía: se coteja cada inciso.
 
+
+### Canon de contenido (22-10-2026)
+
+- [ ] **Art. 988 bis (ejecutoria) fuera del canon.** El canon incluye los arts. 983, 984 y 988-990 de la ejecución, pero no el 988 bis (suspensión, forma de pago y liquidación de condena), que es de uso diario. La fase ya hecha se mantiene. ¿Lo dejaste fuera a propósito?
+  - **Tu respuesta:**
+- [x] **Nota desfasada en el canon (bloque 26). Resuelta (22-10-2026):** corregida en el documento original de la plataforma (`docs/canon-contenido.md`) y en su seed LECrim: la audiencia preliminar es el art. 785; el art. 786 regula el señalamiento. Copiada aquí en `fuentes/canon_contenido.md`.
+  - **Tu respuesta:**
+
 ### Puntos de extracción (F1)
 
 - [ ] **Fuente solo PDF:** no hay XML de la LECrim y desde aquí no hay acceso a la API del BOE. El texto se ha extraído del PDF y se ha contrastado con una segunda lectura independiente del mismo PDF (pdftotext): 7 tramos distintos, todos de maquetación (ver `lecrim/datos/informe_control.md`). Si quieres más seguridad, exporta el XML del PDF como hiciste con la LEC.
