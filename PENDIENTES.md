@@ -125,6 +125,20 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [x] **Recursos de la LECrim como en la LEC (hecho):** 14 recursos y 27 casos del selector, con «Por resolución», «Recursos» y «Ponte a prueba». Antes: al usuario le gusta la pestaña Recursos de la LEC (selector «Por resolución», fichas de cada recurso y «Ponte a prueba»). En la LECrim ahora solo hay tarjetas de bloques en esqueleto. Hacer `lecrim/datos/recursos.json` con el mismo formato (recursos, selector por resolución con frase literal, test), a partir de los arts. 216-238 ter (recursos contra resoluciones procesales), 846 bis a-846 ter (apelación), 847-933 (casación) y 954-961 (revisión), y los recursos propios del abreviado, juicio rápido y delitos leves. Todo con `revisado: false` y las dudas anotadas aquí.
 - [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).
 
+### Detención, prisión y libertad provisional (contenido elaborado, pendiente de revisión)
+
+> Bloque desarrollado: 8 fases y 21 plazos (arts. 486 a 544 quinquies). Propuestas de Claude, No verificables hasta que las confirmes. Estados: resuelta / resuelta con criterio interpretativo / pendiente de revisión individual.
+
+- [ ] **24 horas (art. 496) frente a 72 horas (art. 520.1). Pendiente de revisión individual (decisión del usuario (22-10-2026)).** Los dos plazos no son necesariamente contradictorios: regulan actuaciones y sujetos distintos. Criterio del usuario: las 72 horas no autorizan a agotar ese plazo, y tampoco puede darse por derogado el de 24 horas por existir el máximo de 72. Falta contrastar la doctrina específica sobre el art. 496. Fuente que cita el usuario: STC 181/2020 (plazo relativo, el estrictamente necesario, y máximo absoluto de 72 horas), https://hj.tribunalconstitucional.es/HJ/es/Resolucion/Show/26534 . El usuario pegó el texto completo (22-10-2026): la sentencia **no menciona el art. 496** ni su plazo de 24 horas; analiza la queja de «más de veinticuatro horas» solo como plazo relativo del art. 17.2 CE y la desestima por ser necesarias las diligencias (FJ 3). Confirma el plazo relativo y el máximo absoluto de 72 horas desde el inicio de la detención. Por tanto, no resuelve esta duda. Referencia BOE de la sentencia: BOE núm. 22, de 26 de enero de 2021 (falta el identificador BOE-A-… para enlazarla). En la app: notas «Ojo» en las fases 2 y 3 con lo que dice la sentencia.
+  En la app: fase 2, los dos plazos con su frase literal y aviso «Duda de interpretación».
+  - **Tu respuesta:**
+- [ ] **«Prisión correccional» (art. 492.2.º). Pendiente de revisión individual (decisión del usuario (22-10-2026)).** Clasificación penal histórica: no se equipara a ninguna pena actual sin determinar qué umbral quiso fijar el legislador. En la app: solo en el texto literal.
+  - **Tu respuesta:**
+- [ ] **«Reposición» del auto (art. 501). Pendiente de revisión individual (decisión del usuario (22-10-2026)).** Antes de buscar equivalencia con los recursos actuales, comprobar la naturaleza de la resolución, su régimen de recursos (el art. 507 da apelación contra los autos de prisión) y si el trámite es compatible con la regulación vigente. En la app: fase 2, alternativa con la frase literal.
+  - **Tu respuesta:**
+- [x] **«Delito o falta» y «juicio de faltas» (art. 544 ter). Resuelta con criterio interpretativo por el usuario (22-10-2026):** «falta» se lee conforme a la categoría actual de delito leve, sin afirmar que toda conducta antes constitutiva de falta conserve hoy la misma tipificación. En la app: nota «Ojo» en la fase 8.
+- [ ] **Revisa las 8 fases:** las frases entre « » son literales; las descripciones son resumen mío.
+
 ### Juicio rápido (contenido elaborado, pendiente de revisión)
 
 > Bloque desarrollado: 8 fases y 12 plazos (arts. 795 a 803). Los arts. 803 bis (aceptación de decreto) y 803 ter (decomiso) son otros procesos y no van aquí. Las propuestas son de Claude (No verificable hasta que las confirmes). Contesta: **sí**, **no** u **otra**.
