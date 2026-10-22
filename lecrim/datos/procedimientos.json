@@ -6433,68 +6433,349 @@
    "nombre": "Recursos de apelación, casación y revisión",
    "bloque": "lecrim",
    "grupo": "Libro V · Recursos",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Recursos contra sentencias: apelación (Jurado y Audiencias en primera instancia), casación ante la Sala Segunda del Tribunal Supremo (procedencia, preparación, interposición, admisión y sentencia) y revisión de sentencias firmes (arts. 846 bis a a 961). Las fichas resumidas de cada recurso están en la pestaña Recursos.",
    "ambito": {
     "corto": "Arts. 846 bis a a 961",
     "texto": "TÍTULO I. Del recurso de apelación contra las sentencias y determinados autos · CAPÍTULO I. De los recursos de casación por infracción de Ley y por quebrantamiento de forma · CAPÍTULO II. De los recursos de casación por quebrantamiento de forma · CAPÍTULO III. De la interposición, sustanciación y resolución del recurso de casación por infracción de ley y por quebrantamiento de forma · CAPÍTULO IV. Del recurso de casación en las causas de muerte · TÍTULO III. Del recurso de revisión",
     "articulos": [
      "846 bis a"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "847",
+      "texto": "Procede recurso de casación"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
      "id": "recursos-846_bis_a",
-     "fase": "Del recurso de apelación contra las sentencias y determinados autos",
-     "subtitulo": "TÍTULO I · arts. 846 bis a a 846 ter",
-     "descripcion": "",
+     "fase": "Apelación contra sentencias del Jurado y de las Audiencias",
+     "subtitulo": "Ante el TSJ o la Sala de Apelación de la AN · motivos tasados en el Jurado",
+     "descripcion": "Las sentencias del Magistrado-Presidente del Tribunal del Jurado (en el ámbito de la Audiencia Provincial) son apelables ante la Sala de lo Civil y Penal del Tribunal Superior de Justicia, formada por tres Magistrados. También lo son sus autos sobre las cuestiones del art. 36 de la Ley Orgánica del Tribunal del Jurado y en los casos del art. 676. Este recurso solo cabe por los motivos del art. 846 bis c. Se interpone; las demás partes pueden impugnarlo o apelar de forma supeditada; se emplaza ante el TSJ, se celebra vista pública y se dicta sentencia. Aparte, el art. 846 ter abre la apelación contra los autos que terminan el proceso por falta de jurisdicción o sobreseimiento libre y contra las sentencias de las Audiencias Provinciales o de la Sala de lo Penal de la Audiencia Nacional en primera instancia.",
      "articulos": [
       "846 bis a",
+      "846 bis b",
+      "846 bis c",
+      "846 bis d",
+      "846 bis e",
+      "846 bis f",
       "846 ter"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Jurado: interposición de la apelación",
+       "plazo": "10 días desde la última notificación",
+       "articulo": "846 bis b",
+       "literal": "dentro de los diez días siguientes a la última notificación de la sentencia"
+      },
+      {
+       "acto": "Jurado: impugnación o apelación supeditada de las demás partes",
+       "plazo": "5 días",
+       "articulo": "846 bis d",
+       "literal": "en término de cinco días, podrán impugnar el recurso o formular recurso supeditado de apelación"
+      },
+      {
+       "acto": "Jurado: personación ante la Sala de lo Civil y Penal del TSJ",
+       "plazo": "10 días",
+       "articulo": "846 bis d",
+       "literal": "para que se personen en plazo de diez días"
+      },
+      {
+       "acto": "Jurado: sentencia de apelación",
+       "plazo": "5 días desde la vista",
+       "articulo": "846 bis f",
+       "literal": "Dentro de los cinco días siguientes a la vista"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se alega quebrantamiento de garantías procesales o la disolución del Jurado (letras a, c y d)",
+       "entonces": "Para que se admita, hay que haber protestado cuando se produjo la infracción.",
+       "articulos": [
+        "846 bis c"
+       ],
+       "literal": {
+        "articulo": "846 bis c",
+        "texto": "deberá haberse formulado la oportuna protesta al tiempo de producirse la infracción denunciada"
+       }
+      },
+      {
+       "si": "Una parte no apeló en plazo",
+       "entonces": "Puede apelar en el trámite de impugnación, pero su recurso depende de que el apelante principal mantenga el suyo.",
+       "articulos": [
+        "846 bis b"
+       ],
+       "literal": {
+        "articulo": "846 bis b",
+        "texto": "este recurso quedará supeditado a que el apelante principal mantenga el suyo"
+       }
+      },
+      {
+       "si": "El apelante principal no se persona o renuncia",
+       "entonces": "Se devuelven los autos a la Audiencia, que declara firme la sentencia y la ejecuta.",
+       "articulos": [
+        "846 bis d"
+       ],
+       "literal": {
+        "articulo": "846 bis d",
+        "texto": "que declarará firme la sentencia y procederá a su ejecución"
+       }
+      },
+      {
+       "si": "Se estima por los motivos a) o d) del art. 846 bis c",
+       "entonces": "Se devuelve la causa a la Audiencia para un nuevo juicio.",
+       "articulos": [
+        "846 bis f"
+       ],
+       "literal": {
+        "articulo": "846 bis f",
+        "texto": "mandará devolver la causa a la Audiencia para celebración de nuevo juicio"
+       }
+      },
+      {
+       "si": "Es una sentencia de la Audiencia (sin Jurado) en primera instancia, o un auto de sobreseimiento libre o falta de jurisdicción",
+       "entonces": "Apelación ante el TSJ o la Sala de Apelación de la AN, tramitada como la del abreviado (arts. 790 a 792).",
+       "articulos": [
+        "846 ter"
+       ],
+       "literal": {
+        "articulo": "846 ter",
+        "texto": "se regirán por lo dispuesto en los artículos 790, 791 y 792 de esta ley"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En la apelación de una sentencia del Jurado, ¿cuándo puede alegarse la vulneración de la presunción de inocencia?",
+      "a": "Cuando, atendida la prueba practicada en el juicio, la condena impuesta carece de toda base razonable (art. 846 bis c, letra e).",
+      "articulos": [
+       "846 bis c"
+      ],
+      "literal": {
+       "articulo": "846 bis c",
+       "texto": "carece de toda base razonable la condena impuesta"
+      }
+     },
+     "conexiones": [
       "846 bis a",
-      "846 ter"
+      "846 bis b",
+      "846 bis c",
+      "846 bis d",
+      "846 bis e",
+      "846 bis f",
+      "846 ter",
+      "676",
+      "790",
+      "791",
+      "792",
+      "850",
+      "851"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "abreviado"
+     ],
+     "aviso": "Según la nota general del BOE a esta ley, desde el 1 de octubre de 2015 las referencias a los Secretarios judiciales se entienden hechas a los Letrados de la Administración de Justicia (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
     },
     {
      "id": "recursos-847",
-     "fase": "De la procedencia del recurso",
-     "subtitulo": "CAPÍTULO I · Sección 1.ª · arts. 847 a 854",
-     "descripcion": "",
+     "fase": "Casación: qué resoluciones y por qué motivos",
+     "subtitulo": "Infracción de ley · quebrantamiento de forma · precepto constitucional",
+     "descripcion": "Caben los dos motivos, infracción de ley y quebrantamiento de forma, contra las sentencias de la Sala de lo Civil y Penal del TSJ (en única instancia o en apelación) y de la Sala de Apelación de la Audiencia Nacional. Contra las sentencias dictadas en apelación por las Audiencias Provinciales y la Sala de lo Penal de la AN solo cabe la infracción de ley del art. 849.1.º. Los autos solo son recurribles por infracción de ley, en dos casos: si la ley lo autoriza expresamente, o si son autos definitivos que ponen fin al proceso por falta de jurisdicción o sobreseimiento libre tras una imputación fundada. La infracción de ley es un error de derecho sustantivo (art. 849.1.º) o un error en la apreciación de la prueba basado en documentos (art. 849.2.º). El quebrantamiento de forma puede estar en el procedimiento (art. 850) o en la sentencia (art. 851).",
      "articulos": [
       "847",
-      "854"
-     ],
-     "rango": [
-      "847",
+      "848",
+      "849",
+      "850",
+      "851",
+      "852",
       "854"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "La sentencia de apelación se limita a anular la de primera instancia",
+       "entonces": "No cabe casación.",
+       "articulos": [
+        "847"
+       ],
+       "literal": {
+        "articulo": "847",
+        "texto": "Quedan exceptuadas aquellas que se limiten a declarar la nulidad de las sentencias recaídas en primera instancia"
+       }
+      },
+      {
+       "si": "Se alega la infracción de un precepto constitucional",
+       "entonces": "El art. 852 permite fundar en ella la casación «en todo caso».",
+       "articulos": [
+        "852"
+       ],
+       "literal": {
+        "articulo": "852",
+        "texto": "En todo caso, el recurso de casación podrá interponerse fundándose en la infracción de precepto constitucional"
+       }
+      },
+      {
+       "si": "La sentencia castiga un delito más grave que el de la acusación sin acudir al art. 733",
+       "entonces": "Quebrantamiento de forma.",
+       "articulos": [
+        "851",
+        "733"
+       ],
+       "literal": {
+        "articulo": "851",
+        "texto": "Cuando se pene un delito más grave que el que haya sido objeto de la acusación"
+       }
+      },
+      {
+       "si": "Recurre el actor civil",
+       "entonces": "Solo puede recurrir en lo que afecte a las restituciones, reparaciones e indemnizaciones que reclamó.",
+       "articulos": [
+        "854"
+       ],
+       "literal": {
+        "articulo": "854",
+        "texto": "Los actores civiles no podrán interponer el recurso sino en cuanto pueda afectar"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué motivo de casación cabe contra una sentencia dictada en apelación por una Audiencia Provincial?",
+      "a": "Solo la infracción de ley del art. 849.1.º, es decir, la infracción de un precepto penal sustantivo, a la vista de los hechos probados.",
+      "articulos": [
+       "847",
+       "849"
+      ],
+      "literal": {
+       "articulo": "847",
+       "texto": "Por infracción de ley del motivo previsto en el número 1.º del artículo 849"
+      }
+     },
+     "conexiones": [
+      "847",
+      "848",
+      "849",
+      "850",
+      "851",
+      "852",
+      "854",
+      "733",
+      "884"
+     ],
+     "continua_en": [],
+     "duda": "El art. 847.1.b limita la casación contra sentencias de apelación de las Audiencias al motivo del art. 849.1.º; el art. 852 permite la infracción de precepto constitucional «en todo caso». Ver PENDIENTES.md."
     },
     {
      "id": "recursos-855",
-     "fase": "De la preparación del recurso",
-     "subtitulo": "CAPÍTULO I · Sección 2.ª · arts. 855 a 861 bis c",
-     "descripcion": "",
+     "fase": "Preparación de la casación",
+     "subtitulo": "Ante el tribunal que dictó la resolución · 5 días",
+     "descripcion": "Quien quiera recurrir pide, ante el Tribunal que dictó la resolución, un testimonio de ella, y dice qué clase de recurso va a usar. Contra sentencias de apelación de las Audiencias, el escrito identifica el precepto sustantivo infringido y explica brevemente por qué. Si se usará el art. 849.2.º, designa los particulares del documento; si es quebrantamiento de forma, la falta y la reclamación hecha. El escrito lo firman Abogado y Procurador y promete constituir el depósito. El Tribunal lo tiene por preparado o lo deniega por auto motivado. Si lo tiene por preparado, emplaza a las partes ante la Sala Segunda del Tribunal Supremo.",
      "articulos": [
       "855",
-      "861 bis c"
+      "856",
+      "857",
+      "858",
+      "859",
+      "861",
+      "861 bis a"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Escrito de preparación",
+       "plazo": "5 días desde la última notificación",
+       "articulo": "856",
+       "literal": "dentro de los cinco días siguientes al de la última notificación de la sentencia o auto"
+      },
+      {
+       "acto": "El Tribunal tiene por preparado el recurso o lo deniega",
+       "plazo": "3 días",
+       "articulo": "858",
+       "literal": "dentro de los tres días siguientes, sin oír a las partes"
+      },
+      {
+       "acto": "Testimonio de la sentencia",
+       "plazo": "3 días",
+       "articulo": "859",
+       "literal": "expida, en el plazo de tres días, el testimonio de la sentencia"
+      },
+      {
+       "acto": "Emplazamiento ante la Sala Segunda del TS (improrrogable)",
+       "plazo": "15 días (Península), 20 (Illes Balears), 30 (Canarias, Ceuta y Melilla)",
+       "articulo": "859",
+       "literal": "dentro del término improrrogable de 15 días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El Tribunal deniega la preparación",
+       "entonces": "Cabe queja ante la Sala Segunda del TS, haciéndolo presente al Tribunal sentenciador.",
+       "articulos": [
+        "862"
+       ],
+       "literal": {
+        "articulo": "862",
+        "texto": "dentro de los dos días siguientes al de la notificación de dicho auto"
+       }
+      },
+      {
+       "si": "El recurrente tiene asistencia jurídica gratuita o es insolvente",
+       "entonces": "Puede pedir que el testimonio se remita directamente a la Sala Segunda, que le nombrará Abogado y Procurador si no los tiene.",
+       "articulos": [
+        "860"
+       ],
+       "literal": {
+        "articulo": "860",
+        "texto": "podrá solicitar del Tribunal sentenciador que remita directamente a la Sala Segunda del Supremo el testimonio"
+       }
+      },
+      {
+       "si": "Otra parte no preparó el recurso",
+       "entonces": "Puede adherirse a él.",
+       "articulos": [
+        "861"
+       ],
+       "literal": {
+        "articulo": "861",
+        "texto": "La parte que no haya preparado el recurso podrá adherirse a él"
+       }
+      },
+      {
+       "si": "La sentencia recurrida es absolutoria y el reo está preso",
+       "entonces": "Se le pone en libertad.",
+       "articulos": [
+        "861 bis a"
+       ],
+       "literal": {
+        "articulo": "861 bis a",
+        "texto": "Si la sentencia recurrida fuere absolutoria y el reo estuviere preso, será puesto en libertad"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede ejecutarse una sentencia recurrible en casación mientras corre el plazo para prepararla?",
+      "a": "No. No se ejecuta hasta que transcurre ese plazo; si se prepara el recurso, se forma un testimonio de resguardo para su ejecución en su caso.",
+      "articulos": [
+       "861 bis a"
+      ],
+      "literal": {
+       "articulo": "861 bis a",
+       "texto": "no se ejecutarán hasta que transcurra el término señalado para prepararlo"
+      }
+     },
+     "conexiones": [
       "855",
-      "861 bis c"
+      "856",
+      "857",
+      "858",
+      "859",
+      "860",
+      "861",
+      "861 bis a",
+      "861 bis b",
+      "861 bis c",
+      "862"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
      "id": "recursos-862",
@@ -6515,71 +6796,407 @@
     },
     {
      "id": "recursos-873",
-     "fase": "De la interposición del recurso",
-     "subtitulo": "CAPÍTULO I · Sección 4.ª · arts. 873 a 879",
-     "descripcion": "",
+     "fase": "Interposición de la casación",
+     "subtitulo": "Ante la Sala Segunda del TS · escrito y depósito",
+     "descripcion": "El recurso se interpone ante la Sala Segunda del Tribunal Supremo dentro del plazo del emplazamiento (art. 859). Lo firman Abogado y Procurador con poder bastante. En párrafos numerados se expone: cada motivo con un breve extracto, el artículo de la ley que lo autoriza y, si es quebrantamiento de forma, la reclamación hecha para subsanarlo. Se acompañan el testimonio y copias para las demás partes. El acusador privado y el actor civil constituyen el depósito del art. 875.",
      "articulos": [
       "873",
-      "879"
+      "874",
+      "875",
+      "878"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Interposición (y adhesión de las demás partes)",
+       "plazo": "Los términos del emplazamiento (art. 859)",
+       "articulo": "873",
+       "literal": "dentro de los términos señalados en el artículo 859"
+      },
+      {
+       "acto": "Si se interpone el último día con el depósito en metálico: entrega del resguardo",
+       "plazo": "48 horas",
+       "articulo": "875",
+       "literal": "en el plazo de las cuarenta y ocho horas siguientes se sustituye por el resguardo"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Pasa el plazo sin interponerlo",
+       "entonces": "El Secretario judicial declara desierto el recurso por decreto; contra él cabe recurso directo de revisión.",
+       "articulos": [
+        "873"
+       ],
+       "literal": {
+        "articulo": "873",
+        "texto": "el Secretario judicial dictará decreto declarando desierto el recurso"
+       }
+      },
+      {
+       "si": "No se presentan las copias para las demás partes",
+       "entonces": "Se desestima el escrito.",
+       "articulos": [
+        "874",
+        "884"
+       ],
+       "literal": {
+        "articulo": "874",
+        "texto": "La falta de presentación de copias producirá la desestimación del escrito"
+       }
+      },
+      {
+       "si": "Las demás partes quieren sumarse",
+       "entonces": "Pueden adherirse en los mismos términos.",
+       "articulos": [
+        "873",
+        "861"
+       ],
+       "literal": {
+        "articulo": "873",
+        "texto": "En los mismos términos podrán adherirse al recurso las demás partes"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede presentarse el escrito de interposición con la protesta de completarlo después?",
+      "a": "No: el art. 874 no admite en ningún caso la protesta de presentarlo.",
+      "articulos": [
+       "874"
+      ],
+      "literal": {
+       "articulo": "874",
+       "texto": "sin que en ningún caso pueda admitirse la protesta de presentarlo"
+      }
+     },
+     "conexiones": [
+      "859",
+      "860",
+      "861",
       "873",
+      "874",
+      "875",
+      "876",
+      "877",
+      "878",
       "879"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [],
+     "duda": "El art. 875 fija los depósitos en pesetas (12.000, 6.000 y 7.500). Ver PENDIENTES.md.",
+     "aviso": "Según la nota general del BOE a esta ley, desde el 1 de octubre de 2015 las referencias a los Secretarios judiciales se entienden hechas a los Letrados de la Administración de Justicia (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
     },
     {
      "id": "recursos-880",
-     "fase": "De la sustanciación del recurso",
-     "subtitulo": "CAPÍTULO I · Sección 5.ª · arts. 880 a 893",
-     "descripcion": "",
+     "fase": "Sustanciación y admisión",
+     "subtitulo": "Nota, instrucción del ponente y decisión sobre la admisión",
+     "descripcion": "El Secretario judicial designa al Magistrado ponente y forma la nota del recurso. En ese plazo, el Fiscal y las partes se instruyen y pueden impugnar la admisión del recurso o de la adhesión. Las partes pueden pedir vista. Después, el ponente instruye y la Sala decide sobre la admisión. Las causas de inadmisión obligatoria están en el art. 884 y las potestativas en el art. 885. Para inadmitir hace falta unanimidad. Si es admisible, la Sala lo acuerda de plano por providencia y se señala la vista o el día para el fallo. Contra la decisión sobre la admisión no cabe recurso.",
      "articulos": [
       "880",
+      "882",
+      "882 bis",
+      "883",
+      "884",
+      "885",
+      "889",
       "893"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Nota del recurso (y, en ese plazo, impugnación de la admisión por las partes)",
+       "plazo": "10 días",
+       "articulo": "880",
+       "literal": "formará nota autorizada del recurso en término de diez días"
+      },
+      {
+       "acto": "Instrucción del Magistrado ponente",
+       "plazo": "10 días",
+       "articulo": "883",
+       "literal": "pasarán los autos al Magistrado ponente para instrucción, por término de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El recurso no respeta los hechos probados (salvo el motivo del art. 849.2.º)",
+       "entonces": "Es inadmisible.",
+       "articulos": [
+        "884"
+       ],
+       "literal": {
+        "articulo": "884",
+        "texto": "Cuando no se respeten los hechos que la sentencia declare probados"
+       }
+      },
+      {
+       "si": "Carece manifiestamente de fundamento o el TS ya desestimó en el fondo recursos sustancialmente iguales",
+       "entonces": "Puede inadmitirse, total o parcialmente.",
+       "articulos": [
+        "885"
+       ],
+       "literal": {
+        "articulo": "885",
+        "texto": "Cuando carezca manifiestamente de fundamento"
+       }
+      },
+      {
+       "si": "Recurso contra sentencia de apelación de una Audiencia (art. 847.1.b) sin interés casacional",
+       "entonces": "Puede inadmitirse por providencia sucintamente motivada, por unanimidad.",
+       "articulos": [
+        "889"
+       ],
+       "literal": {
+        "articulo": "889",
+        "texto": "siempre que haya unanimidad por carencia de interés casacional"
+       }
+      },
+      {
+       "si": "Se inadmite y el recurrente constituyó depósito",
+       "entonces": "Lo pierde.",
+       "articulos": [
+        "890"
+       ],
+       "literal": {
+        "articulo": "890",
+        "texto": "se le condenará a perderlo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué mayoría hace falta para denegar la admisión del recurso de casación?",
+      "a": "Unanimidad.",
+      "articulos": [
+       "889"
+      ],
+      "literal": {
+       "articulo": "889",
+       "texto": "Para denegar la admisión del recurso será necesario que el acuerdo se adopte por unanimidad"
+      }
+     },
+     "conexiones": [
       "880",
+      "881",
+      "882",
+      "882 bis",
+      "883",
+      "884",
+      "885",
+      "887",
+      "888",
+      "889",
+      "890",
+      "892",
       "893"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [],
+     "aviso": "Según la nota general del BOE a esta ley, desde el 1 de octubre de 2015 las referencias a los Secretarios judiciales se entienden hechas a los Letrados de la Administración de Justicia (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
     },
     {
      "id": "recursos-893_bis_a",
-     "fase": "De la decisión del recurso",
-     "subtitulo": "CAPÍTULO I · Sección 6.ª · arts. 893 bis a a 909",
-     "descripcion": "",
+     "fase": "Vista, sentencia y efectos",
+     "subtitulo": "Casa y anula · segunda sentencia · sin recurso",
+     "descripcion": "La Sala puede decidir sin vista, salvo en dos casos: si las partes la pidieron y la pena es superior a seis años, o si la Sala la considera necesaria. Además, la acuerda siempre en los casos del segundo párrafo del art. 893 bis a. La Sala la forman tres Magistrados, y cinco si la pena impuesta o que podría imponerse supera los doce años. Si estima un motivo, casa y anula la resolución, con costas de oficio y devolución del depósito. Si es por quebrantamiento de forma, devuelve la causa al tribunal de origen. Si es por infracción de ley, dicta a continuación una segunda sentencia. Contra la sentencia de casación no cabe recurso.",
      "articulos": [
       "893 bis a",
-      "907 a 909"
+      "898",
+      "899",
+      "901",
+      "901 bis a",
+      "901 bis b",
+      "902",
+      "903",
+      "904"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Sentencia de casación",
+       "plazo": "10 días desde la vista",
+       "articulo": "899",
+       "literal": "la Sala resolverá el recurso dentro de los diez días siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Las partes piden vista y la pena es superior a seis años",
+       "entonces": "Hay vista; también si la Sala la estima necesaria.",
+       "articulos": [
+        "893 bis a"
+       ],
+       "literal": {
+        "articulo": "893 bis a",
+        "texto": "la duración de la pena impuesta o que pueda imponerse fuese superior a seis años"
+       }
+      },
+      {
+       "si": "Se estima un quebrantamiento de forma",
+       "entonces": "Se devuelve la causa al tribunal de origen para reponerla al momento de la falta.",
+       "articulos": [
+        "901 bis a"
+       ],
+       "literal": {
+        "articulo": "901 bis a",
+        "texto": "ordenará la devolución de la causa al Tribunal de que proceda"
+       }
+      },
+      {
+       "si": "Se estima una infracción de ley",
+       "entonces": "Se dicta una segunda sentencia, separada, sin imponer pena superior a la de la sentencia casada o a la pedida por el recurrente.",
+       "articulos": [
+        "902"
+       ],
+       "literal": {
+        "articulo": "902",
+        "texto": "dictará a continuación, pero separadamente, la sentencia que proceda conforme a derecho"
+       }
+      },
+      {
+       "si": "Se desestima el recurso",
+       "entonces": "Costas al recurrente y pérdida del depósito; el Ministerio Fiscal no paga costas.",
+       "articulos": [
+        "901"
+       ],
+       "literal": {
+        "articulo": "901",
+        "texto": "condenará al recurrente en costas y a la pérdida del depósito"
+       }
+      },
+      {
+       "si": "Recurre solo uno de los procesados",
+       "entonces": "La nueva sentencia favorece a los demás que estén en su misma situación y nunca les perjudica.",
+       "articulos": [
+        "903"
+       ],
+       "literal": {
+        "articulo": "903",
+        "texto": "Nunca les perjudicará en lo que les fuere adverso"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuántos Magistrados forman la Sala de casación?",
+      "a": "Tres; cinco si la pena impuesta, o la que podría imponerse si prosperan los motivos de las acusaciones, supera los doce años.",
+      "articulos": [
+       "898"
+      ],
+      "literal": {
+       "articulo": "898",
+       "texto": "en cuyo caso se formará por cinco"
+      }
+     },
+     "conexiones": [
       "893 bis a",
-      "907 a 909"
+      "893 bis b",
+      "894",
+      "896",
+      "897",
+      "898",
+      "899",
+      "900",
+      "901",
+      "901 bis a",
+      "901 bis b",
+      "902",
+      "903",
+      "904"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "ejecucion"
+     ]
     },
     {
      "id": "recursos-954",
-     "fase": "Del recurso de revisión",
-     "subtitulo": "TÍTULO III · arts. 954 a 961",
-     "descripcion": "",
+     "fase": "Revisión de sentencias firmes",
+     "subtitulo": "Motivos tasados · autorización previa de la Sala",
+     "descripcion": "Permite revisar sentencias firmes por los motivos del art. 954.1: prueba falsa o delito de un tercero declarados por sentencia firme; prevaricación de un juez del proceso; dos sentencias firmes sobre el mismo hecho y encausado; hechos o pruebas nuevos que habrían llevado a absolver o a condenar menos; o sentencia no penal posterior contraria a la cuestión prejudicial. Hay además dos supuestos propios: el decomiso autónomo (art. 954.2) y una sentencia del TEDH (art. 954.3). Pueden promoverla el penado y, si ha fallecido, su familia; también el Fiscal. La Sala, oído el Fiscal, autoriza o deniega la interposición. Autorizada, se sustancia oyendo al Fiscal y a los penados y sigue los trámites de la casación por infracción de ley. La sentencia es irrevocable.",
      "articulos": [
       "954",
+      "955",
+      "956",
+      "957",
+      "958",
+      "959",
+      "960",
       "961"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Revisión por sentencia del TEDH",
+       "plazo": "1 año desde la firmeza de la sentencia del TEDH",
+       "articulo": "954",
+       "literal": "en el plazo de un año desde que adquiera firmeza la sentencia del referido Tribunal"
+      },
+      {
+       "acto": "Interposición una vez autorizada",
+       "plazo": "15 días",
+       "articulo": "957",
+       "literal": "el promovente dispondrá de quince días para su interposición"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Después de la sentencia aparecen hechos o pruebas nuevos",
+       "entonces": "Motivo de revisión si, de haberse aportado, habrían llevado a la absolución o a una condena menos grave.",
+       "articulos": [
+        "954"
+       ],
+       "literal": {
+        "articulo": "954",
+        "texto": "Cuando después de la sentencia sobrevenga el conocimiento de hechos o elementos de prueba"
+       }
+      },
+      {
+       "si": "El penado ha fallecido",
+       "entonces": "Pueden promoverla su cónyuge o quien convivía con él como tal, ascendientes y descendientes.",
+       "articulos": [
+        "955"
+       ],
+       "literal": {
+        "articulo": "955",
+        "texto": "con objeto de rehabilitar la memoria del difunto"
+       }
+      },
+      {
+       "si": "La Sala autoriza o deniega la interposición",
+       "entonces": "Ese auto no admite recurso.",
+       "articulos": [
+        "957"
+       ],
+       "literal": {
+        "articulo": "957",
+        "texto": "no son susceptibles de recurso alguno"
+       }
+      },
+      {
+       "si": "La revisión termina en sentencia absolutoria",
+       "entonces": "Hay derecho a indemnización, que paga el Estado.",
+       "articulos": [
+        "960"
+       ],
+       "literal": {
+        "articulo": "960",
+        "texto": "tendrán derecho a las indemnizaciones civiles a que hubiere lugar según el derecho común"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cabe recurso contra la sentencia que resuelve la revisión?",
+      "a": "No: la sentencia es irrevocable.",
+      "articulos": [
+       "959"
+      ],
+      "literal": {
+       "articulo": "959",
+       "texto": "dictará sentencia, que será irrevocable"
+      }
+     },
+     "conexiones": [
       "954",
+      "955",
+      "956",
+      "957",
+      "958",
+      "959",
+      "960",
       "961"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [],
+     "duda": "El art. 958 remite a los «números 1.º a 4.º del artículo 954», pero el art. 954.1 se ordena hoy por letras a) a e) con supuestos distintos. El art. 956 cita el «Ministerio de Gracia y Justicia», y «la Sala» no se concreta. Ver PENDIENTES.md."
     }
    ]
   },

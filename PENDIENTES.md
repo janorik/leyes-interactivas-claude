@@ -132,6 +132,22 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [x] **Recursos de la LECrim como en la LEC (hecho):** 14 recursos y 27 casos del selector, con «Por resolución», «Recursos» y «Ponte a prueba». Antes: al usuario le gusta la pestaña Recursos de la LEC (selector «Por resolución», fichas de cada recurso y «Ponte a prueba»). En la LECrim ahora solo hay tarjetas de bloques en esqueleto. Hacer `lecrim/datos/recursos.json` con el mismo formato (recursos, selector por resolución con frase literal, test), a partir de los arts. 216-238 ter (recursos contra resoluciones procesales), 846 bis a-846 ter (apelación), 847-933 (casación) y 954-961 (revisión), y los recursos propios del abreviado, juicio rápido y delitos leves. Todo con `revisado: false` y las dudas anotadas aquí.
 - [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).
 
+### Apelación, casación y revisión (contenido elaborado, pendiente de revisión)
+
+> Bloque desarrollado: 7 fases y 15 plazos (arts. 846 bis a a 961), según el canon (bloques 31, 32 y 33). La fase «Recurso de queja por denegación del testimonio» (arts. 862-872) queda como índice: el canon no marca ninguno de sus artículos (su ficha resumida sigue en la pestaña Recursos). Propuestas de Claude, No verificables hasta que las confirmes.
+
+- [ ] **Art. 958: remite a «números 1.º a 4.º del artículo 954». Pendiente de revisión individual.** El art. 954.1 se ordena hoy por letras a) a e) y sus supuestos no coinciden con lo que describe el 958 (por ejemplo, el 958 habla de comprobar «la identidad de la persona cuya muerte hubiese sido penada», supuesto que no figura en el 954 vigente). Remisión desfasada: no la corrijo por analogía. **Propuesta:** dejarla sin equivalencia en la app (así está: solo la nota de duda en la fase 8) hasta que la cotejes.
+  - **Tu respuesta:**
+- [ ] **Art. 956: «Ministerio de Gracia y Justicia». Pendiente de revisión individual.** Denominación histórica; en la app solo está en el texto literal.
+  - **Tu respuesta:**
+- [ ] **Casación contra sentencias de apelación de las Audiencias: ¿cabe el art. 852? Pendiente de revisión individual.** El art. 847.1.b solo admite «infracción de ley del motivo previsto en el número 1.º del artículo 849»; el art. 852 dice que «en todo caso» puede fundarse en infracción de precepto constitucional. No elijo. **Propuesta:** dejar en la app las dos frases literales con la nota de duda (así está, fase 2).
+  - **Tu respuesta:**
+- [ ] **Art. 875: depósitos en pesetas (12.000, 6.000 y 7.500). Pendiente de revisión individual.** No convierto a euros: el texto consolidado no da la cifra en euros. En la app solo figura la nota de duda (fase 5).
+  - **Tu respuesta:**
+- [ ] **Art. 846 bis a y el auto de la declinatoria (relacionado con la duda «Auto que resuelve la declinatoria (art. 676)» de la sección Recursos).** El art. 846 bis a dice que son apelables ante el TSJ los autos del Magistrado-Presidente del Jurado «en los casos señalados en el artículo 676» (Verificable: texto literal). Puede servir para contestar esa duda en el caso del Jurado; fuera del Jurado sigue sin decirse el órgano.
+- [ ] **Ley Orgánica del Tribunal del Jurado (art. 846 bis a).** La fase 1 la nombra sin enlace, porque su referencia BOE sigue pendiente de comprobar (ver «Tribunal del Jurado» en Puntos de extracción).
+- [ ] **Revisa las 7 fases:** las frases entre « » son literales (comprobadas por el script); las descripciones y las etiquetas cortas de los plazos son resumen mío.
+
 ### Medidas de investigación (contenido elaborado, pendiente de revisión)
 
 > Bloque desarrollado: 9 fases y 18 plazos (arts. 545 a 588 octies), según el canon (bloque 20, PARCIAL). Propuestas de Claude, No verificables hasta que las confirmes. Estados: resuelta / resuelta con criterio interpretativo / pendiente de revisión individual.
