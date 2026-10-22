@@ -125,6 +125,16 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [x] **Recursos de la LECrim como en la LEC (hecho):** 14 recursos y 27 casos del selector, con «Por resolución», «Recursos» y «Ponte a prueba». Antes: al usuario le gusta la pestaña Recursos de la LEC (selector «Por resolución», fichas de cada recurso y «Ponte a prueba»). En la LECrim ahora solo hay tarjetas de bloques en esqueleto. Hacer `lecrim/datos/recursos.json` con el mismo formato (recursos, selector por resolución con frase literal, test), a partir de los arts. 216-238 ter (recursos contra resoluciones procesales), 846 bis a-846 ter (apelación), 847-933 (casación) y 954-961 (revisión), y los recursos propios del abreviado, juicio rápido y delitos leves. Todo con `revisado: false` y las dudas anotadas aquí.
 - [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).
 
+### Juicio sobre delitos leves (contenido elaborado, pendiente de revisión)
+
+> Bloque desarrollado: 6 fases y 4 plazos (arts. 962 a 977; los arts. 978 a 982 están derogados). Propuestas de Claude, No verificables hasta que las confirmes. Estados: resuelta / resuelta con criterio interpretativo / pendiente de revisión individual.
+
+- [ ] **Ejecución de la sentencia: el art. 974.1 remite al «párrafo tercero del artículo 212». Pendiente de revisión individual (decisión del usuario (22-10-2026)).** El art. 974.1 remite al plazo del art. 212 («el primer día siguiente»), mientras que el art. 976.1 da cinco días para apelar (Verificable). Antes de resolver hay que comprobar cómo se relaciona el plazo de ejecución con la firmeza de la sentencia y con el plazo de impugnación de los perjudicados no comparecidos. Se analiza junto con la duda «Recursos › Delitos leves: plazo de la apelación», sin duplicar el análisis.
+  En la app: Juicio sobre delitos leves › fase 5, aviso «Duda de interpretación».
+  - **Tu respuesta:**
+- [x] **«Juicios de faltas» (art. 965.2) y «calificación de la falta» (art. 973.1). Resueltas con criterio interpretativo por el usuario (22-10-2026):** se leen en el marco actual del juicio sobre delitos leves y como «calificación del delito leve». Son lecturas interpretativas, no sustituciones literales del texto consolidado. En la app: notas «Ojo» en las fases 3 y 5.
+- [ ] **Revisa las 6 fases:** las frases entre « » son literales; las descripciones son resumen mío.
+
 ### Detención, prisión y libertad provisional (contenido elaborado, pendiente de revisión)
 
 > Bloque desarrollado: 8 fases y 21 plazos (arts. 486 a 544 quinquies). Propuestas de Claude, No verificables hasta que las confirmes. Estados: resuelta / resuelta con criterio interpretativo / pendiente de revisión individual.

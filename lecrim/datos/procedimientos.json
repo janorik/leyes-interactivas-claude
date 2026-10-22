@@ -5946,34 +5946,411 @@
    "nombre": "Juicio sobre delitos leves",
    "bloque": "lecrim",
    "grupo": "Libros VI y VII",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Juicio sobre delitos leves: del atestado y la citación ante el Juzgado de guardia a la sentencia y la apelación (arts. 962 a 977; los arts. 978 a 982 están derogados).",
    "ambito": {
     "corto": "Arts. 962 a 982",
     "texto": "LIBRO VI. Del procedimiento para el juicio sobre delitos leves",
     "articulos": [
      "962"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "962",
+      "texto": "delito leve de lesiones o maltrato de obra, de hurto flagrante, de amenazas, de coacciones o de injurias"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "leves-962",
-     "fase": "Del procedimiento para el juicio sobre delitos leves",
-     "subtitulo": "LIBRO VI · arts. 962 a 982",
-     "descripcion": "",
+     "id": "lev-policia",
+     "fase": "Atestado y citación ante el Juzgado de guardia",
+     "subtitulo": "Juicio inmediato (art. 962) y resto de delitos leves (art. 964)",
+     "descripcion": "En los delitos leves de lesiones o maltrato de obra, hurto flagrante, amenazas, coacciones o injurias, la Policía cita de inmediato ante el Juzgado de guardia a ofendidos, denunciante, denunciado y testigos, advirtiéndoles de que el juicio puede celebrarse en el acto aunque no comparezcan y de que deben traer sus pruebas. En los demás delitos leves, forma el atestado y lo remite sin dilación al Juzgado de guardia.",
      "articulos": [
       "962",
-      "978 a 982"
-     ],
-     "rango": [
-      "962",
-      "978 a 982"
+      "964"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "El denunciado es citado",
+       "entonces": "Se le informa por escrito de los hechos y de su derecho a comparecer con abogado.",
+       "articulos": [
+        "962"
+       ],
+       "literal": {
+        "articulo": "962",
+        "texto": "Dicha información se practicará en todo caso por escrito."
+       }
+      },
+      {
+       "si": "Es competente el Juzgado de Violencia sobre la Mujer",
+       "entonces": "Citaciones ante ese Juzgado en el día hábil más próximo.",
+       "articulos": [
+        "962"
+       ],
+       "literal": {
+        "articulo": "962",
+        "texto": "habrá de realizar las citaciones a que se refiere este artículo ante dicho Juzgado en el día hábil más próximo"
+       }
+      },
+      {
+       "si": "Delito leve distinto de los del art. 962",
+       "entonces": "Atestado inmediato al Juzgado de guardia, con el ofrecimiento de acciones al ofendido.",
+       "articulos": [
+        "964"
+       ],
+       "literal": {
+        "articulo": "964",
+        "texto": "formará de manera inmediata el correspondiente atestado que remitirá sin dilación al Juzgado de guardia"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿De qué se advierte a los citados por la Policía para un juicio por delito leve ante el Juzgado de guardia?",
+      "a": "De las consecuencias de no comparecer, de que el juicio puede celebrarse de inmediato aunque no comparezcan y de que deben acudir con sus medios de prueba.",
+      "articulos": [
+       "962"
+      ],
+      "literal": {
+       "articulo": "962",
+       "texto": "podrá celebrarse el juicio de forma inmediata en el Juzgado de guardia, incluso aunque no comparezcan"
+      }
+     },
+     "conexiones": [
+      "109",
+      "110",
+      "284",
+      "962",
+      "964",
+      "967"
+     ],
+     "continua_en": [
+      "inicio"
+     ]
+    },
+    {
+     "id": "lev-guardia",
+     "fase": "Decisión del Juzgado de guardia",
+     "subtitulo": "Sobreseimiento por escasa gravedad o juicio inmediato",
+     "descripcion": "Recibido el atestado (o la denuncia presentada directamente en el juzgado), el juez puede sobreseer y archivar a petición del Fiscal si el hecho es de muy escasa gravedad y no hay interés público relevante en perseguirlo, o celebrar el juicio de inmediato si comparecen los citados (o su presencia es innecesaria) y el asunto le corresponde al Juzgado de guardia.",
+     "articulos": [
+      "963",
+      "964"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El Fiscal lo pide: hecho de muy escasa gravedad y sin interés público relevante",
+       "entonces": "Sobreseimiento y archivo, notificado a los ofendidos.",
+       "articulos": [
+        "963"
+       ],
+       "literal": {
+        "articulo": "963",
+        "texto": "Acordará el sobreseimiento del procedimiento y el archivo de las diligencias cuando lo solicite el Ministerio Fiscal"
+       }
+      },
+      {
+       "si": "Delito leve patrimonial con el daño reparado y sin denuncia del perjudicado",
+       "entonces": "Se entiende que no hay interés público relevante en perseguirlo.",
+       "articulos": [
+        "963"
+       ],
+       "literal": {
+        "articulo": "963",
+        "texto": "se entenderá que no existe interés público relevante en su persecución cuando se hubiere procedido a la reparación del daño y no exista denuncia del perjudicado"
+       }
+      },
+      {
+       "si": "Han comparecido los citados (o su presencia es innecesaria)",
+       "entonces": "Celebración inmediata del juicio, si el asunto corresponde al Juzgado de guardia por competencia y reparto.",
+       "articulos": [
+        "963"
+       ],
+       "literal": {
+        "articulo": "963",
+        "texto": "Acordará la inmediata celebración del juicio"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué dos requisitos exige el sobreseimiento por escasa gravedad en el juicio por delito leve?",
+      "a": "Que el Fiscal lo solicite porque el hecho es de muy escasa gravedad y porque no existe un interés público relevante en su persecución.",
+      "articulos": [
+       "963"
+      ],
+      "literal": {
+       "articulo": "963",
+       "texto": "no exista un interés público relevante en la persecución del hecho"
+      }
+     },
+     "conexiones": [
+      "798",
+      "963",
+      "964"
+     ],
+     "continua_en": [
+      "rapido"
+     ]
+    },
+    {
+     "id": "lev-senalamiento",
+     "fase": "Señalamiento y citaciones",
+     "subtitulo": "Cuando no hay juicio en la guardia",
+     "descripcion": "Si el juicio no puede celebrarse durante la guardia, el juzgado competente señala el juicio en pocos días y cita al Fiscal (salvo delito perseguible solo a instancia de parte), al denunciante, al denunciado y a testigos y peritos. Se les informa de que pueden ir con abogado y de que deben llevar sus pruebas; al investigado se le entrega copia de la denuncia o querella.",
+     "articulos": [
+      "965",
+      "966",
+      "967",
+      "968"
+     ],
+     "plazos": [
+      {
+       "acto": "Señalamiento del juicio si no se celebra en la guardia",
+       "plazo": "No más de 7 días",
+       "articulo": "965",
+       "literal": "en cualquier caso en un plazo no superior a siete días"
+      },
+      {
+       "acto": "Nueva fecha si el juicio no puede celebrarse o concluirse",
+       "plazo": "Dentro de 7 días",
+       "articulo": "968",
+       "literal": "el día más inmediato posible y, en todo caso, dentro de los siete siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El delito leve lleva multa con límite máximo de al menos seis meses",
+       "entonces": "Se aplican las reglas generales de defensa y representación.",
+       "articulos": [
+        "967"
+       ],
+       "literal": {
+        "articulo": "967",
+        "texto": "se aplicarán las reglas generales de defensa y representación"
+       }
+      },
+      {
+       "si": "Un citado no comparece ni alega justa causa",
+       "entonces": "Multa de 200 a 2.000 euros.",
+       "articulos": [
+        "967"
+       ],
+       "literal": {
+        "articulo": "967",
+        "texto": "podrán ser sancionados con una multa de 200 a 2.000 euros"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Es obligatorio ir con abogado a un juicio por delito leve?",
+      "a": "No, como regla: se informa de que pueden ser asistidos si lo desean. Pero si el delito leve lleva multa con límite máximo de al menos seis meses, rigen las reglas generales de defensa y representación.",
+      "articulos": [
+       "967"
+      ],
+      "literal": {
+       "articulo": "967",
+       "texto": "se les informará de que pueden ser asistidos por abogado si lo desean"
+      }
+     },
+     "conexiones": [
+      "965",
+      "966",
+      "967",
+      "968"
+     ],
+     "continua_en": [],
+     "aviso": "El art. 965.2 habla de «juicios de faltas»: se lee en el marco actual del juicio sobre delitos leves (nota general del BOE). Es una lectura interpretativa, no una modificación literal del texto."
+    },
+    {
+     "id": "lev-juicio",
+     "fase": "Juicio",
+     "subtitulo": "Público, oral y concentrado",
+     "descripcion": "Empieza con la lectura de la denuncia o querella; luego testigos y pruebas de la acusación, declaración del acusado y pruebas de descargo; al final, informes orales del Fiscal, del querellante o denunciante y del acusado. El Fiscal asiste cuando es citado, salvo las instrucciones del Fiscal General para delitos leves perseguibles solo por denuncia.",
+     "articulos": [
+      "969",
+      "970",
+      "971",
+      "972"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "No asiste el Fiscal en un delito leve que exige denuncia del ofendido",
+       "entonces": "La declaración del denunciante afirmando los hechos vale como acusación, aunque no los califique ni pida pena.",
+       "articulos": [
+        "969"
+       ],
+       "literal": {
+        "articulo": "969",
+        "texto": "la declaración del denunciante en el juicio afirmando los hechos denunciados tendrá valor de acusación"
+       }
+      },
+      {
+       "si": "El denunciado reside fuera de la demarcación del juzgado",
+       "entonces": "No está obligado a acudir: puede enviar un escrito y apoderar a abogado o procurador.",
+       "articulos": [
+        "970"
+       ],
+       "literal": {
+        "articulo": "970",
+        "texto": "no tendrá obligación de concurrir al acto del juicio"
+       }
+      },
+      {
+       "si": "El acusado citado en forma no comparece sin justificación",
+       "entonces": "El juicio se celebra y se resuelve igualmente, salvo que su declaración sea necesaria.",
+       "articulos": [
+        "971"
+       ],
+       "literal": {
+        "articulo": "971",
+        "texto": "La ausencia injustificada del acusado no suspenderá la celebración ni la resolución del juicio"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se suspende el juicio por delito leve si el acusado, debidamente citado, no acude sin justificación?",
+      "a": "No, salvo que el juez considere necesaria su declaración.",
+      "articulos": [
+       "971"
+      ],
+      "literal": {
+       "articulo": "971",
+       "texto": "La ausencia injustificada del acusado no suspenderá la celebración ni la resolución del juicio"
+      }
+     },
+     "conexiones": [
+      "277",
+      "743",
+      "969",
+      "970",
+      "971",
+      "972"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "lev-sentencia",
+     "fase": "Sentencia y firmeza",
+     "subtitulo": "Arts. 973 a 975",
+     "descripcion": "El juez dicta sentencia al terminar el juicio o, si no es posible, en los tres días siguientes, apreciando la prueba en conciencia. Se notifica también a los ofendidos y perjudicados no personados, indicando los recursos, el plazo y el órgano. Si las partes renuncian a recurrir, se declara firme en el acto.",
+     "articulos": [
+      "973",
+      "974",
+      "975"
+     ],
+     "plazos": [
+      {
+       "acto": "Sentencia",
+       "plazo": "Al acabar el juicio o en 3 días",
+       "articulo": "973",
+       "literal": "en el acto de finalizar el juicio, y a no ser posible dentro de los tres días siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Las partes, conocido el fallo, deciden no recurrir",
+       "entonces": "El juez declara la firmeza de la sentencia en el mismo acto.",
+       "articulos": [
+        "975"
+       ],
+       "literal": {
+        "articulo": "975",
+        "texto": "el Juez, en el mismo acto, declarará la firmeza de la sentencia"
+       }
+      },
+      {
+       "si": "Se condenó a responsabilidad civil sin fijar la cantidad",
+       "entonces": "Se aplica el art. 984 en ejecución.",
+       "articulos": [
+        "974",
+        "984"
+       ],
+       "literal": {
+        "articulo": "974",
+        "texto": "se estará a lo que dispone el artículo 984"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿A quién se notifica la sentencia en el juicio por delito leve, además de a las partes?",
+      "a": "A los ofendidos y perjudicados, aunque no se hayan mostrado parte, indicando los recursos, el plazo y el órgano.",
+      "articulos": [
+       "973"
+      ],
+      "literal": {
+       "articulo": "973",
+       "texto": "La sentencia se notificará a los ofendidos y perjudicados por el delito leve, aunque no se hayan mostrado parte en el procedimiento."
+      }
+     },
+     "conexiones": [
+      "212",
+      "973",
+      "974",
+      "975",
+      "984"
+     ],
+     "continua_en": [
+      "ejecucion"
+     ],
+     "duda": "El art. 974.1 remite al plazo del «párrafo tercero del artículo 212» para ejecutar la sentencia, que no coincide con los cinco días de apelación del art. 976.1. Ver PENDIENTES.md (misma duda que en Recursos).",
+     "aviso": "El art. 973.1 dice «calificación de la falta»: se lee como calificación del delito leve. Es una lectura interpretativa; el texto consolidado conserva «falta»."
+    },
+    {
+     "id": "lev-apelacion",
+     "fase": "Apelación",
+     "subtitulo": "Única instancia de recurso",
+     "descripcion": "La sentencia es apelable en cinco días desde su notificación, con la tramitación de los arts. 790 a 792. La sentencia de apelación se notifica también a los ofendidos y perjudicados. Contra ella no cabe recurso alguno: se devuelven los autos al juez para ejecutar.",
+     "articulos": [
+      "976",
+      "977"
+     ],
+     "plazos": [
+      {
+       "acto": "Apelación contra la sentencia",
+       "plazo": "5 días desde la notificación",
+       "articulo": "976",
+       "literal": "La sentencia es apelable en el plazo de los cinco días siguientes al de su notificación."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se quiere recurrir la sentencia dictada en apelación",
+       "entonces": "No cabe recurso alguno.",
+       "articulos": [
+        "977"
+       ],
+       "literal": {
+        "articulo": "977",
+        "texto": "Contra la sentencia que se dicte en segunda instancia no habrá lugar a recurso alguno."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué plazo hay para apelar la sentencia de un juicio por delito leve?",
+      "a": "Cinco días desde su notificación; se tramita por los arts. 790 a 792.",
+      "articulos": [
+       "976"
+      ],
+      "literal": {
+       "articulo": "976",
+       "texto": "La sentencia es apelable en el plazo de los cinco días siguientes al de su notificación."
+      }
+     },
+     "conexiones": [
+      "212",
+      "790",
+      "791",
+      "792",
+      "976",
+      "977"
+     ],
+     "continua_en": [
+      "recursos"
+     ]
     }
    ]
   },
