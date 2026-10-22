@@ -6359,34 +6359,413 @@
    "nombre": "Ejecución de las sentencias",
    "bloque": "lecrim",
    "grupo": "Libros VI y VII",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Ejecución de las sentencias penales: firmeza y competencia, ejecutoria (suspensión, pagos y liquidación de condena), responsabilidad civil, cumplimiento de penas y especialidades (arts. 983 a 999).",
    "ambito": {
     "corto": "Arts. 983 a 999",
     "texto": "LIBRO VII. De la ejecución de las sentencias",
     "articulos": [
      "983"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "985",
+      "texto": "La ejecución de las sentencias en causas por delito corresponde al Tribunal que haya dictado la que sea firme."
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "ejecucion-983",
-     "fase": "De la ejecución de las sentencias",
-     "subtitulo": "LIBRO VII · arts. 983 a 999",
-     "descripcion": "",
+     "id": "ej-competencia",
+     "fase": "Firmeza, competencia y libertad del absuelto",
+     "subtitulo": "Quién ejecuta (arts. 983 a 988)",
+     "descripcion": "El absuelto queda en libertad de inmediato, salvo recurso con efecto suspensivo u otro motivo legal, por auto motivado. Firme la sentencia, lo declara el órgano que la dictó y se ejecuta aunque el reo esté sometido a otra causa. Ejecuta el tribunal que dictó la sentencia firme; en los delitos leves, el órgano que conoció del juicio.",
      "articulos": [
       "983",
-      "999"
-     ],
-     "rango": [
-      "983",
-      "999"
+      "984",
+      "985",
+      "986",
+      "987",
+      "988"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "La sentencia firme es por delito",
+       "entonces": "La ejecuta el Tribunal que la dictó.",
+       "articulos": [
+        "985"
+       ],
+       "literal": {
+        "articulo": "985",
+        "texto": "La ejecución de las sentencias en causas por delito corresponde al Tribunal que haya dictado la que sea firme."
+       }
+      },
+      {
+       "si": "Sentencia dictada por el Tribunal Supremo tras casar otra",
+       "entonces": "La ejecuta el tribunal que dictó la sentencia casada.",
+       "articulos": [
+        "986"
+       ],
+       "literal": {
+        "articulo": "986",
+        "texto": "se ejecutará por el Tribunal que hubiese pronunciado la sentencia casada"
+       }
+      },
+      {
+       "si": "Condenas en distintos procesos por hechos que pudieron juzgarse en uno solo",
+       "entonces": "El último tribunal sentenciador fija el límite de cumplimiento (art. 76 CP) por auto, recurrible en casación por infracción de ley.",
+       "articulos": [
+        "988"
+       ],
+       "literal": {
+        "articulo": "988",
+        "texto": "procederá a fijar el límite del cumplimiento de las penas impuestas conforme a lo dispuesto en el artículo 76 del Código Penal"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué ocurre con el procesado absuelto que está en prisión?",
+      "a": "Se le pone en libertad inmediatamente, salvo que un recurso con efectos suspensivos u otro motivo legal obliguen a aplazar la excarcelación, por auto motivado.",
+      "articulos": [
+       "983"
+      ],
+      "literal": {
+       "articulo": "983",
+       "texto": "Todo procesado absuelto por la sentencia será puesto en libertad inmediatamente"
+      }
+     },
+     "conexiones": [
+      "141",
+      "17",
+      "983",
+      "984",
+      "985",
+      "986",
+      "987",
+      "988"
+     ],
+     "continua_en": [
+      "recursos"
+     ],
+     "duda": "El art. 984, párrafo segundo, menciona al «Juez de Instrucción que haya conocido en apelación de un juicio de faltas». Según la nota general del BOE (disposición adicional primera de la LO 1/2025), las referencias a los Juzgados de Instrucción se entienden hechas a las Secciones de los Tribunales de Instancia; falta comprobar si basta esa regla o si la competencia de apelación exige otra precisión. Ver PENDIENTES.md.",
+     "aviso": "El art. 984, párrafo primero, dice «juicios sobre faltas»: se lee como juicio sobre delitos leves (nota general del BOE). Es una lectura interpretativa, no una modificación literal."
+    },
+    {
+     "id": "ej-ejecutoria",
+     "fase": "Ejecutoria: suspensión, pagos y liquidación de condena",
+     "subtitulo": "Art. 988 bis",
+     "descripcion": "Incoada la ejecutoria, cada condenado se pronuncia en un solo escrito sobre la suspensión de la pena de prisión, la forma de pagar las responsabilidades pecuniarias (y su aplazamiento) y cualquier otra petición, incluida la sustitución de la pena. Tras oír al Fiscal, a las acusaciones y a las víctimas afectadas, el juez resuelve por auto o tras una vista. El LAJ requiere de cumplimiento al condenado y practica la liquidación de condena.",
+     "articulos": [
+      "988 bis"
+     ],
+     "plazos": [
+      {
+       "acto": "Escrito del condenado sobre suspensión, pagos y demás peticiones",
+       "plazo": "10 días",
+       "articulo": "988 bis",
+       "literal": "en el plazo de diez días, se pronuncien en un mismo escrito"
+      },
+      {
+       "acto": "Alegaciones del Fiscal, acusaciones y víctimas",
+       "plazo": "10 días",
+       "articulo": "988 bis",
+       "literal": "para que, en el plazo de diez días, formulen alegaciones"
+      },
+      {
+       "acto": "Auto que resuelve todas las peticiones",
+       "plazo": "5 días",
+       "articulo": "988 bis",
+       "literal": "en el término de cinco días el juez, la jueza o el tribunal resolverán mediante auto sobre todas las peticiones"
+      },
+      {
+       "acto": "Vista, si el juez la prefiere al trámite escrito",
+       "plazo": "Dentro de 10 días",
+       "articulo": "988 bis",
+       "literal": "una vista que habrá de celebrarse en el plazo de diez días"
+      },
+      {
+       "acto": "Resolución tras la vista",
+       "plazo": "En el acto o en 3 días",
+       "articulo": "988 bis",
+       "literal": "resolverá en el acto o, de no ser posible, en los tres días siguientes"
+      },
+      {
+       "acto": "Impugnación de la liquidación de condena",
+       "plazo": "2 días",
+       "articulo": "988 bis",
+       "literal": "podrán impugnarlas en el plazo de dos días"
+      },
+      {
+       "acto": "Auto que resuelve la impugnación de la liquidación",
+       "plazo": "2 días",
+       "articulo": "988 bis",
+       "literal": "resolverá mediante auto, que será dictado en el plazo de dos días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Nadie impugna la liquidación de condena",
+       "entonces": "El LAJ la aprueba por decreto.",
+       "articulos": [
+        "988 bis"
+       ],
+       "literal": {
+        "articulo": "988 bis",
+        "texto": "Transcurrido el plazo sin impugnación, el letrado o la letrada de la Administración de Justicia la aprobará mediante decreto."
+       }
+      },
+      {
+       "si": "Cómputo de la liquidación",
+       "entonces": "Por años, meses y días: meses de 30 días y años de 365.",
+       "articulos": [
+        "988 bis"
+       ],
+       "literal": {
+        "articulo": "988 bis",
+        "texto": "los meses completos serán de treinta días y los años completos serán de trescientos sesenta y cinco días"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué debe incluir la liquidación de condena?",
+      "a": "La fecha de inicio del cumplimiento, el tiempo abonable por privación de libertad provisional o medida cautelar, la duración de la condena y el tiempo de cumplimiento.",
+      "articulos": [
+       "988 bis"
+      ],
+      "literal": {
+       "articulo": "988 bis",
+       "texto": "practicará las liquidaciones de condena, que comprenderán, en todo caso, los siguientes particulares"
+      }
+     },
+     "conexiones": [
+      "988 bis"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "ej-civil",
+     "fase": "Responsabilidad civil",
+     "subtitulo": "Ejecución conforme a la LEC",
+     "descripcion": "Los pronunciamientos civiles admiten ejecución provisional según la Ley de Enjuiciamiento Civil, y en lo no regulado en las normas penales se aplican sus normas de ejecución. El LAJ puede encargar a la Agencia Tributaria la investigación del patrimonio del condenado. Las tercerías de dominio o de mejor derecho siguen la LEC. En los delitos leves, la ejecución civil la promueve de oficio el juez.",
+     "articulos": [
+      "984",
+      "989",
+      "996"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Se quiere ejecutar la responsabilidad civil antes de la firmeza",
+       "entonces": "Cabe ejecución provisional según la LEC.",
+       "articulos": [
+        "989"
+       ],
+       "literal": {
+        "articulo": "989",
+        "texto": "Los pronunciamientos sobre responsabilidad civil serán susceptibles de ejecución provisional"
+       }
+      },
+      {
+       "si": "Hay que localizar bienes del condenado",
+       "entonces": "El LAJ puede encomendar la investigación patrimonial a la Agencia Tributaria o a las Haciendas forales.",
+       "articulos": [
+        "989"
+       ],
+       "literal": {
+        "articulo": "989",
+        "texto": "podrá encomendar a la Agencia Estatal de Administración Tributaria"
+       }
+      },
+      {
+       "si": "Un tercero alega dominio o mejor derecho sobre los bienes",
+       "entonces": "Tercería por las normas de la LEC.",
+       "articulos": [
+        "996"
+       ],
+       "literal": {
+        "articulo": "996",
+        "texto": "Las tercerías de dominio o de mejor derecho que puedan deducirse se sustanciarán y decidirán con sujeción a las disposiciones establecidas en la Ley de Enjuiciamiento Civil."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cabe ejecutar provisionalmente la responsabilidad civil de una sentencia penal?",
+      "a": "Sí, con arreglo a lo dispuesto en la Ley de Enjuiciamiento Civil.",
+      "articulos": [
+       "989"
+      ],
+      "literal": {
+       "articulo": "989",
+       "texto": "serán susceptibles de ejecución provisional con arreglo a lo dispuesto en la Ley 1/2000, de 7 de enero, de Enjuiciamiento Civil"
+      }
+     },
+     "conexiones": [
+      "984",
+      "989",
+      "996"
+     ],
+     "continua_en": [
+      "fianzas"
+     ]
+    },
+    {
+     "id": "ej-penas",
+     "fase": "Cumplimiento de las penas",
+     "subtitulo": "Ingreso en prisión e impulso del LAJ",
+     "descripcion": "Las penas se cumplen como prescriben el Código Penal y los reglamentos. El juez o tribunal adopta sin dilación las medidas para que el condenado ingrese en el centro penitenciario, con el auxilio obligado de las autoridades administrativas. El LAJ impulsa la ejecución y comunica a ofendidos, perjudicados y testigos las resoluciones que afecten a su seguridad.",
+     "articulos": [
+      "990",
+      "997",
+      "998"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Hasta que el condenado ingresa en el centro o se traslada al lugar de cumplimiento",
+       "entonces": "La competencia es del juez o tribunal y excluye la de cualquier autoridad gubernativa.",
+       "articulos": [
+        "990"
+       ],
+       "literal": {
+        "articulo": "990",
+        "texto": "excluye la de cualquier Autoridad gubernativa hasta que el condenado tenga ingreso en el establecimiento penal"
+       }
+      },
+      {
+       "si": "Resoluciones sobre el penado que afectan a la seguridad de la víctima o de testigos",
+       "entonces": "El LAJ se las comunica.",
+       "articulos": [
+        "990"
+       ],
+       "literal": {
+        "articulo": "990",
+        "texto": "todas aquellas resoluciones relativas al penado que puedan afectar a su seguridad"
+       }
+      },
+      {
+       "si": "Delitos contra la Hacienda Pública, contrabando o Seguridad Social",
+       "entonces": "Los órganos de recaudación investigan el patrimonio del condenado bajo supervisión judicial.",
+       "articulos": [
+        "990"
+       ],
+       "literal": {
+        "articulo": "990",
+        "texto": "los órganos de recaudación de la Administración Tributaria o, en su caso, de la Seguridad Social, tendrán competencia para investigar"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quién impulsa el proceso de ejecución de la sentencia penal?",
+      "a": "El LAJ, dictando las diligencias necesarias, sin perjuicio de la competencia del juez o tribunal para hacer cumplir la pena.",
+      "articulos": [
+       "990"
+      ],
+      "literal": {
+       "articulo": "990",
+       "texto": "Corresponde al Secretario judicial impulsar el proceso de ejecución de la sentencia"
+      }
+     },
+     "conexiones": [
+      "990",
+      "997",
+      "998"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "ej-demencia",
+     "fase": "Demencia sobrevenida del penado",
+     "subtitulo": "Arts. 991 a 994",
+     "descripcion": "Si se sospecha que un penado sufre demencia, se le pone en observación y se forma un expediente que se remite al tribunal sentenciador. Este, oídos el Fiscal, el acusador particular y la defensa, ordena una instrucción sobre su estado y resuelve. Si se declara la demencia, el penado es trasladado al establecimiento que corresponda.",
+     "articulos": [
+      "991",
+      "992",
+      "993",
+      "994"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Hay oposición en el incidente",
+       "entonces": "Se sustancia en juicio contradictorio.",
+       "articulos": [
+        "994"
+       ],
+       "literal": {
+        "articulo": "994",
+        "texto": "Sustanciado el incidente a que se refieren los artículos anteriores en juicio contradictorio si hubiese oposición"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En el incidente de demencia del penado, ¿quién debe ser oído?",
+      "a": "El Fiscal, el acusador particular si lo hay y el defensor del penado (nombrado de oficio si no tiene).",
+      "articulos": [
+       "993"
+      ],
+      "literal": {
+       "articulo": "993",
+       "texto": "oirá al Fiscal y al acusador particular de la causa, si lo hubiere, y dándose intervención y audiencia al defensor del penado"
+      }
+     },
+     "conexiones": [
+      "383",
+      "991",
+      "992",
+      "993",
+      "994"
+     ],
+     "continua_en": [],
+     "duda": "Los arts. 991 a 994 conservan términos de 1882 («confinados», «presidio», «Comandante del presidio», «Academia de Medicina y Cirugía»). Ver PENDIENTES.md."
+    },
+    {
+     "id": "ej-hacienda",
+     "fase": "Delitos contra la Hacienda Pública",
+     "subtitulo": "Disconformidad con la liquidación (art. 999)",
+     "descripcion": "En la ejecución de sentencias por delitos contra la Hacienda Pública, si el obligado al pago no está de acuerdo con las modificaciones que haga la Administración conforme a la Ley General Tributaria, lo pone de manifiesto al tribunal de la ejecución, que oye a la Administración y al Fiscal y resuelve por auto si la modificación se ajusta a la sentencia.",
+     "articulos": [
+      "999"
+     ],
+     "plazos": [
+      {
+       "acto": "Plantear la disconformidad ante el tribunal",
+       "plazo": "30 días desde la notificación",
+       "articulo": "999",
+       "literal": "en el plazo de 30 días desde su notificación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se recurre el auto que resuelve el incidente",
+       "entonces": "Apelación en un solo efecto o, en su caso, súplica.",
+       "articulos": [
+        "999"
+       ],
+       "literal": {
+        "articulo": "999",
+        "texto": "cabrá recurso de apelación en un solo efecto o, en su caso, el correspondiente de súplica"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué plazo tiene el condenado por delito fiscal para oponerse a la modificación de la liquidación hecha por la Administración?",
+      "a": "Treinta días desde su notificación, ante el tribunal competente para la ejecución.",
+      "articulos": [
+       "999"
+      ],
+      "literal": {
+       "articulo": "999",
+       "texto": "en el plazo de 30 días desde su notificación"
+      }
+     },
+     "conexiones": [
+      "990",
+      "999"
+     ],
+     "continua_en": [
+      "recursos"
+     ]
     }
    ]
   },
