@@ -131,7 +131,7 @@ Entre paréntesis, el **tramo oficial del bloque** según el consolidado BOE. Tr
 #### Libro VI
 34. Juicio sobre delitos leves (arts. 962-982) — PARCIAL (962 a 977)
 #### Libro VII
-35. Ejecución de sentencias (arts. 983-999) — PARCIAL (983-984-988-989-990)
+35. Ejecución de sentencias (arts. 983-999) — PARCIAL (983-984-988-988 bis-989-990)
 
 ### Notas pedagógicas
 

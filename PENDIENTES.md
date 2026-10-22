@@ -98,8 +98,7 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 ### Canon de contenido (22-10-2026)
 
-- [ ] **Art. 988 bis (ejecutoria) fuera del canon.** El canon incluye los arts. 983, 984 y 988-990 de la ejecución, pero no el 988 bis (suspensión, forma de pago y liquidación de condena), que es de uso diario. La fase ya hecha se mantiene. ¿Lo dejaste fuera a propósito?
-  - **Tu respuesta:**
+- [x] **Art. 988 bis (ejecutoria). Resuelta por el usuario (22-10-2026):** no lo dejó fuera a propósito; se añade al bloque 35 del canon en su documento de la plataforma (y se carga allí en el extracto LECrim) y en la copia `fuentes/canon_contenido.md`. La fase de la app que ya lo usa queda dentro del canon.
 - [x] **Nota desfasada en el canon (bloque 26). Resuelta (22-10-2026):** corregida en el documento original de la plataforma (`docs/canon-contenido.md`) y en su seed LECrim: la audiencia preliminar es el art. 785; el art. 786 regula el señalamiento. Copiada aquí en `fuentes/canon_contenido.md`.
   - **Tu respuesta:**
 
