@@ -82,7 +82,7 @@ a.ley:hover{border-color:var(--acento)}
 <main class="in">
   <div class="t">Leyes</div>
   <div class="grid">__LEYES__</div>
-  <p class="aviso">Textos consolidados del BOE de carácter informativo, sin valor jurídico. Los esquemas, plazos y preguntas son material de estudio elaborado: cada app indica qué está pendiente de revisión. Tus notas y tu progreso se guardan solo en este navegador.</p>
+  <p class="aviso">Textos consolidados del BOE de carácter informativo, sin valor jurídico. Los esquemas, plazos y preguntas son material de estudio elaborado: cada app indica qué está pendiente de revisión. Tus notas y tu progreso se guardan solo en este navegador. Versión __VERSION__.</p>
 </main>
 <footer class="in" style="padding-bottom:30px"><div class="pie-legal">
   <p class="pie-marca">NORLEXIA · Leyes interactivas</p>
@@ -143,7 +143,9 @@ def main():
             sys.exit(f"ERROR: {l['abreviatura']} está como disponible pero no existe {l['carpeta']}index.html")
     logo = logo_base64()
     img = f'<img src="{logo}" alt="NOrlexia">' if logo else ""
-    out = PLANTILLA.replace("__LOGO__", img).replace("__LEYES__", "".join(tarjeta(l) for l in leyes))
+    with open(os.path.join(RAIZ, "scripts", "version.json"), encoding="utf-8") as f:
+        v = json.load(f)
+    out = PLANTILLA.replace("__VERSION__", f"{v['version']} · {v['fecha']}").replace("__LOGO__", img).replace("__LEYES__", "".join(tarjeta(l) for l in leyes))
     with open(os.path.join(RAIZ, "index.html"), "w", encoding="utf-8") as f:
         f.write(out)
     print(f"index.html generado: {sum(l['estado']=='disponible' for l in leyes)} ley(es) disponible(s), "

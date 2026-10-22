@@ -1,0 +1,5 @@
+{
+ "_nota": "Versión publicada de la web. Claude la sube en 1 cada vez que publica (une a la rama principal) y pone la fecha de ese día; es el mismo número que se da al usuario con ?v=N. Después hay que regenerar la portada y todas las leyes.",
+ "version": 13,
+ "fecha": "22-10-2026"
+}
