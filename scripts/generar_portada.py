@@ -145,7 +145,7 @@ def main():
     img = f'<img src="{logo}" alt="NOrlexia">' if logo else ""
     with open(os.path.join(RAIZ, "scripts", "version.json"), encoding="utf-8") as f:
         v = json.load(f)
-    out = PLANTILLA.replace("__VERSION__", f"{v['version']} · {v['fecha']}").replace("__LOGO__", img).replace("__LEYES__", "".join(tarjeta(l) for l in leyes))
+    out = PLANTILLA.replace("__VERSION__", str(v["version"])).replace("__LOGO__", img).replace("__LEYES__", "".join(tarjeta(l) for l in leyes))
     with open(os.path.join(RAIZ, "index.html"), "w", encoding="utf-8") as f:
         f.write(out)
     print(f"index.html generado: {sum(l['estado']=='disponible' for l in leyes)} ley(es) disponible(s), "

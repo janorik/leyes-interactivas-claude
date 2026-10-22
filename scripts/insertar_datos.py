@@ -198,10 +198,6 @@ def main():
         datos["ley"]["titulo_mapa"] = ficha.get("mapa", "Mapa procesal")
     validar_y_anadir_procedimientos(datos)
     validar_y_anadir_recursos(datos)
-    # Versión publicada de la web (scripts/version.json), para mostrarla al pie.
-    with open(os.path.join(RAIZ, "scripts", "version.json"), encoding="utf-8") as f:
-        v = json.load(f)
-    datos["version_web"] = {"version": v["version"], "fecha": v["fecha"]}
     js = json.dumps(datos, ensure_ascii=False, separators=(",", ":"))
     js = js.replace("</", "<\\/")  # no puede cerrar la etiqueta <script>
     with open(PLANTILLA, encoding="utf-8") as f:
