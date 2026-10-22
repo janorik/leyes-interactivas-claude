@@ -125,6 +125,28 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [x] **Recursos de la LECrim como en la LEC (hecho):** 14 recursos y 27 casos del selector, con «Por resolución», «Recursos» y «Ponte a prueba». Antes: al usuario le gusta la pestaña Recursos de la LEC (selector «Por resolución», fichas de cada recurso y «Ponte a prueba»). En la LECrim ahora solo hay tarjetas de bloques en esqueleto. Hacer `lecrim/datos/recursos.json` con el mismo formato (recursos, selector por resolución con frase literal, test), a partir de los arts. 216-238 ter (recursos contra resoluciones procesales), 846 bis a-846 ter (apelación), 847-933 (casación) y 954-961 (revisión), y los recursos propios del abreviado, juicio rápido y delitos leves. Todo con `revisado: false` y las dudas anotadas aquí.
 - [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).
 
+### Detención, prisión y libertad provisional (contenido elaborado, pendiente de revisión)
+
+> Bloque desarrollado: 8 fases y 21 plazos (arts. 486 a 544 quinquies). Propuestas de Claude, No verificables hasta que las confirmes. Estados: resuelta / resuelta con criterio interpretativo / pendiente de revisión individual.
+
+- [ ] **24 horas (art. 496) frente a 72 horas (art. 520.1).** El art. 496 obliga al particular, Autoridad o agente que detiene a poner al detenido en libertad o entregarlo al juez «dentro de las veinticuatro horas siguientes». El art. 520.1 dice que la detención durará lo estrictamente necesario y que, «dentro de los plazos establecidos en la presente Ley, y, en todo caso, en el plazo máximo de setenta y dos horas», el detenido quedará libre o a disposición judicial (Verificable).
+  En la app: Procesos › Detención, prisión… › fase 2, con los dos plazos, cada uno con su frase literal.
+  - **Propuesta:** no elegir. La app muestra los dos plazos tal como los dicen los artículos, sin decir cuál prevalece. Dime qué lectura aplicas y la añado como nota.
+  - **Tu respuesta:**
+- [ ] **«Prisión correccional» (art. 492.2.º).** La Policía debe detener al procesado por delito con pena «superior a la de prisión correccional», una pena que ya no existe.
+  En la app: no se cita en las fichas; solo en el texto literal.
+  - **Propuesta:** pendiente de revisión individual. No sustituyo la expresión por ninguna pena actual.
+  - **Tu respuesta:**
+- [ ] **«Reposición» del auto (art. 501).** Al notificar el auto que eleva la detención a prisión, se informa del derecho a pedir «la reposición del auto».
+  En la app: fase 2, alternativa con la frase literal.
+  - **Propuesta:** pendiente de revisión individual. No sé si debe leerse como recurso de reforma; además, el art. 507 da apelación contra los autos de prisión.
+  - **Tu respuesta:**
+- [ ] **«Delito o falta» y «juicio de faltas» (art. 544 ter).** Aparece en el apartado 1 (presupuestos de la orden de protección) y en el 4 (audiencia junto al «acto del juicio de faltas»).
+  En la app: fase 8, aviso «Duda de interpretación».
+  - **Propuesta:** resuelta con criterio interpretativo: «falta» como delito leve (nota general del BOE). Pendiente de tu confirmación.
+  - **Tu respuesta:**
+- [ ] **Revisa las 8 fases:** las frases entre « » son literales; las descripciones son resumen mío.
+
 ### Juicio rápido (contenido elaborado, pendiente de revisión)
 
 > Bloque desarrollado: 8 fases y 12 plazos (arts. 795 a 803). Los arts. 803 bis (aceptación de decreto) y 803 ter (decomiso) son otros procesos y no van aquí. Las propuestas son de Claude (No verificable hasta que las confirmes). Contesta: **sí**, **no** u **otra**.

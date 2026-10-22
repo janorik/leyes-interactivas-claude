@@ -1498,102 +1498,764 @@
    "nombre": "Citación, detención, prisión y libertad provisional",
    "bloque": "lecrim",
    "grupo": "Libro II · Sumario",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Medidas cautelares personales, comunes a todos los procedimientos: citación, detención, derechos del detenido, prisión provisional, libertad con o sin fianza y protección de la víctima (arts. 486 a 544 quinquies).",
    "ambito": {
     "corto": "Arts. 486 a 544 quinquies",
     "texto": "TÍTULO VI. De la citación, de la detención y de la prisión provisional · TÍTULO VII. De la libertad provisional del procesado",
     "articulos": [
      "486"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "502",
+      "texto": "La prisión provisional sólo se adoptará cuando objetivamente sea necesaria"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "cautelares-486",
-     "fase": "De la citación",
-     "subtitulo": "TÍTULO VI · CAPÍTULO I · arts. 486 a 488",
-     "descripcion": "",
+     "id": "caut-citacion",
+     "fase": "Citación",
+     "subtitulo": "La regla es citar, no detener",
+     "descripcion": "A quien se imputa un hecho se le cita solo para ser oído, salvo que la ley disponga otra cosa o proceda directamente su detención. Durante la instrucción, el Juez puede hacer comparecer a quien convenga oír por haber indicios fundados contra él.",
      "articulos": [
       "486",
-      "488"
-     ],
-     "rango": [
-      "486",
+      "487",
       "488"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "El citado no comparece ni justifica causa legítima",
+       "entonces": "La orden de comparecencia puede convertirse en orden de detención.",
+       "articulos": [
+        "487"
+       ],
+       "literal": {
+        "articulo": "487",
+        "texto": "la orden de comparecencia podrá convertirse en orden de detención"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuál es la regla general para la persona a quien se imputa un hecho punible?",
+      "a": "Citarla solo para ser oída, salvo que la ley disponga otra cosa o proceda desde luego su detención.",
+      "articulos": [
+       "486"
+      ],
+      "literal": {
+       "articulo": "486",
+       "texto": "deberá ser citada sólo para ser oída"
+      }
+     },
+     "conexiones": [
+      "486",
+      "487",
+      "488",
+      "775"
+     ],
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ]
     },
     {
-     "id": "cautelares-489",
-     "fase": "De la detención",
-     "subtitulo": "TÍTULO VI · CAPÍTULO II · arts. 489 a 501",
-     "descripcion": "",
+     "id": "caut-detencion",
+     "fase": "Detención",
+     "subtitulo": "Quién puede y quién debe detener · plazos",
+     "descripcion": "Cualquier persona puede detener en los casos del art. 490 (quien va a cometer un delito, el delincuente in fraganti, el fugado, el rebelde). La Policía Judicial debe hacerlo además en los casos del art. 492. No se detiene por delitos leves salvo que falten domicilio conocido y fianza. La detención dura lo estrictamente necesario: el detenido queda libre o a disposición judicial.",
      "articulos": [
       "489",
-      "501"
+      "490",
+      "492",
+      "495",
+      "496",
+      "497",
+      "501",
+      "520"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Particular o policía: libertad o entrega al juez más próximo",
+       "plazo": "24 horas",
+       "articulo": "496",
+       "literal": "dentro de las veinticuatro horas siguientes al acto de la misma"
+      },
+      {
+       "acto": "Máximo de la detención preventiva hasta la libertad o la puesta a disposición judicial",
+       "plazo": "72 horas",
+       "articulo": "520",
+       "literal": "en todo caso, en el plazo máximo de setenta y dos horas"
+      },
+      {
+       "acto": "El juez de la causa eleva la detención a prisión o la deja sin efecto",
+       "plazo": "72 horas desde la entrega",
+       "articulo": "497",
+       "literal": "en el término de setenta y dos horas, a contar desde que el detenido le hubiese sido entregado"
+      },
+      {
+       "acto": "Terrorismo y bandas armadas: prórroga de la detención (pedida en las primeras 48 horas)",
+       "plazo": "Hasta 48 horas más",
+       "articulo": "520 bis",
+       "literal": "hasta un límite máximo de otras cuarenta y ocho horas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Detiene un particular",
+       "entonces": "Debe justificar, si el detenido lo exige, que tenía motivos racionalmente suficientes.",
+       "articulos": [
+        "491"
+       ],
+       "literal": {
+        "articulo": "491",
+        "texto": "justificará, si éste lo exigiere, haber obrado en virtud de motivos racionalmente suficientes"
+       }
+      },
+      {
+       "si": "El hecho es un delito leve",
+       "entonces": "No se detiene, salvo que no tenga domicilio conocido ni dé fianza bastante.",
+       "articulos": [
+        "495"
+       ],
+       "literal": {
+        "articulo": "495",
+        "texto": "No se podrá detener por la presunta comisión de delitos leves"
+       }
+      },
+      {
+       "si": "Se dicta el auto que eleva la detención a prisión o la deja sin efecto",
+       "entonces": "Se notifica al procesado, que puede pedir su reposición de palabra o por escrito.",
+       "articulos": [
+        "501"
+       ],
+       "literal": {
+        "articulo": "501",
+        "texto": "el derecho que le asiste para pedir de palabra o por escrito la reposición del auto"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuál es el plazo máximo de la detención preventiva antes de la libertad o la puesta a disposición judicial?",
+      "a": "Setenta y dos horas como máximo, y siempre el tiempo estrictamente necesario para las averiguaciones.",
+      "articulos": [
+       "520"
+      ],
+      "literal": {
+       "articulo": "520",
+       "texto": "en el plazo máximo de setenta y dos horas, el detenido deberá ser puesto en libertad o a disposición de la autoridad judicial"
+      }
+     },
+     "conexiones": [
       "489",
-      "501"
+      "490",
+      "491",
+      "492",
+      "493",
+      "494",
+      "495",
+      "496",
+      "497",
+      "498",
+      "499",
+      "500",
+      "501",
+      "520",
+      "520 bis",
+      "520 ter"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "rapido",
+      "abreviado"
+     ],
+     "duda": "El art. 496 da 24 horas para entregar al detenido y el art. 520.1 fija un máximo de 72 horas; el art. 492.2 cita la «prisión correccional», y el art. 501 la «reposición» del auto. Ver PENDIENTES.md."
     },
     {
-     "id": "cautelares-502",
-     "fase": "De la prisión provisional",
-     "subtitulo": "TÍTULO VI · CAPÍTULO III · arts. 502 a 519",
-     "descripcion": "",
-     "articulos": [
-      "502",
-      "519"
-     ],
-     "rango": [
-      "502",
-      "519"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
-    },
-    {
-     "id": "cautelares-520",
-     "fase": "Del ejercicio del derecho de defensa, de la asistencia de Abogado y del tratamiento de los detenidos y presos",
-     "subtitulo": "TÍTULO VI · CAPÍTULO IV · arts. 520 a 527",
-     "descripcion": "",
+     "id": "caut-derechos",
+     "fase": "Derechos del detenido y asistencia letrada",
+     "subtitulo": "Art. 520 · incomunicación (art. 527)",
+     "descripcion": "Todo detenido o preso es informado por escrito, de inmediato y en lengua que entienda, de los hechos, de las razones de su privación de libertad y de sus derechos: guardar silencio, no declarar contra sí mismo, abogado, acceso a lo esencial para impugnar la detención, aviso a un familiar, intérprete, médico forense, asistencia jurídica gratuita. Si es extranjero, se avisa al cónsul; si es menor, a la Fiscalía de Menores.",
      "articulos": [
       "520",
       "527"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Llegada del abogado al centro de detención",
+       "plazo": "Máximo 3 horas desde el encargo",
+       "articulo": "520",
+       "literal": "siempre dentro del plazo máximo de tres horas desde la recepción del encargo"
+      },
+      {
+       "acto": "Restricción de derechos pedida por la Policía o el Fiscal: rige hasta que el juez decida",
+       "plazo": "24 horas",
+       "articulo": "527",
+       "literal": "por un plazo máximo de veinticuatro horas, dentro del cual el juez habrá de pronunciarse sobre la solicitud"
+      },
+      {
+       "acto": "Reconocimientos médicos del incomunicado",
+       "plazo": "Al menos 2 cada 24 horas",
+       "articulo": "527",
+       "literal": "al menos dos reconocimientos cada veinticuatro horas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Detenido solo por delitos contra la seguridad del tráfico",
+       "entonces": "Puede renunciar a la asistencia de abogado, bien informado, y revocar la renuncia en cualquier momento.",
+       "articulos": [
+        "520"
+       ],
+       "literal": {
+        "articulo": "520",
+        "texto": "podrá renunciar a la preceptiva asistencia de abogado si su detención lo fuere por hechos susceptibles de ser tipificados exclusivamente como delitos contra la seguridad del tráfico"
+       }
+      },
+      {
+       "si": "El detenido no designa abogado o el elegido no acude",
+       "entonces": "Abogado del turno de oficio.",
+       "articulos": [
+        "520"
+       ],
+       "literal": {
+        "articulo": "520",
+        "texto": "el Colegio de Abogados procederá de inmediato al nombramiento de un abogado del turno de oficio"
+       }
+      },
+      {
+       "si": "Detención o prisión incomunicada (art. 509)",
+       "entonces": "Puede privarse al detenido de elegir abogado, de comunicarse, de la entrevista reservada y del acceso a las actuaciones, salvo lo esencial para impugnar la detención.",
+       "articulos": [
+        "527",
+        "509"
+       ],
+       "literal": {
+        "articulo": "527",
+        "texto": "el detenido o preso podrá ser privado de los siguientes derechos si así lo justifican las circunstancias del caso"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿En qué plazo debe acudir el abogado designado al centro de detención?",
+      "a": "Con la máxima premura y siempre dentro de las tres horas siguientes a la recepción del encargo; si no, el Colegio designa otro de oficio.",
+      "articulos": [
+       "520"
+      ],
+      "literal": {
+       "articulo": "520",
+       "texto": "siempre dentro del plazo máximo de tres horas desde la recepción del encargo"
+      }
+     },
+     "conexiones": [
+      "118",
+      "509",
       "520",
+      "520 bis",
+      "521",
+      "523",
+      "524",
+      "525",
       "527"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
-     "id": "cautelares-528",
-     "fase": "De la libertad provisional del procesado",
-     "subtitulo": "TÍTULO VII · arts. 528 a 544 quinquies",
-     "descripcion": "",
+     "id": "caut-prision",
+     "fase": "Prisión provisional: requisitos y duración",
+     "subtitulo": "Arts. 502 a 504",
+     "descripcion": "Es excepcional: solo si es objetivamente necesaria y no hay medidas menos gravosas. Exige un delito con pena máxima de dos años de prisión o más (o menor con antecedentes por delito doloso), motivos bastantes para creer responsable al investigado y uno de estos fines: evitar la fuga, proteger las pruebas, proteger a la víctima o evitar la reiteración delictiva. Dura lo imprescindible y tiene límites máximos.",
+     "articulos": [
+      "502",
+      "503",
+      "504"
+     ],
+     "plazos": [
+      {
+       "acto": "Duración máxima (fuga, víctima o reiteración) si la pena es de hasta 3 años",
+       "plazo": "1 año",
+       "articulo": "504",
+       "literal": "su duración no podrá exceder de un año si el delito tuviere señalada pena privativa de libertad igual o inferior a tres años"
+      },
+      {
+       "acto": "Duración máxima (fuga, víctima o reiteración) si la pena es superior a 3 años",
+       "plazo": "2 años",
+       "articulo": "504",
+       "literal": "o de dos años si la pena privativa de libertad señalada para el delito fuera superior a tres años"
+      },
+      {
+       "acto": "Prórroga única",
+       "plazo": "Hasta 2 años (pena > 3 años) o hasta 6 meses (pena ≤ 3 años)",
+       "articulo": "504",
+       "literal": "una sola prórroga de hasta dos años si el delito tuviera señalada pena privativa de libertad superior a tres años, o de hasta seis meses si el delito tuviera señalada pena igual o inferior a tres años"
+      },
+      {
+       "acto": "Condenado con sentencia recurrida",
+       "plazo": "Hasta la mitad de la pena impuesta",
+       "articulo": "504",
+       "literal": "hasta el límite de la mitad de la pena efectivamente impuesta en la sentencia"
+      },
+      {
+       "acto": "Duración máxima para proteger las fuentes de prueba",
+       "plazo": "6 meses",
+       "articulo": "504",
+       "literal": "su duración no podrá exceder de seis meses"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El hecho no es delito o hay causa de justificación",
+       "entonces": "Nunca se acuerda la prisión provisional.",
+       "articulos": [
+        "502"
+       ],
+       "literal": {
+        "articulo": "502",
+        "texto": "No se adoptará en ningún caso la prisión provisional"
+       }
+      },
+      {
+       "si": "Riesgo de fuga con dos requisitorias en los dos años anteriores",
+       "entonces": "Procede la prisión, sin el límite de pena de dos años.",
+       "articulos": [
+        "503"
+       ],
+       "literal": {
+        "articulo": "503",
+        "texto": "hubieran sido dictadas al menos dos requisitorias para su llamamiento y busca por cualquier órgano judicial en los dos años anteriores"
+       }
+      },
+      {
+       "si": "Se invoca el riesgo para las pruebas solo porque el investigado se defiende o no colabora",
+       "entonces": "No procede por esa causa.",
+       "articulos": [
+        "503"
+       ],
+       "literal": {
+        "articulo": "503",
+        "texto": "No procederá acordar la prisión provisional por esta causa cuando pretenda inferirse dicho peligro únicamente del ejercicio del derecho de defensa"
+       }
+      },
+      {
+       "si": "La prisión supera dos tercios de su duración máxima",
+       "entonces": "Juez y Fiscal lo comunican para imprimir máxima celeridad; la causa tiene preferencia.",
+       "articulos": [
+        "504"
+       ],
+       "literal": {
+        "articulo": "504",
+        "texto": "exceda de las dos terceras partes de su duración máxima"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué límite de pena exige, como regla, la prisión provisional?",
+      "a": "Un delito castigado con pena cuyo máximo sea igual o superior a dos años de prisión (o inferior si hay antecedentes no cancelados por delito doloso).",
+      "articulos": [
+       "503"
+      ],
+      "literal": {
+       "articulo": "503",
+       "texto": "pena cuyo máximo sea igual o superior a dos años de prisión"
+      }
+     },
+     "conexiones": [
+      "502",
+      "503",
+      "504",
+      "505"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "caut-comparecencia",
+     "fase": "Comparecencia del art. 505 y recursos",
+     "subtitulo": "Audiencia, auto y apelación",
+     "descripcion": "Puesto el detenido a disposición del juez, salvo que decrete su libertad sin fianza, convoca una audiencia en la que Fiscal y acusaciones pueden pedir prisión o libertad con fianza; el investigado asiste con abogado. Si nadie las pide, libertad inmediata. Se resuelve por auto motivado. En el juicio rápido, esta audiencia se hace en el trámite del art. 798. Todo va en pieza separada.",
+     "articulos": [
+      "505",
+      "506",
+      "507",
+      "508",
+      "511",
+      "512",
+      "518",
+      "519"
+     ],
+     "plazos": [
+      {
+       "acto": "Comparecencia del art. 505",
+       "plazo": "Dentro de 72 horas desde la puesta a disposición",
+       "articulo": "505",
+       "literal": "deberá celebrarse en el plazo más breve posible dentro de las 72 horas siguientes a la puesta del detenido a disposición judicial"
+      },
+      {
+       "acto": "Nueva audiencia si la primera no pudo celebrarse",
+       "plazo": "72 horas",
+       "articulo": "505",
+       "literal": "dentro de las siguientes 72 horas, el juez o tribunal convocará una nueva audiencia"
+      },
+      {
+       "acto": "Resolución de la apelación contra el auto de prisión",
+       "plazo": "Máximo 30 días",
+       "articulo": "507",
+       "literal": "El recurso contra el auto de prisión deberá resolverse en un plazo máximo de 30 días."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Ni el Fiscal ni las acusaciones piden prisión ni fianza",
+       "entonces": "Libertad inmediata del detenido.",
+       "articulos": [
+        "505"
+       ],
+       "literal": {
+        "articulo": "505",
+        "texto": "acordará necesariamente la inmediata puesta en libertad del investigado o encausado que estuviere detenido"
+       }
+      },
+      {
+       "si": "Se recurre el auto que decreta, prorroga o deniega la prisión, o acuerda la libertad",
+       "entonces": "Apelación por el art. 766, con tramitación preferente; solo en efecto devolutivo.",
+       "articulos": [
+        "507",
+        "766",
+        "518"
+       ],
+       "literal": {
+        "articulo": "507",
+        "texto": "podrá ejercitarse el recurso de apelación en los términos previstos en el artículo 766, que gozará de tramitación preferente"
+       }
+      },
+      {
+       "si": "Causa secreta",
+       "entonces": "El auto notificado omite lo necesario para el secreto, pero siempre describe el hecho y el fin de la prisión; alzado el secreto, se notifica íntegro y se puede recurrir.",
+       "articulos": [
+        "506",
+        "507"
+       ],
+       "literal": {
+        "articulo": "506",
+        "texto": "En ningún caso se omitirá en la notificación una sucinta descripción del hecho imputado"
+       }
+      },
+      {
+       "si": "El ingreso en prisión pone en grave peligro la salud",
+       "entonces": "Prisión en el domicilio con vigilancia.",
+       "articulos": [
+        "508"
+       ],
+       "literal": {
+        "articulo": "508",
+        "texto": "la medida de prisión provisional del investigado o encausado se verifique en su domicilio"
+       }
+      },
+      {
+       "si": "Se ignora el paradero del investigado",
+       "entonces": "Búsqueda por requisitorias (SIRAJ y Tablón Edictal Judicial Único).",
+       "articulos": [
+        "512"
+       ],
+       "literal": {
+        "articulo": "512",
+        "texto": "el juez o jueza acordará que sea buscado por requisitorias"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué ocurre si en la comparecencia del art. 505 nadie pide la prisión ni la fianza?",
+      "a": "El juez debe acordar la inmediata libertad del detenido.",
+      "articulos": [
+       "505"
+      ],
+      "literal": {
+       "articulo": "505",
+       "texto": "Si ninguna de las partes las instare, acordará necesariamente la inmediata puesta en libertad"
+      }
+     },
+     "conexiones": [
+      "505",
+      "506",
+      "507",
+      "508",
+      "511",
+      "512",
+      "513",
+      "516",
+      "517",
+      "518",
+      "519",
+      "766",
+      "798"
+     ],
+     "continua_en": [
+      "recursos",
+      "rapido"
+     ]
+    },
+    {
+     "id": "caut-incomunicacion",
+     "fase": "Detención o prisión incomunicada",
+     "subtitulo": "Arts. 509 y 510",
+     "descripcion": "Excepcionalmente, por resolución motivada, si es urgente evitar graves peligros para la vida, libertad o integridad de alguien, o para no comprometer gravemente el proceso. Dura lo estrictamente necesario. El incomunicado no puede comunicarse salvo lo que autorice el juez y puede pedir un segundo médico forense.",
+     "articulos": [
+      "509",
+      "510"
+     ],
+     "plazos": [
+      {
+       "acto": "Duración máxima de la incomunicación",
+       "plazo": "5 días",
+       "articulo": "509",
+       "literal": "La incomunicación no podrá extenderse más allá de cinco días."
+      },
+      {
+       "acto": "Prórroga (terrorismo o delitos cometidos de forma organizada)",
+       "plazo": "Hasta 5 días más",
+       "articulo": "509",
+       "literal": "la incomunicación podrá prorrogarse por otro plazo no superior a cinco días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El detenido es menor de dieciséis años",
+       "entonces": "No puede ser incomunicado.",
+       "articulos": [
+        "509"
+       ],
+       "literal": {
+        "articulo": "509",
+        "texto": "En ningún caso podrán ser objeto de detención incomunicada los menores de dieciséis años."
+       }
+      },
+      {
+       "si": "El incomunicado lo solicita",
+       "entonces": "Derecho a ser reconocido por un segundo médico forense.",
+       "articulos": [
+        "510"
+       ],
+       "literal": {
+        "articulo": "510",
+        "texto": "tendrá derecho a ser reconocido por un segundo médico forense"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuánto puede durar la incomunicación?",
+      "a": "No más de cinco días; en terrorismo o delitos organizados, prorrogable por otros cinco como máximo.",
+      "articulos": [
+       "509"
+      ],
+      "literal": {
+       "articulo": "509",
+       "texto": "La incomunicación no podrá extenderse más allá de cinco días."
+      }
+     },
+     "conexiones": [
+      "384 bis",
+      "509",
+      "510",
+      "520 bis",
+      "527"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "caut-libertad",
+     "fase": "Libertad provisional y fianza",
+     "subtitulo": "Arts. 528 a 544",
+     "descripcion": "Si no se acuerda la prisión, el juez decide, conforme al art. 505, si la libertad provisional es con o sin fianza. El investigado se obliga apud acta a comparecer cuando se le llame y puede retirársele el pasaporte. La fianza responde de su comparecencia. Las medidas son reformables durante toda la causa, pero agravarlas exige petición de una acusación y comparecencia.",
      "articulos": [
       "528",
-      "544 quinquies"
+      "529",
+      "530",
+      "531",
+      "532",
+      "534",
+      "539",
+      "540",
+      "541"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Fiador: presentar al rebelde",
+       "plazo": "10 días",
+       "articulo": "534",
+       "literal": "el término de diez días para que presente al rebelde"
+      },
+      {
+       "acto": "Comparecencia si el juez agrava de oficio la medida",
+       "plazo": "Dentro de 72 horas",
+       "articulo": "539",
+       "literal": "debiendo convocar, para dentro de las 72 horas siguientes, a la indicada comparecencia"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El investigado no presenta o amplía la fianza en plazo",
+       "entonces": "Es reducido a prisión.",
+       "articulos": [
+        "540"
+       ],
+       "literal": {
+        "articulo": "540",
+        "texto": "Si el procesado no presenta o amplía la fianza en el término que se le señale, será reducido a prisión."
+       }
+      },
+      {
+       "si": "El fiador no presenta al rebelde en el plazo",
+       "entonces": "La fianza se hace efectiva y se adjudica al Estado.",
+       "articulos": [
+        "535"
+       ],
+       "literal": {
+        "articulo": "535",
+        "texto": "se procederá a hacer ésta efectiva, declarándose adjudicada al Estado"
+       }
+      },
+      {
+       "si": "Se quiere agravar la situación (prisión o fianza a quien está libre)",
+       "entonces": "Hace falta petición del Fiscal o de una acusación y la comparecencia del art. 505.",
+       "articulos": [
+        "539"
+       ],
+       "literal": {
+        "articulo": "539",
+        "texto": "se requerirá solicitud del Ministerio Fiscal o de alguna parte acusadora"
+       }
+      },
+      {
+       "si": "Se quiere mejorar la situación del investigado",
+       "entonces": "El juez puede acordarlo de oficio en cualquier momento.",
+       "articulos": [
+        "539"
+       ],
+       "literal": {
+        "articulo": "539",
+        "texto": "podrá acordarla, en cualquier momento, de oficio y sin someterse a la petición de parte"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Son definitivos los autos de prisión, libertad provisional y fianza?",
+      "a": "No: son reformables durante todo el curso de la causa.",
+      "articulos": [
+       "539"
+      ],
+      "literal": {
+       "articulo": "539",
+       "texto": "Los autos de prisión y libertad provisionales y de fianza serán reformables durante todo el curso de la causa."
+      }
+     },
+     "conexiones": [
+      "505",
       "528",
+      "529",
+      "529 bis",
+      "530",
+      "531",
+      "532",
+      "533",
+      "534",
+      "535",
+      "536",
+      "537",
+      "539",
+      "540",
+      "541",
+      "542",
+      "543",
+      "544",
+      "591"
+     ],
+     "continua_en": [
+      "fianzas"
+     ]
+    },
+    {
+     "id": "caut-proteccion",
+     "fase": "Protección de la víctima",
+     "subtitulo": "Alejamiento, orden de protección, menores y persona jurídica",
+     "descripcion": "En los delitos del art. 57 del Código Penal el juez puede prohibir residir o acudir a lugares y aproximarse o comunicarse con personas, y adoptar medidas sobre la patria potestad o las visitas para proteger a menores. En violencia doméstica, la orden de protección da a la víctima un estatuto integral con medidas penales y civiles. A la persona jurídica solo se le imponen las medidas previstas en el Código Penal.",
+     "articulos": [
+      "544 bis",
+      "544 ter",
+      "544 quáter",
       "544 quinquies"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Audiencia de la orden de protección",
+       "plazo": "Máximo 72 horas desde la solicitud",
+       "articulo": "544 ter",
+       "literal": "En cualquier caso la audiencia habrá de celebrarse en un plazo máximo de setenta y dos horas desde la presentación de la solicitud."
+      },
+      {
+       "acto": "Vigencia de las medidas civiles de la orden de protección",
+       "plazo": "30 días (más 30 si se presenta demanda de familia)",
+       "articulo": "544 ter",
+       "literal": "Las medidas de carácter civil contenidas en la orden de protección tendrán una vigencia temporal de treinta días."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El inculpado incumple la prohibición de residencia, acercamiento o comunicación",
+       "entonces": "Comparecencia del art. 505 para la prisión, la orden de protección u otra medida más grave.",
+       "articulos": [
+        "544 bis",
+        "505"
+       ],
+       "literal": {
+        "articulo": "544 bis",
+        "texto": "En caso de incumplimiento por parte del inculpado de la medida acordada por el juez o tribunal, este convocará la comparecencia regulada en el artículo 505"
+       }
+      },
+      {
+       "si": "Hijos menores que presenciaron o sufrieron la violencia (orden con medidas penales)",
+       "entonces": "Se suspende el régimen de visitas, salvo resolución motivada en interés del menor.",
+       "articulos": [
+        "544 ter"
+       ],
+       "literal": {
+        "articulo": "544 ter",
+        "texto": "suspenderá el régimen de visitas, estancia, relación o comunicación del inculpado respecto de los menores que dependan de él"
+       }
+      },
+      {
+       "si": "La persona imputada es una persona jurídica",
+       "entonces": "Solo las medidas del Código Penal, a petición de parte y con vista; auto apelable.",
+       "articulos": [
+        "544 quáter"
+       ],
+       "literal": {
+        "articulo": "544 quáter",
+        "texto": "La medida se acordará previa petición de parte y celebración de vista"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿En qué plazo máximo debe celebrarse la audiencia de la orden de protección?",
+      "a": "En setenta y dos horas desde la presentación de la solicitud.",
+      "articulos": [
+       "544 ter"
+      ],
+      "literal": {
+       "articulo": "544 ter",
+       "texto": "habrá de celebrarse en un plazo máximo de setenta y dos horas desde la presentación de la solicitud"
+      }
+     },
+     "conexiones": [
+      "505",
+      "544 bis",
+      "544 ter",
+      "544 quáter",
+      "544 quinquies",
+      "798"
+     ],
+     "continua_en": [
+      "rapido"
+     ],
+     "duda": "El art. 544 ter habla de «delito o falta» y del «juicio de faltas». Ver PENDIENTES.md."
     }
    ]
   },
