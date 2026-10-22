@@ -82,7 +82,7 @@ Marcas: `SI` = entra el bloque; `PARCIAL` = solo lo indicado; `NO` o silencio = 
 65. Cambiario (819-827) — PARCIAL (819-827)
 65 bis. Acciones colectivas de consumidores (828-848) — NO. Nota: no figuran en el consolidado BOE de 28/02/2025; el catálogo las muestra solo como mapa informativo.
 #### Norma conexa
-66. MASC / procedibilidad (LO 1/2025) — PARCIAL (arts. 2, 5, 7, 9 y 10; la API ya usa los arts. 2 y 5 en las fichas; los arts. 7, 9 y 10 quedan como candidatos y no se cargan en el seed LEC)
+66. MASC / procedibilidad (LO 1/2025) — PARCIAL (arts. 2, 5, 7, 9 y 10; los arts. 2 y 5 se usan en las fichas de ordinario y verbal; los arts. 7, 9 y 10 quedan como candidatos)
 
 ## LECrim
 
@@ -133,7 +133,7 @@ Entre paréntesis, el **tramo oficial del bloque** según el consolidado BOE. Tr
 #### Libro VII
 35. Ejecución de sentencias (arts. 983-999) — PARCIAL (983-984-988-989-990)
 
-### Notas pedagógicas incorporadas (en `structure[].note` del seed)
+### Notas pedagógicas
 
 - **Diligencias previas** (bloque 26): fase de instrucción del abreviado; regulación en arts. 774 y ss.; termina por el auto del art. 779.
 - **Audiencia preliminar / cuestiones previas** (bloque 26): turno del art. 786.2 al inicio del juicio oral; la fase intermedia previa está en arts. 779.1.4.ª y 780-784.
