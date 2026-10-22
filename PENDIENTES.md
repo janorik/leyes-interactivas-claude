@@ -129,13 +129,10 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > Bloque desarrollado: 6 fases y 8 plazos (arts. 983 a 999; el 995 está suprimido). Propuestas de Claude, No verificables hasta que las confirmes. Estados: resuelta / resuelta con criterio interpretativo / pendiente de revisión individual.
 
-- [ ] **«Juicios sobre faltas» y apelación ante el «Juez de Instrucción» (art. 984).** El párrafo primero atribuye la ejecución «en los juicios sobre faltas» al órgano que conoció del juicio; el segundo habla del «Juez de Instrucción que haya conocido en apelación de un juicio de faltas» (Verificable).
-  En la app: Procesos › Ejecución de las sentencias › fase 1, aviso «Duda de interpretación».
-  - **Propuesta:** dos estados distintos. «Juicios sobre faltas» del párrafo primero: resuelta con criterio interpretativo (juicio sobre delitos leves, nota general del BOE). Párrafo segundo: pendiente de revisión individual, porque además de la terminología menciona un órgano de apelación («Juez de Instrucción») que habría que contrastar con quién conoce hoy de la apelación del art. 976. No lo he concretado en la ficha.
+- [x] **Art. 984, párrafo primero («juicios sobre faltas»). Resuelta con criterio interpretativo por el usuario (22-10-2026):** se lee como juicio sobre delitos leves. En la app: nota «Ojo» en la fase 1.
+- [ ] **Art. 984, párrafo segundo («Juez de Instrucción que haya conocido en apelación de un juicio de faltas»). Pendiente de revisión individual (decisión del usuario (22-10-2026)).** La disposición adicional primera de la LO 1/2025, recogida en la nota general del BOE de la app (Verificable), manda entender las referencias a los Juzgados de Instrucción hechas a las Secciones correspondientes de los Tribunales de Instancia. Falta comprobar si basta esa regla general o si la competencia funcional de apelación exige otra precisión. En la app: fase 1, aviso «Duda de interpretación».
   - **Tu respuesta:**
-- [ ] **Términos de 1882 en el incidente de demencia (arts. 991 a 994).** «Confinados», «presidio», «Comandancia» y «Comandante del presidio», «Dirección General de Establecimientos Penales», «Academia de Medicina y Cirugía» (Verificable).
-  En la app: fase 5, aviso «Duda de interpretación». La ficha resume el trámite sin usar esos nombres ni sustituirlos por órganos actuales.
-  - **Propuesta:** pendiente de revisión individual. No sustituyo ningún órgano por su supuesto equivalente actual.
+- [ ] **Términos de 1882 en el incidente de demencia (arts. 991 a 994). Pendiente de revisión individual (decisión del usuario (22-10-2026)).** «Confinados», «presidio», «Comandante del presidio», «Dirección General de Establecimientos Penales», «Academia de Medicina y Cirugía». No se sustituyen sin verificar el objeto de cada disposición y su vigencia efectiva. En la app: fase 5, aviso «Duda de interpretación»; la ficha no usa esos nombres ni los cambia por órganos actuales.
   - **Tu respuesta:**
 - [ ] **Revisa las 6 fases:** las frases entre « » son literales; las descripciones son resumen mío.
 

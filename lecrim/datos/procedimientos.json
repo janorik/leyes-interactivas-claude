@@ -6448,7 +6448,8 @@
      "continua_en": [
       "recursos"
      ],
-     "duda": "El art. 984 habla de «juicios sobre faltas» y del «Juez de Instrucción que haya conocido en apelación de un juicio de faltas». Ver PENDIENTES.md."
+     "duda": "El art. 984, párrafo segundo, menciona al «Juez de Instrucción que haya conocido en apelación de un juicio de faltas». Según la nota general del BOE (disposición adicional primera de la LO 1/2025), las referencias a los Juzgados de Instrucción se entienden hechas a las Secciones de los Tribunales de Instancia; falta comprobar si basta esa regla o si la competencia de apelación exige otra precisión. Ver PENDIENTES.md.",
+     "aviso": "El art. 984, párrafo primero, dice «juicios sobre faltas»: se lee como juicio sobre delitos leves (nota general del BOE). Es una lectura interpretativa, no una modificación literal."
     },
     {
      "id": "ej-ejecutoria",
