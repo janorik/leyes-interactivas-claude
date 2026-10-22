@@ -105,6 +105,8 @@ Datos del mapa: `lec/datos/procedimientos.json` (contenido elaborado, `revisado:
 
 Todo artículo citado en cualquier vista es un enlace que abre su texto literal.
 
+**Criterio de contenido para todas las leyes (aprobado por el usuario, 22-10-2026).** La app sirve para orientarse de forma sencilla en procedimientos, opciones y recursos; no para cargar toda la ley (para el detalle están el texto literal y el BOE). Antes de desarrollar o mantener una ficha, la pregunta es: «¿ayuda a orientarse en el procedimiento, las opciones y los recursos?», no «¿está en el canon?». El canon marca el máximo. **Pendiente:** revisar con este criterio lo ya hecho en la LEC, empezando por las disposiciones generales (propuesta de Claude en el Chat 3: mantener competencia objetiva y territorial, declinatoria, formas de terminar el proceso, procurador y abogado, plazos, presentación de escritos, caducidad y costas; dudosas o a índice, las demás). No se cambia nada hasta que el usuario lo confirme.
+
 ## Reglas anti-error (obligatorias)
 - Todo plazo, fase, recurso o tarjeta lleva el artículo o artículos en que se basa.
 - Todo contenido elaborado (no literal) se crea con `revisado: false`.
