@@ -5,15 +5,19 @@
    "nombre": "Disposiciones generales",
    "bloque": "lecrim",
    "grupo": "Libro I · Disposiciones generales",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Libro I. Por decisión del usuario, solo se desarrollan los temas que orientan el recorrido: la competencia (quién instruye y quién juzga) y las acciones penal y civil (quién acusa y quién reclama). El resto queda como índice; los recursos contra resoluciones procesales están en la pestaña Recursos.",
    "ambito": {
     "corto": "Arts. 1 a 258 bis",
     "texto": "LIBRO I. Disposiciones generales",
     "articulos": [
      "1"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "8",
+      "texto": "La jurisdicción criminal es siempre improrrogable"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
@@ -36,20 +40,151 @@
     },
     {
      "id": "generales-8",
-     "fase": "De la competencia de los Jueces y Tribunales en lo criminal",
-     "subtitulo": "LIBRO I · TÍTULO II · arts. 8 a 51",
-     "descripcion": "",
+     "fase": "Competencia: quién instruye y quién juzga",
+     "subtitulo": "Según la pena y el lugar · conexidad · inhibitoria y declinatoria",
+     "descripcion": "La jurisdicción criminal es siempre improrrogable. Instrucción: la Sección de Instrucción del Tribunal de Instancia del partido donde se cometió el delito, la Sección de violencia sobre la mujer o la de violencia contra la infancia y la adolescencia en sus materias, o el Juez Central de Instrucción. Enjuiciamiento, según la pena (art. 14): los delitos leves, la Sección de Instrucción. Los delitos con pena privativa de libertad de hasta cinco años, multa de cualquier cuantía u otras penas de hasta diez años, la Sección de lo Penal, las secciones de violencia sobre la mujer o sobre la infancia con competencia para enjuiciar, o el Juez Central de lo Penal. Los demás, la Audiencia Provincial (la de la circunscripción del juzgado de violencia sobre la mujer, en su caso) o la Sala de lo Penal de la Audiencia Nacional, salvo que el delito sea de los atribuidos al Tribunal del Jurado. Las secciones especializadas (apartados 5 a 7) instruyen los delitos que el art. 14 les reserva y, además, adoptan las medidas de protección de las víctimas, juzgan los delitos leves que les atribuya la ley, dictan sentencias de conformidad y emiten y ejecutan instrumentos de reconocimiento mutuo de la Unión Europea. Si se juzga solo a una persona jurídica, cuenta la pena prevista para la persona física (art. 14 bis).",
      "articulos": [
       "8",
-      "51"
-     ],
-     "rango": [
-      "8",
-      "51"
+      "14",
+      "14 bis",
+      "15",
+      "17",
+      "26"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Violencia sobre la mujer (art. 14.5)",
+       "entonces": "Instruye la sección especializada: delitos de homicidio, lesiones, contra la libertad, la integridad moral, la libertad sexual, la intimidad, el honor o con violencia o intimidación contra quien sea o haya sido esposa o pareja del autor; también contra descendientes o menores convivientes si además hay violencia de género; delitos contra las relaciones familiares de esas víctimas; quebrantamiento (art. 468 CP) en esos casos; y delitos contra la libertad sexual, mutilación genital, matrimonio forzado, acoso sexual y trata sexual cuando la ofendida sea mujer.",
+       "articulos": [
+        "14"
+       ],
+       "literal": {
+        "articulo": "14",
+        "texto": "Las Secciones de los Tribunales de Instancia con competencia en materia de violencia sobre la mujer conocerán"
+       }
+      },
+      {
+       "si": "La víctima es un niño, niña o adolescente (art. 14.6)",
+       "entonces": "Instruye la Sección de Violencia contra la Infancia y la Adolescencia: homicidio, lesiones, delitos contra la libertad, torturas, integridad moral, intimidad, imagen, domicilio, honor, relaciones familiares o con violencia o intimidación; trata (art. 177 bis CP) con alguna víctima menor; y quebrantamiento (art. 468 CP) cuando el ofendido sea menor.",
+       "articulos": [
+        "14"
+       ],
+       "literal": {
+        "articulo": "14",
+        "texto": "Las Secciones de Violencia contra la Infancia y la Adolescencia conocerán"
+       }
+      },
+      {
+       "si": "Los hechos podrían corresponder a las dos secciones especializadas (art. 14.7)",
+       "entonces": "Prevalece la Sección de Violencia sobre la Mujer.",
+       "articulos": [
+        "14"
+       ],
+       "literal": {
+        "articulo": "14",
+        "texto": "la competencia le corresponderá en todo caso a la segunda"
+       }
+      },
+      {
+       "si": "No consta dónde se cometió el delito",
+       "entonces": "Por este orden: donde se hallaron pruebas materiales, donde se detuvo al presunto reo, su residencia o cualquier juez que tuviera noticia del delito. Cuando conste el lugar, se inhibe a favor del competente.",
+       "articulos": [
+        "15"
+       ],
+       "literal": {
+        "articulo": "15",
+        "texto": "Cuando no conste el lugar en que se haya cometido una falta o delito"
+       }
+      },
+      {
+       "si": "Es un asunto de violencia sobre la mujer",
+       "entonces": "La competencia territorial la fija el domicilio de la víctima, sin perjuicio de las medidas urgentes del juez del lugar de los hechos.",
+       "articulos": [
+        "15 bis",
+        "13"
+       ],
+       "literal": {
+        "articulo": "15 bis",
+        "texto": "la competencia territorial vendrá determinada por el lugar del domicilio de la víctima"
+       }
+      },
+      {
+       "si": "Hay varios delitos conexos (art. 17.2)",
+       "entonces": "Se investigan y juzgan en una misma causa si conviene para esclarecerlos, salvo excesiva complejidad o dilación.",
+       "articulos": [
+        "17",
+        "18"
+       ],
+       "literal": {
+        "articulo": "17",
+        "texto": "los delitos conexos serán investigados y enjuiciados en la misma causa"
+       }
+      },
+      {
+       "si": "El delito correspondería a la Audiencia Provincial pero es de los atribuidos al Jurado",
+       "entonces": "Lo juzga el Tribunal del Jurado.",
+       "articulos": [
+        "14"
+       ],
+       "literal": {
+        "articulo": "14",
+        "texto": "si el delito fuere de los atribuidos al Tribunal de Jurado, el conocimiento y fallo corresponderá a éste"
+       }
+      },
+      {
+       "si": "Una parte quiere discutir la competencia",
+       "entonces": "Por inhibitoria (ante el que se considera competente) o por declinatoria (ante el que se considera incompetente); usar una excluye la otra.",
+       "articulos": [
+        "26"
+       ],
+       "literal": {
+        "articulo": "26",
+        "texto": "El uso de uno de estos medios excluye absolutamente el del otro"
+       }
+      },
+      {
+       "si": "La cuestión de competencia se plantea terminado el sumario",
+       "entonces": "Suspende el procedimiento hasta que se decida.",
+       "articulos": [
+        "24"
+       ],
+       "literal": {
+        "articulo": "24",
+        "texto": "toda cuestión de competencia que se promueva suspenderá los procedimientos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quién juzga un delito castigado con prisión de hasta cinco años?",
+      "a": "La Sección de lo Penal del Tribunal de Instancia del lugar de comisión (o la sección de violencia sobre la mujer o sobre la infancia que corresponda, o el Juez Central de lo Penal en su ámbito).",
+      "articulos": [
+       "14"
+      ],
+      "literal": {
+       "articulo": "14",
+       "texto": "pena privativa de libertad de duración no superior a cinco años"
+      }
+     },
+     "conexiones": [
+      "8",
+      "13",
+      "14",
+      "14 bis",
+      "15",
+      "15 bis",
+      "17",
+      "17 bis",
+      "18",
+      "24",
+      "26"
+     ],
+     "continua_en": [
+      "instruccion",
+      "abreviado",
+      "leves"
+     ],
+     "aviso": "Según la nota general del BOE a esta ley, las referencias a los Juzgados (de Instrucción, de lo Penal, de Violencia sobre la Mujer, entre otros) se entienden hechas a las Secciones del orden jurisdiccional correspondiente de los Tribunales de Instancia (disposición adicional primera de la [[Ley Orgánica 1/2025, de 2 de enero|https://www.boe.es/buscar/act.php?id=BOE-A-2025-76]]). El art. 14 ya emplea esa terminología; los arts. 15 bis y 17 bis conservan la antigua."
     },
     {
      "id": "generales-52",
@@ -70,20 +205,127 @@
     },
     {
      "id": "generales-100",
-     "fase": "De las personas a quienes corresponde el ejercicio de las acciones que nacen de los delitos y faltas",
-     "subtitulo": "LIBRO I · TÍTULO IV · arts. 100 a 117",
-     "descripcion": "",
+     "fase": "Acciones penal y civil: quién acusa y quién reclama",
+     "subtitulo": "Fiscal, víctima, perjudicado y acusación popular · reserva de la acción civil",
+     "descripcion": "Todo delito da lugar a una acción penal y puede dar lugar a una acción civil (restitución, reparación e indemnización). La acción penal es pública: pueden ejercerla los ciudadanos españoles con arreglo a la ley. El Ministerio Fiscal está obligado a ejercer las acciones penales procedentes, salvo las reservadas a la querella privada, y también la civil, salvo que el ofendido renuncie expresamente. Al recibir declaración al ofendido o perjudicado, el Letrado de la Administración de Justicia le informa de su derecho a ser parte y a renunciar o no a la restitución e indemnización. Mientras haya proceso penal, no puede seguirse un pleito civil sobre el mismo hecho.",
      "articulos": [
       "100",
-      "117"
+      "101",
+      "105",
+      "108",
+      "109",
+      "109 bis",
+      "110",
+      "112",
+      "114",
+      "116"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Víctima o perjudicado: personarse y ejercer la acción penal (sin retroceder actuaciones)",
+       "plazo": "Antes del trámite de calificación",
+       "articulo": "109 bis",
+       "literal": "en cualquier momento antes del trámite de calificación del delito"
+      },
+      {
+       "acto": "Personación tardía: solo adhiriéndose a una acusación ya formulada",
+       "plazo": "Hasta el inicio del juicio oral",
+       "articulo": "109 bis",
+       "literal": "hasta el inicio del juicio oral adhiriéndose al escrito de acusación"
+      },
+      {
+       "acto": "Pedir que se revoque la renuncia a la acción civil",
+       "plazo": "Antes del trámite de calificación",
+       "articulo": "112",
+       "literal": "siempre y cuando se formule antes del trámite de calificación del delito"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El perjudicado no se persona",
+       "entonces": "No por eso renuncia a la indemnización: la renuncia tiene que ser clara y terminante.",
+       "articulos": [
+        "110"
+       ],
+       "literal": {
+        "articulo": "110",
+        "texto": "siendo necesario que la renuncia de este derecho se haga en su caso de una manera clara y terminante"
+       }
+      },
+      {
+       "si": "Prefiere reclamar la indemnización en la vía civil",
+       "entonces": "Debe reservar expresamente la acción civil; si no, se entiende ejercitada junto con la penal.",
+       "articulos": [
+        "112"
+       ],
+       "literal": {
+        "articulo": "112",
+        "texto": "la reservase expresamente para ejercitarla después de terminado el juicio criminal"
+       }
+      },
+      {
+       "si": "Ya hay un pleito civil sobre el mismo hecho",
+       "entonces": "Se suspende hasta que recaiga sentencia firme en la causa penal.",
+       "articulos": [
+        "114",
+        "111"
+       ],
+       "literal": {
+        "articulo": "114",
+        "texto": "no podrá seguirse pleito sobre el mismo hecho"
+       }
+      },
+      {
+       "si": "La víctima ha muerto o desaparecido por el delito",
+       "entonces": "Pueden ejercer la acción penal el cónyuge o la pareja, los hijos que convivían, los progenitores y otros parientes, en el orden del art. 109 bis.",
+       "articulos": [
+        "109 bis"
+       ],
+       "literal": {
+        "articulo": "109 bis",
+        "texto": "En el caso de muerte o desaparición de la víctima a consecuencia del delito"
+       }
+      },
+      {
+       "si": "Se extingue la acción penal",
+       "entonces": "La civil subsiste, salvo que una sentencia firme declare que no existió el hecho; se ejercerá ante la jurisdicción civil.",
+       "articulos": [
+        "116"
+       ],
+       "literal": {
+        "articulo": "116",
+        "texto": "La extinción de la acción penal no lleva consigo la de la civil"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quién puede ejercer la acción penal aunque no sea ofendido por el delito?",
+      "a": "Cualquier ciudadano español, con arreglo a la ley, porque la acción penal es pública. Es la llamada acusación popular.",
+      "articulos": [
+       "101"
+      ],
+      "literal": {
+       "articulo": "101",
+       "texto": "Todos los ciudadanos españoles podrán ejercitarla con arreglo a las prescripciones de la Ley"
+      }
+     },
+     "conexiones": [
       "100",
-      "117"
+      "101",
+      "105",
+      "108",
+      "109",
+      "109 bis",
+      "110",
+      "111",
+      "112",
+      "114",
+      "116"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ]
     },
     {
      "id": "generales-118",
@@ -2266,34 +2508,143 @@
    "nombre": "Medidas de investigación limitativas de derechos (art. 18 CE)",
    "bloque": "lecrim",
    "grupo": "Libro II · Sumario",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Diligencias que limitan los derechos del art. 18 CE (domicilio, secreto de las comunicaciones, intimidad), comunes al sumario y al procedimiento abreviado: entrada y registro, correspondencia, intervención de comunicaciones, micrófonos, seguimiento, registro de dispositivos y registros remotos (arts. 545 a 588 octies).",
    "ambito": {
     "corto": "Arts. 545 a 588 octies",
     "texto": "TÍTULO VIII. De las medidas de investigación limitativas de los derechos reconocidos en el artículo 18 de la Constitución",
     "articulos": [
      "545"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "588 bis a",
+      "texto": "siempre que medie autorización judicial dictada con plena sujeción a los principios"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
      "id": "investigacion-545",
-     "fase": "De la entrada y registro en lugar cerrado",
-     "subtitulo": "TÍTULO VIII · CAPÍTULO I · arts. 545 a 572",
-     "descripcion": "",
+     "fase": "Entrada y registro en lugar cerrado",
+     "subtitulo": "Consentimiento o auto motivado · cómo se practica",
+     "descripcion": "Nadie puede entrar en el domicilio de otro sin su consentimiento, salvo en los casos y en la forma previstos en las leyes. En edificios y lugares públicos (art. 547) el Juez puede decretar la entrada y registro, de día o de noche, si hay indicios de que allí está el procesado o efectos, instrumentos, libros o papeles del delito. En un domicilio (art. 554), el Juez instructor puede ordenarla en esos mismos casos, pero con el consentimiento del interesado o, a falta de él, por auto motivado. Ese auto será siempre fundado y concretará el lugar, si se hará solo de día y quién lo practicará. El registro se hace ante el interesado o su representante y siempre ante el Secretario judicial, que levanta acta.",
      "articulos": [
       "545",
-      "572"
+      "546",
+      "550",
+      "554",
+      "558",
+      "569"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Notificación al interesado del auto de entrada en domicilio",
+       "plazo": "Inmediata; como máximo 24 horas",
+       "articulo": "550",
+       "literal": "inmediatamente, o lo más tarde dentro de las veinticuatro horas de haberse dictado"
+      },
+      {
+       "acto": "Sedes de representantes de naciones extranjeras: respuesta a la petición de venia del Juez",
+       "plazo": "12 horas",
+       "articulo": "559",
+       "literal": "les rogará que contesten en el término de doce horas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El interesado, requerido, colabora sin invocar la inviolabilidad del domicilio",
+       "entonces": "Se entiende que consiente; no hace falta auto.",
+       "articulos": [
+        "551"
+       ],
+       "literal": {
+        "articulo": "551",
+        "texto": "sin invocar la inviolabilidad que reconoce al domicilio"
+       }
+      },
+      {
+       "si": "La persona es sorprendida en flagrante delito o se refugia en una casa perseguida por los agentes",
+       "entonces": "Los agentes pueden detenerla y registrar de propia autoridad, y dan cuenta inmediata al Juez de las causas y del resultado.",
+       "articulos": [
+        "553"
+       ],
+       "literal": {
+        "articulo": "553",
+        "texto": "cuando sean sorprendidas en flagrante delito"
+       }
+      },
+      {
+       "si": "El interesado no es habido o no quiere asistir ni nombrar representante",
+       "entonces": "Asiste un familiar mayor de edad; si no lo hay, dos testigos vecinos.",
+       "articulos": [
+        "569"
+       ],
+       "literal": {
+        "articulo": "569",
+        "texto": "se hará a presencia de dos testigos, vecinos del mismo pueblo"
+       }
+      },
+      {
+       "si": "Se acaba el día sin terminar el registro en un domicilio",
+       "entonces": "Se pide permiso para seguir de noche; si el interesado se opone, se suspende (salvo arts. 546 y 550), cerrando y sellando el local si es necesario.",
+       "articulos": [
+        "570"
+       ],
+       "literal": {
+        "articulo": "570",
+        "texto": "Si se opusiere, se suspenderá la diligencia"
+       }
+      },
+      {
+       "si": "La investigada es una persona jurídica",
+       "entonces": "Su domicilio es el centro de dirección o los lugares donde custodia documentos reservados al conocimiento de terceros.",
+       "articulos": [
+        "554"
+       ],
+       "literal": {
+        "articulo": "554",
+        "texto": "Tratándose de personas jurídicas imputadas, el espacio físico que constituya el centro de dirección de las mismas"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿En presencia de quién se practica siempre el registro?",
+      "a": "Del Secretario judicial del órgano que lo autorizó (o del de guardia que le sustituya), que levanta acta firmada por todos los asistentes.",
+      "articulos": [
+       "569"
+      ],
+      "literal": {
+       "articulo": "569",
+       "texto": "El registro se practicará siempre en presencia del Secretario del Juzgado o Tribunal que lo hubiera autorizado"
+      }
+     },
+     "conexiones": [
       "545",
+      "546",
+      "547",
+      "550",
+      "551",
+      "552",
+      "553",
+      "554",
+      "558",
+      "559",
+      "563",
+      "566",
+      "567",
+      "568",
+      "569",
+      "570",
+      "571",
       "572"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ],
+     "duda": "Los arts. 550 y 551 remiten al «artículo 6.º de la Constitución» y el art. 560 al «Ministerio de Gracia y Justicia». Ver PENDIENTES.md.",
+     "aviso": "Según la nota general del BOE a esta ley, desde el 1 de octubre de 2015 las referencias a los Secretarios judiciales se entienden hechas a los Letrados de la Administración de Justicia (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
     },
     {
      "id": "investigacion-573",
@@ -2314,138 +2665,671 @@
     },
     {
      "id": "investigacion-579",
-     "fase": "De la detención y apertura de la correspondencia escrita y telegráfica",
-     "subtitulo": "TÍTULO VIII · CAPÍTULO III · arts. 579 a 588",
-     "descripcion": "",
+     "fase": "Detención y apertura de la correspondencia",
+     "subtitulo": "Correspondencia postal y telegráfica · pieza secreta",
+     "descripcion": "El juez puede acordar la detención de la correspondencia privada, postal y telegráfica (incluidos faxes, burofaxes y giros) que el investigado remita o reciba, y su apertura o examen. Hacen falta indicios de que así se descubrirá o comprobará algo relevante, y que se investigue un delito doloso castigado con pena máxima de al menos tres años de prisión, un delito cometido en grupo u organización criminal o un delito de terrorismo. El auto concreta qué correspondencia se detiene. Se tramita en pieza separada y secreta. Se cita al interesado a la apertura; el Juez la abre por sí mismo, aparta lo que interesa a la causa y entrega lo demás.",
      "articulos": [
       "579",
+      "579 bis",
+      "583",
+      "584",
+      "586",
+      "587",
       "588"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Observación de las comunicaciones postales y telegráficas del investigado",
+       "plazo": "Hasta 3 meses; prórrogas hasta 18 meses",
+       "articulo": "579",
+       "literal": "por un plazo de hasta tres meses, prorrogable por iguales o inferiores períodos hasta un máximo de dieciocho meses"
+      },
+      {
+       "acto": "Urgencia (bandas armadas o terrorismo): el Ministro del Interior o el Secretario de Estado de Seguridad comunican la medida al juez",
+       "plazo": "24 horas como máximo",
+       "articulo": "579",
+       "literal": "dentro del plazo máximo de veinticuatro horas"
+      },
+      {
+       "acto": "Urgencia: el juez revoca o confirma la medida",
+       "plazo": "72 horas desde que se ordenó",
+       "articulo": "579",
+       "literal": "en un plazo máximo de setenta y dos horas desde que fue ordenada la medida"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Es un paquete de mercancías, un envío con el contenido declarado o una inspección aduanera",
+       "entonces": "No hace falta autorización judicial (art. 579.4).",
+       "articulos": [
+        "579"
+       ],
+       "literal": {
+        "articulo": "579",
+        "texto": "No se requerirá autorización judicial en los siguientes casos"
+       }
+      },
+      {
+       "si": "El procesado está en rebeldía o, citado, no quiere asistir ni nombrar a nadie",
+       "entonces": "El Juez abre la correspondencia igualmente.",
+       "articulos": [
+        "585"
+       ],
+       "literal": {
+        "articulo": "585",
+        "texto": "el Juez instructor procederá, sin embargo, a la apertura de dicha correspondencia"
+       }
+      },
+      {
+       "si": "La correspondencia no tiene relación con la causa",
+       "entonces": "Se entrega en el acto al procesado o a su representante.",
+       "articulos": [
+        "587"
+       ],
+       "literal": {
+        "articulo": "587",
+        "texto": "La correspondencia que no se relacione con la causa será entregada en el acto al procesado o a su representante"
+       }
+      },
+      {
+       "si": "Aparece por casualidad otro delito",
+       "entonces": "Seguir investigándolo con esta medida requiere autorización del juez competente; el resultado puede usarse en otro proceso con testimonio de la solicitud, la autorización y las prórrogas.",
+       "articulos": [
+        "579 bis"
+       ],
+       "literal": {
+        "articulo": "579 bis",
+        "texto": "La continuación de esta medida para la investigación del delito casualmente descubierto requiere autorización del juez competente"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quién abre la correspondencia detenida?",
+      "a": "El propio Juez, que la lee para sí y aparta la que se refiere a los hechos de la causa.",
+      "articulos": [
+       "586"
+      ],
+      "literal": {
+       "articulo": "586",
+       "texto": "abriendo el Juez por sí mismo la correspondencia"
+      }
+     },
+     "conexiones": [
       "579",
+      "579 bis",
+      "580",
+      "581",
+      "582",
+      "583",
+      "584",
+      "585",
+      "586",
+      "587",
       "588"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ]
     },
     {
      "id": "investigacion-588_bis_a",
-     "fase": "Disposiciones comunes a la interceptación de las comunicaciones telefónicas y telemáticas, la captación y grabación de comunicaciones orales mediante la utilización de dispositivos electrónicos, la utilización de dispositivos técnicos de seguimiento, localización y captación de la imagen, el registro de dispositivos de almacenamiento masivo de información y los registros remotos sobre equipos informáticos",
-     "subtitulo": "TÍTULO VIII · CAPÍTULO IV · arts. 588 bis a a 588 bis k",
-     "descripcion": "",
+     "fase": "Disposiciones comunes a las medidas tecnológicas",
+     "subtitulo": "Principios · solicitud · auto en 24 horas · prórroga y cese",
+     "descripcion": "Las medidas de los capítulos V a IX (comunicaciones telefónicas y telemáticas, comunicaciones orales, imagen y seguimiento, dispositivos de almacenamiento y registros remotos) necesitan autorización judicial sujeta a cinco principios: especialidad, idoneidad, excepcionalidad, necesidad y proporcionalidad. No se autorizan para prevenir o descubrir delitos ni para despejar sospechas sin base objetiva. Las acuerda el juez de oficio o a petición del Ministerio Fiscal o de la Policía Judicial; la petición debe contener lo que enumera el art. 588 bis b. Se resuelve por auto motivado, oído el Fiscal, y se tramita en pieza separada y secreta. La Policía Judicial informa al juez del desarrollo y los resultados.",
      "articulos": [
       "588 bis a",
-      "588 bis k"
+      "588 bis b",
+      "588 bis c",
+      "588 bis d",
+      "588 bis e",
+      "588 bis f",
+      "588 bis j"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Auto que autoriza o deniega la medida",
+       "plazo": "24 horas desde la solicitud",
+       "articulo": "588 bis c",
+       "literal": "en el plazo máximo de veinticuatro horas desde que se presente la solicitud"
+      },
+      {
+       "acto": "Auto que resuelve sobre la prórroga o el fin de la medida",
+       "plazo": "2 días desde la solicitud",
+       "articulo": "588 bis f",
+       "literal": "En el plazo de los dos días siguientes a la presentación de la solicitud"
+      },
+      {
+       "acto": "Destrucción de las copias conservadas (entre otros supuestos)",
+       "plazo": "5 años desde la ejecución de la pena",
+       "articulo": "588 bis k",
+       "literal": "cuando hayan transcurrido cinco años desde que la pena se haya ejecutado"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El juez necesita más datos para decidir",
+       "entonces": "Puede pedir que se amplíe o aclare la solicitud, y el plazo de 24 horas se interrumpe.",
+       "articulos": [
+        "588 bis c"
+       ],
+       "literal": {
+        "articulo": "588 bis c",
+        "texto": "con interrupción del plazo a que se refiere el apartado anterior"
+       }
+      },
+      {
+       "si": "Se concede la prórroga",
+       "entonces": "El nuevo plazo se cuenta desde que expira el anterior, no desde el auto.",
+       "articulos": [
+        "588 bis f"
+       ],
+       "literal": {
+        "articulo": "588 bis f",
+        "texto": "su cómputo se iniciará desde la fecha de expiración del plazo de la medida acordada"
+       }
+      },
+      {
+       "si": "Vence el plazo sin prórroga",
+       "entonces": "La medida cesa a todos los efectos.",
+       "articulos": [
+        "588 bis e"
+       ],
+       "literal": {
+        "articulo": "588 bis e",
+        "texto": "cesará a todos los efectos"
+       }
+      },
+      {
+       "si": "Desaparecen las circunstancias que la justificaron o no da resultados",
+       "entonces": "El juez acuerda el cese.",
+       "articulos": [
+        "588 bis j"
+       ],
+       "literal": {
+        "articulo": "588 bis j",
+        "texto": "resulte evidente que a través de la misma no se están obteniendo los resultados pretendidos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿A qué principios debe sujetarse la autorización judicial de una medida de investigación tecnológica?",
+      "a": "Especialidad, idoneidad, excepcionalidad, necesidad y proporcionalidad.",
+      "articulos": [
+       "588 bis a"
+      ],
+      "literal": {
+       "articulo": "588 bis a",
+       "texto": "especialidad, idoneidad, excepcionalidad, necesidad y proporcionalidad"
+      }
+     },
+     "conexiones": [
       "588 bis a",
-      "588 bis k"
+      "588 bis b",
+      "588 bis c",
+      "588 bis d",
+      "588 bis e",
+      "588 bis f",
+      "588 bis g",
+      "588 bis h",
+      "588 bis i",
+      "588 bis j",
+      "588 bis k",
+      "579 bis"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ]
     },
     {
      "id": "investigacion-588_ter_a",
-     "fase": "La interceptación de las comunicaciones telefónicas y telemáticas",
-     "subtitulo": "TÍTULO VIII · CAPÍTULO V · arts. 588 ter a a 588 ter m",
-     "descripcion": "",
+     "fase": "Interceptación de las comunicaciones telefónicas y telemáticas",
+     "subtitulo": "Qué delitos · qué terminales · acceso de las partes",
+     "descripcion": "Solo cabe para los delitos del art. 579.1 o los cometidos a través de instrumentos informáticos o de otra tecnología de la información o la comunicación. Afecta a los terminales que use el investigado y puede abarcar el contenido y los datos de tráfico. La solicitud añade a lo del art. 588 bis b la identificación del número, terminal o conexión y la extensión pedida (grabación, origen y destino, localización, otros datos). Los prestadores de servicios deben colaborar y guardar secreto. La Policía Judicial entrega al juez las transcripciones de interés y las grabaciones íntegras.",
      "articulos": [
       "588 ter a",
-      "588 ter m"
+      "588 ter b",
+      "588 ter c",
+      "588 ter d",
+      "588 ter g",
+      "588 ter i"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Duración de la intervención (desde la autorización judicial)",
+       "plazo": "3 meses; prórrogas hasta 18 meses",
+       "articulo": "588 ter g",
+       "literal": "será de tres meses, prorrogables por períodos sucesivos de igual duración hasta el plazo máximo de dieciocho meses"
+      },
+      {
+       "acto": "Urgencia (bandas armadas o terrorismo): comunicación al juez de la medida ordenada por el Ministro del Interior o el Secretario de Estado de Seguridad",
+       "plazo": "24 horas como máximo",
+       "articulo": "588 ter d",
+       "literal": "dentro del plazo máximo de veinticuatro horas"
+      },
+      {
+       "acto": "Urgencia: el juez revoca o confirma",
+       "plazo": "72 horas desde que se ordenó",
+       "articulo": "588 ter d",
+       "literal": "en un plazo máximo de setenta y dos horas desde que fue ordenada la medida"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El terminal pertenece a un tercero",
+       "entonces": "Puede intervenirse si el investigado se sirve de él, si el titular colabora con él o se beneficia de su actividad, o si terceros lo usan maliciosamente sin conocimiento del titular.",
+       "articulos": [
+        "588 ter c"
+       ],
+       "literal": {
+        "articulo": "588 ter c",
+        "texto": "exista constancia de que el sujeto investigado se sirve de aquella para transmitir o recibir información"
+       }
+      },
+      {
+       "si": "Hay grave riesgo para la vida o integridad de la víctima",
+       "entonces": "También pueden intervenirse sus terminales.",
+       "articulos": [
+        "588 ter b"
+       ],
+       "literal": {
+        "articulo": "588 ter b",
+        "texto": "También podrán intervenirse los terminales o medios de comunicación de la víctima cuando sea previsible un grave riesgo para su vida o integridad"
+       }
+      },
+      {
+       "si": "Solo se necesita saber quién es el titular de un número (o el número de un titular)",
+       "entonces": "El Ministerio Fiscal o la Policía Judicial se dirigen directamente a los prestadores, sin auto.",
+       "articulos": [
+        "588 ter m"
+       ],
+       "literal": {
+        "articulo": "588 ter m",
+        "texto": "podrán dirigirse directamente a los prestadores de servicios de telecomunicaciones"
+       }
+      },
+      {
+       "si": "La policía tiene una dirección IP usada para delinquir pero no sabe quién es el usuario",
+       "entonces": "Pide al juez de instrucción que requiera a los prestadores la cesión de los datos de identificación.",
+       "articulos": [
+        "588 ter k"
+       ],
+       "literal": {
+        "articulo": "588 ter k",
+        "texto": "solicitarán del juez de instrucción que requiera de los agentes sujetos al deber de colaboración"
+       }
+      },
+      {
+       "si": "La grabación contiene datos de la vida íntima",
+       "entonces": "Solo se entrega a las partes lo que no se refiera a ellos, y se hace constar.",
+       "articulos": [
+        "588 ter i"
+       ],
+       "literal": {
+        "articulo": "588 ter i",
+        "texto": "solo se entregará la grabación y transcripción de aquellas partes que no se refieran a ellos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo reciben las partes copia de las grabaciones y transcripciones?",
+      "a": "Una vez alzado el secreto y expirada la vigencia de la medida. Después pueden pedir que se incluyan comunicaciones excluidas, en el plazo que fije el juez.",
+      "articulos": [
+       "588 ter i"
+      ],
+      "literal": {
+       "articulo": "588 ter i",
+       "texto": "Alzado el secreto y expirada la vigencia de la medida de intervención, se entregará a las partes copia de las grabaciones"
+      }
+     },
+     "conexiones": [
+      "579",
       "588 ter a",
+      "588 ter b",
+      "588 ter c",
+      "588 ter d",
+      "588 ter e",
+      "588 ter f",
+      "588 ter g",
+      "588 ter h",
+      "588 ter i",
+      "588 ter j",
+      "588 ter k",
+      "588 ter l",
       "588 ter m"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ]
     },
     {
      "id": "investigacion-588_quater_a",
-     "fase": "Captación y grabación de comunicaciones orales mediante la utilización de dispositivos electrónicos",
-     "subtitulo": "TÍTULO VIII · CAPÍTULO VI · arts. 588 quater a a 588 quater e",
-     "descripcion": "",
+     "fase": "Captación y grabación de comunicaciones orales",
+     "subtitulo": "Micrófonos · encuentros concretos",
+     "descripcion": "Puede autorizarse colocar dispositivos que capten y graben las conversaciones directas del investigado en la vía pública, en espacios abiertos, en su domicilio o en otros lugares cerrados, por fuera o por dentro. La medida debe ir ligada a uno o varios encuentros concretos y previsibles según la investigación. Requisitos: delito doloso con pena máxima de al menos tres años de prisión, de grupo u organización criminal o de terrorismo, y que pueda preverse que aportará datos esenciales. El auto, además de lo del art. 588 bis c, menciona el lugar y los encuentros vigilados.",
      "articulos": [
       "588 quater a",
-      "588 quater e"
-     ],
-     "rango": [
-      "588 quater a",
+      "588 quater b",
+      "588 quater c",
       "588 quater e"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Hay que entrar en el domicilio para colocar el dispositivo",
+       "entonces": "El auto debe motivar también ese acceso.",
+       "articulos": [
+        "588 quater a"
+       ],
+       "literal": {
+        "articulo": "588 quater a",
+        "texto": "la resolución habilitante habrá de extender su motivación a la procedencia del acceso a dichos lugares"
+       }
+      },
+      {
+       "si": "Se quieren también imágenes",
+       "entonces": "Solo si el auto lo autoriza expresamente.",
+       "articulos": [
+        "588 quater a"
+       ],
+       "literal": {
+        "articulo": "588 quater a",
+        "texto": "cuando expresamente lo autorice la resolución judicial que la acuerde"
+       }
+      },
+      {
+       "si": "Cesa la medida y hay otros encuentros que interesan",
+       "entonces": "Hace falta una nueva autorización judicial.",
+       "articulos": [
+        "588 quater e"
+       ],
+       "literal": {
+        "articulo": "588 quater e",
+        "texto": "exigirán una nueva autorización judicial"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿A qué debe estar vinculada la grabación de comunicaciones orales directas?",
+      "a": "A comunicaciones en uno o varios encuentros concretos del investigado con otras personas, previsibles según los indicios de la investigación.",
+      "articulos": [
+       "588 quater b"
+      ],
+      "literal": {
+       "articulo": "588 quater b",
+       "texto": "en uno o varios encuentros concretos del investigado con otras personas"
+      }
+     },
+     "conexiones": [
+      "588 bis c",
+      "588 bis j",
+      "588 quater a",
+      "588 quater b",
+      "588 quater c",
+      "588 quater d",
+      "588 quater e"
+     ],
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ],
+     "duda": "Este capítulo no fija una duración en meses: el art. 588 bis e remite a «la duración que se especifique para cada una de ellas». Ver PENDIENTES.md."
     },
     {
      "id": "investigacion-588_quinquies_a",
-     "fase": "Utilización de dispositivos técnicos de captación de la imagen, de seguimiento y de localización",
-     "subtitulo": "TÍTULO VIII · CAPÍTULO VII · arts. 588 quinquies a a 588 quinquies c",
-     "descripcion": "",
+     "fase": "Captación de la imagen, seguimiento y localización",
+     "subtitulo": "Imágenes en lugares públicos · balizas",
+     "descripcion": "La Policía Judicial puede obtener y grabar imágenes del investigado cuando esté en un lugar o espacio público, si es necesario para identificarle, localizar efectos del delito u obtener datos relevantes; el art. 588 quinquies a no menciona autorización judicial. Los dispositivos de seguimiento y localización sí los autoriza el juez, cuando haya razones de necesidad y la medida sea proporcionada, especificando el medio técnico. Los prestadores deben colaborar. La información obtenida debe custodiarse.",
      "articulos": [
       "588 quinquies a",
+      "588 quinquies b",
       "588 quinquies c"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Seguimiento y localización: duración",
+       "plazo": "3 meses; prórrogas hasta 18 meses",
+       "articulo": "588 quinquies c",
+       "literal": "tendrá una duración máxima de tres meses a partir de la fecha de su autorización"
+      },
+      {
+       "acto": "Urgencia: la Policía coloca el dispositivo y da cuenta al juez, que ratifica o acuerda el cese",
+       "plazo": "24 horas como máximo",
+       "articulo": "588 quinquies b",
+       "literal": "en todo caso en el plazo máximo de veinticuatro horas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La urgencia no permite esperar al auto",
+       "entonces": "La Policía Judicial coloca el dispositivo y da cuenta; si el juez acuerda el cese, lo obtenido carece de efectos en el proceso.",
+       "articulos": [
+        "588 quinquies b"
+       ],
+       "literal": {
+        "articulo": "588 quinquies b",
+        "texto": "la información obtenida a partir del dispositivo colocado carecerá de efectos en el proceso"
+       }
+      },
+      {
+       "si": "Las imágenes afectan a otras personas",
+       "entonces": "Se permite si, de otro modo, la vigilancia pierde mucha utilidad o hay indicios fundados de su relación con el investigado y los hechos.",
+       "articulos": [
+        "588 quinquies a"
+       ],
+       "literal": {
+        "articulo": "588 quinquies a",
+        "texto": "aun cuando afecte a personas diferentes del investigado"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hasta cuánto pueden prorrogarse los dispositivos de seguimiento y localización?",
+      "a": "Excepcionalmente, por prórrogas sucesivas del mismo o menor plazo hasta un máximo de dieciocho meses, si lo justifican los resultados.",
+      "articulos": [
+       "588 quinquies c"
+      ],
+      "literal": {
+       "articulo": "588 quinquies c",
+       "texto": "prórrogas sucesivas por el mismo o inferior plazo hasta un máximo de dieciocho meses"
+      }
+     },
+     "conexiones": [
       "588 quinquies a",
-      "588 quinquies c"
+      "588 quinquies b",
+      "588 quinquies c",
+      "588 ter e"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ]
     },
     {
      "id": "investigacion-588_sexies_a",
-     "fase": "Registro de dispositivos de almacenamiento masivo de información",
-     "subtitulo": "TÍTULO VIII · CAPÍTULO VIII · arts. 588 sexies a a 588 sexies c",
-     "descripcion": "",
+     "fase": "Registro de dispositivos de almacenamiento masivo",
+     "subtitulo": "Ordenadores y móviles · motivación propia",
+     "descripcion": "Si en un registro domiciliario se prevé aprehender ordenadores, teléfonos o dispositivos de almacenamiento, o acceder a repositorios de datos, el auto debe justificar también el acceso a su contenido. Lo mismo si se aprehenden fuera de un registro: los agentes lo comunican al juez, que autoriza el acceso si lo considera indispensable. El auto fija los términos y el alcance del registro, puede autorizar copias y asegura la integridad de los datos. Se evita incautar el soporte cuando cause grave perjuicio y baste una copia fiable.",
      "articulos": [
       "588 sexies a",
+      "588 sexies b",
       "588 sexies c"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Urgencia: la Policía examina directamente el dispositivo y lo comunica al juez por escrito motivado",
+       "plazo": "24 horas como máximo",
+       "articulo": "588 sexies c",
+       "literal": "comunicándolo inmediatamente, y en todo caso dentro del plazo máximo de veinticuatro horas, por escrito motivado al juez competente"
+      },
+      {
+       "acto": "Urgencia: el juez revoca o confirma",
+       "plazo": "72 horas desde que se ordenó",
+       "articulo": "588 sexies c",
+       "literal": "en un plazo máximo de 72 horas desde que fue ordenada la medida"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Los datos buscados están en otro sistema accesible desde el primero",
+       "entonces": "Puede ampliarse el registro, con autorización judicial salvo que ya la diera el auto inicial; en urgencia, la Policía o el fiscal lo hacen e informan al juez en 24 horas.",
+       "articulos": [
+        "588 sexies c"
+       ],
+       "literal": {
+        "articulo": "588 sexies c",
+        "texto": "Esta ampliación del registro deberá ser autorizada por el juez, salvo que ya lo hubiera sido en la autorización inicial"
+       }
+      },
+      {
+       "si": "Se ordena a alguien que facilite claves o información del sistema",
+       "entonces": "Está obligado, salvo el investigado, los parientes dispensados de declarar y quienes no pueden declarar por secreto profesional (art. 416.2).",
+       "articulos": [
+        "588 sexies c"
+       ],
+       "literal": {
+        "articulo": "588 sexies c",
+        "texto": "Esta disposición no será aplicable al investigado o encausado"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si en un registro domiciliario se incauta un ordenador, ¿puede la Policía acceder a su contenido sin más?",
+      "a": "No. La simple incautación no legitima el acceso; hace falta que el auto lo justifique o que el juez lo autorice después.",
+      "articulos": [
+       "588 sexies a"
+      ],
+      "literal": {
+       "articulo": "588 sexies a",
+       "texto": "no legitima el acceso a su contenido"
+      }
+     },
+     "conexiones": [
       "588 sexies a",
-      "588 sexies c"
+      "588 sexies b",
+      "588 sexies c",
+      "416",
+      "550"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ],
+     "duda": "El art. 588 sexies c.3, que trata de ampliar un registro, dice que el juez confirma o revoca en 72 horas «desde que fue ordenada la interceptación». Ver PENDIENTES.md."
     },
     {
      "id": "investigacion-588_septies_a",
      "fase": "Registros remotos sobre equipos informáticos",
-     "subtitulo": "TÍTULO VIII · CAPÍTULO IX · arts. 588 septies a a 588 septies c",
-     "descripcion": "",
+     "subtitulo": "Software de acceso a distancia · lista cerrada de delitos",
+     "descripcion": "El juez puede autorizar el uso de datos de identificación, códigos o la instalación de un software para examinar a distancia, y sin conocimiento del titular, el contenido de un ordenador, dispositivo, sistema informático o base de datos. Solo para los delitos que enumera el art. 588 septies a.1. El auto especifica los equipos o datos afectados, el alcance, el software, los agentes, las copias y las medidas de integridad. Prestadores y titulares del sistema deben colaborar y guardar secreto.",
      "articulos": [
       "588 septies a",
+      "588 septies b",
       "588 septies c"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Duración del registro remoto",
+       "plazo": "1 mes; prórrogas hasta 3 meses",
+       "articulo": "588 septies c",
+       "literal": "La medida tendrá una duración máxima de un mes, prorrogable por iguales períodos hasta un máximo de tres meses"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Los datos buscados están en otro sistema",
+       "entonces": "Los agentes lo ponen en conocimiento del juez, que puede ampliar los términos del registro.",
+       "articulos": [
+        "588 septies a"
+       ],
+       "literal": {
+        "articulo": "588 septies a",
+        "texto": "quien podrá autorizar una ampliación de los términos del registro"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Para qué delitos cabe un registro remoto?",
+      "a": "Delitos cometidos en el seno de organizaciones criminales; de terrorismo; contra menores o personas con capacidad modificada judicialmente; contra la Constitución, de traición y relativos a la defensa nacional; y los cometidos a través de instrumentos informáticos u otra tecnología de la información o la telecomunicación.",
+      "articulos": [
+       "588 septies a"
+      ],
+      "literal": {
+       "articulo": "588 septies a",
+       "texto": "Delitos cometidos en el seno de organizaciones criminales"
+      }
+     },
+     "conexiones": [
       "588 septies a",
-      "588 septies c"
+      "588 septies b",
+      "588 septies c",
+      "588 ter e",
+      "416"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ]
     },
     {
      "id": "investigacion-588_octies",
-     "fase": "Medidas de aseguramiento",
-     "subtitulo": "TÍTULO VIII · CAPÍTULO X · art. 588 octies",
-     "descripcion": "",
+     "fase": "Orden de conservación de datos",
+     "subtitulo": "Congelar los datos hasta que llegue el auto",
+     "descripcion": "El Ministerio Fiscal o la Policía Judicial pueden requerir a cualquier persona física o jurídica que conserve y proteja datos concretos de un sistema informático que tenga a su disposición, hasta que se obtenga la autorización judicial para cederlos.",
      "articulos": [
       "588 octies"
      ],
-     "rango": [
-      "588 octies",
-      "588 octies"
+     "plazos": [
+      {
+       "acto": "Conservación de los datos",
+       "plazo": "Máximo 90 días",
+       "articulo": "588 octies",
+       "literal": "Los datos se conservarán durante un periodo máximo de noventa días"
+      },
+      {
+       "acto": "Prórroga (una sola vez)",
+       "plazo": "Hasta la autorización o hasta 180 días",
+       "articulo": "588 octies",
+       "literal": "prorrogable una sola vez hasta que se autorice la cesión o se cumplan ciento ochenta días"
+      }
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Se requiere a una persona o empresa",
+       "entonces": "Debe colaborar y guardar secreto; si no, responde como dice el art. 588 ter e.3 (desobediencia).",
+       "articulos": [
+        "588 octies",
+        "588 ter e"
+       ],
+       "literal": {
+        "articulo": "588 octies",
+        "texto": "El requerido vendrá obligado a prestar su colaboración y a guardar secreto"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hace falta auto para ordenar la conservación de datos?",
+      "a": "No: la pueden requerir el Ministerio Fiscal o la Policía Judicial. Lo que exige autorización judicial es la cesión de esos datos.",
+      "articulos": [
+       "588 octies"
+      ],
+      "literal": {
+       "articulo": "588 octies",
+       "texto": "hasta que se obtenga la autorización judicial correspondiente para su cesión"
+      }
+     },
+     "conexiones": [
+      "588 octies",
+      "588 ter e",
+      "588 ter j"
+     ],
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ],
+     "duda": "El art. 588 octies dice «prorrogable una sola vez hasta que se autorice la cesión o se cumplan ciento ochenta días». Ver PENDIENTES.md."
     }
    ]
   },
@@ -5636,15 +6520,19 @@
    "nombre": "Otros procedimientos especiales",
    "bloque": "lecrim",
    "grupo": "Libro IV · Procedimientos especiales",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Procedimientos especiales del Libro IV. Desarrollados, según el canon: el proceso por aceptación de decreto (arts. 803 bis a a 803 bis j) y el de injuria y calumnia contra particulares (arts. 804 a 815). El resto (aforados, decomiso, imprenta, extradición y reos ausentes) queda como índice.",
    "ambito": {
     "corto": "Libro IV, varios títulos",
     "texto": "TÍTULO I. Del modo de proceder cuando fuere procesado un Senador o Diputado a Cortes · TÍTULO III BIS. Proceso por aceptación de decreto · TÍTULO III TER. De la intervención de terceros afectados por el decomiso y del procedimiento de decomiso autónomo · TÍTULO IV. Del procedimiento por delitos de injuria y calumnia contra particulares · TÍTULO V. Del procedimiento por delitos cometidos por medio de la imprenta, el grabado u otro medio mecánico de publicación · TÍTULO VI. Del procedimiento para la extradición · TÍTULO VII. Del procedimiento contra reos ausentes",
     "articulos": [
      "750"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "803 bis a",
+      "texto": "podrá seguirse el proceso por aceptación de decreto"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
@@ -5667,20 +6555,180 @@
     },
     {
      "id": "especiales-803_bis_a",
-     "fase": "Proceso por aceptación de decreto",
-     "subtitulo": "TÍTULO III BIS · arts. 803 bis a a 803 bis j",
-     "descripcion": "",
+     "fase": "Aceptación de decreto: requisitos y propuesta del Fiscal",
+     "subtitulo": "Multa o trabajos · sin acusación personada · pena reducida hasta un tercio",
+     "descripcion": "El Ministerio Fiscal puede proponer, mediante decreto, la imposición de una pena de multa o de trabajos en beneficio de la comunidad (y, en su caso, de privación del derecho a conducir). Deben cumplirse tres requisitos a la vez. El primero, que el delito tenga pena de multa, trabajos en beneficio de la comunidad o prisión de hasta un año suspendible conforme al art. 80 del Código Penal. El segundo, que el Fiscal entienda aplicable en concreto la multa o los trabajos. El tercero, que no haya acusación popular ni particular personada. El decreto identifica al investigado, describe el hecho y el delito con la prueba existente, propone las penas y, en su caso, la restitución y la indemnización. Se remite al Juzgado de Instrucción para que lo autorice y lo notifique.",
      "articulos": [
       "803 bis a",
-      "803 bis j"
+      "803 bis b",
+      "803 bis c",
+      "803 bis d"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Momento para seguir este proceso (desde que se inician diligencias de la fiscalía o un procedimiento judicial)",
+       "plazo": "Hasta el fin de la instrucción",
+       "articulo": "803 bis a",
+       "literal": "hasta la finalización de la fase de instrucción"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay acusación popular o particular personada",
+       "entonces": "No cabe el proceso por aceptación de decreto.",
+       "articulos": [
+        "803 bis a"
+       ],
+       "literal": {
+        "articulo": "803 bis a",
+        "texto": "Que no esté personada acusación popular o particular en la causa"
+       }
+      },
+      {
+       "si": "El delito tiene pena de prisión",
+       "entonces": "El Fiscal expone brevemente por qué debe sustituirse y propone multa o trabajos en beneficio de la comunidad.",
+       "articulos": [
+        "803 bis c"
+       ],
+       "literal": {
+        "articulo": "803 bis c",
+        "texto": "la pena de prisión debe ser sustituida"
+       }
+      },
+      {
+       "si": "Hay perjuicios que reparar",
+       "entonces": "El proceso puede incluir la acción civil de restitución e indemnización.",
+       "articulos": [
+        "803 bis b"
+       ],
+       "literal": {
+        "articulo": "803 bis b",
+        "texto": "Además puede tener por objeto la acción civil"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuánto puede reducir el Fiscal la pena que propone en el decreto?",
+      "a": "Hasta un tercio de la legalmente prevista, aunque quede por debajo del mínimo del Código Penal.",
+      "articulos": [
+       "803 bis c"
+      ],
+      "literal": {
+       "articulo": "803 bis c",
+       "texto": "reducida hasta en un tercio respecto de la legalmente prevista"
+      }
+     },
+     "conexiones": [
       "803 bis a",
+      "803 bis b",
+      "803 bis c",
+      "803 bis d"
+     ],
+     "continua_en": [],
+     "aviso": "Según la nota general del BOE a esta ley, las referencias a los Juzgados de Instrucción se entienden hechas a las Secciones del orden jurisdiccional correspondiente de los Tribunales de Instancia (disposición adicional primera de la [[Ley Orgánica 1/2025, de 2 de enero|https://www.boe.es/buscar/act.php?id=BOE-A-2025-76]])."
+    },
+    {
+     "id": "especiales-803_bis_e",
+     "fase": "Aceptación de decreto: autorización, comparecencia y sentencia",
+     "subtitulo": "El encausado acepta o rechaza con abogado · sentencia sin recurso",
+     "descripcion": "El Juzgado de Instrucción autoriza el decreto si se cumplen los requisitos del art. 803 bis a. Lo notifica al encausado y le cita a una comparecencia, informándole de su finalidad, de que necesita abogado y de los efectos de no comparecer, aceptar o rechazar. Si no tiene abogado, se le designa uno de oficio. En la comparecencia, que se graba, el juez se asegura de que el encausado entiende el decreto y los efectos de aceptarlo. Si acepta en todos sus términos, el decreto adquiere carácter de resolución judicial firme y se documenta como sentencia condenatoria.",
+     "articulos": [
+      "803 bis e",
+      "803 bis f",
+      "803 bis g",
+      "803 bis h",
+      "803 bis i",
       "803 bis j"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Pedir abogado de oficio para que pueda celebrarse la comparecencia",
+       "plazo": "5 días hábiles antes de la fecha señalada",
+       "articulo": "803 bis g",
+       "literal": "en el término de cinco días hábiles antes de la fecha para la que esté señalada"
+      },
+      {
+       "acto": "Documentar la aceptación como sentencia condenatoria",
+       "plazo": "3 días",
+       "articulo": "803 bis i",
+       "literal": "en el plazo de tres días documentará en la forma y con todos los efectos de sentencia condenatoria"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El Juzgado no autoriza el decreto",
+       "entonces": "El decreto queda sin efecto.",
+       "articulos": [
+        "803 bis e"
+       ],
+       "literal": {
+        "articulo": "803 bis e",
+        "texto": "Si el Juzgado de Instrucción no autoriza el decreto, éste quedará sin efecto"
+       }
+      },
+      {
+       "si": "El encausado comparece sin abogado",
+       "entonces": "El juez suspende la comparecencia (art. 746) y señala nueva fecha.",
+       "articulos": [
+        "803 bis h",
+        "746"
+       ],
+       "literal": {
+        "articulo": "803 bis h",
+        "texto": "el juez suspenderá la comparecencia"
+       }
+      },
+      {
+       "si": "No comparece o rechaza la propuesta, aunque sea en parte",
+       "entonces": "La propuesta queda sin efecto; el Fiscal no queda vinculado y la causa sigue por el cauce que corresponda.",
+       "articulos": [
+        "803 bis h",
+        "803 bis j"
+       ],
+       "literal": {
+        "articulo": "803 bis j",
+        "texto": "el Ministerio Fiscal no se encontrará vinculado por su contenido"
+       }
+      },
+      {
+       "si": "Acepta la propuesta en todos sus términos",
+       "entonces": "Sentencia condenatoria firme, sin recurso.",
+       "articulos": [
+        "803 bis i"
+       ],
+       "literal": {
+        "articulo": "803 bis i",
+        "texto": "la cual no será susceptible de recurso alguno"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el encausado aceptar la propuesta del Fiscal sin abogado?",
+      "a": "No: debe comparecer en el juzgado asistido de letrado; si viene sin él, se suspende la comparecencia.",
+      "articulos": [
+       "803 bis h"
+      ],
+      "literal": {
+       "articulo": "803 bis h",
+       "texto": "habrá de comparecer en el juzgado de instrucción asistido de letrado"
+      }
+     },
+     "conexiones": [
+      "803 bis a",
+      "803 bis e",
+      "803 bis f",
+      "803 bis g",
+      "803 bis h",
+      "803 bis i",
+      "803 bis j",
+      "746"
+     ],
+     "continua_en": [
+      "abreviado",
+      "leves"
+     ],
+     "duda": "El art. 803 bis g dice que el abogado de oficio debe pedirse «en el término de cinco días hábiles antes de la fecha»: no está claro si es como mínimo cinco días antes o dentro de los cinco días anteriores. Ver PENDIENTES.md.",
+     "aviso": "Según la nota general del BOE a esta ley, las referencias a los Juzgados de Instrucción se entienden hechas a las Secciones del orden jurisdiccional correspondiente de los Tribunales de Instancia (disposición adicional primera de la [[Ley Orgánica 1/2025, de 2 de enero|https://www.boe.es/buscar/act.php?id=BOE-A-2025-76]])."
     },
     {
      "id": "especiales-803_ter_a",
@@ -5718,20 +6766,162 @@
     },
     {
      "id": "especiales-804",
-     "fase": "Del procedimiento por delitos de injuria y calumnia contra particulares",
-     "subtitulo": "TÍTULO IV · arts. 804 a 815",
-     "descripcion": "",
+     "fase": "Injuria y calumnia: la querella",
+     "subtitulo": "Conciliación previa · autorización si se vertieron en juicio",
+     "descripcion": "Para querellarse por injuria o calumnia contra particulares hay que presentar la certificación de haber celebrado el acto de conciliación con el querellado, o de haberlo intentado sin efecto. Si se vertieron en un juicio, también la autorización del Juez o Tribunal ante el que se profirieron (que no prueba la imputación). Si se hicieron por escrito, se aporta el documento si es posible. Se acompaña copia de la querella para entregarla al querellado. En las injurias o calumnias por escrito, reconocido el escrito y comprobada la publicidad, se da por terminado el sumario tras procesar al querellado.",
      "articulos": [
       "804",
-      "815"
-     ],
-     "rango": [
-      "804",
-      "815"
+      "805",
+      "806",
+      "807",
+      "811"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Se vertieron en un juicio",
+       "entonces": "Hace falta, además, la autorización del Juez o Tribunal ante quien se profirieron.",
+       "articulos": [
+        "805"
+       ],
+       "literal": {
+        "articulo": "805",
+        "texto": "será necesario acreditar, además, la autorización del Juez o Tribunal ante quien hubiesen sido inferidas"
+       }
+      },
+      {
+       "si": "Se hicieron por escrito",
+       "entonces": "Se presenta el documento; reconocido y comprobada la publicidad, se procesa al querellado y se termina el sumario.",
+       "articulos": [
+        "806",
+        "807"
+       ],
+       "literal": {
+        "articulo": "807",
+        "texto": "se dará por terminado el sumario, previo el procesamiento del querellado"
+       }
+      },
+      {
+       "si": "Se hicieron de palabra",
+       "entonces": "El Juez instructor convoca un juicio verbal (fase siguiente).",
+       "articulos": [
+        "808"
+       ],
+       "literal": {
+        "articulo": "808",
+        "texto": "el Juez instructor mandará convocar a juicio verbal al querellante, al querellado y a los testigos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué requisito previo exige la querella por injuria o calumnia contra particulares?",
+      "a": "La certificación de haber celebrado el acto de conciliación con el querellado, o de haberlo intentado sin efecto.",
+      "articulos": [
+       "804"
+      ],
+      "literal": {
+       "articulo": "804",
+       "texto": "si no se presenta certificación de haber celebrado el querellante acto de conciliación"
+      }
+     },
+     "conexiones": [
+      "804",
+      "805",
+      "806",
+      "807",
+      "811"
+     ],
+     "continua_en": [],
+     "duda": "El art. 807 remite a «la publicidad a que se refiere el respectivo artículo del Código Penal», sin decir cuál. Ver PENDIENTES.md."
+    },
+    {
+     "id": "especiales-808",
+     "fase": "Injuria y calumnia verbales: el juicio verbal",
+     "subtitulo": "Juicio ante el instructor en 3 días",
+     "descripcion": "Presentada la querella por injurias o calumnias verbales, el Juez instructor convoca a juicio verbal al querellante, al querellado y a los testigos; el Secretario judicial señala día y hora. En el juicio, el querellante presenta sus pruebas y el Juez decide sobre el procesamiento del querellado y da por terminado el sumario. No se admiten testigos de referencia. La ausencia del querellado citado en forma no suspende el juicio.",
+     "articulos": [
+      "808",
+      "809",
+      "810",
+      "812",
+      "813",
+      "814"
+     ],
+     "plazos": [
+      {
+       "acto": "Celebración del juicio verbal",
+       "plazo": "3 días desde la presentación de la querella",
+       "articulo": "809",
+       "literal": "dentro de los tres días siguientes al de la presentación de la querella"
+      },
+      {
+       "acto": "Ampliación por causa justa (certificada por el Secretario)",
+       "plazo": "Hasta 8 días",
+       "articulo": "809",
+       "literal": "podrá ampliarse hasta ocho días el término para la celebración del juicio verbal"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Injurias a funcionarios sobre su cargo, o calumnia cuya verdad quiere probar el acusado antes del juicio oral",
+       "entonces": "No se aplican estas reglas: el querellante debe precisar los hechos para que el procesado prepare sus pruebas.",
+       "articulos": [
+        "810"
+       ],
+       "literal": {
+        "articulo": "810",
+        "texto": "cuando los acusados manifiesten querer probar antes del juicio oral la certeza de la imputación"
+       }
+      },
+      {
+       "si": "El querellado no acude, pero fue citado en forma",
+       "entonces": "El juicio se celebra y se resuelve igualmente.",
+       "articulos": [
+        "814"
+       ],
+       "literal": {
+        "articulo": "814",
+        "texto": "La ausencia del querellado no suspenderá la celebración ni la resolución del juicio"
+       }
+      },
+      {
+       "si": "Se celebra el juicio",
+       "entonces": "El Juez decide sobre el procesamiento y da por terminado el sumario.",
+       "articulos": [
+        "812"
+       ],
+       "literal": {
+        "articulo": "812",
+        "texto": "el Juez acordará lo que corresponda respecto al procesamiento del querellado"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En una causa por injurias o calumnias de palabra, ¿se admiten testigos de referencia?",
+      "a": "No.",
+      "articulos": [
+       "813"
+      ],
+      "literal": {
+       "articulo": "813",
+       "texto": "No se admitirán testigos de referencia en las causas por injuria o calumnia vertidas de palabra"
+      }
+     },
+     "conexiones": [
+      "808",
+      "809",
+      "810",
+      "811",
+      "812",
+      "813",
+      "814",
+      "815"
+     ],
+     "continua_en": [
+      "conclusion",
+      "juicio-oral"
+     ],
+     "aviso": "Según la nota general del BOE a esta ley, las referencias a los Secretarios judiciales se entienden hechas a los Letrados de la Administración de Justicia (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
     },
     {
      "id": "especiales-816",
@@ -5791,68 +6981,349 @@
    "nombre": "Recursos de apelación, casación y revisión",
    "bloque": "lecrim",
    "grupo": "Libro V · Recursos",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Recursos contra sentencias: apelación (Jurado y Audiencias en primera instancia), casación ante la Sala Segunda del Tribunal Supremo (procedencia, preparación, interposición, admisión y sentencia) y revisión de sentencias firmes (arts. 846 bis a a 961). Las fichas resumidas de cada recurso están en la pestaña Recursos.",
    "ambito": {
     "corto": "Arts. 846 bis a a 961",
     "texto": "TÍTULO I. Del recurso de apelación contra las sentencias y determinados autos · CAPÍTULO I. De los recursos de casación por infracción de Ley y por quebrantamiento de forma · CAPÍTULO II. De los recursos de casación por quebrantamiento de forma · CAPÍTULO III. De la interposición, sustanciación y resolución del recurso de casación por infracción de ley y por quebrantamiento de forma · CAPÍTULO IV. Del recurso de casación en las causas de muerte · TÍTULO III. Del recurso de revisión",
     "articulos": [
      "846 bis a"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "847",
+      "texto": "Procede recurso de casación"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
      "id": "recursos-846_bis_a",
-     "fase": "Del recurso de apelación contra las sentencias y determinados autos",
-     "subtitulo": "TÍTULO I · arts. 846 bis a a 846 ter",
-     "descripcion": "",
+     "fase": "Apelación contra sentencias del Jurado y de las Audiencias",
+     "subtitulo": "Ante el TSJ o la Sala de Apelación de la AN · motivos tasados en el Jurado",
+     "descripcion": "Las sentencias del Magistrado-Presidente del Tribunal del Jurado (en el ámbito de la Audiencia Provincial) son apelables ante la Sala de lo Civil y Penal del Tribunal Superior de Justicia, formada por tres Magistrados. También lo son sus autos sobre las cuestiones del art. 36 de la Ley Orgánica del Tribunal del Jurado y en los casos del art. 676. Este recurso solo cabe por los motivos del art. 846 bis c. Se interpone; las demás partes pueden impugnarlo o apelar de forma supeditada; se emplaza ante el TSJ, se celebra vista pública y se dicta sentencia. Aparte, el art. 846 ter abre la apelación contra los autos que terminan el proceso por falta de jurisdicción o sobreseimiento libre y contra las sentencias de las Audiencias Provinciales o de la Sala de lo Penal de la Audiencia Nacional en primera instancia.",
      "articulos": [
       "846 bis a",
+      "846 bis b",
+      "846 bis c",
+      "846 bis d",
+      "846 bis e",
+      "846 bis f",
       "846 ter"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Jurado: interposición de la apelación",
+       "plazo": "10 días desde la última notificación",
+       "articulo": "846 bis b",
+       "literal": "dentro de los diez días siguientes a la última notificación de la sentencia"
+      },
+      {
+       "acto": "Jurado: impugnación o apelación supeditada de las demás partes",
+       "plazo": "5 días",
+       "articulo": "846 bis d",
+       "literal": "en término de cinco días, podrán impugnar el recurso o formular recurso supeditado de apelación"
+      },
+      {
+       "acto": "Jurado: personación ante la Sala de lo Civil y Penal del TSJ",
+       "plazo": "10 días",
+       "articulo": "846 bis d",
+       "literal": "para que se personen en plazo de diez días"
+      },
+      {
+       "acto": "Jurado: sentencia de apelación",
+       "plazo": "5 días desde la vista",
+       "articulo": "846 bis f",
+       "literal": "Dentro de los cinco días siguientes a la vista"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se alega quebrantamiento de garantías procesales o la disolución del Jurado (letras a, c y d)",
+       "entonces": "Para que se admita, hay que haber protestado cuando se produjo la infracción.",
+       "articulos": [
+        "846 bis c"
+       ],
+       "literal": {
+        "articulo": "846 bis c",
+        "texto": "deberá haberse formulado la oportuna protesta al tiempo de producirse la infracción denunciada"
+       }
+      },
+      {
+       "si": "Una parte no apeló en plazo",
+       "entonces": "Puede apelar en el trámite de impugnación, pero su recurso depende de que el apelante principal mantenga el suyo.",
+       "articulos": [
+        "846 bis b"
+       ],
+       "literal": {
+        "articulo": "846 bis b",
+        "texto": "este recurso quedará supeditado a que el apelante principal mantenga el suyo"
+       }
+      },
+      {
+       "si": "El apelante principal no se persona o renuncia",
+       "entonces": "Se devuelven los autos a la Audiencia, que declara firme la sentencia y la ejecuta.",
+       "articulos": [
+        "846 bis d"
+       ],
+       "literal": {
+        "articulo": "846 bis d",
+        "texto": "que declarará firme la sentencia y procederá a su ejecución"
+       }
+      },
+      {
+       "si": "Se estima por los motivos a) o d) del art. 846 bis c",
+       "entonces": "Se devuelve la causa a la Audiencia para un nuevo juicio.",
+       "articulos": [
+        "846 bis f"
+       ],
+       "literal": {
+        "articulo": "846 bis f",
+        "texto": "mandará devolver la causa a la Audiencia para celebración de nuevo juicio"
+       }
+      },
+      {
+       "si": "Es una sentencia de la Audiencia (sin Jurado) en primera instancia, o un auto de sobreseimiento libre o falta de jurisdicción",
+       "entonces": "Apelación ante el TSJ o la Sala de Apelación de la AN, tramitada como la del abreviado (arts. 790 a 792).",
+       "articulos": [
+        "846 ter"
+       ],
+       "literal": {
+        "articulo": "846 ter",
+        "texto": "se regirán por lo dispuesto en los artículos 790, 791 y 792 de esta ley"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En la apelación de una sentencia del Jurado, ¿cuándo puede alegarse la vulneración de la presunción de inocencia?",
+      "a": "Cuando, atendida la prueba practicada en el juicio, la condena impuesta carece de toda base razonable (art. 846 bis c, letra e).",
+      "articulos": [
+       "846 bis c"
+      ],
+      "literal": {
+       "articulo": "846 bis c",
+       "texto": "carece de toda base razonable la condena impuesta"
+      }
+     },
+     "conexiones": [
       "846 bis a",
-      "846 ter"
+      "846 bis b",
+      "846 bis c",
+      "846 bis d",
+      "846 bis e",
+      "846 bis f",
+      "846 ter",
+      "676",
+      "790",
+      "791",
+      "792",
+      "850",
+      "851"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "abreviado"
+     ],
+     "aviso": "Según la nota general del BOE a esta ley, desde el 1 de octubre de 2015 las referencias a los Secretarios judiciales se entienden hechas a los Letrados de la Administración de Justicia (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
     },
     {
      "id": "recursos-847",
-     "fase": "De la procedencia del recurso",
-     "subtitulo": "CAPÍTULO I · Sección 1.ª · arts. 847 a 854",
-     "descripcion": "",
+     "fase": "Casación: qué resoluciones y por qué motivos",
+     "subtitulo": "Infracción de ley · quebrantamiento de forma · precepto constitucional",
+     "descripcion": "Caben los dos motivos, infracción de ley y quebrantamiento de forma, contra las sentencias de la Sala de lo Civil y Penal del TSJ (en única instancia o en apelación) y de la Sala de Apelación de la Audiencia Nacional. Contra las sentencias dictadas en apelación por las Audiencias Provinciales y la Sala de lo Penal de la AN solo cabe la infracción de ley del art. 849.1.º. Los autos solo son recurribles por infracción de ley, en dos casos: si la ley lo autoriza expresamente, o si son autos definitivos que ponen fin al proceso por falta de jurisdicción o sobreseimiento libre tras una imputación fundada. La infracción de ley es un error de derecho sustantivo (art. 849.1.º) o un error en la apreciación de la prueba basado en documentos (art. 849.2.º). El quebrantamiento de forma puede estar en el procedimiento (art. 850) o en la sentencia (art. 851).",
      "articulos": [
       "847",
-      "854"
-     ],
-     "rango": [
-      "847",
+      "848",
+      "849",
+      "850",
+      "851",
+      "852",
       "854"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "La sentencia de apelación se limita a anular la de primera instancia",
+       "entonces": "No cabe casación.",
+       "articulos": [
+        "847"
+       ],
+       "literal": {
+        "articulo": "847",
+        "texto": "Quedan exceptuadas aquellas que se limiten a declarar la nulidad de las sentencias recaídas en primera instancia"
+       }
+      },
+      {
+       "si": "Se alega la infracción de un precepto constitucional",
+       "entonces": "El art. 852 permite fundar en ella la casación «en todo caso».",
+       "articulos": [
+        "852"
+       ],
+       "literal": {
+        "articulo": "852",
+        "texto": "En todo caso, el recurso de casación podrá interponerse fundándose en la infracción de precepto constitucional"
+       }
+      },
+      {
+       "si": "La sentencia castiga un delito más grave que el de la acusación sin acudir al art. 733",
+       "entonces": "Quebrantamiento de forma.",
+       "articulos": [
+        "851",
+        "733"
+       ],
+       "literal": {
+        "articulo": "851",
+        "texto": "Cuando se pene un delito más grave que el que haya sido objeto de la acusación"
+       }
+      },
+      {
+       "si": "Recurre el actor civil",
+       "entonces": "Solo puede recurrir en lo que afecte a las restituciones, reparaciones e indemnizaciones que reclamó.",
+       "articulos": [
+        "854"
+       ],
+       "literal": {
+        "articulo": "854",
+        "texto": "Los actores civiles no podrán interponer el recurso sino en cuanto pueda afectar"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué motivo de casación cabe contra una sentencia dictada en apelación por una Audiencia Provincial?",
+      "a": "Solo la infracción de ley del art. 849.1.º, es decir, la infracción de un precepto penal sustantivo, a la vista de los hechos probados.",
+      "articulos": [
+       "847",
+       "849"
+      ],
+      "literal": {
+       "articulo": "847",
+       "texto": "Por infracción de ley del motivo previsto en el número 1.º del artículo 849"
+      }
+     },
+     "conexiones": [
+      "847",
+      "848",
+      "849",
+      "850",
+      "851",
+      "852",
+      "854",
+      "733",
+      "884"
+     ],
+     "continua_en": [],
+     "duda": "El art. 847.1.b limita la casación contra sentencias de apelación de las Audiencias al motivo del art. 849.1.º; el art. 852 permite la infracción de precepto constitucional «en todo caso». Ver PENDIENTES.md."
     },
     {
      "id": "recursos-855",
-     "fase": "De la preparación del recurso",
-     "subtitulo": "CAPÍTULO I · Sección 2.ª · arts. 855 a 861 bis c",
-     "descripcion": "",
+     "fase": "Preparación de la casación",
+     "subtitulo": "Ante el tribunal que dictó la resolución · 5 días",
+     "descripcion": "Quien quiera recurrir pide, ante el Tribunal que dictó la resolución, un testimonio de ella, y dice qué clase de recurso va a usar. Contra sentencias de apelación de las Audiencias, el escrito identifica el precepto sustantivo infringido y explica brevemente por qué. Si se usará el art. 849.2.º, designa los particulares del documento; si es quebrantamiento de forma, la falta y la reclamación hecha. El escrito lo firman Abogado y Procurador y promete constituir el depósito. El Tribunal lo tiene por preparado o lo deniega por auto motivado. Si lo tiene por preparado, emplaza a las partes ante la Sala Segunda del Tribunal Supremo.",
      "articulos": [
       "855",
-      "861 bis c"
+      "856",
+      "857",
+      "858",
+      "859",
+      "861",
+      "861 bis a"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Escrito de preparación",
+       "plazo": "5 días desde la última notificación",
+       "articulo": "856",
+       "literal": "dentro de los cinco días siguientes al de la última notificación de la sentencia o auto"
+      },
+      {
+       "acto": "El Tribunal tiene por preparado el recurso o lo deniega",
+       "plazo": "3 días",
+       "articulo": "858",
+       "literal": "dentro de los tres días siguientes, sin oír a las partes"
+      },
+      {
+       "acto": "Testimonio de la sentencia",
+       "plazo": "3 días",
+       "articulo": "859",
+       "literal": "expida, en el plazo de tres días, el testimonio de la sentencia"
+      },
+      {
+       "acto": "Emplazamiento ante la Sala Segunda del TS (improrrogable)",
+       "plazo": "15 días (Península), 20 (Illes Balears), 30 (Canarias, Ceuta y Melilla)",
+       "articulo": "859",
+       "literal": "dentro del término improrrogable de 15 días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El Tribunal deniega la preparación",
+       "entonces": "Cabe queja ante la Sala Segunda del TS, haciéndolo presente al Tribunal sentenciador.",
+       "articulos": [
+        "862"
+       ],
+       "literal": {
+        "articulo": "862",
+        "texto": "dentro de los dos días siguientes al de la notificación de dicho auto"
+       }
+      },
+      {
+       "si": "El recurrente tiene asistencia jurídica gratuita o es insolvente",
+       "entonces": "Puede pedir que el testimonio se remita directamente a la Sala Segunda, que le nombrará Abogado y Procurador si no los tiene.",
+       "articulos": [
+        "860"
+       ],
+       "literal": {
+        "articulo": "860",
+        "texto": "podrá solicitar del Tribunal sentenciador que remita directamente a la Sala Segunda del Supremo el testimonio"
+       }
+      },
+      {
+       "si": "Otra parte no preparó el recurso",
+       "entonces": "Puede adherirse a él.",
+       "articulos": [
+        "861"
+       ],
+       "literal": {
+        "articulo": "861",
+        "texto": "La parte que no haya preparado el recurso podrá adherirse a él"
+       }
+      },
+      {
+       "si": "La sentencia recurrida es absolutoria y el reo está preso",
+       "entonces": "Se le pone en libertad.",
+       "articulos": [
+        "861 bis a"
+       ],
+       "literal": {
+        "articulo": "861 bis a",
+        "texto": "Si la sentencia recurrida fuere absolutoria y el reo estuviere preso, será puesto en libertad"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede ejecutarse una sentencia recurrible en casación mientras corre el plazo para prepararla?",
+      "a": "No. No se ejecuta hasta que transcurre ese plazo; si se prepara el recurso, se forma un testimonio de resguardo para su ejecución en su caso.",
+      "articulos": [
+       "861 bis a"
+      ],
+      "literal": {
+       "articulo": "861 bis a",
+       "texto": "no se ejecutarán hasta que transcurra el término señalado para prepararlo"
+      }
+     },
+     "conexiones": [
       "855",
-      "861 bis c"
+      "856",
+      "857",
+      "858",
+      "859",
+      "860",
+      "861",
+      "861 bis a",
+      "861 bis b",
+      "861 bis c",
+      "862"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
      "id": "recursos-862",
@@ -5873,71 +7344,407 @@
     },
     {
      "id": "recursos-873",
-     "fase": "De la interposición del recurso",
-     "subtitulo": "CAPÍTULO I · Sección 4.ª · arts. 873 a 879",
-     "descripcion": "",
+     "fase": "Interposición de la casación",
+     "subtitulo": "Ante la Sala Segunda del TS · escrito y depósito",
+     "descripcion": "El recurso se interpone ante la Sala Segunda del Tribunal Supremo dentro del plazo del emplazamiento (art. 859). Lo firman Abogado y Procurador con poder bastante. En párrafos numerados se expone: cada motivo con un breve extracto, el artículo de la ley que lo autoriza y, si es quebrantamiento de forma, la reclamación hecha para subsanarlo. Se acompañan el testimonio y copias para las demás partes. El acusador privado y el actor civil constituyen el depósito del art. 875.",
      "articulos": [
       "873",
-      "879"
+      "874",
+      "875",
+      "878"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Interposición (y adhesión de las demás partes)",
+       "plazo": "Los términos del emplazamiento (art. 859)",
+       "articulo": "873",
+       "literal": "dentro de los términos señalados en el artículo 859"
+      },
+      {
+       "acto": "Si se interpone el último día con el depósito en metálico: entrega del resguardo",
+       "plazo": "48 horas",
+       "articulo": "875",
+       "literal": "en el plazo de las cuarenta y ocho horas siguientes se sustituye por el resguardo"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Pasa el plazo sin interponerlo",
+       "entonces": "El Secretario judicial declara desierto el recurso por decreto; contra él cabe recurso directo de revisión.",
+       "articulos": [
+        "873"
+       ],
+       "literal": {
+        "articulo": "873",
+        "texto": "el Secretario judicial dictará decreto declarando desierto el recurso"
+       }
+      },
+      {
+       "si": "No se presentan las copias para las demás partes",
+       "entonces": "Se desestima el escrito.",
+       "articulos": [
+        "874",
+        "884"
+       ],
+       "literal": {
+        "articulo": "874",
+        "texto": "La falta de presentación de copias producirá la desestimación del escrito"
+       }
+      },
+      {
+       "si": "Las demás partes quieren sumarse",
+       "entonces": "Pueden adherirse en los mismos términos.",
+       "articulos": [
+        "873",
+        "861"
+       ],
+       "literal": {
+        "articulo": "873",
+        "texto": "En los mismos términos podrán adherirse al recurso las demás partes"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede presentarse el escrito de interposición con la protesta de completarlo después?",
+      "a": "No: el art. 874 no admite en ningún caso la protesta de presentarlo.",
+      "articulos": [
+       "874"
+      ],
+      "literal": {
+       "articulo": "874",
+       "texto": "sin que en ningún caso pueda admitirse la protesta de presentarlo"
+      }
+     },
+     "conexiones": [
+      "859",
+      "860",
+      "861",
       "873",
+      "874",
+      "875",
+      "876",
+      "877",
+      "878",
       "879"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [],
+     "duda": "El art. 875 fija los depósitos en pesetas (12.000, 6.000 y 7.500). Ver PENDIENTES.md.",
+     "aviso": "Según la nota general del BOE a esta ley, desde el 1 de octubre de 2015 las referencias a los Secretarios judiciales se entienden hechas a los Letrados de la Administración de Justicia (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
     },
     {
      "id": "recursos-880",
-     "fase": "De la sustanciación del recurso",
-     "subtitulo": "CAPÍTULO I · Sección 5.ª · arts. 880 a 893",
-     "descripcion": "",
+     "fase": "Sustanciación y admisión",
+     "subtitulo": "Nota, instrucción del ponente y decisión sobre la admisión",
+     "descripcion": "El Secretario judicial designa al Magistrado ponente y forma la nota del recurso. En ese plazo, el Fiscal y las partes se instruyen y pueden impugnar la admisión del recurso o de la adhesión. Las partes pueden pedir vista. Después, el ponente instruye y la Sala decide sobre la admisión. Las causas de inadmisión obligatoria están en el art. 884 y las potestativas en el art. 885. Para inadmitir hace falta unanimidad. Si es admisible, la Sala lo acuerda de plano por providencia y se señala la vista o el día para el fallo. Contra la decisión sobre la admisión no cabe recurso.",
      "articulos": [
       "880",
+      "882",
+      "882 bis",
+      "883",
+      "884",
+      "885",
+      "889",
       "893"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Nota del recurso (y, en ese plazo, impugnación de la admisión por las partes)",
+       "plazo": "10 días",
+       "articulo": "880",
+       "literal": "formará nota autorizada del recurso en término de diez días"
+      },
+      {
+       "acto": "Instrucción del Magistrado ponente",
+       "plazo": "10 días",
+       "articulo": "883",
+       "literal": "pasarán los autos al Magistrado ponente para instrucción, por término de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El recurso no respeta los hechos probados (salvo el motivo del art. 849.2.º)",
+       "entonces": "Es inadmisible.",
+       "articulos": [
+        "884"
+       ],
+       "literal": {
+        "articulo": "884",
+        "texto": "Cuando no se respeten los hechos que la sentencia declare probados"
+       }
+      },
+      {
+       "si": "Carece manifiestamente de fundamento o el TS ya desestimó en el fondo recursos sustancialmente iguales",
+       "entonces": "Puede inadmitirse, total o parcialmente.",
+       "articulos": [
+        "885"
+       ],
+       "literal": {
+        "articulo": "885",
+        "texto": "Cuando carezca manifiestamente de fundamento"
+       }
+      },
+      {
+       "si": "Recurso contra sentencia de apelación de una Audiencia (art. 847.1.b) sin interés casacional",
+       "entonces": "Puede inadmitirse por providencia sucintamente motivada, por unanimidad.",
+       "articulos": [
+        "889"
+       ],
+       "literal": {
+        "articulo": "889",
+        "texto": "siempre que haya unanimidad por carencia de interés casacional"
+       }
+      },
+      {
+       "si": "Se inadmite y el recurrente constituyó depósito",
+       "entonces": "Lo pierde.",
+       "articulos": [
+        "890"
+       ],
+       "literal": {
+        "articulo": "890",
+        "texto": "se le condenará a perderlo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué mayoría hace falta para denegar la admisión del recurso de casación?",
+      "a": "Unanimidad.",
+      "articulos": [
+       "889"
+      ],
+      "literal": {
+       "articulo": "889",
+       "texto": "Para denegar la admisión del recurso será necesario que el acuerdo se adopte por unanimidad"
+      }
+     },
+     "conexiones": [
       "880",
+      "881",
+      "882",
+      "882 bis",
+      "883",
+      "884",
+      "885",
+      "887",
+      "888",
+      "889",
+      "890",
+      "892",
       "893"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [],
+     "aviso": "Según la nota general del BOE a esta ley, desde el 1 de octubre de 2015 las referencias a los Secretarios judiciales se entienden hechas a los Letrados de la Administración de Justicia (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
     },
     {
      "id": "recursos-893_bis_a",
-     "fase": "De la decisión del recurso",
-     "subtitulo": "CAPÍTULO I · Sección 6.ª · arts. 893 bis a a 909",
-     "descripcion": "",
+     "fase": "Vista, sentencia y efectos",
+     "subtitulo": "Casa y anula · segunda sentencia · sin recurso",
+     "descripcion": "La Sala puede decidir sin vista, salvo en dos casos: si las partes la pidieron y la pena es superior a seis años, o si la Sala la considera necesaria. Además, la acuerda siempre en los casos del segundo párrafo del art. 893 bis a. La Sala la forman tres Magistrados, y cinco si la pena impuesta o que podría imponerse supera los doce años. Si estima un motivo, casa y anula la resolución, con costas de oficio y devolución del depósito. Si es por quebrantamiento de forma, devuelve la causa al tribunal de origen. Si es por infracción de ley, dicta a continuación una segunda sentencia. Contra la sentencia de casación no cabe recurso.",
      "articulos": [
       "893 bis a",
-      "907 a 909"
+      "898",
+      "899",
+      "901",
+      "901 bis a",
+      "901 bis b",
+      "902",
+      "903",
+      "904"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Sentencia de casación",
+       "plazo": "10 días desde la vista",
+       "articulo": "899",
+       "literal": "la Sala resolverá el recurso dentro de los diez días siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Las partes piden vista y la pena es superior a seis años",
+       "entonces": "Hay vista; también si la Sala la estima necesaria.",
+       "articulos": [
+        "893 bis a"
+       ],
+       "literal": {
+        "articulo": "893 bis a",
+        "texto": "la duración de la pena impuesta o que pueda imponerse fuese superior a seis años"
+       }
+      },
+      {
+       "si": "Se estima un quebrantamiento de forma",
+       "entonces": "Se devuelve la causa al tribunal de origen para reponerla al momento de la falta.",
+       "articulos": [
+        "901 bis a"
+       ],
+       "literal": {
+        "articulo": "901 bis a",
+        "texto": "ordenará la devolución de la causa al Tribunal de que proceda"
+       }
+      },
+      {
+       "si": "Se estima una infracción de ley",
+       "entonces": "Se dicta una segunda sentencia, separada, sin imponer pena superior a la de la sentencia casada o a la pedida por el recurrente.",
+       "articulos": [
+        "902"
+       ],
+       "literal": {
+        "articulo": "902",
+        "texto": "dictará a continuación, pero separadamente, la sentencia que proceda conforme a derecho"
+       }
+      },
+      {
+       "si": "Se desestima el recurso",
+       "entonces": "Costas al recurrente y pérdida del depósito; el Ministerio Fiscal no paga costas.",
+       "articulos": [
+        "901"
+       ],
+       "literal": {
+        "articulo": "901",
+        "texto": "condenará al recurrente en costas y a la pérdida del depósito"
+       }
+      },
+      {
+       "si": "Recurre solo uno de los procesados",
+       "entonces": "La nueva sentencia favorece a los demás que estén en su misma situación y nunca les perjudica.",
+       "articulos": [
+        "903"
+       ],
+       "literal": {
+        "articulo": "903",
+        "texto": "Nunca les perjudicará en lo que les fuere adverso"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuántos Magistrados forman la Sala de casación?",
+      "a": "Tres; cinco si la pena impuesta, o la que podría imponerse si prosperan los motivos de las acusaciones, supera los doce años.",
+      "articulos": [
+       "898"
+      ],
+      "literal": {
+       "articulo": "898",
+       "texto": "en cuyo caso se formará por cinco"
+      }
+     },
+     "conexiones": [
       "893 bis a",
-      "907 a 909"
+      "893 bis b",
+      "894",
+      "896",
+      "897",
+      "898",
+      "899",
+      "900",
+      "901",
+      "901 bis a",
+      "901 bis b",
+      "902",
+      "903",
+      "904"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "ejecucion"
+     ]
     },
     {
      "id": "recursos-954",
-     "fase": "Del recurso de revisión",
-     "subtitulo": "TÍTULO III · arts. 954 a 961",
-     "descripcion": "",
+     "fase": "Revisión de sentencias firmes",
+     "subtitulo": "Motivos tasados · autorización previa de la Sala",
+     "descripcion": "Permite revisar sentencias firmes por los motivos del art. 954.1: prueba falsa o delito de un tercero declarados por sentencia firme; prevaricación de un juez del proceso; dos sentencias firmes sobre el mismo hecho y encausado; hechos o pruebas nuevos que habrían llevado a absolver o a condenar menos; o sentencia no penal posterior contraria a la cuestión prejudicial. Hay además dos supuestos propios: el decomiso autónomo (art. 954.2) y una sentencia del TEDH (art. 954.3). Pueden promoverla el penado y, si ha fallecido, su familia; también el Fiscal. La Sala, oído el Fiscal, autoriza o deniega la interposición. Autorizada, se sustancia oyendo al Fiscal y a los penados y sigue los trámites de la casación por infracción de ley. La sentencia es irrevocable.",
      "articulos": [
       "954",
+      "955",
+      "956",
+      "957",
+      "958",
+      "959",
+      "960",
       "961"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Revisión por sentencia del TEDH",
+       "plazo": "1 año desde la firmeza de la sentencia del TEDH",
+       "articulo": "954",
+       "literal": "en el plazo de un año desde que adquiera firmeza la sentencia del referido Tribunal"
+      },
+      {
+       "acto": "Interposición una vez autorizada",
+       "plazo": "15 días",
+       "articulo": "957",
+       "literal": "el promovente dispondrá de quince días para su interposición"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Después de la sentencia aparecen hechos o pruebas nuevos",
+       "entonces": "Motivo de revisión si, de haberse aportado, habrían llevado a la absolución o a una condena menos grave.",
+       "articulos": [
+        "954"
+       ],
+       "literal": {
+        "articulo": "954",
+        "texto": "Cuando después de la sentencia sobrevenga el conocimiento de hechos o elementos de prueba"
+       }
+      },
+      {
+       "si": "El penado ha fallecido",
+       "entonces": "Pueden promoverla su cónyuge o quien convivía con él como tal, ascendientes y descendientes.",
+       "articulos": [
+        "955"
+       ],
+       "literal": {
+        "articulo": "955",
+        "texto": "con objeto de rehabilitar la memoria del difunto"
+       }
+      },
+      {
+       "si": "La Sala autoriza o deniega la interposición",
+       "entonces": "Ese auto no admite recurso.",
+       "articulos": [
+        "957"
+       ],
+       "literal": {
+        "articulo": "957",
+        "texto": "no son susceptibles de recurso alguno"
+       }
+      },
+      {
+       "si": "La revisión termina en sentencia absolutoria",
+       "entonces": "Hay derecho a indemnización, que paga el Estado.",
+       "articulos": [
+        "960"
+       ],
+       "literal": {
+        "articulo": "960",
+        "texto": "tendrán derecho a las indemnizaciones civiles a que hubiere lugar según el derecho común"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cabe recurso contra la sentencia que resuelve la revisión?",
+      "a": "No: la sentencia es irrevocable.",
+      "articulos": [
+       "959"
+      ],
+      "literal": {
+       "articulo": "959",
+       "texto": "dictará sentencia, que será irrevocable"
+      }
+     },
+     "conexiones": [
       "954",
+      "955",
+      "956",
+      "957",
+      "958",
+      "959",
+      "960",
       "961"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [],
+     "duda": "El art. 958 remite a los «números 1.º a 4.º del artículo 954», pero el art. 954.1 se ordena hoy por letras a) a e) con supuestos distintos. El art. 956 cita el «Ministerio de Gracia y Justicia», y «la Sala» no se concreta. Ver PENDIENTES.md."
     }
    ]
   },

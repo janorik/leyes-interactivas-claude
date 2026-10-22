@@ -132,6 +132,71 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [x] **Recursos de la LECrim como en la LEC (hecho):** 14 recursos y 27 casos del selector, con «Por resolución», «Recursos» y «Ponte a prueba». Antes: al usuario le gusta la pestaña Recursos de la LEC (selector «Por resolución», fichas de cada recurso y «Ponte a prueba»). En la LECrim ahora solo hay tarjetas de bloques en esqueleto. Hacer `lecrim/datos/recursos.json` con el mismo formato (recursos, selector por resolución con frase literal, test), a partir de los arts. 216-238 ter (recursos contra resoluciones procesales), 846 bis a-846 ter (apelación), 847-933 (casación) y 954-961 (revisión), y los recursos propios del abreviado, juicio rápido y delitos leves. Todo con `revisado: false` y las dudas anotadas aquí.
 - [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).
 
+### Disposiciones generales: competencia y acciones (contenido elaborado, pendiente de revisión)
+
+> Del Libro I solo se desarrollan dos fichas, por decisión del usuario (22-10-2026): «Competencia: quién instruye y quién juzga» (arts. 8-51) y «Acciones penal y civil» (arts. 100-117), con 3 plazos. El resto del Libro I queda como índice aunque el canon lo marque PARCIAL: no ayuda a orientarse en el recorrido (criterio anotado en CLAUDE.md). Los recursos contra resoluciones procesales siguen en la pestaña Recursos.
+
+- [x] **Qué títulos del Libro I se desarrollan. Resuelta por el usuario (22-10-2026):** solo Competencia y Acciones.
+- [ ] **Terminología de los juzgados (arts. 15 bis y 17 bis).** Siguen diciendo «Juez/Juzgados de Violencia sobre la Mujer»; el art. 14 ya habla de Secciones de los Tribunales de Instancia. En la app: nota «Ojo» con la regla de la nota general del BOE (LO 1/2025, ref. BOE-A-2025-76, Verificable).
+- [x] **Art. 111: «salvo siempre lo dispuesto en los arts. 4.º, 5.º y 6.º de este Código». Resuelta con criterio interpretativo (criterio aportado por el usuario, 22-10-2026).** Es una referencia interna a la propia LECrim: los arts. 4 a 6 están en su capítulo «Cuestiones prejudiciales» (Verificable en la app). «Código» responde a la denominación histórica del texto; no es una remisión errónea. En la app: solo en conexiones.
+- [ ] **Art. 14: reglas especiales de competencia (apartados 5, 6 y 7). Pendiente de revisión individual (criterio aportado por el usuario, 22-10-2026).** La ficha no puede quedarse en las reglas generales de pena y lugar. Hecho: la descripción distingue instrucción, enjuiciamiento y demás atribuciones de las secciones especializadas; tres alternativas nuevas resumen los supuestos del apartado 5 (violencia sobre la mujer), los del apartado 6 (infancia y adolescencia) y la preferencia del apartado 7. Falta tu revisión de que el resumen no confunde las competencias de cada sección. Las alternativas citan los arts. 468 y 177 bis del Código Penal sin enlace (referencia BOE pendiente, ver «Enlace al Código Penal»).
+  - **Tu respuesta:**
+- [ ] **Revisa las 2 fichas:** las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
+
+### Aceptación de decreto, e injuria y calumnia (contenido elaborado, pendiente de revisión)
+
+> Desarrolladas 4 fases y 5 plazos dentro del bloque «Otros procedimientos especiales», según el canon (bloques 28 y 30): aceptación de decreto (arts. 803 bis a-j, 2 fases) e injuria y calumnia contra particulares (arts. 804-815, 2 fases). Aforados, decomiso, imprenta, extradición y reos ausentes quedan como índice (canon: NO). Propuestas de Claude, No verificables hasta que las confirmes.
+
+- [ ] **«Cinco días hábiles antes de la fecha» (art. 803 bis g). Pendiente de revisión individual.** Puede leerse como «al menos cinco días hábiles antes» o «dentro de los cinco días hábiles anteriores». **Propuesta:** «al menos cinco días hábiles antes», porque el artículo lo pone como condición para que la comparecencia pueda celebrarse. En la app la etiqueta dice «5 días hábiles antes de la fecha señalada», con la frase literal y nota de duda.
+  - **Tu respuesta:**
+- [ ] **«El respectivo artículo del Código Penal» (art. 807). Pendiente de revisión individual.** Remisión genérica a la publicidad de la injuria o calumnia; la LECrim no dice qué artículo. No lo concreto de memoria.
+  - **Tu respuesta:**
+- [ ] **Enlace al Código Penal.** Las fases citan el art. 80 del Código Penal (803 bis a) y el Código Penal en general (807) sin enlace, porque la referencia BOE no sale del texto de la LECrim. Creo que es BOE-A-1995-25444 (Ley Orgánica 10/1995, de 23 de noviembre), pero lo digo de memoria (No verificable). Si lo confirmas, añado el enlace.
+  - **Tu respuesta:**
+- [ ] **Acto de conciliación (art. 804).** La LECrim exige la certificación, pero no dice dónde se regula hoy ese acto. No lo cito de memoria. ¿Quieres que la ficha lo indique con su enlace? Dime la norma.
+  - **Tu respuesta:**
+- [ ] **Injuria y calumnia: «sumario» y «Juez instructor» (arts. 807-812).** El título habla de sumario y procesamiento. Queda por revisar cómo encaja hoy con el procedimiento que corresponda por la pena (por ejemplo, el abreviado). En la app las fases usan los términos literales de la ley y enlazan con la conclusión del sumario y el juicio oral. **Pendiente de revisión individual.**
+  - **Tu respuesta:**
+- [x] **«Juzgado de Instrucción» (aceptación de decreto).** La nota general del BOE manda entenderlo referido a las Secciones de los Tribunales de Instancia (LO 1/2025, ref. BOE-A-2025-76). En la app: nota «Ojo» en las dos fases, con enlace.
+- [ ] **Revisa las 4 fases:** las frases entre « » son literales (comprobadas por el script); las descripciones y etiquetas son resumen mío.
+
+### Apelación, casación y revisión (contenido elaborado, pendiente de revisión)
+
+> Bloque desarrollado: 7 fases y 15 plazos (arts. 846 bis a a 961), según el canon (bloques 31, 32 y 33). La fase «Recurso de queja por denegación del testimonio» (arts. 862-872) queda como índice: el canon no marca ninguno de sus artículos (su ficha resumida sigue en la pestaña Recursos). Propuestas de Claude, No verificables hasta que las confirmes.
+
+- [ ] **Art. 958: remite a «números 1.º a 4.º del artículo 954». Pendiente de revisión individual.** El art. 954.1 se ordena hoy por letras a) a e) y sus supuestos no coinciden con lo que describe el 958 (por ejemplo, el 958 habla de comprobar «la identidad de la persona cuya muerte hubiese sido penada», supuesto que no figura en el 954 vigente). Remisión desfasada: no la corrijo por analogía. **Propuesta:** dejarla sin equivalencia en la app (así está: solo la nota de duda en la fase 8) hasta que la cotejes.
+  - **Tu respuesta:**
+- [ ] **Art. 956: «Ministerio de Gracia y Justicia». Pendiente de revisión individual.** Denominación histórica; en la app solo está en el texto literal.
+  - **Tu respuesta:**
+- [ ] **Casación contra sentencias de apelación de las Audiencias: ¿cabe el art. 852? Pendiente de revisión individual.** El art. 847.1.b solo admite «infracción de ley del motivo previsto en el número 1.º del artículo 849»; el art. 852 dice que «en todo caso» puede fundarse en infracción de precepto constitucional. No elijo. **Propuesta:** dejar en la app las dos frases literales con la nota de duda (así está, fase 2).
+  - **Tu respuesta:**
+- [ ] **Art. 875: depósitos en pesetas (12.000, 6.000 y 7.500). Pendiente de revisión individual.** No convierto a euros: el texto consolidado no da la cifra en euros. En la app solo figura la nota de duda (fase 5).
+  - **Tu respuesta:**
+- [ ] **Art. 846 bis a y el auto de la declinatoria (relacionado con la duda «Auto que resuelve la declinatoria (art. 676)» de la sección Recursos).** El art. 846 bis a dice que son apelables ante el TSJ los autos del Magistrado-Presidente del Jurado «en los casos señalados en el artículo 676» (Verificable: texto literal). Puede servir para contestar esa duda en el caso del Jurado; fuera del Jurado sigue sin decirse el órgano.
+- [ ] **Ley Orgánica del Tribunal del Jurado (art. 846 bis a).** La fase 1 la nombra sin enlace, porque su referencia BOE sigue pendiente de comprobar (ver «Tribunal del Jurado» en Puntos de extracción).
+- [ ] **Revisa las 7 fases:** las frases entre « » son literales (comprobadas por el script); las descripciones y las etiquetas cortas de los plazos son resumen mío.
+
+### Medidas de investigación (contenido elaborado, pendiente de revisión)
+
+> Bloque desarrollado: 9 fases y 18 plazos (arts. 545 a 588 octies), según el canon (bloque 20, PARCIAL). Propuestas de Claude, No verificables hasta que las confirmes. Estados: resuelta / resuelta con criterio interpretativo / pendiente de revisión individual.
+
+- [ ] **Canon: alcance dentro de cada fase.** El canon marca 18 artículos. Todas las fases del bloque tienen alguno, salvo «Del registro de libros y papeles» (arts. 573-578), que queda como índice (punto gris). Dentro de las fases desarrolladas he citado también artículos vecinos no listados (por ejemplo 551, 553, 554, 558, 570, 585-587, 588 bis f, 588 ter c, 588 ter k y m) porque explican la fase. Dime si prefieres limitar las fichas a los artículos del canon.
+  - **Tu respuesta:**
+- [ ] **«Artículo 6.º de la Constitución» (arts. 550 y 551). Pendiente de revisión individual.** Remisión desfasada a una Constitución anterior. **Propuesta:** criterio interpretativo: leerla como remisión a la inviolabilidad del domicilio de la Constitución vigente (art. 18.2 CE), sin decir que sea una sustitución formal. En la app solo figura en la nota «Duda de interpretación» de la fase 1.
+  - **Tu respuesta:**
+- [ ] **«Ministerio de Gracia y Justicia» (art. 560). Pendiente de revisión individual.** Denominación histórica. En la app solo está en el texto literal (la fase 1 la menciona en la nota de duda).
+  - **Tu respuesta:**
+- [ ] **Comunicaciones orales: sin plazo propio. Pendiente de revisión individual.** El art. 588 bis e.1 dice que cada medida tendrá «la duración que se especifique para cada una de ellas», pero los arts. 588 quater a-e no fijan meses: la medida se liga a «encuentros concretos» y cesa por el art. 588 bis j. **Propuesta:** no poner ningún plazo en la ficha (así está). En la app: fase 6, nota de duda.
+  - **Tu respuesta:**
+- [ ] **«Desde que fue ordenada la interceptación» (art. 588 sexies c.3). Pendiente de revisión individual.** El apartado trata de la ampliación de un registro de dispositivos, no de una interceptación. **Propuesta:** contar las 72 horas desde que se ordenó la ampliación, como en el apartado 4 («desde que fue ordenada la medida»). En la app solo se muestra el plazo del apartado 4.
+  - **Tu respuesta:**
+- [ ] **Prórroga de la orden de conservación (art. 588 octies). Pendiente de revisión individual.** «Prorrogable una sola vez hasta que se autorice la cesión o se cumplan ciento ochenta días.» **Propuesta:** 180 días es el máximo total contado desde el requerimiento (90 + hasta 90 más), no 90 + 180. En la app figura con la frase literal, sin sumar.
+  - **Tu respuesta:**
+- [ ] **Imágenes en lugares públicos (art. 588 quinquies a).** El artículo atribuye la medida a la Policía Judicial y no menciona autorización judicial; así lo dice la ficha, sin añadir nada. Revisa si quieres una nota con alguna fuente que lo aclare.
+- [ ] **«Capacidad modificada judicialmente» (art. 588 septies a.1.c).** La pregunta de la fase 9 copia el texto literal. Es posible que esa terminología no coincida con la de la legislación civil vigente (No verificable: no sale del texto de la LECrim). Dime si quieres una nota.
+- [x] **«Secretario» (arts. 569, 574, 586-588). Resuelta:** la nota general del BOE a la LECrim dice que las referencias a los Secretarios judiciales se entienden hechas a los Letrados de la Administración de Justicia (LO 7/2015, ref. BOE-A-2015-8167). En la app: nota «Ojo» en la fase 1 con enlace al BOE. Comprueba que el enlace abre esa ley.
+- [ ] **Revisa las 9 fases:** las frases entre « » son literales (comprobadas por el script); las descripciones son resumen mío.
+
 ### Ejecución de las sentencias (contenido elaborado, pendiente de revisión)
 
 > Bloque desarrollado: 6 fases y 8 plazos (arts. 983 a 999; el 995 está suprimido). Propuestas de Claude, No verificables hasta que las confirmes. Estados: resuelta / resuelta con criterio interpretativo / pendiente de revisión individual.
