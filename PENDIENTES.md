@@ -125,6 +125,20 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [x] **Recursos de la LECrim como en la LEC (hecho):** 14 recursos y 27 casos del selector, con «Por resolución», «Recursos» y «Ponte a prueba». Antes: al usuario le gusta la pestaña Recursos de la LEC (selector «Por resolución», fichas de cada recurso y «Ponte a prueba»). En la LECrim ahora solo hay tarjetas de bloques en esqueleto. Hacer `lecrim/datos/recursos.json` con el mismo formato (recursos, selector por resolución con frase literal, test), a partir de los arts. 216-238 ter (recursos contra resoluciones procesales), 846 bis a-846 ter (apelación), 847-933 (casación) y 954-961 (revisión), y los recursos propios del abreviado, juicio rápido y delitos leves. Todo con `revisado: false` y las dudas anotadas aquí.
 - [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).
 
+### Ejecución de las sentencias (contenido elaborado, pendiente de revisión)
+
+> Bloque desarrollado: 6 fases y 8 plazos (arts. 983 a 999; el 995 está suprimido). Propuestas de Claude, No verificables hasta que las confirmes. Estados: resuelta / resuelta con criterio interpretativo / pendiente de revisión individual.
+
+- [ ] **«Juicios sobre faltas» y apelación ante el «Juez de Instrucción» (art. 984).** El párrafo primero atribuye la ejecución «en los juicios sobre faltas» al órgano que conoció del juicio; el segundo habla del «Juez de Instrucción que haya conocido en apelación de un juicio de faltas» (Verificable).
+  En la app: Procesos › Ejecución de las sentencias › fase 1, aviso «Duda de interpretación».
+  - **Propuesta:** dos estados distintos. «Juicios sobre faltas» del párrafo primero: resuelta con criterio interpretativo (juicio sobre delitos leves, nota general del BOE). Párrafo segundo: pendiente de revisión individual, porque además de la terminología menciona un órgano de apelación («Juez de Instrucción») que habría que contrastar con quién conoce hoy de la apelación del art. 976. No lo he concretado en la ficha.
+  - **Tu respuesta:**
+- [ ] **Términos de 1882 en el incidente de demencia (arts. 991 a 994).** «Confinados», «presidio», «Comandancia» y «Comandante del presidio», «Dirección General de Establecimientos Penales», «Academia de Medicina y Cirugía» (Verificable).
+  En la app: fase 5, aviso «Duda de interpretación». La ficha resume el trámite sin usar esos nombres ni sustituirlos por órganos actuales.
+  - **Propuesta:** pendiente de revisión individual. No sustituyo ningún órgano por su supuesto equivalente actual.
+  - **Tu respuesta:**
+- [ ] **Revisa las 6 fases:** las frases entre « » son literales; las descripciones son resumen mío.
+
 ### Juicio sobre delitos leves (contenido elaborado, pendiente de revisión)
 
 > Bloque desarrollado: 6 fases y 4 plazos (arts. 962 a 977; los arts. 978 a 982 están derogados). Propuestas de Claude, No verificables hasta que las confirmes. Estados: resuelta / resuelta con criterio interpretativo / pendiente de revisión individual.
