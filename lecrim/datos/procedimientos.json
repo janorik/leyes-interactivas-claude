@@ -6162,7 +6162,7 @@
       "968"
      ],
      "continua_en": [],
-     "duda": "El art. 965.2 habla de «juicios de faltas». Ver PENDIENTES.md."
+     "aviso": "El art. 965.2 habla de «juicios de faltas»: se lee en el marco actual del juicio sobre delitos leves (nota general del BOE). Es una lectura interpretativa, no una modificación literal del texto."
     },
     {
      "id": "lev-juicio",
@@ -6296,7 +6296,8 @@
      "continua_en": [
       "ejecucion"
      ],
-     "duda": "El art. 974.1 remite al plazo del «párrafo tercero del artículo 212» para ejecutar la sentencia, y el art. 973.1 habla de «calificación de la falta». Ver PENDIENTES.md."
+     "duda": "El art. 974.1 remite al plazo del «párrafo tercero del artículo 212» para ejecutar la sentencia, que no coincide con los cinco días de apelación del art. 976.1. Ver PENDIENTES.md (misma duda que en Recursos).",
+     "aviso": "El art. 973.1 dice «calificación de la falta»: se lee como calificación del delito leve. Es una lectura interpretativa; el texto consolidado conserva «falta»."
     },
     {
      "id": "lev-apelacion",

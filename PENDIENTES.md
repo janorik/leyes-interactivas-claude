@@ -129,14 +129,10 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > Bloque desarrollado: 6 fases y 4 plazos (arts. 962 a 977; los arts. 978 a 982 están derogados). Propuestas de Claude, No verificables hasta que las confirmes. Estados: resuelta / resuelta con criterio interpretativo / pendiente de revisión individual.
 
-- [ ] **Ejecución de la sentencia: el art. 974.1 remite al «párrafo tercero del artículo 212».** La sentencia se ejecuta «transcurrido el término fijado en el párrafo tercero del artículo 212» si nadie apela. Ese párrafo fija la apelación «en juicio sobre faltas» para «el primer día siguiente» a la notificación, mientras que el art. 976.1 da «cinco días» (Verificable). Es la misma duda que ya está en «Recursos › Delitos leves: plazo de la apelación».
-  En la app: Procesos › Juicio sobre delitos leves › fase 5, aviso «Duda de interpretación»; fase 6 con el plazo de 5 días del art. 976.
-  - **Propuesta:** pendiente de revisión individual, junto con la duda de Recursos. Hasta que decidas, la app no fija cuándo empieza la ejecución.
+- [ ] **Ejecución de la sentencia: el art. 974.1 remite al «párrafo tercero del artículo 212». Pendiente de revisión individual (decisión del usuario (22-10-2026)).** El art. 974.1 remite al plazo del art. 212 («el primer día siguiente»), mientras que el art. 976.1 da cinco días para apelar (Verificable). Antes de resolver hay que comprobar cómo se relaciona el plazo de ejecución con la firmeza de la sentencia y con el plazo de impugnación de los perjudicados no comparecidos. Se analiza junto con la duda «Recursos › Delitos leves: plazo de la apelación», sin duplicar el análisis.
+  En la app: Juicio sobre delitos leves › fase 5, aviso «Duda de interpretación».
   - **Tu respuesta:**
-- [ ] **«Juicios de faltas» (art. 965.2) y «calificación de la falta» (art. 973.1).**
-  En la app: fases 3 y 5, aviso «Duda de interpretación».
-  - **Propuesta:** resuelta con criterio interpretativo: se leen como delito leve (nota general del BOE), sin afirmar que toda antigua falta tenga hoy la misma tipificación. Pendiente de tu confirmación.
-  - **Tu respuesta:**
+- [x] **«Juicios de faltas» (art. 965.2) y «calificación de la falta» (art. 973.1). Resueltas con criterio interpretativo por el usuario (22-10-2026):** se leen en el marco actual del juicio sobre delitos leves y como «calificación del delito leve». Son lecturas interpretativas, no sustituciones literales del texto consolidado. En la app: notas «Ojo» en las fases 3 y 5.
 - [ ] **Revisa las 6 fases:** las frases entre « » son literales; las descripciones son resumen mío.
 
 ### Detención, prisión y libertad provisional (contenido elaborado, pendiente de revisión)
