@@ -64,6 +64,14 @@ h1.tit{font-family:Georgia,serif;font-size:1.75rem;line-height:1.15;margin:4px 0
 .lead{color:var(--suave);margin:0 0 12px}
 .ext p{margin:.3em 0 .5em}
 .relac{margin:0 0 12px}.relac small{display:block;color:var(--suave);margin-bottom:4px}.relac .btn{margin:0 6px 6px 0;white-space:normal}
+/* estado de revisión: punto de color (con texto oculto para lectores de pantalla) y leyenda */
+:root{--punto-r:#2e8b57;--punto-p:#d4a017;--punto-e:#9aa3a1}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--punto-r:#6cc49a;--punto-p:#f3c46b;--punto-e:#7d8986}}
+:root[data-theme="dark"]{--punto-r:#6cc49a;--punto-p:#f3c46b;--punto-e:#7d8986}
+.punto{display:inline-block;width:.7em;height:.7em;border-radius:50%;margin-right:.4em;vertical-align:.05em;box-shadow:0 0 0 1px rgba(0,0,0,.25);flex:none}
+.punto.r{background:var(--punto-r)}.punto.p{background:var(--punto-p)}.punto.e{background:var(--punto-e)}
+.revis{display:inline-block;font-size:.78rem;font-weight:600;color:var(--suave);white-space:nowrap;vertical-align:middle}
+.leyenda{font-size:.78rem;color:var(--suave);margin:-4px 0 12px;display:flex;flex-wrap:wrap;gap:4px 14px}
 .pend{display:inline-block;background:var(--pend-fondo);color:var(--pend);border:1px solid var(--aviso-borde);
   font-size:.72rem;font-weight:700;border-radius:999px;padding:2px 9px;vertical-align:middle;white-space:nowrap}
 .chip{display:inline-block;background:var(--chip);color:var(--chip-txt);border-radius:7px;padding:3px 8px;
@@ -296,6 +304,7 @@ footer{max-width:1180px;margin:0 auto;padding:0 16px 30px;font-size:.74rem;color
 
 <main id="main">
   <p class="aviso-boe" id="aviso"></p>
+  <p class="leyenda" id="leyenda" aria-label="Leyenda del estado de revisión"></p>
   <section id="v-procesos" hidden></section>
   <section id="v-proc" hidden></section>
   <section id="v-procedimientos" hidden></section>
@@ -417,8 +426,15 @@ const hrefArt = k => "#"+BASE+"~"+encodeURIComponent(k);  // abre el artículo e
 const hrefLey = k => "#art/"+encodeURIComponent(k);
 const chipArt = (k, etq) => A[k] ? '<a class="chip" href="'+hrefArt(k)+'">'+esc(etq || ("Art. "+k))+'</a>' : '<span class="chip">Art. '+esc(k)+' (?)</span>';
 const lit = t => '<div class="lit">'+esc(t)+'</div>';
-const PEND = '<span class="pend" title="Contenido elaborado: valídalo con el texto literal">Pendiente de revisión</span>';
-const ESQ = '<span class="pend esq" title="Fases tomadas del índice del BOE; el contenido de estudio está en preparación">Esqueleto · en preparación</span>';
+const D_R = '<span class="punto r" role="img" aria-label="Revisado" title="Revisado"></span>';
+const D_P = '<span class="punto p" role="img" aria-label="Pendiente de revisión" title="Pendiente de revisión: contenido elaborado, valídalo con el texto literal"></span>';
+const D_E = '<span class="punto e" role="img" aria-label="Solo índice, en preparación" title="Solo índice del BOE: el contenido de estudio está en preparación"></span>';
+const punto = (esq, rev) => esq ? D_E : rev ? D_R : D_P;   // en listas: solo el punto, junto al nombre
+const PEND = '<span class="revis">'+D_P+'Pendiente de revisión</span>';   // en fichas: punto y texto
+const ESQ = '<span class="revis">'+D_E+'Solo índice · en preparación</span>';
+const REV = '<span class="revis">'+D_R+'Revisado</span>';
+$("#leyenda").innerHTML = '<span>'+D_R+'Revisado</span><span>'+D_P+'Pendiente de revisión</span>'+
+  (PROC.some(p=>p.esqueleto) ? '<span>'+D_E+'Solo índice (en preparación)</span>' : '');
 const EXT = D.externos || [];
 // Artículos de una fase del esqueleto, en el orden de la ley.
 const artsRango = r => r && POS[r[0]]!=null && POS[r[1]]!=null ? CLAVES.slice(POS[r[0]], POS[r[1]]+1) : [];
@@ -476,8 +492,8 @@ function vistaProcesos(){
     grupos.map(g=>'<div class="seccion-t">'+esc(g)+'</div><div class="grid">'+
     PROC_MAPA.filter(p=>(p.grupo||"")===g).map(p=>tarjetaProc(p, p.bloque)).join("")+
     EXT.filter(e=>(e.grupo||"")===g).map(tarjetaExt).join("")+'</div>').join("")+
-    (REC.length ? '<div class="seccion-t">'+esc(D.recursos_ubicacion||"Libro II · Título IV · Recursos")+'</div><div class="grid"><a class="card proc-card" href="#recursos"><div class="eyebrow">recursos</div><h3>Sistema de recursos</h3><p>'+
-      REC.filter(r=>!r.no_vigente).length+' recursos · '+SEL.length+' resoluciones · test interactivo</p>'+(D.recursos_revisado?"":PEND)+'</a></div>' : "")+
+    (REC.length ? '<div class="seccion-t">'+esc(D.recursos_ubicacion||"Libro II · Título IV · Recursos")+'</div><div class="grid"><a class="card proc-card" href="#recursos"><div class="eyebrow">recursos</div><h3>'+punto(false,D.recursos_revisado)+'Sistema de recursos</h3><p>'+
+      REC.filter(r=>!r.no_vigente).length+' recursos · '+SEL.length+' resoluciones · test interactivo</p></a></div>' : "")+
     (PROXIMOS.length ? '<div class="seccion-t">Próximos módulos</div><div class="grid">'+
     PROXIMOS.map(([t,s]) => '<div class="card proc-card prox"><div class="eyebrow">Pronto</div><h3>'+esc(t)+'</h3><p>'+esc(s)+'</p></div>').join("")+'</div>' : "");
 }
@@ -485,9 +501,9 @@ function vistaProcesos(){
 /* Pestañas «Procedimientos» y «Recursos»: los mismos bloques del mapa, agrupados por tipo. */
 const VISTA = {procedimientos: D.vista_procedimientos || [], recursos: D.vista_recursos || []};
 function tarjetaProc(p, etq){
-  return '<a class="card proc-card" href="#proc/'+p.id+'"><div class="eyebrow">'+esc(etq!=null ? etq : (p.grupo||p.bloque))+'</div><h3>'+esc(p.nombre)+'</h3><p>'+
-    (p.esqueleto ? p.fases.length+(p.fases.length===1?" fase · ":" fases · ")+esc(p.ambito.corto)+"</p>"+ESQ :
-    p.fases.length+" fases · "+p.fases.reduce((n,f)=>n+f.plazos.length,0)+" plazos · "+p.fases.reduce((n,f)=>n+f.ramas.length,0)+" alternativas</p>"+(p.revisado?"":PEND))+'</a>';
+  return '<a class="card proc-card" href="#proc/'+p.id+'"><div class="eyebrow">'+esc(etq!=null ? etq : (p.grupo||p.bloque))+'</div><h3>'+punto(p.esqueleto,p.revisado)+esc(p.nombre)+'</h3><p>'+
+    (p.esqueleto ? p.fases.length+(p.fases.length===1?" fase · ":" fases · ")+esc(p.ambito.corto)+"</p>" :
+    p.fases.length+" fases · "+p.fases.reduce((n,f)=>n+f.plazos.length,0)+" plazos · "+p.fases.reduce((n,f)=>n+f.ramas.length,0)+" alternativas</p>")+'</a>';
 }
 function tarjetaExt(e){
   return '<div class="card proc-card ext"><div class="eyebrow">otra ley</div><h3>'+esc(e.nombre)+'</h3><p>'+conLeyes(e.texto)+'</p>'+
@@ -497,7 +513,7 @@ function tarjetaItem(it){
   if (typeof it === "string"){ const p = PROC.find(x=>x.id===it); return p ? tarjetaProc(p) : ""; }
   if (it.externo){ const e = EXT.find(x=>x.id===it.externo); return e ? tarjetaExt(e) : ""; }
   const p = PROC.find(x=>x.id===it.proc), f = p && p.fases.find(x=>x.id===it.fase);
-  return f ? '<a class="card proc-card" href="#proc/'+p.id+'/'+f.id+'"><div class="eyebrow">'+esc(p.nombre)+' · fase</div><h3>'+esc(f.fase)+'</h3><p>'+esc(f.subtitulo||"")+'</p>'+(f.esqueleto?ESQ:(p.revisado?"":PEND))+'</a>' : "";
+  return f ? '<a class="card proc-card" href="#proc/'+p.id+'/'+f.id+'"><div class="eyebrow">'+esc(p.nombre)+' · fase</div><h3>'+punto(f.esqueleto,p.revisado)+esc(f.fase)+'</h3><p>'+esc(f.subtitulo||"")+'</p></a>' : "";
 }
 function vistaAgrupada(cual){
   const tit = cual==="procedimientos" ? ["Por tipo de juicio","Procedimientos"] : ["Mapa de recursos","Recursos"];
@@ -517,7 +533,7 @@ function vistaProc(id, faseId){
   let h = '<div class="migas">'+(p.solo_procedimientos?'<a href="#procedimientos">Procedimientos</a>':'<a href="#procesos">Mapa</a>')+'<span>'+esc(p.nombre)+'</span></div>'+
     '<div class="cabproc"><div><div class="eyebrow">Ruta procesal</div><h1 class="tit">'+esc(p.nombre)+'</h1></div>'+
     (TARJETAS.some(c=>c.p===p) ? '<a class="btn" href="#repaso/'+p.id+'">🃏 Modo repaso</a>' : '')+'</div>'+
-    '<p class="lead">'+esc(p.resumen)+' '+(p.esqueleto?ESQ:p.revisado?"":PEND)+'</p>'+
+    '<p class="lead">'+esc(p.resumen)+' '+(p.esqueleto?ESQ:p.revisado?REV:PEND)+'</p>'+
     ((p.relacionados||[]).length ? '<div class="relac"><small>Temas comunes relacionados</small><div>'+p.relacionados.map(id=>{ const q=PROC.find(x=>x.id===id);
       return q ? '<a class="btn" href="#proc/'+q.id+'">'+esc(q.nombre)+' ›</a>' : ""; }).join("")+'</div></div>' : "")+
     '<div class="card resumen"><div><small>Ámbito</small><b>'+esc(p.ambito.corto||p.ambito.texto)+'</b></div>'+
@@ -563,7 +579,7 @@ function htmlFicha(p, f){
       '<p class="legal-pie">Nombre de la fase y artículos tomados literalmente del índice del texto consolidado del BOE.</p></div>';
   }
   return '<div class="ficha"><div class="eyebrow">Fase '+(i+1)+' · '+esc(f.articulos.map(k=>"Art. "+k).join(" · "))+'</div>'+
-    '<h2>'+esc(f.fase)+'</h2><div>'+(p.revisado?"":PEND)+'</div>'+htmlMis("fase:"+p.id+"/"+f.id)+
+    '<h2>'+esc(f.fase)+'</h2><div>'+(p.revisado?REV:PEND)+'</div>'+htmlMis("fase:"+p.id+"/"+f.id)+
     '<h4>Qué ocurre</h4><p>'+conLeyes(f.descripcion)+'</p>'+
     (f.plazos.length ? '<h4>Plazos</h4>'+f.plazos.map(pl=>'<div class="plz"><span class="v">'+esc(pl.plazo)+'</span><div class="d">'+esc(pl.acto)+' '+chipArt(pl.articulo)+lit(pl.literal)+'</div></div>').join("") : "")+
     (f.ramas.length ? '<h4>Alternativas · toca para ver qué pasa</h4>'+f.ramas.map(r=>'<div class="rama" role="button" tabindex="0" aria-expanded="false"><span class="flecha">▾</span><span class="q">'+esc(minus(r.si))+'</span>'+
@@ -795,7 +811,7 @@ function vistaRecursos(tab, foco){
   const v = $("#v-recursos");
   let h = '<div class="migas"><a href="#procesos">Mapa</a><span>Sistema de recursos</span></div>'+
     '<div class="eyebrow">Mapa de recursos</div><h1 class="tit">¿Qué recurso cabe?</h1>'+
-    '<p class="lead">Elige la resolución que quieres recurrir y verás el recurso, el plazo y el órgano, con la frase literal de la '+ABR+'. '+(D.recursos_revisado?"":PEND)+'</p>'+
+    '<p class="lead">Elige la resolución que quieres recurrir y verás el recurso, el plazo y el órgano, con la frase literal de la '+ABR+'. '+(D.recursos_revisado?REV:PEND)+'</p>'+
     '<div class="seg" role="tablist">'+[["cabe","Por resolución"],["fichas","Recursos"],["prueba","Ponte a prueba"]].map(([t,n])=>'<button role="tab" data-t="'+t+'" aria-selected="'+(pestRec===t)+'">'+n+'</button>').join("")+'</div>';
   if (pestRec === "cabe"){
     const grupos = (D.grupos_selector||[]).length ? D.grupos_selector :
