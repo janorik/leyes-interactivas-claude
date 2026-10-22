@@ -100,7 +100,7 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 - [ ] **Art. 988 bis (ejecutoria) fuera del canon.** El canon incluye los arts. 983, 984 y 988-990 de la ejecución, pero no el 988 bis (suspensión, forma de pago y liquidación de condena), que es de uso diario. La fase ya hecha se mantiene. ¿Lo dejaste fuera a propósito?
   - **Tu respuesta:**
-- [ ] **Nota desfasada en el canon (bloque 26).** «Audiencia preliminar / cuestiones previas: turno del art. 786.2 al inicio del juicio oral». En el texto vigente (Verificable en la app), la audiencia preliminar está en el art. 785 y el 786.2 regula los criterios de señalamiento. Conviene corregirla en el documento original.
+- [x] **Nota desfasada en el canon (bloque 26). Resuelta (22-10-2026):** corregida en el documento original de la plataforma (`docs/canon-contenido.md`) y en su seed LECrim: la audiencia preliminar es el art. 785; el art. 786 regula el señalamiento. Copiada aquí en `fuentes/canon_contenido.md`.
   - **Tu respuesta:**
 
 ### Puntos de extracción (F1)

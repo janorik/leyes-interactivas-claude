@@ -136,8 +136,7 @@ Entre paréntesis, el **tramo oficial del bloque** según el consolidado BOE. Tr
 ### Notas pedagógicas
 
 - **Diligencias previas** (bloque 26): fase de instrucción del abreviado; regulación en arts. 774 y ss.; termina por el auto del art. 779.
-- **Audiencia preliminar / cuestiones previas** (bloque 26): turno del art. 786.2 al inicio del juicio oral; la fase intermedia previa está en arts. 779.1.4.ª y 780-784.
+- **Audiencia preliminar** (bloque 26): la convoca el juez, jueza o tribunal en cuanto las actuaciones están a disposición del órgano de enjuiciamiento, antes del juicio oral (art. 785); el art. 786 regula el señalamiento de las sesiones del juicio oral. La fase intermedia previa está en arts. 779.1.4.ª y 780-784. *(Corregido el 22-10-2026: la versión anterior situaba este turno en el art. 786.2, lo que no se ajusta al texto consolidado vigente; corregida también la nota del seed LECrim, `NOTE_AUDIENCIA` en `scripts/_build_lecrim_seed.py`.)*
 - **Preparación de la casación** (bloque 32): continúa en arts. 855 y ss. (escrito ante el órgano que dictó la resolución; interposición ante la Sala Segunda del TS).
 - **Secreto del sumario** (bloque 16): art. 302 (el sumario no es secreto para las partes personadas; el juez puede declararlo secreto por tiempo no superior a un mes; se alza con 10 días de antelación a la conclusión); plazo máximo de instrucción en el art. 324.
 
-> **Aviso (Claude, 22-10-2026):** la nota «Audiencia preliminar / cuestiones previas: turno del art. 786.2» está desfasada respecto del texto vigente de la app: la audiencia preliminar está hoy en el art. 785 y el art. 786.2 regula los criterios de señalamiento. Ver `PENDIENTES.md`.
