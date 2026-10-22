@@ -2266,34 +2266,143 @@
    "nombre": "Medidas de investigación limitativas de derechos (art. 18 CE)",
    "bloque": "lecrim",
    "grupo": "Libro II · Sumario",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Diligencias que limitan los derechos del art. 18 CE (domicilio, secreto de las comunicaciones, intimidad), comunes al sumario y al procedimiento abreviado: entrada y registro, correspondencia, intervención de comunicaciones, micrófonos, seguimiento, registro de dispositivos y registros remotos (arts. 545 a 588 octies).",
    "ambito": {
     "corto": "Arts. 545 a 588 octies",
     "texto": "TÍTULO VIII. De las medidas de investigación limitativas de los derechos reconocidos en el artículo 18 de la Constitución",
     "articulos": [
      "545"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "588 bis a",
+      "texto": "siempre que medie autorización judicial dictada con plena sujeción a los principios"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
      "id": "investigacion-545",
-     "fase": "De la entrada y registro en lugar cerrado",
-     "subtitulo": "TÍTULO VIII · CAPÍTULO I · arts. 545 a 572",
-     "descripcion": "",
+     "fase": "Entrada y registro en lugar cerrado",
+     "subtitulo": "Consentimiento o auto motivado · cómo se practica",
+     "descripcion": "Nadie puede entrar en el domicilio de otro sin su consentimiento, salvo en los casos y en la forma previstos en las leyes. En edificios y lugares públicos (art. 547) el Juez puede decretar la entrada y registro, de día o de noche, si hay indicios de que allí está el procesado o efectos, instrumentos, libros o papeles del delito. En un domicilio (art. 554), el Juez instructor puede ordenarla en esos mismos casos, pero con el consentimiento del interesado o, a falta de él, por auto motivado. Ese auto será siempre fundado y concretará el lugar, si se hará solo de día y quién lo practicará. El registro se hace ante el interesado o su representante y siempre ante el Secretario judicial, que levanta acta.",
      "articulos": [
       "545",
-      "572"
+      "546",
+      "550",
+      "554",
+      "558",
+      "569"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Notificación al interesado del auto de entrada en domicilio",
+       "plazo": "Inmediata; como máximo 24 horas",
+       "articulo": "550",
+       "literal": "inmediatamente, o lo más tarde dentro de las veinticuatro horas de haberse dictado"
+      },
+      {
+       "acto": "Sedes de representantes de naciones extranjeras: respuesta a la petición de venia del Juez",
+       "plazo": "12 horas",
+       "articulo": "559",
+       "literal": "les rogará que contesten en el término de doce horas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El interesado, requerido, colabora sin invocar la inviolabilidad del domicilio",
+       "entonces": "Se entiende que consiente; no hace falta auto.",
+       "articulos": [
+        "551"
+       ],
+       "literal": {
+        "articulo": "551",
+        "texto": "sin invocar la inviolabilidad que reconoce al domicilio"
+       }
+      },
+      {
+       "si": "La persona es sorprendida en flagrante delito o se refugia en una casa perseguida por los agentes",
+       "entonces": "Los agentes pueden detenerla y registrar de propia autoridad, y dan cuenta inmediata al Juez de las causas y del resultado.",
+       "articulos": [
+        "553"
+       ],
+       "literal": {
+        "articulo": "553",
+        "texto": "cuando sean sorprendidas en flagrante delito"
+       }
+      },
+      {
+       "si": "El interesado no es habido o no quiere asistir ni nombrar representante",
+       "entonces": "Asiste un familiar mayor de edad; si no lo hay, dos testigos vecinos.",
+       "articulos": [
+        "569"
+       ],
+       "literal": {
+        "articulo": "569",
+        "texto": "se hará a presencia de dos testigos, vecinos del mismo pueblo"
+       }
+      },
+      {
+       "si": "Se acaba el día sin terminar el registro en un domicilio",
+       "entonces": "Se pide permiso para seguir de noche; si el interesado se opone, se suspende (salvo arts. 546 y 550), cerrando y sellando el local si es necesario.",
+       "articulos": [
+        "570"
+       ],
+       "literal": {
+        "articulo": "570",
+        "texto": "Si se opusiere, se suspenderá la diligencia"
+       }
+      },
+      {
+       "si": "La investigada es una persona jurídica",
+       "entonces": "Su domicilio es el centro de dirección o los lugares donde custodia documentos reservados al conocimiento de terceros.",
+       "articulos": [
+        "554"
+       ],
+       "literal": {
+        "articulo": "554",
+        "texto": "Tratándose de personas jurídicas imputadas, el espacio físico que constituya el centro de dirección de las mismas"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿En presencia de quién se practica siempre el registro?",
+      "a": "Del Secretario judicial del órgano que lo autorizó (o del de guardia que le sustituya), que levanta acta firmada por todos los asistentes.",
+      "articulos": [
+       "569"
+      ],
+      "literal": {
+       "articulo": "569",
+       "texto": "El registro se practicará siempre en presencia del Secretario del Juzgado o Tribunal que lo hubiera autorizado"
+      }
+     },
+     "conexiones": [
       "545",
+      "546",
+      "547",
+      "550",
+      "551",
+      "552",
+      "553",
+      "554",
+      "558",
+      "559",
+      "563",
+      "566",
+      "567",
+      "568",
+      "569",
+      "570",
+      "571",
       "572"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ],
+     "duda": "Los arts. 550 y 551 remiten al «artículo 6.º de la Constitución» y el art. 560 al «Ministerio de Gracia y Justicia». Ver PENDIENTES.md.",
+     "aviso": "Según la nota general del BOE a esta ley, desde el 1 de octubre de 2015 las referencias a los Secretarios judiciales se entienden hechas a los Letrados de la Administración de Justicia (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
     },
     {
      "id": "investigacion-573",
@@ -2314,138 +2423,671 @@
     },
     {
      "id": "investigacion-579",
-     "fase": "De la detención y apertura de la correspondencia escrita y telegráfica",
-     "subtitulo": "TÍTULO VIII · CAPÍTULO III · arts. 579 a 588",
-     "descripcion": "",
+     "fase": "Detención y apertura de la correspondencia",
+     "subtitulo": "Correspondencia postal y telegráfica · pieza secreta",
+     "descripcion": "El juez puede acordar la detención de la correspondencia privada, postal y telegráfica (incluidos faxes, burofaxes y giros) que el investigado remita o reciba, y su apertura o examen. Hacen falta indicios de que así se descubrirá o comprobará algo relevante, y que se investigue un delito doloso castigado con pena máxima de al menos tres años de prisión, un delito cometido en grupo u organización criminal o un delito de terrorismo. El auto concreta qué correspondencia se detiene. Se tramita en pieza separada y secreta. Se cita al interesado a la apertura; el Juez la abre por sí mismo, aparta lo que interesa a la causa y entrega lo demás.",
      "articulos": [
       "579",
+      "579 bis",
+      "583",
+      "584",
+      "586",
+      "587",
       "588"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Observación de las comunicaciones postales y telegráficas del investigado",
+       "plazo": "Hasta 3 meses; prórrogas hasta 18 meses",
+       "articulo": "579",
+       "literal": "por un plazo de hasta tres meses, prorrogable por iguales o inferiores períodos hasta un máximo de dieciocho meses"
+      },
+      {
+       "acto": "Urgencia (bandas armadas o terrorismo): el Ministro del Interior o el Secretario de Estado de Seguridad comunican la medida al juez",
+       "plazo": "24 horas como máximo",
+       "articulo": "579",
+       "literal": "dentro del plazo máximo de veinticuatro horas"
+      },
+      {
+       "acto": "Urgencia: el juez revoca o confirma la medida",
+       "plazo": "72 horas desde que se ordenó",
+       "articulo": "579",
+       "literal": "en un plazo máximo de setenta y dos horas desde que fue ordenada la medida"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Es un paquete de mercancías, un envío con el contenido declarado o una inspección aduanera",
+       "entonces": "No hace falta autorización judicial (art. 579.4).",
+       "articulos": [
+        "579"
+       ],
+       "literal": {
+        "articulo": "579",
+        "texto": "No se requerirá autorización judicial en los siguientes casos"
+       }
+      },
+      {
+       "si": "El procesado está en rebeldía o, citado, no quiere asistir ni nombrar a nadie",
+       "entonces": "El Juez abre la correspondencia igualmente.",
+       "articulos": [
+        "585"
+       ],
+       "literal": {
+        "articulo": "585",
+        "texto": "el Juez instructor procederá, sin embargo, a la apertura de dicha correspondencia"
+       }
+      },
+      {
+       "si": "La correspondencia no tiene relación con la causa",
+       "entonces": "Se entrega en el acto al procesado o a su representante.",
+       "articulos": [
+        "587"
+       ],
+       "literal": {
+        "articulo": "587",
+        "texto": "La correspondencia que no se relacione con la causa será entregada en el acto al procesado o a su representante"
+       }
+      },
+      {
+       "si": "Aparece por casualidad otro delito",
+       "entonces": "Seguir investigándolo con esta medida requiere autorización del juez competente; el resultado puede usarse en otro proceso con testimonio de la solicitud, la autorización y las prórrogas.",
+       "articulos": [
+        "579 bis"
+       ],
+       "literal": {
+        "articulo": "579 bis",
+        "texto": "La continuación de esta medida para la investigación del delito casualmente descubierto requiere autorización del juez competente"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quién abre la correspondencia detenida?",
+      "a": "El propio Juez, que la lee para sí y aparta la que se refiere a los hechos de la causa.",
+      "articulos": [
+       "586"
+      ],
+      "literal": {
+       "articulo": "586",
+       "texto": "abriendo el Juez por sí mismo la correspondencia"
+      }
+     },
+     "conexiones": [
       "579",
+      "579 bis",
+      "580",
+      "581",
+      "582",
+      "583",
+      "584",
+      "585",
+      "586",
+      "587",
       "588"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ]
     },
     {
      "id": "investigacion-588_bis_a",
-     "fase": "Disposiciones comunes a la interceptación de las comunicaciones telefónicas y telemáticas, la captación y grabación de comunicaciones orales mediante la utilización de dispositivos electrónicos, la utilización de dispositivos técnicos de seguimiento, localización y captación de la imagen, el registro de dispositivos de almacenamiento masivo de información y los registros remotos sobre equipos informáticos",
-     "subtitulo": "TÍTULO VIII · CAPÍTULO IV · arts. 588 bis a a 588 bis k",
-     "descripcion": "",
+     "fase": "Disposiciones comunes a las medidas tecnológicas",
+     "subtitulo": "Principios · solicitud · auto en 24 horas · prórroga y cese",
+     "descripcion": "Las medidas de los capítulos V a IX (comunicaciones telefónicas y telemáticas, comunicaciones orales, imagen y seguimiento, dispositivos de almacenamiento y registros remotos) necesitan autorización judicial sujeta a cinco principios: especialidad, idoneidad, excepcionalidad, necesidad y proporcionalidad. No se autorizan para prevenir o descubrir delitos ni para despejar sospechas sin base objetiva. Las acuerda el juez de oficio o a petición del Ministerio Fiscal o de la Policía Judicial; la petición debe contener lo que enumera el art. 588 bis b. Se resuelve por auto motivado, oído el Fiscal, y se tramita en pieza separada y secreta. La Policía Judicial informa al juez del desarrollo y los resultados.",
      "articulos": [
       "588 bis a",
-      "588 bis k"
+      "588 bis b",
+      "588 bis c",
+      "588 bis d",
+      "588 bis e",
+      "588 bis f",
+      "588 bis j"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Auto que autoriza o deniega la medida",
+       "plazo": "24 horas desde la solicitud",
+       "articulo": "588 bis c",
+       "literal": "en el plazo máximo de veinticuatro horas desde que se presente la solicitud"
+      },
+      {
+       "acto": "Auto que resuelve sobre la prórroga o el fin de la medida",
+       "plazo": "2 días desde la solicitud",
+       "articulo": "588 bis f",
+       "literal": "En el plazo de los dos días siguientes a la presentación de la solicitud"
+      },
+      {
+       "acto": "Destrucción de las copias conservadas (entre otros supuestos)",
+       "plazo": "5 años desde la ejecución de la pena",
+       "articulo": "588 bis k",
+       "literal": "cuando hayan transcurrido cinco años desde que la pena se haya ejecutado"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El juez necesita más datos para decidir",
+       "entonces": "Puede pedir que se amplíe o aclare la solicitud, y el plazo de 24 horas se interrumpe.",
+       "articulos": [
+        "588 bis c"
+       ],
+       "literal": {
+        "articulo": "588 bis c",
+        "texto": "con interrupción del plazo a que se refiere el apartado anterior"
+       }
+      },
+      {
+       "si": "Se concede la prórroga",
+       "entonces": "El nuevo plazo se cuenta desde que expira el anterior, no desde el auto.",
+       "articulos": [
+        "588 bis f"
+       ],
+       "literal": {
+        "articulo": "588 bis f",
+        "texto": "su cómputo se iniciará desde la fecha de expiración del plazo de la medida acordada"
+       }
+      },
+      {
+       "si": "Vence el plazo sin prórroga",
+       "entonces": "La medida cesa a todos los efectos.",
+       "articulos": [
+        "588 bis e"
+       ],
+       "literal": {
+        "articulo": "588 bis e",
+        "texto": "cesará a todos los efectos"
+       }
+      },
+      {
+       "si": "Desaparecen las circunstancias que la justificaron o no da resultados",
+       "entonces": "El juez acuerda el cese.",
+       "articulos": [
+        "588 bis j"
+       ],
+       "literal": {
+        "articulo": "588 bis j",
+        "texto": "resulte evidente que a través de la misma no se están obteniendo los resultados pretendidos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿A qué principios debe sujetarse la autorización judicial de una medida de investigación tecnológica?",
+      "a": "Especialidad, idoneidad, excepcionalidad, necesidad y proporcionalidad.",
+      "articulos": [
+       "588 bis a"
+      ],
+      "literal": {
+       "articulo": "588 bis a",
+       "texto": "especialidad, idoneidad, excepcionalidad, necesidad y proporcionalidad"
+      }
+     },
+     "conexiones": [
       "588 bis a",
-      "588 bis k"
+      "588 bis b",
+      "588 bis c",
+      "588 bis d",
+      "588 bis e",
+      "588 bis f",
+      "588 bis g",
+      "588 bis h",
+      "588 bis i",
+      "588 bis j",
+      "588 bis k",
+      "579 bis"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ]
     },
     {
      "id": "investigacion-588_ter_a",
-     "fase": "La interceptación de las comunicaciones telefónicas y telemáticas",
-     "subtitulo": "TÍTULO VIII · CAPÍTULO V · arts. 588 ter a a 588 ter m",
-     "descripcion": "",
+     "fase": "Interceptación de las comunicaciones telefónicas y telemáticas",
+     "subtitulo": "Qué delitos · qué terminales · acceso de las partes",
+     "descripcion": "Solo cabe para los delitos del art. 579.1 o los cometidos a través de instrumentos informáticos o de otra tecnología de la información o la comunicación. Afecta a los terminales que use el investigado y puede abarcar el contenido y los datos de tráfico. La solicitud añade a lo del art. 588 bis b la identificación del número, terminal o conexión y la extensión pedida (grabación, origen y destino, localización, otros datos). Los prestadores de servicios deben colaborar y guardar secreto. La Policía Judicial entrega al juez las transcripciones de interés y las grabaciones íntegras.",
      "articulos": [
       "588 ter a",
-      "588 ter m"
+      "588 ter b",
+      "588 ter c",
+      "588 ter d",
+      "588 ter g",
+      "588 ter i"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Duración de la intervención (desde la autorización judicial)",
+       "plazo": "3 meses; prórrogas hasta 18 meses",
+       "articulo": "588 ter g",
+       "literal": "será de tres meses, prorrogables por períodos sucesivos de igual duración hasta el plazo máximo de dieciocho meses"
+      },
+      {
+       "acto": "Urgencia (bandas armadas o terrorismo): comunicación al juez de la medida ordenada por el Ministro del Interior o el Secretario de Estado de Seguridad",
+       "plazo": "24 horas como máximo",
+       "articulo": "588 ter d",
+       "literal": "dentro del plazo máximo de veinticuatro horas"
+      },
+      {
+       "acto": "Urgencia: el juez revoca o confirma",
+       "plazo": "72 horas desde que se ordenó",
+       "articulo": "588 ter d",
+       "literal": "en un plazo máximo de setenta y dos horas desde que fue ordenada la medida"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El terminal pertenece a un tercero",
+       "entonces": "Puede intervenirse si el investigado se sirve de él, si el titular colabora con él o se beneficia de su actividad, o si terceros lo usan maliciosamente sin conocimiento del titular.",
+       "articulos": [
+        "588 ter c"
+       ],
+       "literal": {
+        "articulo": "588 ter c",
+        "texto": "exista constancia de que el sujeto investigado se sirve de aquella para transmitir o recibir información"
+       }
+      },
+      {
+       "si": "Hay grave riesgo para la vida o integridad de la víctima",
+       "entonces": "También pueden intervenirse sus terminales.",
+       "articulos": [
+        "588 ter b"
+       ],
+       "literal": {
+        "articulo": "588 ter b",
+        "texto": "También podrán intervenirse los terminales o medios de comunicación de la víctima cuando sea previsible un grave riesgo para su vida o integridad"
+       }
+      },
+      {
+       "si": "Solo se necesita saber quién es el titular de un número (o el número de un titular)",
+       "entonces": "El Ministerio Fiscal o la Policía Judicial se dirigen directamente a los prestadores, sin auto.",
+       "articulos": [
+        "588 ter m"
+       ],
+       "literal": {
+        "articulo": "588 ter m",
+        "texto": "podrán dirigirse directamente a los prestadores de servicios de telecomunicaciones"
+       }
+      },
+      {
+       "si": "La policía tiene una dirección IP usada para delinquir pero no sabe quién es el usuario",
+       "entonces": "Pide al juez de instrucción que requiera a los prestadores la cesión de los datos de identificación.",
+       "articulos": [
+        "588 ter k"
+       ],
+       "literal": {
+        "articulo": "588 ter k",
+        "texto": "solicitarán del juez de instrucción que requiera de los agentes sujetos al deber de colaboración"
+       }
+      },
+      {
+       "si": "La grabación contiene datos de la vida íntima",
+       "entonces": "Solo se entrega a las partes lo que no se refiera a ellos, y se hace constar.",
+       "articulos": [
+        "588 ter i"
+       ],
+       "literal": {
+        "articulo": "588 ter i",
+        "texto": "solo se entregará la grabación y transcripción de aquellas partes que no se refieran a ellos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo reciben las partes copia de las grabaciones y transcripciones?",
+      "a": "Una vez alzado el secreto y expirada la vigencia de la medida. Después pueden pedir que se incluyan comunicaciones excluidas, en el plazo que fije el juez.",
+      "articulos": [
+       "588 ter i"
+      ],
+      "literal": {
+       "articulo": "588 ter i",
+       "texto": "Alzado el secreto y expirada la vigencia de la medida de intervención, se entregará a las partes copia de las grabaciones"
+      }
+     },
+     "conexiones": [
+      "579",
       "588 ter a",
+      "588 ter b",
+      "588 ter c",
+      "588 ter d",
+      "588 ter e",
+      "588 ter f",
+      "588 ter g",
+      "588 ter h",
+      "588 ter i",
+      "588 ter j",
+      "588 ter k",
+      "588 ter l",
       "588 ter m"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ]
     },
     {
      "id": "investigacion-588_quater_a",
-     "fase": "Captación y grabación de comunicaciones orales mediante la utilización de dispositivos electrónicos",
-     "subtitulo": "TÍTULO VIII · CAPÍTULO VI · arts. 588 quater a a 588 quater e",
-     "descripcion": "",
+     "fase": "Captación y grabación de comunicaciones orales",
+     "subtitulo": "Micrófonos · encuentros concretos",
+     "descripcion": "Puede autorizarse colocar dispositivos que capten y graben las conversaciones directas del investigado en la vía pública, en espacios abiertos, en su domicilio o en otros lugares cerrados, por fuera o por dentro. La medida debe ir ligada a uno o varios encuentros concretos y previsibles según la investigación. Requisitos: delito doloso con pena máxima de al menos tres años de prisión, de grupo u organización criminal o de terrorismo, y que pueda preverse que aportará datos esenciales. El auto, además de lo del art. 588 bis c, menciona el lugar y los encuentros vigilados.",
      "articulos": [
       "588 quater a",
-      "588 quater e"
-     ],
-     "rango": [
-      "588 quater a",
+      "588 quater b",
+      "588 quater c",
       "588 quater e"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Hay que entrar en el domicilio para colocar el dispositivo",
+       "entonces": "El auto debe motivar también ese acceso.",
+       "articulos": [
+        "588 quater a"
+       ],
+       "literal": {
+        "articulo": "588 quater a",
+        "texto": "la resolución habilitante habrá de extender su motivación a la procedencia del acceso a dichos lugares"
+       }
+      },
+      {
+       "si": "Se quieren también imágenes",
+       "entonces": "Solo si el auto lo autoriza expresamente.",
+       "articulos": [
+        "588 quater a"
+       ],
+       "literal": {
+        "articulo": "588 quater a",
+        "texto": "cuando expresamente lo autorice la resolución judicial que la acuerde"
+       }
+      },
+      {
+       "si": "Cesa la medida y hay otros encuentros que interesan",
+       "entonces": "Hace falta una nueva autorización judicial.",
+       "articulos": [
+        "588 quater e"
+       ],
+       "literal": {
+        "articulo": "588 quater e",
+        "texto": "exigirán una nueva autorización judicial"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿A qué debe estar vinculada la grabación de comunicaciones orales directas?",
+      "a": "A comunicaciones en uno o varios encuentros concretos del investigado con otras personas, previsibles según los indicios de la investigación.",
+      "articulos": [
+       "588 quater b"
+      ],
+      "literal": {
+       "articulo": "588 quater b",
+       "texto": "en uno o varios encuentros concretos del investigado con otras personas"
+      }
+     },
+     "conexiones": [
+      "588 bis c",
+      "588 bis j",
+      "588 quater a",
+      "588 quater b",
+      "588 quater c",
+      "588 quater d",
+      "588 quater e"
+     ],
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ],
+     "duda": "Este capítulo no fija una duración en meses: el art. 588 bis e remite a «la duración que se especifique para cada una de ellas». Ver PENDIENTES.md."
     },
     {
      "id": "investigacion-588_quinquies_a",
-     "fase": "Utilización de dispositivos técnicos de captación de la imagen, de seguimiento y de localización",
-     "subtitulo": "TÍTULO VIII · CAPÍTULO VII · arts. 588 quinquies a a 588 quinquies c",
-     "descripcion": "",
+     "fase": "Captación de la imagen, seguimiento y localización",
+     "subtitulo": "Imágenes en lugares públicos · balizas",
+     "descripcion": "La Policía Judicial puede obtener y grabar imágenes del investigado cuando esté en un lugar o espacio público, si es necesario para identificarle, localizar efectos del delito u obtener datos relevantes; el art. 588 quinquies a no menciona autorización judicial. Los dispositivos de seguimiento y localización sí los autoriza el juez, cuando haya razones de necesidad y la medida sea proporcionada, especificando el medio técnico. Los prestadores deben colaborar. La información obtenida debe custodiarse.",
      "articulos": [
       "588 quinquies a",
+      "588 quinquies b",
       "588 quinquies c"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Seguimiento y localización: duración",
+       "plazo": "3 meses; prórrogas hasta 18 meses",
+       "articulo": "588 quinquies c",
+       "literal": "tendrá una duración máxima de tres meses a partir de la fecha de su autorización"
+      },
+      {
+       "acto": "Urgencia: la Policía coloca el dispositivo y da cuenta al juez, que ratifica o acuerda el cese",
+       "plazo": "24 horas como máximo",
+       "articulo": "588 quinquies b",
+       "literal": "en todo caso en el plazo máximo de veinticuatro horas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La urgencia no permite esperar al auto",
+       "entonces": "La Policía Judicial coloca el dispositivo y da cuenta; si el juez acuerda el cese, lo obtenido carece de efectos en el proceso.",
+       "articulos": [
+        "588 quinquies b"
+       ],
+       "literal": {
+        "articulo": "588 quinquies b",
+        "texto": "la información obtenida a partir del dispositivo colocado carecerá de efectos en el proceso"
+       }
+      },
+      {
+       "si": "Las imágenes afectan a otras personas",
+       "entonces": "Se permite si, de otro modo, la vigilancia pierde mucha utilidad o hay indicios fundados de su relación con el investigado y los hechos.",
+       "articulos": [
+        "588 quinquies a"
+       ],
+       "literal": {
+        "articulo": "588 quinquies a",
+        "texto": "aun cuando afecte a personas diferentes del investigado"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hasta cuánto pueden prorrogarse los dispositivos de seguimiento y localización?",
+      "a": "Excepcionalmente, por prórrogas sucesivas del mismo o menor plazo hasta un máximo de dieciocho meses, si lo justifican los resultados.",
+      "articulos": [
+       "588 quinquies c"
+      ],
+      "literal": {
+       "articulo": "588 quinquies c",
+       "texto": "prórrogas sucesivas por el mismo o inferior plazo hasta un máximo de dieciocho meses"
+      }
+     },
+     "conexiones": [
       "588 quinquies a",
-      "588 quinquies c"
+      "588 quinquies b",
+      "588 quinquies c",
+      "588 ter e"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ]
     },
     {
      "id": "investigacion-588_sexies_a",
-     "fase": "Registro de dispositivos de almacenamiento masivo de información",
-     "subtitulo": "TÍTULO VIII · CAPÍTULO VIII · arts. 588 sexies a a 588 sexies c",
-     "descripcion": "",
+     "fase": "Registro de dispositivos de almacenamiento masivo",
+     "subtitulo": "Ordenadores y móviles · motivación propia",
+     "descripcion": "Si en un registro domiciliario se prevé aprehender ordenadores, teléfonos o dispositivos de almacenamiento, o acceder a repositorios de datos, el auto debe justificar también el acceso a su contenido. Lo mismo si se aprehenden fuera de un registro: los agentes lo comunican al juez, que autoriza el acceso si lo considera indispensable. El auto fija los términos y el alcance del registro, puede autorizar copias y asegura la integridad de los datos. Se evita incautar el soporte cuando cause grave perjuicio y baste una copia fiable.",
      "articulos": [
       "588 sexies a",
+      "588 sexies b",
       "588 sexies c"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Urgencia: la Policía examina directamente el dispositivo y lo comunica al juez por escrito motivado",
+       "plazo": "24 horas como máximo",
+       "articulo": "588 sexies c",
+       "literal": "comunicándolo inmediatamente, y en todo caso dentro del plazo máximo de veinticuatro horas, por escrito motivado al juez competente"
+      },
+      {
+       "acto": "Urgencia: el juez revoca o confirma",
+       "plazo": "72 horas desde que se ordenó",
+       "articulo": "588 sexies c",
+       "literal": "en un plazo máximo de 72 horas desde que fue ordenada la medida"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Los datos buscados están en otro sistema accesible desde el primero",
+       "entonces": "Puede ampliarse el registro, con autorización judicial salvo que ya la diera el auto inicial; en urgencia, la Policía o el fiscal lo hacen e informan al juez en 24 horas.",
+       "articulos": [
+        "588 sexies c"
+       ],
+       "literal": {
+        "articulo": "588 sexies c",
+        "texto": "Esta ampliación del registro deberá ser autorizada por el juez, salvo que ya lo hubiera sido en la autorización inicial"
+       }
+      },
+      {
+       "si": "Se ordena a alguien que facilite claves o información del sistema",
+       "entonces": "Está obligado, salvo el investigado, los parientes dispensados de declarar y quienes no pueden declarar por secreto profesional (art. 416.2).",
+       "articulos": [
+        "588 sexies c"
+       ],
+       "literal": {
+        "articulo": "588 sexies c",
+        "texto": "Esta disposición no será aplicable al investigado o encausado"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si en un registro domiciliario se incauta un ordenador, ¿puede la Policía acceder a su contenido sin más?",
+      "a": "No. La simple incautación no legitima el acceso; hace falta que el auto lo justifique o que el juez lo autorice después.",
+      "articulos": [
+       "588 sexies a"
+      ],
+      "literal": {
+       "articulo": "588 sexies a",
+       "texto": "no legitima el acceso a su contenido"
+      }
+     },
+     "conexiones": [
       "588 sexies a",
-      "588 sexies c"
+      "588 sexies b",
+      "588 sexies c",
+      "416",
+      "550"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ],
+     "duda": "El art. 588 sexies c.3, que trata de ampliar un registro, dice que el juez confirma o revoca en 72 horas «desde que fue ordenada la interceptación». Ver PENDIENTES.md."
     },
     {
      "id": "investigacion-588_septies_a",
      "fase": "Registros remotos sobre equipos informáticos",
-     "subtitulo": "TÍTULO VIII · CAPÍTULO IX · arts. 588 septies a a 588 septies c",
-     "descripcion": "",
+     "subtitulo": "Software de acceso a distancia · lista cerrada de delitos",
+     "descripcion": "El juez puede autorizar el uso de datos de identificación, códigos o la instalación de un software para examinar a distancia, y sin conocimiento del titular, el contenido de un ordenador, dispositivo, sistema informático o base de datos. Solo para los delitos que enumera el art. 588 septies a.1. El auto especifica los equipos o datos afectados, el alcance, el software, los agentes, las copias y las medidas de integridad. Prestadores y titulares del sistema deben colaborar y guardar secreto.",
      "articulos": [
       "588 septies a",
+      "588 septies b",
       "588 septies c"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Duración del registro remoto",
+       "plazo": "1 mes; prórrogas hasta 3 meses",
+       "articulo": "588 septies c",
+       "literal": "La medida tendrá una duración máxima de un mes, prorrogable por iguales períodos hasta un máximo de tres meses"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Los datos buscados están en otro sistema",
+       "entonces": "Los agentes lo ponen en conocimiento del juez, que puede ampliar los términos del registro.",
+       "articulos": [
+        "588 septies a"
+       ],
+       "literal": {
+        "articulo": "588 septies a",
+        "texto": "quien podrá autorizar una ampliación de los términos del registro"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Para qué delitos cabe un registro remoto?",
+      "a": "Delitos cometidos en el seno de organizaciones criminales; de terrorismo; contra menores o personas con capacidad modificada judicialmente; contra la Constitución, de traición y relativos a la defensa nacional; y los cometidos a través de instrumentos informáticos u otra tecnología de la información o la telecomunicación.",
+      "articulos": [
+       "588 septies a"
+      ],
+      "literal": {
+       "articulo": "588 septies a",
+       "texto": "Delitos cometidos en el seno de organizaciones criminales"
+      }
+     },
+     "conexiones": [
       "588 septies a",
-      "588 septies c"
+      "588 septies b",
+      "588 septies c",
+      "588 ter e",
+      "416"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ]
     },
     {
      "id": "investigacion-588_octies",
-     "fase": "Medidas de aseguramiento",
-     "subtitulo": "TÍTULO VIII · CAPÍTULO X · art. 588 octies",
-     "descripcion": "",
+     "fase": "Orden de conservación de datos",
+     "subtitulo": "Congelar los datos hasta que llegue el auto",
+     "descripcion": "El Ministerio Fiscal o la Policía Judicial pueden requerir a cualquier persona física o jurídica que conserve y proteja datos concretos de un sistema informático que tenga a su disposición, hasta que se obtenga la autorización judicial para cederlos.",
      "articulos": [
       "588 octies"
      ],
-     "rango": [
-      "588 octies",
-      "588 octies"
+     "plazos": [
+      {
+       "acto": "Conservación de los datos",
+       "plazo": "Máximo 90 días",
+       "articulo": "588 octies",
+       "literal": "Los datos se conservarán durante un periodo máximo de noventa días"
+      },
+      {
+       "acto": "Prórroga (una sola vez)",
+       "plazo": "Hasta la autorización o hasta 180 días",
+       "articulo": "588 octies",
+       "literal": "prorrogable una sola vez hasta que se autorice la cesión o se cumplan ciento ochenta días"
+      }
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Se requiere a una persona o empresa",
+       "entonces": "Debe colaborar y guardar secreto; si no, responde como dice el art. 588 ter e.3 (desobediencia).",
+       "articulos": [
+        "588 octies",
+        "588 ter e"
+       ],
+       "literal": {
+        "articulo": "588 octies",
+        "texto": "El requerido vendrá obligado a prestar su colaboración y a guardar secreto"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hace falta auto para ordenar la conservación de datos?",
+      "a": "No: la pueden requerir el Ministerio Fiscal o la Policía Judicial. Lo que exige autorización judicial es la cesión de esos datos.",
+      "articulos": [
+       "588 octies"
+      ],
+      "literal": {
+       "articulo": "588 octies",
+       "texto": "hasta que se obtenga la autorización judicial correspondiente para su cesión"
+      }
+     },
+     "conexiones": [
+      "588 octies",
+      "588 ter e",
+      "588 ter j"
+     ],
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ],
+     "duda": "El art. 588 octies dice «prorrogable una sola vez hasta que se autorice la cesión o se cumplan ciento ochenta días». Ver PENDIENTES.md."
     }
    ]
   },

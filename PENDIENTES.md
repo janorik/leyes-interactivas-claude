@@ -132,6 +132,27 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [x] **Recursos de la LECrim como en la LEC (hecho):** 14 recursos y 27 casos del selector, con «Por resolución», «Recursos» y «Ponte a prueba». Antes: al usuario le gusta la pestaña Recursos de la LEC (selector «Por resolución», fichas de cada recurso y «Ponte a prueba»). En la LECrim ahora solo hay tarjetas de bloques en esqueleto. Hacer `lecrim/datos/recursos.json` con el mismo formato (recursos, selector por resolución con frase literal, test), a partir de los arts. 216-238 ter (recursos contra resoluciones procesales), 846 bis a-846 ter (apelación), 847-933 (casación) y 954-961 (revisión), y los recursos propios del abreviado, juicio rápido y delitos leves. Todo con `revisado: false` y las dudas anotadas aquí.
 - [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).
 
+### Medidas de investigación (contenido elaborado, pendiente de revisión)
+
+> Bloque desarrollado: 9 fases y 18 plazos (arts. 545 a 588 octies), según el canon (bloque 20, PARCIAL). Propuestas de Claude, No verificables hasta que las confirmes. Estados: resuelta / resuelta con criterio interpretativo / pendiente de revisión individual.
+
+- [ ] **Canon: alcance dentro de cada fase.** El canon marca 18 artículos. Todas las fases del bloque tienen alguno, salvo «Del registro de libros y papeles» (arts. 573-578), que queda como índice (punto gris). Dentro de las fases desarrolladas he citado también artículos vecinos no listados (por ejemplo 551, 553, 554, 558, 570, 585-587, 588 bis f, 588 ter c, 588 ter k y m) porque explican la fase. Dime si prefieres limitar las fichas a los artículos del canon.
+  - **Tu respuesta:**
+- [ ] **«Artículo 6.º de la Constitución» (arts. 550 y 551). Pendiente de revisión individual.** Remisión desfasada a una Constitución anterior. **Propuesta:** criterio interpretativo: leerla como remisión a la inviolabilidad del domicilio de la Constitución vigente (art. 18.2 CE), sin decir que sea una sustitución formal. En la app solo figura en la nota «Duda de interpretación» de la fase 1.
+  - **Tu respuesta:**
+- [ ] **«Ministerio de Gracia y Justicia» (art. 560). Pendiente de revisión individual.** Denominación histórica. En la app solo está en el texto literal (la fase 1 la menciona en la nota de duda).
+  - **Tu respuesta:**
+- [ ] **Comunicaciones orales: sin plazo propio. Pendiente de revisión individual.** El art. 588 bis e.1 dice que cada medida tendrá «la duración que se especifique para cada una de ellas», pero los arts. 588 quater a-e no fijan meses: la medida se liga a «encuentros concretos» y cesa por el art. 588 bis j. **Propuesta:** no poner ningún plazo en la ficha (así está). En la app: fase 6, nota de duda.
+  - **Tu respuesta:**
+- [ ] **«Desde que fue ordenada la interceptación» (art. 588 sexies c.3). Pendiente de revisión individual.** El apartado trata de la ampliación de un registro de dispositivos, no de una interceptación. **Propuesta:** contar las 72 horas desde que se ordenó la ampliación, como en el apartado 4 («desde que fue ordenada la medida»). En la app solo se muestra el plazo del apartado 4.
+  - **Tu respuesta:**
+- [ ] **Prórroga de la orden de conservación (art. 588 octies). Pendiente de revisión individual.** «Prorrogable una sola vez hasta que se autorice la cesión o se cumplan ciento ochenta días.» **Propuesta:** 180 días es el máximo total contado desde el requerimiento (90 + hasta 90 más), no 90 + 180. En la app figura con la frase literal, sin sumar.
+  - **Tu respuesta:**
+- [ ] **Imágenes en lugares públicos (art. 588 quinquies a).** El artículo atribuye la medida a la Policía Judicial y no menciona autorización judicial; así lo dice la ficha, sin añadir nada. Revisa si quieres una nota con alguna fuente que lo aclare.
+- [ ] **«Capacidad modificada judicialmente» (art. 588 septies a.1.c).** La pregunta de la fase 9 copia el texto literal. Es posible que esa terminología no coincida con la de la legislación civil vigente (No verificable: no sale del texto de la LECrim). Dime si quieres una nota.
+- [x] **«Secretario» (arts. 569, 574, 586-588). Resuelta:** la nota general del BOE a la LECrim dice que las referencias a los Secretarios judiciales se entienden hechas a los Letrados de la Administración de Justicia (LO 7/2015, ref. BOE-A-2015-8167). En la app: nota «Ojo» en la fase 1 con enlace al BOE. Comprueba que el enlace abre esa ley.
+- [ ] **Revisa las 9 fases:** las frases entre « » son literales (comprobadas por el script); las descripciones son resumen mío.
+
 ### Ejecución de las sentencias (contenido elaborado, pendiente de revisión)
 
 > Bloque desarrollado: 6 fases y 8 plazos (arts. 983 a 999; el 995 está suprimido). Propuestas de Claude, No verificables hasta que las confirmes. Estados: resuelta / resuelta con criterio interpretativo / pendiente de revisión individual.
