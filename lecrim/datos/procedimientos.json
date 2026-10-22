@@ -42,7 +42,7 @@
      "id": "generales-8",
      "fase": "Competencia: quién instruye y quién juzga",
      "subtitulo": "Según la pena y el lugar · conexidad · inhibitoria y declinatoria",
-     "descripcion": "La jurisdicción criminal es siempre improrrogable. Instruye la Sección de Instrucción del Tribunal de Instancia del partido donde se cometió el delito, la Sección de violencia sobre la mujer o de violencia contra la infancia y la adolescencia cuando corresponda, o el Juez Central de Instrucción. Juzgan, según la pena (art. 14): los delitos leves, la Sección de Instrucción. Los delitos con pena privativa de libertad de hasta cinco años, multa de cualquier cuantía u otras penas de hasta diez años, la Sección de lo Penal (o el Juez Central de lo Penal). Los demás, la Audiencia Provincial o la Sala de lo Penal de la Audiencia Nacional, salvo que el delito sea de los atribuidos al Tribunal del Jurado. Si se juzga solo a una persona jurídica, cuenta la pena prevista para la persona física (art. 14 bis).",
+     "descripcion": "La jurisdicción criminal es siempre improrrogable. Instrucción: la Sección de Instrucción del Tribunal de Instancia del partido donde se cometió el delito, la Sección de violencia sobre la mujer o la de violencia contra la infancia y la adolescencia en sus materias, o el Juez Central de Instrucción. Enjuiciamiento, según la pena (art. 14): los delitos leves, la Sección de Instrucción. Los delitos con pena privativa de libertad de hasta cinco años, multa de cualquier cuantía u otras penas de hasta diez años, la Sección de lo Penal, las secciones de violencia sobre la mujer o sobre la infancia con competencia para enjuiciar, o el Juez Central de lo Penal. Los demás, la Audiencia Provincial (la de la circunscripción del juzgado de violencia sobre la mujer, en su caso) o la Sala de lo Penal de la Audiencia Nacional, salvo que el delito sea de los atribuidos al Tribunal del Jurado. Las secciones especializadas (apartados 5 a 7) instruyen los delitos que el art. 14 les reserva y, además, adoptan las medidas de protección de las víctimas, juzgan los delitos leves que les atribuya la ley, dictan sentencias de conformidad y emiten y ejecutan instrumentos de reconocimiento mutuo de la Unión Europea. Si se juzga solo a una persona jurídica, cuenta la pena prevista para la persona física (art. 14 bis).",
      "articulos": [
       "8",
       "14",
@@ -53,6 +53,39 @@
      ],
      "plazos": [],
      "ramas": [
+      {
+       "si": "Violencia sobre la mujer (art. 14.5)",
+       "entonces": "Instruye la sección especializada: delitos de homicidio, lesiones, contra la libertad, la integridad moral, la libertad sexual, la intimidad, el honor o con violencia o intimidación contra quien sea o haya sido esposa o pareja del autor; también contra descendientes o menores convivientes si además hay violencia de género; delitos contra las relaciones familiares de esas víctimas; quebrantamiento (art. 468 CP) en esos casos; y delitos contra la libertad sexual, mutilación genital, matrimonio forzado, acoso sexual y trata sexual cuando la ofendida sea mujer.",
+       "articulos": [
+        "14"
+       ],
+       "literal": {
+        "articulo": "14",
+        "texto": "Las Secciones de los Tribunales de Instancia con competencia en materia de violencia sobre la mujer conocerán"
+       }
+      },
+      {
+       "si": "La víctima es un niño, niña o adolescente (art. 14.6)",
+       "entonces": "Instruye la Sección de Violencia contra la Infancia y la Adolescencia: homicidio, lesiones, delitos contra la libertad, torturas, integridad moral, intimidad, imagen, domicilio, honor, relaciones familiares o con violencia o intimidación; trata (art. 177 bis CP) con alguna víctima menor; y quebrantamiento (art. 468 CP) cuando el ofendido sea menor.",
+       "articulos": [
+        "14"
+       ],
+       "literal": {
+        "articulo": "14",
+        "texto": "Las Secciones de Violencia contra la Infancia y la Adolescencia conocerán"
+       }
+      },
+      {
+       "si": "Los hechos podrían corresponder a las dos secciones especializadas (art. 14.7)",
+       "entonces": "Prevalece la Sección de Violencia sobre la Mujer.",
+       "articulos": [
+        "14"
+       ],
+       "literal": {
+        "articulo": "14",
+        "texto": "la competencia le corresponderá en todo caso a la segunda"
+       }
+      },
       {
        "si": "No consta dónde se cometió el delito",
        "entonces": "Por este orden: donde se hallaron pruebas materiales, donde se detuvo al presunto reo, su residencia o cualquier juez que tuviera noticia del delito. Cuando conste el lugar, se inhibe a favor del competente.",

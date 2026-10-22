@@ -138,9 +138,10 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 - [x] **Qué títulos del Libro I se desarrollan. Resuelta por el usuario (22-10-2026):** solo Competencia y Acciones.
 - [ ] **Terminología de los juzgados (arts. 15 bis y 17 bis).** Siguen diciendo «Juez/Juzgados de Violencia sobre la Mujer»; el art. 14 ya habla de Secciones de los Tribunales de Instancia. En la app: nota «Ojo» con la regla de la nota general del BOE (LO 1/2025, ref. BOE-A-2025-76, Verificable).
-- [ ] **Art. 111: «salvo siempre lo dispuesto en los arts. 4.º, 5.º y 6.º de este Código».** Parece referirse a los arts. 4 a 6 de la propia LECrim (cuestiones prejudiciales), pero dice «Código». No lo cito en las alternativas, solo en conexiones. **Pendiente de revisión individual.**
+- [x] **Art. 111: «salvo siempre lo dispuesto en los arts. 4.º, 5.º y 6.º de este Código». Resuelta con criterio interpretativo (criterio aportado por el usuario, 22-10-2026).** Es una referencia interna a la propia LECrim: los arts. 4 a 6 están en su capítulo «Cuestiones prejudiciales» (Verificable en la app). «Código» responde a la denominación histórica del texto; no es una remisión errónea. En la app: solo en conexiones.
+- [ ] **Art. 14: reglas especiales de competencia (apartados 5, 6 y 7). Pendiente de revisión individual (criterio aportado por el usuario, 22-10-2026).** La ficha no puede quedarse en las reglas generales de pena y lugar. Hecho: la descripción distingue instrucción, enjuiciamiento y demás atribuciones de las secciones especializadas; tres alternativas nuevas resumen los supuestos del apartado 5 (violencia sobre la mujer), los del apartado 6 (infancia y adolescencia) y la preferencia del apartado 7. Falta tu revisión de que el resumen no confunde las competencias de cada sección. Las alternativas citan los arts. 468 y 177 bis del Código Penal sin enlace (referencia BOE pendiente, ver «Enlace al Código Penal»).
   - **Tu respuesta:**
-- [ ] **Revisa las 2 fichas:** las frases entre « » son literales (comprobadas por el script); el resto es resumen mío. El art. 14 es largo: la ficha resume solo las reglas de pena y lugar, no las de las secciones de violencia sobre la mujer e infancia (arts. 14.5 a 14.7).
+- [ ] **Revisa las 2 fichas:** las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
 
 ### Aceptación de decreto, e injuria y calumnia (contenido elaborado, pendiente de revisión)
 
