@@ -5,15 +5,19 @@
    "nombre": "Disposiciones generales",
    "bloque": "lecrim",
    "grupo": "Libro I · Disposiciones generales",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Libro I. Por decisión del usuario, solo se desarrollan los temas que orientan el recorrido: la competencia (quién instruye y quién juzga) y las acciones penal y civil (quién acusa y quién reclama). El resto queda como índice; los recursos contra resoluciones procesales están en la pestaña Recursos.",
    "ambito": {
     "corto": "Arts. 1 a 258 bis",
     "texto": "LIBRO I. Disposiciones generales",
     "articulos": [
      "1"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "8",
+      "texto": "La jurisdicción criminal es siempre improrrogable"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
@@ -36,20 +40,118 @@
     },
     {
      "id": "generales-8",
-     "fase": "De la competencia de los Jueces y Tribunales en lo criminal",
-     "subtitulo": "LIBRO I · TÍTULO II · arts. 8 a 51",
-     "descripcion": "",
+     "fase": "Competencia: quién instruye y quién juzga",
+     "subtitulo": "Según la pena y el lugar · conexidad · inhibitoria y declinatoria",
+     "descripcion": "La jurisdicción criminal es siempre improrrogable. Instruye la Sección de Instrucción del Tribunal de Instancia del partido donde se cometió el delito, la Sección de violencia sobre la mujer o de violencia contra la infancia y la adolescencia cuando corresponda, o el Juez Central de Instrucción. Juzgan, según la pena (art. 14): los delitos leves, la Sección de Instrucción. Los delitos con pena privativa de libertad de hasta cinco años, multa de cualquier cuantía u otras penas de hasta diez años, la Sección de lo Penal (o el Juez Central de lo Penal). Los demás, la Audiencia Provincial o la Sala de lo Penal de la Audiencia Nacional, salvo que el delito sea de los atribuidos al Tribunal del Jurado. Si se juzga solo a una persona jurídica, cuenta la pena prevista para la persona física (art. 14 bis).",
      "articulos": [
       "8",
-      "51"
-     ],
-     "rango": [
-      "8",
-      "51"
+      "14",
+      "14 bis",
+      "15",
+      "17",
+      "26"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "No consta dónde se cometió el delito",
+       "entonces": "Por este orden: donde se hallaron pruebas materiales, donde se detuvo al presunto reo, su residencia o cualquier juez que tuviera noticia del delito. Cuando conste el lugar, se inhibe a favor del competente.",
+       "articulos": [
+        "15"
+       ],
+       "literal": {
+        "articulo": "15",
+        "texto": "Cuando no conste el lugar en que se haya cometido una falta o delito"
+       }
+      },
+      {
+       "si": "Es un asunto de violencia sobre la mujer",
+       "entonces": "La competencia territorial la fija el domicilio de la víctima, sin perjuicio de las medidas urgentes del juez del lugar de los hechos.",
+       "articulos": [
+        "15 bis",
+        "13"
+       ],
+       "literal": {
+        "articulo": "15 bis",
+        "texto": "la competencia territorial vendrá determinada por el lugar del domicilio de la víctima"
+       }
+      },
+      {
+       "si": "Hay varios delitos conexos (art. 17.2)",
+       "entonces": "Se investigan y juzgan en una misma causa si conviene para esclarecerlos, salvo excesiva complejidad o dilación.",
+       "articulos": [
+        "17",
+        "18"
+       ],
+       "literal": {
+        "articulo": "17",
+        "texto": "los delitos conexos serán investigados y enjuiciados en la misma causa"
+       }
+      },
+      {
+       "si": "El delito correspondería a la Audiencia Provincial pero es de los atribuidos al Jurado",
+       "entonces": "Lo juzga el Tribunal del Jurado.",
+       "articulos": [
+        "14"
+       ],
+       "literal": {
+        "articulo": "14",
+        "texto": "si el delito fuere de los atribuidos al Tribunal de Jurado, el conocimiento y fallo corresponderá a éste"
+       }
+      },
+      {
+       "si": "Una parte quiere discutir la competencia",
+       "entonces": "Por inhibitoria (ante el que se considera competente) o por declinatoria (ante el que se considera incompetente); usar una excluye la otra.",
+       "articulos": [
+        "26"
+       ],
+       "literal": {
+        "articulo": "26",
+        "texto": "El uso de uno de estos medios excluye absolutamente el del otro"
+       }
+      },
+      {
+       "si": "La cuestión de competencia se plantea terminado el sumario",
+       "entonces": "Suspende el procedimiento hasta que se decida.",
+       "articulos": [
+        "24"
+       ],
+       "literal": {
+        "articulo": "24",
+        "texto": "toda cuestión de competencia que se promueva suspenderá los procedimientos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quién juzga un delito castigado con prisión de hasta cinco años?",
+      "a": "La Sección de lo Penal del Tribunal de Instancia del lugar de comisión (o la sección de violencia sobre la mujer o sobre la infancia que corresponda, o el Juez Central de lo Penal en su ámbito).",
+      "articulos": [
+       "14"
+      ],
+      "literal": {
+       "articulo": "14",
+       "texto": "pena privativa de libertad de duración no superior a cinco años"
+      }
+     },
+     "conexiones": [
+      "8",
+      "13",
+      "14",
+      "14 bis",
+      "15",
+      "15 bis",
+      "17",
+      "17 bis",
+      "18",
+      "24",
+      "26"
+     ],
+     "continua_en": [
+      "instruccion",
+      "abreviado",
+      "leves"
+     ],
+     "aviso": "Según la nota general del BOE a esta ley, las referencias a los Juzgados (de Instrucción, de lo Penal, de Violencia sobre la Mujer, entre otros) se entienden hechas a las Secciones del orden jurisdiccional correspondiente de los Tribunales de Instancia (disposición adicional primera de la [[Ley Orgánica 1/2025, de 2 de enero|https://www.boe.es/buscar/act.php?id=BOE-A-2025-76]]). El art. 14 ya emplea esa terminología; los arts. 15 bis y 17 bis conservan la antigua."
     },
     {
      "id": "generales-52",
@@ -70,20 +172,127 @@
     },
     {
      "id": "generales-100",
-     "fase": "De las personas a quienes corresponde el ejercicio de las acciones que nacen de los delitos y faltas",
-     "subtitulo": "LIBRO I · TÍTULO IV · arts. 100 a 117",
-     "descripcion": "",
+     "fase": "Acciones penal y civil: quién acusa y quién reclama",
+     "subtitulo": "Fiscal, víctima, perjudicado y acusación popular · reserva de la acción civil",
+     "descripcion": "Todo delito da lugar a una acción penal y puede dar lugar a una acción civil (restitución, reparación e indemnización). La acción penal es pública: pueden ejercerla los ciudadanos españoles con arreglo a la ley. El Ministerio Fiscal está obligado a ejercer las acciones penales procedentes, salvo las reservadas a la querella privada, y también la civil, salvo que el ofendido renuncie expresamente. Al recibir declaración al ofendido o perjudicado, el Letrado de la Administración de Justicia le informa de su derecho a ser parte y a renunciar o no a la restitución e indemnización. Mientras haya proceso penal, no puede seguirse un pleito civil sobre el mismo hecho.",
      "articulos": [
       "100",
-      "117"
+      "101",
+      "105",
+      "108",
+      "109",
+      "109 bis",
+      "110",
+      "112",
+      "114",
+      "116"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Víctima o perjudicado: personarse y ejercer la acción penal (sin retroceder actuaciones)",
+       "plazo": "Antes del trámite de calificación",
+       "articulo": "109 bis",
+       "literal": "en cualquier momento antes del trámite de calificación del delito"
+      },
+      {
+       "acto": "Personación tardía: solo adhiriéndose a una acusación ya formulada",
+       "plazo": "Hasta el inicio del juicio oral",
+       "articulo": "109 bis",
+       "literal": "hasta el inicio del juicio oral adhiriéndose al escrito de acusación"
+      },
+      {
+       "acto": "Pedir que se revoque la renuncia a la acción civil",
+       "plazo": "Antes del trámite de calificación",
+       "articulo": "112",
+       "literal": "siempre y cuando se formule antes del trámite de calificación del delito"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El perjudicado no se persona",
+       "entonces": "No por eso renuncia a la indemnización: la renuncia tiene que ser clara y terminante.",
+       "articulos": [
+        "110"
+       ],
+       "literal": {
+        "articulo": "110",
+        "texto": "siendo necesario que la renuncia de este derecho se haga en su caso de una manera clara y terminante"
+       }
+      },
+      {
+       "si": "Prefiere reclamar la indemnización en la vía civil",
+       "entonces": "Debe reservar expresamente la acción civil; si no, se entiende ejercitada junto con la penal.",
+       "articulos": [
+        "112"
+       ],
+       "literal": {
+        "articulo": "112",
+        "texto": "la reservase expresamente para ejercitarla después de terminado el juicio criminal"
+       }
+      },
+      {
+       "si": "Ya hay un pleito civil sobre el mismo hecho",
+       "entonces": "Se suspende hasta que recaiga sentencia firme en la causa penal.",
+       "articulos": [
+        "114",
+        "111"
+       ],
+       "literal": {
+        "articulo": "114",
+        "texto": "no podrá seguirse pleito sobre el mismo hecho"
+       }
+      },
+      {
+       "si": "La víctima ha muerto o desaparecido por el delito",
+       "entonces": "Pueden ejercer la acción penal el cónyuge o la pareja, los hijos que convivían, los progenitores y otros parientes, en el orden del art. 109 bis.",
+       "articulos": [
+        "109 bis"
+       ],
+       "literal": {
+        "articulo": "109 bis",
+        "texto": "En el caso de muerte o desaparición de la víctima a consecuencia del delito"
+       }
+      },
+      {
+       "si": "Se extingue la acción penal",
+       "entonces": "La civil subsiste, salvo que una sentencia firme declare que no existió el hecho; se ejercerá ante la jurisdicción civil.",
+       "articulos": [
+        "116"
+       ],
+       "literal": {
+        "articulo": "116",
+        "texto": "La extinción de la acción penal no lleva consigo la de la civil"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quién puede ejercer la acción penal aunque no sea ofendido por el delito?",
+      "a": "Cualquier ciudadano español, con arreglo a la ley, porque la acción penal es pública. Es la llamada acusación popular.",
+      "articulos": [
+       "101"
+      ],
+      "literal": {
+       "articulo": "101",
+       "texto": "Todos los ciudadanos españoles podrán ejercitarla con arreglo a las prescripciones de la Ley"
+      }
+     },
+     "conexiones": [
       "100",
-      "117"
+      "101",
+      "105",
+      "108",
+      "109",
+      "109 bis",
+      "110",
+      "111",
+      "112",
+      "114",
+      "116"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ]
     },
     {
      "id": "generales-118",

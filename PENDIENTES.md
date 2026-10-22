@@ -132,6 +132,16 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [x] **Recursos de la LECrim como en la LEC (hecho):** 14 recursos y 27 casos del selector, con «Por resolución», «Recursos» y «Ponte a prueba». Antes: al usuario le gusta la pestaña Recursos de la LEC (selector «Por resolución», fichas de cada recurso y «Ponte a prueba»). En la LECrim ahora solo hay tarjetas de bloques en esqueleto. Hacer `lecrim/datos/recursos.json` con el mismo formato (recursos, selector por resolución con frase literal, test), a partir de los arts. 216-238 ter (recursos contra resoluciones procesales), 846 bis a-846 ter (apelación), 847-933 (casación) y 954-961 (revisión), y los recursos propios del abreviado, juicio rápido y delitos leves. Todo con `revisado: false` y las dudas anotadas aquí.
 - [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).
 
+### Disposiciones generales: competencia y acciones (contenido elaborado, pendiente de revisión)
+
+> Del Libro I solo se desarrollan dos fichas, por decisión del usuario (22-10-2026): «Competencia: quién instruye y quién juzga» (arts. 8-51) y «Acciones penal y civil» (arts. 100-117), con 3 plazos. El resto del Libro I queda como índice aunque el canon lo marque PARCIAL: no ayuda a orientarse en el recorrido (criterio anotado en CLAUDE.md). Los recursos contra resoluciones procesales siguen en la pestaña Recursos.
+
+- [x] **Qué títulos del Libro I se desarrollan. Resuelta por el usuario (22-10-2026):** solo Competencia y Acciones.
+- [ ] **Terminología de los juzgados (arts. 15 bis y 17 bis).** Siguen diciendo «Juez/Juzgados de Violencia sobre la Mujer»; el art. 14 ya habla de Secciones de los Tribunales de Instancia. En la app: nota «Ojo» con la regla de la nota general del BOE (LO 1/2025, ref. BOE-A-2025-76, Verificable).
+- [ ] **Art. 111: «salvo siempre lo dispuesto en los arts. 4.º, 5.º y 6.º de este Código».** Parece referirse a los arts. 4 a 6 de la propia LECrim (cuestiones prejudiciales), pero dice «Código». No lo cito en las alternativas, solo en conexiones. **Pendiente de revisión individual.**
+  - **Tu respuesta:**
+- [ ] **Revisa las 2 fichas:** las frases entre « » son literales (comprobadas por el script); el resto es resumen mío. El art. 14 es largo: la ficha resume solo las reglas de pena y lugar, no las de las secciones de violencia sobre la mujer e infancia (arts. 14.5 a 14.7).
+
 ### Aceptación de decreto, e injuria y calumnia (contenido elaborado, pendiente de revisión)
 
 > Desarrolladas 4 fases y 5 plazos dentro del bloque «Otros procedimientos especiales», según el canon (bloques 28 y 30): aceptación de decreto (arts. 803 bis a-j, 2 fases) e injuria y calumnia contra particulares (arts. 804-815, 2 fases). Aforados, decomiso, imprenta, extradición y reos ausentes quedan como índice (canon: NO). Propuestas de Claude, No verificables hasta que las confirmes.
