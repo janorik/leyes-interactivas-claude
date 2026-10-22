@@ -129,22 +129,14 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > Bloque desarrollado: 8 fases y 21 plazos (arts. 486 a 544 quinquies). Propuestas de Claude, No verificables hasta que las confirmes. Estados: resuelta / resuelta con criterio interpretativo / pendiente de revisión individual.
 
-- [ ] **24 horas (art. 496) frente a 72 horas (art. 520.1).** El art. 496 obliga al particular, Autoridad o agente que detiene a poner al detenido en libertad o entregarlo al juez «dentro de las veinticuatro horas siguientes». El art. 520.1 dice que la detención durará lo estrictamente necesario y que, «dentro de los plazos establecidos en la presente Ley, y, en todo caso, en el plazo máximo de setenta y dos horas», el detenido quedará libre o a disposición judicial (Verificable).
-  En la app: Procesos › Detención, prisión… › fase 2, con los dos plazos, cada uno con su frase literal.
-  - **Propuesta:** no elegir. La app muestra los dos plazos tal como los dicen los artículos, sin decir cuál prevalece. Dime qué lectura aplicas y la añado como nota.
+- [ ] **24 horas (art. 496) frente a 72 horas (art. 520.1). Pendiente de revisión individual (decisión del usuario (22-10-2026)).** Los dos plazos no son necesariamente contradictorios: regulan actuaciones y sujetos distintos. Criterio del usuario: las 72 horas no autorizan a agotar ese plazo, y tampoco puede darse por derogado el de 24 horas por existir el máximo de 72. Falta contrastar la doctrina específica sobre el art. 496. Fuente que cita el usuario: STC 181/2020 (plazo relativo, el estrictamente necesario, y máximo absoluto de 72 horas); No verificable desde aquí.
+  En la app: fase 2, los dos plazos con su frase literal y aviso «Duda de interpretación».
   - **Tu respuesta:**
-- [ ] **«Prisión correccional» (art. 492.2.º).** La Policía debe detener al procesado por delito con pena «superior a la de prisión correccional», una pena que ya no existe.
-  En la app: no se cita en las fichas; solo en el texto literal.
-  - **Propuesta:** pendiente de revisión individual. No sustituyo la expresión por ninguna pena actual.
+- [ ] **«Prisión correccional» (art. 492.2.º). Pendiente de revisión individual (decisión del usuario (22-10-2026)).** Clasificación penal histórica: no se equipara a ninguna pena actual sin determinar qué umbral quiso fijar el legislador. En la app: solo en el texto literal.
   - **Tu respuesta:**
-- [ ] **«Reposición» del auto (art. 501).** Al notificar el auto que eleva la detención a prisión, se informa del derecho a pedir «la reposición del auto».
-  En la app: fase 2, alternativa con la frase literal.
-  - **Propuesta:** pendiente de revisión individual. No sé si debe leerse como recurso de reforma; además, el art. 507 da apelación contra los autos de prisión.
+- [ ] **«Reposición» del auto (art. 501). Pendiente de revisión individual (decisión del usuario (22-10-2026)).** Antes de buscar equivalencia con los recursos actuales, comprobar la naturaleza de la resolución, su régimen de recursos (el art. 507 da apelación contra los autos de prisión) y si el trámite es compatible con la regulación vigente. En la app: fase 2, alternativa con la frase literal.
   - **Tu respuesta:**
-- [ ] **«Delito o falta» y «juicio de faltas» (art. 544 ter).** Aparece en el apartado 1 (presupuestos de la orden de protección) y en el 4 (audiencia junto al «acto del juicio de faltas»).
-  En la app: fase 8, aviso «Duda de interpretación».
-  - **Propuesta:** resuelta con criterio interpretativo: «falta» como delito leve (nota general del BOE). Pendiente de tu confirmación.
-  - **Tu respuesta:**
+- [x] **«Delito o falta» y «juicio de faltas» (art. 544 ter). Resuelta con criterio interpretativo por el usuario (22-10-2026):** «falta» se lee conforme a la categoría actual de delito leve, sin afirmar que toda conducta antes constitutiva de falta conserve hoy la misma tipificación. En la app: nota «Ojo» en la fase 8.
 - [ ] **Revisa las 8 fases:** las frases entre « » son literales; las descripciones son resumen mío.
 
 ### Juicio rápido (contenido elaborado, pendiente de revisión)
