@@ -104,9 +104,9 @@ Entre paréntesis, el **tramo oficial del bloque** según el consolidado BOE. Tr
 11. Costas procesales (arts. 239-246) — NO
 12. Estadística judicial (arts. 247-257) y correcciones disciplinarias (art. 258) — NO
 #### Libro II — Sumario
-13. Denuncia (arts. 259-269) — SI *(Añadido por el usuario el 23-10-2026, a propuesta de Claude: es el inicio del proceso penal. Pendiente de pasarlo también a su plataforma.)*
-14. Querella (arts. 270-281) — SI *(Añadido por el usuario el 23-10-2026, a propuesta de Claude: es el inicio del proceso penal. Pendiente de pasarlo también a su plataforma.)*
-15. Policía judicial (arts. 282-298) — SI *(Añadido por el usuario el 23-10-2026, a propuesta de Claude: es el inicio del proceso penal. Pendiente de pasarlo también a su plataforma.)*
+13. Denuncia (arts. 259-269) — SI *(Añadido por el usuario el 23-10-2026, a propuesta de Claude: es el inicio del proceso penal. También cambiado en su plataforma el 23-10-2026.)*
+14. Querella (arts. 270-281) — SI *(Añadido por el usuario el 23-10-2026, a propuesta de Claude: es el inicio del proceso penal. También cambiado en su plataforma el 23-10-2026.)*
+15. Policía judicial (arts. 282-298) — SI *(Añadido por el usuario el 23-10-2026, a propuesta de Claude: es el inicio del proceso penal. También cambiado en su plataforma el 23-10-2026.)*
 16. Instrucción / formación del sumario (arts. 299-325) — PARCIAL (299-302-303-311-314-324)
 17. Comprobación del delito, testigos y pericia (arts. 326-485) — PARCIAL (326-334-384-384 bis-389-410-416-433-449 bis-449 ter-456-478)
 18. Citación, detención y prisión provisional (arts. 486-527) — PARCIAL (502-503-504-505-509-518-520-520 bis-527)
@@ -161,22 +161,22 @@ Copiado el 23-10-2026 del documento de la plataforma (sin sus notas internas de 
 10. Regla general de las modalidades procesales (102) — PARCIAL (102)
 11. Despido disciplinario (103-113) — PARCIAL (103-113)
 12. Impugnación de sanciones (114-115) — PARCIAL (114, 115)
-13. Reclamación al Estado de salarios de tramitación (116-119) — NO
+13. Reclamación al Estado de salarios de tramitación (116-119) — SI. Nota: solo ficha breve de orientación (qué es, quién demanda, plazo y recurso). *(Cambiado de NO por el usuario el 23-10-2026, a propuesta de Claude.)*
 14. Extinción por causas objetivas (120-123) y despido colectivo (124) — PARCIAL (120-124)
 15. Vacaciones (125-126) — PARCIAL (125, 126)
-16. Materia electoral (127-136) — NO
+16. Materia electoral (127-136) — SI. Nota: solo ficha breve de orientación (qué es, quién demanda, plazo y recurso). *(Cambiado de NO por el usuario el 23-10-2026, a propuesta de Claude.)*
 17. Clasificación profesional (137) — PARCIAL (137)
 18. Movilidad geográfica, modificación sustancial, suspensión y reducción de jornada (138) — PARCIAL (138)
 19. Trabajo a distancia (138 bis) — PARCIAL (138 bis)
 20. Derechos de conciliación de la vida personal, familiar y laboral (139) — PARCIAL (139)
 21. Prestaciones de Seguridad Social (140-147) — PARCIAL (140-147)
-22. Procedimiento de oficio (148-150) — NO.
+22. Procedimiento de oficio (148-150) — SI. Nota: solo ficha breve de orientación (qué es, quién demanda, plazo y recurso). *(Cambiado de NO por el usuario el 23-10-2026, a propuesta de Claude.)*
 23. Impugnación de actos administrativos laborales y de Seguridad Social no prestacionales (151-152) — PARCIAL (151, 152)
 24. Conflictos colectivos (153-162) — PARCIAL (153-162)
 25. Impugnación de convenios colectivos (163-166) — PARCIAL (163, 164, 165, 166)
-26. Impugnación de estatutos sindicales y de asociaciones empresariales (167-176) — NO
+26. Impugnación de estatutos sindicales y de asociaciones empresariales (167-176) — SI. Nota: solo ficha breve de orientación (qué es, quién demanda, plazo y recurso). *(Cambiado de NO por el usuario el 23-10-2026, a propuesta de Claude.)*
 27. Tutela de derechos fundamentales y libertades públicas (177-184) — PARCIAL (177-184)
-28. Audiencia al demandado rebelde (185) — NO
+28. Audiencia al demandado rebelde (185) — SI *(cambiado de NO por el usuario el 23-10-2026, a propuesta de Claude: es el remedio del condenado en rebeldía)*
 
 #### Libro III — Impugnación
 29. Reposición, revisión de decretos y queja (186-189) — PARCIAL (186, 187, 188, 189)
@@ -184,7 +184,7 @@ Copiado el 23-10-2026 del documento de la plataforma (sin sus notas internas de 
 31. Casación (205-217) — PARCIAL (205, 206, 207, 208, 209, 210, 211, 213, 214, 215, 216, 217). Nota: el 212 (remisión de autos) sigue fuera.
 32. Casación para la unificación de doctrina (218-228) — PARCIAL (218, 219, 220, 221, 223, 224, 225, 225 bis, 226, 228). Nota: el 222 y el 227 siguen fuera.
 33. Disposiciones comunes a suplicación y casación (229-235) — PARCIAL (229, 230, 231, 233, 235). Nota: depósito y consignación (229-230) son de uso diario; acumulación de recursos (234) sigue fuera.
-34. Revisión de sentencias y laudos firmes, y error judicial (236) — NO
+34. Revisión de sentencias y laudos firmes, y error judicial (236) — SI *(cambiado de NO por el usuario el 23-10-2026, a propuesta de Claude: medio de impugnación; recursos completos)*
 
 #### Libro IV — Ejecución
 35. Normas generales de ejecución y extensión de efectos (237-247 ter) — PARCIAL (237, 238, 239, 240, 241, 243, 244, 245, 246, 247, 247 bis, 247 ter). Nota: el 242 (ejecución parcial) sigue fuera.
