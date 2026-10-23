@@ -448,7 +448,8 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [ ] **Artículos vacíos:** 95 a 101 «(Suprimido)» (la casación anterior a la reforma de 2015) y un apartado «(Anulado)» en los arts. 10 y 11 (Verificable: texto del PDF). Se muestran tal cual.
 - [ ] **Disposición adicional cuarta, apartado 5:** el PDF escribe «Sala de lo Contencioso- Administrativo», con un espacio tras el guion a mitad de línea (Verificable: PDF, pág. 71). Se deja literal.
 - [x] **Nombre en la cabecera de la app:** «Ley reguladora de la Jurisdicción Contencioso-administrativa» no cabe en 3 líneas del móvil y se corta («Contencioso-…»). **Propuesta:** dejarlo; la abreviatura «LJCA» en dorado ya identifica la ley (No verificable). **Tu respuesta:** «como sea mejor»: se deja así.
-- [ ] **Canon de la LJCA:** para el mapa procesal hace falta saber qué quieres desarrollar. ¿Tienes canon de la LJCA en tu plataforma? **Tu respuesta:** no lo tiene (23-10-2026).
+- [ ] **Remisión desfasada al art. 99 (art. 10.5):** el art. 10.5 dice que las Salas de los TSJ «Conocerán del recurso de casación para la unificación de doctrina previsto en el artículo 99», y los arts. 95 a 101 figuran como «(Suprimido)» (Verificable: texto de la app). Estado: **pendiente de revisión individual** (criterio del usuario: no se corrige por analogía). **Propuesta:** en el mapa no se desarrolla ese recurso y se avisa de la remisión en la ficha de competencias (No verificable). **Tu respuesta:**
+- [ ] **Canon de la LJCA:** para el mapa procesal hace falta saber qué quieres desarrollar. ¿Tienes canon de la LJCA en tu plataforma? **Tu respuesta:** no lo tiene (23-10-2026). Propuesta de Claude en `fuentes/canon_contenido.md › LJCA` (39 apartados), pendiente de tu visto bueno.
 
 ## Páginas legales (todas las leyes)
 

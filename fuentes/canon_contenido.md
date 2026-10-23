@@ -192,3 +192,54 @@ Copiado el 23-10-2026 del documento de la plataforma (sin sus notas internas de 
 37. Ejecución de sentencias firmes de despido (278-286) — PARCIAL (278-286)
 38. Ejecución frente a entes públicos (287-288) — PARCIAL (287, 288)
 39. Ejecución provisional (289-305) — PARCIAL (294-304). Nota: anticipos dinerarios 289-293 y la remisión genérica a la LEC (305) siguen fuera.
+
+## LJCA — Ley 29/1998 (PROPUESTA de Claude, pendiente del usuario)
+
+> El usuario no tiene canon de la LJCA (23-10-2026). Propuesta de Claude (Chat 5), No verificable hasta que el usuario la confirme. Criterio: núcleo obligatorio (procedimientos, resoluciones y recursos completos) y «¿ayuda a orientarse?». Rangos sacados del índice del PDF consolidado (03-01-2025). Además del mapa, se propone `ljca/datos/recursos.json` (selector «¿qué recurso cabe?», fichas y test), como en las otras leyes.
+
+#### Título I. Orden jurisdiccional
+1. Ámbito (arts. 1-5) — PARCIAL (1, 2, 3, 5). Nota: qué entra y qué queda fuera del orden contencioso-administrativo; el 4 (cuestiones prejudiciales), a índice.
+2. Órganos y competencias (6-13) — PARCIAL (8, 9, 10, 11, 12). Nota: cuadro «qué órgano conoce de qué» (Juzgados, Juzgados Centrales, TSJ, Audiencia Nacional, Supremo).
+3. Competencia territorial (14) — SI
+4. Constitución y actuación de las Salas (15-16) — NO
+5. Distribución de asuntos (17) — NO
+#### Título II. Las partes
+6. Capacidad procesal (18) — NO
+7. Legitimación (19-22) — PARCIAL (19, 20, 21)
+8. Representación y defensa (23-24) — PARCIAL (23). Nota: cuándo hace falta procurador y abogado.
+#### Título III. Objeto del recurso
+9. Actividad administrativa impugnable (25-30) — SI. Nota: actos y disposiciones, impugnación indirecta, inactividad (29) y vía de hecho (30).
+10. Pretensiones de las partes (31-33) — SI
+11. Acumulación (34-39) — PARCIAL (34, 35, 36, 37, 39). Nota: incluye la ampliación del recurso (36) y el pleito testigo (37).
+12. Cuantía del recurso (40-42) — SI. Nota: decide si cabe apelación (art. 81).
+#### Título IV. Procedimiento
+13. Diligencias preliminares (43-44) — SI. Nota: lesividad y requerimiento entre Administraciones.
+14. Interposición y reclamación del expediente (45-48) — SI. Nota: plazo de dos meses (art. 46).
+15. Emplazamiento y admisión (49-51) — SI
+16. Demanda y contestación (52-57) — SI
+17. Alegaciones previas (58-59) — SI
+18. Prueba (60-61) — SI
+19. Vista y conclusiones (62-66) — PARCIAL (62, 63, 64, 65)
+20. Sentencia (67-73) — SI
+21. Otros modos de terminación (74-77) — SI. Nota: desistimiento, allanamiento, satisfacción extraprocesal y acuerdo.
+22. Procedimiento abreviado (78) — SI
+23. Recursos contra providencias y autos (79-80) — SI. Nota: reposición y apelación de autos.
+24. Recurso ordinario de apelación (81-85) — SI
+25. Recurso de casación (86-94) — SI. Nota: preparación, admisión por interés casacional y decisión; el 94 (gran número de recursos), a índice.
+26. Casación para la unificación de doctrina y en interés de la ley (95-101) — NO. Nota: artículos suprimidos en el texto consolidado.
+27. Revisión de sentencias (102) — SI
+28. Recursos contra las resoluciones del LAJ (102 bis) — SI
+29. Ejecución de sentencias (103-113) — SI. Nota: incluye la extensión de efectos (110-111).
+#### Título V. Procedimientos especiales
+30. Protección de derechos fundamentales (114-122 quater) — PARCIAL (114-121, 122 en ficha breve). Nota: las autorizaciones judiciales de los arts. 122 bis-122 quater, a índice.
+31. Cuestión de ilegalidad (123-126) — SI, ficha breve
+32. Suspensión administrativa previa de acuerdos (127) — NO
+33. Garantía de la unidad de mercado (127 bis-127 quáter) — NO
+34. Extinción de partidos políticos (127 quinquies) — NO
+#### Título VI. Disposiciones comunes
+35. Plazos (128) — SI
+36. Medidas cautelares (129-136) — SI
+37. Incidentes e invalidez de actos procesales (137-138) — SI, ficha breve
+38. Costas procesales (139) — SI
+#### Disposiciones
+39. Adicionales, transitorias, derogatorias y finales — NO. Nota: la supletoriedad de la LEC (disposición final primera) se menciona en la ficha general.
