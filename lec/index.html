@@ -41,8 +41,10 @@ header.cab{background:var(--verde-osc);color:var(--crema);position:sticky;top:0;
 .cab-in{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:8px 16px}
 .cab img{height:36px;width:auto;border-radius:6px;display:block}
 .cab .marca{line-height:1.1;min-width:0}
-.cab .marca b{display:block;letter-spacing:.14em;font-size:.82rem;color:var(--crema)}
-.cab .marca span{display:block;font-size:.74rem;color:var(--oro)}
+.cab .marca b{display:block;letter-spacing:.14em;font-size:.66rem;color:var(--oro)}
+#subtit{display:block;margin-top:1px}
+#subtit .ab{display:block;font-size:1.05rem;font-weight:700;color:var(--oro);letter-spacing:.03em}
+#subtit .nom{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;font-size:.76rem;font-weight:600;color:var(--crema);line-height:1.15}
 .cab .acc{margin-left:auto;display:flex;gap:6px}
 .ico{background:transparent;border:1px solid rgba(255,255,255,.18);color:var(--crema);border-radius:9px;
   height:38px;min-width:38px;padding:0 9px;cursor:pointer;font-size:.9rem;display:flex;align-items:center;justify-content:center;text-decoration:none}
@@ -405,7 +407,7 @@ if (LOGO_SRC.indexOf("data:")===0) $("#logo").src = LOGO_SRC; else $("#logo").hi
 const L = D.ley;
 if (!(D.vista_procedimientos||[]).length) document.querySelectorAll('nav.tabs a[data-v=procedimientos]').forEach(a=>a.hidden=true);
 if (!(D.recursos||[]).length && !(D.vista_recursos||[]).length) document.querySelectorAll('nav.tabs a[data-v=recursos]').forEach(a=>a.hidden=true);
-$("#subtit").textContent = (PROC.length ? "Mapa procesal · " : "")+ABR;
+$("#subtit").innerHTML = '<span class="ab">'+esc(ABR)+'</span><span class="nom">'+esc(D.ley.nombre_corto||D.ley.nombre)+'</span>';   // en qué ley estás, siempre visible
 document.title = ABR+" · NOrlexia";
 if (!PROC.length) document.querySelectorAll('nav.tabs a[data-v=procesos]').forEach(a=>a.hidden=true);
 $("#aviso").innerHTML = "<b>"+esc(L.aviso)+".</b> Versión consolidada: <b>"+esc(L.fecha_version)+"</b>.";
@@ -629,7 +631,7 @@ document.addEventListener("keydown", e => { if (e.key==="Escape" && !$("#hoja").
 
 /* =====================  LEY  ===================== */
 function etiquetaNodo(n){
-  const sep = n.tipo === "seccion" ? " " : ". ";
+  const sep = n.tipo === "seccion" || n.tipo === "subseccion" ? " " : ". ";
   return (n.rotulo ? '<span class="rot">'+esc(n.rotulo)+'</span>'+sep : '<span class="rot">')+esc(n.titulo)+(n.rotulo?"":"</span>")+
     (n.estado ? ' <span class="est">'+esc(n.estado)+'</span>' : "");
 }

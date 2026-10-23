@@ -156,7 +156,7 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > Bloque desarrollado a propuesta de Claude y con el visto bueno del usuario (23-10-2026); el canon lo marcaba NO y se ha cambiado a SI (`fuentes/canon_contenido.md`). 3 fases y 5 plazos. En la app: Mapa › Denuncia, querella y Policía judicial, y Procedimientos › «Cómo empieza el proceso penal».
 
-- [ ] **Pasa el cambio a tu plataforma (`janorik/plataforma-juridica`, `docs/canon-contenido.md`; el usuario pidió que lo haga Claude, pero esta sesión no obtuvo permiso de escritura):** denuncia (259-269), querella (270-281) y Policía judicial (282-298), de NO a SI.
+- [x] **Cambio pasado a tu plataforma (23-10-2026):** denuncia, querella y Policía judicial, de NO a SI en `janorik/plataforma-juridica › docs/canon-contenido.md` (PR #3, unida).
 - [x] **Art. 278: «excepto el de violación o rapto». Resuelta (decisión del usuario, 23-10-2026): se deja el texto literal tal cual, sin explicar a qué delitos actuales se refiere.** El Código Penal vigente ya no usa esos nombres de delito. La ficha cita la excepción entre comillas, sin interpretarla. Necesito tu criterio (o una fuente que lo aclare) para decir a qué delitos actuales se refiere.
   - **Tu respuesta:**
 - [x] **«Para ser parte acusadora no basta con denunciar» (ficha Denuncia). Resuelta: el usuario la quiere en la ficha (23-10-2026).** Es una conclusión mía a partir de los arts. 109 bis, 264 y 270, no una frase literal.
@@ -353,6 +353,18 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
   - **Tu respuesta:**
 - [ ] **Fases del bloque.** He sustituido las 7 fases del esqueleto (capítulos del BOE) por 10 fases según el recorrido del proceso. He separado el auto del art. 779, la audiencia preliminar (arts. 785-786), la apelación y la ejecución. Dime si prefieres otra división.
 - [ ] **Revisa las 10 fases:** las frases entre « » son literales; las descripciones y los rótulos de las alternativas son resumen mío.
+
+## LRJS — Ley reguladora de la jurisdicción social
+
+### Canon (Chat 4)
+
+- [x] **Cambios del usuario a propuesta de Claude (23-10-2026):** audiencia al demandado rebelde (185) y revisión y error judicial (236) pasan de NO a SI; salarios de tramitación frente al Estado (116-119), materia electoral (127-136), procedimiento de oficio (148-150) y estatutos sindicales (167-176) pasan a SI solo con una ficha breve y sintética (qué es, quién demanda, plazo y recurso). Cambiado también en su plataforma (PR #3). La plataforma no carga esos artículos en su API hasta que el usuario lo autorice allí.
+
+### Puntos de extracción (F1, Chat 4)
+
+- [x] **Fecha de la versión: 30 de abril de 2025. Resuelta (usuario, 23-10-2026):** es la última; la descargó del BOE ese mismo día.
+- [ ] **Contraste con una segunda lectura del PDF:** 21 tramos distintos, todos de maquetación (palabras partidas con guion a final de línea, como «contencioso-administrativo», y epígrafes que ocupan dos líneas y que la otra lectura pone en otro orden). Detalle en `lrjs/datos/informe_control.md`. No hay huecos en la numeración ni artículos sin texto.
+- [ ] **Disposiciones finales primera y segunda:** modifican otras leyes y el BOE resalta en negrita parte de su texto; en la app se ve igual.
 
 ## Páginas legales (todas las leyes)
 
