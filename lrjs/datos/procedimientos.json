@@ -1237,6 +1237,11 @@
      "continua_en": [
       "recursos",
       "ejecucion"
+     ],
+     "recursos_rel": [
+      "suplicacion",
+      "casacion",
+      "cud"
      ]
     },
     {
@@ -1655,6 +1660,9 @@
       "recursos",
       "ejecucion",
       "provisional"
+     ],
+     "recursos_rel": [
+      "suplicacion"
      ]
     },
     {
@@ -1736,6 +1744,9 @@
      ],
      "continua_en": [
       "recursos"
+     ],
+     "recursos_rel": [
+      "suplicacion"
      ]
     },
     {
@@ -1825,6 +1836,9 @@
      "continua_en": [
       "recursos",
       "ejecucion"
+     ],
+     "recursos_rel": [
+      "suplicacion"
      ]
     },
     {
@@ -1936,6 +1950,9 @@
      ],
      "continua_en": [
       "recursos"
+     ],
+     "recursos_rel": [
+      "casacion"
      ]
     },
     {
@@ -2293,33 +2310,104 @@
    "nombre": "Audiencia al demandado rebelde",
    "bloque": "lrjs",
    "grupo": "Libro II · Proceso ordinario y modalidades",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Qué pasa si el demandado no comparece y cómo puede después impugnar la sentencia firme.",
    "ambito": {
     "corto": "Art. 185",
     "texto": "TÍTULO III. De la audiencia al demandado rebelde",
     "articulos": [
      "185"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "185",
+      "texto": "No será necesaria la declaración de rebeldía del demandado"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
      "id": "rebelde-185",
-     "fase": "De la audiencia al demandado rebelde",
-     "subtitulo": "TÍTULO III · art. 185",
-     "descripcion": "",
+     "fase": "Audiencia al demandado rebelde",
+     "subtitulo": "El juicio sigue sin el demandado · después puede pedir audiencia contra la sentencia firme",
+     "descripcion": "Si el demandado, citado en forma, no comparece, el juicio se celebra sin necesidad de declararle en rebeldía; a petición del demandante se pueden embargar bienes u otras medidas cautelares. Contra la sentencia firme dictada sin él, puede pedir audiencia en 20 días desde la notificación personal o desde que la conoció y, en todo caso, en 4 meses desde su publicación en el boletín. Se pide ante el órgano que dictó la sentencia firme y se sustancia ante el que conoció en instancia, por los trámites del proceso ordinario. Se aplican las normas de la LEC (Título V del Libro II) con estas especialidades.",
+     "aviso": "La rescisión de sentencias firmes a instancia del rebelde (arts. 501, 504 y 507) se regula en la [[Ley de Enjuiciamiento Civil|https://www.boe.es/buscar/act.php?id=BOE-A-2000-323]] (también en esta app).",
      "articulos": [
-      "185"
-     ],
-     "rango": [
       "185",
-      "185"
+      "83"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Pedir la audiencia",
+       "plazo": "20 días desde la notificación personal o el conocimiento de la sentencia",
+       "articulo": "185",
+       "literal": "El plazo para solicitar la audiencia será de veinte días desde la notificación personal de la sentencia"
+      },
+      {
+       "acto": "Límite si la sentencia se notificó por boletín",
+       "plazo": "4 meses desde la publicación",
+       "articulo": "185",
+       "literal": "en todo caso de cuatro meses desde la notificación de la sentencia en el Boletín Oficial correspondiente"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El demandado citado no comparece al juicio",
+       "entonces": "No hace falta declararle en rebeldía.",
+       "articulos": [
+        "185",
+        "83"
+       ],
+       "literal": {
+        "articulo": "185",
+        "texto": "No será necesaria la declaración de rebeldía del demandado"
+       }
+      },
+      {
+       "si": "El demandante teme que no podrá cobrar",
+       "entonces": "Puede pedir el embargo de bienes u otras medidas cautelares.",
+       "articulos": [
+        "185"
+       ],
+       "literal": {
+        "articulo": "185",
+        "texto": "A petición del demandante se podrá decretar el embargo"
+       }
+      },
+      {
+       "si": "Lo que se alega es un defecto de forma que causó indefensión",
+       "entonces": "Va por el incidente de nulidad de actuaciones (art. 241 LOPJ), no por la audiencia.",
+       "articulos": [
+        "185"
+       ],
+       "literal": {
+        "articulo": "185",
+        "texto": "deberá plantearse, de concurrir los presupuestos para ello, por la vía del incidente de nulidad de actuaciones"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Ante qué órgano se pide la audiencia al demandado rebelde?",
+      "a": "Ante el que dictó la sentencia firme que se quiere rescindir; la audiencia se sustancia ante el que conoció en instancia.",
+      "articulos": [
+       "185"
+      ],
+      "literal": {
+       "articulo": "185",
+       "texto": "La petición de audiencia se formulará ante el órgano judicial que hubiere dictado la sentencia firme que se pretende rescindir."
+      }
+     },
+     "conexiones": [
+      "83",
+      "185",
+      "236"
+     ],
+     "recursos_rel": [
+      "rebelde"
+     ],
+     "continua_en": [
+      "recursos"
+     ]
     }
    ]
   },
@@ -2328,134 +2416,612 @@
    "nombre": "Recursos, audiencia al rebelde y revisión",
    "bloque": "lrjs",
    "grupo": "Libro III · Medios de impugnación",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Reposición, revisión y queja; suplicación; casación ordinaria; unificación de doctrina; depósitos y consignaciones; audiencia al rebelde y revisión de sentencias firmes. El selector «¿qué recurso cabe?» está en la pestaña Recursos.",
    "ambito": {
     "corto": "Arts. 185 a 236",
     "texto": "TÍTULO I. De los recursos contra providencias, autos, diligencias de ordenación y decretos · TÍTULO II. Del recurso de suplicación · TÍTULO III. Del recurso de casación y demás procesos atribuidos al conocimiento del Tribunal Supremo · TÍTULO IV. Del recurso de casación para la unificación de doctrina · TÍTULO V. De las disposiciones comunes a los recursos de suplicación y casación · TÍTULO III. De la audiencia al demandado rebelde · TÍTULO VI. De la revisión de sentencias y laudos arbitrales firmes, y del proceso de error judicial",
     "articulos": [
      "186"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "191",
+      "texto": "Son recurribles en suplicación las sentencias que dicten los Juzgados de lo Social"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
      "id": "recursos-186",
-     "fase": "De los recursos contra providencias, autos, diligencias de ordenación y decretos",
-     "subtitulo": "TÍTULO I · arts. 186 a 189",
-     "descripcion": "",
+     "fase": "Reposición, revisión y queja",
+     "subtitulo": "Contra diligencias, decretos, providencias y autos · 3 o 5 días",
+     "descripcion": "Contra diligencias de ordenación y decretos no definitivos, reposición ante el LAJ; contra providencias y autos, reposición ante el juez o tribunal. El plazo es de 3 días si el órgano es unipersonal y de 5 si es colegiado, y la reposición no suspende lo recurrido. Contra el decreto que resuelve la reposición, y contra los que ponen fin al procedimiento, revisión ante el juez o tribunal. Contra el auto que no tiene por anunciada la suplicación o por preparada la casación, queja.",
      "articulos": [
       "186",
+      "187",
+      "188",
       "189"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Reposición",
+       "plazo": "3 días (órgano unipersonal) o 5 (colegiado)",
+       "articulo": "187",
+       "literal": "El recurso de reposición deberá interponerse en el plazo de tres días contra las resoluciones dictadas en procedimientos seguidos ante un órgano unipersonal y de cinco días"
+      },
+      {
+       "acto": "Revisión",
+       "plazo": "3 o 5 días",
+       "articulo": "188",
+       "literal": "El recurso directo de revisión deberá interponerse en el plazo de tres o cinco días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Es un conflicto colectivo, materia electoral, conciliación familiar o impugnación de convenio",
+       "entonces": "No cabe reposición; se puede alegar en la vista.",
+       "articulos": [
+        "186"
+       ],
+       "literal": {
+        "articulo": "186",
+        "texto": "No habrá lugar al recurso de reposición contra providencias, autos, diligencias de ordenación y decretos que se dicten en los procesos de conflictos colectivos"
+       }
+      },
+      {
+       "si": "Se quiere recurrir el auto que resolvió la reposición",
+       "entonces": "No cabe nuevo recurso, salvo que la ley lo prevea.",
+       "articulos": [
+        "187"
+       ],
+       "literal": {
+        "articulo": "187",
+        "texto": "Contra el auto resolutorio del recurso de reposición no se dará nuevo recurso, salvo en los supuestos expresamente establecidos en la presente Ley"
+       }
+      },
+      {
+       "si": "El juzgado tiene por no anunciada la suplicación",
+       "entonces": "Queja ante la Sala de lo Social del TSJ.",
+       "articulos": [
+        "195",
+        "189"
+       ],
+       "literal": {
+        "articulo": "195",
+        "texto": "Contra este auto podrá recurrirse en queja ante la Sala de lo Social del Tribunal Superior de Justicia."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿La reposición suspende la resolución recurrida?",
+      "a": "No: no tiene efectos suspensivos.",
+      "articulos": [
+       "186"
+      ],
+      "literal": {
+       "articulo": "186",
+       "texto": "La interposición del recurso de reposición no tendrá efectos suspensivos respecto de la resolución recurrida."
+      }
+     },
+     "conexiones": [
       "186",
-      "189"
+      "187",
+      "188",
+      "189",
+      "195",
+      "209"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "reposicion-laj",
+      "reposicion-juez",
+      "revision",
+      "queja"
+     ],
+     "continua_en": []
     },
     {
      "id": "recursos-190",
-     "fase": "Del recurso de suplicación",
-     "subtitulo": "TÍTULO II · arts. 190 a 204",
-     "descripcion": "",
+     "fase": "Suplicación",
+     "subtitulo": "Contra sentencias del Juzgado de lo Social · anuncio 5 días · interposición 10 · ante el TSJ",
+     "descripcion": "Se recurren en suplicación las sentencias de los Juzgados de lo Social, salvo las materias y cuantías excluidas, y algunos autos. Se anuncia en 5 días y se interpone en 10. Sirve para reponer las actuaciones por indefensión, revisar los hechos probados con documentos o pericias, o denunciar infracción de normas o de jurisprudencia. Resuelve la Sala de lo Social del TSJ, en 10 días.",
      "articulos": [
       "190",
-      "204"
+      "191",
+      "193",
+      "194",
+      "195",
+      "196",
+      "197",
+      "199",
+      "200",
+      "201",
+      "202"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Anunciar el recurso",
+       "plazo": "5 días desde la notificación de la sentencia",
+       "articulo": "194",
+       "literal": "El recurso de suplicación deberá anunciarse dentro de los cinco días siguientes a la notificación de la sentencia"
+      },
+      {
+       "acto": "Interponerlo",
+       "plazo": "10 días desde la puesta a disposición de los autos",
+       "articulo": "195",
+       "literal": "para que interponga el recurso, dentro de los diez días siguientes a que se notifique la puesta a disposición"
+      },
+      {
+       "acto": "Impugnación de las demás partes",
+       "plazo": "5 días (común)",
+       "articulo": "197",
+       "literal": "a la parte o partes recurridas por un plazo común de cinco días"
+      },
+      {
+       "acto": "Subsanar defectos ante la Sala",
+       "plazo": "5 días",
+       "articulo": "199",
+       "literal": "concederá a la parte el plazo de cinco días"
+      },
+      {
+       "acto": "Sentencia de la Sala",
+       "plazo": "10 días",
+       "articulo": "201",
+       "literal": "la Sala dictará sentencia dentro del plazo de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La reclamación no supera 3.000 €",
+       "entonces": "No cabe suplicación, salvo afectación general.",
+       "articulos": [
+        "191"
+       ],
+       "literal": {
+        "articulo": "191",
+        "texto": "Reclamaciones cuya cuantía litigiosa no exceda de 3.000 euros."
+       }
+      },
+      {
+       "si": "Es despido, prestaciones de Seguridad Social, conflicto colectivo o tutela de derechos fundamentales",
+       "entonces": "Cabe en todo caso.",
+       "articulos": [
+        "191"
+       ],
+       "literal": {
+        "articulo": "191",
+        "texto": "Procederá en todo caso la suplicación"
+       }
+      },
+      {
+       "si": "Se estima por una infracción procesal que causó indefensión",
+       "entonces": "La Sala, sin entrar en el fondo, repone las actuaciones al momento de la infracción.",
+       "articulos": [
+        "202"
+       ],
+       "literal": {
+        "articulo": "202",
+        "texto": "mandará reponer los autos al estado en que se encontraban en el momento de cometerse la infracción"
+       }
+      },
+      {
+       "si": "La Sala ve el recurso manifiestamente inadmisible o contrario a doctrina unificada",
+       "entonces": "Lo inadmite por auto, sin recurso, con costas y pérdida del depósito.",
+       "articulos": [
+        "200"
+       ],
+       "literal": {
+        "articulo": "200",
+        "texto": "por existir doctrina jurisprudencial unificada del Tribunal Supremo en el mismo sentido que la sentencia recurrida"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En suplicación, ¿se pueden revisar los hechos probados con la declaración de un testigo?",
+      "a": "No: solo a la vista de las pruebas documentales y periciales practicadas.",
+      "articulos": [
+       "193"
+      ],
+      "literal": {
+       "articulo": "193",
+       "texto": "Revisar los hechos declarados probados, a la vista de las pruebas documentales y periciales practicadas."
+      }
+     },
+     "conexiones": [
       "190",
+      "191",
+      "192",
+      "193",
+      "194",
+      "195",
+      "196",
+      "197",
+      "198",
+      "199",
+      "200",
+      "201",
+      "202",
       "204"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion",
+      "queja"
+     ],
+     "continua_en": [
+      "ejecucion",
+      "provisional"
+     ]
     },
     {
      "id": "recursos-205",
-     "fase": "Del recurso de casación y demás procesos atribuidos al conocimiento del Tribunal Supremo",
-     "subtitulo": "TÍTULO III · arts. 205 a 217",
-     "descripcion": "",
+     "fase": "Casación ordinaria",
+     "subtitulo": "Contra sentencias de única instancia del TSJ o de la AN · preparación 5 días · formalización 15",
+     "descripcion": "Cabe contra las sentencias y otras resoluciones dictadas en única instancia por las Salas de lo Social de los TSJ y de la Audiencia Nacional, con las excepciones del art. 206. Se prepara en 5 días y se formaliza en 15, por los motivos tasados del art. 207. Resuelve la Sala de lo Social del Tribunal Supremo.",
      "articulos": [
       "205",
-      "217"
+      "206",
+      "207",
+      "208",
+      "209",
+      "210",
+      "211"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Preparar el recurso",
+       "plazo": "5 días desde la notificación",
+       "articulo": "208",
+       "literal": "El recurso de casación deberá prepararse en el plazo de los cinco días siguientes a la notificación de la sentencia"
+      },
+      {
+       "acto": "Formalizarlo",
+       "plazo": "15 días",
+       "articulo": "209",
+       "literal": "el plazo de quince días para formalizar el recurso"
+      },
+      {
+       "acto": "Impugnación de las demás partes",
+       "plazo": "10 días (común)",
+       "articulo": "211",
+       "literal": "por término común de diez días para su impugnación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La Sala de instancia lo tiene por no preparado",
+       "entonces": "Queja ante la Sala de lo Social del Tribunal Supremo.",
+       "articulos": [
+        "209"
+       ],
+       "literal": {
+        "articulo": "209",
+        "texto": "Contra este auto podrá recurrirse en queja ante la Sala de lo Social del Tribunal Supremo."
+       }
+      },
+      {
+       "si": "Se alega error en la valoración de la prueba",
+       "entonces": "Solo si se basa en documentos que demuestren la equivocación y no estén contradichos por otras pruebas.",
+       "articulos": [
+        "207"
+       ],
+       "literal": {
+        "articulo": "207",
+        "texto": "Error en la apreciación de la prueba basado en documentos que obren en autos que demuestren la equivocación del juzgador"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Contra qué sentencias cabe casación ordinaria?",
+      "a": "Contra las dictadas en única instancia por las Salas de lo Social de los TSJ y de la Audiencia Nacional.",
+      "articulos": [
+       "205"
+      ],
+      "literal": {
+       "articulo": "205",
+       "texto": "contra las sentencias y otras resoluciones dictadas en única instancia por las Salas de lo Social de los Tribunales Superiores de Justicia y por la Sala de lo Social de la Audiencia Nacional"
+      }
+     },
+     "conexiones": [
+      "124",
       "205",
-      "217"
+      "206",
+      "207",
+      "208",
+      "209",
+      "210",
+      "211"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "casacion",
+      "queja"
+     ],
+     "continua_en": []
     },
     {
      "id": "recursos-218",
-     "fase": "Del recurso de casación para la unificación de doctrina",
-     "subtitulo": "TÍTULO IV · arts. 218 a 228",
-     "descripcion": "",
+     "fase": "Casación para la unificación de doctrina",
+     "subtitulo": "Contra sentencias de suplicación · contradicción · interés casacional · 10 + 15 días",
+     "descripcion": "Cabe contra las sentencias dictadas en suplicación por las Salas de lo Social de los TSJ cuando son contradictorias con otra de otro TSJ o del Tribunal Supremo, en hechos, fundamentos y pretensiones sustancialmente iguales, y el recurso tiene interés casacional objetivo. Se prepara en 10 días ante el TSJ y se interpone en 15. Solo una sentencia de contraste por punto, firme y citada ya al preparar.",
      "articulos": [
       "218",
-      "228"
+      "219",
+      "220",
+      "221",
+      "223",
+      "224"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Preparar el recurso",
+       "plazo": "10 días desde la notificación",
+       "articulo": "220",
+       "literal": "dentro de los diez días siguientes a la notificación de la sentencia impugnada"
+      },
+      {
+       "acto": "Interponerlo",
+       "plazo": "15 días (común)",
+       "articulo": "223",
+       "literal": "el plazo común de quince días para interponer el recurso"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se quiere usar como contraste una sentencia del Constitucional, del TEDH o del TJUE",
+       "entonces": "Se puede, para la tutela de derechos fundamentales o la interpretación del Derecho de la Unión.",
+       "articulos": [
+        "219"
+       ],
+       "literal": {
+        "articulo": "219",
+        "texto": "Podrá alegarse como doctrina de contradicción la establecida en las sentencias dictadas por el Tribunal Constitucional"
+       }
+      },
+      {
+       "si": "Al interponer se cita una sentencia no mencionada al preparar",
+       "entonces": "No se puede invocar.",
+       "articulos": [
+        "221"
+       ],
+       "literal": {
+        "articulo": "221",
+        "texto": "Las sentencias que no hayan sido objeto de expresa mención en el escrito de preparación no podrán ser posteriormente invocadas en el escrito de interposición."
+       }
+      },
+      {
+       "si": "Hay varias sentencias de contraste para un mismo punto",
+       "entonces": "Solo se puede invocar una por cada punto de contradicción.",
+       "articulos": [
+        "224"
+       ],
+       "literal": {
+        "articulo": "224",
+        "texto": "Sólo podrá invocarse una sentencia por cada punto de contradicción"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué sentencias se recurren en casación para la unificación de doctrina?",
+      "a": "Las dictadas en suplicación por las Salas de lo Social de los Tribunales Superiores de Justicia.",
+      "articulos": [
+       "218"
+      ],
+      "literal": {
+       "articulo": "218",
+       "texto": "Son recurribles en casación para la unificación de doctrina, las sentencias dictadas en suplicación por las Salas de lo Social de los Tribunales Superiores de Justicia."
+      }
+     },
+     "conexiones": [
       "218",
+      "219",
+      "220",
+      "221",
+      "223",
+      "224",
+      "225",
+      "226",
       "228"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "cud"
+     ],
+     "continua_en": []
     },
     {
      "id": "recursos-229",
-     "fase": "De las disposiciones comunes a los recursos de suplicación y casación",
-     "subtitulo": "TÍTULO V · arts. 229 a 235",
-     "descripcion": "",
+     "fase": "Depósitos, consignaciones y costas",
+     "subtitulo": "300 € en suplicación · 600 € en casación · consignar la condena",
+     "descripcion": "Quien recurre sin ser trabajador, causahabiente o beneficiario de la Seguridad Social deposita 300 € en suplicación y 600 € en casación (también en la unificación de doctrina). Si la sentencia condena a pagar una cantidad, el recurrente sin justicia gratuita consigna esa cantidad al anunciar o preparar el recurso, o la asegura con aval bancario. En Seguridad Social, el condenado ingresa el capital coste o la prestación. Si se confirma la sentencia, se pierden el depósito y lo consignado. Las costas del recurso las paga el vencido, con los honorarios de la contraparte limitados (1.200 € en suplicación, 1.800 € en casación).",
      "articulos": [
       "229",
-      "235"
+      "230",
+      "235",
+      "204"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Seguridad Social: ingresar el capital coste fijado por la TGSS",
+       "plazo": "5 días",
+       "articulo": "230",
+       "literal": "para que en el plazo de cinco días efectúe la consignación requerida"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Recurre un sindicato o quien tiene justicia gratuita",
+       "entonces": "No deposita ni consigna.",
+       "articulos": [
+        "229"
+       ],
+       "literal": {
+        "articulo": "229",
+        "texto": "Los sindicatos y quienes tuvieren reconocido el beneficio de justicia gratuita quedarán exentos"
+       }
+      },
+      {
+       "si": "No se quiere inmovilizar el dinero",
+       "entonces": "La consignación puede sustituirse por un aval bancario solidario.",
+       "articulos": [
+        "230"
+       ],
+       "literal": {
+        "articulo": "230",
+        "texto": "pudiendo sustituirse la consignación en metálico por el aseguramiento mediante aval solidario"
+       }
+      },
+      {
+       "si": "La Sala confirma la sentencia",
+       "entonces": "El recurrente pierde lo consignado y el depósito.",
+       "articulos": [
+        "204"
+       ],
+       "literal": {
+        "articulo": "204",
+        "texto": "el fallo condenará a la pérdida de las consignaciones"
+       }
+      },
+      {
+       "si": "Límite de honorarios en las costas",
+       "entonces": "1.200 € en suplicación y 1.800 € en casación.",
+       "articulos": [
+        "235"
+       ],
+       "literal": {
+        "articulo": "235",
+        "texto": "mil doscientos euros en recurso de suplicación"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quién tiene que depositar los 300 € para recurrir en suplicación?",
+      "a": "Quien recurre sin ser trabajador, causahabiente suyo o beneficiario de la Seguridad Social (y no está exento: sindicatos, justicia gratuita, entes públicos).",
+      "articulos": [
+       "229"
+      ],
+      "literal": {
+       "articulo": "229",
+       "texto": "Todo el que, sin tener la condición de trabajador, causahabiente suyo o beneficiario del régimen público de la Seguridad Social"
+      }
+     },
+     "conexiones": [
+      "204",
       "229",
+      "230",
+      "231",
+      "233",
       "235"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion",
+      "casacion",
+      "cud"
+     ],
+     "continua_en": []
     },
     {
      "id": "recursos-185",
-     "fase": "De la audiencia al demandado rebelde",
-     "subtitulo": "TÍTULO III · art. 185",
-     "descripcion": "",
+     "fase": "Audiencia al demandado rebelde",
+     "subtitulo": "Medio de impugnación de la sentencia firme dictada en rebeldía (ficha completa en su sitio del Libro II)",
+     "descripcion": "El demandado que no compareció puede pedir que se le oiga contra la sentencia firme dictada sin él. Se pide en 20 días desde la notificación personal o el conocimiento de la sentencia y, en todo caso, en 4 meses desde su publicación en el boletín. La ficha completa está en el bloque «Audiencia al demandado rebelde» del Libro II.",
      "articulos": [
       "185"
      ],
-     "rango": [
-      "185",
-      "185"
+     "plazos": [
+      {
+       "acto": "Pedir la audiencia",
+       "plazo": "20 días desde la notificación personal o el conocimiento",
+       "articulo": "185",
+       "literal": "El plazo para solicitar la audiencia será de veinte días desde la notificación personal de la sentencia"
+      }
      ],
-     "plazos": [],
      "ramas": [],
-     "esqueleto": true
+     "pregunta": {
+      "q": "¿Ante qué órgano se pide la audiencia al demandado rebelde?",
+      "a": "Ante el que dictó la sentencia firme que se quiere rescindir.",
+      "articulos": [
+       "185"
+      ],
+      "literal": {
+       "articulo": "185",
+       "texto": "La petición de audiencia se formulará ante el órgano judicial que hubiere dictado la sentencia firme que se pretende rescindir."
+      }
+     },
+     "conexiones": [
+      "185",
+      "236"
+     ],
+     "recursos_rel": [
+      "rebelde"
+     ],
+     "continua_en": [
+      "rebelde"
+     ]
     },
     {
      "id": "recursos-236",
-     "fase": "De la revisión de sentencias y laudos arbitrales firmes, y del proceso de error judicial",
-     "subtitulo": "TÍTULO VI · art. 236",
-     "descripcion": "",
+     "fase": "Revisión de sentencias firmes y error judicial",
+     "subtitulo": "Ante la Sala de lo Social del Tribunal Supremo · motivos de la LEC",
+     "descripcion": "Contra cualquier sentencia firme del orden social, y contra los laudos firmes en materias sociales, cabe revisión ante la Sala de lo Social del Tribunal Supremo, por los motivos del art. 510 LEC y por el del art. 86.3 LRJS (absolución penal posterior por inexistencia del hecho). Hay que haber agotado antes los recursos. Sin vista, salvo que el tribunal la acuerde o haya prueba. El error judicial que deba conocer esa Sala se tramita por la Ley Orgánica del Poder Judicial.",
+     "aviso": "El art. 510 y los plazos de la revisión son de la [[Ley de Enjuiciamiento Civil|https://www.boe.es/buscar/act.php?id=BOE-A-2000-323]] (también en esta app).",
      "articulos": [
-      "236"
-     ],
-     "rango": [
       "236",
-      "236"
+      "86"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "No se agotaron los recursos contra la sentencia",
+       "entonces": "La revisión se inadmite.",
+       "articulos": [
+        "236"
+       ],
+       "literal": {
+        "articulo": "236",
+        "texto": "de no haberse agotado previamente los recursos jurisdiccionales"
+       }
+      },
+      {
+       "si": "La causa penal termina en absolución por inexistencia del hecho",
+       "entonces": "Queda abierta la revisión contra la sentencia social.",
+       "articulos": [
+        "86"
+       ],
+       "literal": {
+        "articulo": "86",
+        "texto": "quedará abierta contra la sentencia dictada por el juez o Sala de lo Social la vía de la revisión"
+       }
+      },
+      {
+       "si": "Una resolución firme errónea causó un daño y no tiene recurso",
+       "entonces": "Proceso de error judicial.",
+       "articulos": [
+        "236"
+       ],
+       "literal": {
+        "articulo": "236",
+        "texto": "El proceso de error judicial, destinado a reparar el daño producido por una resolución firme errónea"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Ante quién se pide la revisión de una sentencia firme del orden social?",
+      "a": "Ante la Sala de lo Social del Tribunal Supremo.",
+      "articulos": [
+       "236"
+      ],
+      "literal": {
+       "articulo": "236",
+       "texto": "La revisión se solicitará ante la Sala de lo Social del Tribunal Supremo."
+      }
+     },
+     "conexiones": [
+      "86",
+      "185",
+      "236"
+     ],
+     "recursos_rel": [
+      "revision-firmes"
+     ],
+     "continua_en": []
     }
    ]
   },
