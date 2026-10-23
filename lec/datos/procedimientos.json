@@ -672,10 +672,10 @@
   },
   {
    "id": "actuaciones",
-   "nombre": "Actuaciones procesales: plazos, comunicaciones y nulidad",
+   "nombre": "Actuaciones procesales: plazos, comunicaciones, resoluciones y nulidad",
    "bloque": "disposiciones generales",
    "grupo": "Libro I · Disposiciones generales",
-   "resumen": "Días y horas hábiles, cómputo de plazos, preclusión, actos de comunicación, nulidad de actuaciones, caducidad de la instancia y buena fe procesal.",
+   "resumen": "Días y horas hábiles, cómputo de plazos, preclusión, actos de comunicación, resoluciones (clases, firmeza, aclaración y complemento), nulidad de actuaciones, caducidad de la instancia y buena fe procesal.",
    "ambito": {
     "corto": "Arts. 129-247",
     "texto": "Título V a VIII del Libro I. Cada «fase» es un tema de estudio. Útil para todos los plazos del mapa procesal.",
@@ -931,6 +931,159 @@
       "162",
       "164",
       "166"
+     ]
+    },
+    {
+     "id": "act-resoluciones",
+     "fase": "Resoluciones: clases, firmeza, aclaración y complemento",
+     "subtitulo": "Quién dicta qué · cuándo es firme · cómo se corrige",
+     "descripcion": "Jueces y tribunales dictan providencias, autos y sentencias; el Letrado de la Administración de Justicia (LAJ), diligencias y decretos. Providencia: cuestiones procesales que la ley reserva al tribunal sin exigir auto. Auto: recursos contra providencias o decretos, admisión o inadmisión de la prueba, medidas cautelares, nulidad o validez de las actuaciones, presupuestos procesales, cuestiones incidentales y lo que pone fin a una instancia o recurso antes de su tramitación ordinaria. Sentencia: pone fin al proceso en primera o segunda instancia y resuelve la casación y la revisión. Diligencia de ordenación: da a los autos el curso que marca la ley. Decreto: admite a trámite la demanda, pone fin a lo que el LAJ tiene atribuido en exclusiva y siempre que haya que razonar lo resuelto. Es firme la resolución contra la que no cabe recurso o que nadie recurrió en plazo; pasa en autoridad de cosa juzgada. Las sentencias deben ser claras, precisas, congruentes con lo pedido y motivadas. Toda resolución indica si es firme o qué recurso cabe, ante qué órgano y en qué plazo.",
+     "articulos": [
+      "206",
+      "207",
+      "210",
+      "214",
+      "215",
+      "218",
+      "222"
+     ],
+     "plazos": [
+      {
+       "acto": "Aclaración (de oficio o a petición de parte o del fiscal)",
+       "plazo": "2 días hábiles desde la publicación",
+       "articulo": "214",
+       "literal": "dentro de los dos días hábiles siguientes al de la publicación de la resolución"
+      },
+      {
+       "acto": "Resolver la aclaración pedida",
+       "plazo": "3 días desde el escrito",
+       "articulo": "214",
+       "literal": "dentro de los tres días siguientes al de la presentación del escrito en que se solicite la aclaración"
+      },
+      {
+       "acto": "Pedir que se complete un pronunciamiento omitido",
+       "plazo": "5 días desde la notificación",
+       "articulo": "215",
+       "literal": "a solicitud escrita de parte en el plazo de cinco días a contar desde la notificación de la resolución"
+      },
+      {
+       "acto": "Alegaciones de las demás partes a esa petición",
+       "plazo": "5 días",
+       "articulo": "215",
+       "literal": "para alegaciones escritas por otros cinco días"
+      },
+      {
+       "acto": "Complemento de oficio por el tribunal",
+       "plazo": "5 días desde que se dicta",
+       "articulo": "215",
+       "literal": "podrá, en el plazo de cinco días a contar desde la fecha en que se dicta"
+      },
+      {
+       "acto": "Sentencia oral en el juicio verbal: escrito anunciando que se quiere recurrir",
+       "plazo": "5 días desde la vista",
+       "articulo": "210",
+       "literal": "Las partes tendrán un plazo de cinco días desde la celebración de la vista para presentar un escrito manifestando su interés en recurrirla"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay un error material manifiesto o un error aritmético",
+       "entonces": "Se rectifica en cualquier momento.",
+       "articulos": [
+        "214"
+       ],
+       "literal": {
+        "articulo": "214",
+        "texto": "podrán ser rectificados en cualquier momento"
+       }
+      },
+      {
+       "si": "La sentencia o el auto no resuelve algo que se pidió y se debatió",
+       "entonces": "Se pide el complemento: el tribunal, por auto, completa la resolución o declara no haber lugar.",
+       "articulos": [
+        "215",
+        "218"
+       ],
+       "literal": {
+        "articulo": "215",
+        "texto": "omitido manifiestamente pronunciamientos relativos a pretensiones oportunamente deducidas y sustanciadas en el proceso"
+       }
+      },
+      {
+       "si": "Se quiere recurrir la resolución que aclara o completa",
+       "entonces": "No cabe recurso contra ella; sí contra la resolución original. El plazo para recurrir esta se interrumpe desde que se pide la aclaración o el complemento.",
+       "articulos": [
+        "214",
+        "215"
+       ],
+       "literal": {
+        "articulo": "215",
+        "texto": "Los plazos para estos recursos, si fueren procedentes, se interrumpirán desde que se solicite su aclaración"
+       }
+      },
+      {
+       "si": "La resolución se dicta oralmente en la vista y todas las partes, presentes, dicen que no recurren",
+       "entonces": "Se declara firme en el acto. Si no, el plazo para recurrir corre desde la notificación de la resolución redactada.",
+       "articulos": [
+        "210"
+       ],
+       "literal": {
+        "articulo": "210",
+        "texto": "expresaren su decisión de no recurrir, se declarará, en el mismo acto, la firmeza de la resolución"
+       }
+      },
+      {
+       "si": "Nadie recurre en plazo",
+       "entonces": "La resolución queda firme y pasa en autoridad de cosa juzgada.",
+       "articulos": [
+        "207"
+       ],
+       "literal": {
+        "articulo": "207",
+        "texto": "quedará firme y pasada en autoridad de cosa juzgada"
+       }
+      },
+      {
+       "si": "Se vuelve a demandar lo mismo tras una sentencia firme",
+       "entonces": "La cosa juzgada material excluye un nuevo proceso con objeto idéntico.",
+       "articulos": [
+        "222"
+       ],
+       "literal": {
+        "articulo": "222",
+        "texto": "excluirá, conforme a la ley, un ulterior proceso cuyo objeto sea idéntico"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el Letrado de la Administración de Justicia dictar un auto?",
+      "a": "No. Sus resoluciones son diligencias y decretos. Providencias, autos y sentencias los dictan jueces y tribunales.",
+      "articulos": [
+       "206"
+      ],
+      "literal": {
+       "articulo": "206",
+       "texto": "Las resoluciones de los Letrados de la Administración de Justicia se denominarán diligencias y decretos."
+      }
+     },
+     "conexiones": [
+      "206",
+      "207",
+      "208",
+      "209",
+      "210",
+      "214",
+      "215",
+      "218",
+      "222",
+      "451",
+      "454 bis"
+     ],
+     "recursos_rel": [
+      "reposicion-laj",
+      "reposicion-tribunal",
+      "revision",
+      "apelacion"
      ]
     },
     {
@@ -7273,6 +7426,17 @@
    "grupo": "Medidas cautelares",
    "items": [
     "cautelares"
+   ]
+  }
+ ],
+ "vista_recursos": [
+  {
+   "grupo": "Las resoluciones",
+   "items": [
+    {
+     "proc": "actuaciones",
+     "fase": "act-resoluciones"
+    }
    ]
   }
  ]

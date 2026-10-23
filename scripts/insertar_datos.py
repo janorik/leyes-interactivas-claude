@@ -173,6 +173,12 @@ def validar_y_anadir_recursos(datos):
         if s["recurso"] is not None and s["recurso"] not in ids:
             errores.append(f"selector «{s['res']}»: recurso {s['recurso']} no definido")
         lit(s["literal"], "selector «" + s["res"] + "»")
+    # Fichas del mapa que enlazan a recursos concretos (campo recursos_rel de la fase).
+    for p in datos.get("procedimientos", []):
+        for f in p["fases"]:
+            for k in f.get("recursos_rel", []):
+                if k not in ids:
+                    errores.append(f"{f['id']}/recursos_rel: recurso {k} no definido")
     if errores:
         sys.exit("ERROR en recursos.json:\n- " + "\n- ".join(errores))
     datos["recursos"] = rec["recursos"]

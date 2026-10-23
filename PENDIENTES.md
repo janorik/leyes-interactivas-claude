@@ -64,6 +64,15 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
   - Cambio en la app: añadir lo que dice el art. 22.6. La enervación por vulnerabilidad «no computará como enervación anterior» y «podrá producirse aunque el arrendador haya efectuado el requerimiento fehaciente».
   - **Tu respuesta:**
 
+### Resoluciones (Chat 4, contenido elaborado, pendiente de revisión)
+
+> Ficha nueva «Resoluciones: clases, firmeza, aclaración y complemento» (arts. 206, 207, 210, 214, 215, 218 y 222, los que marca tu canon), con 6 plazos. En la app: Mapa › Actuaciones procesales › Resoluciones; también desde la pestaña Recursos. Lleva botones a las fichas de reposición, revisión y apelación.
+
+- [ ] **Art. 206: ¿auto o decreto para admitir la demanda?** El art. 206.1, regla 2.ª, dice que se dicta auto para resolver la «admisión o inadmisión de demanda»; el 206.2, regla 2.ª, dice que se dicta decreto «cuando se admita a trámite la demanda».
+  - **Propuesta:** la admisión la hace el LAJ por decreto y la inadmisión la acuerda el tribunal por auto (arts. 206.2 y 404). Por eso la ficha pone «decreto» para la admisión y no menciona la demanda entre los autos. No verificable hasta que lo confirmes.
+  - **Tu respuesta:**
+- [ ] **Revisa la ficha:** las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
+
 ### Puntos de contenido
 
 - [ ] **Recurso extraordinario por infracción procesal:** los arts. 468 a 476 figuran "(Sin contenido)" en el texto consolidado. En la app aparece como «No vigente», y se indica que la infracción procesal se invoca ahora en casación (art. 477.2). ¿Lo dejas así?
@@ -131,6 +140,31 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [x] **Orden de desarrollo:** empezamos por el procedimiento abreviado (elegido por el usuario). Hecho; ver la sección siguiente.
 - [x] **Recursos de la LECrim como en la LEC (hecho):** 14 recursos y 27 casos del selector, con «Por resolución», «Recursos» y «Ponte a prueba». Antes: al usuario le gusta la pestaña Recursos de la LEC (selector «Por resolución», fichas de cada recurso y «Ponte a prueba»). En la LECrim ahora solo hay tarjetas de bloques en esqueleto. Hacer `lecrim/datos/recursos.json` con el mismo formato (recursos, selector por resolución con frase literal, test), a partir de los arts. 216-238 ter (recursos contra resoluciones procesales), 846 bis a-846 ter (apelación), 847-933 (casación) y 954-961 (revisión), y los recursos propios del abreviado, juicio rápido y delitos leves. Todo con `revisado: false` y las dudas anotadas aquí.
 - [ ] **Exposición de motivos de 1882:** no está en el texto consolidado del BOE, así que no aparece en la app (Verificable: el PDF pasa del Real Decreto a «LEY DE ENJUICIAMIENTO CRIMINAL»).
+
+### Resoluciones y recursos contra resoluciones (Chat 4, contenido elaborado, pendiente de revisión)
+
+> Dos fichas nuevas del Libro I, por tu regla de que resoluciones y recursos estén completos en cada ley: «Resoluciones: clases, firmeza, aclaración y complemento» (arts. 141, 144, 144 bis, 160 y 161, 6 plazos) y «Recursos contra las resoluciones procesales» (arts. 211-238 ter, 7 plazos). La segunda es la puerta de entrada a la pestaña Recursos (botones a cada ficha), que no cambia. Las dos están también en la pestaña Recursos, en «En el mapa».
+
+- [ ] **Art. 222 (reforma antes de la apelación).** La ficha dice que, por regla general, la apelación exige haber interpuesto antes reforma (pueden ir en el mismo escrito), y que en el abreviado no hace falta (art. 766).
+  - **Propuesta:** el art. 222 es la regla general del Libro I y rige en el sumario; el art. 766 es la regla especial del abreviado. No verificable hasta que lo confirmes.
+  - **Tu respuesta:**
+- [ ] **«Secretario judicial».** Los arts. 144 bis, 161 y 238 bis-ter siguen diciendo «Secretario judicial»; la ficha dice «Letrado de la Administración de Justicia (en este texto, "Secretario judicial")». Es el mismo criterio que el de la pestaña Recursos.
+  - **Tu respuesta:**
+- [ ] **Revisa las 2 fichas.**
+
+### Denuncia, querella y Policía judicial (Chat 4, contenido elaborado, pendiente de revisión)
+
+> Bloque desarrollado a propuesta de Claude y con el visto bueno del usuario (23-10-2026); el canon lo marcaba NO y se ha cambiado a SI (`fuentes/canon_contenido.md`). 3 fases y 5 plazos. En la app: Mapa › Denuncia, querella y Policía judicial, y Procedimientos › «Cómo empieza el proceso penal».
+
+- [ ] **Pasa el cambio a tu plataforma:** denuncia (259-269), querella (270-281) y Policía judicial (282-298), de NO a SI.
+- [ ] **Art. 278: «excepto el de violación o rapto». Remisión desfasada, pendiente de revisión individual.** El Código Penal vigente ya no usa esos nombres de delito. La ficha cita la excepción entre comillas, sin interpretarla. Necesito tu criterio (o una fuente que lo aclare) para decir a qué delitos actuales se refiere.
+  - **Tu respuesta:**
+- [ ] **«Para ser parte acusadora no basta con denunciar» (ficha Denuncia).** Es una conclusión mía a partir de los arts. 109 bis, 264 y 270, no una frase literal.
+  - **Propuesta:** dejarla así, porque ayuda a orientarse. No verificable hasta que lo confirmes.
+  - **Tu respuesta:**
+- [ ] **Multas en pesetas (arts. 259, 262 y 295).** No se mencionan en la ficha: no orientan y las cantidades son históricas.
+  - **Tu respuesta:**
+- [ ] **Revisa las 3 fichas.**
 
 ### Disposiciones generales: competencia y acciones (contenido elaborado, pendiente de revisión)
 

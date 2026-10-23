@@ -77,6 +77,9 @@ def claves_rango(est, rango):
 # Pestañas «Procedimientos» y «Recursos»: qué bloques (o fases sueltas) se muestran y en qué grupo.
 # Un elemento es el id de un bloque, {"proc", "fase"} para una fase concreta o {"externo"} para otra ley.
 VISTA_PROCEDIMIENTOS = [
+    {"grupo": "Cómo empieza el proceso penal",
+     "nota": "Denuncia, querella y atestado: comunes al sumario, al abreviado y al juicio rápido.",
+     "items": ["inicio"]},
     {"grupo": "Sumario ordinario",
      "nota": "Una sola ruta de la instrucción a la sentencia. En el Mapa sigue repartido como en la ley: Libro II (sumario) y Libro III (juicio oral).",
      "items": ["sumario"]},
@@ -99,7 +102,7 @@ UNIDOS = [
 VISTA_RECURSOS = [
     {"grupo": "Recursos contra sentencias", "items": ["recursos"]},
     {"grupo": "Recursos contra las resoluciones procesales (Libro I)",
-     "items": [{"proc": "generales", "fase": "generales-216"}]},
+     "items": [{"proc": "generales", "fase": "generales-141"}, {"proc": "generales", "fase": "generales-216"}]},
 ]
 
 
