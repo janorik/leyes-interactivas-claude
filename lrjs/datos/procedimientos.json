@@ -2032,100 +2032,412 @@
    "nombre": "Condiciones de trabajo y materia electoral",
    "bloque": "lrjs",
    "grupo": "Libro II · Proceso ordinario y modalidades",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Vacaciones, clasificación profesional, movilidad y modificación de condiciones, trabajo a distancia, conciliación familiar y, en ficha breve, materia electoral.",
    "ambito": {
     "corto": "Arts. 125 a 139",
     "texto": "CAPÍTULO V. Vacaciones, materia electoral, movilidad geográfica, modificaciones sustanciales de condiciones de trabajo y derechos de conciliación de la vida personal, familiar y laboral reconocidos legal o convencionalmente",
     "articulos": [
      "125"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "126",
+      "texto": "El procedimiento será urgente y se le dará tramitación preferente."
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "condiciones-125",
      "fase": "Vacaciones",
-     "subtitulo": "CAPÍTULO V · Sección 1.ª · arts. 125 a 126",
-     "descripcion": "",
+     "subtitulo": "20 días o 2 meses antes · urgente · sentencia sin recurso",
+     "descripcion": "Sirve para fijar la fecha de disfrute de las vacaciones. Si la fecha ya está fijada (por convenio, acuerdo o decisión de la empresa), el trabajador demanda en 20 días desde que la conoce; si no lo está, al menos 2 meses antes de la fecha que pretende. Es urgente y preferente, no exige conciliación previa y la sentencia no tiene recurso. Si se discuten preferencias de otros trabajadores, también hay que demandarlos.",
      "articulos": [
       "125",
-      "126"
+      "126",
+      "64"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Demanda si la fecha ya está fijada",
+       "plazo": "20 días desde que se conoce",
+       "articulo": "125",
+       "literal": "el trabajador dispondrá de un plazo de veinte días, a partir de aquel en que tuviera conocimiento de dicha fecha"
+      },
+      {
+       "acto": "Demanda si la fecha no está fijada",
+       "plazo": "Al menos 2 meses antes de la fecha pretendida",
+       "articulo": "125",
+       "literal": "la demanda deberá presentarse, al menos, con dos meses de antelación a la fecha de disfrute pretendida por el trabajador"
+      },
+      {
+       "acto": "Vista",
+       "plazo": "En los 5 días siguientes a la admisión",
+       "articulo": "126",
+       "literal": "El acto de la vista habrá de señalarse por el secretario judicial dentro de los cinco días siguientes al de la admisión de la demanda."
+      },
+      {
+       "acto": "Sentencia (sin recurso)",
+       "plazo": "3 días",
+       "articulo": "126",
+       "literal": "La sentencia, que no tendrá recurso, deberá ser dictada en el plazo de tres días."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se discuten preferencias de otros trabajadores",
+       "entonces": "Hay que demandarlos también.",
+       "articulos": [
+        "125"
+       ],
+       "literal": {
+        "articulo": "125",
+        "texto": "Cuando el objeto del debate verse sobre preferencias atribuidas a determinados trabajadores, éstos también deberán ser demandados."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cabe recurso contra la sentencia sobre la fecha de las vacaciones?",
+      "a": "No.",
+      "articulos": [
+       "126",
+       "191"
+      ],
+      "literal": {
+       "articulo": "126",
+       "texto": "La sentencia, que no tendrá recurso"
+      }
+     },
+     "conexiones": [
+      "64",
       "125",
-      "126"
+      "126",
+      "191"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [],
+     "continua_en": [],
+     "id": "condiciones-125"
     },
     {
-     "id": "condiciones-127",
-     "fase": "Materia electoral",
-     "subtitulo": "CAPÍTULO V · Sección 2.ª · arts. 127 a 136",
-     "descripcion": "",
+     "fase": "Materia electoral (ficha breve)",
+     "subtitulo": "Qué es · quién demanda · plazo · recurso",
+     "descripcion": "Qué es: la impugnación de los laudos arbitrales sobre elecciones a representantes de los trabajadores (todo el proceso electoral, de la promoción a las actas), de la denegación del registro de actas y de las certificaciones de capacidad representativa sindical. Quién demanda: quien tenga interés legítimo, incluida la empresa (laudos); quien obtuvo algún representante (registro de actas); el sindicato interesado (certificaciones). Plazo: 3 días desde que se conoce el laudo; 10 días en los otros dos casos. Recurso: ninguno, salvo en las certificaciones de capacidad representativa, que admiten suplicación. Es urgente y no suspende el proceso electoral.",
      "articulos": [
       "127",
+      "128",
+      "129",
+      "132",
+      "133",
+      "134",
+      "135",
       "136"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Impugnar el laudo arbitral electoral",
+       "plazo": "3 días desde que se conoce",
+       "articulo": "127",
+       "literal": "en el plazo de tres días, contados desde que tuvieron conocimiento del mismo"
+      },
+      {
+       "acto": "Impugnar la denegación del registro de actas",
+       "plazo": "10 días desde la notificación",
+       "articulo": "134",
+       "literal": "El plazo de ejercicio de la acción de impugnación será de diez días"
+      },
+      {
+       "acto": "Impugnar la certificación de capacidad representativa",
+       "plazo": "10 días",
+       "articulo": "136",
+       "literal": "dentro del plazo de diez días siguientes a la expedición o denegación de la certificación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "¿Cabe recurso?",
+       "entonces": "No en los laudos ni en el registro de actas; sí suplicación en las certificaciones de capacidad representativa.",
+       "articulos": [
+        "132",
+        "136"
+       ],
+       "literal": {
+        "articulo": "136",
+        "texto": "Contra dicha resolución, que se notificará a la oficina pública y a las partes, cabrá recurso de suplicación."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se suspenden las elecciones mientras se impugna el laudo?",
+      "a": "No, salvo que el juez lo acuerde motivadamente a petición de parte.",
+      "articulos": [
+       "132"
+      ],
+      "literal": {
+       "articulo": "132",
+       "texto": "La sustanciación de este proceso no suspenderá el desarrollo del procedimiento electoral"
+      }
+     },
+     "conexiones": [
       "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "133",
+      "134",
+      "135",
       "136"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion"
+     ],
+     "continua_en": [],
+     "id": "condiciones-127"
     },
     {
-     "id": "condiciones-137",
      "fase": "Clasificación profesional",
-     "subtitulo": "CAPÍTULO V · Sección 3.ª · art. 137",
-     "descripcion": "",
+     "subtitulo": "Informe del comité y de la Inspección · sin recurso salvo cuantía",
+     "descripcion": "Para reclamar una categoría o grupo profesional superior. La demanda va con informe del comité de empresa o los delegados de personal sobre las funciones alegadas (si no lo emiten en 15 días, basta acreditar que se pidió), y el juzgado pide informe a la Inspección de Trabajo. Pueden acumularse las diferencias salariales. Contra la sentencia no hay recurso, salvo que esas diferencias alcancen la cuantía de la suplicación.",
      "articulos": [
       "137"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Informe del comité o los delegados",
+       "plazo": "15 días",
+       "articulo": "137",
+       "literal": "En el caso de que estos órganos no hubieran emitido el informe en el plazo de quince días"
+      },
+      {
+       "acto": "Informe de la Inspección de Trabajo",
+       "plazo": "15 días",
+       "articulo": "137",
+       "literal": "deberá emitirse en el plazo de quince días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se reclaman también diferencias salariales",
+       "entonces": "Se acumulan; si alcanzan la cuantía de la suplicación, cabe recurso.",
+       "articulos": [
+        "137",
+        "191"
+       ],
+       "literal": {
+        "articulo": "137",
+        "texto": "Contra la sentencia que recaiga no se dará recurso alguno, salvo que las diferencias salariales reclamadas alcancen la cuantía requerida para el recurso de suplicación."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué hay que acompañar a la demanda de clasificación profesional?",
+      "a": "El informe del comité de empresa o de los delegados de personal sobre las funciones superiores alegadas (o acreditar que se pidió si no lo emiten en 15 días).",
+      "articulos": [
+       "137"
+      ],
+      "literal": {
+       "articulo": "137",
+       "texto": "La demanda que inicie este proceso será acompañada de informe emitido por el comité de empresa"
+      }
+     },
+     "conexiones": [
       "137",
-      "137"
+      "191"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [],
+     "continua_en": [],
+     "id": "condiciones-137"
     },
     {
-     "id": "condiciones-138",
-     "fase": "Movilidad geográfica, modificaciones sustanciales de condiciones de trabajo, trabajo a distancia, suspensión del contrato y reducción de jornada por causas económicas, técnicas, organizativas o de producción o derivadas de fuerza mayor.",
-     "subtitulo": "CAPÍTULO V · Sección 4.ª · arts. 138 a 138 bis",
-     "descripcion": "",
+     "fase": "Movilidad geográfica, modificación sustancial, suspensión y reducción de jornada; trabajo a distancia",
+     "subtitulo": "20 días hábiles · urgente · justificada, injustificada o nula",
+     "descripcion": "Los trabajadores afectados impugnan la decisión empresarial de traslado, modificación sustancial de condiciones, suspensión o reducción de jornada en 20 días hábiles desde la notificación escrita. No exige conciliación previa. Es urgente: vista en 5 días y sentencia en 5, inmediatamente ejecutiva. La sentencia declara la decisión justificada (el trabajador puede extinguir el contrato en 15 días en los casos de los arts. 40.1 y 41.3 ET), injustificada (reposición y daños) o nula (fraude, discriminación o lesión de derechos fundamentales). Sin recurso, salvo las medidas colectivas. El acceso, reversión o modificación del trabajo a distancia tiene un cauce parecido (20 días hábiles, sentencia en 3 días, sin recurso salvo daños).",
+     "aviso": "Los arts. 40, 41, 47, 51 y 59 citados son del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]].",
      "articulos": [
       "138",
       "138 bis"
      ],
-     "rango": [
-      "138",
-      "138 bis"
+     "plazos": [
+      {
+       "acto": "Demanda contra la decisión empresarial",
+       "plazo": "20 días hábiles desde la notificación escrita (caducidad)",
+       "articulo": "138",
+       "literal": "La demanda deberá presentarse en el plazo de caducidad de los veinte días hábiles siguientes a la notificación por escrito de la decisión"
+      },
+      {
+       "acto": "Vista",
+       "plazo": "En los 5 días siguientes a la admisión",
+       "articulo": "138",
+       "literal": "El acto de la vista habrá de señalarse dentro de los cinco días siguientes al de la admisión de la demanda"
+      },
+      {
+       "acto": "Sentencia (inmediatamente ejecutiva)",
+       "plazo": "5 días",
+       "articulo": "138",
+       "literal": "La sentencia deberá ser dictada en el plazo de cinco días y será inmediatamente ejecutiva."
+      },
+      {
+       "acto": "Decisión justificada: extinguir el contrato",
+       "plazo": "15 días",
+       "articulo": "138",
+       "literal": "concediéndole al efecto el plazo de quince días"
+      },
+      {
+       "acto": "Trabajo a distancia: demanda",
+       "plazo": "20 días hábiles desde la negativa de la empresa",
+       "articulo": "138 bis",
+       "literal": "La persona trabajadora dispondrá de un plazo de veinte días hábiles"
+      }
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "La medida se declara injustificada",
+       "entonces": "Reposición en las condiciones anteriores y abono de los daños.",
+       "articulos": [
+        "138"
+       ],
+       "literal": {
+        "articulo": "138",
+        "texto": "reconocerá el derecho del trabajador a ser repuesto en sus anteriores condiciones de trabajo"
+       }
+      },
+      {
+       "si": "Se hizo en fraude, eludiendo el periodo de consultas, o es discriminatoria",
+       "entonces": "Se declara nula.",
+       "articulos": [
+        "138"
+       ],
+       "literal": {
+        "articulo": "138",
+        "texto": "Se declarará nula la decisión adoptada en fraude de Ley"
+       }
+      },
+      {
+       "si": "Después se plantea un conflicto colectivo contra la misma decisión",
+       "entonces": "El proceso individual se suspende hasta que se resuelva el colectivo.",
+       "articulos": [
+        "138",
+        "160"
+       ],
+       "literal": {
+        "articulo": "138",
+        "texto": "aquel proceso se suspenderá hasta la resolución de la demanda de conflicto colectivo"
+       }
+      },
+      {
+       "si": "¿Cabe recurso?",
+       "entonces": "No, salvo traslados y modificaciones de carácter colectivo y suspensiones o reducciones que superen los umbrales del despido colectivo.",
+       "articulos": [
+        "138",
+        "191"
+       ],
+       "literal": {
+        "articulo": "138",
+        "texto": "Contra la misma no procederá ulterior recurso, salvo en los supuestos de movilidad geográfica previstos en el apartado 2 del artículo 40"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Desde cuándo corren los 20 días para impugnar una modificación sustancial?",
+      "a": "Desde la notificación por escrito de la decisión a los trabajadores o a sus representantes; sin ella no empiezan a correr.",
+      "articulos": [
+       "138"
+      ],
+      "literal": {
+       "articulo": "138",
+       "texto": "plazo que no comenzará a computarse hasta que tenga lugar dicha notificación"
+      }
+     },
+     "conexiones": [
+      "64",
+      "138",
+      "138 bis",
+      "153",
+      "160",
+      "191"
+     ],
+     "recursos_rel": [
+      "suplicacion"
+     ],
+     "continua_en": [
+      "colectivos"
+     ],
+     "id": "condiciones-138"
     },
     {
-     "id": "condiciones-139",
-     "fase": "Derechos de conciliación de la vida personal, familiar y laboral reconocidos legal o convencionalmente",
-     "subtitulo": "CAPÍTULO V · Sección 5.ª · art. 139",
-     "descripcion": "",
+     "fase": "Conciliación de la vida personal, familiar y laboral",
+     "subtitulo": "20 días desde la negativa · urgente · sin recurso salvo daños",
+     "descripcion": "Para ejercer los derechos de conciliación (adaptación o reducción de jornada y similares) cuando la empresa los niega o no acepta la propuesta. El trabajador demanda en 20 días desde la negativa y puede acumular los daños causados por la negativa o el retraso. Empresa y trabajador llevan sus propuestas a la conciliación y al juicio. Es urgente: vista en 5 días y sentencia en 3. No hay recurso, salvo que se acumulen daños por cuantía que permita la suplicación. También se usa para los derechos de la trabajadora víctima de violencia de género.",
      "articulos": [
       "139"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Demanda",
+       "plazo": "20 días desde la negativa o disconformidad de la empresa",
+       "articulo": "139",
+       "literal": "El trabajador dispondrá de un plazo de veinte días, a partir de que el empresario le comunique su negativa"
+      },
+      {
+       "acto": "Vista",
+       "plazo": "En los 5 días siguientes a la admisión",
+       "articulo": "139",
+       "literal": "El acto de la vista habrá de señalarse dentro de los cinco días siguientes al de la admisión de la demanda."
+      },
+      {
+       "acto": "Sentencia",
+       "plazo": "3 días",
+       "articulo": "139",
+       "literal": "La sentencia se dictará en el plazo de tres días."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La negativa causó perjuicios",
+       "entonces": "Pueden reclamarse en la misma demanda; la empresa se libera si cumplió al menos provisionalmente la medida.",
+       "articulos": [
+        "139"
+       ],
+       "literal": {
+        "articulo": "139",
+        "texto": "podrá acumularse la acción de daños y perjuicios causados al trabajador"
+       }
+      },
+      {
+       "si": "¿Cabe recurso?",
+       "entonces": "No, salvo que se acumulen daños con cuantía de suplicación; entonces lo resuelto sobre la conciliación es ejecutivo desde la sentencia.",
+       "articulos": [
+        "139",
+        "191"
+       ],
+       "literal": {
+        "articulo": "139",
+        "texto": "Contra la misma no procederá recurso, salvo cuando se haya acumulado pretensión de resarcimiento de perjuicios"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hace falta conciliación previa para reclamar una adaptación de jornada por conciliación familiar?",
+      "a": "No: está exceptuada (art. 64), aunque las partes llevan sus propuestas a la conciliación ante el LAJ y al juicio.",
+      "articulos": [
+       "64",
+       "139"
+      ],
+      "literal": {
+       "articulo": "64",
+       "texto": "derechos de conciliación de la vida personal, familiar y laboral a los que se refiere el artículo 139"
+      }
+     },
+     "conexiones": [
+      "64",
+      "138 bis",
       "139",
-      "139"
+      "191"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [],
+     "continua_en": [],
+     "id": "condiciones-139"
     }
    ]
   },
@@ -2134,68 +2446,269 @@
    "nombre": "Seguridad Social, procedimiento de oficio y actos administrativos",
    "bloque": "lrjs",
    "grupo": "Libro II · Proceso ordinario y modalidades",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Prestaciones de Seguridad Social, impugnación de actos administrativos laborales y, en ficha breve, procedimiento de oficio.",
    "ambito": {
     "corto": "Arts. 140 a 152",
     "texto": "CAPÍTULO VI. De las prestaciones de la Seguridad Social · CAPÍTULO VII. Del procedimiento de oficio y del de impugnación de actos administrativos en materia laboral y de Seguridad Social no prestacionales",
     "articulos": [
      "140"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "140",
+      "texto": "se acreditará haber agotado la vía administrativa correspondiente"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "seguridad-social-140",
-     "fase": "De las prestaciones de la Seguridad Social",
-     "subtitulo": "CAPÍTULO VI · arts. 140 a 147",
-     "descripcion": "",
+     "fase": "Prestaciones de Seguridad Social",
+     "subtitulo": "Vía administrativa previa · expediente · altas médicas · revisión de actos",
+     "descripcion": "En prestaciones de Seguridad Social hay que agotar antes la vía administrativa (reclamación previa), salvo en las altas médicas a los 365 días de incapacidad temporal. El juzgado pide el expediente a la entidad gestora en 10 días; si no lo envía, el juicio se celebra igual y pueden tenerse por probados los hechos del demandante difíciles de probar de otro modo. La impugnación de altas médicas es urgente, se dirige solo contra la entidad gestora y la sentencia no tiene recurso. Las entidades gestoras no pueden revisar por sí mismas sus actos declarativos de derechos en perjuicio del beneficiario: tienen que demandar (prescripción de 4 años), salvo excepciones.",
      "articulos": [
       "140",
-      "147"
+      "141",
+      "142",
+      "143",
+      "144",
+      "146",
+      "147",
+      "71"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Subsanar la falta de vía administrativa previa",
+       "plazo": "4 días",
+       "articulo": "140",
+       "literal": "dispondrá que se subsane el defecto en el plazo de cuatro días"
+      },
+      {
+       "acto": "La entidad gestora remite el expediente",
+       "plazo": "10 días",
+       "articulo": "143",
+       "literal": "en plazo de diez días"
+      },
+      {
+       "acto": "Revisión de un acto declarativo de derechos por la entidad",
+       "plazo": "4 años (prescripción)",
+       "articulo": "146",
+       "literal": "La acción de revisión a la que se refiere el apartado uno prescribirá a los cuatro años."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se impugna un alta médica",
+       "entonces": "Urgente; vista en 5 días; sentencia en 3 días, sin recurso y con efectos solo sobre esa alta.",
+       "articulos": [
+        "140"
+       ],
+       "literal": {
+        "articulo": "140",
+        "texto": "la sentencia, que no tendrá recurso, se dictará en el plazo de tres días"
+       }
+      },
+      {
+       "si": "La entidad gestora no envía el expediente",
+       "entonces": "El juicio se celebra igual; si tampoco llega tras reiterarlo, pueden tenerse por probados hechos del demandante.",
+       "articulos": [
+        "144"
+       ],
+       "literal": {
+        "articulo": "144",
+        "texto": "podrán tenerse por probados aquellos hechos alegados por el demandante"
+       }
+      },
+      {
+       "si": "La entidad quiere revisar una prestación ya reconocida en perjuicio del beneficiario",
+       "entonces": "Tiene que demandar ante el Juzgado de lo Social, salvo errores materiales, desempleo dentro del año y otras excepciones.",
+       "articulos": [
+        "146"
+       ],
+       "literal": {
+        "articulo": "146",
+        "texto": "no podrán revisar por sí mismos sus actos declarativos de derechos en perjuicio de sus beneficiarios"
+       }
+      },
+      {
+       "si": "Accidente de trabajo sin indicar la mutua o entidad",
+       "entonces": "Se requiere a la empresa el documento de cobertura en 4 días; si no, embargo preventivo.",
+       "articulos": [
+        "142"
+       ],
+       "literal": {
+        "articulo": "142",
+        "texto": "requerirá al empresario demandado para que en plazo de cuatro días presente el documento acreditativo de la cobertura de riesgo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hay recurso contra la sentencia que resuelve la impugnación de un alta médica?",
+      "a": "No.",
+      "articulos": [
+       "140",
+       "191"
+      ],
+      "literal": {
+       "articulo": "140",
+       "texto": "la sentencia, que no tendrá recurso"
+      }
+     },
+     "conexiones": [
+      "71",
       "140",
-      "147"
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "191",
+      "294"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion"
+     ],
+     "continua_en": [
+      "evitacion",
+      "provisional"
+     ],
+     "id": "seguridad-social-140"
     },
     {
-     "id": "seguridad-social-148",
-     "fase": "Del procedimiento de oficio",
-     "subtitulo": "CAPÍTULO VII · Sección 1.ª · arts. 148 a 150",
-     "descripcion": "",
+     "fase": "Procedimiento de oficio (ficha breve)",
+     "subtitulo": "Qué es · quién demanda · plazo · recurso",
+     "descripcion": "Qué es: un proceso que se inicia sin demanda de los trabajadores, a partir de resoluciones de la autoridad laboral derivadas de actas de la Inspección con perjuicio para los trabajadores, de acuerdos de suspensión, reducción o extinción que la autoridad laboral considera fraudulentos, o de actas por discriminación. Quién demanda: la autoridad laboral (demanda de oficio). Los trabajadores perjudicados son parte, pero no pueden desistir. Los hechos de la resolución hacen fe salvo prueba en contrario, y la carga de la prueba es del demandado. Plazo: subsanación en 10 días. Recurso: suplicación (art. 191.3.f). La sentencia se ejecuta siempre de oficio.",
      "articulos": [
       "148",
+      "149",
       "150"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "La autoridad laboral subsana la demanda",
+       "plazo": "10 días",
+       "articulo": "150",
+       "literal": "a fin de que sean subsanados en el término de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "¿Quién prueba?",
+       "entonces": "El demandado: los hechos de la resolución o comunicación hacen fe salvo prueba en contrario.",
+       "articulos": [
+        "150"
+       ],
+       "literal": {
+        "articulo": "150",
+        "texto": "incumbiendo toda la carga de la prueba a la parte demandada"
+       }
+      },
+      {
+       "si": "Las partes quieren conciliar",
+       "entonces": "Solo si se satisfacen todos los perjuicios causados.",
+       "articulos": [
+        "150"
+       ],
+       "literal": {
+        "articulo": "150",
+        "texto": "cuando fuera cumplidamente satisfecha la totalidad de los perjuicios causados por la infracción"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En el procedimiento de oficio, ¿puede el trabajador perjudicado desistir?",
+      "a": "No: es parte, pero no puede desistir ni pedir la suspensión.",
+      "articulos": [
+       "150"
+      ],
+      "literal": {
+       "articulo": "150",
+       "texto": "no podrán desistir ni solicitar la suspensión del proceso"
+      }
+     },
+     "conexiones": [
+      "124",
       "148",
-      "150"
+      "149",
+      "150",
+      "191"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion"
+     ],
+     "continua_en": [],
+     "id": "seguridad-social-148"
     },
     {
-     "id": "seguridad-social-151",
-     "fase": "Del procedimiento de impugnación de actos administrativos en materia laboral y de Seguridad Social excluidos los prestacionales",
-     "subtitulo": "CAPÍTULO VII · Sección 2.ª · arts. 151 a 152",
-     "descripcion": "",
+     "fase": "Impugnación de actos administrativos laborales",
+     "subtitulo": "Contra la Administración en materia laboral · reglas del proceso ordinario · suspensión cautelar",
+     "descripcion": "Las demandas contra actos de las Administraciones en materia laboral (no prestacionales) siguen el proceso ordinario, con especialidades, y supletoriamente las normas de la jurisdicción contencioso-administrativa. Hay que acreditar el agotamiento de la vía administrativa e identificar el acto impugnado y la Administración. En cualquier momento puede pedirse la suspensión del acto u otras medidas cautelares; el juez oye a las partes 3 días, salvo urgencia.",
+     "aviso": "Supletoriamente se aplica la [[Ley 29/1998, de 13 de julio, reguladora de la Jurisdicción Contencioso-administrativa|https://www.boe.es/buscar/act.php?id=BOE-A-1998-16718]].",
      "articulos": [
       "151",
-      "152"
+      "152",
+      "69"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Subsanar los requisitos de la demanda",
+       "plazo": "4 días",
+       "articulo": "151",
+       "literal": "dispondrá que se subsane el defecto en el plazo de cuatro días"
+      },
+      {
+       "acto": "Audiencia a las partes sobre la suspensión del acto",
+       "plazo": "3 días",
+       "articulo": "152",
+       "literal": "una vez oídas las partes por tres días"
+      },
+      {
+       "acto": "Paralización de trabajos por riesgo grave: audiencia preliminar",
+       "plazo": "En 48 horas",
+       "articulo": "152",
+       "literal": "dentro de las cuarenta y ocho horas siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La medida cautelar perjudicaría gravemente intereses generales o de terceros",
+       "entonces": "Puede denegarse.",
+       "articulos": [
+        "152"
+       ],
+       "literal": {
+        "articulo": "152",
+        "texto": "La medida cautelar podrá denegarse cuando de ésta pudiera seguirse perturbación grave de los intereses generales o de terceros"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué normas se aplican supletoriamente a la impugnación de actos administrativos laborales?",
+      "a": "Las de la jurisdicción contencioso-administrativa, en lo compatible con el proceso social.",
+      "articulos": [
+       "151"
+      ],
+      "literal": {
+       "articulo": "151",
+       "texto": "En lo no expresamente previsto serán de aplicación las normas reguladoras de la jurisdicción contencioso-administrativa"
+      }
+     },
+     "conexiones": [
+      "69",
+      "70",
       "151",
-      "152"
+      "152",
+      "191"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion"
+     ],
+     "continua_en": [
+      "evitacion"
+     ],
+     "id": "seguridad-social-151"
     }
    ]
   },
@@ -2204,68 +2717,304 @@
    "nombre": "Conflictos colectivos, convenios y estatutos sindicales",
    "bloque": "lrjs",
    "grupo": "Libro II · Proceso ordinario y modalidades",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Conflicto colectivo, impugnación de convenios y, en ficha breve, estatutos sindicales y de asociaciones empresariales.",
    "ambito": {
     "corto": "Arts. 153 a 176",
     "texto": "CAPÍTULO VIII. Del proceso de conflictos colectivos · CAPÍTULO IX. De la impugnación de convenios colectivos · CAPÍTULO X. De las impugnaciones relativas a los estatutos de los sindicatos y de las asociaciones empresariales o a su modificación",
     "articulos": [
      "153"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "159",
+      "texto": "Este proceso tendrá carácter urgente."
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "colectivos-153",
-     "fase": "Del proceso de conflictos colectivos",
-     "subtitulo": "CAPÍTULO VIII · arts. 153 a 162",
-     "descripcion": "",
+     "fase": "Conflicto colectivo",
+     "subtitulo": "Interés general de un grupo · sindicatos, empresa y representantes · juicio en 5 días",
+     "descripcion": "Para demandas que afectan a intereses generales de un grupo genérico de trabajadores sobre la aplicación e interpretación de una norma, un convenio, un pacto, una decisión o práctica de empresa de carácter colectivo (incluidas las medidas colectivas de los arts. 40.2, 41.2 y 47 ET). Están legitimados los sindicatos, las asociaciones empresariales, la empresa y los representantes de los trabajadores, según el ámbito. Exige conciliación o mediación previa. Es urgente y con preferencia absoluta (salvo tutela de derechos fundamentales). Juicio en única convocatoria en 5 días y sentencia en 3, ejecutiva aunque se recurra. La sentencia firme hace cosa juzgada en los procesos individuales, que se suspenden mientras tanto.",
+     "aviso": "Los arts. 40, 41, 47 y 51 citados son del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]].",
      "articulos": [
       "153",
+      "154",
+      "155",
+      "156",
+      "157",
+      "159",
+      "160",
+      "161",
       "162"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Juicio",
+       "plazo": "En los 5 días siguientes a la admisión",
+       "articulo": "160",
+       "literal": "dentro de los cinco días siguientes a la admisión a trámite de la demanda"
+      },
+      {
+       "acto": "Sentencia",
+       "plazo": "3 días",
+       "articulo": "160",
+       "literal": "La sentencia se dictará dentro de los tres días siguientes"
+      },
+      {
+       "acto": "Comunicación de la autoridad laboral: subsanar",
+       "plazo": "10 días",
+       "articulo": "158",
+       "literal": "a fin de que se subsanen en el plazo de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay procesos individuales sobre lo mismo",
+       "entonces": "Se suspenden y la sentencia colectiva firme hace cosa juzgada sobre ellos.",
+       "articulos": [
+        "160"
+       ],
+       "literal": {
+        "articulo": "160",
+        "texto": "La sentencia firme producirá efectos de cosa juzgada sobre los procesos individuales"
+       }
+      },
+      {
+       "si": "Se quiere recurrir una resolución de trámite",
+       "entonces": "No cabe recurso, salvo la declaración inicial de incompetencia.",
+       "articulos": [
+        "161"
+       ],
+       "literal": {
+        "articulo": "161",
+        "texto": "Contra las resoluciones que se dicten en su tramitación no cabrá recurso, salvo el de declaración inicial de incompetencia."
+       }
+      },
+      {
+       "si": "Las partes resuelven el conflicto",
+       "entonces": "Se archiva al comunicarlo, en cualquier momento antes de la sentencia.",
+       "articulos": [
+        "162"
+       ],
+       "literal": {
+        "articulo": "162",
+        "texto": "se procederá por el secretario judicial sin más al archivo de las actuaciones"
+       }
+      },
+      {
+       "si": "Se pide una condena que luego se individualizará",
+       "entonces": "La sentencia debe concretar los datos para identificar a los afectados; se ejecuta por el art. 247.",
+       "articulos": [
+        "160",
+        "247"
+       ],
+       "literal": {
+        "articulo": "160",
+        "texto": "deberá contener, en su caso, la concreción de los datos, características y requisitos precisos para una posterior individualización de los afectados"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Es ejecutiva la sentencia de conflicto colectivo aunque se recurra?",
+      "a": "Sí, desde que se dicta.",
+      "articulos": [
+       "160",
+       "303"
+      ],
+      "literal": {
+       "articulo": "160",
+       "texto": "La sentencia será ejecutiva desde el momento en que se dicte, no obstante el recurso que contra la misma pueda interponerse."
+      }
+     },
+     "conexiones": [
+      "124",
+      "138",
       "153",
-      "162"
+      "154",
+      "155",
+      "156",
+      "157",
+      "158",
+      "159",
+      "160",
+      "161",
+      "162",
+      "247",
+      "303"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion",
+      "casacion"
+     ],
+     "continua_en": [
+      "ejecucion"
+     ],
+     "id": "colectivos-153"
     },
     {
-     "id": "colectivos-163",
-     "fase": "De la impugnación de convenios colectivos",
-     "subtitulo": "CAPÍTULO IX · arts. 163 a 166",
-     "descripcion": "",
+     "fase": "Impugnación de convenios colectivos",
+     "subtitulo": "Por ilegalidad o lesividad · de oficio o por los legitimados · sentencia en 3 días",
+     "descripcion": "Un convenio colectivo estatutario (o el laudo que lo sustituye) puede impugnarse por ilegal o por lesionar gravemente a terceros. Si no está registrado, se pide a la autoridad laboral que lo comunique de oficio al juzgado; si no contesta en 15 días, lo deniega o el convenio ya está registrado, los legitimados lo impugnan directamente por el cauce del conflicto colectivo. Por ilegalidad: representantes, sindicatos, asociaciones empresariales, Ministerio Fiscal y Administraciones; por lesividad: los terceros gravemente lesionados. El Ministerio Fiscal es siempre parte. La sentencia, en 3 días, es ejecutiva y, si anula el convenio publicado, se publica.",
+     "aviso": "El Título III y el art. 90 citados son del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]].",
      "articulos": [
       "163",
+      "164",
+      "165",
       "166"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "La autoridad laboral contesta la petición de impugnación de oficio",
+       "plazo": "15 días",
+       "articulo": "163",
+       "literal": "Si la autoridad laboral no contestara la solicitud a la que se refiere el apartado anterior en el plazo de quince días"
+      },
+      {
+       "acto": "Subsanar la comunicación de oficio",
+       "plazo": "10 días",
+       "articulo": "164",
+       "literal": "a fin de que se subsanen en el plazo de diez días"
+      },
+      {
+       "acto": "Sentencia",
+       "plazo": "3 días",
+       "articulo": "166",
+       "literal": "La sentencia, que se dictará dentro de los tres días siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No se impugnó el convenio en su día",
+       "entonces": "Pueden impugnarse los actos de aplicación en conflictos colectivos o individuales posteriores.",
+       "articulos": [
+        "163"
+       ],
+       "literal": {
+        "articulo": "163",
+        "texto": "La falta de impugnación directa de un convenio colectivo"
+       }
+      },
+      {
+       "si": "Se alega discriminación por razón de sexo en una cláusula",
+       "entonces": "Están también legitimados el Instituto de la Mujer y los organismos autonómicos equivalentes.",
+       "articulos": [
+        "165"
+       ],
+       "literal": {
+        "articulo": "165",
+        "texto": "están también legitimados el Instituto de la Mujer"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quién es siempre parte en la impugnación de un convenio colectivo?",
+      "a": "El Ministerio Fiscal.",
+      "articulos": [
+       "164",
+       "165"
+      ],
+      "literal": {
+       "articulo": "165",
+       "texto": "El Ministerio Fiscal será siempre parte en estos procesos."
+      }
+     },
+     "conexiones": [
+      "153",
       "163",
-      "166"
+      "164",
+      "165",
+      "166",
+      "303"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion",
+      "casacion"
+     ],
+     "continua_en": [],
+     "id": "colectivos-163"
     },
     {
-     "id": "colectivos-167",
-     "fase": "De las impugnaciones relativas a los estatutos de los sindicatos y de las asociaciones empresariales o a su modificación",
-     "subtitulo": "CAPÍTULO X · arts. 167 a 176",
-     "descripcion": "",
+     "fase": "Estatutos sindicales y de asociaciones empresariales (ficha breve)",
+     "subtitulo": "Qué es · quién demanda · plazo · recurso",
+     "descripcion": "Qué es: impugnar la denegación del depósito de los estatutos de un sindicato (o de su modificación) y pedir que se declaren no conformes a Derecho unos estatutos ya depositados; igual para las asociaciones empresariales. Quién demanda: contra la denegación, los promotores y firmantes del acta de constitución (o los representantes del sindicato si es una modificación); contra los estatutos, el Ministerio Fiscal y quien tenga interés directo, personal y legítimo. Plazo: 10 días hábiles desde la denegación (o desde que pasa un mes sin que se notifiquen defectos). Recurso: suplicación (art. 191.3.f). El Ministerio Fiscal es siempre parte.",
      "articulos": [
       "167",
+      "168",
+      "171",
+      "172",
+      "173",
+      "175",
       "176"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Impugnar la denegación del depósito",
+       "plazo": "10 días hábiles",
+       "articulo": "168",
+       "literal": "El plazo para el ejercicio de la acción de impugnación será de diez días hábiles"
+      },
+      {
+       "acto": "La oficina pública envía el expediente",
+       "plazo": "5 días",
+       "articulo": "170",
+       "literal": "que habrá de ser remitido en el plazo de cinco días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se estima la demanda contra la denegación",
+       "entonces": "La sentencia ordena de inmediato el depósito de los estatutos.",
+       "articulos": [
+        "171"
+       ],
+       "literal": {
+        "articulo": "171",
+        "texto": "ordenará de inmediato el depósito del estatuto sindical"
+       }
+      },
+      {
+       "si": "Se estima la demanda contra los estatutos",
+       "entonces": "Se declaran nulas las cláusulas no conformes a Derecho, o los estatutos enteros.",
+       "articulos": [
+        "175"
+       ],
+       "literal": {
+        "articulo": "175",
+        "texto": "la sentencia declarará la nulidad de las cláusulas estatutarias que no sean conformes a Derecho"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Desde cuándo corre el plazo para impugnar la denegación del depósito de estatutos?",
+      "a": "Desde que se recibe la denegación expresa, o desde que pasa un mes desde la presentación sin que se notifiquen defectos.",
+      "articulos": [
+       "168"
+      ],
+      "literal": {
+       "articulo": "168",
+       "texto": "transcurra un mes desde la presentación de los estatutos sin que hubieren notificado a los promotores defectos a subsanar"
+      }
+     },
+     "conexiones": [
       "167",
-      "176"
+      "168",
+      "169",
+      "170",
+      "171",
+      "172",
+      "173",
+      "174",
+      "175",
+      "176",
+      "191"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion"
+     ],
+     "continua_en": [],
+     "id": "colectivos-167"
     }
    ]
   },
@@ -2274,34 +3023,134 @@
    "nombre": "Tutela de los derechos fundamentales",
    "bloque": "lrjs",
    "grupo": "Libro II · Proceso ordinario y modalidades",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Tutela de la libertad sindical y demás derechos fundamentales, incluida la discriminación y el acoso.",
    "ambito": {
     "corto": "Arts. 177 a 184",
     "texto": "CAPÍTULO XI. De la tutela de los derechos fundamentales y libertades públicas",
     "articulos": [
      "177"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "179",
+      "texto": "La tramitación de estos procesos tendrá carácter urgente a todos los efectos"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "tutela-177",
-     "fase": "De la tutela de los derechos fundamentales y libertades públicas",
-     "subtitulo": "CAPÍTULO XI · arts. 177 a 184",
-     "descripcion": "",
+     "fase": "Tutela de derechos fundamentales y libertades públicas",
+     "subtitulo": "Urgente y preferente · indicios y carga del demandado · nulidad e indemnización",
+     "descripcion": "Cualquier trabajador o sindicato que considere lesionados la libertad sindical, la huelga u otros derechos fundamentales (incluida la discriminación y el acoso) puede pedir su tutela. El Ministerio Fiscal es siempre parte. Solo se discute la lesión del derecho, sin acumular otras acciones; y despidos, sanciones, modificaciones, vacaciones, conciliación familiar, convenios y estatutos van por su propia modalidad, con estas garantías. Es urgente y preferente; se demanda en el plazo de la acción de que se trate y puede pedirse la suspensión del acto. Conciliación y juicio en 5 días; si hay indicios de vulneración, el demandado justifica su conducta. La sentencia declara la vulneración, la nulidad de la conducta, el cese y la reparación, con indemnización por daño moral y demás perjuicios.",
      "articulos": [
       "177",
+      "178",
+      "179",
+      "180",
+      "181",
+      "182",
+      "183",
       "184"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Demanda",
+       "plazo": "El plazo de prescripción o caducidad de la acción de que se trate",
+       "articulo": "179",
+       "literal": "dentro del plazo general de prescripción o caducidad de la acción previsto para las conductas o actos"
+      },
+      {
+       "acto": "Conciliación y juicio",
+       "plazo": "En los 5 días siguientes a la admisión (mínimo 2 días tras la citación)",
+       "articulo": "181",
+       "literal": "dentro del plazo improrrogable de los cinco días siguientes al de la admisión de la demanda"
+      },
+      {
+       "acto": "Sentencia",
+       "plazo": "3 días desde el juicio",
+       "articulo": "181",
+       "literal": "dictará sentencia en el plazo de tres días desde la celebración del acto del juicio"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay indicios de vulneración",
+       "entonces": "El demandado debe aportar una justificación objetiva, razonable y proporcionada.",
+       "articulos": [
+        "181",
+        "96"
+       ],
+       "literal": {
+        "articulo": "181",
+        "texto": "corresponderá al demandado la aportación de una justificación objetiva y razonable"
+       }
+      },
+      {
+       "si": "La lesión se produce en un despido, una sanción o una modificación de condiciones",
+       "entonces": "Va por la modalidad de despido, sanción o modificación, con las garantías de la tutela.",
+       "articulos": [
+        "184",
+        "178"
+       ],
+       "literal": {
+        "articulo": "184",
+        "texto": "se tramitarán inexcusablemente, con arreglo a la modalidad procesal correspondiente a cada una de ellas"
+       }
+      },
+      {
+       "si": "El acto lesivo sigue produciendo efectos",
+       "entonces": "Puede pedirse en la demanda su suspensión y otras medidas cautelares.",
+       "articulos": [
+        "180"
+       ],
+       "literal": {
+        "articulo": "180",
+        "texto": "el actor podrá solicitar la suspensión de los efectos del acto impugnado"
+       }
+      },
+      {
+       "si": "Se reclama indemnización",
+       "entonces": "El juez debe pronunciarse sobre ella, incluido el daño moral, fijándola prudencialmente si su prueba es difícil.",
+       "articulos": [
+        "183"
+       ],
+       "literal": {
+        "articulo": "183",
+        "texto": "el juez deberá pronunciarse sobre la cuantía de la indemnización"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se puede acumular a la tutela de derechos fundamentales una reclamación de cantidad por otro concepto?",
+      "a": "No: el proceso se limita a la lesión del derecho fundamental, sin acumular acciones de otra naturaleza.",
+      "articulos": [
+       "178"
+      ],
+      "literal": {
+       "articulo": "178",
+       "texto": "sin posibilidad de acumulación con acciones de otra naturaleza"
+      }
+     },
+     "conexiones": [
+      "96",
       "177",
-      "184"
+      "178",
+      "179",
+      "180",
+      "181",
+      "182",
+      "183",
+      "184",
+      "303"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion"
+     ],
+     "continua_en": [
+      "despido"
+     ],
+     "id": "tutela-177"
     }
    ]
   },

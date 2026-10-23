@@ -356,6 +356,18 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 ## LRJS — Ley reguladora de la jurisdicción social
 
+### Modalidades procesales (Chat 4, contenido elaborado, pendiente de revisión)
+
+> Quinto desarrollo de la LRJS, en el orden elegido por el usuario: bloques «Condiciones de trabajo y materia electoral» (5 fichas), «Seguridad Social, procedimiento de oficio y actos administrativos» (3), «Conflictos colectivos, convenios y estatutos sindicales» (3) y «Tutela de los derechos fundamentales» (1); 35 plazos. Materia electoral, procedimiento de oficio y estatutos sindicales van en ficha breve (qué es, quién demanda, plazo y recurso), como pidió el usuario. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
+
+- [ ] **Art. 138.6 frente al art. 191.2.e: ¿art. 41.4 o 41.2 del Estatuto?** Para las modificaciones sustanciales colectivas, el art. 138.6 remite al «apartado 4 del artículo 41» del Estatuto y el art. 191.2.e, al «apartado 2 del artículo 41». Es una remisión desfasada en uno de los dos.
+  - **Propuesta:** la ficha dice «modificaciones de carácter colectivo», sin citar el apartado. Pendiente de revisión individual. No verificable hasta que lo confirmes.
+  - **Tu respuesta:**
+- [ ] **Art. 125.a: «veinte días» sin decir «hábiles»** (vacaciones), como en el art. 139 (conciliación familiar). El art. 138 sí dice «veinte días hábiles».
+  - **Propuesta:** dejarlo como dice la ley, sin añadir «hábiles». No verificable hasta que lo confirmes.
+  - **Tu respuesta:**
+- [ ] **Revisa las 12 fichas.**
+
 ### Ejecución y ejecución provisional (Chat 4, contenido elaborado, pendiente de revisión)
 
 > Cuarto desarrollo de la LRJS, en el orden elegido por el usuario: bloque «Ejecución de sentencias» (8 fichas) y «Ejecución provisional» (4 fichas); 28 plazos. Con el canon: la realización de bienes (arts. 261-267) y los anticipos de cantidades (arts. 289-293) quedan como índice, porque no los marca. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
