@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-"""Extrae la LECrim completa del PDF consolidado del BOE a lecrim/datos/lecrim.json.
+"""Extrae una ley completa del PDF consolidado del BOE a <ley>/datos/<ley>.json.
 
-Uso:  python3 scripts/extraer_lecrim.py
+Uso:  python3 scripts/extraer_ley.py lecrim
+      python3 scripts/extraer_ley.py lrjs
 
-Fuente única: fuentes/LECrim_BOE-A-1882-6036.pdf (no hay XML de la LECrim ni acceso
-a la API del BOE). El texto se toma tal cual del PDF; no se completa nada a mano.
+Vale para las leyes sin XML, con la maquetación de los PDF consolidados del BOE
+(la LEC usa scripts/extraer_lec.py porque parte del XML). Lo propio de cada ley
+(PDF, página donde empieza el texto, preámbulo, nombre) está en LEYES, más abajo.
+El texto se toma tal cual del PDF; no se completa nada a mano.
 
 Cómo lee el PDF (maquetación del BOE):
 - Encabezado de artículo: línea en negrita en el margen izquierdo («Artículo 14.»,
@@ -21,11 +24,31 @@ posibles problemas de extracción.
 import json
 import os
 import re
+import sys
 from collections import Counter
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PDF = os.path.join(RAIZ, "fuentes", "LECrim_BOE-A-1882-6036.pdf")
-DATOS = os.path.join(RAIZ, "lecrim", "datos")
+
+# Lo propio de cada ley. pag_cuerpo: primera página tras el índice del PDF.
+# El preámbulo va de la línea que empieza por inicio_pre hasta la línea fin_pre;
+# si saltar_fin, esa línea es un rótulo que no se guarda (la LECrim repite su nombre).
+LEYES = {
+    "lecrim": {"pdf": "LECrim_BOE-A-1882-6036.pdf", "pag_cuerpo": 7,
+               "inicio_pre": "Teniendo presente", "fin_pre": "LEY DE ENJUICIAMIENTO CRIMINAL", "saltar_fin": True,
+               "rotulo_pre": "Real Decreto de aprobación",
+               "ley": {"id": "lecrim", "nombre": "Real Decreto de 14 de septiembre de 1882 por el que se aprueba la "
+                                                "Ley de Enjuiciamiento Criminal",
+                       "abreviatura": "LECrim", "boe": "BOE-A-1882-6036"}},
+    "lrjs": {"pdf": "LRJS_BOE-A-2011-15936.pdf", "pag_cuerpo": 5,
+             "inicio_pre": "JUAN CARLOS I", "fin_pre": "LIBRO PRIMERO", "saltar_fin": False,
+             "rotulo_pre": "Preámbulo",
+             "ley": {"id": "lrjs", "nombre": "Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social",
+                     "abreviatura": "LRJS", "boe": "BOE-A-2011-15936"}},
+}
+LEY = sys.argv[1] if len(sys.argv) > 1 else "lecrim"
+CFG = LEYES[LEY]
+PDF = os.path.join(RAIZ, "fuentes", CFG["pdf"])
+DATOS = os.path.join(RAIZ, LEY, "datos")
 CACHE = os.path.join(DATOS, "lineas_pdf.json")
 
 SUFIJOS = ("bis|ter|quater|quáter|quinquies|sexies|septies|octies|nonies|decies|"
@@ -34,8 +57,10 @@ NUM = rf"\d+(?: (?:{SUFIJOS}))?(?: \d+| [a-z]\)?)?"
 RE_ART = re.compile(rf"^Artículo ({NUM})\.(?:\s+(.*))?$")
 RE_ARTS = re.compile(r"^Artículos (\d+) a (\d+)\.(?:\s+(.*))?$")
 RE_DISP = re.compile(r"^Disposición (adicional|transitoria|derogatoria|final)(?: (\S+))?\.(?:\s+(.*))?$")
-RE_ESTR = re.compile(r"^(LIBRO|TÍTULO|CAPÍTULO) ([IVXLC]+(?: (?:BIS|TER|bis|ter))?|PRELIMINAR)$")
+RE_ESTR = re.compile(r"^(LIBRO|TÍTULO|CAPÍTULO) ([IVXLC]+(?: (?:BIS|TER|bis|ter))?|PRELIMINAR|"
+                     r"PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|SÉPTIMO)$")
 RE_SECC = re.compile(r"^Sección (\d+\.ª)\s*(.*)$")
+RE_SUBSECC = re.compile(r"^Subsección (\d+\.ª)\s*(.*)$")  # LRJS: letra normal, centrada
 RE_VACIO = re.compile(r"^\((Sin contenido|Derogad[oa]s?|Anulad[oa]s?|Suprimid[oa]s?)\)\.?$")
 
 ORDINALES = {"primera": 1, "segunda": 2, "tercera": 3, "cuarta": 4, "quinta": 5, "sexta": 6,
@@ -44,7 +69,7 @@ ORDINALES = {"primera": 1, "segunda": 2, "tercera": 3, "cuarta": 4, "quinta": 5,
 PREF = {"adicional": "da", "transitoria": "dt", "derogatoria": "dd", "final": "df"}
 GRUPOS = {"da": "Disposiciones adicionales", "dt": "Disposiciones transitorias",
           "dd": "Disposiciones derogatorias", "df": "Disposiciones finales"}
-NIVEL = {"libro": 1, "titulo": 2, "capitulo": 3, "seccion": 4}
+NIVEL = {"libro": 1, "titulo": 2, "capitulo": 3, "seccion": 4, "subseccion": 5}
 X_IZQ, X_SANGRIA = 90.7, 107.7
 
 
@@ -192,10 +217,10 @@ def destacados(lineas):
 
 def construir(lineas):
     avisos = []
-    cuerpo = [ln for ln in lineas if ln["p"] >= 7 and not es_cabecera_pie(ln)]
-    # Fecha y notas generales (antes del Real Decreto).
+    cuerpo = [ln for ln in lineas if ln["p"] >= CFG["pag_cuerpo"] and not es_cabecera_pie(ln)]
+    # Fecha y notas generales (antes del preámbulo).
     fecha, notas_gen, i = None, [], 0
-    while i < len(cuerpo) and not cuerpo[i]["t"].startswith("Teniendo presente"):
+    while i < len(cuerpo) and not cuerpo[i]["t"].strip().startswith(CFG["inicio_pre"]):
         t = cuerpo[i]["t"]
         m = re.match(r"^Última modificación: (.+)$", t)
         if m:
@@ -204,13 +229,14 @@ def construir(lineas):
             notas_gen.append(cuerpo[i])
         i += 1
     notas_generales = unir_notas(notas_gen)
-    # Real Decreto de aprobación = preámbulo, hasta el rótulo de la ley.
+    # Preámbulo (en la LECrim, el Real Decreto de aprobación), hasta el rótulo de la ley o el Libro primero.
     pre = []
-    while i < len(cuerpo) and cuerpo[i]["t"] != "LEY DE ENJUICIAMIENTO CRIMINAL":
+    while i < len(cuerpo) and cuerpo[i]["t"].strip() != CFG["fin_pre"]:
         pre.append(cuerpo[i])
         i += 1
-    i += 1
-    articulos = {"preambulo": {"rotulo": "Real Decreto de aprobación", "titulo": "",
+    if CFG["saltar_fin"]:
+        i += 1
+    articulos = {"preambulo": {"rotulo": CFG["rotulo_pre"], "titulo": "",
                                "texto_literal": "\n".join(unir_preambulo(pre)), "ruta": []}}
     estructura = [{"tipo": "articulo", "clave": "preambulo"}]
     pila = []  # nodos abiertos (libro > título > capítulo > sección)
@@ -276,6 +302,22 @@ def construir(lineas):
             contenedor().append(nodo)
             pila.append(nodo)
             continue
+        m = RE_SUBSECC.match(t)
+        if m and ln["x"] > X_IZQ + 5 and solo_estilo(ln, ("",)):
+            cerrar(); actual = None
+            nombre = [m.group(2)]
+            i += 1
+            while i < len(cuerpo) and not encabezado(cuerpo[i]) and solo_estilo(cuerpo[i], ("",)) \
+                    and cuerpo[i]["x"] > X_IZQ + 5:
+                nombre.append(cuerpo[i]["t"].strip())
+                i += 1
+            nodo = {"tipo": "subseccion", "rotulo": "Subsección " + m.group(1), "titulo": " ".join(nombre).strip(),
+                    "hijos": []}
+            while pila and NIVEL[pila[-1]["tipo"]] >= NIVEL["subseccion"]:
+                pila.pop()
+            contenedor().append(nodo)
+            pila.append(nodo)
+            continue
         e = encabezado(ln)
         if e:
             cerrar()
@@ -322,6 +364,8 @@ def unir_preambulo(lineas):
             out.append(t)
         elif not out or ln["x"] > X_IZQ + 5:
             out.append(t)
+        elif out[-1].endswith("-") and not out[-1].endswith(" -"):
+            out[-1] += t
         else:
             out[-1] += " " + t
     return out
@@ -354,9 +398,9 @@ def controles(articulos, orden, estructura, lineas):
     # Rótulos del índice del PDF (págs. 1-6) frente a los encontrados en el cuerpo.
     indice = []
     for ln in lineas:
-        if ln["p"] <= 6 and not es_cabecera_pie(ln):
+        if ln["p"] < CFG["pag_cuerpo"] and not es_cabecera_pie(ln):
             t = re.sub(r"\s*(\. ?)+\s*\d+$", "", ln["t"]).strip()
-            if re.match(r"^(LIBRO|TÍTULO|Capítulo|CAPÍTULO|Sección) ", t):
+            if re.match(r"^(LIBRO|TÍTULO|Capítulo|CAPÍTULO|Sección|Subsección) ", t):
                 indice.append(t)
     encontrados = []
 
@@ -387,14 +431,14 @@ def contrastar(datos):
     import subprocess
     if not shutil.which("pdftotext"):
         return None
-    raw = subprocess.run(["pdftotext", "-f", "7", PDF, "-"], capture_output=True, text=True).stdout
+    raw = subprocess.run(["pdftotext", "-f", str(CFG["pag_cuerpo"]), PDF, "-"], capture_output=True, text=True).stdout
     quitar = ("BOLETÍN OFICIAL DEL ESTADO", "LEGISLACIÓN CONSOLIDADA", "TEXTO CONSOLIDADO")
     lin = [l for l in raw.split("\n") if l.strip() not in quitar and not re.match(r"^Página \d+$", l.strip())
            and not l.startswith("Última modificación")
            and not l.startswith("Este documento es de carácter informativo")]
     w1 = re.findall(r"[\wºª]+", " ".join(lin))
     A = datos["articulos"]
-    seq = [datos["ley"]["nota_general_boe"], A["preambulo"]["texto_literal"], "LEY DE ENJUICIAMIENTO CRIMINAL"]
+    seq = [datos["ley"]["nota_general_boe"], A["preambulo"]["texto_literal"]] + ([CFG["fin_pre"]] if CFG["saltar_fin"] else [])
 
     def rec(nodos):
         for n in nodos:
@@ -418,8 +462,8 @@ def contrastar(datos):
 def escribir_informe(ley, ctrl, avisos, contraste):
     with open(os.path.join(DATOS, "informe_control.json"), "w", encoding="utf-8") as f:
         json.dump({"control": ctrl, "avisos": avisos, "contraste": contraste}, f, ensure_ascii=False, indent=1)
-    L = [f"# Informe de control — LECrim ({ley['boe']})", "",
-         f"Fuente: `fuentes/LECrim_BOE-A-1882-6036.pdf` (texto consolidado; última modificación: {ley['fecha_version']}).",
+    L = [f"# Informe de control — {ley['abreviatura']} ({ley['boe']})", "",
+         f"Fuente: `fuentes/{CFG['pdf']}` (texto consolidado; última modificación: {ley['fecha_version']}).",
          "Sin XML ni acceso a la API del BOE: extracción solo desde el PDF.", "",
          "## Recuento", "",
          f"- Encabezados de artículo extraídos: **{ctrl['n_articulos']}** (los rangos como «Artículos 48 a 50» cuentan como uno).",
@@ -457,15 +501,12 @@ def main():
     fecha, notas_gen, articulos, estructura, orden, avisos = construir(lineas)
     if not fecha:
         raise SystemExit("No se encuentra la fecha de la versión consolidada en el PDF.")
-    ley = {"id": "lecrim", "nombre": "Real Decreto de 14 de septiembre de 1882 por el que se aprueba la "
-                                       "Ley de Enjuiciamiento Criminal",
-           "abreviatura": "LECrim", "boe": "BOE-A-1882-6036", "fecha_version": fecha,
-           "nota_general_boe": "\n".join(notas_gen),
-           "aviso": "Texto consolidado del BOE de carácter informativo, sin valor jurídico"}
+    ley = dict(CFG["ley"], fecha_version=fecha, nota_general_boe="\n".join(notas_gen),
+               aviso="Texto consolidado del BOE de carácter informativo, sin valor jurídico")
     ctrl = controles(articulos, orden, estructura, lineas)
     datos = {"ley": ley, "estructura": estructura, "articulos": articulos,
              "plazos": [], "procedimientos": [], "recursos": [], "repaso": []}
-    with open(os.path.join(DATOS, "lecrim.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(DATOS, LEY + ".json"), "w", encoding="utf-8") as f:
         json.dump(datos, f, ensure_ascii=False, indent=1)
     contraste = contrastar(datos)
     escribir_informe(ley, ctrl, avisos, contraste)

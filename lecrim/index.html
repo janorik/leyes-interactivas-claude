@@ -631,7 +631,7 @@ document.addEventListener("keydown", e => { if (e.key==="Escape" && !$("#hoja").
 
 /* =====================  LEY  ===================== */
 function etiquetaNodo(n){
-  const sep = n.tipo === "seccion" ? " " : ". ";
+  const sep = n.tipo === "seccion" || n.tipo === "subseccion" ? " " : ". ";
   return (n.rotulo ? '<span class="rot">'+esc(n.rotulo)+'</span>'+sep : '<span class="rot">')+esc(n.titulo)+(n.rotulo?"":"</span>")+
     (n.estado ? ' <span class="est">'+esc(n.estado)+'</span>' : "");
 }

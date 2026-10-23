@@ -354,6 +354,15 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [ ] **Fases del bloque.** He sustituido las 7 fases del esqueleto (capítulos del BOE) por 10 fases según el recorrido del proceso. He separado el auto del art. 779, la audiencia preliminar (arts. 785-786), la apelación y la ejecución. Dime si prefieres otra división.
 - [ ] **Revisa las 10 fases:** las frases entre « » son literales; las descripciones y los rótulos de las alternativas son resumen mío.
 
+## LRJS — Ley reguladora de la jurisdicción social
+
+### Puntos de extracción (F1, Chat 4)
+
+- [ ] **Fecha de la versión: 30 de abril de 2025** (Verificable: es la «Última modificación» del PDF que subiste). Es 18 meses anterior a hoy. Comprueba en el BOE si hay una versión consolidada más reciente; si la hay, descárgala y súbela a `fuentes/` y la vuelvo a extraer.
+  - **Tu respuesta:**
+- [ ] **Contraste con una segunda lectura del PDF:** 21 tramos distintos, todos de maquetación (palabras partidas con guion a final de línea, como «contencioso-administrativo», y epígrafes que ocupan dos líneas y que la otra lectura pone en otro orden). Detalle en `lrjs/datos/informe_control.md`. No hay huecos en la numeración ni artículos sin texto.
+- [ ] **Disposiciones finales primera y segunda:** modifican otras leyes y el BOE resalta en negrita parte de su texto; en la app se ve igual.
+
 ## Páginas legales (todas las leyes)
 
 Aviso legal, Política de privacidad y Política de cookies (`aviso-legal.html`, `politica-privacidad.html`, `cookies.html`), y la ventana «© 2026 J A Noriega (Norik)» del pie. Hechas a partir de las de norlexia.es (repositorio WEB-NORLEXIA, `bocetos/`), adaptadas a esta app: sin formulario, sin Google Fonts y sin cookies.

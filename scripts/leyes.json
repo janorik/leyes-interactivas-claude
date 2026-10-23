@@ -18,17 +18,18 @@
    "referencia": "Real Decreto de 14 de septiembre de 1882 · BOE-A-1882-6036",
    "carpeta": "lecrim/",
    "estado": "disponible",
-   "descripcion": "Mapa procesal en esqueleto (sumario, juicio oral, abreviado, juicio rápido, recursos…), texto literal completo, buscador y notas.",
+   "descripcion": "Mapa procesal (denuncia y querella, sumario, abreviado, juicio rápido, delitos leves, detención y prisión, medidas de investigación, ejecución), sistema de recursos, texto literal completo, repaso y notas.",
    "mapa": "Procesos penales"
   },
   {
    "id": "lrjs",
    "abreviatura": "LRJS",
-   "nombre": "Ley reguladora de la Jurisdicción Social",
-   "referencia": "",
+   "nombre": "Ley reguladora de la jurisdicción social",
+   "referencia": "Ley 36/2011, de 10 de octubre · BOE-A-2011-15936",
    "carpeta": "lrjs/",
-   "estado": "proximamente",
-   "descripcion": ""
+   "estado": "disponible",
+   "descripcion": "Texto literal completo, buscador y notas. Mapa procesal y recursos, en preparación.",
+   "mapa": "Procesos sociales"
   },
   {
    "id": "et",

@@ -34,7 +34,7 @@ leyes-interactivas-claude/
 - La portada (`/index.html`) solo enlaza a cada ley. No contiene datos de ninguna.
 - Rutas siempre relativas, para que funcione en GitHub Pages y abriendo el archivo en local.
 - Si el PDF o el XML del BOE o el logo están en la raíz del repositorio, muévelos a `fuentes/` y `assets/` antes de empezar (renombra el PDF a `LEC_BOE-A-2000-323.pdf` y el XML a `LEC_BOE-A-2000-323.xml`).
-- **Dónde está cada cosa (además del árbol):** `PENDIENTES.md` (dudas de todas las leyes); `lecrim/` (app y datos de la LECrim, igual que `lec/`); `scripts/extraer_lec.py` y `scripts/extraer_lecrim.py` (texto literal → `<ley>/datos/<ley>.json` e `informe_control.md`); `scripts/esqueleto_lecrim.py` (esqueleto del mapa de la LECrim); `scripts/insertar_datos.py <ley>` (valida y mete los datos en `<ley>/index.html`); `scripts/generar_portada.py` + `scripts/leyes.json` (portada; `leyes.json` también da el nombre corto y el título del mapa de cada ley). `*/datos/lineas_pdf.json` es caché y no se sube.
+- **Dónde está cada cosa (además del árbol):** `PENDIENTES.md` (dudas de todas las leyes); `lecrim/` y `lrjs/` (app y datos de cada ley, igual que `lec/`); `scripts/extraer_lec.py` (LEC, desde el XML) y `scripts/extraer_ley.py <ley>` (LECrim y LRJS, desde el PDF; lo propio de cada ley está en su diccionario `LEYES`) (texto literal → `<ley>/datos/<ley>.json` e `informe_control.md`); `scripts/esqueleto_lecrim.py` (esqueleto del mapa de la LECrim); `scripts/insertar_datos.py <ley>` (valida y mete los datos en `<ley>/index.html`); `scripts/generar_portada.py` + `scripts/leyes.json` (portada; `leyes.json` también da el nombre corto y el título del mapa de cada ley). `*/datos/lineas_pdf.json` es caché y no se sube.
 
 ## Fuente única
 - Solo el texto consolidado del BOE subido en `fuentes/` (Ley 1/2000, de 7 de enero, BOE-A-2000-323), versión vigente.
@@ -163,7 +163,7 @@ No empieces la siguiente fase sin su visto bueno.
 - Dudas en `PENDIENTES.md › Páginas legales`.
 
 ## LECrim
-- Fuente: `fuentes/LECrim_BOE-A-1882-6036.pdf` (Real Decreto de 14 de septiembre de 1882, BOE-A-1882-6036), texto consolidado con última modificación de 09 de abril de 2026. Sin XML: se extrae solo del PDF con `python3 scripts/extraer_lecrim.py`, que lo contrasta con pdftotext y escribe `lecrim/datos/informe_control.md`.
+- Fuente: `fuentes/LECrim_BOE-A-1882-6036.pdf` (Real Decreto de 14 de septiembre de 1882, BOE-A-1882-6036), texto consolidado con última modificación de 09 de abril de 2026. Sin XML: se extrae solo del PDF con `python3 scripts/extraer_ley.py lecrim` (antes `extraer_lecrim.py`; el extractor común da exactamente el mismo resultado, comprobado el 23-10-2026), que lo contrasta con pdftotext y escribe `lecrim/datos/informe_control.md`.
 - App: `lecrim/index.html`, generada con `python3 scripts/insertar_datos.py lecrim`. La app es la misma para todas las leyes: `lec/index.html` es la plantilla y el script la copia con los datos de cada ley. Una mejora de la app se hace en `lec/index.html` y se regeneran todas.
 - Mientras una ley no tenga mapa procesal, la app abre en «Ley» y oculta «Mapa»; «Repaso» se oculta si no hay tarjetas.
 - **F1 LECrim (hecha):** texto literal completo (1059 artículos y 10 disposiciones), árbol, buscador, notas y portada. Pendiente de revisión del usuario.
@@ -187,3 +187,11 @@ No empieces la siguiente fase sin su visto bueno.
 - **Recursos de la LECrim (hecho):** `lecrim/datos/recursos.json` con el mismo formato que la LEC: 14 recursos, 27 casos del selector agrupados en `grupos_selector` (LAJ, Juez de Instrucción, Tribunales, Juez o Tribunal, Sentencias) y test. El usuario quiere que cada ley tenga las tres secciones de la LEC: «Por resolución», «Recursos» y «Ponte a prueba». Pendiente de revisión del usuario; dudas en `PENDIENTES.md › LECrim`.
 - **Leyes relacionadas:** el Tribunal del Jurado se muestra como tarjeta «otra ley» con enlace al BOE (campo `externos` de `procedimientos.json`), no se desarrolla.
 - **Fuera del esqueleto:** fases que solo tienen artículos derogados o sin contenido (caps. II-IV del título II del libro V). El Real Decreto de aprobación (arts. 1.º-5.º) va como «Real Decreto de aprobación», separado de la ley. Los rangos del BOE («Artículos 48 a 50») son una sola entrada; buscar «49» lleva a ella.
+
+## LRJS
+- Fuente: `fuentes/LRJS_BOE-A-2011-15936.pdf` (Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social, BOE-A-2011-15936), texto consolidado con última modificación de 30 de abril de 2025. Subido por el usuario el 23-10-2026 (como «LRJS consolidado.pdf»; renombrado). Sin XML: `python3 scripts/extraer_ley.py lrjs`. La LRJS tiene **subsecciones** (arts. 127-136): el extractor las reconoce (tipo `subseccion`).
+- **F1 LRJS (Chat 4, 23-10-2026, hecha):** texto literal completo (preámbulo, 310 artículos y 16 disposiciones; 92 rótulos de estructura, todos los del índice), árbol, buscador, notas y portada. Sin mapa todavía: la app abre en «Ley». Pendiente de revisión del usuario; dudas en `PENDIENTES.md › LRJS`.
+- **Canon:** copiado de la plataforma a `fuentes/canon_contenido.md › LRJS` (39 bloques, sin las notas internas de carga de la plataforma).
+- **Siguiente paso (con el visto bueno del usuario):** esqueleto del mapa y propuesta jurídica sobre el canon según la regla del núcleo obligatorio (procedimientos, resoluciones y recursos completos).
+- PDF también subidos (23-10-2026), sin usar todavía: `fuentes/LPACAP 39_2015 consolidado.pdf` y `fuentes/LRBSP 40_2015 consolidado.pdf`.
+

@@ -1,6 +1,6 @@
 # Canon de contenido del usuario (marcas SI / PARCIAL / NO)
 
-Extracto del documento «canon-contenido.md» que el usuario mantiene en su plataforma jurídica (copiado el 22-10-2026; el original sigue en desarrollo). Aquí solo se guardan los índices con sus marcas de la LEC y la LECrim.
+Extracto del documento «canon-contenido.md» que el usuario mantiene en su plataforma jurídica (copiado el 22-10-2026; el original sigue en desarrollo). Aquí solo se guardan los índices con sus marcas de la LEC, la LECrim y la LRJS.
 
 **Uso en esta app (decisión del usuario, 22-10-2026):** las marcas deciden **qué se desarrolla en el mapa** (fases con plazos, alternativas y preguntas). Lo marcado `NO` no se desarrolla y queda como índice (punto gris). El texto literal de la ley sigue completo en «Ley» y «Buscar». Las fases ya desarrolladas antes de usar el canon se mantienen.
 
@@ -140,3 +140,55 @@ Entre paréntesis, el **tramo oficial del bloque** según el consolidado BOE. Tr
 - **Preparación de la casación** (bloque 32): continúa en arts. 855 y ss. (escrito ante el órgano que dictó la resolución; interposición ante la Sala Segunda del TS).
 - **Secreto del sumario** (bloque 16): art. 302 (el sumario no es secreto para las partes personadas; el juez puede declararlo secreto por tiempo no superior a un mes; se alza con 10 días de antelación a la conclusión); plazo máximo de instrucción en el art. 324.
 
+## LRJS — Ley 36/2011
+
+Copiado el 23-10-2026 del documento de la plataforma (sin sus notas internas de carga). Fuente: BOE-A-2011-15936, consolidado de 30 de abril de 2025.
+
+### Índice (marcas aplicadas)
+
+#### Libro I — Parte general
+1. Jurisdicción del orden social (1-5) — PARCIAL (1, 2, 3, 4, 5)
+2. Órganos, competencia y cuestiones de competencia (6-15) — PARCIAL (6, 7, 8, 9, 10, 11, 13, 14, 15). Nota: el 12 (régimen de recusación) sigue fuera.
+3. Partes, representación, defensa y FOGASA (16-24) — PARCIAL (16, 17, 18, 19, 20, 21, 23, 24). Nota: el 21 es la postulación del orden social (abogado, graduado social o procurador); no se aplica el bloque 6 de la LEC. El 22 (Estado) sigue fuera.
+4. Acumulación de acciones, procesos, recursos y ejecuciones (25-41) — PARCIAL (25, 26, 32). Nota: el 26 y el 32 son los supuestos diarios de despido; acumulación entre juzgados, de recursos y de ejecuciones sigue fuera.
+5. Actos procesales, resoluciones y comunicaciones (42-62) — PARCIAL (43, 45, 49, 50, 53, 56, 59, 60)
+6. Evitación del proceso: conciliación y vía administrativa (63-73) — PARCIAL (63-73)
+7. Principios del proceso (74-75) — PARCIAL (74, 75)
+
+#### Libro II — Proceso social y modalidades
+8. Actos preparatorios, diligencias preliminares, anticipación de prueba y medidas cautelares (76-79) — PARCIAL (76, 77, 78, 79)
+9. Proceso ordinario (80-101) — PARCIAL (80-86, 86 bis, 87-101).
+10. Regla general de las modalidades procesales (102) — PARCIAL (102)
+11. Despido disciplinario (103-113) — PARCIAL (103-113)
+12. Impugnación de sanciones (114-115) — PARCIAL (114, 115)
+13. Reclamación al Estado de salarios de tramitación (116-119) — NO
+14. Extinción por causas objetivas (120-123) y despido colectivo (124) — PARCIAL (120-124)
+15. Vacaciones (125-126) — PARCIAL (125, 126)
+16. Materia electoral (127-136) — NO
+17. Clasificación profesional (137) — PARCIAL (137)
+18. Movilidad geográfica, modificación sustancial, suspensión y reducción de jornada (138) — PARCIAL (138)
+19. Trabajo a distancia (138 bis) — PARCIAL (138 bis)
+20. Derechos de conciliación de la vida personal, familiar y laboral (139) — PARCIAL (139)
+21. Prestaciones de Seguridad Social (140-147) — PARCIAL (140-147)
+22. Procedimiento de oficio (148-150) — NO.
+23. Impugnación de actos administrativos laborales y de Seguridad Social no prestacionales (151-152) — PARCIAL (151, 152)
+24. Conflictos colectivos (153-162) — PARCIAL (153-162)
+25. Impugnación de convenios colectivos (163-166) — PARCIAL (163, 164, 165, 166)
+26. Impugnación de estatutos sindicales y de asociaciones empresariales (167-176) — NO
+27. Tutela de derechos fundamentales y libertades públicas (177-184) — PARCIAL (177-184)
+28. Audiencia al demandado rebelde (185) — NO
+
+#### Libro III — Impugnación
+29. Reposición, revisión de decretos y queja (186-189) — PARCIAL (186, 187, 188, 189)
+30. Suplicación (190-204) — PARCIAL (190-204).
+31. Casación (205-217) — PARCIAL (205, 206, 207, 208, 209, 210, 211, 213, 214, 215, 216, 217). Nota: el 212 (remisión de autos) sigue fuera.
+32. Casación para la unificación de doctrina (218-228) — PARCIAL (218, 219, 220, 221, 223, 224, 225, 225 bis, 226, 228). Nota: el 222 y el 227 siguen fuera.
+33. Disposiciones comunes a suplicación y casación (229-235) — PARCIAL (229, 230, 231, 233, 235). Nota: depósito y consignación (229-230) son de uso diario; acumulación de recursos (234) sigue fuera.
+34. Revisión de sentencias y laudos firmes, y error judicial (236) — NO
+
+#### Libro IV — Ejecución
+35. Normas generales de ejecución y extensión de efectos (237-247 ter) — PARCIAL (237, 238, 239, 240, 241, 243, 244, 245, 246, 247, 247 bis, 247 ter). Nota: el 242 (ejecución parcial) sigue fuera.
+36. Ejecución dineraria (248-277) — PARCIAL (248-260, 268, 269, 276, 277). Nota: avalúo, subasta, distribución y tercería de mejor derecho (261-267, 270-275) siguen fuera; la tercería de dominio (260) sí entra.
+37. Ejecución de sentencias firmes de despido (278-286) — PARCIAL (278-286)
+38. Ejecución frente a entes públicos (287-288) — PARCIAL (287, 288)
+39. Ejecución provisional (289-305) — PARCIAL (294-304). Nota: anticipos dinerarios 289-293 y la remisión genérica a la LEC (305) siguen fuera.

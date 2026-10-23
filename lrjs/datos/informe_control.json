@@ -1,0 +1,110 @@
+{
+ "control": {
+  "huecos_numeracion": [],
+  "fuera_de_orden": [],
+  "vacios": [],
+  "sin_texto": [],
+  "muy_cortos": [],
+  "rotulos_indice": 92,
+  "rotulos_cuerpo": 92,
+  "indice_no_encontrado": [],
+  "n_articulos": 310,
+  "n_disposiciones": 16,
+  "con_notas_boe": 2,
+  "con_destacado": [
+   "df1",
+   "df2"
+  ]
+ },
+ "avisos": [],
+ "contraste": {
+  "palabras_pdftotext": 86549,
+  "palabras_extraidas": 86552,
+  "diferencias": [
+   {
+    "pdftotext": "I REY DE ESPAÑA ley A todos los que",
+    "extraido": "I REY DE ESPAÑA A todos los que"
+   },
+   {
+    "pdftotext": "en sancionar la siguiente PREÁMBULO I El ordenamiento",
+    "extraido": "en sancionar la siguiente ley PREÁMBULO I El ordenamiento"
+   },
+   {
+    "pdftotext": "la social como la contenciosoadministrativa o la civil He",
+    "extraido": "la social como la contencioso administrativa o la civil He"
+   },
+   {
+    "pdftotext": "laboral análoga al recurso contenciosoadministrativo anteriormente tramitado en dicho",
+    "extraido": "laboral análoga al recurso contencioso administrativo anteriormente tramitado en dicho"
+   },
+   {
+    "pdftotext": "artículo siguiente Artículo 65 arbitrales Efectos de la solicitud",
+    "extraido": "artículo siguiente Artículo 65 Efectos de la solicitud"
+   },
+   {
+    "pdftotext": "mediación previa Los laudos 1 La presentación de",
+    "extraido": "mediación previa Los laudos arbitrales 1 La presentación de"
+   },
+   {
+    "pdftotext": "del asunto Artículo 142 profesional Documentación en procesos por",
+    "extraido": "del asunto Artículo 142 Documentación en procesos por"
+   },
+   {
+    "pdftotext": "de trabajo o enfermedad 1 Si en las",
+    "extraido": "de trabajo o enfermedad profesional 1 Si en las"
+   },
+   {
+    "pdftotext": "de aquél Artículo 145 administrativo Responsabilidad disciplinaria por la",
+    "extraido": "de aquél Artículo 145 Responsabilidad disciplinaria por la"
+   },
+   {
+    "pdftotext": "de remisión del expediente La falta de remisión",
+    "extraido": "de remisión del expediente administrativo La falta de remisión"
+   },
+   {
+    "pdftotext": "social como en el contenciosoadministrativo que quedarán en suspenso",
+    "extraido": "social como en el contencioso administrativo que quedarán en suspenso"
+   },
+   {
+    "pdftotext": "artículo 230 Artículo 295 único Ejecución de sentencias condenatorias",
+    "extraido": "artículo 230 Artículo 295 Ejecución de sentencias condenatorias"
+   },
+   {
+    "pdftotext": "de prestaciones de pago El beneficiario de prestaciones",
+    "extraido": "de prestaciones de pago único El beneficiario de prestaciones"
+   },
+   {
+    "pdftotext": "otros procesos Artículo 303 procesales Ejecución provisional de sentencias",
+    "extraido": "otros procesos Artículo 303 Ejecución provisional de sentencias"
+   },
+   {
+    "pdftotext": "dictadas en otras modalidades 1 Las sentencias que",
+    "extraido": "dictadas en otras modalidades procesales 1 Las sentencias que"
+   },
+   {
+    "pdftotext": "desarrolla Disposición adicional segunda privadas Autorización de actuaciones a",
+    "extraido": "desarrolla Disposición adicional segunda Autorización de actuaciones a"
+   },
+   {
+    "pdftotext": "a entidades públicas o El Gobierno previo informe",
+    "extraido": "a entidades públicas o privadas El Gobierno previo informe"
+   },
+   {
+    "pdftotext": "legislación Disposición transitoria tercera Medidas cautelares Ejecución de sentencias y",
+    "extraido": "legislación Disposición transitoria tercera Ejecución de sentencias y"
+   },
+   {
+    "pdftotext": "y demás títulos ejecutivos La presente Ley será",
+    "extraido": "y demás títulos ejecutivos Medidas cautelares La presente Ley será"
+   },
+   {
+    "pdftotext": "Social Disposición final segunda económicamente dependiente Modificación de la regulación",
+    "extraido": "Social Disposición final segunda Modificación de la regulación"
+   },
+   {
+    "pdftotext": "regulación del trabajo autónomo Se añaden un artículo",
+    "extraido": "regulación del trabajo autónomo económicamente dependiente Se añaden un artículo"
+   }
+  ]
+ }
+}
