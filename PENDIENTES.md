@@ -358,12 +358,11 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 ### Recursos (Chat 4, contenido elaborado, pendiente de revisión)
 
-> Tercer desarrollo de la LRJS, en el orden elegido por el usuario. Mapa: bloque «Recursos, audiencia al rebelde y revisión» (7 fichas) y bloque «Audiencia al demandado rebelde» en su sitio del Libro II (1 ficha). Pestaña Recursos: `lrjs/datos/recursos.json` con 9 recursos, 24 casos del selector «¿qué recurso cabe?» (LAJ, juez o tribunal, sentencias) y el test «Ponte a prueba». Las fichas de despido y de sentencia llevan ya botones a sus recursos. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
+> Tercer desarrollo de la LRJS, en el orden elegido por el usuario. Mapa: bloque «Recursos, audiencia al rebelde y revisión» (7 fichas) y bloque «Audiencia al demandado rebelde» en su sitio del Libro II (1 ficha). Pestaña Recursos: `lrjs/datos/recursos.json` con 9 recursos, 30 casos del selector «¿qué recurso cabe?» (LAJ, juez o tribunal, sentencias) y el test «Ponte a prueba». Las fichas de despido y de sentencia llevan ya botones a sus recursos. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
 
 - [x] **Plazos de la queja y de la revisión. Resuelta (usuario, 23-10-2026):** se añade el plazo de la LEC con su artículo y su frase literal: queja, 10 días (art. 495.1 LEC); revisión, 5 años desde la publicación y 3 meses desde que se descubre el motivo (art. 512 LEC; 1 año si se funda en una sentencia del TEDH). Comprobado que las frases están en la LEC de la app.
 - [x] **Art. 206.1: cita del Estatuto de los Trabajadores de 1995 (RDLeg 1/1995). Resuelta con criterio interpretativo (usuario, 23-10-2026):** se entiende referida al art. 51.7 del Estatuto vigente.
-- [ ] **Selector, caso «Auto que resuelve una reposición: no cabe recurso».** Es la regla general del art. 187.5; la nota avisa de las excepciones (arts. 191.4 y 206). Revisa si prefieres desglosar esas excepciones como casos propios.
-  - **Tu respuesta:**
+- [x] **Selector: excepciones a «Auto que resuelve una reposición: no cabe recurso». Resuelta (usuario, 23-10-2026):** se añaden como casos propios (6 nuevos: terminación anticipada y autos de ejecución del art. 191.4, y los autos de las Salas del art. 206). El selector pasa a 30 casos.
 - [ ] **Revisa las 8 fichas del mapa y los 9 recursos.**
 
 ### Conciliación previa y proceso ordinario (Chat 4, contenido elaborado, pendiente de revisión)

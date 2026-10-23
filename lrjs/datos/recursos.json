@@ -366,6 +366,64 @@
    "nota": "Si la sentencia ejecutada era recurrible en suplicación."
   },
   {
+   "res": "Auto que, tras reposición o revisión, confirma la terminación anticipada del proceso (satisfacción extraprocesal o pérdida de objeto) (Juzgado de lo Social)",
+   "quien": "Juez o Tribunal",
+   "recurso": "suplicacion",
+   "literal": {
+    "articulo": "191",
+    "texto": "Los autos que resuelvan el recurso de reposición, o en su caso de revisión, interpuesto contra la resolución que disponga la terminación anticipada del proceso"
+   },
+   "nota": "También si se archivó por no subsanar o no comparecer y ya no se puede volver a demandar."
+  },
+  {
+   "res": "Auto en ejecución definitiva que resuelve puntos no decididos en la sentencia o que contradicen lo ejecutoriado (tras reposición o revisión)",
+   "quien": "Juez o Tribunal",
+   "recurso": "suplicacion",
+   "literal": {
+    "articulo": "191",
+    "texto": "Cuando resuelvan puntos sustanciales no controvertidos en el pleito, no decididos en la sentencia o que contradigan lo ejecutoriado."
+   },
+   "nota": "Si la sentencia ejecutada era recurrible en suplicación."
+  },
+  {
+   "res": "Auto en ejecución definitiva que pone fin a un incidente decidiendo cuestiones no contenidas en el título (tras reposición o revisión)",
+   "quien": "Juez o Tribunal",
+   "recurso": "suplicacion",
+   "literal": {
+    "articulo": "191",
+    "texto": "Cuando pongan fin al procedimiento incidental en la ejecución decidiendo cuestiones sustanciales no resueltas o no contenidas en el título ejecutivo."
+   },
+   "nota": "Si la sentencia ejecutada era recurrible en suplicación."
+  },
+  {
+   "res": "Auto de la Sala del TSJ o de la Audiencia Nacional que, tras reposición, mantiene la falta de jurisdicción o competencia declarada antes del juicio",
+   "quien": "Juez o Tribunal",
+   "recurso": "casacion",
+   "literal": {
+    "articulo": "206",
+    "texto": "Los autos que resuelvan el recurso de reposición interpuesto contra la resolución en que la Sala, antes del acto de juicio, declare la falta de jurisdicción o competencia."
+   }
+  },
+  {
+   "res": "Auto de la Sala del TSJ o de la Audiencia Nacional que, tras reposición o revisión, confirma la terminación anticipada del proceso",
+   "quien": "Juez o Tribunal",
+   "recurso": "casacion",
+   "literal": {
+    "articulo": "206",
+    "texto": "Los autos dictados por dichas Salas que resuelvan el recurso de reposición, o de revisión, en su caso, interpuesto contra la resolución que disponga la terminación anticipada del proceso"
+   }
+  },
+  {
+   "res": "Auto de la Sala del TSJ o de la Audiencia Nacional en ejecución, tras reposición o revisión",
+   "quien": "Juez o Tribunal",
+   "recurso": "casacion",
+   "literal": {
+    "articulo": "206",
+    "texto": "Los autos que decidan el recurso de reposición interpuesto contra los que dicten dichas Salas"
+   },
+   "nota": "En los supuestos que enumera el art. 206.4."
+  },
+  {
    "res": "Sentencia de un Juzgado de lo Social (regla general)",
    "quien": "Sentencia",
    "recurso": "suplicacion",
