@@ -410,8 +410,7 @@ if (!(D.recursos||[]).length && !(D.vista_recursos||[]).length) document.querySe
 $("#subtit").innerHTML = '<span class="ab">'+esc(ABR)+'</span><span class="nom">'+esc(D.ley.nombre_corto||D.ley.nombre)+'</span>';   // en qué ley estás, siempre visible
 document.title = ABR+" · NOrlexia";
 if (!PROC.length) document.querySelectorAll('nav.tabs a[data-v=procesos]').forEach(a=>a.hidden=true);
-$("#aviso").innerHTML = "<b>"+esc(L.aviso)+".</b> Versión consolidada: <b>"+esc(L.fecha_version)+"</b>."+
-  " Donde la ley dice «secretario judicial» o «Letrado de la Administración de Justicia», la app escribe «LAJ», también en los artículos (disposición adicional primera de la Ley Orgánica 7/2015).";
+$("#aviso").innerHTML = "<b>"+esc(L.aviso)+".</b> Versión consolidada: <b>"+esc(L.fecha_version)+"</b>.";
 $("#pie").textContent = L.nombre+" · "+L.boe+" · Texto consolidado a "+L.fecha_version+". "+L.aviso+
   ". Los esquemas, plazos y preguntas son material de estudio elaborado, pendiente de revisión: no sustituyen la lectura de la norma. Progreso y ajustes se guardan solo en este navegador.";
 
