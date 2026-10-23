@@ -193,13 +193,15 @@ Copiado el 23-10-2026 del documento de la plataforma (sin sus notas internas de 
 38. Ejecución frente a entes públicos (287-288) — PARCIAL (287, 288)
 39. Ejecución provisional (289-305) — PARCIAL (294-304). Nota: anticipos dinerarios 289-293 y la remisión genérica a la LEC (305) siguen fuera.
 
-## LJCA — Ley 29/1998 (PROPUESTA de Claude, pendiente del usuario)
+## LJCA — Ley 29/1998 (propuesta de Claude; ampliación con los arts. 7 y 13 y fichas transversales aprobada por el usuario, Chat 5; resto pendiente de su visto bueno)
 
 > El usuario no tiene canon de la LJCA (23-10-2026). Propuesta de Claude (Chat 5), No verificable hasta que el usuario la confirme. Criterio: núcleo obligatorio (procedimientos, resoluciones y recursos completos) y «¿ayuda a orientarse?». Rangos sacados del índice del PDF consolidado (03-01-2025). Además del mapa, se propone `ljca/datos/recursos.json` (selector «¿qué recurso cabe?», fichas y test), como en las otras leyes.
+>
+> **Fichas transversales (aprobadas por el usuario, Chat 5):** 1) «Plazos para recurrir según lo que se impugna» (arts. 46, 115 y 128.2: acto expreso, presunto, inactividad, vía de hecho, tras reposición potestativa, lesividad, entre Administraciones, derechos fundamentales, agosto); 2) «Lista de comprobación del escrito de interposición» (art. 45.2 y causas de inadmisión del art. 69).
 
 #### Título I. Orden jurisdiccional
 1. Ámbito (arts. 1-5) — PARCIAL (1, 2, 3, 5). Nota: qué entra y qué queda fuera del orden contencioso-administrativo; el 4 (cuestiones prejudiciales), a índice.
-2. Órganos y competencias (6-13) — PARCIAL (8, 9, 10, 11, 12). Nota: cuadro «qué órgano conoce de qué» (Juzgados, Juzgados Centrales, TSJ, Audiencia Nacional, Supremo).
+2. Órganos y competencias (6-13) — PARCIAL (7, 8, 9, 10, 11, 12, 13). Nota: cuadro «qué órgano conoce de qué» (Juzgados, Juzgados Centrales, TSJ, Audiencia Nacional, Supremo); incompetencia apreciada de oficio y remisión (7); criterios para elegir órgano (13). Arts. 7 y 13 añadidos a propuesta de Claude y aprobados por el usuario (Chat 5).
 3. Competencia territorial (14) — SI
 4. Constitución y actuación de las Salas (15-16) — NO
 5. Distribución de asuntos (17) — NO
