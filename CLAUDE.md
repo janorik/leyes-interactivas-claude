@@ -96,7 +96,7 @@ Enfoque acordado con el usuario: app para **aprender**, no solo para leer la ley
 1. **Mapa** (pantalla de inicio; antes «Procesos»): cada procedimiento como ruta de fases en vista de conjunto. Cada fase abre una ficha con: qué ocurre, plazos (con la frase literal del artículo), alternativas desplegables («¿y si no contesta?»), pregunta «Ponte a prueba», conexiones y enlaces a otros procesos. En móvil la ficha se abre como hoja inferior; en ordenador, como panel lateral.
 1 bis. **Procedimientos**: los mismos bloques del mapa agrupados por tipo de juicio (declarativos, especiales, ejecución, cautelares…), definidos en `vista_procedimientos` de `procedimientos.json`. Pedido por el usuario para estudiar por tipo de juicio.
 1 ter. **Recursos**: pestaña propia. En la LEC abre el selector, las fichas y el test; en una ley sin `recursos.json` muestra los bloques de `vista_recursos`.
-2. **Ley**: árbol navegable (Libros > Títulos > Capítulos > Secciones > Artículos) con el texto literal El nombre de la ley en el título es un enlace a su texto consolidado en el BOE (`act.php?id=` + `ley.boe`; pedido por el usuario, Chat 4).
+2. **Ley**: árbol navegable (Libros > Títulos > Capítulos > Secciones > Artículos) con el texto literal. El nombre de la ley en el título es un enlace a su texto consolidado en el BOE (`act.php?id=` + `ley.boe`; pedido por el usuario, Chat 4).
 3. **Buscar**: por número de artículo, por texto de la ley y por fases y plazos del mapa.
 4. **Repaso**: tarjetas generadas de preguntas, alternativas y plazos, con progreso guardado en local.
 5. **Recursos**: selector por resolución (qué recurso cabe, plazo y órgano, con frase literal), fichas de cada recurso y test de opción múltiple.
