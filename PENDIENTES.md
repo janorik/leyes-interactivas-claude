@@ -356,6 +356,15 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 ## LRJS — Ley reguladora de la jurisdicción social
 
+### Ejecución y ejecución provisional (Chat 4, contenido elaborado, pendiente de revisión)
+
+> Cuarto desarrollo de la LRJS, en el orden elegido por el usuario: bloque «Ejecución de sentencias» (8 fichas) y «Ejecución provisional» (4 fichas); 28 plazos. Con el canon: la realización de bienes (arts. 261-267) y los anticipos de cantidades (arts. 289-293) quedan como índice, porque no los marca. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
+
+- [ ] **Remisiones a la Ley General de la Seguridad Social de 1994 (RDLeg 1/1994) en los arts. 243 y 297.** No las uso en las fichas. Pendiente de revisión individual si quieres que se citen.
+  - **Tu respuesta:**
+- [ ] **Ley 29/1998 sin enlace** (art. 287, ejecución frente a la Administración): misma situación que en las medidas cautelares.
+- [ ] **Revisa las 12 fichas.**
+
 ### Recursos (Chat 4, contenido elaborado, pendiente de revisión)
 
 > Tercer desarrollo de la LRJS, en el orden elegido por el usuario. Mapa: bloque «Recursos, audiencia al rebelde y revisión» (7 fichas) y bloque «Audiencia al demandado rebelde» en su sitio del Libro II (1 ficha). Pestaña Recursos: `lrjs/datos/recursos.json` con 9 recursos, 30 casos del selector «¿qué recurso cabe?» (LAJ, juez o tribunal, sentencias) y el test «Ponte a prueba». Las fichas de despido y de sentencia llevan ya botones a sus recursos. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.

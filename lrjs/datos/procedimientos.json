@@ -3031,85 +3031,386 @@
    "nombre": "Ejecución de sentencias",
    "bloque": "lrjs",
    "grupo": "Libro IV · Ejecución",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Cómo se pide y se defiende la ejecución, la ejecución dineraria (bienes, embargo, pago e insolvencia con el FOGASA), la ejecución de la sentencia de despido y la ejecución frente a la Administración. La realización de bienes (subasta) queda como índice.",
    "ambito": {
     "corto": "Arts. 237 a 288",
     "texto": "CAPÍTULO I. Disposiciones de carácter general · CAPÍTULO II. De la ejecución dineraria · CAPÍTULO III. De la ejecución de las sentencias firmes de despido · CAPÍTULO IV. De la ejecución de sentencias frente a entes públicos",
     "articulos": [
      "237"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "237",
+      "texto": "La ejecución se llevará a efecto por el órgano judicial que hubiere conocido del asunto en instancia"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
+     "fase": "Ejecución: cómo se pide y cómo se defiende el ejecutado",
+     "subtitulo": "A instancia de parte · sigue de oficio · oposición por reposición · plazos para pedirla",
+     "descripcion": "Las sentencias firmes y demás títulos se ejecutan conforme a la LEC, con las especialidades de la LRJS, ante el órgano que conoció en instancia. Se pide por escrito, indicando la tutela que se pretende, la cantidad (principal, intereses y costas) y los bienes conocidos; después sigue de oficio, sin el plazo de espera del art. 548 LEC. Si el ejecutado cumple en los 20 días siguientes a la firmeza, no paga las costas. Contra el auto que despacha la ejecución cabe reposición, en la que puede oponerse alegando pago o cumplimiento documentado, prescripción u otros hechos posteriores al título; nunca la compensación de deudas. Las cuestiones incidentales se resuelven por comparecencia. La ejecución solo se suspende en los casos tasados.",
+     "aviso": "La ejecución se rige por la [[Ley de Enjuiciamiento Civil|https://www.boe.es/buscar/act.php?id=BOE-A-2000-323]] (también en esta app), con las especialidades de la LRJS.",
+     "articulos": [
+      "237",
+      "238",
+      "239",
+      "240",
+      "241",
+      "243",
+      "244",
+      "245",
+      "246"
+     ],
+     "plazos": [
+      {
+       "acto": "Cumplimiento voluntario sin costas",
+       "plazo": "20 días desde la firmeza",
+       "articulo": "239",
+       "literal": "dentro del plazo de los veinte días siguientes a la fecha de firmeza de la sentencia"
+      },
+      {
+       "acto": "Pedir la ejecución de una condena a pagar dinero",
+       "plazo": "1 año (prescripción)",
+       "articulo": "243",
+       "literal": "el plazo para reclamar el cumplimiento de las obligaciones de entregar sumas de dinero será de un año"
+      },
+      {
+       "acto": "Incidente en ejecución: comparecencia",
+       "plazo": "En 5 días",
+       "articulo": "238",
+       "literal": "citando de comparecencia, en el plazo de cinco días, a las partes"
+      },
+      {
+       "acto": "Resolver el incidente",
+       "plazo": "3 días",
+       "articulo": "238",
+       "literal": "concluyendo por auto o, en su caso, por decreto que habrán de dictarse en el plazo de tres días"
+      },
+      {
+       "acto": "Suspensión pedida por el ejecutante o por ambas partes",
+       "plazo": "Máximo 3 meses",
+       "articulo": "244",
+       "literal": "A petición del ejecutante o de ambas partes por un máximo de tres meses"
+      },
+      {
+       "acto": "Paralizada por el ejecutante: decir si sigue",
+       "plazo": "5 días tras el requerimiento",
+       "articulo": "244",
+       "literal": "manifieste, en el término de cinco días, si la ejecución ha de seguir adelante"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El ejecutado quiere oponerse",
+       "entonces": "Lo hace en la reposición contra el auto que despacha la ejecución: pago o cumplimiento justificado documentalmente, prescripción u otros hechos posteriores al título. No vale la compensación.",
+       "articulos": [
+        "239"
+       ],
+       "literal": {
+        "articulo": "239",
+        "texto": "no siendo la compensación de deudas admisible como causa de oposición a la ejecución"
+       }
+      },
+      {
+       "si": "Se deniega el despacho de la ejecución",
+       "entonces": "Contra el auto que resuelve la reposición cabe suplicación o casación.",
+       "articulos": [
+        "239"
+       ],
+       "literal": {
+        "articulo": "239",
+        "texto": "Contra el auto resolutorio del recurso de reposición interpuesto contra el auto en que se deniegue el despacho de la ejecución procederá recurso de suplicación o de casación ordinario"
+       }
+      },
+      {
+       "si": "El ejecutado no cumple lo ordenado",
+       "entonces": "Apremios pecuniarios de hasta 300 € por día de retraso.",
+       "articulos": [
+        "241"
+       ],
+       "literal": {
+        "articulo": "241",
+        "texto": "no podrá exceder, por cada día de atraso en el cumplimiento, de la suma de trescientos euros"
+       }
+      },
+      {
+       "si": "Cumplir de inmediato pondría en peligro el empleo en la empresa deudora",
+       "entonces": "El LAJ puede conceder un aplazamiento por decreto, recurrible en revisión.",
+       "articulos": [
+        "244"
+       ],
+       "literal": {
+        "articulo": "244",
+        "texto": "podrá, previa audiencia de los interesados y en las condiciones que establezca, conceder un aplazamiento por el tiempo imprescindible"
+       }
+      },
+      {
+       "si": "Las partes quieren llegar a un acuerdo en la ejecución",
+       "entonces": "Convenio homologado por el juez; no se pueden renunciar los derechos reconocidos al trabajador.",
+       "articulos": [
+        "246"
+       ],
+       "literal": {
+        "articulo": "246",
+        "texto": "Se prohíbe la renuncia de los derechos reconocidos por sentencias favorables al trabajador"
+       }
+      },
+      {
+       "si": "Se recurre una resolución dictada en ejecución",
+       "entonces": "Se cumple igualmente; puede suspenderse cautelarmente un mes (prorrogable otro) si causa un perjuicio irreparable.",
+       "articulos": [
+        "245"
+       ],
+       "literal": {
+        "articulo": "245",
+        "texto": "las resoluciones dictadas en ejecución se llevarán a efecto, no obstante su impugnación"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el ejecutado oponerse a la ejecución alegando que el trabajador le debe dinero (compensación)?",
+      "a": "No: la compensación de deudas no se admite como causa de oposición a la ejecución.",
+      "articulos": [
+       "239"
+      ],
+      "literal": {
+       "articulo": "239",
+       "texto": "no siendo la compensación de deudas admisible como causa de oposición a la ejecución"
+      }
+     },
+     "conexiones": [
+      "237",
+      "238",
+      "239",
+      "240",
+      "241",
+      "243",
+      "244",
+      "245",
+      "246"
+     ],
+     "recursos_rel": [
+      "reposicion-juez",
+      "revision",
+      "suplicacion"
+     ],
      "id": "ejecucion-237",
-     "fase": "Normas generales",
-     "subtitulo": "CAPÍTULO I · Sección 1.ª · arts. 237 a 246",
-     "descripcion": "",
-     "articulos": [
-      "237",
-      "246"
-     ],
-     "rango": [
-      "237",
-      "246"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
+     "fase": "Ejecuciones colectivas y extensión de efectos",
+     "subtitulo": "Sentencias de conflicto colectivo · extender una sentencia firme a quien está en igual situación",
+     "descripcion": "Las sentencias de conflicto colectivo estimatorias de condena que admitan ejecución individual se ejecutan con especialidades: la piden el empresario, los representantes de los trabajadores o los sindicatos y asociaciones afectados, y el FOGASA es siempre parte. Además, los efectos de una sentencia firme que reconoció una situación individual pueden extenderse a otras personas en idéntica situación, si el mismo juez es competente y se pide en el plazo de un año. Tras un procedimiento testigo, los demandantes de los procesos suspendidos pueden pedir la extensión de efectos.",
+     "articulos": [
+      "247",
+      "247 bis",
+      "247 ter"
+     ],
+     "plazos": [
+      {
+       "acto": "Pedir la extensión de efectos",
+       "plazo": "1 año desde la última notificación de la sentencia",
+       "articulo": "247 bis",
+       "literal": "en el plazo de un año desde la última notificación de ésta a quienes fueron parte en el proceso"
+      },
+      {
+       "acto": "Alegaciones de la parte condenada a la extensión",
+       "plazo": "Máximo 15 días",
+       "articulo": "247 bis",
+       "literal": "en el plazo máximo de quince días puedan efectuar alegaciones"
+      },
+      {
+       "acto": "Tras el procedimiento testigo: pedir la extensión, seguir o desistir",
+       "plazo": "5 días",
+       "articulo": "247 ter",
+       "literal": "en el plazo de cinco días, interesen la extensión de los efectos de la sentencia"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Un trabajador está en idéntica situación que el que ganó",
+       "entonces": "Puede pedir que se le extiendan los efectos de la sentencia firme, sin pleito nuevo.",
+       "articulos": [
+        "247 bis"
+       ],
+       "literal": {
+        "articulo": "247 bis",
+        "texto": "Que los interesados se encuentren en idéntica situación jurídica que los favorecidos por el fallo."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quién es siempre parte en la ejecución de una sentencia de conflicto colectivo?",
+      "a": "El Fondo de Garantía Salarial.",
+      "articulos": [
+       "247"
+      ],
+      "literal": {
+       "articulo": "247",
+       "texto": "El Fondo de Garantía Salarial será siempre parte en estos procesos."
+      }
+     },
+     "conexiones": [
+      "86 bis",
+      "160",
+      "247",
+      "247 bis",
+      "247 ter"
+     ],
+     "recursos_rel": [],
      "id": "ejecucion-247",
-     "fase": "Normas sobre ejecuciones colectivas",
-     "subtitulo": "CAPÍTULO I · Sección 2.ª · arts. 247 a 247 ter",
-     "descripcion": "",
-     "articulos": [
-      "247",
-      "247 ter"
-     ],
-     "rango": [
-      "247",
-      "247 ter"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
+     "fase": "Ejecución dineraria: bienes, intereses y costas",
+     "subtitulo": "El ejecutado manifiesta sus bienes · el juzgado investiga · intereses y costas provisionales",
+     "descripcion": "El ejecutado debe manifestar sus bienes cuando el LAJ se lo requiere (si es persona jurídica, sus administradores). Si no se conocen bienes suficientes, el LAJ se dirige a registros, organismos públicos y entidades financieras. La ejecución se despacha también por los intereses de demora (como máximo, los de un año) y las costas (como máximo, el 10 % del principal). Los autos de ejecución y los embargos se notifican a los representantes de los trabajadores de la empresa deudora. Si hay concurso, se aplica la Ley Concursal.",
+     "articulos": [
+      "248",
+      "249",
+      "250",
+      "251",
+      "252",
+      "253"
+     ],
+     "plazos": [
+      {
+       "acto": "Recargo de dos puntos en el interés si el ejecutado no colabora",
+       "plazo": "Pasados 3 meses del despacho",
+       "articulo": "251",
+       "literal": "transcurridos tres meses del despacho de la ejecución sin que el ejecutado cumpliere en su integridad la obligación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No se conocen bienes del ejecutado",
+       "entonces": "El LAJ los investiga en registros, organismos y entidades financieras.",
+       "articulos": [
+        "250"
+       ],
+       "literal": {
+        "articulo": "250",
+        "texto": "el secretario judicial deberá dirigirse a los pertinentes organismos y registros públicos"
+       }
+      },
+      {
+       "si": "Varios juzgados sociales han embargado los mismos bienes",
+       "entonces": "Tiene preferencia para la vía de apremio el que embargó primero.",
+       "articulos": [
+        "248"
+       ],
+       "literal": {
+        "articulo": "248",
+        "texto": "al órgano que con prioridad trabó dichos bienes"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hasta qué cantidad se despacha ejecución, de forma provisional, por las costas?",
+      "a": "Como regla, hasta el 10 % de la cantidad reclamada como principal.",
+      "articulos": [
+       "251"
+      ],
+      "literal": {
+       "articulo": "251",
+       "texto": "del diez por ciento de la cantidad objeto de apremio en concepto de principal"
+      }
+     },
+     "conexiones": [
+      "248",
+      "249",
+      "250",
+      "251",
+      "252",
+      "253"
+     ],
+     "recursos_rel": [],
      "id": "ejecucion-248",
-     "fase": "Normas generales",
-     "subtitulo": "CAPÍTULO II · Sección 1.ª · arts. 248 a 253",
-     "descripcion": "",
-     "articulos": [
-      "248",
-      "253"
-     ],
-     "rango": [
-      "248",
-      "253"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
-     "id": "ejecucion-254",
-     "fase": "El embargo",
-     "subtitulo": "CAPÍTULO II · Sección 2.ª · arts. 254 a 260",
-     "descripcion": "",
+     "fase": "El embargo y la tercería de dominio",
+     "subtitulo": "Orden de embargo · cuentas y saldos futuros · inmuebles al registro · tercería",
+     "descripcion": "El embargo sigue el orden legal. Es nulo el embargo de bienes cuya existencia no conste, pero pueden embargarse los saldos de cuentas presentes y futuros, con un límite máximo, y lo que se devengue a favor del ejecutado; las limitaciones de inembargabilidad del art. 607 LEC se aplican a cada mensualidad. Los inmuebles se anotan en el registro de oficio. Puede nombrarse administrador o depositario. Un tercero que alegue ser dueño de lo embargado puede pedir el levantamiento del embargo (tercería de dominio) ante el juez social de la ejecución.",
+     "aviso": "El art. 607 citado es de la [[Ley de Enjuiciamiento Civil|https://www.boe.es/buscar/act.php?id=BOE-A-2000-323]] (también en esta app).",
      "articulos": [
       "254",
+      "255",
+      "256",
+      "257",
+      "258",
+      "259",
       "260"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "La oficina que recibe un reembargo informa al reembargante",
+       "plazo": "Máximo 10 días",
+       "articulo": "258",
+       "literal": "en el plazo máximo de diez días, informará al reembargante"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se pide embargar algo cuya existencia no consta",
+       "entonces": "El embargo es nulo (salvo saldos de cuentas y devengos futuros con límite).",
+       "articulos": [
+        "254"
+       ],
+       "literal": {
+        "articulo": "254",
+        "texto": "Será nulo el embargo sobre bienes y derechos cuya efectiva existencia no conste."
+       }
+      },
+      {
+       "si": "Un tercero dice que el bien embargado es suyo",
+       "entonces": "Tercería de dominio ante el juez social; sin principio de prueba por escrito se rechaza de plano.",
+       "articulos": [
+        "260"
+       ],
+       "literal": {
+        "articulo": "260",
+        "texto": "rechazará de plano y sin sustanciación alguna la demanda de tercería de dominio a la que no se acompañe un principio de prueba por escrito"
+       }
+      },
+      {
+       "si": "La entidad pagadora no cumple la orden de retención",
+       "entonces": "Puede acordarse la administración judicial.",
+       "articulos": [
+        "254",
+        "256"
+       ],
+       "literal": {
+        "articulo": "254",
+        "texto": "También podrá acordarse la administración judicial"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se pueden embargar los ingresos que entren en la cuenta del ejecutado después del embargo?",
+      "a": "Sí, con el límite máximo que fije el LAJ: los saldos existentes y los que se produzcan después.",
+      "articulos": [
+       "254"
+      ],
+      "literal": {
+       "articulo": "254",
+       "texto": "tanto los existentes en el momento del embargo, como los que se produzcan posteriormente"
+      }
+     },
+     "conexiones": [
       "254",
+      "255",
+      "256",
+      "257",
+      "258",
+      "259",
       "260"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [],
+     "id": "ejecucion-254",
+     "continua_en": []
     },
     {
      "id": "ejecucion-261",
@@ -3129,72 +3430,331 @@
      "esqueleto": true
     },
     {
-     "id": "ejecucion-268",
      "fase": "Pago a los acreedores",
-     "subtitulo": "CAPÍTULO II · Sección 4.ª · arts. 268 a 275",
-     "descripcion": "",
+     "subtitulo": "Principal, intereses y costas · liquidación y tasación",
+     "descripcion": "Lo obtenido se aplica, por este orden, al principal, a los intereses y a las costas, una vez liquidados y tasados. Con aprobación del juez, pueden anticiparse los gastos necesarios de la propia ejecución. Cubierto el principal, el LAJ liquida los intereses, a la vez que tasa las costas si se quiere; en la tasación pueden incluirse los honorarios de abogados, procuradores y graduados sociales de la ejecución.",
      "articulos": [
       "268",
-      "275"
-     ],
-     "rango": [
-      "268",
-      "275"
+      "269"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Hubo gastos para poder ejecutar",
+       "entonces": "Con aprobación del juez, se pagan antes del principal.",
+       "articulos": [
+        "268"
+       ],
+       "literal": {
+        "articulo": "268",
+        "texto": "podrá anticipar al pago del principal el abono de los gastos que necesariamente hubiere requerido la propia ejecución"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿En qué orden se aplica lo cobrado en la ejecución?",
+      "a": "Principal, intereses y costas.",
+      "articulos": [
+       "268"
+      ],
+      "literal": {
+       "articulo": "268",
+       "texto": "se aplicarán, por su orden, al pago del principal, intereses y costas"
+      }
+     },
+     "conexiones": [
+      "268",
+      "269"
+     ],
+     "recursos_rel": [],
+     "id": "ejecucion-268",
+     "continua_en": []
     },
     {
+     "fase": "Insolvencia de la empresa y FOGASA",
+     "subtitulo": "Audiencia al FOGASA · decreto de insolvencia · el FOGASA paga lo que le corresponde",
+     "descripcion": "Antes de declarar la insolvencia se oye al FOGASA, que puede pedir diligencias y señalar bienes. Después, el LAJ declara por decreto la insolvencia total o parcial, que es provisional hasta que aparezcan bienes. Declarada en una ejecución, sirve para otras sin repetir la averiguación, oyendo al demandante y al FOGASA. Firme la insolvencia, si la sentencia fijó las cantidades a cargo del FOGASA, se le requiere para que pague en 10 días. Si los bienes están afectos a la producción y la empresa sigue activa, el FOGASA puede pedir que se suspenda la ejecución 30 días.",
+     "articulos": [
+      "276",
+      "277"
+     ],
+     "plazos": [
+      {
+       "acto": "Audiencia al FOGASA antes de la insolvencia",
+       "plazo": "Máximo 15 días",
+       "articulo": "276",
+       "literal": "le dará audiencia, por un plazo máximo de quince días"
+      },
+      {
+       "acto": "Decreto de insolvencia",
+       "plazo": "En los 30 días siguientes a las diligencias pedidas por el FOGASA",
+       "articulo": "276",
+       "literal": "Dentro de los treinta días siguientes a la práctica de las diligencias instadas por el Fondo de Garantía Salarial"
+      },
+      {
+       "acto": "El FOGASA paga lo que le corresponde",
+       "plazo": "10 días desde el requerimiento",
+       "articulo": "276",
+       "literal": "le requerirá en su caso de abono, en el plazo de diez días"
+      },
+      {
+       "acto": "Suspensión pedida por el FOGASA (bienes afectos a la producción)",
+       "plazo": "30 días",
+       "articulo": "277",
+       "literal": "podrá solicitar la suspensión de la ejecución, por el plazo de treinta días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Aparecen bienes después de la insolvencia",
+       "entonces": "La insolvencia es provisional: la ejecución puede reiniciarse.",
+       "articulos": [
+        "276",
+        "243"
+       ],
+       "literal": {
+        "articulo": "276",
+        "texto": "La insolvencia se entenderá a todos los efectos como provisional"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿La declaración de insolvencia es definitiva?",
+      "a": "No: es provisional hasta que se conozcan bienes del ejecutado o se realicen los embargados.",
+      "articulos": [
+       "276"
+      ],
+      "literal": {
+       "articulo": "276",
+       "texto": "La insolvencia se entenderá a todos los efectos como provisional hasta que se conozcan bienes al ejecutado"
+      }
+     },
+     "conexiones": [
+      "23",
+      "243",
+      "250",
+      "276",
+      "277"
+     ],
+     "recursos_rel": [
+      "revision"
+     ],
      "id": "ejecucion-276",
-     "fase": "Insolvencia empresarial",
-     "subtitulo": "CAPÍTULO II · Sección 5.ª · arts. 276 a 277",
-     "descripcion": "",
-     "articulos": [
-      "276",
-      "277"
-     ],
-     "rango": [
-      "276",
-      "277"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
+     "fase": "Ejecución de la sentencia de despido",
+     "subtitulo": "Readmisión en 10 días · incidente de no readmisión · readmisión obligatoria si es nulo o representante",
+     "descripcion": "Si la empresa optó por readmitir, comunica por escrito al trabajador, en los 10 días siguientes a la notificación de la sentencia, la fecha de reincorporación, con al menos 3 días de margen. Si no readmite o readmite mal, el trabajador pide la ejecución y se sigue el incidente de no readmisión: el juez declara extinguida la relación, fija la indemnización (con un posible añadido de hasta 15 días por año y 12 mensualidades) y los salarios. Si el despido es nulo, o el despedido es representante y optó por la readmisión, la sentencia se ejecuta en sus propios términos: readmisión en 3 días y, si no, se sigue pagando el salario y cotizando. Si la readmisión es imposible (cierre de la empresa), se extingue la relación con indemnización y salarios.",
+     "aviso": "El art. 56 citado es del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]].",
+     "articulos": [
+      "278",
+      "279",
+      "280",
+      "281",
+      "282",
+      "283",
+      "284",
+      "285",
+      "286"
+     ],
+     "plazos": [
+      {
+       "acto": "La empresa comunica la fecha de reincorporación",
+       "plazo": "10 días desde la notificación de la sentencia",
+       "articulo": "278",
+       "literal": "dentro de los diez días siguientes a aquel en que se le notifique la sentencia"
+      },
+      {
+       "acto": "Pedir la ejecución si no hay readmisión",
+       "plazo": "20 días (prescripción)",
+       "articulo": "279",
+       "literal": "Dentro de los veinte días siguientes a la fecha señalada para proceder a la readmisión"
+      },
+      {
+       "acto": "Límite para pedir la ejecución del fallo",
+       "plazo": "3 meses desde la firmeza",
+       "articulo": "279",
+       "literal": "habrá de ejercitarse dentro de los tres meses siguientes a la firmeza de la sentencia"
+      },
+      {
+       "acto": "Vista del incidente de no readmisión",
+       "plazo": "En los 5 días siguientes",
+       "articulo": "280",
+       "literal": "señalará la vista del incidente dentro de los cinco días siguientes"
+      },
+      {
+       "acto": "Auto que resuelve el incidente",
+       "plazo": "3 días",
+       "articulo": "281",
+       "literal": "Dentro de los tres días siguientes, el juez dictará auto"
+      },
+      {
+       "acto": "Despido nulo o de representante: reponer al trabajador",
+       "plazo": "3 días",
+       "articulo": "282",
+       "literal": "acordará requerir al empresario para que reponga al trabajador en su puesto en el plazo de tres días"
+      },
+      {
+       "acto": "Abandonar la vivienda ligada al trabajo tras la extinción firme",
+       "plazo": "1 mes (prorrogable 2)",
+       "articulo": "285",
+       "literal": "deberá abandonarla en el plazo de un mes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La readmisión no se hizo o fue irregular",
+       "entonces": "El juez declara extinguida la relación y fija indemnización y salarios; puede añadir hasta 15 días por año, con un máximo de 12 mensualidades.",
+       "articulos": [
+        "281"
+       ],
+       "literal": {
+        "articulo": "281",
+        "texto": "podrá fijar una indemnización adicional de hasta quince días de salario por año de servicio y un máximo de doce mensualidades"
+       }
+      },
+      {
+       "si": "Despido nulo, o de representante que optó por la readmisión, y la empresa no repone",
+       "entonces": "Sigue pagando el salario, el trabajador sigue en alta y el representante sigue ejerciendo sus funciones.",
+       "articulos": [
+        "284"
+       ],
+       "literal": {
+        "articulo": "284",
+        "texto": "Que el trabajador continúe percibiendo su salario con la misma periodicidad y cuantía"
+       }
+      },
+      {
+       "si": "La empresa ha cerrado o la readmisión es imposible",
+       "entonces": "Se extingue la relación con indemnización y salarios.",
+       "articulos": [
+        "286"
+       ],
+       "literal": {
+        "articulo": "286",
+        "texto": "cuando se acreditase la imposibilidad de readmitir al trabajador por cese o cierre de la empresa obligada"
+       }
+      },
+      {
+       "si": "Despido nulo por acoso o violencia de género en el trabajo",
+       "entonces": "La víctima puede optar por extinguir la relación con indemnización.",
+       "articulos": [
+        "286"
+       ],
+       "literal": {
+        "articulo": "286",
+        "texto": "la víctima del acoso podrá optar por extinguir la relación laboral"
+       }
+      },
+      {
+       "si": "El trabajador no comparece a la vista del incidente",
+       "entonces": "Se le tiene por desistido.",
+       "articulos": [
+        "280"
+       ],
+       "literal": {
+        "articulo": "280",
+        "texto": "se le tendrá por desistido de su solicitud"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si la empresa optó por readmitir pero no lo hace, ¿en qué plazo debe el trabajador pedir la ejecución?",
+      "a": "En los 20 días siguientes a la fecha señalada para la readmisión (o al fin de los 10 días si no señaló fecha), y siempre dentro de los 3 meses desde la firmeza.",
+      "articulos": [
+       "279"
+      ],
+      "literal": {
+       "articulo": "279",
+       "texto": "Dentro de los veinte días siguientes a la fecha señalada para proceder a la readmisión"
+      }
+     },
+     "conexiones": [
+      "110",
+      "113",
+      "278",
+      "279",
+      "280",
+      "281",
+      "282",
+      "283",
+      "284",
+      "285",
+      "286"
+     ],
+     "recursos_rel": [
+      "reposicion-juez",
+      "suplicacion"
+     ],
      "id": "ejecucion-278",
-     "fase": "De la ejecución de las sentencias firmes de despido",
-     "subtitulo": "CAPÍTULO III · arts. 278 a 286",
-     "descripcion": "",
-     "articulos": [
-      "278",
-      "286"
-     ],
-     "rango": [
-      "278",
-      "286"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
-     "id": "ejecucion-287",
-     "fase": "De la ejecución de sentencias frente a entes públicos",
-     "subtitulo": "CAPÍTULO IV · arts. 287 a 288",
-     "descripcion": "",
+     "fase": "Ejecución frente a entes públicos y prestaciones periódicas",
+     "subtitulo": "La Administración cumple en 2 meses · prestaciones de pago periódico",
+     "descripcion": "Las sentencias contra el Estado, las entidades gestoras de la Seguridad Social y demás entes públicos deben cumplirse en 2 meses desde su firmeza, justificándolo ante el juzgado; la sentencia puede fijar un plazo menor. Pasado ese plazo, se puede pedir la ejecución, y el juez adopta las medidas necesarias, con aplicación supletoria de la Ley 29/1998, reguladora de la Jurisdicción Contencioso-administrativa. En prestaciones periódicas, firme la condena, la entidad gestora comunica el capital coste en 10 días y el condenado lo ingresa en otros 10.",
      "articulos": [
       "287",
       "288"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "La Administración cumple la sentencia",
+       "plazo": "2 meses desde la firmeza",
+       "articulo": "287",
+       "literal": "dentro del plazo de dos meses a partir de su firmeza"
+      },
+      {
+       "acto": "Nuevo requerimiento a la Administración",
+       "plazo": "1 mes",
+       "articulo": "287",
+       "literal": "previo requerimiento de la Administración condenada por un nuevo plazo de un mes"
+      },
+      {
+       "acto": "La entidad gestora comunica el capital coste",
+       "plazo": "Máximo 10 días",
+       "articulo": "288",
+       "literal": "deberá, en el plazo máximo de diez días, comunicar a la oficina judicial el importe del capital coste"
+      },
+      {
+       "acto": "El condenado ingresa el capital coste",
+       "plazo": "10 días",
+       "articulo": "288",
+       "literal": "requiriendo el secretario a la condenada para que lo ingrese en el plazo de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Dos meses harían ineficaz la sentencia",
+       "entonces": "La sentencia puede fijar un plazo menor.",
+       "articulos": [
+        "287"
+       ],
+       "literal": {
+        "articulo": "287",
+        "texto": "ésta podrá fijar un plazo inferior para el cumplimiento"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo puede pedirse la ejecución de una sentencia contra la Administración?",
+      "a": "Pasados los 2 meses desde la firmeza que tiene para cumplirla voluntariamente.",
+      "articulos": [
+       "287"
+      ],
+      "literal": {
+       "articulo": "287",
+       "texto": "Trascurrido el plazo a que se refiere el número anterior, la parte interesada podrá solicitar la ejecución."
+      }
+     },
+     "conexiones": [
       "287",
       "288"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [],
+     "id": "ejecucion-287",
+     "continua_en": []
     }
    ]
   },
@@ -3203,15 +3763,19 @@
    "nombre": "Ejecución provisional",
    "bloque": "lrjs",
    "grupo": "Libro IV · Ejecución",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Qué se ejecuta mientras se recurre: prestaciones de Seguridad Social, despido y otras modalidades. Los anticipos de cantidades (arts. 289-293) quedan como índice.",
    "ambito": {
     "corto": "Arts. 289 a 305",
     "texto": "TÍTULO II. De la ejecución provisional",
     "articulos": [
      "289"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "304",
+      "texto": "las partes dispondrán de los mismos derechos y facultades procesales que en la ejecución definitiva"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
@@ -3233,71 +3797,230 @@
      "esqueleto": true
     },
     {
+     "fase": "Ejecución provisional en Seguridad Social",
+     "subtitulo": "La prestación se paga mientras se recurre · sin devolución si se revoca",
+     "descripcion": "Las sentencias recurridas que condenan a pagar prestaciones periódicas de Seguridad Social son ejecutivas: el condenado paga la prestación mientras se tramita el recurso. Si luego se revoca, el beneficiario no devuelve lo cobrado. En prestaciones de pago único puede pedir ejecución provisional y anticipos. En obligaciones de hacer o no hacer, el juez puede acordar la ejecución provisional sin fianza.",
+     "articulos": [
+      "294",
+      "295",
+      "296"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Se revoca la sentencia favorable al beneficiario",
+       "entonces": "No devuelve lo percibido durante la ejecución provisional.",
+       "articulos": [
+        "294"
+       ],
+       "literal": {
+        "articulo": "294",
+        "texto": "no estará obligado al reintegro de las cantidades percibidas durante el período de ejecución provisional"
+       }
+      },
+      {
+       "si": "La condena es a una prestación de pago único",
+       "entonces": "El beneficiario puede pedir la ejecución provisional y anticipos a cuenta.",
+       "articulos": [
+        "295"
+       ],
+       "literal": {
+        "articulo": "295",
+        "texto": "tendrá derecho a solicitar su ejecución provisional y obtener anticipos a cuenta"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Mientras se recurre una sentencia que reconoce una pensión, ¿se cobra?",
+      "a": "Sí: es ejecutiva y el condenado abona la prestación durante el recurso, hasta el límite de su responsabilidad.",
+      "articulos": [
+       "294"
+      ],
+      "literal": {
+       "articulo": "294",
+       "texto": "quedando el condenado obligado a abonar la prestación, hasta el límite de su responsabilidad, durante la tramitación del recurso"
+      }
+     },
+     "conexiones": [
+      "230",
+      "294",
+      "295",
+      "296"
+     ],
+     "recursos_rel": [],
      "id": "provisional-294",
-     "fase": "De las sentencias condenatorias en materia de Seguridad Social",
-     "subtitulo": "TÍTULO II · CAPÍTULO II · arts. 294 a 296",
-     "descripcion": "",
-     "articulos": [
-      "294",
-      "296"
-     ],
-     "rango": [
-      "294",
-      "296"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
+     "fase": "Ejecución provisional del despido",
+     "subtitulo": "Si la empresa readmite y recurre, paga el salario mientras dura el recurso",
+     "descripcion": "Si el despido se declara improcedente y la empresa optó por readmitir (o la opción era del trabajador y eligió la readmisión), mientras se tramita el recurso la empresa paga el mismo salario y el trabajador sigue trabajando, salvo que la empresa prefiera pagar sin que trabaje. Lo mismo si el despido es nulo. El trabajador que no vuelve al trabajo cuando se le requiere pierde esos salarios. Si la sentencia se revoca, no devuelve lo cobrado. Si el despedido es representante, se garantizan sus funciones durante el recurso.",
+     "articulos": [
+      "297",
+      "298",
+      "299",
+      "300",
+      "301",
+      "302"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El trabajador no vuelve al trabajo cuando la empresa se lo requiere",
+       "entonces": "Pierde definitivamente esos salarios.",
+       "articulos": [
+        "299"
+       ],
+       "literal": {
+        "articulo": "299",
+        "texto": "acarreará la pérdida definitiva de los salarios a que se refieren los artículos anteriores"
+       }
+      },
+      {
+       "si": "La sentencia favorable al trabajador se revoca",
+       "entonces": "No devuelve los salarios cobrados durante el recurso.",
+       "articulos": [
+        "300"
+       ],
+       "literal": {
+        "articulo": "300",
+        "texto": "éste no vendrá obligado al reintegro de los salarios percibidos durante el período de ejecución provisional"
+       }
+      },
+      {
+       "si": "La empresa optó por indemnizar",
+       "entonces": "No hay ejecución provisional de la readmisión; pueden concederse anticipos reintegrables.",
+       "articulos": [
+        "301",
+        "111"
+       ],
+       "literal": {
+        "articulo": "301",
+        "texto": "podrán concederse anticipos reintegrables"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Despido improcedente, la empresa opta por readmitir y recurre: ¿qué cobra el trabajador mientras tanto?",
+      "a": "La misma retribución que antes del despido, y sigue trabajando, salvo que la empresa prefiera pagar sin que preste servicios.",
+      "articulos": [
+       "297"
+      ],
+      "literal": {
+       "articulo": "297",
+       "texto": "a satisfacer al recurrido la misma retribución que venía percibiendo con anterioridad a producirse aquellos hechos"
+      }
+     },
+     "conexiones": [
+      "111",
+      "112",
+      "113",
+      "297",
+      "298",
+      "299",
+      "300",
+      "301",
+      "302"
+     ],
+     "recursos_rel": [],
      "id": "provisional-297",
-     "fase": "De las sentencias de despido",
-     "subtitulo": "TÍTULO II · CAPÍTULO III · arts. 297 a 302",
-     "descripcion": "",
-     "articulos": [
-      "297",
-      "302"
-     ],
-     "rango": [
-      "297",
-      "302"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
+     "fase": "Ejecución provisional en otras modalidades",
+     "subtitulo": "Conflictos colectivos, convenios y derechos fundamentales: ejecutivas desde que se dictan",
+     "descripcion": "Las sentencias de conflictos colectivos, de impugnación de convenios y de tutela de la libertad sindical y demás derechos fundamentales son ejecutivas desde que se dictan, aunque se recurran. En impugnación de actos administrativos laborales puede acordarse la ejecución provisional, salvo perjuicios irreversibles. Si la empresa recurre la sentencia que extingue el contrato a petición del trabajador (art. 50 ET), este elige en 5 días si sigue trabajando o cesa.",
+     "aviso": "El art. 50 citado es del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]].",
+     "articulos": [
+      "303"
+     ],
+     "plazos": [
+      {
+       "acto": "Extinción por el art. 50 ET recurrida por la empresa: el trabajador opta",
+       "plazo": "5 días desde que se le notifica el recurso",
+       "articulo": "303",
+       "literal": "dentro del plazo de cinco días desde la notificación de que la empresa ha recurrido"
+      },
+      {
+       "acto": "Si se revoca: la empresa comunica la fecha de reincorporación",
+       "plazo": "10 días",
+       "articulo": "303",
+       "literal": "dentro del plazo de diez días a partir de su notificación, la fecha de reincorporación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El trabajador opta por cesar mientras se recurre",
+       "entonces": "Queda en situación de desempleo involuntario.",
+       "articulos": [
+        "303"
+       ],
+       "literal": {
+        "articulo": "303",
+        "texto": "quedando en este último caso en situación de desempleo involuntario desde ese momento"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Desde cuándo es ejecutiva una sentencia de tutela de derechos fundamentales?",
+      "a": "Desde que se dicta, aunque se recurra.",
+      "articulos": [
+       "303"
+      ],
+      "literal": {
+       "articulo": "303",
+       "texto": "serán ejecutivas desde que se dicten"
+      }
+     },
+     "conexiones": [
+      "303"
+     ],
+     "recursos_rel": [],
      "id": "provisional-303",
-     "fase": "De las sentencias condenatorias recaídas en otros procesos",
-     "subtitulo": "TÍTULO II · CAPÍTULO IV · art. 303",
-     "descripcion": "",
-     "articulos": [
-      "303"
-     ],
-     "rango": [
-      "303",
-      "303"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
-     "id": "provisional-304",
-     "fase": "Normas comunes a la ejecución provisional",
-     "subtitulo": "TÍTULO II · CAPÍTULO V · arts. 304 a 305",
-     "descripcion": "",
+     "fase": "Ejecución provisional: reglas comunes",
+     "subtitulo": "Mismo juez · medidas cautelares · solo reposición, salvo exceso",
+     "descripcion": "La ejecución provisional la despacha y lleva el juzgado o tribunal que dictó la resolución, y las partes tienen los mismos derechos que en la definitiva. El juez puede acordar medidas cautelares para asegurarla. Contra lo que resuelva solo cabe reposición, salvo que se salga de los límites de la ejecución provisional o declare la falta de jurisdicción o competencia, en que cabe suplicación o casación.",
      "articulos": [
-      "304",
-      "305"
-     ],
-     "rango": [
-      "304",
-      "305"
+      "304"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "El auto se sale de los límites de la ejecución provisional",
+       "entonces": "Cabe suplicación o, en su caso, casación ordinaria.",
+       "articulos": [
+        "304"
+       ],
+       "literal": {
+        "articulo": "304",
+        "texto": "en que procederá recurso de suplicación o, en su caso, de casación ordinaria"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué recurso cabe, por regla general, contra lo que resuelve el juez en ejecución provisional?",
+      "a": "Solo reposición.",
+      "articulos": [
+       "304"
+      ],
+      "literal": {
+       "articulo": "304",
+       "texto": "sólo procederá el recurso de reposición"
+      }
+     },
+     "conexiones": [
+      "79",
+      "304"
+     ],
+     "recursos_rel": [
+      "reposicion-juez",
+      "suplicacion"
+     ],
+     "id": "provisional-304",
+     "continua_en": []
     }
    ]
   }
