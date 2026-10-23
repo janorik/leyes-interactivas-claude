@@ -156,10 +156,10 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > Bloque desarrollado a propuesta de Claude y con el visto bueno del usuario (23-10-2026); el canon lo marcaba NO y se ha cambiado a SI (`fuentes/canon_contenido.md`). 3 fases y 5 plazos. En la app: Mapa › Denuncia, querella y Policía judicial, y Procedimientos › «Cómo empieza el proceso penal».
 
-- [ ] **Pasa el cambio a tu plataforma:** denuncia (259-269), querella (270-281) y Policía judicial (282-298), de NO a SI.
+- [ ] **Pasa el cambio a tu plataforma (`janorik/plataforma-juridica`, `docs/canon-contenido.md`; el usuario pidió que lo haga Claude, pero esta sesión no obtuvo permiso de escritura):** denuncia (259-269), querella (270-281) y Policía judicial (282-298), de NO a SI.
 - [x] **Art. 278: «excepto el de violación o rapto». Resuelta (decisión del usuario, 23-10-2026): se deja el texto literal tal cual, sin explicar a qué delitos actuales se refiere.** El Código Penal vigente ya no usa esos nombres de delito. La ficha cita la excepción entre comillas, sin interpretarla. Necesito tu criterio (o una fuente que lo aclare) para decir a qué delitos actuales se refiere.
   - **Tu respuesta:**
-- [ ] **«Para ser parte acusadora no basta con denunciar» (ficha Denuncia).** Es una conclusión mía a partir de los arts. 109 bis, 264 y 270, no una frase literal.
+- [x] **«Para ser parte acusadora no basta con denunciar» (ficha Denuncia). Resuelta: el usuario la quiere en la ficha (23-10-2026).** Es una conclusión mía a partir de los arts. 109 bis, 264 y 270, no una frase literal.
   - **Propuesta:** dejarla así, porque ayuda a orientarse. No verificable hasta que lo confirmes.
   - **Tu respuesta:**
 - [ ] **Multas en pesetas (arts. 259, 262 y 295).** No se mencionan en la ficha: no orientan y las cantidades son históricas.
