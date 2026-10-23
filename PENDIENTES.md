@@ -356,6 +356,13 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 ## LRJS — Ley reguladora de la jurisdicción social
 
+### Mapa procesal (esqueleto, Chat 4)
+
+- [ ] **Esqueleto de 13 bloques y 65 fases:** cada fase es un título, capítulo o sección del índice del BOE, con su nombre literal y sus artículos. Revisa si la agrupación en bloques te sirve antes de desarrollar el primero.
+- [ ] **Audiencia al demandado rebelde (art. 185):** está en el Libro II, pero la he puesto en el bloque «Recursos, audiencia al rebelde y revisión» porque es un medio de impugnación de una sentencia firme.
+  - **Propuesta:** dejarla ahí (No verificable hasta que lo confirmes).
+  - **Tu respuesta:**
+
 ### Canon (Chat 4)
 
 - [x] **Cambios del usuario a propuesta de Claude (23-10-2026):** audiencia al demandado rebelde (185) y revisión y error judicial (236) pasan de NO a SI; salarios de tramitación frente al Estado (116-119), materia electoral (127-136), procedimiento de oficio (148-150) y estatutos sindicales (167-176) pasan a SI solo con una ficha breve y sintética (qué es, quién demanda, plazo y recurso). Cambiado también en su plataforma (PR #3). La plataforma no carga esos artículos en su API hasta que el usuario lo autorice allí.
