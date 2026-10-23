@@ -937,7 +937,7 @@
      "id": "act-resoluciones",
      "fase": "Resoluciones: clases, firmeza, aclaración y complemento",
      "subtitulo": "Quién dicta qué · cuándo es firme · cómo se corrige",
-     "descripcion": "Jueces y tribunales dictan providencias, autos y sentencias; el Letrado de la Administración de Justicia (LAJ), diligencias y decretos. Providencia: cuestiones procesales que la ley reserva al tribunal sin exigir auto. Auto: recursos contra providencias o decretos, admisión o inadmisión de la prueba, medidas cautelares, nulidad o validez de las actuaciones, presupuestos procesales, cuestiones incidentales y lo que pone fin a una instancia o recurso antes de su tramitación ordinaria. Sentencia: pone fin al proceso en primera o segunda instancia y resuelve la casación y la revisión. Diligencia de ordenación: da a los autos el curso que marca la ley. Decreto: admite a trámite la demanda, pone fin a lo que el LAJ tiene atribuido en exclusiva y siempre que haya que razonar lo resuelto. Es firme la resolución contra la que no cabe recurso o que nadie recurrió en plazo; pasa en autoridad de cosa juzgada. Las sentencias deben ser claras, precisas, congruentes con lo pedido y motivadas. Toda resolución indica si es firme o qué recurso cabe, ante qué órgano y en qué plazo.",
+     "descripcion": "Jueces y tribunales dictan providencias, autos y sentencias; el LAJ, diligencias y decretos. Providencia: cuestiones procesales que la ley reserva al tribunal sin exigir auto. Auto: recursos contra providencias o decretos, admisión o inadmisión de la prueba, medidas cautelares, nulidad o validez de las actuaciones, presupuestos procesales, cuestiones incidentales y lo que pone fin a una instancia o recurso antes de su tramitación ordinaria. Sentencia: pone fin al proceso en primera o segunda instancia y resuelve la casación y la revisión. Diligencia de ordenación: da a los autos el curso que marca la ley. Decreto: admite a trámite la demanda, pone fin a lo que el LAJ tiene atribuido en exclusiva y siempre que haya que razonar lo resuelto. Es firme la resolución contra la que no cabe recurso o que nadie recurrió en plazo; pasa en autoridad de cosa juzgada. Las sentencias deben ser claras, precisas, congruentes con lo pedido y motivadas. Toda resolución indica si es firme o qué recurso cabe, ante qué órgano y en qué plazo.",
      "articulos": [
       "206",
       "207",
@@ -1056,7 +1056,7 @@
       }
      ],
      "pregunta": {
-      "q": "¿Puede el Letrado de la Administración de Justicia dictar un auto?",
+      "q": "¿Puede el LAJ dictar un auto?",
       "a": "No. Sus resoluciones son diligencias y decretos. Providencias, autos y sentencias los dictan jueces y tribunales.",
       "articulos": [
        "206"
@@ -1777,7 +1777,7 @@
      ],
      "pregunta": {
       "q": "¿Ante quién se presentan los documentos originales fuera de la vista?",
-      "a": "Ante el Letrado de la Administración de Justicia; pero el tribunal debe examinarlos por sí mismo.",
+      "a": "Ante el LAJ; pero el tribunal debe examinarlos por sí mismo.",
       "articulos": [
        "289"
       ],
@@ -2241,7 +2241,7 @@
     {
      "id": "ord-admision",
      "fase": "Admisión y emplazamiento",
-     "subtitulo": "Decreto del Letrado de la Administración de Justicia",
+     "subtitulo": "Decreto del LAJ",
      "descripcion": "El LAJ admite la demanda por decreto y da traslado al demandado para contestar. Da cuenta al tribunal si aprecia falta de jurisdicción o competencia, o defectos formales no subsanados.",
      "articulos": [
       "404",

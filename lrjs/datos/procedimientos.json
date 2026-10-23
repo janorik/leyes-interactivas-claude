@@ -684,7 +684,7 @@
     {
      "fase": "Resoluciones: clases, sentencias y autos orales",
      "subtitulo": "Providencias, autos y sentencias; diligencias y decretos · sentencia de viva voz",
-     "descripcion": "Jueces y tribunales resuelven por providencias, autos y sentencias; el Letrado de la Administración de Justicia (en este texto, «secretario judicial»), por diligencias y decretos. En el juicio pueden dictarse resoluciones orales, que se documentan en el acta. Al terminar el juicio el juez puede dictar sentencia de viva voz, que queda grabada y se redacta después; también puede aprobar así un allanamiento total. Si no intervienen abogado ni graduado social, la sentencia ha de ser escrita. Los autos de los incidentes también pueden dictarse oralmente. Toda resolución indica si es firme o qué recurso cabe, con su plazo, órgano, depósitos y consignaciones.",
+     "descripcion": "Jueces y tribunales resuelven por providencias, autos y sentencias; el LAJ, por diligencias y decretos. En el juicio pueden dictarse resoluciones orales, que se documentan en el acta. Al terminar el juicio el juez puede dictar sentencia de viva voz, que queda grabada y se redacta después; también puede aprobar así un allanamiento total. Si no intervienen abogado ni graduado social, la sentencia ha de ser escrita. Los autos de los incidentes también pueden dictarse oralmente. Toda resolución indica si es firme o qué recurso cabe, con su plazo, órgano, depósitos y consignaciones.",
      "articulos": [
       "49",
       "50",
@@ -728,7 +728,7 @@
       }
      ],
      "pregunta": {
-      "q": "¿Qué resoluciones dicta el Letrado de la Administración de Justicia en el proceso social?",
+      "q": "¿Qué resoluciones dicta el LAJ en el proceso social?",
       "a": "Diligencias y decretos.",
       "articulos": [
        "49"
@@ -753,7 +753,8 @@
      "continua_en": [
       "recursos"
      ],
-     "id": "actos-49"
+     "id": "actos-49",
+     "aviso": "Según la nota general del BOE a esta ley, donde el texto literal dice «secretario judicial» hay que entender LAJ desde el 1 de octubre de 2015 (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
     },
     {
      "fase": "Comunicaciones y notificaciones (ficha breve)",

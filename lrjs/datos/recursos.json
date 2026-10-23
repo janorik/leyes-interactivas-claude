@@ -5,7 +5,7 @@
  "grupos_selector": [
   {
    "quien": "LAJ",
-   "titulo": "Resoluciones del Letrado de la Administración de Justicia"
+   "titulo": "Resoluciones del LAJ"
   },
   {
    "quien": "Juez o Tribunal",
@@ -22,7 +22,7 @@
    "recurso": "Reposición (ante el LAJ)",
    "contra_que": "Diligencias de ordenación y decretos no definitivos, salvo que la ley prevea revisión directa.",
    "plazo": "3 días (órgano unipersonal) o 5 (órgano colegiado)",
-   "organo": "El mismo Letrado de la Administración de Justicia que la dictó.",
+   "organo": "El mismo LAJ que la dictó.",
    "efectos": "No suspende la resolución recurrida. Las demás partes pueden impugnarlo en 3 o 5 días y se resuelve por decreto, contra el que cabe revisión. No cabe en conflictos colectivos, materia electoral, conciliación de la vida personal y familiar ni impugnación de convenios.",
    "articulos": [
     "186",

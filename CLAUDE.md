@@ -116,6 +116,7 @@ Todo artículo citado en cualquier vista es un enlace que abre su texto literal.
 - La app marca el estado con un **punto de color** junto al nombre (decisión del usuario, 22-10-2026): amarillo = pendiente de revisión, verde = revisado (`revisado: true`), gris = solo índice (esqueleto). En las listas va solo el punto; en la ficha abierta, el punto con su texto. Leyenda bajo el aviso del BOE. Cada punto lleva texto oculto (`aria-label` y `title`) para que no dependa solo del color.
 - Si el texto legal admite varias lecturas, o un plazo depende de supuestos, no elijas: anótalo y pregunta.
 - Nunca presentes un plazo como seguro si no sale literalmente del artículo citado.
+- **«LAJ» (decisión del usuario, 23-10-2026):** en todo el contenido elaborado (fichas, preguntas, recursos, rótulos) se escribe «LAJ», nunca «secretario judicial» ni «Letrado de la Administración de Justicia». Las frases literales y el texto de los artículos no se tocan; un aviso explica que «secretario judicial» del texto literal equivale a LAJ (nota del BOE, LO 7/2015).
 - **Comprueba quién dicta cada resolución** antes de clasificarla (corrección del usuario: el LAJ solo dicta diligencias de ordenación y decretos, nunca autos). `insertar_datos.py` rechaza un auto o una sentencia en el grupo «LAJ» del selector de recursos.
 - La calculadora de plazos con calendario (días hábiles, agosto, festivos) NO se hace ahora. Es una segunda parte.
 

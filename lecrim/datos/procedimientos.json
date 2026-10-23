@@ -207,7 +207,7 @@
      "id": "generales-100",
      "fase": "Acciones penal y civil: quién acusa y quién reclama",
      "subtitulo": "Fiscal, víctima, perjudicado y acusación popular · reserva de la acción civil",
-     "descripcion": "Todo delito da lugar a una acción penal y puede dar lugar a una acción civil (restitución, reparación e indemnización). La acción penal es pública: pueden ejercerla los ciudadanos españoles con arreglo a la ley. El Ministerio Fiscal está obligado a ejercer las acciones penales procedentes, salvo las reservadas a la querella privada, y también la civil, salvo que el ofendido renuncie expresamente. Al recibir declaración al ofendido o perjudicado, el Letrado de la Administración de Justicia le informa de su derecho a ser parte y a renunciar o no a la restitución e indemnización. Mientras haya proceso penal, no puede seguirse un pleito civil sobre el mismo hecho.",
+     "descripcion": "Todo delito da lugar a una acción penal y puede dar lugar a una acción civil (restitución, reparación e indemnización). La acción penal es pública: pueden ejercerla los ciudadanos españoles con arreglo a la ley. El Ministerio Fiscal está obligado a ejercer las acciones penales procedentes, salvo las reservadas a la querella privada, y también la civil, salvo que el ofendido renuncie expresamente. Al recibir declaración al ofendido o perjudicado, el LAJ le informa de su derecho a ser parte y a renunciar o no a la restitución e indemnización. Mientras haya proceso penal, no puede seguirse un pleito civil sobre el mismo hecho.",
      "articulos": [
       "100",
       "101",
@@ -348,7 +348,7 @@
      "id": "generales-141",
      "fase": "Resoluciones: clases, firmeza, aclaración y complemento",
      "subtitulo": "Quién dicta qué · cuándo es firme · cómo se corrige",
-     "descripcion": "Jueces y tribunales dictan providencias, autos y sentencias; el Letrado de la Administración de Justicia (en este texto, «Secretario judicial»), diligencias y decretos. Providencia: cuestiones procesales reservadas al juez que no exigen auto. Auto: incidentes o puntos esenciales que afectan directamente a investigados, encausados, responsables civiles o acusadores; la competencia; la recusación; los recursos contra providencias o decretos; la prisión o libertad provisional; la admisión o denegación de prueba o de la justicia gratuita, y lo que afecte a un derecho fundamental. Sentencia: decide definitivamente la cuestión criminal. Es firme cuando no cabe contra ella recurso ordinario ni extraordinario, salvo revisión y rehabilitación. La ejecutoria es el documento en que consta la sentencia firme. La absolución es siempre libre. Toda resolución indica si es firme o qué recurso cabe, ante qué órgano y en qué plazo.",
+     "descripcion": "Jueces y tribunales dictan providencias, autos y sentencias; el LAJ, diligencias y decretos. Providencia: cuestiones procesales reservadas al juez que no exigen auto. Auto: incidentes o puntos esenciales que afectan directamente a investigados, encausados, responsables civiles o acusadores; la competencia; la recusación; los recursos contra providencias o decretos; la prisión o libertad provisional; la admisión o denegación de prueba o de la justicia gratuita, y lo que afecte a un derecho fundamental. Sentencia: decide definitivamente la cuestión criminal. Es firme cuando no cabe contra ella recurso ordinario ni extraordinario, salvo revisión y rehabilitación. La ejecutoria es el documento en que consta la sentencia firme. La absolución es siempre libre. Toda resolución indica si es firme o qué recurso cabe, ante qué órgano y en qué plazo.",
      "articulos": [
       "141",
       "144",
@@ -3101,7 +3101,7 @@
      "id": "investigacion-545",
      "fase": "Entrada y registro en lugar cerrado",
      "subtitulo": "Consentimiento o auto motivado · cómo se practica",
-     "descripcion": "Nadie puede entrar en el domicilio de otro sin su consentimiento, salvo en los casos y en la forma previstos en las leyes. En edificios y lugares públicos (art. 547) el Juez puede decretar la entrada y registro, de día o de noche, si hay indicios de que allí está el procesado o efectos, instrumentos, libros o papeles del delito. En un domicilio (art. 554), el Juez instructor puede ordenarla en esos mismos casos, pero con el consentimiento del interesado o, a falta de él, por auto motivado. Ese auto será siempre fundado y concretará el lugar, si se hará solo de día y quién lo practicará. El registro se hace ante el interesado o su representante y siempre ante el Secretario judicial, que levanta acta.",
+     "descripcion": "Nadie puede entrar en el domicilio de otro sin su consentimiento, salvo en los casos y en la forma previstos en las leyes. En edificios y lugares públicos (art. 547) el Juez puede decretar la entrada y registro, de día o de noche, si hay indicios de que allí está el procesado o efectos, instrumentos, libros o papeles del delito. En un domicilio (art. 554), el Juez instructor puede ordenarla en esos mismos casos, pero con el consentimiento del interesado o, a falta de él, por auto motivado. Ese auto será siempre fundado y concretará el lugar, si se hará solo de día y quién lo practicará. El registro se hace ante el interesado o su representante y siempre ante el LAJ, que levanta acta.",
      "articulos": [
       "545",
       "546",
@@ -3183,7 +3183,7 @@
      ],
      "pregunta": {
       "q": "¿En presencia de quién se practica siempre el registro?",
-      "a": "Del Secretario judicial del órgano que lo autorizó (o del de guardia que le sustituya), que levanta acta firmada por todos los asistentes.",
+      "a": "Del LAJ del órgano que lo autorizó (o del de guardia que le sustituya), que levanta acta firmada por todos los asistentes.",
       "articulos": [
        "569"
       ],
@@ -3217,7 +3217,7 @@
       "abreviado"
      ],
      "duda": "Los arts. 550 y 551 remiten al «artículo 6.º de la Constitución» y el art. 560 al «Ministerio de Gracia y Justicia». Ver PENDIENTES.md.",
-     "aviso": "Según la nota general del BOE a esta ley, desde el 1 de octubre de 2015 las referencias a los Secretarios judiciales se entienden hechas a los Letrados de la Administración de Justicia (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
+     "aviso": "Según la nota general del BOE a esta ley, donde el texto literal dice «Secretario judicial» hay que entender LAJ desde el 1 de octubre de 2015 (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
     },
     {
      "id": "investigacion-573",
@@ -4405,7 +4405,7 @@
      "id": "con-fiscal",
      "fase": "El Fiscal en el sumario",
      "subtitulo": "Testimonios y plazo de apelación (arts. 646 a 648)",
-     "descripcion": "El Letrado de la Administración de Justicia remite al Fiscal testimonio de las resoluciones apelables y de las diligencias periciales o de reconocimiento que le interesen, cuando no puede notificárselas directamente. Para el Fiscal que no está en el lugar de la instrucción, el plazo de apelación corre desde que recibe el testimonio.",
+     "descripcion": "El LAJ remite al Fiscal testimonio de las resoluciones apelables y de las diligencias periciales o de reconocimiento que le interesen, cuando no puede notificárselas directamente. Para el Fiscal que no está en el lugar de la instrucción, el plazo de apelación corre desde que recibe el testimonio.",
      "articulos": [
       "646",
       "647",
@@ -7411,7 +7411,7 @@
      "id": "especiales-808",
      "fase": "Injuria y calumnia verbales: el juicio verbal",
      "subtitulo": "Juicio ante el instructor en 3 días",
-     "descripcion": "Presentada la querella por injurias o calumnias verbales, el Juez instructor convoca a juicio verbal al querellante, al querellado y a los testigos; el Secretario judicial señala día y hora. En el juicio, el querellante presenta sus pruebas y el Juez decide sobre el procesamiento del querellado y da por terminado el sumario. No se admiten testigos de referencia. La ausencia del querellado citado en forma no suspende el juicio.",
+     "descripcion": "Presentada la querella por injurias o calumnias verbales, el Juez instructor convoca a juicio verbal al querellante, al querellado y a los testigos; el LAJ señala día y hora. En el juicio, el querellante presenta sus pruebas y el Juez decide sobre el procesamiento del querellado y da por terminado el sumario. No se admiten testigos de referencia. La ausencia del querellado citado en forma no suspende el juicio.",
      "articulos": [
       "808",
       "809",
@@ -7494,7 +7494,7 @@
       "conclusion",
       "juicio-oral"
      ],
-     "aviso": "Según la nota general del BOE a esta ley, las referencias a los Secretarios judiciales se entienden hechas a los Letrados de la Administración de Justicia (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
+     "aviso": "Según la nota general del BOE a esta ley, donde el texto literal dice «Secretario judicial» hay que entender LAJ (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
     },
     {
      "id": "especiales-816",
@@ -7696,7 +7696,7 @@
      "continua_en": [
       "abreviado"
      ],
-     "aviso": "Según la nota general del BOE a esta ley, desde el 1 de octubre de 2015 las referencias a los Secretarios judiciales se entienden hechas a los Letrados de la Administración de Justicia (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
+     "aviso": "Según la nota general del BOE a esta ley, donde el texto literal dice «Secretario judicial» hay que entender LAJ desde el 1 de octubre de 2015 (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
     },
     {
      "id": "recursos-847",
@@ -7943,7 +7943,7 @@
      "ramas": [
       {
        "si": "Pasa el plazo sin interponerlo",
-       "entonces": "El Secretario judicial declara desierto el recurso por decreto; contra él cabe recurso directo de revisión.",
+       "entonces": "El LAJ declara desierto el recurso por decreto; contra él cabe recurso directo de revisión.",
        "articulos": [
         "873"
        ],
@@ -8002,13 +8002,13 @@
      ],
      "continua_en": [],
      "duda": "El art. 875 fija los depósitos en pesetas (12.000, 6.000 y 7.500). Ver PENDIENTES.md.",
-     "aviso": "Según la nota general del BOE a esta ley, desde el 1 de octubre de 2015 las referencias a los Secretarios judiciales se entienden hechas a los Letrados de la Administración de Justicia (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
+     "aviso": "Según la nota general del BOE a esta ley, donde el texto literal dice «Secretario judicial» hay que entender LAJ desde el 1 de octubre de 2015 (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
     },
     {
      "id": "recursos-880",
      "fase": "Sustanciación y admisión",
      "subtitulo": "Nota, instrucción del ponente y decisión sobre la admisión",
-     "descripcion": "El Secretario judicial designa al Magistrado ponente y forma la nota del recurso. En ese plazo, el Fiscal y las partes se instruyen y pueden impugnar la admisión del recurso o de la adhesión. Las partes pueden pedir vista. Después, el ponente instruye y la Sala decide sobre la admisión. Las causas de inadmisión obligatoria están en el art. 884 y las potestativas en el art. 885. Para inadmitir hace falta unanimidad. Si es admisible, la Sala lo acuerda de plano por providencia y se señala la vista o el día para el fallo. Contra la decisión sobre la admisión no cabe recurso.",
+     "descripcion": "El LAJ designa al Magistrado ponente y forma la nota del recurso. En ese plazo, el Fiscal y las partes se instruyen y pueden impugnar la admisión del recurso o de la adhesión. Las partes pueden pedir vista. Después, el ponente instruye y la Sala decide sobre la admisión. Las causas de inadmisión obligatoria están en el art. 884 y las potestativas en el art. 885. Para inadmitir hace falta unanimidad. Si es admisible, la Sala lo acuerda de plano por providencia y se señala la vista o el día para el fallo. Contra la decisión sobre la admisión no cabe recurso.",
      "articulos": [
       "880",
       "882",
@@ -8106,7 +8106,7 @@
       "893"
      ],
      "continua_en": [],
-     "aviso": "Según la nota general del BOE a esta ley, desde el 1 de octubre de 2015 las referencias a los Secretarios judiciales se entienden hechas a los Letrados de la Administración de Justicia (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
+     "aviso": "Según la nota general del BOE a esta ley, donde el texto literal dice «Secretario judicial» hay que entender LAJ desde el 1 de octubre de 2015 (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
     },
     {
      "id": "recursos-893_bis_a",
@@ -10741,7 +10741,7 @@
      "id": "sumario-con-fiscal",
      "fase": "El Fiscal en el sumario",
      "subtitulo": "Testimonios y plazo de apelación (arts. 646 a 648)",
-     "descripcion": "El Letrado de la Administración de Justicia remite al Fiscal testimonio de las resoluciones apelables y de las diligencias periciales o de reconocimiento que le interesen, cuando no puede notificárselas directamente. Para el Fiscal que no está en el lugar de la instrucción, el plazo de apelación corre desde que recibe el testimonio.",
+     "descripcion": "El LAJ remite al Fiscal testimonio de las resoluciones apelables y de las diligencias periciales o de reconocimiento que le interesen, cuando no puede notificárselas directamente. Para el Fiscal que no está en el lugar de la instrucción, el plazo de apelación corre desde que recibe el testimonio.",
      "articulos": [
       "646",
       "647",
