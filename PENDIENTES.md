@@ -356,6 +356,42 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 ## LRJS — Ley reguladora de la jurisdicción social
 
+### Libro I: disposiciones generales (Chat 4, contenido elaborado, pendiente de revisión)
+
+> Sexto desarrollo de la LRJS, con la tabla aprobada por el usuario («Me parece correcto», 23-10-2026). Bloque «Disposiciones generales»: jurisdicción (arts. 1-3), competencia (4-11), cuestiones de competencia (13-14, breve), capacidad y legitimación (16-17), representación y defensa (18-21) y FOGASA (23-24, breve). Bloque «Acumulación»: solo la ficha de acumulación de acciones (25, 26 y 32). Bloque «Actuaciones procesales»: días hábiles y presentación de escritos (43 y 45), resoluciones (49-52), comunicaciones (53, 56, 59 y 60, breve) y principios y buena fe (74-75, breve). Quedan como índice: abstención y recusación (`generales-15`) y la acumulación de procesos, de recursos y de ejecuciones (`acumulacion-28`, `-33`, `-34`, `-36`). 11 fichas, 7 plazos. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
+
+- [x] **«Secretario judicial» en el texto consolidado.** Los arts. 23 y 49 (y otros) dicen todavía «secretario judicial»; el art. 59.2 ya dice «letrado o letrada de la Administración de Justicia» (Verificable: texto de la app). En la ficha de resoluciones lo explico así: «el Letrado de la Administración de Justicia (en este texto, "secretario judicial")». **Propuesta:** dejarlo así, sin cambiar las frases literales (No verificable hasta que lo confirmes). **Tu respuesta:** «LAJ» en todo, también en el texto de los artículos (hecho en las tres leyes al montar la app, 23-10-2026; el aviso de la app lo explica).
+- [ ] **«Secretario» a secas.** Quedan sin cambiar las menciones a «el Secretario» sin «judicial» (unas 25 en la LECrim y 15 en la LRJS; por ejemplo, art. 809 LECrim: «certificación del Secretario») y cargos distintos como «Secretario de Gobierno» o «Secretario de Estado» (Verificable: texto de la app). **Propuesta:** dejarlas, porque no son el término que pediste cambiar y algunas son otros cargos (No verificable). **Tu respuesta:**
+- [ ] **Art. 10: competencia territorial.** La ficha resume solo la regla general (lugar de prestación de servicios o domicilio del demandado) y la de las Administraciones empleadoras, y remite al propio art. 10 para los demás supuestos (servicios en varias circunscripciones, Seguridad Social, etc.). **Propuesta:** suficiente para orientarse; el detalle, en el texto literal (No verificable). **Tu respuesta:**
+- [ ] **Art. 43: lista de modalidades en que agosto es hábil.** La ficha la resume; la lista exacta está en el art. 43.4 (Verificable). Revisa que el resumen no deje fuera ninguna que te importe.
+- [ ] **Revisa las 11 fichas.**
+
+### Modalidades procesales (Chat 4, contenido elaborado, pendiente de revisión)
+
+> Quinto desarrollo de la LRJS, en el orden elegido por el usuario: bloques «Condiciones de trabajo y materia electoral» (5 fichas), «Seguridad Social, procedimiento de oficio y actos administrativos» (3), «Conflictos colectivos, convenios y estatutos sindicales» (3) y «Tutela de los derechos fundamentales» (1); 35 plazos. Materia electoral, procedimiento de oficio y estatutos sindicales van en ficha breve (qué es, quién demanda, plazo y recurso), como pidió el usuario. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
+
+- [x] **Arts. 138.6 y 191.2.e: remisión al art. 41 del Estatuto de los Trabajadores.**
+  - **Estado:** resuelta con criterio interpretativo (usuario, 23-10-2026): se deja el aviso con las dos remisiones literales, sin elegir apartado.
+  - **Observación:** para el recurso en las modificaciones sustanciales de carácter colectivo, el art. 138.6 remite al «apartado 4 del artículo 41» y el art. 191.2.e, al «apartado 2 del artículo 41» del Estatuto (Verificable: texto consolidado de la app).
+  - **Criterio provisional:** mantener el texto legal literal, sin corregirlo por analogía. Hoy la ficha dice «de carácter colectivo» sin elegir apartado, y en un aviso reproduce entre comillas las dos remisiones tal como están en la ley.
+  - **Opiniones aportadas por el usuario (23-10-2026):** Perplexity sostiene que el apartado 2 es el que define el carácter colectivo y que el 138.6 está desfasado (No verificable: el Estatuto no está en la app); su frase «en las colectivas no procede suplicación» se descarta porque invierte la regla. ChatGPT propone no añadir el apartado hasta verificar el origen y la evolución de ambas remisiones.
+  - **Tu respuesta:** dejar el aviso.
+
+- [x] **Arts. 125.a y 139.1.a: plazo de veinte días.**
+  - **Estado:** resuelta con criterio de literalidad normativa (usuario, 23-10-2026, con las opiniones de Perplexity y ChatGPT que aporta).
+  - **Observación:** los arts. 125.a (vacaciones) y 139.1.a (conciliación) dicen «veinte días» sin calificarlos como hábiles; el art. 138.1 dice expresamente «veinte días hábiles» (Verificable).
+  - **Criterio:** reproducir literalmente el plazo de cada precepto, sin añadir «hábiles» ni equiparar los plazos por analogía. La literalidad no resuelve por sí sola el cómputo: las fichas no afirman que esos plazos sean naturales; el cómputo jurídico depende del régimen procesal aplicable.
+
+- [ ] **Revisa las 12 fichas.**
+
+### Ejecución y ejecución provisional (Chat 4, contenido elaborado, pendiente de revisión)
+
+> Cuarto desarrollo de la LRJS, en el orden elegido por el usuario: bloque «Ejecución de sentencias» (8 fichas) y «Ejecución provisional» (4 fichas); 28 plazos. Con el canon: la realización de bienes (arts. 261-267) y los anticipos de cantidades (arts. 289-293) quedan como índice, porque no los marca. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
+
+- [ ] **Remisiones a la Ley General de la Seguridad Social de 1994 (RDLeg 1/1994) en los arts. 243 y 297.** No las uso en las fichas. Pendiente de revisión individual si quieres que se citen.
+  - **Tu respuesta:**
+- [ ] **Revisa las 12 fichas.**
+
 ### Recursos (Chat 4, contenido elaborado, pendiente de revisión)
 
 > Tercer desarrollo de la LRJS, en el orden elegido por el usuario. Mapa: bloque «Recursos, audiencia al rebelde y revisión» (7 fichas) y bloque «Audiencia al demandado rebelde» en su sitio del Libro II (1 ficha). Pestaña Recursos: `lrjs/datos/recursos.json` con 9 recursos, 30 casos del selector «¿qué recurso cabe?» (LAJ, juez o tribunal, sentencias) y el test «Ponte a prueba». Las fichas de despido y de sentencia llevan ya botones a sus recursos. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
@@ -369,8 +405,7 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > Segundo desarrollo de la LRJS, en el orden elegido por el usuario: bloque «Conciliación o mediación previa y vía administrativa» (arts. 63-73, 2 fichas) y bloque «Proceso ordinario y monitorio» (arts. 76-102, 9 fichas); 39 plazos en total. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
 
-- [ ] **Ley 29/1998 sin enlace.** La ficha de medidas cautelares (art. 79) nombra la Ley 29/1998, de 13 de julio, reguladora de la Jurisdicción Contencioso-Administrativa, tal como la cita la LRJS, pero sin enlace: su referencia en el BOE no sale de ningún texto de la app ni de tu plataforma, y no la pongo de memoria. Si me das la referencia (o subes su PDF, que además es la ley procesal administrativa que estás valorando), añado el enlace.
-  - **Tu respuesta:**
+- [x] **Ley 29/1998: enlace puesto (23-10-2026).** El usuario subió su PDF consolidado (`fuentes/LJCA_BOE-A-1998-16718.pdf`, última modificación 03-01-2025); la referencia `BOE-A-1998-16718` sale de su primera página. Enlazada en las fichas de medidas cautelares (art. 79) y de ejecución frente a la Administración (art. 287).
 - [ ] **Ley del Estatuto del trabajo autónomo:** los arts. 63, 65 y 68 la citan; en las fichas no la nombro porque no orienta en el trámite. Dime si la quieres con enlace.
   - **Tu respuesta:**
 - [ ] **Revisa las 11 fichas.**

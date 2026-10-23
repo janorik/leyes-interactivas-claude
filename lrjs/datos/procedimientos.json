@@ -5,68 +5,214 @@
    "nombre": "Jurisdicción, competencia y partes",
    "bloque": "lrjs",
    "grupo": "Libro I · Parte general",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Jurisdicción, competencia (qué órgano y dónde), cuestiones de competencia, capacidad y legitimación, representación y defensa, y el FOGASA. La abstención y recusación queda como índice.",
    "ambito": {
     "corto": "Arts. 1 a 24",
     "texto": "TÍTULO I. Del ejercicio de la potestad jurisdiccional · TÍTULO II. De las partes procesales",
     "articulos": [
      "1"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "10",
+      "texto": "a elección del demandante"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
+     "fase": "Jurisdicción: qué va a lo social y qué no",
+     "subtitulo": "Rama social del Derecho · materias incluidas (art. 2) · materias excluidas (art. 3)",
+     "descripcion": "Los juzgados y tribunales sociales conocen de las pretensiones de la rama social del Derecho, individuales y colectivas: materias laborales y de Seguridad Social, y la impugnación de actos de las Administraciones en esas materias. El art. 2 enumera los litigios incluidos: entre empresarios y trabajadores por el contrato de trabajo; daños sufridos en el trabajo o por accidente laboral, incluida la acción directa contra la aseguradora; cooperativas y sociedades laborales con sus socios trabajadores; autónomos económicamente dependientes; prevención de riesgos, y otros. El art. 3 excluye, entre otras, la impugnación de reglamentos, ciertas cuestiones de prevención entre empresarios y la libertad sindical y la huelga de los funcionarios.",
+     "articulos": [
+      "1",
+      "2",
+      "3"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Un trabajador sufre un accidente laboral y quiere reclamar a la aseguradora",
+       "entonces": "Es competencia social, incluida la acción directa contra la aseguradora.",
+       "articulos": [
+        "2"
+       ],
+       "literal": {
+        "articulo": "2",
+        "texto": "incluida la acción directa contra la aseguradora"
+       }
+      },
+      {
+       "si": "Se discute la libertad sindical o la huelga de funcionarios públicos",
+       "entonces": "No es competencia social.",
+       "articulos": [
+        "3"
+       ],
+       "literal": {
+        "articulo": "3",
+        "texto": "De la tutela de los derechos de libertad sindical y del derecho de huelga relativa a los funcionarios públicos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿De qué conocen, en general, los órganos del orden social?",
+      "a": "De las pretensiones de la rama social del Derecho, individuales y colectivas, laborales y de Seguridad Social, y de la impugnación de los actos de las Administraciones en esas materias.",
+      "articulos": [
+       "1"
+      ],
+      "literal": {
+       "articulo": "1",
+       "texto": "conocerán de las pretensiones que se promuevan dentro de la rama social del Derecho"
+      }
+     },
+     "conexiones": [
+      "1",
+      "2",
+      "3"
+     ],
+     "continua_en": [],
      "id": "generales-1",
-     "fase": "De la jurisdicción",
-     "subtitulo": "TÍTULO I · CAPÍTULO I · arts. 1 a 3",
-     "descripcion": "",
-     "articulos": [
-      "1",
-      "3"
-     ],
-     "rango": [
-      "1",
-      "3"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": []
     },
     {
-     "id": "generales-4",
-     "fase": "De la competencia",
-     "subtitulo": "TÍTULO I · CAPÍTULO II · arts. 4 a 11",
-     "descripcion": "",
+     "fase": "Competencia: qué órgano y dónde se demanda",
+     "subtitulo": "Juzgado, TSJ, Audiencia Nacional o Supremo · lugar de trabajo o domicilio del demandado",
+     "descripcion": "Los Juzgados de lo Social conocen en única instancia de todo, salvo lo atribuido a otros órganos. Las Salas de lo Social de los TSJ conocen en única instancia de conflictos colectivos, convenios y despidos colectivos de ámbito superior a un juzgado y no superior a la comunidad autónoma, y de la suplicación. La Sala de lo Social de la Audiencia Nacional, de esos mismos asuntos cuando superan una comunidad autónoma. La Sala de lo Social del Tribunal Supremo, de la casación, la revisión y el error judicial. Territorialmente, por regla general, el juzgado del lugar de prestación de servicios o del domicilio del demandado, a elección del demandante. La falta de jurisdicción o competencia se aprecia de oficio, oyendo a las partes, y suspende la caducidad.",
      "articulos": [
       "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
       "11"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Audiencia a las partes antes de declarar de oficio la falta de jurisdicción o competencia",
+       "plazo": "3 días (común)",
+       "articulo": "5",
+       "literal": "en plazo común de tres días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "¿Dónde demanda el trabajador?",
+       "entonces": "Por regla general, en el juzgado del lugar de prestación de servicios o en el del domicilio del demandado, a su elección; el art. 10 añade reglas para otros supuestos.",
+       "articulos": [
+        "10"
+       ],
+       "literal": {
+        "articulo": "10",
+        "texto": "será juzgado competente el del lugar de prestación de los servicios o el del domicilio del demandado, a elección del demandante"
+       }
+      },
+      {
+       "si": "Se demanda a una Administración que es la empleadora",
+       "entonces": "Juzgado del lugar de prestación de servicios o del domicilio del demandante, a su elección, con las salvedades que el propio art. 10 enumera.",
+       "articulos": [
+        "10"
+       ],
+       "literal": {
+        "articulo": "10",
+        "texto": "el del lugar de prestación de los servicios o el del domicilio del demandante, a elección de éste"
+       }
+      },
+      {
+       "si": "El juzgado se declara incompetente y la acción caduca",
+       "entonces": "La caducidad se suspende desde la demanda hasta que sea firme el auto.",
+       "articulos": [
+        "5"
+       ],
+       "literal": {
+        "articulo": "5",
+        "texto": "se entenderá suspendida desde la presentación de la demanda hasta que el auto que declare la falta de jurisdicción o de competencia sea firme"
+       }
+      },
+      {
+       "si": "Aparece una cuestión penal por falsedad de un documento",
+       "entonces": "Solo suspende el plazo para resolver si es indispensable para decidir.",
+       "articulos": [
+        "4"
+       ],
+       "literal": {
+        "articulo": "4",
+        "texto": "las cuestiones prejudiciales penales suspenderán el plazo para adoptar la debida decisión sólo cuando se basen en falsedad documental"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quién conoce en instancia de un despido colectivo de ámbito autonómico impugnado por los representantes?",
+      "a": "La Sala de lo Social del Tribunal Superior de Justicia (si supera la comunidad autónoma, la Audiencia Nacional).",
+      "articulos": [
+       "7",
+       "8"
+      ],
+      "literal": {
+       "articulo": "7",
+       "texto": "Conocerán en única instancia de los procesos de despido colectivo impugnados por los representantes de los trabajadores"
+      }
+     },
+     "conexiones": [
       "4",
-      "11"
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "124"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion"
+     ],
+     "continua_en": [],
+     "id": "generales-4"
     },
     {
+     "fase": "Cuestiones de competencia (ficha breve)",
+     "subtitulo": "Declinatoria como excepción · la caducidad se suspende",
+     "descripcion": "Las cuestiones de competencia se rigen por la LEC con dos reglas propias: la declinatoria se plantea como excepción y se resuelve en la sentencia, sin suspender el proceso; y si se estima, el demandante vuelve a demandar ante el órgano competente, con la caducidad suspendida hasta que esa sentencia sea firme. Las cuestiones entre órganos sociales las decide el superior común; no caben entre órganos subordinados entre sí.",
+     "aviso": "Se tramitan conforme a la [[Ley de Enjuiciamiento Civil|https://www.boe.es/buscar/act.php?id=BOE-A-2000-323]] (también en esta app), con estas especialidades.",
+     "articulos": [
+      "13",
+      "14"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Se estima la declinatoria y la acción está sujeta a caducidad",
+       "entonces": "La caducidad queda suspendida desde la demanda hasta la firmeza de la sentencia; se demanda ante el órgano competente.",
+       "articulos": [
+        "14"
+       ],
+       "literal": {
+        "articulo": "14",
+        "texto": "si la acción estuviese sometida a plazo de caducidad se entenderá suspendida"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo se plantea la declinatoria en el proceso social?",
+      "a": "Como excepción, que se resuelve en la sentencia sin suspender el curso de los autos.",
+      "articulos": [
+       "14"
+      ],
+      "literal": {
+       "articulo": "14",
+       "texto": "Las declinatorias se propondrán como excepciones y serán resueltas previamente en la sentencia"
+      }
+     },
+     "conexiones": [
+      "13",
+      "14"
+     ],
+     "continua_en": [],
      "id": "generales-12",
-     "fase": "De los conflictos de competencia y de las cuestiones de competencia",
-     "subtitulo": "TÍTULO I · CAPÍTULO III · arts. 12 a 14",
-     "descripcion": "",
-     "articulos": [
-      "12",
-      "14"
-     ],
-     "rango": [
-      "12",
-      "14"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": []
     },
     {
      "id": "generales-15",
@@ -85,55 +231,189 @@
      "esqueleto": true
     },
     {
+     "fase": "Capacidad y legitimación",
+     "subtitulo": "Menores de 16 a 18 años · sindicatos con implantación suficiente",
+     "descripcion": "Puede comparecer quien está en el pleno ejercicio de sus derechos civiles. Los trabajadores de 16 a 18 años tienen capacidad procesal para lo derivado de su contrato y de la Seguridad Social cuando pueden contratar sin autorización o la tienen. Por las personas jurídicas, las comunidades de bienes y los grupos sin personalidad comparecen quienes los representan o gestionan. Están legitimados los titulares de un derecho o interés legítimo; los sindicatos con implantación suficiente, en los procesos con intereses colectivos vinculados a ellos, y el Ministerio Fiscal en los casos de la ley.",
+     "articulos": [
+      "16",
+      "17"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Un sindicato quiere actuar en un pleito con intereses colectivos",
+       "entonces": "Puede, si tiene implantación suficiente y vínculo con el objeto del pleito.",
+       "articulos": [
+        "17"
+       ],
+       "literal": {
+        "articulo": "17",
+        "texto": "Los sindicatos con implantación suficiente en el ámbito del conflicto están legitimados"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede demandar por sí mismo un trabajador de 17 años?",
+      "a": "Sí, para lo derivado de su contrato y de la Seguridad Social, si puede contratar sin autorización o la ha obtenido.",
+      "articulos": [
+       "16"
+      ],
+      "literal": {
+       "articulo": "16",
+       "texto": "Tendrán capacidad procesal los trabajadores mayores de dieciséis años y menores de dieciocho"
+      }
+     },
+     "conexiones": [
+      "16",
+      "17"
+     ],
+     "continua_en": [],
      "id": "generales-16",
-     "fase": "De la capacidad y legitimación procesal",
-     "subtitulo": "TÍTULO II · CAPÍTULO I · arts. 16 a 17",
-     "descripcion": "",
-     "articulos": [
-      "16",
-      "17"
-     ],
-     "rango": [
-      "16",
-      "17"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": []
     },
     {
+     "fase": "Representación y defensa: ¿hace falta abogado?",
+     "subtitulo": "Facultativo en la instancia · abogado o graduado social en suplicación · abogado en casación",
+     "descripcion": "Las partes pueden comparecer por sí mismas o dar su representación a abogado, procurador, graduado social o cualquier persona capaz. En la instancia la defensa es facultativa; en suplicación hace falta abogado o graduado social, y en casación y ante el Tribunal Supremo, abogado. Si el demandante quiere ir con profesional, lo dice en la demanda; el demandado lo comunica en los 2 días siguientes a la citación, y el demandante puede entonces designar el suyo. Con más de diez demandantes hay que nombrar un representante común. Los sindicatos pueden actuar por sus afiliados, que se presume que lo autorizan.",
+     "articulos": [
+      "18",
+      "19",
+      "20",
+      "21"
+     ],
+     "plazos": [
+      {
+       "acto": "El demandado comunica que irá con abogado o graduado social",
+       "plazo": "2 días desde su citación",
+       "articulo": "21",
+       "literal": "dentro de los dos días siguientes al de su citación para el juicio"
+      },
+      {
+       "acto": "Más de diez actores o demandados tras acumular: comparecer para nombrar representante común",
+       "plazo": "En 4 días",
+       "articulo": "19",
+       "literal": "les citará de comparecencia dentro de los cuatro días siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "¿Hace falta abogado para recurrir?",
+       "entonces": "En suplicación, abogado o graduado social; en casación y ante el Supremo, abogado.",
+       "articulos": [
+        "21"
+       ],
+       "literal": {
+        "articulo": "21",
+        "texto": "En el recurso de casación y en las actuaciones procesales ante el Tribunal Supremo será preceptiva la defensa de abogado."
+       }
+      },
+      {
+       "si": "Demandan juntos más de diez trabajadores",
+       "entonces": "Deben nombrar un representante común (abogado, procurador, graduado social, uno de ellos o un sindicato).",
+       "articulos": [
+        "19"
+       ],
+       "literal": {
+        "articulo": "19",
+        "texto": "éstos deberán designar un representante común"
+       }
+      },
+      {
+       "si": "El demandante no anunció en la demanda que iría con profesional",
+       "entonces": "Renuncia a valerse de él en el juicio (salvo que lo designe tras el anuncio del demandado).",
+       "articulos": [
+        "21"
+       ],
+       "literal": {
+        "articulo": "21",
+        "texto": "La falta de cumplimiento de estos requisitos supone la renuncia de la parte al derecho de valerse en el acto de juicio de abogado"
+       }
+      },
+      {
+       "si": "Un sindicato demanda en nombre de un afiliado",
+       "entonces": "Debe acreditar la afiliación y la comunicación; la autorización se presume.",
+       "articulos": [
+        "20"
+       ],
+       "literal": {
+        "articulo": "20",
+        "texto": "La autorización se presumirá concedida salvo declaración en contrario del afiliado."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Es obligatorio ir con abogado al juicio en el Juzgado de lo Social?",
+      "a": "No: en la instancia la defensa por abogado o la representación por graduado social son facultativas.",
+      "articulos": [
+       "21"
+      ],
+      "literal": {
+       "articulo": "21",
+       "texto": "La defensa por abogado y la representación técnica por graduado social colegiado tendrá carácter facultativo en la instancia."
+      }
+     },
+     "conexiones": [
+      "18",
+      "19",
+      "20",
+      "21",
+      "80",
+      "81"
+     ],
+     "continua_en": [
+      "ordinario"
+     ],
      "id": "generales-18",
-     "fase": "De la representación y defensa procesales",
-     "subtitulo": "TÍTULO II · CAPÍTULO II · arts. 18 a 22",
-     "descripcion": "",
-     "articulos": [
-      "18",
-      "22"
-     ],
-     "rango": [
-      "18",
-      "22"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": []
     },
     {
-     "id": "generales-23",
-     "fase": "De la intervención y llamada a juicio del Fondo de Garantía Salarial",
-     "subtitulo": "TÍTULO II · CAPÍTULO III · arts. 23 a 24",
-     "descripcion": "",
+     "fase": "Fondo de Garantía Salarial (ficha breve)",
+     "subtitulo": "Cuándo se le cita · puede ser parte en cualquier momento",
+     "descripcion": "El FOGASA puede comparecer como parte en cualquier momento en los procesos de los que puedan derivarse prestaciones de garantía salarial, sin que el proceso retroceda. Se le cita como parte cuando la empresa está en concurso, es insolvente o ha desaparecido. Tiene plenas facultades: excepciones, prueba y recursos, y puede impugnar laudos, conciliaciones, allanamientos y transacciones. Si paga antes de la ejecución, se subroga en los derechos de los trabajadores.",
      "articulos": [
       "23",
       "24"
      ],
-     "rango": [
-      "23",
-      "24"
+     "plazos": [
+      {
+       "acto": "Trabajadores con crédito no cubierto por el FOGASA: constituirse como ejecutantes",
+       "plazo": "15 días",
+       "articulo": "24",
+       "literal": "se les ofrecerá la posibilidad de constituirse como ejecutantes en el plazo de quince días"
+      }
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "La empresa está en concurso, es insolvente o ha desaparecido",
+       "entonces": "El LAJ cita como parte al FOGASA.",
+       "articulos": [
+        "23"
+       ],
+       "literal": {
+        "articulo": "23",
+        "texto": "el secretario judicial citará como parte al Fondo de Garantía Salarial"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hace retroceder el proceso la intervención del FOGASA?",
+      "a": "No: puede comparecer en cualquier fase sin que el proceso retroceda ni se detenga.",
+      "articulos": [
+       "23"
+      ],
+      "literal": {
+       "articulo": "23",
+       "texto": "sin que tal intervención haga retroceder ni detener el curso de las actuaciones"
+      }
+     },
+     "conexiones": [
+      "23",
+      "24",
+      "276"
+     ],
+     "continua_en": [],
+     "id": "generales-23",
+     "recursos_rel": []
     }
    ]
   },
@@ -142,34 +422,92 @@
    "nombre": "Acumulación de acciones, procesos, recursos y ejecuciones",
    "bloque": "lrjs",
    "grupo": "Libro I · Parte general",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Lo que se usa a diario de la acumulación: requisitos, acciones que no se acumulan y despido con extinción del art. 50 ET. La acumulación de procesos entre juzgados, de recursos y de ejecuciones queda como índice.",
    "ambito": {
     "corto": "Arts. 25 a 41",
     "texto": "CAPÍTULO I. De la acumulación de acciones, procesos y recursos · CAPÍTULO II. De la acumulación de ejecuciones",
     "articulos": [
      "25"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "25",
+      "texto": "siempre que todas ellas puedan tramitarse ante el mismo juzgado o tribunal"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "acumulacion-25",
-     "fase": "Acumulación de acciones",
-     "subtitulo": "CAPÍTULO I · Sección 1.ª · arts. 25 a 27",
-     "descripcion": "",
+     "fase": "Acumulación de acciones (lo que se usa a diario)",
+     "subtitulo": "Requisitos · el despido no se acumula · despido y extinción del art. 50 ET juntos",
+     "descripcion": "Se pueden acumular en una demanda todas las acciones contra el mismo demandado, aunque procedan de títulos distintos, si las conoce el mismo juzgado; y las de varios demandantes o contra varios demandados si tienen la misma causa de pedir. Pero el despido y las demás extinciones, las modificaciones sustanciales, vacaciones, materia electoral, conciliación familiar, convenios, sanciones, tutela de derechos fundamentales y trabajo a distancia no se acumulan a otras acciones (salvo los daños derivados). Sí pueden ir juntos el despido y la extinción por voluntad del trabajador (art. 50 ET); si se demandan por separado, el segundo proceso se acumula al primero. En accidentes de trabajo se acumulan todas las reclamaciones de daños por el mismo hecho.",
+     "aviso": "El art. 50 citado es del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]].",
      "articulos": [
       "25",
-      "27"
-     ],
-     "rango": [
-      "25",
-      "27"
+      "26",
+      "32"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Se quiere acumular un despido con otra reclamación",
+       "entonces": "No se puede, salvo la de daños derivados (y las excepciones del propio art. 26).",
+       "articulos": [
+        "26"
+       ],
+       "literal": {
+        "articulo": "26",
+        "texto": "no podrán acumularse a otras en un mismo juicio, salvo la de responsabilidad por daños derivados"
+       }
+      },
+      {
+       "si": "El trabajador pide la extinción por el art. 50 ET y además le despiden",
+       "entonces": "Despido y extinción pueden ir en la misma demanda; si van por separado, la posterior se acumula a la primera.",
+       "articulos": [
+        "26",
+        "32"
+       ],
+       "literal": {
+        "articulo": "32",
+        "texto": "la demanda que se promueva posteriormente se acumulará a la primera"
+       }
+      },
+      {
+       "si": "Varias reclamaciones de daños por el mismo accidente de trabajo",
+       "entonces": "Se acumulan todas, incluso contra aseguradoras y terceros.",
+       "articulos": [
+        "25"
+       ],
+       "literal": {
+        "articulo": "25",
+        "texto": "se podrán acumular todas las pretensiones de resarcimiento de daños y perjuicios derivadas de un mismo hecho"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Despido y extinción por el art. 50 ET en procesos separados: ¿qué resuelve primero la sentencia?",
+      "a": "Si se fundan en la misma situación de conflicto, primero la acción que esté en la base del conflicto; si las causas son independientes, primero la que nació antes.",
+      "articulos": [
+       "32"
+      ],
+      "literal": {
+       "articulo": "32",
+       "texto": "dando respuesta en primer lugar a la acción que considere que está en la base de la situación de conflicto"
+      }
+     },
+     "conexiones": [
+      "25",
+      "26",
+      "28",
+      "32",
+      "103"
+     ],
+     "continua_en": [
+      "despido"
+     ],
+     "id": "acumulacion-25",
+     "recursos_rel": []
     },
     {
      "id": "acumulacion-28",
@@ -245,85 +583,300 @@
    "nombre": "Actos procesales, resoluciones y comunicaciones",
    "bloque": "lrjs",
    "grupo": "Libro I · Parte general",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Días hábiles y presentación de escritos, resoluciones (incluidas las orales), comunicaciones y los principios y deberes de buena fe. El resto de las actuaciones queda como índice.",
    "ambito": {
     "corto": "Arts. 42 a 75",
     "texto": "TÍTULO IV. De los actos procesales · TÍTULO VI. De los principios del proceso y de los deberes procesales",
     "articulos": [
      "42"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "43",
+      "texto": "Las actuaciones procesales deberán practicarse en días y horas hábiles."
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
+     "fase": "Días hábiles y presentación de escritos",
+     "subtitulo": "Agosto y Navidad inhábiles, salvo despido y urgentes · escritos hasta las 15 h del día siguiente",
+     "descripcion": "Las actuaciones se hacen en días y horas hábiles, y los plazos son perentorios e improrrogables. Agosto y del 24 de diciembre al 6 de enero son inhábiles, salvo en despido y extinciones, movilidad, modificación sustancial, suspensión y reducción de jornada, conciliación familiar, altas médicas, vacaciones, materia electoral, conflictos colectivos, convenios y tutela de derechos fundamentales (en la declaración, el recurso y la ejecución), y para medidas cautelares y actuaciones urgentes. En violencia de género esos días son hábiles. Un escrito sujeto a plazo puede presentarse hasta las 15 horas del día hábil siguiente al vencimiento; nunca en el juzgado de guardia.",
+     "articulos": [
+      "43",
+      "45"
+     ],
+     "plazos": [
+      {
+       "acto": "Presentar un escrito sujeto a plazo",
+       "plazo": "Hasta las 15 h del día hábil siguiente al vencimiento",
+       "articulo": "45",
+       "literal": "podrá efectuarse hasta las quince horas del día hábil siguiente al del vencimiento del plazo"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Un despido en agosto",
+       "entonces": "Agosto es hábil para el despido y las demás modalidades exceptuadas.",
+       "articulos": [
+        "43"
+       ],
+       "literal": {
+        "articulo": "43",
+        "texto": "serán inhábiles, salvo en las modalidades procesales de despido"
+       }
+      },
+      {
+       "si": "Una reclamación de cantidad en agosto",
+       "entonces": "Agosto es inhábil: no corre el plazo.",
+       "articulos": [
+        "43"
+       ],
+       "literal": {
+        "articulo": "43",
+        "texto": "Los días del mes de agosto y los días que median entre el 24 de diciembre y el 6 de enero del año siguiente, ambos inclusive, serán inhábiles"
+       }
+      },
+      {
+       "si": "Se quiere presentar el escrito en el juzgado de guardia",
+       "entonces": "No se admite en el orden social.",
+       "articulos": [
+        "45"
+       ],
+       "literal": {
+        "articulo": "45",
+        "texto": "En ningún caso se admitirá la presentación de escritos dirigidos al orden social en el juzgado que preste el servicio de guardia."
+       }
+      },
+      {
+       "si": "Acciones laborales por violencia de género",
+       "entonces": "Agosto y Navidad son hábiles.",
+       "articulos": [
+        "43"
+       ],
+       "literal": {
+        "articulo": "43",
+        "texto": "Serán hábiles el mes de agosto"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se pueden prorrogar los plazos procesales en el proceso social?",
+      "a": "No: salvo los plazos para dictar resolución, son perentorios e improrrogables.",
+      "articulos": [
+       "43"
+      ],
+      "literal": {
+       "articulo": "43",
+       "texto": "todos los plazos y términos son perentorios e improrrogables"
+      }
+     },
+     "conexiones": [
+      "43",
+      "44",
+      "45"
+     ],
+     "continua_en": [],
      "id": "actos-42",
-     "fase": "De las actuaciones procesales",
-     "subtitulo": "TÍTULO IV · CAPÍTULO I · arts. 42 a 48",
-     "descripcion": "",
-     "articulos": [
-      "42",
-      "48"
-     ],
-     "rango": [
-      "42",
-      "48"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": []
     },
     {
-     "id": "actos-49",
-     "fase": "De las resoluciones procesales",
-     "subtitulo": "TÍTULO IV · CAPÍTULO II · arts. 49 a 52",
-     "descripcion": "",
+     "fase": "Resoluciones: clases, sentencias y autos orales",
+     "subtitulo": "Providencias, autos y sentencias; diligencias y decretos · sentencia de viva voz",
+     "descripcion": "Jueces y tribunales resuelven por providencias, autos y sentencias; el LAJ, por diligencias y decretos. En el juicio pueden dictarse resoluciones orales, que se documentan en el acta. Al terminar el juicio el juez puede dictar sentencia de viva voz, que queda grabada y se redacta después; también puede aprobar así un allanamiento total. Si no intervienen abogado ni graduado social, la sentencia ha de ser escrita. Los autos de los incidentes también pueden dictarse oralmente. Toda resolución indica si es firme o qué recurso cabe, con su plazo, órgano, depósitos y consignaciones.",
      "articulos": [
       "49",
-      "52"
-     ],
-     "rango": [
-      "49",
+      "50",
+      "51",
       "52"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Sentencia oral y todas las partes, asistidas, dicen que no recurren",
+       "entonces": "Se declara firme en el acto. Si no, el plazo para recurrir corre desde la notificación de la sentencia redactada.",
+       "articulos": [
+        "50"
+       ],
+       "literal": {
+        "articulo": "50",
+        "texto": "se declarará, en el mismo acto, la firmeza de la resolución"
+       }
+      },
+      {
+       "si": "No intervienen abogado ni graduado social",
+       "entonces": "La sentencia tiene que ser escrita.",
+       "articulos": [
+        "50"
+       ],
+       "literal": {
+        "articulo": "50",
+        "texto": "la resolución que se dicte tendrá que ser necesariamente escrita"
+       }
+      },
+      {
+       "si": "Incidente durante el proceso",
+       "entonces": "El juez puede resolverlo con un auto oral al terminar la comparecencia.",
+       "articulos": [
+        "51"
+       ],
+       "literal": {
+        "articulo": "51",
+        "texto": "podrá dictar verbalmente autos al término de la comparecencia"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué resoluciones dicta el LAJ en el proceso social?",
+      "a": "Diligencias y decretos.",
+      "articulos": [
+       "49"
+      ],
+      "literal": {
+       "articulo": "49",
+       "texto": "Los secretarios judiciales resolverán por medio de diligencias y decretos"
+      }
+     },
+     "conexiones": [
+      "49",
+      "50",
+      "51",
+      "52",
+      "97"
+     ],
+     "recursos_rel": [
+      "reposicion-laj",
+      "reposicion-juez",
+      "revision"
+     ],
+     "continua_en": [
+      "recursos"
+     ],
+     "id": "actos-49"
     },
     {
+     "fase": "Comunicaciones y notificaciones (ficha breve)",
+     "subtitulo": "Domicilio designado · correo certificado · edictos · el día siguiente",
+     "descripcion": "Las comunicaciones siguen la LEC con especialidades, agotando todas las vías para que sean efectivas. En el primer escrito cada parte designa domicilio, teléfono y correo electrónico; lo intentado allí es válido mientras no se cambie, y mantenerlo al día es carga de la parte. Fuera de la oficina se notifica por correo certificado con acuse de recibo, o por otros medios si se facilitan. Solo tras averiguar el domicilio sin éxito se acude a los edictos. Las notificaciones electrónicas se tienen por hechas el día siguiente a su recepción.",
+     "aviso": "Se aplican las normas de comunicación de la [[Ley de Enjuiciamiento Civil|https://www.boe.es/buscar/act.php?id=BOE-A-2000-323]] (también en esta app), con estas especialidades.",
+     "articulos": [
+      "53",
+      "56",
+      "59",
+      "60"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Se notifica en el domicilio designado y no se recoge",
+       "entonces": "La notificación es válida mientras la parte no comunique otro domicilio.",
+       "articulos": [
+        "53"
+       ],
+       "literal": {
+        "articulo": "53",
+        "texto": "las notificaciones en ellos intentadas sin efecto serán válidas hasta tanto no sean facilitados otros datos alternativos"
+       }
+      },
+      {
+       "si": "No se encuentra al demandado",
+       "entonces": "Se averigua su domicilio en registros y organismos; si no aparece, edictos.",
+       "articulos": [
+        "59"
+       ],
+       "literal": {
+        "articulo": "59",
+        "texto": "se consignará por diligencia"
+       }
+      },
+      {
+       "si": "Notificación por medios electrónicos",
+       "entonces": "Se tiene por hecha el día siguiente a la recepción.",
+       "articulos": [
+        "60"
+       ],
+       "literal": {
+        "articulo": "60",
+        "texto": "se tendrán por realizados el día siguiente a la fecha de recepción"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo se notifica fuera de la oficina judicial?",
+      "a": "Por correo certificado con acuse de recibo (o por otros medios si los interesados los facilitan).",
+      "articulos": [
+       "56"
+      ],
+      "literal": {
+       "articulo": "56",
+       "texto": "por correo certificado con acuse de recibo"
+      }
+     },
+     "conexiones": [
+      "53",
+      "56",
+      "59",
+      "60"
+     ],
+     "continua_en": [],
      "id": "actos-53",
-     "fase": "De los actos de comunicación",
-     "subtitulo": "TÍTULO IV · CAPÍTULO III · arts. 53 a 62",
-     "descripcion": "",
-     "articulos": [
-      "53",
-      "62"
-     ],
-     "rango": [
-      "53",
-      "62"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": []
     },
     {
-     "id": "actos-74",
-     "fase": "De los principios del proceso y de los deberes procesales",
-     "subtitulo": "TÍTULO VI · arts. 74 a 75",
-     "descripcion": "",
+     "fase": "Principios del proceso y buena fe (ficha breve)",
+     "subtitulo": "Inmediación, oralidad, concentración y celeridad · multa de 600 a 6.000 €",
+     "descripcion": "El proceso social se interpreta según los principios de inmediación, oralidad, concentración y celeridad. Los jueces rechazan las peticiones dilatorias o abusivas. Todos deben actuar de buena fe: si no, o si las pretensiones son temerarias, el juez puede imponer, por auto y motivadamente, una multa de 600 a 6.000 €, sin superar un tercio de la cuantía del litigio. El multado puede pedir audiencia en justicia y luego recurrir en alzada.",
      "articulos": [
       "74",
       "75"
      ],
-     "rango": [
-      "74",
-      "75"
+     "plazos": [
+      {
+       "acto": "Pedir audiencia en justicia contra la multa",
+       "plazo": "3 días desde su notificación",
+       "articulo": "75",
+       "literal": "La audiencia en justicia se pedirá en el plazo de los tres días siguientes al de la notificación de la multa"
+      },
+      {
+       "acto": "Alzada contra el auto que resuelve la audiencia",
+       "plazo": "5 días",
+       "articulo": "75",
+       "literal": "recurso de alzada en cinco días ante la Sala de Gobierno correspondiente"
+      }
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Una parte actúa de mala fe o con temeridad",
+       "entonces": "Multa de 600 a 6.000 €, sin superar la tercera parte del litigio.",
+       "articulos": [
+        "75"
+       ],
+       "literal": {
+        "articulo": "75",
+        "texto": "una multa que podrá oscilar de seiscientos a seis mil euros"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué principios rigen el proceso social?",
+      "a": "Inmediación, oralidad, concentración y celeridad.",
+      "articulos": [
+       "74"
+      ],
+      "literal": {
+       "articulo": "74",
+       "texto": "inmediación, oralidad, concentración y celeridad"
+      }
+     },
+     "conexiones": [
+      "74",
+      "75",
+      "97"
+     ],
+     "continua_en": [],
+     "id": "actos-74",
+     "recursos_rel": []
     }
    ]
   },
@@ -733,7 +1286,7 @@
      "id": "ordinario-79",
      "fase": "Medidas cautelares y embargo preventivo",
      "subtitulo": "Las de la LEC adaptadas · sin caución para el trabajador · embargo antes de la sentencia",
-     "descripcion": "Las medidas cautelares se rigen por los arts. 721 a 747 LEC, adaptados al proceso social y oídas las partes, aunque pueden anticiparse si hay urgencia. Si se impugnan actos de las Administraciones en materia laboral y de Seguridad Social, por los arts. 129 a 136 de la Ley 29/1998, reguladora de la Jurisdicción Contencioso-Administrativa. Trabajadores, beneficiarios y sindicatos no prestan caución. El juez puede acordar el embargo preventivo de bienes del demandado si este hace actos para situarse en insolvencia, de oficio o a instancia de parte o del FOGASA.",
+     "descripcion": "Las medidas cautelares se rigen por los arts. 721 a 747 LEC, adaptados al proceso social y oídas las partes, aunque pueden anticiparse si hay urgencia. Si se impugnan actos de las Administraciones en materia laboral y de Seguridad Social, por los arts. 129 a 136 de la [[Ley 29/1998, de 13 de julio, reguladora de la Jurisdicción Contencioso-administrativa|https://www.boe.es/buscar/act.php?id=BOE-A-1998-16718]]. Trabajadores, beneficiarios y sindicatos no prestan caución. El juez puede acordar el embargo preventivo de bienes del demandado si este hace actos para situarse en insolvencia, de oficio o a instancia de parte o del FOGASA.",
      "aviso": "Los arts. 721 a 747 citados son de la [[Ley de Enjuiciamiento Civil|https://www.boe.es/buscar/act.php?id=BOE-A-2000-323]] (también en esta app).",
      "articulos": [
       "79"
@@ -2032,100 +2585,424 @@
    "nombre": "Condiciones de trabajo y materia electoral",
    "bloque": "lrjs",
    "grupo": "Libro II · Proceso ordinario y modalidades",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Vacaciones, clasificación profesional, movilidad y modificación de condiciones, trabajo a distancia, conciliación familiar y, en ficha breve, materia electoral.",
    "ambito": {
     "corto": "Arts. 125 a 139",
     "texto": "CAPÍTULO V. Vacaciones, materia electoral, movilidad geográfica, modificaciones sustanciales de condiciones de trabajo y derechos de conciliación de la vida personal, familiar y laboral reconocidos legal o convencionalmente",
     "articulos": [
      "125"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "126",
+      "texto": "El procedimiento será urgente y se le dará tramitación preferente."
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "condiciones-125",
      "fase": "Vacaciones",
-     "subtitulo": "CAPÍTULO V · Sección 1.ª · arts. 125 a 126",
-     "descripcion": "",
+     "subtitulo": "20 días o 2 meses antes · urgente · sentencia sin recurso",
+     "descripcion": "Sirve para fijar la fecha de disfrute de las vacaciones. Si la fecha ya está fijada (por convenio, acuerdo o decisión de la empresa), el trabajador demanda en 20 días desde que la conoce; si no lo está, al menos 2 meses antes de la fecha que pretende. Es urgente y preferente, no exige conciliación previa y la sentencia no tiene recurso. Si se discuten preferencias de otros trabajadores, también hay que demandarlos.",
      "articulos": [
       "125",
-      "126"
+      "126",
+      "64"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Demanda si la fecha ya está fijada",
+       "plazo": "20 días desde que se conoce",
+       "articulo": "125",
+       "literal": "el trabajador dispondrá de un plazo de veinte días, a partir de aquel en que tuviera conocimiento de dicha fecha"
+      },
+      {
+       "acto": "Demanda si la fecha no está fijada",
+       "plazo": "Al menos 2 meses antes de la fecha pretendida",
+       "articulo": "125",
+       "literal": "la demanda deberá presentarse, al menos, con dos meses de antelación a la fecha de disfrute pretendida por el trabajador"
+      },
+      {
+       "acto": "Vista",
+       "plazo": "En los 5 días siguientes a la admisión",
+       "articulo": "126",
+       "literal": "El acto de la vista habrá de señalarse por el secretario judicial dentro de los cinco días siguientes al de la admisión de la demanda."
+      },
+      {
+       "acto": "Sentencia (sin recurso)",
+       "plazo": "3 días",
+       "articulo": "126",
+       "literal": "La sentencia, que no tendrá recurso, deberá ser dictada en el plazo de tres días."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se discuten preferencias de otros trabajadores",
+       "entonces": "Hay que demandarlos también.",
+       "articulos": [
+        "125"
+       ],
+       "literal": {
+        "articulo": "125",
+        "texto": "Cuando el objeto del debate verse sobre preferencias atribuidas a determinados trabajadores, éstos también deberán ser demandados."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cabe recurso contra la sentencia sobre la fecha de las vacaciones?",
+      "a": "No.",
+      "articulos": [
+       "126",
+       "191"
+      ],
+      "literal": {
+       "articulo": "126",
+       "texto": "La sentencia, que no tendrá recurso"
+      }
+     },
+     "conexiones": [
+      "64",
       "125",
-      "126"
+      "126",
+      "191"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [],
+     "continua_en": [],
+     "id": "condiciones-125"
     },
     {
-     "id": "condiciones-127",
-     "fase": "Materia electoral",
-     "subtitulo": "CAPÍTULO V · Sección 2.ª · arts. 127 a 136",
-     "descripcion": "",
+     "fase": "Materia electoral (ficha breve)",
+     "subtitulo": "Qué es · quién demanda · plazo · recurso",
+     "descripcion": "Qué es: la impugnación de los laudos arbitrales sobre elecciones a representantes de los trabajadores (todo el proceso electoral, de la promoción a las actas), de la denegación del registro de actas y de las certificaciones de capacidad representativa sindical. Quién demanda: quien tenga interés legítimo, incluida la empresa (laudos); quien obtuvo algún representante (registro de actas); el sindicato interesado (certificaciones). Plazo: 3 días desde que se conoce el laudo; 10 días en los otros dos casos. Recurso: ninguno, salvo en las certificaciones de capacidad representativa, que admiten suplicación. Es urgente y no suspende el proceso electoral.",
      "articulos": [
       "127",
+      "128",
+      "129",
+      "132",
+      "133",
+      "134",
+      "135",
       "136"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Impugnar el laudo arbitral electoral",
+       "plazo": "3 días desde que se conoce",
+       "articulo": "127",
+       "literal": "en el plazo de tres días, contados desde que tuvieron conocimiento del mismo"
+      },
+      {
+       "acto": "Impugnar la denegación del registro de actas",
+       "plazo": "10 días desde la notificación",
+       "articulo": "134",
+       "literal": "El plazo de ejercicio de la acción de impugnación será de diez días"
+      },
+      {
+       "acto": "Impugnar la certificación de capacidad representativa",
+       "plazo": "10 días",
+       "articulo": "136",
+       "literal": "dentro del plazo de diez días siguientes a la expedición o denegación de la certificación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "¿Cabe recurso?",
+       "entonces": "No en los laudos ni en el registro de actas; sí suplicación en las certificaciones de capacidad representativa.",
+       "articulos": [
+        "132",
+        "136"
+       ],
+       "literal": {
+        "articulo": "136",
+        "texto": "Contra dicha resolución, que se notificará a la oficina pública y a las partes, cabrá recurso de suplicación."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se suspenden las elecciones mientras se impugna el laudo?",
+      "a": "No, salvo que el juez lo acuerde motivadamente a petición de parte.",
+      "articulos": [
+       "132"
+      ],
+      "literal": {
+       "articulo": "132",
+       "texto": "La sustanciación de este proceso no suspenderá el desarrollo del procedimiento electoral"
+      }
+     },
+     "conexiones": [
       "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "133",
+      "134",
+      "135",
       "136"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion"
+     ],
+     "continua_en": [],
+     "id": "condiciones-127"
     },
     {
-     "id": "condiciones-137",
      "fase": "Clasificación profesional",
-     "subtitulo": "CAPÍTULO V · Sección 3.ª · art. 137",
-     "descripcion": "",
+     "subtitulo": "Informe del comité y de la Inspección · sin recurso salvo cuantía",
+     "descripcion": "Para reclamar una categoría o grupo profesional superior. La demanda va con informe del comité de empresa o los delegados de personal sobre las funciones alegadas (si no lo emiten en 15 días, basta acreditar que se pidió), y el juzgado pide informe a la Inspección de Trabajo. Pueden acumularse las diferencias salariales. Contra la sentencia no hay recurso, salvo que esas diferencias alcancen la cuantía de la suplicación.",
      "articulos": [
       "137"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Informe del comité o los delegados",
+       "plazo": "15 días",
+       "articulo": "137",
+       "literal": "En el caso de que estos órganos no hubieran emitido el informe en el plazo de quince días"
+      },
+      {
+       "acto": "Informe de la Inspección de Trabajo",
+       "plazo": "15 días",
+       "articulo": "137",
+       "literal": "deberá emitirse en el plazo de quince días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se reclaman también diferencias salariales",
+       "entonces": "Se acumulan; si alcanzan la cuantía de la suplicación, cabe recurso.",
+       "articulos": [
+        "137",
+        "191"
+       ],
+       "literal": {
+        "articulo": "137",
+        "texto": "Contra la sentencia que recaiga no se dará recurso alguno, salvo que las diferencias salariales reclamadas alcancen la cuantía requerida para el recurso de suplicación."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué hay que acompañar a la demanda de clasificación profesional?",
+      "a": "El informe del comité de empresa o de los delegados de personal sobre las funciones superiores alegadas (o acreditar que se pidió si no lo emiten en 15 días).",
+      "articulos": [
+       "137"
+      ],
+      "literal": {
+       "articulo": "137",
+       "texto": "La demanda que inicie este proceso será acompañada de informe emitido por el comité de empresa"
+      }
+     },
+     "conexiones": [
       "137",
-      "137"
+      "191"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [],
+     "continua_en": [],
+     "id": "condiciones-137"
     },
     {
-     "id": "condiciones-138",
-     "fase": "Movilidad geográfica, modificaciones sustanciales de condiciones de trabajo, trabajo a distancia, suspensión del contrato y reducción de jornada por causas económicas, técnicas, organizativas o de producción o derivadas de fuerza mayor.",
-     "subtitulo": "CAPÍTULO V · Sección 4.ª · arts. 138 a 138 bis",
-     "descripcion": "",
+     "fase": "Movilidad geográfica, modificación sustancial, suspensión y reducción de jornada; trabajo a distancia",
+     "subtitulo": "20 días hábiles · urgente · justificada, injustificada o nula",
+     "descripcion": "Los trabajadores afectados impugnan la decisión empresarial de traslado, modificación sustancial de condiciones, suspensión o reducción de jornada en 20 días hábiles desde la notificación escrita. No exige conciliación previa. Es urgente: vista en 5 días y sentencia en 5, inmediatamente ejecutiva. La sentencia declara la decisión justificada (el trabajador puede extinguir el contrato en 15 días en los casos de los arts. 40.1 y 41.3 ET), injustificada (reposición y daños) o nula (fraude, discriminación o lesión de derechos fundamentales). Sin recurso, salvo las medidas colectivas. El acceso, reversión o modificación del trabajo a distancia tiene un cauce parecido (20 días hábiles, sentencia en 3 días, sin recurso salvo daños).",
+     "aviso": "Los arts. 40, 41, 47, 51 y 59 citados son del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]]. Recurso en las modificaciones colectivas: el art. 138.6 dice «cuando tengan carácter colectivo de conformidad con el apartado 4 del artículo 41 del referido Estatuto» y el art. 191.2.e, «salvo cuando tengan carácter colectivo de conformidad con el apartado 2 del artículo 41 del referido Estatuto». La app reproduce las dos remisiones tal como están.",
      "articulos": [
       "138",
       "138 bis"
      ],
-     "rango": [
-      "138",
-      "138 bis"
+     "plazos": [
+      {
+       "acto": "Demanda contra la decisión empresarial",
+       "plazo": "20 días hábiles desde la notificación escrita (caducidad)",
+       "articulo": "138",
+       "literal": "La demanda deberá presentarse en el plazo de caducidad de los veinte días hábiles siguientes a la notificación por escrito de la decisión"
+      },
+      {
+       "acto": "Vista",
+       "plazo": "En los 5 días siguientes a la admisión",
+       "articulo": "138",
+       "literal": "El acto de la vista habrá de señalarse dentro de los cinco días siguientes al de la admisión de la demanda"
+      },
+      {
+       "acto": "Sentencia (inmediatamente ejecutiva)",
+       "plazo": "5 días",
+       "articulo": "138",
+       "literal": "La sentencia deberá ser dictada en el plazo de cinco días y será inmediatamente ejecutiva."
+      },
+      {
+       "acto": "Decisión justificada: extinguir el contrato",
+       "plazo": "15 días",
+       "articulo": "138",
+       "literal": "concediéndole al efecto el plazo de quince días"
+      },
+      {
+       "acto": "Trabajo a distancia: demanda",
+       "plazo": "20 días hábiles desde la negativa de la empresa",
+       "articulo": "138 bis",
+       "literal": "La persona trabajadora dispondrá de un plazo de veinte días hábiles"
+      }
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "La medida se declara injustificada",
+       "entonces": "Reposición en las condiciones anteriores y abono de los daños.",
+       "articulos": [
+        "138"
+       ],
+       "literal": {
+        "articulo": "138",
+        "texto": "reconocerá el derecho del trabajador a ser repuesto en sus anteriores condiciones de trabajo"
+       }
+      },
+      {
+       "si": "Se hizo en fraude, eludiendo el periodo de consultas, o es discriminatoria",
+       "entonces": "Se declara nula.",
+       "articulos": [
+        "138"
+       ],
+       "literal": {
+        "articulo": "138",
+        "texto": "Se declarará nula la decisión adoptada en fraude de Ley"
+       }
+      },
+      {
+       "si": "Después se plantea un conflicto colectivo contra la misma decisión",
+       "entonces": "El proceso individual se suspende hasta que se resuelva el colectivo.",
+       "articulos": [
+        "138",
+        "160"
+       ],
+       "literal": {
+        "articulo": "138",
+        "texto": "aquel proceso se suspenderá hasta la resolución de la demanda de conflicto colectivo"
+       }
+      },
+      {
+       "si": "¿Cabe recurso?",
+       "entonces": "No, salvo traslados y modificaciones de carácter colectivo y suspensiones o reducciones que superen los umbrales del despido colectivo.",
+       "articulos": [
+        "138",
+        "191"
+       ],
+       "literal": {
+        "articulo": "138",
+        "texto": "Contra la misma no procederá ulterior recurso, salvo en los supuestos de movilidad geográfica previstos en el apartado 2 del artículo 40"
+       }
+      },
+      {
+       "si": "¿Qué apartado del art. 41 ET define el carácter colectivo, a efectos de recurso?",
+       "entonces": "La LRJS no coincide: el art. 191.2.e remite al apartado 2 y el art. 138.6, al apartado 4. Ver el aviso.",
+       "articulos": [
+        "191",
+        "138"
+       ],
+       "literal": {
+        "articulo": "191",
+        "texto": "salvo cuando tengan carácter colectivo de conformidad con el apartado 2 del artículo 41 del referido Estatuto"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Desde cuándo corren los 20 días para impugnar una modificación sustancial?",
+      "a": "Desde la notificación por escrito de la decisión a los trabajadores o a sus representantes; sin ella no empiezan a correr.",
+      "articulos": [
+       "138"
+      ],
+      "literal": {
+       "articulo": "138",
+       "texto": "plazo que no comenzará a computarse hasta que tenga lugar dicha notificación"
+      }
+     },
+     "conexiones": [
+      "64",
+      "138",
+      "138 bis",
+      "153",
+      "160",
+      "191"
+     ],
+     "recursos_rel": [
+      "suplicacion"
+     ],
+     "continua_en": [
+      "colectivos"
+     ],
+     "id": "condiciones-138"
     },
     {
-     "id": "condiciones-139",
-     "fase": "Derechos de conciliación de la vida personal, familiar y laboral reconocidos legal o convencionalmente",
-     "subtitulo": "CAPÍTULO V · Sección 5.ª · art. 139",
-     "descripcion": "",
+     "fase": "Conciliación de la vida personal, familiar y laboral",
+     "subtitulo": "20 días desde la negativa · urgente · sin recurso salvo daños",
+     "descripcion": "Para ejercer los derechos de conciliación (adaptación o reducción de jornada y similares) cuando la empresa los niega o no acepta la propuesta. El trabajador demanda en 20 días desde la negativa y puede acumular los daños causados por la negativa o el retraso. Empresa y trabajador llevan sus propuestas a la conciliación y al juicio. Es urgente: vista en 5 días y sentencia en 3. No hay recurso, salvo que se acumulen daños por cuantía que permita la suplicación. También se usa para los derechos de la trabajadora víctima de violencia de género.",
      "articulos": [
       "139"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Demanda",
+       "plazo": "20 días desde la negativa o disconformidad de la empresa",
+       "articulo": "139",
+       "literal": "El trabajador dispondrá de un plazo de veinte días, a partir de que el empresario le comunique su negativa"
+      },
+      {
+       "acto": "Vista",
+       "plazo": "En los 5 días siguientes a la admisión",
+       "articulo": "139",
+       "literal": "El acto de la vista habrá de señalarse dentro de los cinco días siguientes al de la admisión de la demanda."
+      },
+      {
+       "acto": "Sentencia",
+       "plazo": "3 días",
+       "articulo": "139",
+       "literal": "La sentencia se dictará en el plazo de tres días."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La negativa causó perjuicios",
+       "entonces": "Pueden reclamarse en la misma demanda; la empresa se libera si cumplió al menos provisionalmente la medida.",
+       "articulos": [
+        "139"
+       ],
+       "literal": {
+        "articulo": "139",
+        "texto": "podrá acumularse la acción de daños y perjuicios causados al trabajador"
+       }
+      },
+      {
+       "si": "¿Cabe recurso?",
+       "entonces": "No, salvo que se acumulen daños con cuantía de suplicación; entonces lo resuelto sobre la conciliación es ejecutivo desde la sentencia.",
+       "articulos": [
+        "139",
+        "191"
+       ],
+       "literal": {
+        "articulo": "139",
+        "texto": "Contra la misma no procederá recurso, salvo cuando se haya acumulado pretensión de resarcimiento de perjuicios"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hace falta conciliación previa para reclamar una adaptación de jornada por conciliación familiar?",
+      "a": "No: está exceptuada (art. 64), aunque las partes llevan sus propuestas a la conciliación ante el LAJ y al juicio.",
+      "articulos": [
+       "64",
+       "139"
+      ],
+      "literal": {
+       "articulo": "64",
+       "texto": "derechos de conciliación de la vida personal, familiar y laboral a los que se refiere el artículo 139"
+      }
+     },
+     "conexiones": [
+      "64",
+      "138 bis",
       "139",
-      "139"
+      "191"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [],
+     "continua_en": [],
+     "id": "condiciones-139"
     }
    ]
   },
@@ -2134,68 +3011,269 @@
    "nombre": "Seguridad Social, procedimiento de oficio y actos administrativos",
    "bloque": "lrjs",
    "grupo": "Libro II · Proceso ordinario y modalidades",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Prestaciones de Seguridad Social, impugnación de actos administrativos laborales y, en ficha breve, procedimiento de oficio.",
    "ambito": {
     "corto": "Arts. 140 a 152",
     "texto": "CAPÍTULO VI. De las prestaciones de la Seguridad Social · CAPÍTULO VII. Del procedimiento de oficio y del de impugnación de actos administrativos en materia laboral y de Seguridad Social no prestacionales",
     "articulos": [
      "140"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "140",
+      "texto": "se acreditará haber agotado la vía administrativa correspondiente"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "seguridad-social-140",
-     "fase": "De las prestaciones de la Seguridad Social",
-     "subtitulo": "CAPÍTULO VI · arts. 140 a 147",
-     "descripcion": "",
+     "fase": "Prestaciones de Seguridad Social",
+     "subtitulo": "Vía administrativa previa · expediente · altas médicas · revisión de actos",
+     "descripcion": "En prestaciones de Seguridad Social hay que agotar antes la vía administrativa (reclamación previa), salvo en las altas médicas a los 365 días de incapacidad temporal. El juzgado pide el expediente a la entidad gestora en 10 días; si no lo envía, el juicio se celebra igual y pueden tenerse por probados los hechos del demandante difíciles de probar de otro modo. La impugnación de altas médicas es urgente, se dirige solo contra la entidad gestora y la sentencia no tiene recurso. Las entidades gestoras no pueden revisar por sí mismas sus actos declarativos de derechos en perjuicio del beneficiario: tienen que demandar (prescripción de 4 años), salvo excepciones.",
      "articulos": [
       "140",
-      "147"
+      "141",
+      "142",
+      "143",
+      "144",
+      "146",
+      "147",
+      "71"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Subsanar la falta de vía administrativa previa",
+       "plazo": "4 días",
+       "articulo": "140",
+       "literal": "dispondrá que se subsane el defecto en el plazo de cuatro días"
+      },
+      {
+       "acto": "La entidad gestora remite el expediente",
+       "plazo": "10 días",
+       "articulo": "143",
+       "literal": "en plazo de diez días"
+      },
+      {
+       "acto": "Revisión de un acto declarativo de derechos por la entidad",
+       "plazo": "4 años (prescripción)",
+       "articulo": "146",
+       "literal": "La acción de revisión a la que se refiere el apartado uno prescribirá a los cuatro años."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se impugna un alta médica",
+       "entonces": "Urgente; vista en 5 días; sentencia en 3 días, sin recurso y con efectos solo sobre esa alta.",
+       "articulos": [
+        "140"
+       ],
+       "literal": {
+        "articulo": "140",
+        "texto": "la sentencia, que no tendrá recurso, se dictará en el plazo de tres días"
+       }
+      },
+      {
+       "si": "La entidad gestora no envía el expediente",
+       "entonces": "El juicio se celebra igual; si tampoco llega tras reiterarlo, pueden tenerse por probados hechos del demandante.",
+       "articulos": [
+        "144"
+       ],
+       "literal": {
+        "articulo": "144",
+        "texto": "podrán tenerse por probados aquellos hechos alegados por el demandante"
+       }
+      },
+      {
+       "si": "La entidad quiere revisar una prestación ya reconocida en perjuicio del beneficiario",
+       "entonces": "Tiene que demandar ante el Juzgado de lo Social, salvo errores materiales, desempleo dentro del año y otras excepciones.",
+       "articulos": [
+        "146"
+       ],
+       "literal": {
+        "articulo": "146",
+        "texto": "no podrán revisar por sí mismos sus actos declarativos de derechos en perjuicio de sus beneficiarios"
+       }
+      },
+      {
+       "si": "Accidente de trabajo sin indicar la mutua o entidad",
+       "entonces": "Se requiere a la empresa el documento de cobertura en 4 días; si no, embargo preventivo.",
+       "articulos": [
+        "142"
+       ],
+       "literal": {
+        "articulo": "142",
+        "texto": "requerirá al empresario demandado para que en plazo de cuatro días presente el documento acreditativo de la cobertura de riesgo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hay recurso contra la sentencia que resuelve la impugnación de un alta médica?",
+      "a": "No.",
+      "articulos": [
+       "140",
+       "191"
+      ],
+      "literal": {
+       "articulo": "140",
+       "texto": "la sentencia, que no tendrá recurso"
+      }
+     },
+     "conexiones": [
+      "71",
       "140",
-      "147"
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "191",
+      "294"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion"
+     ],
+     "continua_en": [
+      "evitacion",
+      "provisional"
+     ],
+     "id": "seguridad-social-140"
     },
     {
-     "id": "seguridad-social-148",
-     "fase": "Del procedimiento de oficio",
-     "subtitulo": "CAPÍTULO VII · Sección 1.ª · arts. 148 a 150",
-     "descripcion": "",
+     "fase": "Procedimiento de oficio (ficha breve)",
+     "subtitulo": "Qué es · quién demanda · plazo · recurso",
+     "descripcion": "Qué es: un proceso que se inicia sin demanda de los trabajadores, a partir de resoluciones de la autoridad laboral derivadas de actas de la Inspección con perjuicio para los trabajadores, de acuerdos de suspensión, reducción o extinción que la autoridad laboral considera fraudulentos, o de actas por discriminación. Quién demanda: la autoridad laboral (demanda de oficio). Los trabajadores perjudicados son parte, pero no pueden desistir. Los hechos de la resolución hacen fe salvo prueba en contrario, y la carga de la prueba es del demandado. Plazo: subsanación en 10 días. Recurso: suplicación (art. 191.3.f). La sentencia se ejecuta siempre de oficio.",
      "articulos": [
       "148",
+      "149",
       "150"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "La autoridad laboral subsana la demanda",
+       "plazo": "10 días",
+       "articulo": "150",
+       "literal": "a fin de que sean subsanados en el término de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "¿Quién prueba?",
+       "entonces": "El demandado: los hechos de la resolución o comunicación hacen fe salvo prueba en contrario.",
+       "articulos": [
+        "150"
+       ],
+       "literal": {
+        "articulo": "150",
+        "texto": "incumbiendo toda la carga de la prueba a la parte demandada"
+       }
+      },
+      {
+       "si": "Las partes quieren conciliar",
+       "entonces": "Solo si se satisfacen todos los perjuicios causados.",
+       "articulos": [
+        "150"
+       ],
+       "literal": {
+        "articulo": "150",
+        "texto": "cuando fuera cumplidamente satisfecha la totalidad de los perjuicios causados por la infracción"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En el procedimiento de oficio, ¿puede el trabajador perjudicado desistir?",
+      "a": "No: es parte, pero no puede desistir ni pedir la suspensión.",
+      "articulos": [
+       "150"
+      ],
+      "literal": {
+       "articulo": "150",
+       "texto": "no podrán desistir ni solicitar la suspensión del proceso"
+      }
+     },
+     "conexiones": [
+      "124",
       "148",
-      "150"
+      "149",
+      "150",
+      "191"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion"
+     ],
+     "continua_en": [],
+     "id": "seguridad-social-148"
     },
     {
-     "id": "seguridad-social-151",
-     "fase": "Del procedimiento de impugnación de actos administrativos en materia laboral y de Seguridad Social excluidos los prestacionales",
-     "subtitulo": "CAPÍTULO VII · Sección 2.ª · arts. 151 a 152",
-     "descripcion": "",
+     "fase": "Impugnación de actos administrativos laborales",
+     "subtitulo": "Contra la Administración en materia laboral · reglas del proceso ordinario · suspensión cautelar",
+     "descripcion": "Las demandas contra actos de las Administraciones en materia laboral (no prestacionales) siguen el proceso ordinario, con especialidades, y supletoriamente las normas de la jurisdicción contencioso-administrativa. Hay que acreditar el agotamiento de la vía administrativa e identificar el acto impugnado y la Administración. En cualquier momento puede pedirse la suspensión del acto u otras medidas cautelares; el juez oye a las partes 3 días, salvo urgencia.",
+     "aviso": "Supletoriamente se aplica la [[Ley 29/1998, de 13 de julio, reguladora de la Jurisdicción Contencioso-administrativa|https://www.boe.es/buscar/act.php?id=BOE-A-1998-16718]].",
      "articulos": [
       "151",
-      "152"
+      "152",
+      "69"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Subsanar los requisitos de la demanda",
+       "plazo": "4 días",
+       "articulo": "151",
+       "literal": "dispondrá que se subsane el defecto en el plazo de cuatro días"
+      },
+      {
+       "acto": "Audiencia a las partes sobre la suspensión del acto",
+       "plazo": "3 días",
+       "articulo": "152",
+       "literal": "una vez oídas las partes por tres días"
+      },
+      {
+       "acto": "Paralización de trabajos por riesgo grave: audiencia preliminar",
+       "plazo": "En 48 horas",
+       "articulo": "152",
+       "literal": "dentro de las cuarenta y ocho horas siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La medida cautelar perjudicaría gravemente intereses generales o de terceros",
+       "entonces": "Puede denegarse.",
+       "articulos": [
+        "152"
+       ],
+       "literal": {
+        "articulo": "152",
+        "texto": "La medida cautelar podrá denegarse cuando de ésta pudiera seguirse perturbación grave de los intereses generales o de terceros"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué normas se aplican supletoriamente a la impugnación de actos administrativos laborales?",
+      "a": "Las de la jurisdicción contencioso-administrativa, en lo compatible con el proceso social.",
+      "articulos": [
+       "151"
+      ],
+      "literal": {
+       "articulo": "151",
+       "texto": "En lo no expresamente previsto serán de aplicación las normas reguladoras de la jurisdicción contencioso-administrativa"
+      }
+     },
+     "conexiones": [
+      "69",
+      "70",
       "151",
-      "152"
+      "152",
+      "191"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion"
+     ],
+     "continua_en": [
+      "evitacion"
+     ],
+     "id": "seguridad-social-151"
     }
    ]
   },
@@ -2204,68 +3282,304 @@
    "nombre": "Conflictos colectivos, convenios y estatutos sindicales",
    "bloque": "lrjs",
    "grupo": "Libro II · Proceso ordinario y modalidades",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Conflicto colectivo, impugnación de convenios y, en ficha breve, estatutos sindicales y de asociaciones empresariales.",
    "ambito": {
     "corto": "Arts. 153 a 176",
     "texto": "CAPÍTULO VIII. Del proceso de conflictos colectivos · CAPÍTULO IX. De la impugnación de convenios colectivos · CAPÍTULO X. De las impugnaciones relativas a los estatutos de los sindicatos y de las asociaciones empresariales o a su modificación",
     "articulos": [
      "153"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "159",
+      "texto": "Este proceso tendrá carácter urgente."
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "colectivos-153",
-     "fase": "Del proceso de conflictos colectivos",
-     "subtitulo": "CAPÍTULO VIII · arts. 153 a 162",
-     "descripcion": "",
+     "fase": "Conflicto colectivo",
+     "subtitulo": "Interés general de un grupo · sindicatos, empresa y representantes · juicio en 5 días",
+     "descripcion": "Para demandas que afectan a intereses generales de un grupo genérico de trabajadores sobre la aplicación e interpretación de una norma, un convenio, un pacto, una decisión o práctica de empresa de carácter colectivo (incluidas las medidas colectivas de los arts. 40.2, 41.2 y 47 ET). Están legitimados los sindicatos, las asociaciones empresariales, la empresa y los representantes de los trabajadores, según el ámbito. Exige conciliación o mediación previa. Es urgente y con preferencia absoluta (salvo tutela de derechos fundamentales). Juicio en única convocatoria en 5 días y sentencia en 3, ejecutiva aunque se recurra. La sentencia firme hace cosa juzgada en los procesos individuales, que se suspenden mientras tanto.",
+     "aviso": "Los arts. 40, 41, 47 y 51 citados son del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]].",
      "articulos": [
       "153",
+      "154",
+      "155",
+      "156",
+      "157",
+      "159",
+      "160",
+      "161",
       "162"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Juicio",
+       "plazo": "En los 5 días siguientes a la admisión",
+       "articulo": "160",
+       "literal": "dentro de los cinco días siguientes a la admisión a trámite de la demanda"
+      },
+      {
+       "acto": "Sentencia",
+       "plazo": "3 días",
+       "articulo": "160",
+       "literal": "La sentencia se dictará dentro de los tres días siguientes"
+      },
+      {
+       "acto": "Comunicación de la autoridad laboral: subsanar",
+       "plazo": "10 días",
+       "articulo": "158",
+       "literal": "a fin de que se subsanen en el plazo de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay procesos individuales sobre lo mismo",
+       "entonces": "Se suspenden y la sentencia colectiva firme hace cosa juzgada sobre ellos.",
+       "articulos": [
+        "160"
+       ],
+       "literal": {
+        "articulo": "160",
+        "texto": "La sentencia firme producirá efectos de cosa juzgada sobre los procesos individuales"
+       }
+      },
+      {
+       "si": "Se quiere recurrir una resolución de trámite",
+       "entonces": "No cabe recurso, salvo la declaración inicial de incompetencia.",
+       "articulos": [
+        "161"
+       ],
+       "literal": {
+        "articulo": "161",
+        "texto": "Contra las resoluciones que se dicten en su tramitación no cabrá recurso, salvo el de declaración inicial de incompetencia."
+       }
+      },
+      {
+       "si": "Las partes resuelven el conflicto",
+       "entonces": "Se archiva al comunicarlo, en cualquier momento antes de la sentencia.",
+       "articulos": [
+        "162"
+       ],
+       "literal": {
+        "articulo": "162",
+        "texto": "se procederá por el secretario judicial sin más al archivo de las actuaciones"
+       }
+      },
+      {
+       "si": "Se pide una condena que luego se individualizará",
+       "entonces": "La sentencia debe concretar los datos para identificar a los afectados; se ejecuta por el art. 247.",
+       "articulos": [
+        "160",
+        "247"
+       ],
+       "literal": {
+        "articulo": "160",
+        "texto": "deberá contener, en su caso, la concreción de los datos, características y requisitos precisos para una posterior individualización de los afectados"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Es ejecutiva la sentencia de conflicto colectivo aunque se recurra?",
+      "a": "Sí, desde que se dicta.",
+      "articulos": [
+       "160",
+       "303"
+      ],
+      "literal": {
+       "articulo": "160",
+       "texto": "La sentencia será ejecutiva desde el momento en que se dicte, no obstante el recurso que contra la misma pueda interponerse."
+      }
+     },
+     "conexiones": [
+      "124",
+      "138",
       "153",
-      "162"
+      "154",
+      "155",
+      "156",
+      "157",
+      "158",
+      "159",
+      "160",
+      "161",
+      "162",
+      "247",
+      "303"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion",
+      "casacion"
+     ],
+     "continua_en": [
+      "ejecucion"
+     ],
+     "id": "colectivos-153"
     },
     {
-     "id": "colectivos-163",
-     "fase": "De la impugnación de convenios colectivos",
-     "subtitulo": "CAPÍTULO IX · arts. 163 a 166",
-     "descripcion": "",
+     "fase": "Impugnación de convenios colectivos",
+     "subtitulo": "Por ilegalidad o lesividad · de oficio o por los legitimados · sentencia en 3 días",
+     "descripcion": "Un convenio colectivo estatutario (o el laudo que lo sustituye) puede impugnarse por ilegal o por lesionar gravemente a terceros. Si no está registrado, se pide a la autoridad laboral que lo comunique de oficio al juzgado; si no contesta en 15 días, lo deniega o el convenio ya está registrado, los legitimados lo impugnan directamente por el cauce del conflicto colectivo. Por ilegalidad: representantes, sindicatos, asociaciones empresariales, Ministerio Fiscal y Administraciones; por lesividad: los terceros gravemente lesionados. El Ministerio Fiscal es siempre parte. La sentencia, en 3 días, es ejecutiva y, si anula el convenio publicado, se publica.",
+     "aviso": "El Título III y el art. 90 citados son del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]].",
      "articulos": [
       "163",
+      "164",
+      "165",
       "166"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "La autoridad laboral contesta la petición de impugnación de oficio",
+       "plazo": "15 días",
+       "articulo": "163",
+       "literal": "Si la autoridad laboral no contestara la solicitud a la que se refiere el apartado anterior en el plazo de quince días"
+      },
+      {
+       "acto": "Subsanar la comunicación de oficio",
+       "plazo": "10 días",
+       "articulo": "164",
+       "literal": "a fin de que se subsanen en el plazo de diez días"
+      },
+      {
+       "acto": "Sentencia",
+       "plazo": "3 días",
+       "articulo": "166",
+       "literal": "La sentencia, que se dictará dentro de los tres días siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No se impugnó el convenio en su día",
+       "entonces": "Pueden impugnarse los actos de aplicación en conflictos colectivos o individuales posteriores.",
+       "articulos": [
+        "163"
+       ],
+       "literal": {
+        "articulo": "163",
+        "texto": "La falta de impugnación directa de un convenio colectivo"
+       }
+      },
+      {
+       "si": "Se alega discriminación por razón de sexo en una cláusula",
+       "entonces": "Están también legitimados el Instituto de la Mujer y los organismos autonómicos equivalentes.",
+       "articulos": [
+        "165"
+       ],
+       "literal": {
+        "articulo": "165",
+        "texto": "están también legitimados el Instituto de la Mujer"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quién es siempre parte en la impugnación de un convenio colectivo?",
+      "a": "El Ministerio Fiscal.",
+      "articulos": [
+       "164",
+       "165"
+      ],
+      "literal": {
+       "articulo": "165",
+       "texto": "El Ministerio Fiscal será siempre parte en estos procesos."
+      }
+     },
+     "conexiones": [
+      "153",
       "163",
-      "166"
+      "164",
+      "165",
+      "166",
+      "303"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion",
+      "casacion"
+     ],
+     "continua_en": [],
+     "id": "colectivos-163"
     },
     {
-     "id": "colectivos-167",
-     "fase": "De las impugnaciones relativas a los estatutos de los sindicatos y de las asociaciones empresariales o a su modificación",
-     "subtitulo": "CAPÍTULO X · arts. 167 a 176",
-     "descripcion": "",
+     "fase": "Estatutos sindicales y de asociaciones empresariales (ficha breve)",
+     "subtitulo": "Qué es · quién demanda · plazo · recurso",
+     "descripcion": "Qué es: impugnar la denegación del depósito de los estatutos de un sindicato (o de su modificación) y pedir que se declaren no conformes a Derecho unos estatutos ya depositados; igual para las asociaciones empresariales. Quién demanda: contra la denegación, los promotores y firmantes del acta de constitución (o los representantes del sindicato si es una modificación); contra los estatutos, el Ministerio Fiscal y quien tenga interés directo, personal y legítimo. Plazo: 10 días hábiles desde la denegación (o desde que pasa un mes sin que se notifiquen defectos). Recurso: suplicación (art. 191.3.f). El Ministerio Fiscal es siempre parte.",
      "articulos": [
       "167",
+      "168",
+      "171",
+      "172",
+      "173",
+      "175",
       "176"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Impugnar la denegación del depósito",
+       "plazo": "10 días hábiles",
+       "articulo": "168",
+       "literal": "El plazo para el ejercicio de la acción de impugnación será de diez días hábiles"
+      },
+      {
+       "acto": "La oficina pública envía el expediente",
+       "plazo": "5 días",
+       "articulo": "170",
+       "literal": "que habrá de ser remitido en el plazo de cinco días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se estima la demanda contra la denegación",
+       "entonces": "La sentencia ordena de inmediato el depósito de los estatutos.",
+       "articulos": [
+        "171"
+       ],
+       "literal": {
+        "articulo": "171",
+        "texto": "ordenará de inmediato el depósito del estatuto sindical"
+       }
+      },
+      {
+       "si": "Se estima la demanda contra los estatutos",
+       "entonces": "Se declaran nulas las cláusulas no conformes a Derecho, o los estatutos enteros.",
+       "articulos": [
+        "175"
+       ],
+       "literal": {
+        "articulo": "175",
+        "texto": "la sentencia declarará la nulidad de las cláusulas estatutarias que no sean conformes a Derecho"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Desde cuándo corre el plazo para impugnar la denegación del depósito de estatutos?",
+      "a": "Desde que se recibe la denegación expresa, o desde que pasa un mes desde la presentación sin que se notifiquen defectos.",
+      "articulos": [
+       "168"
+      ],
+      "literal": {
+       "articulo": "168",
+       "texto": "transcurra un mes desde la presentación de los estatutos sin que hubieren notificado a los promotores defectos a subsanar"
+      }
+     },
+     "conexiones": [
       "167",
-      "176"
+      "168",
+      "169",
+      "170",
+      "171",
+      "172",
+      "173",
+      "174",
+      "175",
+      "176",
+      "191"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion"
+     ],
+     "continua_en": [],
+     "id": "colectivos-167"
     }
    ]
   },
@@ -2274,34 +3588,134 @@
    "nombre": "Tutela de los derechos fundamentales",
    "bloque": "lrjs",
    "grupo": "Libro II · Proceso ordinario y modalidades",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Tutela de la libertad sindical y demás derechos fundamentales, incluida la discriminación y el acoso.",
    "ambito": {
     "corto": "Arts. 177 a 184",
     "texto": "CAPÍTULO XI. De la tutela de los derechos fundamentales y libertades públicas",
     "articulos": [
      "177"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "179",
+      "texto": "La tramitación de estos procesos tendrá carácter urgente a todos los efectos"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "tutela-177",
-     "fase": "De la tutela de los derechos fundamentales y libertades públicas",
-     "subtitulo": "CAPÍTULO XI · arts. 177 a 184",
-     "descripcion": "",
+     "fase": "Tutela de derechos fundamentales y libertades públicas",
+     "subtitulo": "Urgente y preferente · indicios y carga del demandado · nulidad e indemnización",
+     "descripcion": "Cualquier trabajador o sindicato que considere lesionados la libertad sindical, la huelga u otros derechos fundamentales (incluida la discriminación y el acoso) puede pedir su tutela. El Ministerio Fiscal es siempre parte. Solo se discute la lesión del derecho, sin acumular otras acciones; y despidos, sanciones, modificaciones, vacaciones, conciliación familiar, convenios y estatutos van por su propia modalidad, con estas garantías. Es urgente y preferente; se demanda en el plazo de la acción de que se trate y puede pedirse la suspensión del acto. Conciliación y juicio en 5 días; si hay indicios de vulneración, el demandado justifica su conducta. La sentencia declara la vulneración, la nulidad de la conducta, el cese y la reparación, con indemnización por daño moral y demás perjuicios.",
      "articulos": [
       "177",
+      "178",
+      "179",
+      "180",
+      "181",
+      "182",
+      "183",
       "184"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Demanda",
+       "plazo": "El plazo de prescripción o caducidad de la acción de que se trate",
+       "articulo": "179",
+       "literal": "dentro del plazo general de prescripción o caducidad de la acción previsto para las conductas o actos"
+      },
+      {
+       "acto": "Conciliación y juicio",
+       "plazo": "En los 5 días siguientes a la admisión (mínimo 2 días tras la citación)",
+       "articulo": "181",
+       "literal": "dentro del plazo improrrogable de los cinco días siguientes al de la admisión de la demanda"
+      },
+      {
+       "acto": "Sentencia",
+       "plazo": "3 días desde el juicio",
+       "articulo": "181",
+       "literal": "dictará sentencia en el plazo de tres días desde la celebración del acto del juicio"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay indicios de vulneración",
+       "entonces": "El demandado debe aportar una justificación objetiva, razonable y proporcionada.",
+       "articulos": [
+        "181",
+        "96"
+       ],
+       "literal": {
+        "articulo": "181",
+        "texto": "corresponderá al demandado la aportación de una justificación objetiva y razonable"
+       }
+      },
+      {
+       "si": "La lesión se produce en un despido, una sanción o una modificación de condiciones",
+       "entonces": "Va por la modalidad de despido, sanción o modificación, con las garantías de la tutela.",
+       "articulos": [
+        "184",
+        "178"
+       ],
+       "literal": {
+        "articulo": "184",
+        "texto": "se tramitarán inexcusablemente, con arreglo a la modalidad procesal correspondiente a cada una de ellas"
+       }
+      },
+      {
+       "si": "El acto lesivo sigue produciendo efectos",
+       "entonces": "Puede pedirse en la demanda su suspensión y otras medidas cautelares.",
+       "articulos": [
+        "180"
+       ],
+       "literal": {
+        "articulo": "180",
+        "texto": "el actor podrá solicitar la suspensión de los efectos del acto impugnado"
+       }
+      },
+      {
+       "si": "Se reclama indemnización",
+       "entonces": "El juez debe pronunciarse sobre ella, incluido el daño moral, fijándola prudencialmente si su prueba es difícil.",
+       "articulos": [
+        "183"
+       ],
+       "literal": {
+        "articulo": "183",
+        "texto": "el juez deberá pronunciarse sobre la cuantía de la indemnización"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se puede acumular a la tutela de derechos fundamentales una reclamación de cantidad por otro concepto?",
+      "a": "No: el proceso se limita a la lesión del derecho fundamental, sin acumular acciones de otra naturaleza.",
+      "articulos": [
+       "178"
+      ],
+      "literal": {
+       "articulo": "178",
+       "texto": "sin posibilidad de acumulación con acciones de otra naturaleza"
+      }
+     },
+     "conexiones": [
+      "96",
       "177",
-      "184"
+      "178",
+      "179",
+      "180",
+      "181",
+      "182",
+      "183",
+      "184",
+      "303"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion"
+     ],
+     "continua_en": [
+      "despido"
+     ],
+     "id": "tutela-177"
     }
    ]
   },
@@ -3031,85 +4445,386 @@
    "nombre": "Ejecución de sentencias",
    "bloque": "lrjs",
    "grupo": "Libro IV · Ejecución",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Cómo se pide y se defiende la ejecución, la ejecución dineraria (bienes, embargo, pago e insolvencia con el FOGASA), la ejecución de la sentencia de despido y la ejecución frente a la Administración. La realización de bienes (subasta) queda como índice.",
    "ambito": {
     "corto": "Arts. 237 a 288",
     "texto": "CAPÍTULO I. Disposiciones de carácter general · CAPÍTULO II. De la ejecución dineraria · CAPÍTULO III. De la ejecución de las sentencias firmes de despido · CAPÍTULO IV. De la ejecución de sentencias frente a entes públicos",
     "articulos": [
      "237"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "237",
+      "texto": "La ejecución se llevará a efecto por el órgano judicial que hubiere conocido del asunto en instancia"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
+     "fase": "Ejecución: cómo se pide y cómo se defiende el ejecutado",
+     "subtitulo": "A instancia de parte · sigue de oficio · oposición por reposición · plazos para pedirla",
+     "descripcion": "Las sentencias firmes y demás títulos se ejecutan conforme a la LEC, con las especialidades de la LRJS, ante el órgano que conoció en instancia. Se pide por escrito, indicando la tutela que se pretende, la cantidad (principal, intereses y costas) y los bienes conocidos; después sigue de oficio, sin el plazo de espera del art. 548 LEC. Si el ejecutado cumple en los 20 días siguientes a la firmeza, no paga las costas. Contra el auto que despacha la ejecución cabe reposición, en la que puede oponerse alegando pago o cumplimiento documentado, prescripción u otros hechos posteriores al título; nunca la compensación de deudas. Las cuestiones incidentales se resuelven por comparecencia. La ejecución solo se suspende en los casos tasados.",
+     "aviso": "La ejecución se rige por la [[Ley de Enjuiciamiento Civil|https://www.boe.es/buscar/act.php?id=BOE-A-2000-323]] (también en esta app), con las especialidades de la LRJS.",
+     "articulos": [
+      "237",
+      "238",
+      "239",
+      "240",
+      "241",
+      "243",
+      "244",
+      "245",
+      "246"
+     ],
+     "plazos": [
+      {
+       "acto": "Cumplimiento voluntario sin costas",
+       "plazo": "20 días desde la firmeza",
+       "articulo": "239",
+       "literal": "dentro del plazo de los veinte días siguientes a la fecha de firmeza de la sentencia"
+      },
+      {
+       "acto": "Pedir la ejecución de una condena a pagar dinero",
+       "plazo": "1 año (prescripción)",
+       "articulo": "243",
+       "literal": "el plazo para reclamar el cumplimiento de las obligaciones de entregar sumas de dinero será de un año"
+      },
+      {
+       "acto": "Incidente en ejecución: comparecencia",
+       "plazo": "En 5 días",
+       "articulo": "238",
+       "literal": "citando de comparecencia, en el plazo de cinco días, a las partes"
+      },
+      {
+       "acto": "Resolver el incidente",
+       "plazo": "3 días",
+       "articulo": "238",
+       "literal": "concluyendo por auto o, en su caso, por decreto que habrán de dictarse en el plazo de tres días"
+      },
+      {
+       "acto": "Suspensión pedida por el ejecutante o por ambas partes",
+       "plazo": "Máximo 3 meses",
+       "articulo": "244",
+       "literal": "A petición del ejecutante o de ambas partes por un máximo de tres meses"
+      },
+      {
+       "acto": "Paralizada por el ejecutante: decir si sigue",
+       "plazo": "5 días tras el requerimiento",
+       "articulo": "244",
+       "literal": "manifieste, en el término de cinco días, si la ejecución ha de seguir adelante"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El ejecutado quiere oponerse",
+       "entonces": "Lo hace en la reposición contra el auto que despacha la ejecución: pago o cumplimiento justificado documentalmente, prescripción u otros hechos posteriores al título. No vale la compensación.",
+       "articulos": [
+        "239"
+       ],
+       "literal": {
+        "articulo": "239",
+        "texto": "no siendo la compensación de deudas admisible como causa de oposición a la ejecución"
+       }
+      },
+      {
+       "si": "Se deniega el despacho de la ejecución",
+       "entonces": "Contra el auto que resuelve la reposición cabe suplicación o casación.",
+       "articulos": [
+        "239"
+       ],
+       "literal": {
+        "articulo": "239",
+        "texto": "Contra el auto resolutorio del recurso de reposición interpuesto contra el auto en que se deniegue el despacho de la ejecución procederá recurso de suplicación o de casación ordinario"
+       }
+      },
+      {
+       "si": "El ejecutado no cumple lo ordenado",
+       "entonces": "Apremios pecuniarios de hasta 300 € por día de retraso.",
+       "articulos": [
+        "241"
+       ],
+       "literal": {
+        "articulo": "241",
+        "texto": "no podrá exceder, por cada día de atraso en el cumplimiento, de la suma de trescientos euros"
+       }
+      },
+      {
+       "si": "Cumplir de inmediato pondría en peligro el empleo en la empresa deudora",
+       "entonces": "El LAJ puede conceder un aplazamiento por decreto, recurrible en revisión.",
+       "articulos": [
+        "244"
+       ],
+       "literal": {
+        "articulo": "244",
+        "texto": "podrá, previa audiencia de los interesados y en las condiciones que establezca, conceder un aplazamiento por el tiempo imprescindible"
+       }
+      },
+      {
+       "si": "Las partes quieren llegar a un acuerdo en la ejecución",
+       "entonces": "Convenio homologado por el juez; no se pueden renunciar los derechos reconocidos al trabajador.",
+       "articulos": [
+        "246"
+       ],
+       "literal": {
+        "articulo": "246",
+        "texto": "Se prohíbe la renuncia de los derechos reconocidos por sentencias favorables al trabajador"
+       }
+      },
+      {
+       "si": "Se recurre una resolución dictada en ejecución",
+       "entonces": "Se cumple igualmente; puede suspenderse cautelarmente un mes (prorrogable otro) si causa un perjuicio irreparable.",
+       "articulos": [
+        "245"
+       ],
+       "literal": {
+        "articulo": "245",
+        "texto": "las resoluciones dictadas en ejecución se llevarán a efecto, no obstante su impugnación"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el ejecutado oponerse a la ejecución alegando que el trabajador le debe dinero (compensación)?",
+      "a": "No: la compensación de deudas no se admite como causa de oposición a la ejecución.",
+      "articulos": [
+       "239"
+      ],
+      "literal": {
+       "articulo": "239",
+       "texto": "no siendo la compensación de deudas admisible como causa de oposición a la ejecución"
+      }
+     },
+     "conexiones": [
+      "237",
+      "238",
+      "239",
+      "240",
+      "241",
+      "243",
+      "244",
+      "245",
+      "246"
+     ],
+     "recursos_rel": [
+      "reposicion-juez",
+      "revision",
+      "suplicacion"
+     ],
      "id": "ejecucion-237",
-     "fase": "Normas generales",
-     "subtitulo": "CAPÍTULO I · Sección 1.ª · arts. 237 a 246",
-     "descripcion": "",
-     "articulos": [
-      "237",
-      "246"
-     ],
-     "rango": [
-      "237",
-      "246"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
+     "fase": "Ejecuciones colectivas y extensión de efectos",
+     "subtitulo": "Sentencias de conflicto colectivo · extender una sentencia firme a quien está en igual situación",
+     "descripcion": "Las sentencias de conflicto colectivo estimatorias de condena que admitan ejecución individual se ejecutan con especialidades: la piden el empresario, los representantes de los trabajadores o los sindicatos y asociaciones afectados, y el FOGASA es siempre parte. Además, los efectos de una sentencia firme que reconoció una situación individual pueden extenderse a otras personas en idéntica situación, si el mismo juez es competente y se pide en el plazo de un año. Tras un procedimiento testigo, los demandantes de los procesos suspendidos pueden pedir la extensión de efectos.",
+     "articulos": [
+      "247",
+      "247 bis",
+      "247 ter"
+     ],
+     "plazos": [
+      {
+       "acto": "Pedir la extensión de efectos",
+       "plazo": "1 año desde la última notificación de la sentencia",
+       "articulo": "247 bis",
+       "literal": "en el plazo de un año desde la última notificación de ésta a quienes fueron parte en el proceso"
+      },
+      {
+       "acto": "Alegaciones de la parte condenada a la extensión",
+       "plazo": "Máximo 15 días",
+       "articulo": "247 bis",
+       "literal": "en el plazo máximo de quince días puedan efectuar alegaciones"
+      },
+      {
+       "acto": "Tras el procedimiento testigo: pedir la extensión, seguir o desistir",
+       "plazo": "5 días",
+       "articulo": "247 ter",
+       "literal": "en el plazo de cinco días, interesen la extensión de los efectos de la sentencia"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Un trabajador está en idéntica situación que el que ganó",
+       "entonces": "Puede pedir que se le extiendan los efectos de la sentencia firme, sin pleito nuevo.",
+       "articulos": [
+        "247 bis"
+       ],
+       "literal": {
+        "articulo": "247 bis",
+        "texto": "Que los interesados se encuentren en idéntica situación jurídica que los favorecidos por el fallo."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quién es siempre parte en la ejecución de una sentencia de conflicto colectivo?",
+      "a": "El Fondo de Garantía Salarial.",
+      "articulos": [
+       "247"
+      ],
+      "literal": {
+       "articulo": "247",
+       "texto": "El Fondo de Garantía Salarial será siempre parte en estos procesos."
+      }
+     },
+     "conexiones": [
+      "86 bis",
+      "160",
+      "247",
+      "247 bis",
+      "247 ter"
+     ],
+     "recursos_rel": [],
      "id": "ejecucion-247",
-     "fase": "Normas sobre ejecuciones colectivas",
-     "subtitulo": "CAPÍTULO I · Sección 2.ª · arts. 247 a 247 ter",
-     "descripcion": "",
-     "articulos": [
-      "247",
-      "247 ter"
-     ],
-     "rango": [
-      "247",
-      "247 ter"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
+     "fase": "Ejecución dineraria: bienes, intereses y costas",
+     "subtitulo": "El ejecutado manifiesta sus bienes · el juzgado investiga · intereses y costas provisionales",
+     "descripcion": "El ejecutado debe manifestar sus bienes cuando el LAJ se lo requiere (si es persona jurídica, sus administradores). Si no se conocen bienes suficientes, el LAJ se dirige a registros, organismos públicos y entidades financieras. La ejecución se despacha también por los intereses de demora (como máximo, los de un año) y las costas (como máximo, el 10 % del principal). Los autos de ejecución y los embargos se notifican a los representantes de los trabajadores de la empresa deudora. Si hay concurso, se aplica la Ley Concursal.",
+     "articulos": [
+      "248",
+      "249",
+      "250",
+      "251",
+      "252",
+      "253"
+     ],
+     "plazos": [
+      {
+       "acto": "Recargo de dos puntos en el interés si el ejecutado no colabora",
+       "plazo": "Pasados 3 meses del despacho",
+       "articulo": "251",
+       "literal": "transcurridos tres meses del despacho de la ejecución sin que el ejecutado cumpliere en su integridad la obligación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No se conocen bienes del ejecutado",
+       "entonces": "El LAJ los investiga en registros, organismos y entidades financieras.",
+       "articulos": [
+        "250"
+       ],
+       "literal": {
+        "articulo": "250",
+        "texto": "el secretario judicial deberá dirigirse a los pertinentes organismos y registros públicos"
+       }
+      },
+      {
+       "si": "Varios juzgados sociales han embargado los mismos bienes",
+       "entonces": "Tiene preferencia para la vía de apremio el que embargó primero.",
+       "articulos": [
+        "248"
+       ],
+       "literal": {
+        "articulo": "248",
+        "texto": "al órgano que con prioridad trabó dichos bienes"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hasta qué cantidad se despacha ejecución, de forma provisional, por las costas?",
+      "a": "Como regla, hasta el 10 % de la cantidad reclamada como principal.",
+      "articulos": [
+       "251"
+      ],
+      "literal": {
+       "articulo": "251",
+       "texto": "del diez por ciento de la cantidad objeto de apremio en concepto de principal"
+      }
+     },
+     "conexiones": [
+      "248",
+      "249",
+      "250",
+      "251",
+      "252",
+      "253"
+     ],
+     "recursos_rel": [],
      "id": "ejecucion-248",
-     "fase": "Normas generales",
-     "subtitulo": "CAPÍTULO II · Sección 1.ª · arts. 248 a 253",
-     "descripcion": "",
-     "articulos": [
-      "248",
-      "253"
-     ],
-     "rango": [
-      "248",
-      "253"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
-     "id": "ejecucion-254",
-     "fase": "El embargo",
-     "subtitulo": "CAPÍTULO II · Sección 2.ª · arts. 254 a 260",
-     "descripcion": "",
+     "fase": "El embargo y la tercería de dominio",
+     "subtitulo": "Orden de embargo · cuentas y saldos futuros · inmuebles al registro · tercería",
+     "descripcion": "El embargo sigue el orden legal. Es nulo el embargo de bienes cuya existencia no conste, pero pueden embargarse los saldos de cuentas presentes y futuros, con un límite máximo, y lo que se devengue a favor del ejecutado; las limitaciones de inembargabilidad del art. 607 LEC se aplican a cada mensualidad. Los inmuebles se anotan en el registro de oficio. Puede nombrarse administrador o depositario. Un tercero que alegue ser dueño de lo embargado puede pedir el levantamiento del embargo (tercería de dominio) ante el juez social de la ejecución.",
+     "aviso": "El art. 607 citado es de la [[Ley de Enjuiciamiento Civil|https://www.boe.es/buscar/act.php?id=BOE-A-2000-323]] (también en esta app).",
      "articulos": [
       "254",
+      "255",
+      "256",
+      "257",
+      "258",
+      "259",
       "260"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "La oficina que recibe un reembargo informa al reembargante",
+       "plazo": "Máximo 10 días",
+       "articulo": "258",
+       "literal": "en el plazo máximo de diez días, informará al reembargante"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se pide embargar algo cuya existencia no consta",
+       "entonces": "El embargo es nulo (salvo saldos de cuentas y devengos futuros con límite).",
+       "articulos": [
+        "254"
+       ],
+       "literal": {
+        "articulo": "254",
+        "texto": "Será nulo el embargo sobre bienes y derechos cuya efectiva existencia no conste."
+       }
+      },
+      {
+       "si": "Un tercero dice que el bien embargado es suyo",
+       "entonces": "Tercería de dominio ante el juez social; sin principio de prueba por escrito se rechaza de plano.",
+       "articulos": [
+        "260"
+       ],
+       "literal": {
+        "articulo": "260",
+        "texto": "rechazará de plano y sin sustanciación alguna la demanda de tercería de dominio a la que no se acompañe un principio de prueba por escrito"
+       }
+      },
+      {
+       "si": "La entidad pagadora no cumple la orden de retención",
+       "entonces": "Puede acordarse la administración judicial.",
+       "articulos": [
+        "254",
+        "256"
+       ],
+       "literal": {
+        "articulo": "254",
+        "texto": "También podrá acordarse la administración judicial"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se pueden embargar los ingresos que entren en la cuenta del ejecutado después del embargo?",
+      "a": "Sí, con el límite máximo que fije el LAJ: los saldos existentes y los que se produzcan después.",
+      "articulos": [
+       "254"
+      ],
+      "literal": {
+       "articulo": "254",
+       "texto": "tanto los existentes en el momento del embargo, como los que se produzcan posteriormente"
+      }
+     },
+     "conexiones": [
       "254",
+      "255",
+      "256",
+      "257",
+      "258",
+      "259",
       "260"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [],
+     "id": "ejecucion-254",
+     "continua_en": []
     },
     {
      "id": "ejecucion-261",
@@ -3129,72 +4844,331 @@
      "esqueleto": true
     },
     {
-     "id": "ejecucion-268",
      "fase": "Pago a los acreedores",
-     "subtitulo": "CAPÍTULO II · Sección 4.ª · arts. 268 a 275",
-     "descripcion": "",
+     "subtitulo": "Principal, intereses y costas · liquidación y tasación",
+     "descripcion": "Lo obtenido se aplica, por este orden, al principal, a los intereses y a las costas, una vez liquidados y tasados. Con aprobación del juez, pueden anticiparse los gastos necesarios de la propia ejecución. Cubierto el principal, el LAJ liquida los intereses, a la vez que tasa las costas si se quiere; en la tasación pueden incluirse los honorarios de abogados, procuradores y graduados sociales de la ejecución.",
      "articulos": [
       "268",
-      "275"
-     ],
-     "rango": [
-      "268",
-      "275"
+      "269"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Hubo gastos para poder ejecutar",
+       "entonces": "Con aprobación del juez, se pagan antes del principal.",
+       "articulos": [
+        "268"
+       ],
+       "literal": {
+        "articulo": "268",
+        "texto": "podrá anticipar al pago del principal el abono de los gastos que necesariamente hubiere requerido la propia ejecución"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿En qué orden se aplica lo cobrado en la ejecución?",
+      "a": "Principal, intereses y costas.",
+      "articulos": [
+       "268"
+      ],
+      "literal": {
+       "articulo": "268",
+       "texto": "se aplicarán, por su orden, al pago del principal, intereses y costas"
+      }
+     },
+     "conexiones": [
+      "268",
+      "269"
+     ],
+     "recursos_rel": [],
+     "id": "ejecucion-268",
+     "continua_en": []
     },
     {
+     "fase": "Insolvencia de la empresa y FOGASA",
+     "subtitulo": "Audiencia al FOGASA · decreto de insolvencia · el FOGASA paga lo que le corresponde",
+     "descripcion": "Antes de declarar la insolvencia se oye al FOGASA, que puede pedir diligencias y señalar bienes. Después, el LAJ declara por decreto la insolvencia total o parcial, que es provisional hasta que aparezcan bienes. Declarada en una ejecución, sirve para otras sin repetir la averiguación, oyendo al demandante y al FOGASA. Firme la insolvencia, si la sentencia fijó las cantidades a cargo del FOGASA, se le requiere para que pague en 10 días. Si los bienes están afectos a la producción y la empresa sigue activa, el FOGASA puede pedir que se suspenda la ejecución 30 días.",
+     "articulos": [
+      "276",
+      "277"
+     ],
+     "plazos": [
+      {
+       "acto": "Audiencia al FOGASA antes de la insolvencia",
+       "plazo": "Máximo 15 días",
+       "articulo": "276",
+       "literal": "le dará audiencia, por un plazo máximo de quince días"
+      },
+      {
+       "acto": "Decreto de insolvencia",
+       "plazo": "En los 30 días siguientes a las diligencias pedidas por el FOGASA",
+       "articulo": "276",
+       "literal": "Dentro de los treinta días siguientes a la práctica de las diligencias instadas por el Fondo de Garantía Salarial"
+      },
+      {
+       "acto": "El FOGASA paga lo que le corresponde",
+       "plazo": "10 días desde el requerimiento",
+       "articulo": "276",
+       "literal": "le requerirá en su caso de abono, en el plazo de diez días"
+      },
+      {
+       "acto": "Suspensión pedida por el FOGASA (bienes afectos a la producción)",
+       "plazo": "30 días",
+       "articulo": "277",
+       "literal": "podrá solicitar la suspensión de la ejecución, por el plazo de treinta días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Aparecen bienes después de la insolvencia",
+       "entonces": "La insolvencia es provisional: la ejecución puede reiniciarse.",
+       "articulos": [
+        "276",
+        "243"
+       ],
+       "literal": {
+        "articulo": "276",
+        "texto": "La insolvencia se entenderá a todos los efectos como provisional"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿La declaración de insolvencia es definitiva?",
+      "a": "No: es provisional hasta que se conozcan bienes del ejecutado o se realicen los embargados.",
+      "articulos": [
+       "276"
+      ],
+      "literal": {
+       "articulo": "276",
+       "texto": "La insolvencia se entenderá a todos los efectos como provisional hasta que se conozcan bienes al ejecutado"
+      }
+     },
+     "conexiones": [
+      "23",
+      "243",
+      "250",
+      "276",
+      "277"
+     ],
+     "recursos_rel": [
+      "revision"
+     ],
      "id": "ejecucion-276",
-     "fase": "Insolvencia empresarial",
-     "subtitulo": "CAPÍTULO II · Sección 5.ª · arts. 276 a 277",
-     "descripcion": "",
-     "articulos": [
-      "276",
-      "277"
-     ],
-     "rango": [
-      "276",
-      "277"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
+     "fase": "Ejecución de la sentencia de despido",
+     "subtitulo": "Readmisión en 10 días · incidente de no readmisión · readmisión obligatoria si es nulo o representante",
+     "descripcion": "Si la empresa optó por readmitir, comunica por escrito al trabajador, en los 10 días siguientes a la notificación de la sentencia, la fecha de reincorporación, con al menos 3 días de margen. Si no readmite o readmite mal, el trabajador pide la ejecución y se sigue el incidente de no readmisión: el juez declara extinguida la relación, fija la indemnización (con un posible añadido de hasta 15 días por año y 12 mensualidades) y los salarios. Si el despido es nulo, o el despedido es representante y optó por la readmisión, la sentencia se ejecuta en sus propios términos: readmisión en 3 días y, si no, se sigue pagando el salario y cotizando. Si la readmisión es imposible (cierre de la empresa), se extingue la relación con indemnización y salarios.",
+     "aviso": "El art. 56 citado es del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]].",
+     "articulos": [
+      "278",
+      "279",
+      "280",
+      "281",
+      "282",
+      "283",
+      "284",
+      "285",
+      "286"
+     ],
+     "plazos": [
+      {
+       "acto": "La empresa comunica la fecha de reincorporación",
+       "plazo": "10 días desde la notificación de la sentencia",
+       "articulo": "278",
+       "literal": "dentro de los diez días siguientes a aquel en que se le notifique la sentencia"
+      },
+      {
+       "acto": "Pedir la ejecución si no hay readmisión",
+       "plazo": "20 días (prescripción)",
+       "articulo": "279",
+       "literal": "Dentro de los veinte días siguientes a la fecha señalada para proceder a la readmisión"
+      },
+      {
+       "acto": "Límite para pedir la ejecución del fallo",
+       "plazo": "3 meses desde la firmeza",
+       "articulo": "279",
+       "literal": "habrá de ejercitarse dentro de los tres meses siguientes a la firmeza de la sentencia"
+      },
+      {
+       "acto": "Vista del incidente de no readmisión",
+       "plazo": "En los 5 días siguientes",
+       "articulo": "280",
+       "literal": "señalará la vista del incidente dentro de los cinco días siguientes"
+      },
+      {
+       "acto": "Auto que resuelve el incidente",
+       "plazo": "3 días",
+       "articulo": "281",
+       "literal": "Dentro de los tres días siguientes, el juez dictará auto"
+      },
+      {
+       "acto": "Despido nulo o de representante: reponer al trabajador",
+       "plazo": "3 días",
+       "articulo": "282",
+       "literal": "acordará requerir al empresario para que reponga al trabajador en su puesto en el plazo de tres días"
+      },
+      {
+       "acto": "Abandonar la vivienda ligada al trabajo tras la extinción firme",
+       "plazo": "1 mes (prorrogable 2)",
+       "articulo": "285",
+       "literal": "deberá abandonarla en el plazo de un mes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La readmisión no se hizo o fue irregular",
+       "entonces": "El juez declara extinguida la relación y fija indemnización y salarios; puede añadir hasta 15 días por año, con un máximo de 12 mensualidades.",
+       "articulos": [
+        "281"
+       ],
+       "literal": {
+        "articulo": "281",
+        "texto": "podrá fijar una indemnización adicional de hasta quince días de salario por año de servicio y un máximo de doce mensualidades"
+       }
+      },
+      {
+       "si": "Despido nulo, o de representante que optó por la readmisión, y la empresa no repone",
+       "entonces": "Sigue pagando el salario, el trabajador sigue en alta y el representante sigue ejerciendo sus funciones.",
+       "articulos": [
+        "284"
+       ],
+       "literal": {
+        "articulo": "284",
+        "texto": "Que el trabajador continúe percibiendo su salario con la misma periodicidad y cuantía"
+       }
+      },
+      {
+       "si": "La empresa ha cerrado o la readmisión es imposible",
+       "entonces": "Se extingue la relación con indemnización y salarios.",
+       "articulos": [
+        "286"
+       ],
+       "literal": {
+        "articulo": "286",
+        "texto": "cuando se acreditase la imposibilidad de readmitir al trabajador por cese o cierre de la empresa obligada"
+       }
+      },
+      {
+       "si": "Despido nulo por acoso o violencia de género en el trabajo",
+       "entonces": "La víctima puede optar por extinguir la relación con indemnización.",
+       "articulos": [
+        "286"
+       ],
+       "literal": {
+        "articulo": "286",
+        "texto": "la víctima del acoso podrá optar por extinguir la relación laboral"
+       }
+      },
+      {
+       "si": "El trabajador no comparece a la vista del incidente",
+       "entonces": "Se le tiene por desistido.",
+       "articulos": [
+        "280"
+       ],
+       "literal": {
+        "articulo": "280",
+        "texto": "se le tendrá por desistido de su solicitud"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si la empresa optó por readmitir pero no lo hace, ¿en qué plazo debe el trabajador pedir la ejecución?",
+      "a": "En los 20 días siguientes a la fecha señalada para la readmisión (o al fin de los 10 días si no señaló fecha), y siempre dentro de los 3 meses desde la firmeza.",
+      "articulos": [
+       "279"
+      ],
+      "literal": {
+       "articulo": "279",
+       "texto": "Dentro de los veinte días siguientes a la fecha señalada para proceder a la readmisión"
+      }
+     },
+     "conexiones": [
+      "110",
+      "113",
+      "278",
+      "279",
+      "280",
+      "281",
+      "282",
+      "283",
+      "284",
+      "285",
+      "286"
+     ],
+     "recursos_rel": [
+      "reposicion-juez",
+      "suplicacion"
+     ],
      "id": "ejecucion-278",
-     "fase": "De la ejecución de las sentencias firmes de despido",
-     "subtitulo": "CAPÍTULO III · arts. 278 a 286",
-     "descripcion": "",
-     "articulos": [
-      "278",
-      "286"
-     ],
-     "rango": [
-      "278",
-      "286"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
-     "id": "ejecucion-287",
-     "fase": "De la ejecución de sentencias frente a entes públicos",
-     "subtitulo": "CAPÍTULO IV · arts. 287 a 288",
-     "descripcion": "",
+     "fase": "Ejecución frente a entes públicos y prestaciones periódicas",
+     "subtitulo": "La Administración cumple en 2 meses · prestaciones de pago periódico",
+     "descripcion": "Las sentencias contra el Estado, las entidades gestoras de la Seguridad Social y demás entes públicos deben cumplirse en 2 meses desde su firmeza, justificándolo ante el juzgado; la sentencia puede fijar un plazo menor. Pasado ese plazo, se puede pedir la ejecución, y el juez adopta las medidas necesarias, con aplicación supletoria de la [[Ley 29/1998, de 13 de julio, reguladora de la Jurisdicción Contencioso-administrativa|https://www.boe.es/buscar/act.php?id=BOE-A-1998-16718]]. En prestaciones periódicas, firme la condena, la entidad gestora comunica el capital coste en 10 días y el condenado lo ingresa en otros 10.",
      "articulos": [
       "287",
       "288"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "La Administración cumple la sentencia",
+       "plazo": "2 meses desde la firmeza",
+       "articulo": "287",
+       "literal": "dentro del plazo de dos meses a partir de su firmeza"
+      },
+      {
+       "acto": "Nuevo requerimiento a la Administración",
+       "plazo": "1 mes",
+       "articulo": "287",
+       "literal": "previo requerimiento de la Administración condenada por un nuevo plazo de un mes"
+      },
+      {
+       "acto": "La entidad gestora comunica el capital coste",
+       "plazo": "Máximo 10 días",
+       "articulo": "288",
+       "literal": "deberá, en el plazo máximo de diez días, comunicar a la oficina judicial el importe del capital coste"
+      },
+      {
+       "acto": "El condenado ingresa el capital coste",
+       "plazo": "10 días",
+       "articulo": "288",
+       "literal": "requiriendo el secretario a la condenada para que lo ingrese en el plazo de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Dos meses harían ineficaz la sentencia",
+       "entonces": "La sentencia puede fijar un plazo menor.",
+       "articulos": [
+        "287"
+       ],
+       "literal": {
+        "articulo": "287",
+        "texto": "ésta podrá fijar un plazo inferior para el cumplimiento"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo puede pedirse la ejecución de una sentencia contra la Administración?",
+      "a": "Pasados los 2 meses desde la firmeza que tiene para cumplirla voluntariamente.",
+      "articulos": [
+       "287"
+      ],
+      "literal": {
+       "articulo": "287",
+       "texto": "Trascurrido el plazo a que se refiere el número anterior, la parte interesada podrá solicitar la ejecución."
+      }
+     },
+     "conexiones": [
       "287",
       "288"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [],
+     "id": "ejecucion-287",
+     "continua_en": []
     }
    ]
   },
@@ -3203,15 +5177,19 @@
    "nombre": "Ejecución provisional",
    "bloque": "lrjs",
    "grupo": "Libro IV · Ejecución",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Qué se ejecuta mientras se recurre: prestaciones de Seguridad Social, despido y otras modalidades. Los anticipos de cantidades (arts. 289-293) quedan como índice.",
    "ambito": {
     "corto": "Arts. 289 a 305",
     "texto": "TÍTULO II. De la ejecución provisional",
     "articulos": [
      "289"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "304",
+      "texto": "las partes dispondrán de los mismos derechos y facultades procesales que en la ejecución definitiva"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
@@ -3233,71 +5211,230 @@
      "esqueleto": true
     },
     {
+     "fase": "Ejecución provisional en Seguridad Social",
+     "subtitulo": "La prestación se paga mientras se recurre · sin devolución si se revoca",
+     "descripcion": "Las sentencias recurridas que condenan a pagar prestaciones periódicas de Seguridad Social son ejecutivas: el condenado paga la prestación mientras se tramita el recurso. Si luego se revoca, el beneficiario no devuelve lo cobrado. En prestaciones de pago único puede pedir ejecución provisional y anticipos. En obligaciones de hacer o no hacer, el juez puede acordar la ejecución provisional sin fianza.",
+     "articulos": [
+      "294",
+      "295",
+      "296"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Se revoca la sentencia favorable al beneficiario",
+       "entonces": "No devuelve lo percibido durante la ejecución provisional.",
+       "articulos": [
+        "294"
+       ],
+       "literal": {
+        "articulo": "294",
+        "texto": "no estará obligado al reintegro de las cantidades percibidas durante el período de ejecución provisional"
+       }
+      },
+      {
+       "si": "La condena es a una prestación de pago único",
+       "entonces": "El beneficiario puede pedir la ejecución provisional y anticipos a cuenta.",
+       "articulos": [
+        "295"
+       ],
+       "literal": {
+        "articulo": "295",
+        "texto": "tendrá derecho a solicitar su ejecución provisional y obtener anticipos a cuenta"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Mientras se recurre una sentencia que reconoce una pensión, ¿se cobra?",
+      "a": "Sí: es ejecutiva y el condenado abona la prestación durante el recurso, hasta el límite de su responsabilidad.",
+      "articulos": [
+       "294"
+      ],
+      "literal": {
+       "articulo": "294",
+       "texto": "quedando el condenado obligado a abonar la prestación, hasta el límite de su responsabilidad, durante la tramitación del recurso"
+      }
+     },
+     "conexiones": [
+      "230",
+      "294",
+      "295",
+      "296"
+     ],
+     "recursos_rel": [],
      "id": "provisional-294",
-     "fase": "De las sentencias condenatorias en materia de Seguridad Social",
-     "subtitulo": "TÍTULO II · CAPÍTULO II · arts. 294 a 296",
-     "descripcion": "",
-     "articulos": [
-      "294",
-      "296"
-     ],
-     "rango": [
-      "294",
-      "296"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
+     "fase": "Ejecución provisional del despido",
+     "subtitulo": "Si la empresa readmite y recurre, paga el salario mientras dura el recurso",
+     "descripcion": "Si el despido se declara improcedente y la empresa optó por readmitir (o la opción era del trabajador y eligió la readmisión), mientras se tramita el recurso la empresa paga el mismo salario y el trabajador sigue trabajando, salvo que la empresa prefiera pagar sin que trabaje. Lo mismo si el despido es nulo. El trabajador que no vuelve al trabajo cuando se le requiere pierde esos salarios. Si la sentencia se revoca, no devuelve lo cobrado. Si el despedido es representante, se garantizan sus funciones durante el recurso.",
+     "articulos": [
+      "297",
+      "298",
+      "299",
+      "300",
+      "301",
+      "302"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El trabajador no vuelve al trabajo cuando la empresa se lo requiere",
+       "entonces": "Pierde definitivamente esos salarios.",
+       "articulos": [
+        "299"
+       ],
+       "literal": {
+        "articulo": "299",
+        "texto": "acarreará la pérdida definitiva de los salarios a que se refieren los artículos anteriores"
+       }
+      },
+      {
+       "si": "La sentencia favorable al trabajador se revoca",
+       "entonces": "No devuelve los salarios cobrados durante el recurso.",
+       "articulos": [
+        "300"
+       ],
+       "literal": {
+        "articulo": "300",
+        "texto": "éste no vendrá obligado al reintegro de los salarios percibidos durante el período de ejecución provisional"
+       }
+      },
+      {
+       "si": "La empresa optó por indemnizar",
+       "entonces": "No hay ejecución provisional de la readmisión; pueden concederse anticipos reintegrables.",
+       "articulos": [
+        "301",
+        "111"
+       ],
+       "literal": {
+        "articulo": "301",
+        "texto": "podrán concederse anticipos reintegrables"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Despido improcedente, la empresa opta por readmitir y recurre: ¿qué cobra el trabajador mientras tanto?",
+      "a": "La misma retribución que antes del despido, y sigue trabajando, salvo que la empresa prefiera pagar sin que preste servicios.",
+      "articulos": [
+       "297"
+      ],
+      "literal": {
+       "articulo": "297",
+       "texto": "a satisfacer al recurrido la misma retribución que venía percibiendo con anterioridad a producirse aquellos hechos"
+      }
+     },
+     "conexiones": [
+      "111",
+      "112",
+      "113",
+      "297",
+      "298",
+      "299",
+      "300",
+      "301",
+      "302"
+     ],
+     "recursos_rel": [],
      "id": "provisional-297",
-     "fase": "De las sentencias de despido",
-     "subtitulo": "TÍTULO II · CAPÍTULO III · arts. 297 a 302",
-     "descripcion": "",
-     "articulos": [
-      "297",
-      "302"
-     ],
-     "rango": [
-      "297",
-      "302"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
+     "fase": "Ejecución provisional en otras modalidades",
+     "subtitulo": "Conflictos colectivos, convenios y derechos fundamentales: ejecutivas desde que se dictan",
+     "descripcion": "Las sentencias de conflictos colectivos, de impugnación de convenios y de tutela de la libertad sindical y demás derechos fundamentales son ejecutivas desde que se dictan, aunque se recurran. En impugnación de actos administrativos laborales puede acordarse la ejecución provisional, salvo perjuicios irreversibles. Si la empresa recurre la sentencia que extingue el contrato a petición del trabajador (art. 50 ET), este elige en 5 días si sigue trabajando o cesa.",
+     "aviso": "El art. 50 citado es del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]].",
+     "articulos": [
+      "303"
+     ],
+     "plazos": [
+      {
+       "acto": "Extinción por el art. 50 ET recurrida por la empresa: el trabajador opta",
+       "plazo": "5 días desde que se le notifica el recurso",
+       "articulo": "303",
+       "literal": "dentro del plazo de cinco días desde la notificación de que la empresa ha recurrido"
+      },
+      {
+       "acto": "Si se revoca: la empresa comunica la fecha de reincorporación",
+       "plazo": "10 días",
+       "articulo": "303",
+       "literal": "dentro del plazo de diez días a partir de su notificación, la fecha de reincorporación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El trabajador opta por cesar mientras se recurre",
+       "entonces": "Queda en situación de desempleo involuntario.",
+       "articulos": [
+        "303"
+       ],
+       "literal": {
+        "articulo": "303",
+        "texto": "quedando en este último caso en situación de desempleo involuntario desde ese momento"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Desde cuándo es ejecutiva una sentencia de tutela de derechos fundamentales?",
+      "a": "Desde que se dicta, aunque se recurra.",
+      "articulos": [
+       "303"
+      ],
+      "literal": {
+       "articulo": "303",
+       "texto": "serán ejecutivas desde que se dicten"
+      }
+     },
+     "conexiones": [
+      "303"
+     ],
+     "recursos_rel": [],
      "id": "provisional-303",
-     "fase": "De las sentencias condenatorias recaídas en otros procesos",
-     "subtitulo": "TÍTULO II · CAPÍTULO IV · art. 303",
-     "descripcion": "",
-     "articulos": [
-      "303"
-     ],
-     "rango": [
-      "303",
-      "303"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
-     "id": "provisional-304",
-     "fase": "Normas comunes a la ejecución provisional",
-     "subtitulo": "TÍTULO II · CAPÍTULO V · arts. 304 a 305",
-     "descripcion": "",
+     "fase": "Ejecución provisional: reglas comunes",
+     "subtitulo": "Mismo juez · medidas cautelares · solo reposición, salvo exceso",
+     "descripcion": "La ejecución provisional la despacha y lleva el juzgado o tribunal que dictó la resolución, y las partes tienen los mismos derechos que en la definitiva. El juez puede acordar medidas cautelares para asegurarla. Contra lo que resuelva solo cabe reposición, salvo que se salga de los límites de la ejecución provisional o declare la falta de jurisdicción o competencia, en que cabe suplicación o casación.",
      "articulos": [
-      "304",
-      "305"
-     ],
-     "rango": [
-      "304",
-      "305"
+      "304"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "El auto se sale de los límites de la ejecución provisional",
+       "entonces": "Cabe suplicación o, en su caso, casación ordinaria.",
+       "articulos": [
+        "304"
+       ],
+       "literal": {
+        "articulo": "304",
+        "texto": "en que procederá recurso de suplicación o, en su caso, de casación ordinaria"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué recurso cabe, por regla general, contra lo que resuelve el juez en ejecución provisional?",
+      "a": "Solo reposición.",
+      "articulos": [
+       "304"
+      ],
+      "literal": {
+       "articulo": "304",
+       "texto": "sólo procederá el recurso de reposición"
+      }
+     },
+     "conexiones": [
+      "79",
+      "304"
+     ],
+     "recursos_rel": [
+      "reposicion-juez",
+      "suplicacion"
+     ],
+     "id": "provisional-304",
+     "continua_en": []
     }
    ]
   }

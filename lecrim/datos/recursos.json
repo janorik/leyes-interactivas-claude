@@ -5,7 +5,7 @@
  "grupos_selector": [
   {
    "quien": "LAJ",
-   "titulo": "Resoluciones del Letrado de la Administración de Justicia"
+   "titulo": "Resoluciones del LAJ"
   },
   {
    "quien": "Juez de Instrucción",
@@ -28,9 +28,9 @@
   {
    "id": "reposicion-laj",
    "recurso": "Reposición (contra resoluciones del LAJ)",
-   "contra_que": "Diligencias de ordenación y decretos del Letrado de la Administración de Justicia, salvo que la ley prevea revisión directa.",
+   "contra_que": "Diligencias de ordenación y decretos del LAJ, salvo que la ley prevea revisión directa.",
    "plazo": "3 días desde la notificación",
-   "organo": "El mismo Letrado de la Administración de Justicia que dictó la resolución.",
+   "organo": "El mismo LAJ que dictó la resolución.",
    "efectos": "No tiene efectos suspensivos. Traslado común de 2 días a las demás partes. Contra el decreto que lo resuelve no cabe recurso.",
    "articulos": [
     "238 bis",
@@ -58,7 +58,7 @@
   {
    "id": "revision-laj",
    "recurso": "Revisión (contra decretos del LAJ)",
-   "contra_que": "Decretos del Letrado de la Administración de Justicia cuando la ley prevé expresamente la revisión directa (por ejemplo, el que declara desierto un recurso).",
+   "contra_que": "Decretos del LAJ cuando la ley prevé expresamente la revisión directa (por ejemplo, el que declara desierto un recurso).",
    "plazo": "3 días desde la notificación",
    "organo": "El Juez o Tribunal con competencia funcional en la fase del proceso en que se dictó el decreto.",
    "efectos": "Traslado común de 2 días. Contra el auto que lo resuelve no cabe recurso.",
