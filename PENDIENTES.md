@@ -360,9 +360,7 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > Primer bloque desarrollado de la LRJS (arts. 103-124), elegido por el usuario: 6 fichas y 18 plazos. En la app: Mapa › Despido, sanciones y extinción del contrato. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
 
-- [ ] **Arts. 116 y 119: ¿90 o 60 días hábiles? Remisión desfasada, pendiente de revisión individual.** El art. 116 fija en «noventa días hábiles» el tiempo a partir del cual la empresa reclama al Estado; el art. 119, al remitirse a ese mismo plazo, dice «sesenta días hábiles a que se refiere el artículo 116» (Verificable: texto consolidado de la app).
-  - **Propuesta:** aplicar los 90 días del art. 116, que es el que fija el plazo; el art. 119 solo regula qué periodos se excluyen del cómputo. La ficha avisa de la discrepancia sin elegir. No verificable hasta que lo confirmes.
-  - **Tu respuesta:**
+- [x] **Arts. 116 y 119: ¿90 o 60 días hábiles? Resuelta con criterio interpretativo (usuario, 23-10-2026):** se aplica el plazo de 90 días hábiles del art. 116, que es el precepto que lo fija; la cifra de 60 del art. 119 es una discordancia del texto y no altera el art. 116. La ficha lo dice en su aviso.
 - [ ] **Art. 121: «veinte días» sin decir «hábiles».** El plazo para impugnar la extinción objetiva no dice si son días hábiles; el del despido (art. 103) sí.
   - **Propuesta:** son hábiles, porque el art. 120 remite a las normas del despido. La ficha pone «20 días», sin añadir «hábiles». No verificable hasta que lo confirmes.
   - **Tu respuesta:**
