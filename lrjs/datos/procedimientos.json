@@ -332,51 +332,269 @@
    "nombre": "Conciliación o mediación previa y vía administrativa",
    "bloque": "lrjs",
    "grupo": "Libro I · Parte general",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Antes de demandar: conciliación o mediación previa (requisito general, con excepciones) y vía administrativa previa o reclamación previa en Seguridad Social.",
    "ambito": {
     "corto": "Arts. 63 a 73",
     "texto": "TÍTULO V. De la evitación del proceso",
     "articulos": [
      "63"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "63",
+      "texto": "Será requisito previo para la tramitación del proceso el intento de conciliación"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
      "id": "evitacion-63",
-     "fase": "De la conciliación o mediación previas y de los laudos arbitrales",
-     "subtitulo": "TÍTULO V · CAPÍTULO I · arts. 63 a 68",
-     "descripcion": "",
+     "fase": "Conciliación o mediación previa",
+     "subtitulo": "Requisito previo · suspende la caducidad · si no comparecen",
+     "descripcion": "Antes del proceso hay que intentar la conciliación o la mediación ante el servicio administrativo o el órgano creado por acuerdos interprofesionales o convenios colectivos. Presentar la solicitud interrumpe la prescripción y suspende la caducidad; el plazo se reanuda al día siguiente de intentada, o a los 15 días hábiles si no se ha celebrado. A los 30 días hábiles sin acto o sin acuerdo, el trámite se da por cumplido. La asistencia es obligatoria. Lo acordado es título ejecutivo sin necesidad de ratificarlo ante el juez. Hay muchos procesos exentos (art. 64): los que exigen vía administrativa, Seguridad Social, despido colectivo impugnado por los representantes, vacaciones, materia electoral, movilidad geográfica, modificación sustancial, monitorio, tutela de derechos fundamentales, entre otros.",
+     "aviso": "El art. 83 citado es del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]].",
      "articulos": [
       "63",
+      "64",
+      "65",
+      "66",
+      "67",
       "68"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Sin celebrarse la conciliación: se reanuda el plazo suspendido",
+       "plazo": "A los 15 días hábiles de presentarla",
+       "articulo": "65",
+       "literal": "transcurridos quince días hábiles desde su presentación sin que se haya celebrado"
+      },
+      {
+       "acto": "Sin acto ni acuerdo: trámite cumplido",
+       "plazo": "30 días hábiles",
+       "articulo": "65",
+       "literal": "transcurrido el plazo de treinta días hábiles sin haberse celebrado el acto de conciliación"
+      },
+      {
+       "acto": "Impugnar el acuerdo de conciliación o mediación",
+       "plazo": "30 días hábiles desde el acuerdo (caducidad)",
+       "articulo": "67",
+       "literal": "La acción caducará a los treinta días hábiles"
+      },
+      {
+       "acto": "Impugnar un laudo arbitral",
+       "plazo": "30 días hábiles desde su notificación (caducidad)",
+       "articulo": "65",
+       "literal": "La acción caducará en el plazo de treinta días hábiles, excluidos los sábados, domingos y festivos, desde la notificación del laudo."
+      },
+      {
+       "acto": "Se demandó sin justificar la conciliación: acreditarla",
+       "plazo": "15 días desde la notificación",
+       "articulo": "81",
+       "literal": "ha de acreditar la celebración o el intento del expresado acto en el plazo de quince días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No comparece quien la pidió, sin justa causa",
+       "entonces": "Se tiene por no presentada la papeleta y se archiva.",
+       "articulos": [
+        "66"
+       ],
+       "literal": {
+        "articulo": "66",
+        "texto": "se tendrá por no presentada la papeleta de conciliación"
+       }
+      },
+      {
+       "si": "No comparece la otra parte, debidamente citada",
+       "entonces": "Se tiene por intentada sin efecto; si la sentencia coincide con lo pedido, se le imponen las costas, con honorarios de hasta 600 €.",
+       "articulos": [
+        "66",
+        "97"
+       ],
+       "literal": {
+        "articulo": "66",
+        "texto": "se tendrá la conciliación o la mediación por intentada sin efecto"
+       }
+      },
+      {
+       "si": "Hay acuerdo",
+       "entonces": "Es título para ejecutar sin ratificarlo ante el juez.",
+       "articulos": [
+        "68"
+       ],
+       "literal": {
+        "articulo": "68",
+        "texto": "constituirá título para iniciar acciones ejecutivas sin necesidad de ratificación"
+       }
+      },
+      {
+       "si": "El proceso está exento pero las partes acuden igualmente de común acuerdo",
+       "entonces": "También se suspende la caducidad y se interrumpe la prescripción.",
+       "articulos": [
+        "64"
+       ],
+       "literal": {
+        "articulo": "64",
+        "texto": "se suspenderán los plazos de caducidad o se interrumpirán los de prescripción"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué efecto tiene presentar la papeleta de conciliación sobre el plazo de caducidad del despido?",
+      "a": "Lo suspende desde la presentación. Se reanuda al día siguiente de intentada la conciliación, o a los 15 días hábiles si no se ha celebrado.",
+      "articulos": [
+       "65"
+      ],
+      "literal": {
+       "articulo": "65",
+       "texto": "suspenderá la caducidad de acciones desde la fecha de dicha presentación"
+      }
+     },
+     "conexiones": [
       "63",
-      "68"
+      "64",
+      "65",
+      "66",
+      "67",
+      "68",
+      "80",
+      "81",
+      "103"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "ordinario",
+      "despido"
+     ]
     },
     {
      "id": "evitacion-69",
-     "fase": "Del agotamiento de la vía administrativa previa a la vía judicial",
-     "subtitulo": "TÍTULO V · CAPÍTULO II · arts. 69 a 73",
-     "descripcion": "",
+     "fase": "Vía administrativa previa y reclamación previa en Seguridad Social",
+     "subtitulo": "Demandar a una Administración · 2 meses o 20 días · reclamación previa en 30 días",
+     "descripcion": "Para demandar al Estado, comunidades autónomas, entidades locales o entes públicos vinculados hay que agotar antes la vía administrativa, cuando proceda. Agotada, la demanda se presenta en 2 meses; si la acción es de despido u otra sujeta a caducidad, en 20 días hábiles. En prestaciones de Seguridad Social se exige reclamación previa ante la entidad gestora en 30 días; la entidad contesta en 45 días (si no, se entiende denegada) y la demanda se presenta en los 30 días siguientes. En el proceso no se pueden introducir variaciones sustanciales respecto de lo pedido en vía administrativa, salvo hechos nuevos.",
      "articulos": [
       "69",
+      "70",
+      "71",
+      "72",
       "73"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Demanda tras agotar la vía administrativa",
+       "plazo": "2 meses",
+       "articulo": "69",
+       "literal": "podrá formalizar la demanda en el plazo de dos meses"
+      },
+      {
+       "acto": "Despido y demás acciones sujetas a caducidad",
+       "plazo": "20 días hábiles o el plazo especial",
+       "articulo": "69",
+       "literal": "el plazo de interposición de la demanda será de veinte días hábiles o el especial que sea aplicable"
+      },
+      {
+       "acto": "Tutela de derechos fundamentales frente a la Administración (sin vía previa)",
+       "plazo": "20 días desde la notificación del acto",
+       "articulo": "70",
+       "literal": "el plazo para la interposición de la demanda será de veinte días desde el día siguiente a la notificación del acto"
+      },
+      {
+       "acto": "Reclamación previa en prestaciones de Seguridad Social",
+       "plazo": "30 días desde la notificación",
+       "articulo": "71",
+       "literal": "en el plazo de treinta días desde la notificación de la misma"
+      },
+      {
+       "acto": "Reclamación previa contra un alta médica (cuando se exige)",
+       "plazo": "11 días",
+       "articulo": "71",
+       "literal": "la reclamación previa se interpondrá en el plazo de once días desde la notificación de la resolución"
+      },
+      {
+       "acto": "La entidad gestora contesta la reclamación",
+       "plazo": "45 días",
+       "articulo": "71",
+       "literal": "la Entidad deberá contestar expresamente a la misma en el plazo de cuarenta y cinco días"
+      },
+      {
+       "acto": "Demanda en prestaciones tras la denegación",
+       "plazo": "30 días",
+       "articulo": "71",
+       "literal": "La demanda habrá de formularse en el plazo de treinta días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La notificación administrativa no dice los recursos, el órgano o el plazo",
+       "entonces": "Los plazos de caducidad siguen suspendidos y los de prescripción interrumpidos.",
+       "articulos": [
+        "69"
+       ],
+       "literal": {
+        "articulo": "69",
+        "texto": "mantendrán suspendidos los plazos de caducidad e interrumpidos los de prescripción"
+       }
+      },
+      {
+       "si": "Se demanda tutela de derechos fundamentales frente a la Administración",
+       "entonces": "No hace falta agotar la vía administrativa.",
+       "articulos": [
+        "70"
+       ],
+       "literal": {
+        "articulo": "70",
+        "texto": "No será necesario agotar la vía administrativa para interponer demanda de tutela de derechos fundamentales"
+       }
+      },
+      {
+       "si": "Alta médica al agotarse los 365 días de incapacidad temporal",
+       "entonces": "No se exige reclamación previa.",
+       "articulos": [
+        "71"
+       ],
+       "literal": {
+        "articulo": "71",
+        "texto": "Se exceptúan los procedimientos de impugnación de las resoluciones administrativas expresas en las que se acuerda el alta médica"
+       }
+      },
+      {
+       "si": "En el juicio se cambian cantidades o conceptos respecto de la reclamación",
+       "entonces": "No se admiten variaciones sustanciales, salvo hechos nuevos.",
+       "articulos": [
+        "72"
+       ],
+       "literal": {
+        "articulo": "72",
+        "texto": "no podrán introducir las partes variaciones sustanciales de tiempo, cantidades o conceptos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si la entidad gestora no contesta la reclamación previa en 45 días, ¿qué ocurre?",
+      "a": "Se entiende denegada por silencio administrativo, y desde entonces corren los 30 días para demandar.",
+      "articulos": [
+       "71"
+      ],
+      "literal": {
+       "articulo": "71",
+       "texto": "En caso contrario se entenderá denegada la reclamación por silencio administrativo."
+      }
+     },
+     "conexiones": [
       "69",
-      "73"
+      "70",
+      "71",
+      "72",
+      "73",
+      "117",
+      "140",
+      "151"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "ordinario",
+      "seguridad-social"
+     ]
     }
    ]
   },
@@ -385,166 +603,784 @@
    "nombre": "Proceso ordinario y monitorio",
    "bloque": "lrjs",
    "grupo": "Libro II · Proceso ordinario y modalidades",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "El proceso tipo de la jurisdicción social, del que beben todas las modalidades: preparación, demanda, conciliación judicial y juicio, prueba, sentencia y el monitorio laboral.",
    "ambito": {
     "corto": "Arts. 76 a 102",
     "texto": "CAPÍTULO I. De los actos preparatorios y diligencias preliminares, de la anticipación y aseguramiento de la prueba y de las medidas cautelares · CAPÍTULO II. Del proceso ordinario · CAPÍTULO I. Disposición general",
     "articulos": [
      "76"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "102",
+      "texto": "En todo lo que no esté expresamente previsto en el presente Título, regirán las disposiciones establecidas para el proceso ordinario."
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
      "id": "ordinario-76",
      "fase": "Actos preparatorios y diligencias preliminares",
-     "subtitulo": "CAPÍTULO I · Sección 1.ª · arts. 76 a 77",
-     "descripcion": "",
+     "subtitulo": "Antes de demandar: datos del demandado, del empresario o del grupo · exhibición de documentos",
+     "descripcion": "Quien vaya a demandar puede pedir al juzgado que el futuro demandado declare o aporte documentos sobre su personalidad, capacidad, representación o legitimación; que se averigüe quién es el empresario y quiénes integran el grupo; o las diligencias del art. 256 LEC. También se puede pedir el examen de libros, cuentas u otros documentos imprescindibles para fundar la demanda o la oposición, con un experto contable si se trata de contabilidad.",
+     "aviso": "El art. 256 citado es de la [[Ley de Enjuiciamiento Civil|https://www.boe.es/buscar/act.php?id=BOE-A-2000-323]] (también en esta app).",
      "articulos": [
       "76",
       "77"
      ],
-     "rango": [
-      "76",
-      "77"
+     "plazos": [
+      {
+       "acto": "El juez resuelve la exhibición de documentos",
+       "plazo": "Por auto, dentro del segundo día",
+       "articulo": "77",
+       "literal": "El órgano judicial resolverá por auto, dentro del segundo día"
+      }
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Se deniega la diligencia",
+       "entonces": "No cabe recurso, sin perjuicio del que se interponga contra la sentencia.",
+       "articulos": [
+        "76"
+       ],
+       "literal": {
+        "articulo": "76",
+        "texto": "Contra la resolución judicial denegando la práctica de estas diligencias no cabrá recurso alguno"
+       }
+      },
+      {
+       "si": "La diligencia afecta a la intimidad u otro derecho fundamental",
+       "entonces": "Sin consentimiento del afectado, el juez puede autorizarla con las garantías del art. 90.",
+       "articulos": [
+        "76",
+        "90"
+       ],
+       "literal": {
+        "articulo": "76",
+        "texto": "podrá autorizar dicha actuación en la forma y con las garantías establecidas en los apartados 4 a 6 del artículo 90"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se puede pedir, antes de demandar, que se identifique a los integrantes de un grupo de empresas?",
+      "a": "Sí: entre las diligencias preliminares está la determinación del empresario y de los integrantes del grupo o unidad empresarial.",
+      "articulos": [
+       "76"
+      ],
+      "literal": {
+       "articulo": "76",
+       "texto": "las diligencias necesarias encaminadas a la determinación del empresario y los integrantes del grupo o unidad empresarial"
+      }
+     },
+     "conexiones": [
+      "76",
+      "77",
+      "90"
+     ],
+     "continua_en": []
     },
     {
      "id": "ordinario-78",
      "fase": "Anticipación y aseguramiento de la prueba",
-     "subtitulo": "CAPÍTULO I · Sección 2.ª · art. 78",
-     "descripcion": "",
+     "subtitulo": "Prueba que no podrá hacerse en el juicio",
+     "descripcion": "Quien vaya a demandar, o prevea que será demandado, puede pedir que se practique antes una prueba si hay temor fundado de que no podrá hacerse en el juicio: testigo de edad avanzada, peligro para su vida, ausencia próxima u otro motivo grave. Iniciado el proceso, cualquiera de las partes puede pedirlo, sin que se suspenda el juicio. Se aplican los arts. 293 a 297 y 298.1 LEC.",
+     "aviso": "Los arts. 293 a 298 citados son de la [[Ley de Enjuiciamiento Civil|https://www.boe.es/buscar/act.php?id=BOE-A-2000-323]] (también en esta app).",
      "articulos": [
-      "78"
-     ],
-     "rango": [
       "78",
-      "78"
+      "81"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Anticipación pedida en la demanda: resuelve el juez",
+       "plazo": "3 días",
+       "articulo": "81",
+       "literal": "se dará cuenta al juez, jueza o tribunal para que resuelva lo procedente, dentro de los tres días siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se deniega la anticipación",
+       "entonces": "No cabe recurso, sin perjuicio del que se interponga contra la sentencia.",
+       "articulos": [
+        "78"
+       ],
+       "literal": {
+        "articulo": "78",
+        "texto": "Contra la resolución denegatoria no cabrá recurso alguno"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Iniciado el proceso, ¿pedir la práctica anticipada de una prueba suspende el juicio?",
+      "a": "No: se puede pedir, pero sin dar lugar a la suspensión del acto del juicio.",
+      "articulos": [
+       "78"
+      ],
+      "literal": {
+       "articulo": "78",
+       "texto": "en todo caso sin dar lugar a suspensión del acto de juicio"
+      }
+     },
+     "conexiones": [
+      "78",
+      "81",
+      "90"
+     ],
+     "continua_en": []
     },
     {
      "id": "ordinario-79",
-     "fase": "Medidas cautelares",
-     "subtitulo": "CAPÍTULO I · Sección 3.ª · art. 79",
-     "descripcion": "",
+     "fase": "Medidas cautelares y embargo preventivo",
+     "subtitulo": "Las de la LEC adaptadas · sin caución para el trabajador · embargo antes de la sentencia",
+     "descripcion": "Las medidas cautelares se rigen por los arts. 721 a 747 LEC, adaptados al proceso social y oídas las partes, aunque pueden anticiparse si hay urgencia. Si se impugnan actos de las Administraciones en materia laboral y de Seguridad Social, por los arts. 129 a 136 de la Ley 29/1998, reguladora de la Jurisdicción Contencioso-Administrativa. Trabajadores, beneficiarios y sindicatos no prestan caución. El juez puede acordar el embargo preventivo de bienes del demandado si este hace actos para situarse en insolvencia, de oficio o a instancia de parte o del FOGASA.",
+     "aviso": "Los arts. 721 a 747 citados son de la [[Ley de Enjuiciamiento Civil|https://www.boe.es/buscar/act.php?id=BOE-A-2000-323]] (también en esta app).",
      "articulos": [
       "79"
      ],
-     "rango": [
-      "79",
-      "79"
+     "plazos": [
+      {
+       "acto": "El solicitante del embargo justifica la situación alegada",
+       "plazo": "En el término de una audiencia",
+       "articulo": "79",
+       "literal": "en el término de una audiencia"
+      }
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Hay urgencia o la audiencia previa puede frustrar la medida",
+       "entonces": "Puede anticiparse su efectividad, motivadamente.",
+       "articulos": [
+        "79"
+       ],
+       "literal": {
+        "articulo": "79",
+        "texto": "podrá anticiparse en forma motivada la efectividad de las medidas"
+       }
+      },
+      {
+       "si": "Pide la medida un trabajador, un beneficiario o un sindicato",
+       "entonces": "No presta caución, garantía ni indemnización.",
+       "articulos": [
+        "79"
+       ],
+       "literal": {
+        "articulo": "79",
+        "texto": "estarán exentos de la prestación de cauciones"
+       }
+      },
+      {
+       "si": "Extinción por el art. 50 ET con conducta empresarial que lesiona la dignidad o derechos fundamentales",
+       "entonces": "Pueden acordarse las medidas del art. 180.4, manteniendo el salario y la cotización.",
+       "articulos": [
+        "79",
+        "180"
+       ],
+       "literal": {
+        "articulo": "79",
+        "texto": "con mantenimiento del deber empresarial de cotizar y de abonar los salarios"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hasta cuándo puede pedirse el embargo preventivo?",
+      "a": "En cualquier momento del proceso antes de la sentencia, sin que se suspendan las actuaciones.",
+      "articulos": [
+       "79"
+      ],
+      "literal": {
+       "articulo": "79",
+       "texto": "podrá ser presentada en cualquier momento del proceso antes de la sentencia"
+      }
+     },
+     "conexiones": [
+      "79",
+      "180"
+     ],
+     "continua_en": []
     },
     {
      "id": "ordinario-80",
-     "fase": "Demanda",
-     "subtitulo": "CAPÍTULO II · Sección 1.ª · arts. 80 a 82",
-     "descripcion": "",
+     "fase": "Demanda, admisión y señalamiento",
+     "subtitulo": "Requisitos · el LAJ revisa en 3 días · 4 para subsanar · prueba documental 10 días antes",
+     "descripcion": "La demanda va por escrito (hay formularios en la oficina judicial): órgano y modalidad procesal; demandante e interesados, con sus domicilios; hechos claros y concretos, sin alegar otros distintos de los de la conciliación o mediación; súplica; domicilio o profesional que firma, y fecha y firma. Se acompaña el justificante de la conciliación o mediación previa, o del agotamiento de la vía administrativa. El LAJ la revisa en 3 días: la admite y señala la conciliación y el juicio, o da 4 días para subsanar. Entre la citación y el juicio deben mediar al menos 10 días. La prueba documental o pericial se traslada o aporta 10 días antes del juicio.",
      "articulos": [
       "80",
+      "81",
       "82"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "El LAJ revisa la demanda",
+       "plazo": "3 días desde que la recibe",
+       "articulo": "81",
+       "literal": "dentro de los tres días siguientes a la recepción de la demanda"
+      },
+      {
+       "acto": "Subsanar defectos de la demanda",
+       "plazo": "4 días",
+       "articulo": "81",
+       "literal": "a fin de que los subsane dentro del plazo de cuatro días"
+      },
+      {
+       "acto": "Acreditar la conciliación previa que no se acompañó",
+       "plazo": "15 días",
+       "articulo": "81",
+       "literal": "en el plazo de quince días, contados a partir del día siguiente a la recepción de la notificación"
+      },
+      {
+       "acto": "El demandado designa abogado, graduado social o procurador",
+       "plazo": "2 días desde la notificación",
+       "articulo": "81",
+       "literal": "en el plazo de dos días desde la notificación de la demanda, designe letrado"
+      },
+      {
+       "acto": "Entre la citación y el juicio",
+       "plazo": "Mínimo 10 días",
+       "articulo": "82",
+       "literal": "debiendo mediar un mínimo de diez días entre la citación y la efectiva celebración de dichos actos"
+      },
+      {
+       "acto": "Trasladar o aportar la prueba documental o pericial",
+       "plazo": "10 días antes del juicio",
+       "articulo": "82",
+       "literal": "con diez días de antelación al acto de juicio, de la prueba documental o pericial"
+      },
+      {
+       "acto": "Conciliación anticipada",
+       "plazo": "Al menos 30 días antes del juicio",
+       "articulo": "82",
+       "literal": "con una antelación mínima de treinta días a la celebración del acto del juicio"
+      },
+      {
+       "acto": "Representa el Abogado del Estado: consulta previa",
+       "plazo": "22 días",
+       "articulo": "82",
+       "literal": "se le concederá un plazo de veintidós días para la consulta a la Abogacía General del Estado"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No se subsanan los defectos",
+       "entonces": "El juez decide sobre la admisión en 3 días.",
+       "articulos": [
+        "81"
+       ],
+       "literal": {
+        "articulo": "81",
+        "texto": "dará cuenta al juez, jueza o tribunal para que por el mismo se resuelva, dentro de los tres días siguientes, sobre su admisibilidad"
+       }
+      },
+      {
+       "si": "Se presenta prueba documental pasado el plazo de 10 días",
+       "entonces": "Solo se admite en casos tasados: documento posterior, desconocido antes o imposible de obtener por causa no imputable.",
+       "articulos": [
+        "82"
+       ],
+       "literal": {
+        "articulo": "82",
+        "texto": "sólo se admitirán a la parte actora o demandada los documentos"
+       }
+      },
+      {
+       "si": "La demanda alega hechos que no se dijeron en la conciliación",
+       "entonces": "No se admite, salvo hechos nuevos o que no pudieron conocerse antes.",
+       "articulos": [
+        "80"
+       ],
+       "literal": {
+        "articulo": "80",
+        "texto": "En ningún caso podrán alegarse hechos distintos de los aducidos en conciliación o mediación"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué pasa si la demanda llega sin el justificante de la conciliación previa?",
+      "a": "Se admite y se señala igualmente, pero el LAJ da 15 días para acreditarla; si no se acredita, se archiva y el señalamiento queda sin efecto.",
+      "articulos": [
+       "81"
+      ],
+      "literal": {
+       "articulo": "81",
+       "texto": "con apercibimiento de archivo de las actuaciones en caso contrario"
+      }
+     },
+     "conexiones": [
+      "16",
+      "63",
+      "72",
       "80",
+      "81",
       "82"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
      "id": "ordinario-83",
-     "fase": "Conciliación y juicio",
-     "subtitulo": "CAPÍTULO II · Sección 2.ª · arts. 83 a 89",
-     "descripcion": "",
+     "fase": "Conciliación judicial y juicio",
+     "subtitulo": "Primero ante el LAJ · después ante el juez: ratificación, contestación, prueba y conclusiones",
+     "descripcion": "Primero, conciliación ante el LAJ: si hay avenencia, la aprueba por decreto y se archiva; lo acordado se ejecuta como una sentencia. Si no, juicio ante el juez: cuestiones previas; el demandante ratifica o amplía la demanda sin variación sustancial; el demandado contesta y alega excepciones; reconvención solo si se anunció en la conciliación previa; fijación de los hechos conformes y disconformes; prueba, y conclusiones con cantidades líquidas. El juicio solo se suspende una vez, a petición de ambas partes o por motivo justificado. No se suspende por seguirse causa criminal sobre los mismos hechos, salvo falsedad de un documento decisivo.",
      "articulos": [
       "83",
-      "89"
+      "84",
+      "85",
+      "86",
+      "86 bis",
+      "87"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Nuevo señalamiento tras la suspensión",
+       "plazo": "En los 10 días siguientes",
+       "articulo": "83",
+       "literal": "señalándose nuevamente dentro de los diez días siguientes a la fecha de la suspensión"
+      },
+      {
+       "acto": "Acuerdo firmado digitalmente: decreto que lo aprueba",
+       "plazo": "3 días como máximo",
+       "articulo": "84",
+       "literal": "se dictará decreto en el plazo máximo de tres días"
+      },
+      {
+       "acto": "Impugnar la conciliación judicial",
+       "plazo": "30 días desde su celebración (caducidad)",
+       "articulo": "84",
+       "literal": "La acción caducará a los treinta días de la fecha de su celebración."
+      },
+      {
+       "acto": "Falsedad de un documento decisivo: acreditar la querella",
+       "plazo": "8 días",
+       "articulo": "86",
+       "literal": "concederá un plazo de ocho días al interesado para que aporte el documento que acredite haber presentado la querella"
+      },
+      {
+       "acto": "Procedimiento testigo: audiencia de las partes",
+       "plazo": "5 días (común)",
+       "articulo": "86 bis",
+       "literal": "previa audiencia de las partes por plazo común de cinco días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No comparece el demandante sin justa causa",
+       "entonces": "Se le tiene por desistido.",
+       "articulos": [
+        "83"
+       ],
+       "literal": {
+        "articulo": "83",
+        "texto": "le tendrán por desistido de su demanda"
+       }
+      },
+      {
+       "si": "No comparece el demandado sin justa causa",
+       "entonces": "Se celebran la conciliación y el juicio sin declarar su rebeldía.",
+       "articulos": [
+        "83"
+       ],
+       "literal": {
+        "articulo": "83",
+        "texto": "continuando este sin necesidad de declarar su rebeldía"
+       }
+      },
+      {
+       "si": "El acuerdo es lesivo, fraudulento o abusivo",
+       "entonces": "El LAJ no lo aprueba y las partes van a juicio.",
+       "articulos": [
+        "84"
+       ],
+       "literal": {
+        "articulo": "84",
+        "texto": "no aprobará el acuerdo"
+       }
+      },
+      {
+       "si": "El demandado se allana",
+       "entonces": "Si es total, sentencia de condena; si es parcial, auto que puede ejecutarse.",
+       "articulos": [
+        "85"
+       ],
+       "literal": {
+        "articulo": "85",
+        "texto": "Si el allanamiento fuese total se dictará sentencia condenatoria de acuerdo con las pretensiones del actor."
+       }
+      },
+      {
+       "si": "Hay muchos procesos con el mismo objeto contra el mismo demandado",
+       "entonces": "Se tramita uno o varios como procedimiento testigo y se suspenden los demás.",
+       "articulos": [
+        "86 bis"
+       ],
+       "literal": {
+        "articulo": "86 bis",
+        "texto": "deberá tramitar preceptivamente uno o varios con carácter preferente"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el demandado reconvenir en el juicio sin haberlo anunciado antes?",
+      "a": "No: solo si la anunció en la conciliación o mediación previa (o en la reclamación previa o la resolución que agota la vía administrativa), expresando los hechos y la petición.",
+      "articulos": [
+       "85"
+      ],
+      "literal": {
+       "articulo": "85",
+       "texto": "Únicamente podrá formular reconvención cuando la hubiese anunciado en la conciliación previa al proceso"
+      }
+     },
+     "conexiones": [
       "83",
-      "89"
+      "84",
+      "85",
+      "86",
+      "86 bis",
+      "87",
+      "89",
+      "97"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     },
     {
      "id": "ordinario-90",
-     "fase": "De las pruebas",
-     "subtitulo": "CAPÍTULO II · Sección 3.ª · arts. 90 a 96",
-     "descripcion": "",
+     "fase": "La prueba",
+     "subtitulo": "En el juicio · sin pruebas ilícitas · carga del demandado si hay indicios de discriminación",
+     "descripcion": "Se admiten los medios de prueba útiles y pertinentes sobre los hechos no conformes, practicados en el juicio. No se admiten las pruebas obtenidas violando derechos fundamentales; contra lo que se decida, solo reposición en el acto. El interrogatorio de parte y de testigos es verbal, sin pliegos, y los testigos no pueden tacharse. La pericial se practica en el juicio. Si hay indicios de discriminación o de vulneración de un derecho fundamental, el demandado debe justificar sus medidas y su proporcionalidad; en accidentes de trabajo, los obligados a la seguridad prueban que adoptaron las medidas de prevención. Terminado el juicio, el juez puede acordar diligencias finales.",
      "articulos": [
+      "87",
+      "88",
       "90",
+      "91",
+      "92",
+      "93",
+      "94",
+      "95",
       "96"
      ],
-     "rango": [
-      "90",
-      "96"
+     "plazos": [
+      {
+       "acto": "Pedir diligencias de preparación de la prueba",
+       "plazo": "Al menos 10 días antes del juicio (3 si el señalamiento es más corto)",
+       "articulo": "90",
+       "literal": "al menos con diez días de antelación a la fecha del juicio"
+      },
+      {
+       "acto": "Diligencias finales",
+       "plazo": "Hasta 20 días",
+       "articulo": "88",
+       "literal": "que no excederá de veinte días"
+      },
+      {
+       "acto": "Informe escrito de una persona jurídica o entidad pública",
+       "plazo": "En los 10 días anteriores al juicio",
+       "articulo": "95",
+       "literal": "responda por escrito sobre los hechos en los diez días anteriores al juicio"
+      }
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Se inadmite una prueba",
+       "entonces": "Hay que formular protesta en el acto para poder recurrir después.",
+       "articulos": [
+        "87"
+       ],
+       "literal": {
+        "articulo": "87",
+        "texto": "La parte proponente podrá hacer constar su protesta en el acto"
+       }
+      },
+      {
+       "si": "La parte citada a interrogatorio no comparece o no responde",
+       "entonces": "Pueden tenerse por ciertos los hechos de las preguntas, si intervino en ellos y le perjudican.",
+       "articulos": [
+        "91"
+       ],
+       "literal": {
+        "articulo": "91",
+        "texto": "podrán considerarse reconocidos como ciertos en la sentencia los hechos"
+       }
+      },
+      {
+       "si": "Se propone una prueba obtenida violando derechos fundamentales",
+       "entonces": "No se admite.",
+       "articulos": [
+        "90"
+       ],
+       "literal": {
+        "articulo": "90",
+        "texto": "No se admitirán pruebas que tuvieran su origen o que se hubieran obtenido"
+       }
+      },
+      {
+       "si": "Una parte no aporta el documento requerido",
+       "entonces": "Pueden tenerse por probadas las alegaciones de la contraria.",
+       "articulos": [
+        "94"
+       ],
+       "literal": {
+        "articulo": "94",
+        "texto": "podrán estimarse probadas las alegaciones hechas por la contraria"
+       }
+      },
+      {
+       "si": "Se discute la interpretación de un convenio colectivo",
+       "entonces": "El juez puede pedir informe a su comisión paritaria.",
+       "articulos": [
+        "95"
+       ],
+       "literal": {
+        "articulo": "95",
+        "texto": "podrá oír o recabar informe de la comisión paritaria"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si hay indicios de discriminación, ¿quién debe probar?",
+      "a": "El demandado: debe aportar una justificación objetiva y razonable, suficientemente probada, de sus medidas y de su proporcionalidad.",
+      "articulos": [
+       "96"
+      ],
+      "literal": {
+       "articulo": "96",
+       "texto": "corresponderá al demandado la aportación de una justificación objetiva y razonable"
+      }
+     },
+     "conexiones": [
+      "87",
+      "88",
+      "90",
+      "91",
+      "92",
+      "93",
+      "94",
+      "95",
+      "96",
+      "177"
+     ],
+     "continua_en": [
+      "tutela"
+     ]
     },
     {
      "id": "ordinario-97",
      "fase": "Sentencia",
-     "subtitulo": "CAPÍTULO II · Sección 4.ª · arts. 97 a 100",
-     "descripcion": "",
+     "subtitulo": "5 días · hechos probados · cantidad siempre líquida · sanción por no ir a la conciliación",
+     "descripcion": "La sentencia se dicta en 5 días y se notifica en los 2 siguientes. Declara los hechos probados y fundamenta el fallo. Si condena a pagar una cantidad, la fija siempre; no puede dejarla para la ejecución, salvo cantidades periódicas futuras. Puede sancionar a quien no acudió sin causa a la conciliación o mediación, o litigó con mala fe o temeridad; si el condenado es el empresario, paga además los honorarios de la contraparte hasta 600 €. Indica si es firme y qué recurso cabe, con los depósitos y consignaciones. Si el juez que presidió el juicio no puede dictarla, se repite el juicio. El empresario paga al trabajador los salarios del tiempo que dedicó a los actos procesales.",
      "articulos": [
       "97",
+      "98",
+      "99",
       "100"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Dictar sentencia",
+       "plazo": "5 días",
+       "articulo": "97",
+       "literal": "dictará sentencia en el plazo de cinco días"
+      },
+      {
+       "acto": "Notificarla",
+       "plazo": "En los 2 días siguientes",
+       "articulo": "97",
+       "literal": "notificándose a las partes o a sus representantes dentro de los dos días siguientes"
+      },
+      {
+       "acto": "Alegaciones si el juez plantea de oficio una sanción tras el juicio",
+       "plazo": "2 días",
+       "articulo": "97",
+       "literal": "se concederá a las partes un término de dos días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El juez que presidió el juicio no puede dictar sentencia",
+       "entonces": "Hay que celebrar de nuevo el juicio.",
+       "articulos": [
+        "98"
+       ],
+       "literal": {
+        "articulo": "98",
+        "texto": "deberá celebrarse éste nuevamente"
+       }
+      },
+      {
+       "si": "¿Qué recurso cabe?",
+       "entonces": "Suplicación, salvo las materias y cuantías excluidas del art. 191.",
+       "articulos": [
+        "191"
+       ],
+       "literal": {
+        "articulo": "191",
+        "texto": "Son recurribles en suplicación las sentencias que dicten los Juzgados de lo Social"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede la sentencia dejar la cuantía de la condena para la ejecución?",
+      "a": "No. Solo puede condenar a cantidades periódicas que se devenguen después.",
+      "articulos": [
+       "99"
+      ],
+      "literal": {
+       "articulo": "99",
+       "texto": "sin que en ningún caso pueda reservarse tal determinación para la ejecución"
+      }
+     },
+     "conexiones": [
+      "75",
       "97",
-      "100"
+      "98",
+      "99",
+      "100",
+      "191"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "recursos",
+      "ejecucion"
+     ]
     },
     {
      "id": "ordinario-101",
      "fase": "Proceso monitorio",
-     "subtitulo": "CAPÍTULO II · Sección 5.ª · art. 101",
-     "descripcion": "",
+     "subtitulo": "Hasta 15.000 € · pagar u oponerse en 10 días · sin oposición, ejecución",
+     "descripcion": "Sirve para que el trabajador reclame al empresario que no esté en concurso cantidades vencidas, exigibles y determinadas de la relación laboral, de hasta 15.000 €. No vale para reclamaciones colectivas ni contra entidades gestoras o colaboradoras de la Seguridad Social. No exige conciliación previa (art. 64). La petición recoge los datos del empresario y el desglose de conceptos, cuantías y periodos, con documentos que sean principio de prueba. Se requiere al empresario para que pague o se oponga en 10 días, y se da traslado al FOGASA. Sin pago ni oposición, el LAJ termina el monitorio por decreto y basta pedir la ejecución. Con oposición, el trabajador responde en 3 días y, si se pide vista, se sigue el proceso ordinario.",
      "articulos": [
-      "101"
-     ],
-     "rango": [
       "101",
-      "101"
+      "64"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Subsanar defectos de la petición",
+       "plazo": "4 días",
+       "articulo": "101",
+       "literal": "concederá trámite de subsanación por cuatro días"
+      },
+      {
+       "acto": "El empresario paga o se opone",
+       "plazo": "10 días",
+       "articulo": "101",
+       "literal": "requerirá al empresario para que, en el plazo de diez días, pague directamente al trabajador"
+      },
+      {
+       "acto": "FOGASA, si necesita averiguar",
+       "plazo": "10 días más",
+       "articulo": "101",
+       "literal": "plazo que se ampliará respecto del mismo por otros diez días más"
+      },
+      {
+       "acto": "El trabajador responde a la oposición",
+       "plazo": "3 días",
+       "articulo": "101",
+       "literal": "para que manifieste en tres días lo que a su derecho convenga respecto a la oposición"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El empresario se opone solo a una parte",
+       "entonces": "El trabajador puede pedir auto por lo no impugnado, que sirve para ejecutar ya.",
+       "articulos": [
+        "101"
+       ],
+       "literal": {
+        "articulo": "101",
+        "texto": "el demandante podrá solicitar del juzgado que se dicte auto acogiendo la reclamación en cuanto a las cantidades reconocidas o no impugnadas"
+       }
+      },
+      {
+       "si": "No se pudo notificar personalmente el requerimiento",
+       "entonces": "Se convoca vista por el proceso ordinario.",
+       "articulos": [
+        "101"
+       ],
+       "literal": {
+        "articulo": "101",
+        "texto": "Si no hubiera sido posible notificar personalmente en la forma exigida el requerimiento de pago"
+       }
+      },
+      {
+       "si": "Despachada la ejecución, el empresario se opone",
+       "entonces": "Cabe oposición (art. 239.4); contra el auto que la resuelve no hay suplicación.",
+       "articulos": [
+        "101",
+        "239"
+       ],
+       "literal": {
+        "articulo": "101",
+        "texto": "Contra el auto resolutorio de la oposición no procederá recurso de suplicación."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuál es la cuantía máxima del monitorio laboral?",
+      "a": "15.000 euros.",
+      "articulos": [
+       "101"
+      ],
+      "literal": {
+       "articulo": "101",
+       "texto": "que no excedan de quince mil euros"
+      }
+     },
+     "conexiones": [
+      "64",
+      "101",
+      "239",
+      "251"
+     ],
+     "continua_en": [
+      "ejecucion"
+     ]
     },
     {
      "id": "ordinario-102",
-     "fase": "Disposición general",
-     "subtitulo": "CAPÍTULO I · art. 102",
-     "descripcion": "",
+     "fase": "Modalidades procesales: regla general",
+     "subtitulo": "Lo no previsto, por el proceso ordinario · modalidad equivocada: se reconduce",
+     "descripcion": "Las modalidades procesales (despido, Seguridad Social, conflictos colectivos, tutela…) se rigen por sus normas y, en lo no previsto, por las del proceso ordinario. Se tramita según la modalidad indicada en la demanda, pero si es inadecuada se reconduce a la correcta, con su régimen de recursos. Solo se absuelve en la instancia si no se puede completar la tramitación o el demandante insiste en la modalidad inadecuada. El trabajador autónomo económicamente dependiente acude al proceso ordinario o a la modalidad adecuada; si no hay plazo propio, prescripción de un año.",
      "articulos": [
       "102"
      ],
-     "rango": [
-      "102",
+     "plazos": [
+      {
+       "acto": "Autónomo económicamente dependiente, sin plazo propio",
+       "plazo": "1 año (prescripción)",
+       "articulo": "102",
+       "literal": "regirá el plazo de prescripción de un año desde que pudieran ser ejercitadas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La modalidad elegida en la demanda es inadecuada",
+       "entonces": "Se da al asunto la tramitación que corresponda, sin quedar vinculado a lo elegido.",
+       "articulos": [
+        "102"
+       ],
+       "literal": {
+        "articulo": "102",
+        "texto": "se procederá a dar al asunto la tramitación que corresponda a la naturaleza de las pretensiones ejercitadas"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si el demandante elige mal la modalidad procesal, ¿se absuelve en la instancia?",
+      "a": "Por regla general no: se reconduce a la modalidad adecuada. Solo si no se puede completar la tramitación o el demandante persiste en la inadecuada.",
+      "articulos": [
+       "102"
+      ],
+      "literal": {
+       "articulo": "102",
+       "texto": "No procederá el sobreseimiento del proceso o la absolución en la instancia por inadecuación de la modalidad procesal"
+      }
+     },
+     "conexiones": [
       "102"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "despido",
+      "condiciones",
+      "seguridad-social",
+      "colectivos",
+      "tutela"
+     ]
     }
    ]
   },
