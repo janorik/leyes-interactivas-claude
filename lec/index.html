@@ -276,6 +276,7 @@ footer{max-width:1180px;margin:0 auto;padding:0 16px 30px;font-size:.74rem;color
 .ip-cerrar{flex:none;background:transparent;border:1px solid rgba(255,255,255,.25);color:#e3ded2;border-radius:6px;padding:7px 12px;cursor:pointer;font:500 .72rem ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase}
 .ip p{margin:0 0 12px;font-size:.95rem;line-height:1.6}
 .ip strong{color:#f5f0e8}
+.ley-boe{color:inherit;text-decoration:underline;text-decoration-color:var(--oro,#c9a04a);text-underline-offset:4px}
 </style>
 </head>
 <body>
@@ -651,7 +652,7 @@ function pintarHijos(cont, hijos){
 }
 function pintarArbol(){
   const c = $("#arbol"); if (c._hecho) return; c._hecho = true;
-  c.insertAdjacentHTML("beforeend",'<div class="eyebrow">Texto literal</div><h1 class="tit">'+esc(D.ley.nombre_corto||D.ley.nombre)+'</h1><p class="lead">Índice completo: libros, títulos, capítulos, secciones y artículos.</p>');
+  c.insertAdjacentHTML("beforeend",'<div class="eyebrow">Texto literal</div><h1 class="tit">'+(D.ley.boe ? '<a class="ley-boe" href="https://www.boe.es/buscar/act.php?id='+esc(D.ley.boe)+'" target="_blank" rel="noopener" title="Abrir el texto consolidado en el BOE">'+esc(D.ley.nombre_corto||D.ley.nombre)+'</a>' : esc(D.ley.nombre_corto||D.ley.nombre))+'</h1><p class="lead">Índice completo: libros, títulos, capítulos, secciones y artículos.'+(D.ley.boe ? ' Toca el nombre para abrir el texto consolidado en el BOE ↗.' : '')+'</p>');
   for (const n of D.estructura){
     if (n.tipo === "articulo"){ const a = document.createElement("a"); a.className="top-art"; a.href=hrefLey(n.clave); a.textContent=A[n.clave].rotulo; c.appendChild(a); }
     else pintarHijos(c, [n]);
