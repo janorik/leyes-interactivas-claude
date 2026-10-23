@@ -5,68 +5,214 @@
    "nombre": "Jurisdicción, competencia y partes",
    "bloque": "lrjs",
    "grupo": "Libro I · Parte general",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Jurisdicción, competencia (qué órgano y dónde), cuestiones de competencia, capacidad y legitimación, representación y defensa, y el FOGASA. La abstención y recusación queda como índice.",
    "ambito": {
     "corto": "Arts. 1 a 24",
     "texto": "TÍTULO I. Del ejercicio de la potestad jurisdiccional · TÍTULO II. De las partes procesales",
     "articulos": [
      "1"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "10",
+      "texto": "a elección del demandante"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
+     "fase": "Jurisdicción: qué va a lo social y qué no",
+     "subtitulo": "Rama social del Derecho · materias incluidas (art. 2) · materias excluidas (art. 3)",
+     "descripcion": "Los juzgados y tribunales sociales conocen de las pretensiones de la rama social del Derecho, individuales y colectivas: materias laborales y de Seguridad Social, y la impugnación de actos de las Administraciones en esas materias. El art. 2 enumera los litigios incluidos: entre empresarios y trabajadores por el contrato de trabajo; daños sufridos en el trabajo o por accidente laboral, incluida la acción directa contra la aseguradora; cooperativas y sociedades laborales con sus socios trabajadores; autónomos económicamente dependientes; prevención de riesgos, y otros. El art. 3 excluye, entre otras, la impugnación de reglamentos, ciertas cuestiones de prevención entre empresarios y la libertad sindical y la huelga de los funcionarios.",
+     "articulos": [
+      "1",
+      "2",
+      "3"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Un trabajador sufre un accidente laboral y quiere reclamar a la aseguradora",
+       "entonces": "Es competencia social, incluida la acción directa contra la aseguradora.",
+       "articulos": [
+        "2"
+       ],
+       "literal": {
+        "articulo": "2",
+        "texto": "incluida la acción directa contra la aseguradora"
+       }
+      },
+      {
+       "si": "Se discute la libertad sindical o la huelga de funcionarios públicos",
+       "entonces": "No es competencia social.",
+       "articulos": [
+        "3"
+       ],
+       "literal": {
+        "articulo": "3",
+        "texto": "De la tutela de los derechos de libertad sindical y del derecho de huelga relativa a los funcionarios públicos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿De qué conocen, en general, los órganos del orden social?",
+      "a": "De las pretensiones de la rama social del Derecho, individuales y colectivas, laborales y de Seguridad Social, y de la impugnación de los actos de las Administraciones en esas materias.",
+      "articulos": [
+       "1"
+      ],
+      "literal": {
+       "articulo": "1",
+       "texto": "conocerán de las pretensiones que se promuevan dentro de la rama social del Derecho"
+      }
+     },
+     "conexiones": [
+      "1",
+      "2",
+      "3"
+     ],
+     "continua_en": [],
      "id": "generales-1",
-     "fase": "De la jurisdicción",
-     "subtitulo": "TÍTULO I · CAPÍTULO I · arts. 1 a 3",
-     "descripcion": "",
-     "articulos": [
-      "1",
-      "3"
-     ],
-     "rango": [
-      "1",
-      "3"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": []
     },
     {
-     "id": "generales-4",
-     "fase": "De la competencia",
-     "subtitulo": "TÍTULO I · CAPÍTULO II · arts. 4 a 11",
-     "descripcion": "",
+     "fase": "Competencia: qué órgano y dónde se demanda",
+     "subtitulo": "Juzgado, TSJ, Audiencia Nacional o Supremo · lugar de trabajo o domicilio del demandado",
+     "descripcion": "Los Juzgados de lo Social conocen en única instancia de todo, salvo lo atribuido a otros órganos. Las Salas de lo Social de los TSJ conocen en única instancia de conflictos colectivos, convenios y despidos colectivos de ámbito superior a un juzgado y no superior a la comunidad autónoma, y de la suplicación. La Sala de lo Social de la Audiencia Nacional, de esos mismos asuntos cuando superan una comunidad autónoma. La Sala de lo Social del Tribunal Supremo, de la casación, la revisión y el error judicial. Territorialmente, por regla general, el juzgado del lugar de prestación de servicios o del domicilio del demandado, a elección del demandante. La falta de jurisdicción o competencia se aprecia de oficio, oyendo a las partes, y suspende la caducidad.",
      "articulos": [
       "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
       "11"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Audiencia a las partes antes de declarar de oficio la falta de jurisdicción o competencia",
+       "plazo": "3 días (común)",
+       "articulo": "5",
+       "literal": "en plazo común de tres días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "¿Dónde demanda el trabajador?",
+       "entonces": "Por regla general, en el juzgado del lugar de prestación de servicios o en el del domicilio del demandado, a su elección; el art. 10 añade reglas para otros supuestos.",
+       "articulos": [
+        "10"
+       ],
+       "literal": {
+        "articulo": "10",
+        "texto": "será juzgado competente el del lugar de prestación de los servicios o el del domicilio del demandado, a elección del demandante"
+       }
+      },
+      {
+       "si": "Se demanda a una Administración que es la empleadora",
+       "entonces": "Juzgado del lugar de prestación de servicios o del domicilio del demandante, a su elección, con las salvedades que el propio art. 10 enumera.",
+       "articulos": [
+        "10"
+       ],
+       "literal": {
+        "articulo": "10",
+        "texto": "el del lugar de prestación de los servicios o el del domicilio del demandante, a elección de éste"
+       }
+      },
+      {
+       "si": "El juzgado se declara incompetente y la acción caduca",
+       "entonces": "La caducidad se suspende desde la demanda hasta que sea firme el auto.",
+       "articulos": [
+        "5"
+       ],
+       "literal": {
+        "articulo": "5",
+        "texto": "se entenderá suspendida desde la presentación de la demanda hasta que el auto que declare la falta de jurisdicción o de competencia sea firme"
+       }
+      },
+      {
+       "si": "Aparece una cuestión penal por falsedad de un documento",
+       "entonces": "Solo suspende el plazo para resolver si es indispensable para decidir.",
+       "articulos": [
+        "4"
+       ],
+       "literal": {
+        "articulo": "4",
+        "texto": "las cuestiones prejudiciales penales suspenderán el plazo para adoptar la debida decisión sólo cuando se basen en falsedad documental"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quién conoce en instancia de un despido colectivo de ámbito autonómico impugnado por los representantes?",
+      "a": "La Sala de lo Social del Tribunal Superior de Justicia (si supera la comunidad autónoma, la Audiencia Nacional).",
+      "articulos": [
+       "7",
+       "8"
+      ],
+      "literal": {
+       "articulo": "7",
+       "texto": "Conocerán en única instancia de los procesos de despido colectivo impugnados por los representantes de los trabajadores"
+      }
+     },
+     "conexiones": [
       "4",
-      "11"
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "124"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "suplicacion"
+     ],
+     "continua_en": [],
+     "id": "generales-4"
     },
     {
+     "fase": "Cuestiones de competencia (ficha breve)",
+     "subtitulo": "Declinatoria como excepción · la caducidad se suspende",
+     "descripcion": "Las cuestiones de competencia se rigen por la LEC con dos reglas propias: la declinatoria se plantea como excepción y se resuelve en la sentencia, sin suspender el proceso; y si se estima, el demandante vuelve a demandar ante el órgano competente, con la caducidad suspendida hasta que esa sentencia sea firme. Las cuestiones entre órganos sociales las decide el superior común; no caben entre órganos subordinados entre sí.",
+     "aviso": "Se tramitan conforme a la [[Ley de Enjuiciamiento Civil|https://www.boe.es/buscar/act.php?id=BOE-A-2000-323]] (también en esta app), con estas especialidades.",
+     "articulos": [
+      "13",
+      "14"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Se estima la declinatoria y la acción está sujeta a caducidad",
+       "entonces": "La caducidad queda suspendida desde la demanda hasta la firmeza de la sentencia; se demanda ante el órgano competente.",
+       "articulos": [
+        "14"
+       ],
+       "literal": {
+        "articulo": "14",
+        "texto": "si la acción estuviese sometida a plazo de caducidad se entenderá suspendida"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo se plantea la declinatoria en el proceso social?",
+      "a": "Como excepción, que se resuelve en la sentencia sin suspender el curso de los autos.",
+      "articulos": [
+       "14"
+      ],
+      "literal": {
+       "articulo": "14",
+       "texto": "Las declinatorias se propondrán como excepciones y serán resueltas previamente en la sentencia"
+      }
+     },
+     "conexiones": [
+      "13",
+      "14"
+     ],
+     "continua_en": [],
      "id": "generales-12",
-     "fase": "De los conflictos de competencia y de las cuestiones de competencia",
-     "subtitulo": "TÍTULO I · CAPÍTULO III · arts. 12 a 14",
-     "descripcion": "",
-     "articulos": [
-      "12",
-      "14"
-     ],
-     "rango": [
-      "12",
-      "14"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": []
     },
     {
      "id": "generales-15",
@@ -85,55 +231,189 @@
      "esqueleto": true
     },
     {
+     "fase": "Capacidad y legitimación",
+     "subtitulo": "Menores de 16 a 18 años · sindicatos con implantación suficiente",
+     "descripcion": "Puede comparecer quien está en el pleno ejercicio de sus derechos civiles. Los trabajadores de 16 a 18 años tienen capacidad procesal para lo derivado de su contrato y de la Seguridad Social cuando pueden contratar sin autorización o la tienen. Por las personas jurídicas, las comunidades de bienes y los grupos sin personalidad comparecen quienes los representan o gestionan. Están legitimados los titulares de un derecho o interés legítimo; los sindicatos con implantación suficiente, en los procesos con intereses colectivos vinculados a ellos, y el Ministerio Fiscal en los casos de la ley.",
+     "articulos": [
+      "16",
+      "17"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Un sindicato quiere actuar en un pleito con intereses colectivos",
+       "entonces": "Puede, si tiene implantación suficiente y vínculo con el objeto del pleito.",
+       "articulos": [
+        "17"
+       ],
+       "literal": {
+        "articulo": "17",
+        "texto": "Los sindicatos con implantación suficiente en el ámbito del conflicto están legitimados"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede demandar por sí mismo un trabajador de 17 años?",
+      "a": "Sí, para lo derivado de su contrato y de la Seguridad Social, si puede contratar sin autorización o la ha obtenido.",
+      "articulos": [
+       "16"
+      ],
+      "literal": {
+       "articulo": "16",
+       "texto": "Tendrán capacidad procesal los trabajadores mayores de dieciséis años y menores de dieciocho"
+      }
+     },
+     "conexiones": [
+      "16",
+      "17"
+     ],
+     "continua_en": [],
      "id": "generales-16",
-     "fase": "De la capacidad y legitimación procesal",
-     "subtitulo": "TÍTULO II · CAPÍTULO I · arts. 16 a 17",
-     "descripcion": "",
-     "articulos": [
-      "16",
-      "17"
-     ],
-     "rango": [
-      "16",
-      "17"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": []
     },
     {
+     "fase": "Representación y defensa: ¿hace falta abogado?",
+     "subtitulo": "Facultativo en la instancia · abogado o graduado social en suplicación · abogado en casación",
+     "descripcion": "Las partes pueden comparecer por sí mismas o dar su representación a abogado, procurador, graduado social o cualquier persona capaz. En la instancia la defensa es facultativa; en suplicación hace falta abogado o graduado social, y en casación y ante el Tribunal Supremo, abogado. Si el demandante quiere ir con profesional, lo dice en la demanda; el demandado lo comunica en los 2 días siguientes a la citación, y el demandante puede entonces designar el suyo. Con más de diez demandantes hay que nombrar un representante común. Los sindicatos pueden actuar por sus afiliados, que se presume que lo autorizan.",
+     "articulos": [
+      "18",
+      "19",
+      "20",
+      "21"
+     ],
+     "plazos": [
+      {
+       "acto": "El demandado comunica que irá con abogado o graduado social",
+       "plazo": "2 días desde su citación",
+       "articulo": "21",
+       "literal": "dentro de los dos días siguientes al de su citación para el juicio"
+      },
+      {
+       "acto": "Más de diez actores o demandados tras acumular: comparecer para nombrar representante común",
+       "plazo": "En 4 días",
+       "articulo": "19",
+       "literal": "les citará de comparecencia dentro de los cuatro días siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "¿Hace falta abogado para recurrir?",
+       "entonces": "En suplicación, abogado o graduado social; en casación y ante el Supremo, abogado.",
+       "articulos": [
+        "21"
+       ],
+       "literal": {
+        "articulo": "21",
+        "texto": "En el recurso de casación y en las actuaciones procesales ante el Tribunal Supremo será preceptiva la defensa de abogado."
+       }
+      },
+      {
+       "si": "Demandan juntos más de diez trabajadores",
+       "entonces": "Deben nombrar un representante común (abogado, procurador, graduado social, uno de ellos o un sindicato).",
+       "articulos": [
+        "19"
+       ],
+       "literal": {
+        "articulo": "19",
+        "texto": "éstos deberán designar un representante común"
+       }
+      },
+      {
+       "si": "El demandante no anunció en la demanda que iría con profesional",
+       "entonces": "Renuncia a valerse de él en el juicio (salvo que lo designe tras el anuncio del demandado).",
+       "articulos": [
+        "21"
+       ],
+       "literal": {
+        "articulo": "21",
+        "texto": "La falta de cumplimiento de estos requisitos supone la renuncia de la parte al derecho de valerse en el acto de juicio de abogado"
+       }
+      },
+      {
+       "si": "Un sindicato demanda en nombre de un afiliado",
+       "entonces": "Debe acreditar la afiliación y la comunicación; la autorización se presume.",
+       "articulos": [
+        "20"
+       ],
+       "literal": {
+        "articulo": "20",
+        "texto": "La autorización se presumirá concedida salvo declaración en contrario del afiliado."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Es obligatorio ir con abogado al juicio en el Juzgado de lo Social?",
+      "a": "No: en la instancia la defensa por abogado o la representación por graduado social son facultativas.",
+      "articulos": [
+       "21"
+      ],
+      "literal": {
+       "articulo": "21",
+       "texto": "La defensa por abogado y la representación técnica por graduado social colegiado tendrá carácter facultativo en la instancia."
+      }
+     },
+     "conexiones": [
+      "18",
+      "19",
+      "20",
+      "21",
+      "80",
+      "81"
+     ],
+     "continua_en": [
+      "ordinario"
+     ],
      "id": "generales-18",
-     "fase": "De la representación y defensa procesales",
-     "subtitulo": "TÍTULO II · CAPÍTULO II · arts. 18 a 22",
-     "descripcion": "",
-     "articulos": [
-      "18",
-      "22"
-     ],
-     "rango": [
-      "18",
-      "22"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": []
     },
     {
-     "id": "generales-23",
-     "fase": "De la intervención y llamada a juicio del Fondo de Garantía Salarial",
-     "subtitulo": "TÍTULO II · CAPÍTULO III · arts. 23 a 24",
-     "descripcion": "",
+     "fase": "Fondo de Garantía Salarial (ficha breve)",
+     "subtitulo": "Cuándo se le cita · puede ser parte en cualquier momento",
+     "descripcion": "El FOGASA puede comparecer como parte en cualquier momento en los procesos de los que puedan derivarse prestaciones de garantía salarial, sin que el proceso retroceda. Se le cita como parte cuando la empresa está en concurso, es insolvente o ha desaparecido. Tiene plenas facultades: excepciones, prueba y recursos, y puede impugnar laudos, conciliaciones, allanamientos y transacciones. Si paga antes de la ejecución, se subroga en los derechos de los trabajadores.",
      "articulos": [
       "23",
       "24"
      ],
-     "rango": [
-      "23",
-      "24"
+     "plazos": [
+      {
+       "acto": "Trabajadores con crédito no cubierto por el FOGASA: constituirse como ejecutantes",
+       "plazo": "15 días",
+       "articulo": "24",
+       "literal": "se les ofrecerá la posibilidad de constituirse como ejecutantes en el plazo de quince días"
+      }
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "La empresa está en concurso, es insolvente o ha desaparecido",
+       "entonces": "El LAJ cita como parte al FOGASA.",
+       "articulos": [
+        "23"
+       ],
+       "literal": {
+        "articulo": "23",
+        "texto": "el secretario judicial citará como parte al Fondo de Garantía Salarial"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hace retroceder el proceso la intervención del FOGASA?",
+      "a": "No: puede comparecer en cualquier fase sin que el proceso retroceda ni se detenga.",
+      "articulos": [
+       "23"
+      ],
+      "literal": {
+       "articulo": "23",
+       "texto": "sin que tal intervención haga retroceder ni detener el curso de las actuaciones"
+      }
+     },
+     "conexiones": [
+      "23",
+      "24",
+      "276"
+     ],
+     "continua_en": [],
+     "id": "generales-23",
+     "recursos_rel": []
     }
    ]
   },
@@ -142,34 +422,92 @@
    "nombre": "Acumulación de acciones, procesos, recursos y ejecuciones",
    "bloque": "lrjs",
    "grupo": "Libro I · Parte general",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Lo que se usa a diario de la acumulación: requisitos, acciones que no se acumulan y despido con extinción del art. 50 ET. La acumulación de procesos entre juzgados, de recursos y de ejecuciones queda como índice.",
    "ambito": {
     "corto": "Arts. 25 a 41",
     "texto": "CAPÍTULO I. De la acumulación de acciones, procesos y recursos · CAPÍTULO II. De la acumulación de ejecuciones",
     "articulos": [
      "25"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "25",
+      "texto": "siempre que todas ellas puedan tramitarse ante el mismo juzgado o tribunal"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
-     "id": "acumulacion-25",
-     "fase": "Acumulación de acciones",
-     "subtitulo": "CAPÍTULO I · Sección 1.ª · arts. 25 a 27",
-     "descripcion": "",
+     "fase": "Acumulación de acciones (lo que se usa a diario)",
+     "subtitulo": "Requisitos · el despido no se acumula · despido y extinción del art. 50 ET juntos",
+     "descripcion": "Se pueden acumular en una demanda todas las acciones contra el mismo demandado, aunque procedan de títulos distintos, si las conoce el mismo juzgado; y las de varios demandantes o contra varios demandados si tienen la misma causa de pedir. Pero el despido y las demás extinciones, las modificaciones sustanciales, vacaciones, materia electoral, conciliación familiar, convenios, sanciones, tutela de derechos fundamentales y trabajo a distancia no se acumulan a otras acciones (salvo los daños derivados). Sí pueden ir juntos el despido y la extinción por voluntad del trabajador (art. 50 ET); si se demandan por separado, el segundo proceso se acumula al primero. En accidentes de trabajo se acumulan todas las reclamaciones de daños por el mismo hecho.",
+     "aviso": "El art. 50 citado es del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]].",
      "articulos": [
       "25",
-      "27"
-     ],
-     "rango": [
-      "25",
-      "27"
+      "26",
+      "32"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Se quiere acumular un despido con otra reclamación",
+       "entonces": "No se puede, salvo la de daños derivados (y las excepciones del propio art. 26).",
+       "articulos": [
+        "26"
+       ],
+       "literal": {
+        "articulo": "26",
+        "texto": "no podrán acumularse a otras en un mismo juicio, salvo la de responsabilidad por daños derivados"
+       }
+      },
+      {
+       "si": "El trabajador pide la extinción por el art. 50 ET y además le despiden",
+       "entonces": "Despido y extinción pueden ir en la misma demanda; si van por separado, la posterior se acumula a la primera.",
+       "articulos": [
+        "26",
+        "32"
+       ],
+       "literal": {
+        "articulo": "32",
+        "texto": "la demanda que se promueva posteriormente se acumulará a la primera"
+       }
+      },
+      {
+       "si": "Varias reclamaciones de daños por el mismo accidente de trabajo",
+       "entonces": "Se acumulan todas, incluso contra aseguradoras y terceros.",
+       "articulos": [
+        "25"
+       ],
+       "literal": {
+        "articulo": "25",
+        "texto": "se podrán acumular todas las pretensiones de resarcimiento de daños y perjuicios derivadas de un mismo hecho"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Despido y extinción por el art. 50 ET en procesos separados: ¿qué resuelve primero la sentencia?",
+      "a": "Si se fundan en la misma situación de conflicto, primero la acción que esté en la base del conflicto; si las causas son independientes, primero la que nació antes.",
+      "articulos": [
+       "32"
+      ],
+      "literal": {
+       "articulo": "32",
+       "texto": "dando respuesta en primer lugar a la acción que considere que está en la base de la situación de conflicto"
+      }
+     },
+     "conexiones": [
+      "25",
+      "26",
+      "28",
+      "32",
+      "103"
+     ],
+     "continua_en": [
+      "despido"
+     ],
+     "id": "acumulacion-25",
+     "recursos_rel": []
     },
     {
      "id": "acumulacion-28",
@@ -245,85 +583,300 @@
    "nombre": "Actos procesales, resoluciones y comunicaciones",
    "bloque": "lrjs",
    "grupo": "Libro I · Parte general",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Días hábiles y presentación de escritos, resoluciones (incluidas las orales), comunicaciones y los principios y deberes de buena fe. El resto de las actuaciones queda como índice.",
    "ambito": {
     "corto": "Arts. 42 a 75",
     "texto": "TÍTULO IV. De los actos procesales · TÍTULO VI. De los principios del proceso y de los deberes procesales",
     "articulos": [
      "42"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "43",
+      "texto": "Las actuaciones procesales deberán practicarse en días y horas hábiles."
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
+     "fase": "Días hábiles y presentación de escritos",
+     "subtitulo": "Agosto y Navidad inhábiles, salvo despido y urgentes · escritos hasta las 15 h del día siguiente",
+     "descripcion": "Las actuaciones se hacen en días y horas hábiles, y los plazos son perentorios e improrrogables. Agosto y del 24 de diciembre al 6 de enero son inhábiles, salvo en despido y extinciones, movilidad, modificación sustancial, suspensión y reducción de jornada, conciliación familiar, altas médicas, vacaciones, materia electoral, conflictos colectivos, convenios y tutela de derechos fundamentales (en la declaración, el recurso y la ejecución), y para medidas cautelares y actuaciones urgentes. En violencia de género esos días son hábiles. Un escrito sujeto a plazo puede presentarse hasta las 15 horas del día hábil siguiente al vencimiento; nunca en el juzgado de guardia.",
+     "articulos": [
+      "43",
+      "45"
+     ],
+     "plazos": [
+      {
+       "acto": "Presentar un escrito sujeto a plazo",
+       "plazo": "Hasta las 15 h del día hábil siguiente al vencimiento",
+       "articulo": "45",
+       "literal": "podrá efectuarse hasta las quince horas del día hábil siguiente al del vencimiento del plazo"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Un despido en agosto",
+       "entonces": "Agosto es hábil para el despido y las demás modalidades exceptuadas.",
+       "articulos": [
+        "43"
+       ],
+       "literal": {
+        "articulo": "43",
+        "texto": "serán inhábiles, salvo en las modalidades procesales de despido"
+       }
+      },
+      {
+       "si": "Una reclamación de cantidad en agosto",
+       "entonces": "Agosto es inhábil: no corre el plazo.",
+       "articulos": [
+        "43"
+       ],
+       "literal": {
+        "articulo": "43",
+        "texto": "Los días del mes de agosto y los días que median entre el 24 de diciembre y el 6 de enero del año siguiente, ambos inclusive, serán inhábiles"
+       }
+      },
+      {
+       "si": "Se quiere presentar el escrito en el juzgado de guardia",
+       "entonces": "No se admite en el orden social.",
+       "articulos": [
+        "45"
+       ],
+       "literal": {
+        "articulo": "45",
+        "texto": "En ningún caso se admitirá la presentación de escritos dirigidos al orden social en el juzgado que preste el servicio de guardia."
+       }
+      },
+      {
+       "si": "Acciones laborales por violencia de género",
+       "entonces": "Agosto y Navidad son hábiles.",
+       "articulos": [
+        "43"
+       ],
+       "literal": {
+        "articulo": "43",
+        "texto": "Serán hábiles el mes de agosto"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se pueden prorrogar los plazos procesales en el proceso social?",
+      "a": "No: salvo los plazos para dictar resolución, son perentorios e improrrogables.",
+      "articulos": [
+       "43"
+      ],
+      "literal": {
+       "articulo": "43",
+       "texto": "todos los plazos y términos son perentorios e improrrogables"
+      }
+     },
+     "conexiones": [
+      "43",
+      "44",
+      "45"
+     ],
+     "continua_en": [],
      "id": "actos-42",
-     "fase": "De las actuaciones procesales",
-     "subtitulo": "TÍTULO IV · CAPÍTULO I · arts. 42 a 48",
-     "descripcion": "",
-     "articulos": [
-      "42",
-      "48"
-     ],
-     "rango": [
-      "42",
-      "48"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": []
     },
     {
-     "id": "actos-49",
-     "fase": "De las resoluciones procesales",
-     "subtitulo": "TÍTULO IV · CAPÍTULO II · arts. 49 a 52",
-     "descripcion": "",
+     "fase": "Resoluciones: clases, sentencias y autos orales",
+     "subtitulo": "Providencias, autos y sentencias; diligencias y decretos · sentencia de viva voz",
+     "descripcion": "Jueces y tribunales resuelven por providencias, autos y sentencias; el Letrado de la Administración de Justicia (en este texto, «secretario judicial»), por diligencias y decretos. En el juicio pueden dictarse resoluciones orales, que se documentan en el acta. Al terminar el juicio el juez puede dictar sentencia de viva voz, que queda grabada y se redacta después; también puede aprobar así un allanamiento total. Si no intervienen abogado ni graduado social, la sentencia ha de ser escrita. Los autos de los incidentes también pueden dictarse oralmente. Toda resolución indica si es firme o qué recurso cabe, con su plazo, órgano, depósitos y consignaciones.",
      "articulos": [
       "49",
-      "52"
-     ],
-     "rango": [
-      "49",
+      "50",
+      "51",
       "52"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Sentencia oral y todas las partes, asistidas, dicen que no recurren",
+       "entonces": "Se declara firme en el acto. Si no, el plazo para recurrir corre desde la notificación de la sentencia redactada.",
+       "articulos": [
+        "50"
+       ],
+       "literal": {
+        "articulo": "50",
+        "texto": "se declarará, en el mismo acto, la firmeza de la resolución"
+       }
+      },
+      {
+       "si": "No intervienen abogado ni graduado social",
+       "entonces": "La sentencia tiene que ser escrita.",
+       "articulos": [
+        "50"
+       ],
+       "literal": {
+        "articulo": "50",
+        "texto": "la resolución que se dicte tendrá que ser necesariamente escrita"
+       }
+      },
+      {
+       "si": "Incidente durante el proceso",
+       "entonces": "El juez puede resolverlo con un auto oral al terminar la comparecencia.",
+       "articulos": [
+        "51"
+       ],
+       "literal": {
+        "articulo": "51",
+        "texto": "podrá dictar verbalmente autos al término de la comparecencia"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué resoluciones dicta el Letrado de la Administración de Justicia en el proceso social?",
+      "a": "Diligencias y decretos.",
+      "articulos": [
+       "49"
+      ],
+      "literal": {
+       "articulo": "49",
+       "texto": "Los secretarios judiciales resolverán por medio de diligencias y decretos"
+      }
+     },
+     "conexiones": [
+      "49",
+      "50",
+      "51",
+      "52",
+      "97"
+     ],
+     "recursos_rel": [
+      "reposicion-laj",
+      "reposicion-juez",
+      "revision"
+     ],
+     "continua_en": [
+      "recursos"
+     ],
+     "id": "actos-49"
     },
     {
+     "fase": "Comunicaciones y notificaciones (ficha breve)",
+     "subtitulo": "Domicilio designado · correo certificado · edictos · el día siguiente",
+     "descripcion": "Las comunicaciones siguen la LEC con especialidades, agotando todas las vías para que sean efectivas. En el primer escrito cada parte designa domicilio, teléfono y correo electrónico; lo intentado allí es válido mientras no se cambie, y mantenerlo al día es carga de la parte. Fuera de la oficina se notifica por correo certificado con acuse de recibo, o por otros medios si se facilitan. Solo tras averiguar el domicilio sin éxito se acude a los edictos. Las notificaciones electrónicas se tienen por hechas el día siguiente a su recepción.",
+     "aviso": "Se aplican las normas de comunicación de la [[Ley de Enjuiciamiento Civil|https://www.boe.es/buscar/act.php?id=BOE-A-2000-323]] (también en esta app), con estas especialidades.",
+     "articulos": [
+      "53",
+      "56",
+      "59",
+      "60"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Se notifica en el domicilio designado y no se recoge",
+       "entonces": "La notificación es válida mientras la parte no comunique otro domicilio.",
+       "articulos": [
+        "53"
+       ],
+       "literal": {
+        "articulo": "53",
+        "texto": "las notificaciones en ellos intentadas sin efecto serán válidas hasta tanto no sean facilitados otros datos alternativos"
+       }
+      },
+      {
+       "si": "No se encuentra al demandado",
+       "entonces": "Se averigua su domicilio en registros y organismos; si no aparece, edictos.",
+       "articulos": [
+        "59"
+       ],
+       "literal": {
+        "articulo": "59",
+        "texto": "se consignará por diligencia"
+       }
+      },
+      {
+       "si": "Notificación por medios electrónicos",
+       "entonces": "Se tiene por hecha el día siguiente a la recepción.",
+       "articulos": [
+        "60"
+       ],
+       "literal": {
+        "articulo": "60",
+        "texto": "se tendrán por realizados el día siguiente a la fecha de recepción"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo se notifica fuera de la oficina judicial?",
+      "a": "Por correo certificado con acuse de recibo (o por otros medios si los interesados los facilitan).",
+      "articulos": [
+       "56"
+      ],
+      "literal": {
+       "articulo": "56",
+       "texto": "por correo certificado con acuse de recibo"
+      }
+     },
+     "conexiones": [
+      "53",
+      "56",
+      "59",
+      "60"
+     ],
+     "continua_en": [],
      "id": "actos-53",
-     "fase": "De los actos de comunicación",
-     "subtitulo": "TÍTULO IV · CAPÍTULO III · arts. 53 a 62",
-     "descripcion": "",
-     "articulos": [
-      "53",
-      "62"
-     ],
-     "rango": [
-      "53",
-      "62"
-     ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": []
     },
     {
-     "id": "actos-74",
-     "fase": "De los principios del proceso y de los deberes procesales",
-     "subtitulo": "TÍTULO VI · arts. 74 a 75",
-     "descripcion": "",
+     "fase": "Principios del proceso y buena fe (ficha breve)",
+     "subtitulo": "Inmediación, oralidad, concentración y celeridad · multa de 600 a 6.000 €",
+     "descripcion": "El proceso social se interpreta según los principios de inmediación, oralidad, concentración y celeridad. Los jueces rechazan las peticiones dilatorias o abusivas. Todos deben actuar de buena fe: si no, o si las pretensiones son temerarias, el juez puede imponer, por auto y motivadamente, una multa de 600 a 6.000 €, sin superar un tercio de la cuantía del litigio. El multado puede pedir audiencia en justicia y luego recurrir en alzada.",
      "articulos": [
       "74",
       "75"
      ],
-     "rango": [
-      "74",
-      "75"
+     "plazos": [
+      {
+       "acto": "Pedir audiencia en justicia contra la multa",
+       "plazo": "3 días desde su notificación",
+       "articulo": "75",
+       "literal": "La audiencia en justicia se pedirá en el plazo de los tres días siguientes al de la notificación de la multa"
+      },
+      {
+       "acto": "Alzada contra el auto que resuelve la audiencia",
+       "plazo": "5 días",
+       "articulo": "75",
+       "literal": "recurso de alzada en cinco días ante la Sala de Gobierno correspondiente"
+      }
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Una parte actúa de mala fe o con temeridad",
+       "entonces": "Multa de 600 a 6.000 €, sin superar la tercera parte del litigio.",
+       "articulos": [
+        "75"
+       ],
+       "literal": {
+        "articulo": "75",
+        "texto": "una multa que podrá oscilar de seiscientos a seis mil euros"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué principios rigen el proceso social?",
+      "a": "Inmediación, oralidad, concentración y celeridad.",
+      "articulos": [
+       "74"
+      ],
+      "literal": {
+       "articulo": "74",
+       "texto": "inmediación, oralidad, concentración y celeridad"
+      }
+     },
+     "conexiones": [
+      "74",
+      "75",
+      "97"
+     ],
+     "continua_en": [],
+     "id": "actos-74",
+     "recursos_rel": []
     }
    ]
   },
