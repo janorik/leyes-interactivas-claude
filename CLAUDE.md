@@ -199,5 +199,5 @@ No empieces la siguiente fase sin su visto bueno.
 - **Ejecución y ejecución provisional (Chat 4, 23-10-2026, hecho):** bloques `ejecucion` (8 fichas; `ejecucion-261`, realización de bienes, queda como índice por el canon) y `provisional` (4 fichas; `provisional-289`, anticipos, queda como índice); 28 plazos. Dudas en `PENDIENTES.md › LRJS`. Pendiente de revisión del usuario.
 - **Orden de desarrollo elegido por el usuario (23-10-2026):** 1) despido; 2) conciliación previa y proceso ordinario; 3) recursos (con `recursos.json`: selector, fichas y test); 4) ejecución; 5) modalidades (las cuatro breves, con ficha corta).
 - **Siguiente paso:** desarrollar los bloques uno a uno, en ese orden, con el canon y la regla del núcleo obligatorio; y `lrjs/datos/recursos.json` (selector, fichas y test, como en la LEC y la LECrim).
-- PDF también subidos (23-10-2026), sin usar todavía: `fuentes/LPACAP 39_2015 consolidado.pdf` y `fuentes/LRBSP 40_2015 consolidado.pdf`.
+- PDF también subidos (23-10-2026), sin usar todavía: `fuentes/LPACAP 39_2015 consolidado.pdf`, `fuentes/LRBSP 40_2015 consolidado.pdf` y `fuentes/LJCA_BOE-A-1998-16718.pdf` (Ley 29/1998, reguladora de la Jurisdicción Contencioso-administrativa, última modificación 03-01-2025; subida como «ley 29_1998 BOE-consolidado.pdf» y renombrada). La LRJS enlaza la Ley 29/1998 con esa referencia.
 

@@ -362,7 +362,6 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 - [ ] **Remisiones a la Ley General de la Seguridad Social de 1994 (RDLeg 1/1994) en los arts. 243 y 297.** No las uso en las fichas. Pendiente de revisión individual si quieres que se citen.
   - **Tu respuesta:**
-- [ ] **Ley 29/1998 sin enlace** (art. 287, ejecución frente a la Administración): misma situación que en las medidas cautelares.
 - [ ] **Revisa las 12 fichas.**
 
 ### Recursos (Chat 4, contenido elaborado, pendiente de revisión)
@@ -378,8 +377,7 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > Segundo desarrollo de la LRJS, en el orden elegido por el usuario: bloque «Conciliación o mediación previa y vía administrativa» (arts. 63-73, 2 fichas) y bloque «Proceso ordinario y monitorio» (arts. 76-102, 9 fichas); 39 plazos en total. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
 
-- [ ] **Ley 29/1998 sin enlace.** La ficha de medidas cautelares (art. 79) nombra la Ley 29/1998, de 13 de julio, reguladora de la Jurisdicción Contencioso-Administrativa, tal como la cita la LRJS, pero sin enlace: su referencia en el BOE no sale de ningún texto de la app ni de tu plataforma, y no la pongo de memoria. Si me das la referencia (o subes su PDF, que además es la ley procesal administrativa que estás valorando), añado el enlace.
-  - **Tu respuesta:**
+- [x] **Ley 29/1998: enlace puesto (23-10-2026).** El usuario subió su PDF consolidado (`fuentes/LJCA_BOE-A-1998-16718.pdf`, última modificación 03-01-2025); la referencia `BOE-A-1998-16718` sale de su primera página. Enlazada en las fichas de medidas cautelares (art. 79) y de ejecución frente a la Administración (art. 287).
 - [ ] **Ley del Estatuto del trabajo autónomo:** los arts. 63, 65 y 68 la citan; en las fichas no la nombro porque no orienta en el trámite. Dime si la quieres con enlace.
   - **Tu respuesta:**
 - [ ] **Revisa las 11 fichas.**
