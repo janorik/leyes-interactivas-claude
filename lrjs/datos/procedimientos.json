@@ -2436,7 +2436,8 @@
      "id": "recursos-186",
      "fase": "Reposición, revisión y queja",
      "subtitulo": "Contra diligencias, decretos, providencias y autos · 3 o 5 días",
-     "descripcion": "Contra diligencias de ordenación y decretos no definitivos, reposición ante el LAJ; contra providencias y autos, reposición ante el juez o tribunal. El plazo es de 3 días si el órgano es unipersonal y de 5 si es colegiado, y la reposición no suspende lo recurrido. Contra el decreto que resuelve la reposición, y contra los que ponen fin al procedimiento, revisión ante el juez o tribunal. Contra el auto que no tiene por anunciada la suplicación o por preparada la casación, queja.",
+     "descripcion": "Contra diligencias de ordenación y decretos no definitivos, reposición ante el LAJ; contra providencias y autos, reposición ante el juez o tribunal. El plazo es de 3 días si el órgano es unipersonal y de 5 si es colegiado, y la reposición no suspende lo recurrido. Contra el decreto que resuelve la reposición, y contra los que ponen fin al procedimiento, revisión ante el juez o tribunal. Contra el auto que no tiene por anunciada la suplicación o por preparada la casación, queja, que se rige por la LEC: «en el plazo de diez días desde la notificación de la resolución que deniega la tramitación del recurso» (art. 495.1 LEC).",
+     "aviso": "El art. 495 citado es de la [[Ley de Enjuiciamiento Civil|https://www.boe.es/buscar/act.php?id=BOE-A-2000-323]] (también en esta app).",
      "articulos": [
       "186",
       "187",
@@ -2961,7 +2962,7 @@
      "fase": "Revisión de sentencias firmes y error judicial",
      "subtitulo": "Ante la Sala de lo Social del Tribunal Supremo · motivos de la LEC",
      "descripcion": "Contra cualquier sentencia firme del orden social, y contra los laudos firmes en materias sociales, cabe revisión ante la Sala de lo Social del Tribunal Supremo, por los motivos del art. 510 LEC y por el del art. 86.3 LRJS (absolución penal posterior por inexistencia del hecho). Hay que haber agotado antes los recursos. Sin vista, salvo que el tribunal la acuerde o haya prueba. El error judicial que deba conocer esa Sala se tramita por la Ley Orgánica del Poder Judicial.",
-     "aviso": "El art. 510 y los plazos de la revisión son de la [[Ley de Enjuiciamiento Civil|https://www.boe.es/buscar/act.php?id=BOE-A-2000-323]] (también en esta app).",
+     "aviso": "Plazos (art. 512 LEC): «En ningún caso podrá solicitarse la revisión después de transcurridos cinco años desde la fecha de la publicación de la sentencia que se pretende impugnar» y «siempre que no hayan transcurrido tres meses desde el día en que se descubrieren los documentos decisivos, el cohecho, la violencia o el fraude, o en que se hubiere reconocido o declarado la falsedad»; si se funda en una sentencia del TEDH, un año desde su firmeza. Los arts. 510 y 512 son de la [[Ley de Enjuiciamiento Civil|https://www.boe.es/buscar/act.php?id=BOE-A-2000-323]] (también en esta app).",
      "articulos": [
       "236",
       "86"

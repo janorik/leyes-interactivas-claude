@@ -360,11 +360,8 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > Tercer desarrollo de la LRJS, en el orden elegido por el usuario. Mapa: bloque «Recursos, audiencia al rebelde y revisión» (7 fichas) y bloque «Audiencia al demandado rebelde» en su sitio del Libro II (1 ficha). Pestaña Recursos: `lrjs/datos/recursos.json` con 9 recursos, 24 casos del selector «¿qué recurso cabe?» (LAJ, juez o tribunal, sentencias) y el test «Ponte a prueba». Las fichas de despido y de sentencia llevan ya botones a sus recursos. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
 
-- [ ] **Plazos de la queja y de la revisión:** la LRJS no los fija; remite a la LEC (arts. 189 y 236). Las fichas lo dicen así, sin poner cifras que no salen de la LRJS. ¿Quieres que añada el plazo de la LEC con su artículo?
-  - **Tu respuesta:**
-- [ ] **Art. 206.1: «Texto Refundido de la Ley del Estatuto de los Trabajadores, aprobado por Real Decreto Legislativo 1/1995». Remisión desfasada, pendiente de revisión individual.** La LRJS cita así el Estatuto, pero el enlace del Estatuto que usa la app es `BOE-A-2015-11430` (el que da tu plataforma). No uso esa cita en las fichas.
-  - **Propuesta:** entenderla referida al art. 51.7 del Estatuto vigente. No verificable hasta que lo confirmes.
-  - **Tu respuesta:**
+- [x] **Plazos de la queja y de la revisión. Resuelta (usuario, 23-10-2026):** se añade el plazo de la LEC con su artículo y su frase literal: queja, 10 días (art. 495.1 LEC); revisión, 5 años desde la publicación y 3 meses desde que se descubre el motivo (art. 512 LEC; 1 año si se funda en una sentencia del TEDH). Comprobado que las frases están en la LEC de la app.
+- [x] **Art. 206.1: cita del Estatuto de los Trabajadores de 1995 (RDLeg 1/1995). Resuelta con criterio interpretativo (usuario, 23-10-2026):** se entiende referida al art. 51.7 del Estatuto vigente.
 - [ ] **Selector, caso «Auto que resuelve una reposición: no cabe recurso».** Es la regla general del art. 187.5; la nota avisa de las excepciones (arts. 191.4 y 206). Revisa si prefieres desglosar esas excepciones como casos propios.
   - **Tu respuesta:**
 - [ ] **Revisa las 8 fichas del mapa y los 9 recursos.**

@@ -87,9 +87,9 @@
    "id": "queja",
    "recurso": "Queja",
    "contra_que": "El auto que tiene por no anunciada la suplicación o por no preparada la casación.",
-   "plazo": "El que fija la LEC para la queja (la LRJS remite a ella)",
+   "plazo": "10 días desde la notificación del auto (art. 495.1 LEC, al que remite el art. 189 LRJS)",
    "organo": "Sala de lo Social del Tribunal Superior de Justicia (suplicación) o del Tribunal Supremo (casación).",
-   "efectos": "Se tramita conforme a la Ley de Enjuiciamiento Civil.",
+   "efectos": "Se tramita conforme a la Ley de Enjuiciamiento Civil: «en el plazo de diez días desde la notificación de la resolución que deniega la tramitación del recurso» (art. 495.1 LEC). Se acompaña copia de la resolución recurrida; el tribunal resuelve en 5 días y contra su auto no cabe recurso (art. 495.2 y 3 LEC).",
    "articulos": [
     "189",
     "195",
@@ -242,9 +242,9 @@
    "id": "revision-firmes",
    "recurso": "Revisión de sentencias y laudos firmes (y error judicial)",
    "contra_que": "Cualquier sentencia firme del orden social y los laudos arbitrales firmes en materias sociales.",
-   "plazo": "Los de la LEC para la revisión (la LRJS remite a ella)",
+   "plazo": "Como máximo 5 años desde la publicación de la sentencia y 3 meses desde que se descubre el motivo (art. 512 LEC, al que remite el art. 236 LRJS)",
    "organo": "Sala de lo Social del Tribunal Supremo.",
-   "efectos": "Motivos del art. 510 LEC y el del art. 86.3 LRJS (absolución penal por inexistencia del hecho). Hay que haber agotado antes los recursos; se inadmite si el motivo podía plantearse por nulidad de actuaciones o audiencia al rebelde. Depósito como en casación. El error judicial se tramita por la Ley Orgánica del Poder Judicial.",
+   "efectos": "Motivos del art. 510 LEC y el del art. 86.3 LRJS (absolución penal por inexistencia del hecho). Hay que haber agotado antes los recursos; se inadmite si el motivo podía plantearse por nulidad de actuaciones o audiencia al rebelde. Depósito como en casación. Plazos de la LEC: «En ningún caso podrá solicitarse la revisión después de transcurridos cinco años desde la fecha de la publicación de la sentencia» y solo «siempre que no hayan transcurrido tres meses desde el día en que se descubrieren los documentos decisivos, el cohecho, la violencia o el fraude» (art. 512 LEC; si el motivo es una sentencia del TEDH, un año desde su firmeza). El error judicial se tramita por la Ley Orgánica del Poder Judicial.",
    "articulos": [
     "236",
     "86"
