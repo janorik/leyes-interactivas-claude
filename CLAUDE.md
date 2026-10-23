@@ -127,6 +127,7 @@ Todo artículo citado en cualquier vista es un enlace que abre su texto literal.
 ## Diseño
 - Paleta NOrlexia: verde `#0d4a45`, oro `#c9a04a`, crema `#f5f0e8`.
 - Logo de `assets/`, en la cabecera. Junto al logo: «NORLEXIA» pequeño, la abreviatura de la ley en dorado y su nombre debajo (hasta 3 líneas), en todas las pestañas, para saber siempre en qué ley se está (opción elegida por el usuario, Chat 4).
+- Sin texto de instrucciones bajo el título del Mapa («Elige un procedimiento…»): quitado a petición del usuario (Chat 5, 23-10-2026); los de las demás pestañas se mantienen.
 - Botón de modo claro/oscuro, recordado en local.
 - Diseño adaptado a móvil (prioridad) y a ordenador. Texto legible y zoom cómodo.
 - Botón flotante «‹ Atrás» propio de la app (pedido por el usuario): vuelve a la pantalla anterior o, si se entró por enlace, sube un nivel. Oculto en la pantalla de inicio y con una ficha abierta.

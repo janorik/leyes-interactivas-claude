@@ -491,7 +491,6 @@ const PROXIMOS = [];
 function vistaProcesos(){
   const grupos = [...new Set(PROC_MAPA.map(p=>p.grupo||"").concat(EXT.map(e=>e.grupo||"")))];
   $("#v-procesos").innerHTML = '<div class="eyebrow">Mapa procesal</div><h1 class="tit">'+esc(D.ley.titulo_mapa||"Mapa procesal")+'</h1>'+
-    '<p class="lead">Elige un procedimiento: verás todas sus fases de un vistazo. Toca cada fase para ver plazos, alternativas («¿y si no contesta?») y artículos.</p>'+
     grupos.map(g=>'<div class="seccion-t">'+esc(g)+'</div><div class="grid">'+
     PROC_MAPA.filter(p=>(p.grupo||"")===g).map(p=>tarjetaProc(p, p.bloque)).join("")+
     EXT.filter(e=>(e.grupo||"")===g).map(tarjetaExt).join("")+'</div>').join("")+
