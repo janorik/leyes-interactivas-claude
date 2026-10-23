@@ -53,6 +53,24 @@ def _norm(t):
     return re.sub(r"\s+", " ", t).strip()
 
 
+# «LAJ» en lugar de «secretario judicial» y «Letrado de la Administración de Justicia»
+# (decisión del usuario, 23-10-2026), también en el texto de los artículos. Se hace aquí,
+# al insertar, para que los datos extraídos (<ley>/datos/<ley>.json) sigan siendo literales.
+RE_LAJ_GENERO = re.compile(r"\b([Ee]l|[Dd]el|[Aa]l)\s+(?:[Ll]etrado\s+o\s+la|o\s+la)\s+(?=[Ll]etrada\s+de\s+la\s+[Aa]dministración)")
+RE_LAJ = re.compile(r"[Ll]etrad[oa]s?(?:\s+o\s+[Ll]etrad[oa]s?|\s+[Ll]etrad[oa]s?)?\s+de\s+la\s+[Aa]dministración\s+de\s+[Jj]usticia"
+                    r"|[Ss]ecretari[oa]s?\s+[Jj]udicial(?:es)?")
+
+
+def laj(o):
+    if isinstance(o, str):
+        return RE_LAJ.sub("LAJ", RE_LAJ_GENERO.sub(lambda m: m.group(1) + " ", o))
+    if isinstance(o, list):
+        return [laj(v) for v in o]
+    if isinstance(o, dict):
+        return {k: (v if k == "nota_general_boe" else laj(v)) for k, v in o.items()}
+    return o
+
+
 # Enlace a una ley distinta de la LEC: [[Nombre de la ley|https://www.boe.es/...]]
 RE_LEY_EXT = re.compile(r"\[\[[^|\]]+\|https://www\.boe\.es/[^\]\s]+\]\]")
 
@@ -68,7 +86,7 @@ def validar_y_anadir_procedimientos(datos):
     if not os.path.exists(JSON_PROC):
         return
     with open(JSON_PROC, encoding="utf-8") as f:
-        bruto = json.load(f)
+        bruto = laj(json.load(f))
     proc = bruto["procedimientos"]
     externos = bruto.get("externos", [])
     arts = datos["articulos"]
@@ -148,7 +166,7 @@ def validar_y_anadir_recursos(datos):
     if not os.path.exists(JSON_REC):
         return
     with open(JSON_REC, encoding="utf-8") as f:
-        rec = json.load(f)
+        rec = laj(json.load(f))
     arts = datos["articulos"]
     errores = []
     ids = {r["id"] for r in rec["recursos"]}
@@ -195,7 +213,7 @@ def validar_y_anadir_recursos(datos):
 
 def main():
     with open(JSON_LEY, encoding="utf-8") as f:
-        datos = json.load(f)
+        datos = laj(json.load(f))
     # Nombre corto de la ley (cabecera del árbol), el mismo que en la portada.
     with open(os.path.join(RAIZ, "scripts", "leyes.json"), encoding="utf-8") as f:
         ficha = next((l for l in json.load(f)["leyes"] if l["id"] == LEY), None)

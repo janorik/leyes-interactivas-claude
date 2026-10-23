@@ -3216,8 +3216,7 @@
       "instruccion",
       "abreviado"
      ],
-     "duda": "Los arts. 550 y 551 remiten al «artículo 6.º de la Constitución» y el art. 560 al «Ministerio de Gracia y Justicia». Ver PENDIENTES.md.",
-     "aviso": "Según la nota general del BOE a esta ley, donde el texto literal dice «Secretario judicial» hay que entender LAJ desde el 1 de octubre de 2015 (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
+     "duda": "Los arts. 550 y 551 remiten al «artículo 6.º de la Constitución» y el art. 560 al «Ministerio de Gracia y Justicia». Ver PENDIENTES.md."
     },
     {
      "id": "investigacion-573",
@@ -7428,7 +7427,7 @@
        "literal": "dentro de los tres días siguientes al de la presentación de la querella"
       },
       {
-       "acto": "Ampliación por causa justa (certificada por el Secretario)",
+       "acto": "Ampliación por causa justa (certificada por el LAJ)",
        "plazo": "Hasta 8 días",
        "articulo": "809",
        "literal": "podrá ampliarse hasta ocho días el término para la celebración del juicio verbal"
@@ -7493,8 +7492,7 @@
      "continua_en": [
       "conclusion",
       "juicio-oral"
-     ],
-     "aviso": "Según la nota general del BOE a esta ley, donde el texto literal dice «Secretario judicial» hay que entender LAJ (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
+     ]
     },
     {
      "id": "especiales-816",
@@ -7695,8 +7693,7 @@
      ],
      "continua_en": [
       "abreviado"
-     ],
-     "aviso": "Según la nota general del BOE a esta ley, donde el texto literal dice «Secretario judicial» hay que entender LAJ desde el 1 de octubre de 2015 (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
+     ]
     },
     {
      "id": "recursos-847",
@@ -8001,8 +7998,7 @@
       "879"
      ],
      "continua_en": [],
-     "duda": "El art. 875 fija los depósitos en pesetas (12.000, 6.000 y 7.500). Ver PENDIENTES.md.",
-     "aviso": "Según la nota general del BOE a esta ley, donde el texto literal dice «Secretario judicial» hay que entender LAJ desde el 1 de octubre de 2015 (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
+     "duda": "El art. 875 fija los depósitos en pesetas (12.000, 6.000 y 7.500). Ver PENDIENTES.md."
     },
     {
      "id": "recursos-880",
@@ -8105,8 +8101,7 @@
       "892",
       "893"
      ],
-     "continua_en": [],
-     "aviso": "Según la nota general del BOE a esta ley, donde el texto literal dice «Secretario judicial» hay que entender LAJ desde el 1 de octubre de 2015 (disposición adicional primera de la [[Ley Orgánica 7/2015, de 21 de julio|https://www.boe.es/buscar/act.php?id=BOE-A-2015-8167]])."
+     "continua_en": []
     },
     {
      "id": "recursos-893_bis_a",
