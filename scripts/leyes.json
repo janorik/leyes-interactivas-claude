@@ -28,8 +28,18 @@
    "referencia": "Ley 36/2011, de 10 de octubre · BOE-A-2011-15936",
    "carpeta": "lrjs/",
    "estado": "disponible",
-   "descripcion": "Mapa procesal en esqueleto (proceso ordinario, despido, modalidades, recursos, ejecución), texto literal completo, buscador y notas.",
+   "descripcion": "Mapa procesal (conciliación previa, proceso ordinario, despido, modalidades, recursos, ejecución), sistema de recursos, texto literal completo, repaso y notas.",
    "mapa": "Procesos sociales"
+  },
+  {
+   "id": "ljca",
+   "abreviatura": "LJCA",
+   "nombre": "Ley reguladora de la Jurisdicción Contencioso-administrativa",
+   "referencia": "Ley 29/1998, de 13 de julio · BOE-A-1998-16718",
+   "carpeta": "ljca/",
+   "estado": "disponible",
+   "descripcion": "Texto literal completo, buscador y notas. Mapa procesal en preparación.",
+   "mapa": "Procesos contencioso-administrativos"
   },
   {
    "id": "et",
