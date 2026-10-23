@@ -5,7 +5,7 @@
    "nombre": "Disposiciones generales",
    "bloque": "lecrim",
    "grupo": "Libro I · Disposiciones generales",
-   "resumen": "Libro I. Por decisión del usuario, solo se desarrollan los temas que orientan el recorrido: la competencia (quién instruye y quién juzga) y las acciones penal y civil (quién acusa y quién reclama). El resto queda como índice; los recursos contra resoluciones procesales están en la pestaña Recursos.",
+   "resumen": "Libro I. Por decisión del usuario, solo se desarrollan los temas que orientan el recorrido: la competencia (quién instruye y quién juzga), las acciones penal y civil (quién acusa y quién reclama), las resoluciones y los recursos contra ellas (estos, con más detalle, en la pestaña Recursos). El resto queda como índice.",
    "ambito": {
     "corto": "Arts. 1 a 258 bis",
     "texto": "LIBRO I. Disposiciones generales",
@@ -346,20 +346,128 @@
     },
     {
      "id": "generales-141",
-     "fase": "De la forma de dictar resoluciones y del modo de dirimir las discordias",
-     "subtitulo": "LIBRO I · TÍTULO VI · arts. 141 a 165",
-     "descripcion": "",
+     "fase": "Resoluciones: clases, firmeza, aclaración y complemento",
+     "subtitulo": "Quién dicta qué · cuándo es firme · cómo se corrige",
+     "descripcion": "Jueces y tribunales dictan providencias, autos y sentencias; el Letrado de la Administración de Justicia (en este texto, «Secretario judicial»), diligencias y decretos. Providencia: cuestiones procesales reservadas al juez que no exigen auto. Auto: incidentes o puntos esenciales que afectan directamente a investigados, encausados, responsables civiles o acusadores; la competencia; la recusación; los recursos contra providencias o decretos; la prisión o libertad provisional; la admisión o denegación de prueba o de la justicia gratuita, y lo que afecte a un derecho fundamental. Sentencia: decide definitivamente la cuestión criminal. Es firme cuando no cabe contra ella recurso ordinario ni extraordinario, salvo revisión y rehabilitación. La ejecutoria es el documento en que consta la sentencia firme. La absolución es siempre libre. Toda resolución indica si es firme o qué recurso cabe, ante qué órgano y en qué plazo.",
      "articulos": [
       "141",
-      "165"
+      "144",
+      "144 bis",
+      "160",
+      "161"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Aclaración (de oficio o a petición de parte o del fiscal)",
+       "plazo": "2 días hábiles desde la publicación",
+       "articulo": "161",
+       "literal": "dentro de los dos días hábiles siguientes al de la publicación de la resolución"
+      },
+      {
+       "acto": "Resolver la aclaración pedida",
+       "plazo": "3 días desde el escrito",
+       "articulo": "161",
+       "literal": "dentro de los tres días siguientes al de la presentación del escrito en que se solicite la aclaración"
+      },
+      {
+       "acto": "Pedir que se complete un pronunciamiento omitido",
+       "plazo": "5 días desde la notificación",
+       "articulo": "161",
+       "literal": "a solicitud escrita de parte en el plazo de cinco días a contar desde la notificación de la resolución"
+      },
+      {
+       "acto": "Alegaciones de las demás partes a esa petición",
+       "plazo": "5 días",
+       "articulo": "161",
+       "literal": "para alegaciones escritas por otros cinco días"
+      },
+      {
+       "acto": "Complemento de oficio por el tribunal",
+       "plazo": "5 días desde que se dicta",
+       "articulo": "161",
+       "literal": "podrá, en el plazo de cinco días a contar desde la fecha en que se dicta"
+      },
+      {
+       "acto": "Leer y notificar la sentencia definitiva",
+       "plazo": "El día de la firma o, a lo más, el siguiente",
+       "articulo": "160",
+       "literal": "el mismo día en que se firmen, o a lo más en el siguiente"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay un error material manifiesto o un error aritmético",
+       "entonces": "Se rectifica en cualquier momento.",
+       "articulos": [
+        "161"
+       ],
+       "literal": {
+        "articulo": "161",
+        "texto": "podrán ser rectificados en cualquier momento"
+       }
+      },
+      {
+       "si": "La sentencia o el auto no resuelve algo que se pidió y se debatió",
+       "entonces": "Se pide el complemento: el tribunal, por auto, completa la resolución o declara no haber lugar.",
+       "articulos": [
+        "161"
+       ],
+       "literal": {
+        "articulo": "161",
+        "texto": "omitido manifiestamente pronunciamientos relativos a pretensiones oportunamente deducidas y sustanciadas en el proceso"
+       }
+      },
+      {
+       "si": "Se quiere recurrir la resolución que aclara o completa",
+       "entonces": "No cabe recurso contra ella; sí contra la resolución original. El plazo para recurrir esta se interrumpe desde que se pide la aclaración o el complemento.",
+       "articulos": [
+        "161"
+       ],
+       "literal": {
+        "articulo": "161",
+        "texto": "Los plazos para los recursos que procedan contra la resolución de que se trate se interrumpirán"
+       }
+      },
+      {
+       "si": "No se encuentra a las partes para notificarles la sentencia",
+       "entonces": "Se hace constar por diligencia y basta con notificarla a sus procuradores.",
+       "articulos": [
+        "160"
+       ],
+       "literal": {
+        "articulo": "160",
+        "texto": "bastará en tal caso con la notificación hecha a sus Procuradores"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué clase de resolución acuerda la prisión provisional?",
+      "a": "Un auto: el art. 141 exige esa forma para decidir sobre la prisión o la libertad provisional.",
+      "articulos": [
+       "141"
+      ],
+      "literal": {
+       "articulo": "141",
+       "texto": "la prisión o libertad provisional"
+      }
+     },
+     "conexiones": [
       "141",
-      "165"
+      "142",
+      "144",
+      "144 bis",
+      "145",
+      "160",
+      "161",
+      "211",
+      "238 bis"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "reposicion-laj",
+      "revision-laj",
+      "reforma",
+      "suplica"
+     ]
     },
     {
      "id": "generales-166",
@@ -414,20 +522,154 @@
     },
     {
      "id": "generales-216",
-     "fase": "De los recursos contra las resoluciones procesales",
-     "subtitulo": "LIBRO I · TÍTULO X · arts. 216 a 238 ter",
-     "descripcion": "",
+     "fase": "Recursos contra las resoluciones procesales",
+     "subtitulo": "Reposición y revisión (LAJ) · reforma, apelación y queja (Juez de Instrucción) · súplica (tribunales)",
+     "descripcion": "Es la puerta de entrada a la pestaña Recursos. Contra las diligencias de ordenación y los decretos del LAJ cabe reposición ante él mismo; contra los decretos que la ley señale, revisión ante el juez o tribunal. Contra los autos del Juez de Instrucción caben reforma (contra todos), apelación (solo en los casos que diga la ley) y queja (contra los autos no apelables y contra la resolución que no admite una apelación). Contra los autos de los tribunales de lo criminal, súplica ante el mismo tribunal, y apelación solo cuando la ley la prevea. Reforma, apelación y queja se interponen por escrito firmado por letrado. Regla general: la apelación exige haber pedido antes reforma, aunque pueden ir en el mismo escrito; en el procedimiento abreviado no hace falta la reforma previa (art. 766).",
      "articulos": [
+      "211",
+      "212",
+      "213",
       "216",
+      "217",
+      "218",
+      "222",
+      "236",
+      "238 bis",
       "238 ter"
      ],
-     "rango": [
-      "216",
-      "238 ter"
+     "plazos": [
+      {
+       "acto": "Reforma o súplica",
+       "plazo": "3 días desde la notificación",
+       "articulo": "211",
+       "literal": "se interpondrán en el plazo de los tres días siguientes a su notificación"
+      },
+      {
+       "acto": "Reposición o revisión contra resoluciones del LAJ",
+       "plazo": "3 días (el mismo plazo)",
+       "articulo": "211",
+       "literal": "En el mismo plazo se interpondrán los recursos de reposición y de revisión"
+      },
+      {
+       "acto": "Apelación",
+       "plazo": "5 días desde la última notificación",
+       "articulo": "212",
+       "literal": "El recurso de apelación se entablará dentro de cinco días"
+      },
+      {
+       "acto": "Preparación de la casación",
+       "plazo": "5 días desde la última notificación",
+       "articulo": "212",
+       "literal": "La preparación del recurso de casación se hará dentro de los cinco días siguientes"
+      },
+      {
+       "acto": "Queja, si la ley no le fija plazo",
+       "plazo": "En cualquier momento mientras la causa esté pendiente",
+       "articulo": "213",
+       "literal": "podrá interponerse en cualquier tiempo, mientras estuviese pendiente la causa"
+      },
+      {
+       "acto": "Alegaciones a la reposición o a la revisión",
+       "plazo": "2 días (común)",
+       "articulo": "238 bis",
+       "literal": "un plazo común de dos días para presentar por escrito sus alegaciones"
+      },
+      {
+       "acto": "El juez resuelve la reforma",
+       "plazo": "Al segundo día de entregadas las copias",
+       "articulo": "222",
+       "literal": "El Juez resolverá el recurso al segundo día de entregadas las copias"
+      }
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Se quiere apelar un auto del Juez de Instrucción (regla general)",
+       "entonces": "Primero reforma. Pueden interponerse en el mismo escrito, con la apelación como subsidiaria por si se desestima la reforma.",
+       "articulos": [
+        "222"
+       ],
+       "literal": {
+        "articulo": "222",
+        "texto": "el de apelación se propondrá subsidiariamente"
+       }
+      },
+      {
+       "si": "El auto del juez no es apelable",
+       "entonces": "Cabe queja ante el tribunal superior competente.",
+       "articulos": [
+        "218",
+        "219"
+       ],
+       "literal": {
+        "articulo": "218",
+        "texto": "contra todos los autos no apelables del Juez"
+       }
+      },
+      {
+       "si": "Se recurre el decreto del LAJ que resuelve una reposición",
+       "entonces": "No cabe recurso.",
+       "articulos": [
+        "238 bis"
+       ],
+       "literal": {
+        "articulo": "238 bis",
+        "texto": "Contra el decreto del Secretario judicial que resuelva el recurso de reposición no cabrá interponer recurso alguno."
+       }
+      },
+      {
+       "si": "Resolución del LAJ en la ejecución de los pronunciamientos civiles o en el embargo de los arts. 589 y 615",
+       "entonces": "Los recursos son los de la Ley de Enjuiciamiento Civil.",
+       "articulos": [
+        "238 ter"
+       ],
+       "literal": {
+        "articulo": "238 ter",
+        "texto": "será el previsto en la Ley de Enjuiciamiento Civil"
+       }
+      }
+     ],
+     "aviso": "Para esos recursos civiles, véase la [[Ley 1/2000, de 7 de enero, de Enjuiciamiento Civil|https://www.boe.es/buscar/act.php?id=BOE-A-2000-323]] (también en esta app).",
+     "pregunta": {
+      "q": "Fuera del abreviado, ¿se puede apelar un auto del Juez de Instrucción sin interponer antes reforma?",
+      "a": "No. La apelación solo cabe después de la reforma, aunque pueden ir en el mismo escrito, la apelación de forma subsidiaria. En el abreviado, en cambio, la reforma previa no es necesaria (art. 766).",
+      "articulos": [
+       "222",
+       "766"
+      ],
+      "literal": {
+       "articulo": "222",
+       "texto": "El recurso de apelación no podrá interponerse sino después de haberse ejercitado el de reforma"
+      }
+     },
+     "conexiones": [
+      "211",
+      "212",
+      "213",
+      "216",
+      "217",
+      "218",
+      "219",
+      "220",
+      "221",
+      "222",
+      "236",
+      "237",
+      "238",
+      "238 bis",
+      "238 ter",
+      "766"
+     ],
+     "recursos_rel": [
+      "reposicion-laj",
+      "revision-laj",
+      "reforma",
+      "apelacion-autos",
+      "queja",
+      "suplica"
+     ],
+     "continua_en": [
+      "recursos"
+     ]
     },
     {
      "id": "generales-239",
@@ -502,68 +744,399 @@
    "nombre": "Denuncia, querella y Policía judicial",
    "bloque": "lecrim",
    "grupo": "Libro II · Sumario",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Cómo empieza el proceso penal: la denuncia (cualquiera puede y, a veces, debe denunciar), la querella (para ser acusación desde el principio) y el atestado de la Policía judicial. Común al sumario, al abreviado y al juicio rápido.",
    "ambito": {
     "corto": "Arts. 259 a 298",
     "texto": "TÍTULO I. De la denuncia · TÍTULO II. De la querella · TÍTULO III. De la Policía judicial",
     "articulos": [
      "259"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "264",
+      "texto": "sin que se entienda obligado por esto a probar los hechos denunciados ni a formalizar querella"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
      "id": "inicio-259",
-     "fase": "De la denuncia",
-     "subtitulo": "TÍTULO I · arts. 259 a 269",
-     "descripcion": "",
+     "fase": "Denuncia: quién debe denunciar y cómo",
+     "subtitulo": "Obligación de denunciar · forma · qué pasa después",
+     "descripcion": "Quien presencie un delito público debe ponerlo enseguida en conocimiento del juez o del fiscal más próximo. También deben denunciar quienes lo conozcan por su cargo, profesión u oficio, o por cualquier otro medio. El denunciante no tiene que probar los hechos ni formalizar querella, y solo responde de los delitos que cometa con la denuncia. Se puede denunciar por escrito o de palabra, en persona o por mandatario con poder especial; la denuncia identifica al denunciante y narra el hecho con detalle. Recibida, se comprueba el hecho, salvo que no sea delito o que la denuncia sea manifiestamente falsa. Para ser parte acusadora no basta con denunciar: hay que querellarse o personarse (arts. 109 bis y 270).",
      "articulos": [
       "259",
+      "261",
+      "262",
+      "263",
+      "264",
+      "265",
+      "266",
       "269"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Quien presencia un delito público: ponerlo en conocimiento del juez o del fiscal",
+       "plazo": "Inmediatamente",
+       "articulo": "259",
+       "literal": "está obligado a ponerlo inmediatamente en conocimiento"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Es cónyuge, pareja o pariente cercano del autor",
+       "entonces": "No está obligado a denunciar, salvo en los delitos contra la vida, homicidio, lesiones de los arts. 149 y 150 CP, maltrato habitual, delitos contra la libertad o la libertad sexual y trata, si la víctima es menor de edad o persona con discapacidad necesitada de especial protección.",
+       "articulos": [
+        "261"
+       ],
+       "literal": {
+        "articulo": "261",
+        "texto": "Tampoco estarán obligados a denunciar"
+       }
+      },
+      {
+       "si": "Es abogado o procurador y lo sabe por su cliente",
+       "entonces": "No está obligado a denunciar lo que conozca por las instrucciones o explicaciones de su cliente.",
+       "articulos": [
+        "263"
+       ],
+       "literal": {
+        "articulo": "263",
+        "texto": "no comprenderá a los Abogados ni a los Procuradores respecto de las instrucciones o explicaciones que recibieren de sus clientes"
+       }
+      },
+      {
+       "si": "Se quiere denunciar por internet",
+       "entonces": "Con firma electrónica. No cabe si hubo violencia o intimidación, hay autor conocido o testigos, el denunciante es menor, el delito es flagrante o los hechos son violentos o sexuales.",
+       "articulos": [
+        "266"
+       ],
+       "literal": {
+        "articulo": "266",
+        "texto": "No se podrán denunciar por vía telemática aquellos hechos que se hayan producido con violencia o intimidación"
+       }
+      },
+      {
+       "si": "La denuncia es verbal",
+       "entonces": "Se levanta un acta con lo que declare el denunciante, que firman él y quien la recibe.",
+       "articulos": [
+        "267"
+       ],
+       "literal": {
+        "articulo": "267",
+        "texto": "se extenderá un acta por la autoridad o funcionario que la recibiere"
+       }
+      },
+      {
+       "si": "El denunciante quiere un justificante",
+       "entonces": "Si lo pide, se le da un resguardo.",
+       "articulos": [
+        "268"
+       ],
+       "literal": {
+        "articulo": "268",
+        "texto": "le darán un resguardo de haber formalizado la denuncia"
+       }
+      },
+      {
+       "si": "El hecho no es delito o la denuncia es manifiestamente falsa",
+       "entonces": "No se inicia procedimiento.",
+       "articulos": [
+        "269"
+       ],
+       "literal": {
+        "articulo": "269",
+        "texto": "o que la denuncia fuere manifiestamente falsa"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quien denuncia tiene que probar los hechos?",
+      "a": "No. No está obligado a probarlos ni a formalizar querella; solo responde de los delitos que cometa por medio de la denuncia.",
+      "articulos": [
+       "264"
+      ],
+      "literal": {
+       "articulo": "264",
+       "texto": "sin que se entienda obligado por esto a probar los hechos denunciados ni a formalizar querella"
+      }
+     },
+     "conexiones": [
       "259",
-      "269"
+      "260",
+      "261",
+      "262",
+      "263",
+      "264",
+      "265",
+      "266",
+      "267",
+      "268",
+      "269",
+      "297"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ]
     },
     {
      "id": "inicio-270",
-     "fase": "De la querella",
-     "subtitulo": "TÍTULO II · arts. 270 a 281",
-     "descripcion": "",
+     "fase": "Querella: cómo ser acusación desde el principio",
+     "subtitulo": "Quién puede · requisitos · fianza · admisión",
+     "descripcion": "Pueden querellarse todos los ciudadanos españoles, ofendidos o no por el delito (acción popular), y los extranjeros por los delitos contra sus personas o bienes. El fiscal también ejercita la acción penal en forma de querella. Se presenta ante el Juez de Instrucción competente, siempre por procurador con poder bastante y firmada por letrado. Contiene: juez o tribunal, querellante, querellado, relación circunstanciada del hecho, diligencias que se piden y petición de admisión y, en su caso, de detención, prisión o fianza y embargo. El querellante particular presta la fianza que fije el juez, salvo el ofendido y los demás exentos. El juez la admite y manda practicar las diligencias pertinentes, o la desestima si los hechos no son delito o no es competente. El querellante puede apartarse en cualquier momento, respondiendo de sus actos anteriores.",
      "articulos": [
       "270",
-      "281"
+      "272",
+      "274",
+      "277",
+      "278",
+      "280",
+      "281",
+      "312",
+      "313"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Delito solo perseguible a instancia de parte: instar el procedimiento tras el requerimiento del juez",
+       "plazo": "10 días (si no, se tiene por abandonada)",
+       "articulo": "275",
+       "literal": "cuando dejare de instar el procedimiento dentro de los diez días siguientes a la notificación del auto"
+      },
+      {
+       "acto": "Herederos o representantes del querellante fallecido o incapacitado: comparecer para sostenerla",
+       "plazo": "30 días desde la citación",
+       "articulo": "276",
+       "literal": "dentro de los treinta días siguientes a la citación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El delito solo es perseguible a instancia de parte",
+       "entonces": "Se acompaña certificación de haberse celebrado o intentado la conciliación (la ley exceptúa «violación o rapto»). Las diligencias urgentes pueden practicarse antes.",
+       "articulos": [
+        "278"
+       ],
+       "literal": {
+        "articulo": "278",
+        "texto": "la certificación que acredite haberse celebrado o intentado el acto de conciliación entre querellante y querellado"
+       }
+      },
+      {
+       "si": "Calumnia o injuria causadas en juicio",
+       "entonces": "Hay que presentar además la licencia del juez o tribunal de ese juicio.",
+       "articulos": [
+        "279"
+       ],
+       "literal": {
+        "articulo": "279",
+        "texto": "se presentará además la licencia del Juez o Tribunal que hubiese conocido de aquél"
+       }
+      },
+      {
+       "si": "El querellante es el ofendido o sus herederos",
+       "entonces": "Está exento de fianza (también otros parientes en asesinato u homicidio y las asociaciones de víctimas autorizadas por la víctima).",
+       "articulos": [
+        "280",
+        "281"
+       ],
+       "literal": {
+        "articulo": "281",
+        "texto": "El ofendido y sus herederos o representantes legales."
+       }
+      },
+      {
+       "si": "Delito flagrante, sin huellas permanentes o con riesgo de fuga",
+       "entonces": "Se puede acudir enseguida al juez más próximo o a la policía para las primeras diligencias y la detención.",
+       "articulos": [
+        "273"
+       ],
+       "literal": {
+        "articulo": "273",
+        "texto": "el particular que intentare querellarse del delito podrá acudir desde luego al Juez de instrucción o municipal que estuviere más próximo"
+       }
+      },
+      {
+       "si": "El querellado está aforado",
+       "entonces": "La querella se presenta ante el tribunal que le corresponda por ley.",
+       "articulos": [
+        "272"
+       ],
+       "literal": {
+        "articulo": "272",
+        "texto": "Si el querellado estuviere sometido por disposición especial de la Ley a determinado Tribunal, ante éste se interpondrá la querella."
+       }
+      },
+      {
+       "si": "El juez desestima la querella",
+       "entonces": "Cabe apelación, admisible en ambos efectos.",
+       "articulos": [
+        "313",
+        "220"
+       ],
+       "literal": {
+        "articulo": "313",
+        "texto": "Contra el auto a que se refiere este artículo procederá el recurso de apelación, que será admisible en ambos efectos."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede querellarse quien no ha sido ofendido por el delito?",
+      "a": "Sí: cualquier ciudadano español, ejercitando la acción popular. A diferencia del ofendido, tiene que prestar la fianza que fije el juez.",
+      "articulos": [
+       "270",
+       "280",
+       "281"
+      ],
+      "literal": {
+       "articulo": "270",
+       "texto": "hayan sido o no ofendidos por el delito, pueden querellarse"
+      }
+     },
+     "conexiones": [
+      "101",
+      "105",
+      "109 bis",
       "270",
-      "281"
+      "271",
+      "272",
+      "273",
+      "274",
+      "275",
+      "276",
+      "277",
+      "278",
+      "279",
+      "280",
+      "281",
+      "312",
+      "313"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "recursos_rel": [
+      "apelacion-autos"
+     ],
+     "continua_en": [
+      "instruccion",
+      "abreviado"
+     ]
     },
     {
      "id": "inicio-282",
-     "fase": "De la Policía judicial",
-     "subtitulo": "TÍTULO III · arts. 282 a 298",
-     "descripcion": "",
+     "fase": "Policía judicial y atestado",
+     "subtitulo": "Primeras diligencias · atestado · 24 horas para dar cuenta",
+     "descripcion": "La Policía judicial averigua los delitos públicos, practica las diligencias para comprobarlos y descubrir a los autores y recoge los efectos e instrumentos del delito en peligro de desaparecer, poniéndolos a disposición judicial. Informa a las víctimas y valora provisionalmente qué protección necesitan. Actúa a las órdenes de jueces, tribunales y fiscal. Lo que hace lo recoge en un atestado firmado, con los hechos averiguados, las declaraciones e informes y las circunstancias que puedan ser prueba o indicio. El atestado vale como denuncia; las declaraciones de los agentes sobre hechos que conocen por sí mismos, como testificales. Cuando el juez se presenta a instruir, cesan las diligencias policiales y se le entregan con los efectos y los detenidos.",
      "articulos": [
       "282",
-      "298"
+      "283",
+      "284",
+      "286",
+      "292",
+      "295",
+      "297"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Dar cuenta al juez o al fiscal de las diligencias practicadas",
+       "plazo": "Nunca más de 24 horas",
+       "articulo": "295",
+       "literal": "En ningún caso los funcionarios de Policía Judicial podrán dejar transcurrir más de veinticuatro horas sin dar conocimiento"
+      },
+      {
+       "acto": "Delito sin autor conocido: el atestado se envía si hay diligencias con resultado pasado este plazo",
+       "plazo": "72 horas desde la apertura del atestado",
+       "articulo": "284",
+       "literal": "después de transcurridas setenta y dos horas desde la apertura del atestado"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No hay autor conocido",
+       "entonces": "La policía conserva el atestado sin enviarlo, salvo delitos contra la vida, la integridad física o la libertad sexual o de corrupción, diligencias con resultado pasadas 72 horas, o que lo pidan el fiscal o el juez. Debe avisar al denunciante.",
+       "articulos": [
+        "284"
+       ],
+       "literal": {
+        "articulo": "284",
+        "texto": "cuando no exista autor conocido del delito la Policía Judicial conservará el atestado a disposición del Ministerio Fiscal y de la autoridad judicial"
+       }
+      },
+      {
+       "si": "El delito solo es perseguible a instancia de parte",
+       "entonces": "La policía tiene la misma obligación si se le requiere.",
+       "articulos": [
+        "282"
+       ],
+       "literal": {
+        "articulo": "282",
+        "texto": "tendrán la misma obligación expresada en el párrafo anterior, si se les requiere al efecto"
+       }
+      },
+      {
+       "si": "Investigación de delincuencia organizada",
+       "entonces": "El juez, o el fiscal dando cuenta inmediata al juez, puede autorizar a agentes a actuar con identidad supuesta (agente encubierto).",
+       "articulos": [
+        "282 bis"
+       ],
+       "literal": {
+        "articulo": "282 bis",
+        "texto": "a actuar bajo identidad supuesta"
+       }
+      },
+      {
+       "si": "El juez se presenta a instruir",
+       "entonces": "Cesan las diligencias policiales y se le entregan, con los efectos y los detenidos.",
+       "articulos": [
+        "286"
+       ],
+       "literal": {
+        "articulo": "286",
+        "texto": "cesarán las diligencias de prevención que estuviere practicando cualquier Autoridad o agente de policía"
+       }
+      },
+      {
+       "si": "¿Qué valor tiene el atestado?",
+       "entonces": "Se considera denuncia a efectos legales.",
+       "articulos": [
+        "297"
+       ],
+       "literal": {
+        "articulo": "297",
+        "texto": "se considerarán denuncias para los efectos legales"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuánto tiempo puede pasar la Policía judicial sin dar cuenta al juez o al fiscal de lo que ha hecho?",
+      "a": "Nunca más de 24 horas, salvo fuerza mayor o el caso de delito sin autor conocido del art. 284.2.",
+      "articulos": [
+       "295",
+       "284"
+      ],
+      "literal": {
+       "articulo": "295",
+       "texto": "En ningún caso los funcionarios de Policía Judicial podrán dejar transcurrir más de veinticuatro horas sin dar conocimiento"
+      }
+     },
+     "conexiones": [
       "282",
-      "298"
+      "282 bis",
+      "283",
+      "284",
+      "286",
+      "287",
+      "292",
+      "293",
+      "295",
+      "297",
+      "520"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "cautelares",
+      "instruccion",
+      "abreviado",
+      "rapido"
+     ]
     }
    ]
   },
@@ -11154,6 +11727,13 @@
  ],
  "vista_procedimientos": [
   {
+   "grupo": "Cómo empieza el proceso penal",
+   "nota": "Denuncia, querella y atestado: comunes al sumario, al abreviado y al juicio rápido.",
+   "items": [
+    "inicio"
+   ]
+  },
+  {
    "grupo": "Sumario ordinario",
    "nota": "Una sola ruta de la instrucción a la sentencia. En el Mapa sigue repartido como en la ley: Libro II (sumario) y Libro III (juicio oral).",
    "items": [
@@ -11202,6 +11782,10 @@
   {
    "grupo": "Recursos contra las resoluciones procesales (Libro I)",
    "items": [
+    {
+     "proc": "generales",
+     "fase": "generales-141"
+    },
     {
      "proc": "generales",
      "fase": "generales-216"

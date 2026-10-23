@@ -104,9 +104,9 @@ Entre paréntesis, el **tramo oficial del bloque** según el consolidado BOE. Tr
 11. Costas procesales (arts. 239-246) — NO
 12. Estadística judicial (arts. 247-257) y correcciones disciplinarias (art. 258) — NO
 #### Libro II — Sumario
-13. Denuncia (arts. 259-269) — NO
-14. Querella (arts. 270-281) — NO
-15. Policía judicial (arts. 282-298) — NO
+13. Denuncia (arts. 259-269) — SI *(Añadido por el usuario el 23-10-2026, a propuesta de Claude: es el inicio del proceso penal. Pendiente de pasarlo también a su plataforma.)*
+14. Querella (arts. 270-281) — SI *(Añadido por el usuario el 23-10-2026, a propuesta de Claude: es el inicio del proceso penal. Pendiente de pasarlo también a su plataforma.)*
+15. Policía judicial (arts. 282-298) — SI *(Añadido por el usuario el 23-10-2026, a propuesta de Claude: es el inicio del proceso penal. Pendiente de pasarlo también a su plataforma.)*
 16. Instrucción / formación del sumario (arts. 299-325) — PARCIAL (299-302-303-311-314-324)
 17. Comprobación del delito, testigos y pericia (arts. 326-485) — PARCIAL (326-334-384-384 bis-389-410-416-433-449 bis-449 ter-456-478)
 18. Citación, detención y prisión provisional (arts. 486-527) — PARCIAL (502-503-504-505-509-518-520-520 bis-527)
