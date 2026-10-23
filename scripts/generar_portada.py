@@ -125,10 +125,10 @@ a.ley:hover{border-color:var(--acento)}
 """
 
 
-def tarjeta(l):
+def tarjeta(l, version):
     e = html.escape
     if l["estado"] == "disponible":
-        return (f'<a class="ley" href="{e(l["carpeta"])}index.html"><div class="ab">{e(l["abreviatura"])}</div>'
+        return (f'<a class="ley" href="{e(l["carpeta"])}index.html?v={version}"><div class="ab">{e(l["abreviatura"])}</div>'
                 f'<h2>{e(l["nombre"])}</h2><div class="ref">{e(l["referencia"])}</div>'
                 f'<p>{e(l["descripcion"])}</p><span class="ir">Abrir ›</span></a>')
     return (f'<div class="ley prox"><div class="ab">{e(l["abreviatura"])}</div><h2>{e(l["nombre"])}</h2>'
@@ -145,7 +145,7 @@ def main():
     img = f'<img src="{logo}" alt="NOrlexia">' if logo else ""
     with open(os.path.join(RAIZ, "scripts", "version.json"), encoding="utf-8") as f:
         v = json.load(f)
-    out = PLANTILLA.replace("__VERSION__", str(v["version"])).replace("__LOGO__", img).replace("__LEYES__", "".join(tarjeta(l) for l in leyes))
+    out = PLANTILLA.replace("__VERSION__", str(v["version"])).replace("__LOGO__", img).replace("__LEYES__", "".join(tarjeta(l, v["version"]) for l in leyes))
     with open(os.path.join(RAIZ, "index.html"), "w", encoding="utf-8") as f:
         f.write(out)
     print(f"index.html generado: {sum(l['estado']=='disponible' for l in leyes)} ley(es) disponible(s), "
