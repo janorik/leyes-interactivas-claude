@@ -356,6 +356,42 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 ## LRJS — Ley reguladora de la jurisdicción social
 
+### Recursos (Chat 4, contenido elaborado, pendiente de revisión)
+
+> Tercer desarrollo de la LRJS, en el orden elegido por el usuario. Mapa: bloque «Recursos, audiencia al rebelde y revisión» (7 fichas) y bloque «Audiencia al demandado rebelde» en su sitio del Libro II (1 ficha). Pestaña Recursos: `lrjs/datos/recursos.json` con 9 recursos, 30 casos del selector «¿qué recurso cabe?» (LAJ, juez o tribunal, sentencias) y el test «Ponte a prueba». Las fichas de despido y de sentencia llevan ya botones a sus recursos. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
+
+- [x] **Plazos de la queja y de la revisión. Resuelta (usuario, 23-10-2026):** se añade el plazo de la LEC con su artículo y su frase literal: queja, 10 días (art. 495.1 LEC); revisión, 5 años desde la publicación y 3 meses desde que se descubre el motivo (art. 512 LEC; 1 año si se funda en una sentencia del TEDH). Comprobado que las frases están en la LEC de la app.
+- [x] **Art. 206.1: cita del Estatuto de los Trabajadores de 1995 (RDLeg 1/1995). Resuelta con criterio interpretativo (usuario, 23-10-2026):** se entiende referida al art. 51.7 del Estatuto vigente.
+- [x] **Selector: excepciones a «Auto que resuelve una reposición: no cabe recurso». Resuelta (usuario, 23-10-2026):** se añaden como casos propios (6 nuevos: terminación anticipada y autos de ejecución del art. 191.4, y los autos de las Salas del art. 206). El selector pasa a 30 casos.
+- [ ] **Revisa las 8 fichas del mapa y los 9 recursos.**
+
+### Conciliación previa y proceso ordinario (Chat 4, contenido elaborado, pendiente de revisión)
+
+> Segundo desarrollo de la LRJS, en el orden elegido por el usuario: bloque «Conciliación o mediación previa y vía administrativa» (arts. 63-73, 2 fichas) y bloque «Proceso ordinario y monitorio» (arts. 76-102, 9 fichas); 39 plazos en total. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
+
+- [ ] **Ley 29/1998 sin enlace.** La ficha de medidas cautelares (art. 79) nombra la Ley 29/1998, de 13 de julio, reguladora de la Jurisdicción Contencioso-Administrativa, tal como la cita la LRJS, pero sin enlace: su referencia en el BOE no sale de ningún texto de la app ni de tu plataforma, y no la pongo de memoria. Si me das la referencia (o subes su PDF, que además es la ley procesal administrativa que estás valorando), añado el enlace.
+  - **Tu respuesta:**
+- [ ] **Ley del Estatuto del trabajo autónomo:** los arts. 63, 65 y 68 la citan; en las fichas no la nombro porque no orienta en el trámite. Dime si la quieres con enlace.
+  - **Tu respuesta:**
+- [ ] **Revisa las 11 fichas.**
+
+### Despido, sanciones y extinción (Chat 4, contenido elaborado, pendiente de revisión)
+
+> Primer bloque desarrollado de la LRJS (arts. 103-124), elegido por el usuario: 6 fichas y 18 plazos. En la app: Mapa › Despido, sanciones y extinción del contrato. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
+
+- [x] **Arts. 116 y 119: ¿90 o 60 días hábiles? Resuelta con criterio interpretativo (usuario, 23-10-2026):** se aplica el plazo de 90 días hábiles del art. 116, que es el precepto que lo fija; la cifra de 60 del art. 119 es una discordancia del texto y no altera el art. 116. La ficha lo dice en su aviso.
+- [ ] **Art. 121: «veinte días» sin decir «hábiles».** El plazo para impugnar la extinción objetiva no dice si son días hábiles; el del despido (art. 103) sí.
+  - **Propuesta:** son hábiles, porque el art. 120 remite a las normas del despido. La ficha pone «20 días», sin añadir «hábiles». No verificable hasta que lo confirmes.
+  - **Tu respuesta:**
+- [ ] **Enlace al Estatuto de los Trabajadores:** las fichas citan los arts. 50, 53, 55, 56 y 59 del texto refundido del Estatuto de los Trabajadores con enlace a `BOE-A-2015-11430`. Esa referencia la he tomado de tu plataforma, que la usa en 7 sitios; no sale de la LRJS. Comprueba que el enlace abre el Estatuto en el BOE.
+  - **Tu respuesta:**
+- [ ] **Revisa las 6 fichas.**
+
+### Mapa procesal (esqueleto, Chat 4)
+
+- [ ] **Esqueleto de 14 bloques y 66 fases (antes de desarrollar el despido):** cada fase es un título, capítulo o sección del índice del BOE, con su nombre literal y sus artículos. Revisa si la agrupación en bloques te sirve antes de desarrollar el primero.
+- [x] **Audiencia al demandado rebelde (art. 185). Resuelta (usuario, 23-10-2026):** figura en el Mapa en su sitio del Libro II (bloque «Audiencia al demandado rebelde») y también en el bloque de recursos, por ser un medio de impugnación.
+
 ### Canon (Chat 4)
 
 - [x] **Cambios del usuario a propuesta de Claude (23-10-2026):** audiencia al demandado rebelde (185) y revisión y error judicial (236) pasan de NO a SI; salarios de tramitación frente al Estado (116-119), materia electoral (127-136), procedimiento de oficio (148-150) y estatutos sindicales (167-176) pasan a SI solo con una ficha breve y sintética (qué es, quién demanda, plazo y recurso). Cambiado también en su plataforma (PR #3). La plataforma no carga esos artículos en su API hasta que el usuario lo autorice allí.

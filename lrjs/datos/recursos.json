@@ -1,0 +1,546 @@
+{
+ "_nota": "Contenido ELABORADO (no literal), revisado:false. Cada literal se comprueba contra el artículo citado de la LRJS (scripts/insertar_datos.py lrjs).",
+ "revisado": false,
+ "ubicacion": "Libro III · Medios de impugnación (y art. 185)",
+ "grupos_selector": [
+  {
+   "quien": "LAJ",
+   "titulo": "Resoluciones del Letrado de la Administración de Justicia"
+  },
+  {
+   "quien": "Juez o Tribunal",
+   "titulo": "Providencias y autos del juez o tribunal"
+  },
+  {
+   "quien": "Sentencia",
+   "titulo": "Sentencias"
+  }
+ ],
+ "recursos": [
+  {
+   "id": "reposicion-laj",
+   "recurso": "Reposición (ante el LAJ)",
+   "contra_que": "Diligencias de ordenación y decretos no definitivos, salvo que la ley prevea revisión directa.",
+   "plazo": "3 días (órgano unipersonal) o 5 (órgano colegiado)",
+   "organo": "El mismo Letrado de la Administración de Justicia que la dictó.",
+   "efectos": "No suspende la resolución recurrida. Las demás partes pueden impugnarlo en 3 o 5 días y se resuelve por decreto, contra el que cabe revisión. No cabe en conflictos colectivos, materia electoral, conciliación de la vida personal y familiar ni impugnación de convenios.",
+   "articulos": [
+    "186",
+    "187",
+    "188"
+   ],
+   "literales": [
+    {
+     "articulo": "186",
+     "texto": "Contra las diligencias de ordenación y decretos no definitivos cabrá recurso de reposición ante el secretario judicial que dictó la resolución recurrida"
+    },
+    {
+     "articulo": "187",
+     "texto": "El recurso de reposición deberá interponerse en el plazo de tres días contra las resoluciones dictadas en procedimientos seguidos ante un órgano unipersonal y de cinco días"
+    }
+   ]
+  },
+  {
+   "id": "reposicion-juez",
+   "recurso": "Reposición (ante el juez o tribunal)",
+   "contra_que": "Todas las providencias y autos.",
+   "plazo": "3 días (órgano unipersonal) o 5 (órgano colegiado)",
+   "organo": "El mismo juez o tribunal que la dictó.",
+   "efectos": "No suspende la resolución recurrida. Se resuelve por auto, contra el que no cabe nuevo recurso salvo que la ley lo prevea (por ejemplo, la suplicación de los autos del art. 191.4). No cabe en conflictos colectivos, materia electoral, conciliación de la vida personal y familiar ni impugnación de convenios.",
+   "articulos": [
+    "186",
+    "187"
+   ],
+   "literales": [
+    {
+     "articulo": "186",
+     "texto": "Contra todas las providencias y autos cabrá recurso de reposición ante el mismo juez o tribunal que dictó la resolución recurrida."
+    },
+    {
+     "articulo": "187",
+     "texto": "Contra el auto resolutorio del recurso de reposición no se dará nuevo recurso, salvo en los supuestos expresamente establecidos en la presente Ley"
+    }
+   ]
+  },
+  {
+   "id": "revision",
+   "recurso": "Revisión (contra decretos)",
+   "contra_que": "El decreto que resuelve una reposición, los decretos que ponen fin al procedimiento o impiden su continuación y los demás que la ley prevea.",
+   "plazo": "3 días (órgano unipersonal) o 5 (órgano colegiado)",
+   "organo": "El juez o tribunal.",
+   "efectos": "No suspende. Las demás partes pueden impugnarlo en 3 o 5 días y se resuelve por auto; contra él solo cabe suplicación o casación cuando la ley lo prevea expresamente.",
+   "articulos": [
+    "188"
+   ],
+   "literales": [
+    {
+     "articulo": "188",
+     "texto": "Contra el decreto resolutivo de la reposición cabrá recurso de revisión."
+    },
+    {
+     "articulo": "188",
+     "texto": "El recurso directo de revisión deberá interponerse en el plazo de tres o cinco días"
+    }
+   ]
+  },
+  {
+   "id": "queja",
+   "recurso": "Queja",
+   "contra_que": "El auto que tiene por no anunciada la suplicación o por no preparada la casación.",
+   "plazo": "10 días desde la notificación del auto (art. 495.1 LEC, al que remite el art. 189 LRJS)",
+   "organo": "Sala de lo Social del Tribunal Superior de Justicia (suplicación) o del Tribunal Supremo (casación).",
+   "efectos": "Se tramita conforme a la Ley de Enjuiciamiento Civil: «en el plazo de diez días desde la notificación de la resolución que deniega la tramitación del recurso» (art. 495.1 LEC). Se acompaña copia de la resolución recurrida; el tribunal resuelve en 5 días y contra su auto no cabe recurso (art. 495.2 y 3 LEC).",
+   "articulos": [
+    "189",
+    "195",
+    "209"
+   ],
+   "literales": [
+    {
+     "articulo": "189",
+     "texto": "se tramitarán de conformidad con lo dispuesto en la Ley de Enjuiciamiento Civil para recurrir en queja"
+    },
+    {
+     "articulo": "195",
+     "texto": "Contra este auto podrá recurrirse en queja ante la Sala de lo Social del Tribunal Superior de Justicia."
+    },
+    {
+     "articulo": "209",
+     "texto": "Contra este auto podrá recurrirse en queja ante la Sala de lo Social del Tribunal Supremo."
+    }
+   ]
+  },
+  {
+   "id": "suplicacion",
+   "recurso": "Suplicación",
+   "contra_que": "Las sentencias de los Juzgados de lo Social, salvo las materias y cuantías excluidas (art. 191.2), y algunos autos (art. 191.4).",
+   "plazo": "Anuncio: 5 días desde la notificación · Interposición: 10 días desde la puesta a disposición de los autos",
+   "organo": "Sala de lo Social del Tribunal Superior de Justicia.",
+   "efectos": "Sirve para reponer actuaciones por indefensión, revisar los hechos probados con documentos o pericias, o denunciar infracción de normas o de jurisprudencia. Las demás partes lo impugnan en 5 días y la Sala dicta sentencia en 10. Quien no sea trabajador, beneficiario o sindicato deposita 300 € y consigna la condena.",
+   "articulos": [
+    "190",
+    "191",
+    "193",
+    "194",
+    "195",
+    "197",
+    "201",
+    "229",
+    "230"
+   ],
+   "literales": [
+    {
+     "articulo": "190",
+     "texto": "Las Salas de lo Social de los Tribunales Superiores de Justicia conocerán de los recursos de suplicación"
+    },
+    {
+     "articulo": "194",
+     "texto": "El recurso de suplicación deberá anunciarse dentro de los cinco días siguientes a la notificación de la sentencia"
+    },
+    {
+     "articulo": "195",
+     "texto": "para que interponga el recurso, dentro de los diez días siguientes a que se notifique la puesta a disposición"
+    },
+    {
+     "articulo": "229",
+     "texto": "Trescientos euros, si se trata de recurso de suplicación."
+    }
+   ]
+  },
+  {
+   "id": "casacion",
+   "recurso": "Casación ordinaria",
+   "contra_que": "Sentencias y otras resoluciones dictadas en única instancia por las Salas de lo Social de los Tribunales Superiores de Justicia y de la Audiencia Nacional (art. 206).",
+   "plazo": "Preparación: 5 días desde la notificación · Formalización: 15 días",
+   "organo": "Sala de lo Social del Tribunal Supremo.",
+   "efectos": "Motivos tasados (art. 207): defecto de jurisdicción, incompetencia o procedimiento inadecuado, quebrantamiento de formas con indefensión, error de hecho basado en documentos, e infracción de normas o jurisprudencia. Las demás partes lo impugnan en 10 días. Depósito de 600 € y consignación.",
+   "articulos": [
+    "205",
+    "206",
+    "207",
+    "208",
+    "209",
+    "211",
+    "229"
+   ],
+   "literales": [
+    {
+     "articulo": "205",
+     "texto": "La Sala de lo Social del Tribunal Supremo conocerá"
+    },
+    {
+     "articulo": "208",
+     "texto": "El recurso de casación deberá prepararse en el plazo de los cinco días siguientes a la notificación de la sentencia"
+    },
+    {
+     "articulo": "209",
+     "texto": "el plazo de quince días para formalizar el recurso"
+    },
+    {
+     "articulo": "229",
+     "texto": "Seiscientos euros, si el recurso fuera el de casación incluido el de casación para la unificación de doctrina."
+    }
+   ]
+  },
+  {
+   "id": "cud",
+   "recurso": "Casación para la unificación de doctrina",
+   "contra_que": "Sentencias dictadas en suplicación por las Salas de lo Social de los Tribunales Superiores de Justicia.",
+   "plazo": "Preparación: 10 días desde la notificación · Interposición: 15 días",
+   "organo": "Sala de lo Social del Tribunal Supremo (se prepara ante la Sala del TSJ que dictó la sentencia).",
+   "efectos": "Exige contradicción con otra sentencia (de otra Sala de TSJ, del Supremo, o del Constitucional, el TEDH o el TJUE en su ámbito) con hechos, fundamentos y pretensiones sustancialmente iguales, e interés casacional objetivo. Una sentencia de contraste por punto, firme y citada ya al preparar. Depósito de 600 €.",
+   "articulos": [
+    "218",
+    "219",
+    "220",
+    "221",
+    "223",
+    "224",
+    "229"
+   ],
+   "literales": [
+    {
+     "articulo": "218",
+     "texto": "Son recurribles en casación para la unificación de doctrina, las sentencias dictadas en suplicación por las Salas de lo Social de los Tribunales Superiores de Justicia."
+    },
+    {
+     "articulo": "220",
+     "texto": "dentro de los diez días siguientes a la notificación de la sentencia impugnada"
+    },
+    {
+     "articulo": "223",
+     "texto": "el plazo común de quince días para interponer el recurso"
+    },
+    {
+     "articulo": "219",
+     "texto": "siempre que la Sala Social del Tribunal Supremo aprecie que el recurso presenta interés casacional objetivo"
+    }
+   ]
+  },
+  {
+   "id": "rebelde",
+   "recurso": "Audiencia al demandado rebelde",
+   "contra_que": "La sentencia firme dictada sin que compareciera el demandado.",
+   "plazo": "20 días desde la notificación personal o el conocimiento de la sentencia; en todo caso, 4 meses desde su publicación en el boletín",
+   "organo": "Se pide ante el órgano que dictó la sentencia firme; la audiencia se sustancia ante el que conoció en instancia.",
+   "efectos": "Se rige por la LEC (Título V del Libro II), con las especialidades del art. 185, y se tramita por el proceso ordinario. La nulidad por defectos de forma con indefensión va por el incidente de nulidad de actuaciones.",
+   "articulos": [
+    "185"
+   ],
+   "literales": [
+    {
+     "articulo": "185",
+     "texto": "El plazo para solicitar la audiencia será de veinte días desde la notificación personal de la sentencia"
+    },
+    {
+     "articulo": "185",
+     "texto": "La petición de audiencia se formulará ante el órgano judicial que hubiere dictado la sentencia firme que se pretende rescindir."
+    }
+   ]
+  },
+  {
+   "id": "revision-firmes",
+   "recurso": "Revisión de sentencias y laudos firmes (y error judicial)",
+   "contra_que": "Cualquier sentencia firme del orden social y los laudos arbitrales firmes en materias sociales.",
+   "plazo": "Como máximo 5 años desde la publicación de la sentencia y 3 meses desde que se descubre el motivo (art. 512 LEC, al que remite el art. 236 LRJS)",
+   "organo": "Sala de lo Social del Tribunal Supremo.",
+   "efectos": "Motivos del art. 510 LEC y el del art. 86.3 LRJS (absolución penal por inexistencia del hecho). Hay que haber agotado antes los recursos; se inadmite si el motivo podía plantearse por nulidad de actuaciones o audiencia al rebelde. Depósito como en casación. Plazos de la LEC: «En ningún caso podrá solicitarse la revisión después de transcurridos cinco años desde la fecha de la publicación de la sentencia» y solo «siempre que no hayan transcurrido tres meses desde el día en que se descubrieren los documentos decisivos, el cohecho, la violencia o el fraude» (art. 512 LEC; si el motivo es una sentencia del TEDH, un año desde su firmeza). El error judicial se tramita por la Ley Orgánica del Poder Judicial.",
+   "articulos": [
+    "236",
+    "86"
+   ],
+   "literales": [
+    {
+     "articulo": "236",
+     "texto": "La revisión se solicitará ante la Sala de lo Social del Tribunal Supremo."
+    },
+    {
+     "articulo": "236",
+     "texto": "por los motivos de su artículo 510"
+    }
+   ]
+  }
+ ],
+ "selector": [
+  {
+   "res": "Diligencia de ordenación",
+   "quien": "LAJ",
+   "recurso": "reposicion-laj",
+   "literal": {
+    "articulo": "186",
+    "texto": "Contra las diligencias de ordenación y decretos no definitivos cabrá recurso de reposición ante el secretario judicial que dictó la resolución recurrida"
+   }
+  },
+  {
+   "res": "Decreto no definitivo",
+   "quien": "LAJ",
+   "recurso": "reposicion-laj",
+   "literal": {
+    "articulo": "186",
+    "texto": "Contra las diligencias de ordenación y decretos no definitivos cabrá recurso de reposición ante el secretario judicial que dictó la resolución recurrida"
+   },
+   "nota": "Salvo que la ley prevea revisión directa."
+  },
+  {
+   "res": "Decreto que resuelve una reposición",
+   "quien": "LAJ",
+   "recurso": "revision",
+   "literal": {
+    "articulo": "188",
+    "texto": "Contra el decreto resolutivo de la reposición cabrá recurso de revisión."
+   }
+  },
+  {
+   "res": "Decreto que pone fin al procedimiento o impide su continuación",
+   "quien": "LAJ",
+   "recurso": "revision",
+   "literal": {
+    "articulo": "188",
+    "texto": "También cabrá recurso directo de revisión contra los decretos que pongan fin al procedimiento o impidan su continuación."
+   }
+  },
+  {
+   "res": "Providencia o auto del juez o tribunal",
+   "quien": "Juez o Tribunal",
+   "recurso": "reposicion-juez",
+   "literal": {
+    "articulo": "186",
+    "texto": "Contra todas las providencias y autos cabrá recurso de reposición ante el mismo juez o tribunal que dictó la resolución recurrida."
+   }
+  },
+  {
+   "res": "Auto que resuelve una reposición",
+   "quien": "Juez o Tribunal",
+   "recurso": null,
+   "literal": {
+    "articulo": "187",
+    "texto": "Contra el auto resolutorio del recurso de reposición no se dará nuevo recurso, salvo en los supuestos expresamente establecidos en la presente Ley"
+   },
+   "nota": "Salvo los casos en que la ley prevé suplicación o casación (arts. 191.4 y 206)."
+  },
+  {
+   "res": "Providencia, auto, diligencia o decreto en conflicto colectivo, materia electoral, conciliación familiar o impugnación de convenio",
+   "quien": "Juez o Tribunal",
+   "recurso": null,
+   "literal": {
+    "articulo": "186",
+    "texto": "No habrá lugar al recurso de reposición contra providencias, autos, diligencias de ordenación y decretos que se dicten en los procesos de conflictos colectivos"
+   },
+   "nota": "Se puede alegar en el acto de la vista."
+  },
+  {
+   "res": "Auto que tiene por no anunciada la suplicación",
+   "quien": "Juez o Tribunal",
+   "recurso": "queja",
+   "literal": {
+    "articulo": "195",
+    "texto": "Contra este auto podrá recurrirse en queja ante la Sala de lo Social del Tribunal Superior de Justicia."
+   }
+  },
+  {
+   "res": "Auto que tiene por no preparada la casación",
+   "quien": "Juez o Tribunal",
+   "recurso": "queja",
+   "literal": {
+    "articulo": "209",
+    "texto": "Contra este auto podrá recurrirse en queja ante la Sala de lo Social del Tribunal Supremo."
+   }
+  },
+  {
+   "res": "Auto que, tras reposición, mantiene la falta de jurisdicción o competencia declarada antes del juicio (Juzgado de lo Social)",
+   "quien": "Juez o Tribunal",
+   "recurso": "suplicacion",
+   "literal": {
+    "articulo": "191",
+    "texto": "Los autos que resuelvan el recurso de reposición interpuesto contra la resolución en que el órgano jurisdiccional, antes del acto del juicio, declare la falta de jurisdicción"
+   }
+  },
+  {
+   "res": "Auto en ejecución definitiva que deniega el despacho de ejecución (tras reposición o revisión)",
+   "quien": "Juez o Tribunal",
+   "recurso": "suplicacion",
+   "literal": {
+    "articulo": "191",
+    "texto": "Cuando denieguen el despacho de ejecución."
+   },
+   "nota": "Si la sentencia ejecutada era recurrible en suplicación."
+  },
+  {
+   "res": "Auto que, tras reposición o revisión, confirma la terminación anticipada del proceso (satisfacción extraprocesal o pérdida de objeto) (Juzgado de lo Social)",
+   "quien": "Juez o Tribunal",
+   "recurso": "suplicacion",
+   "literal": {
+    "articulo": "191",
+    "texto": "Los autos que resuelvan el recurso de reposición, o en su caso de revisión, interpuesto contra la resolución que disponga la terminación anticipada del proceso"
+   },
+   "nota": "También si se archivó por no subsanar o no comparecer y ya no se puede volver a demandar."
+  },
+  {
+   "res": "Auto en ejecución definitiva que resuelve puntos no decididos en la sentencia o que contradicen lo ejecutoriado (tras reposición o revisión)",
+   "quien": "Juez o Tribunal",
+   "recurso": "suplicacion",
+   "literal": {
+    "articulo": "191",
+    "texto": "Cuando resuelvan puntos sustanciales no controvertidos en el pleito, no decididos en la sentencia o que contradigan lo ejecutoriado."
+   },
+   "nota": "Si la sentencia ejecutada era recurrible en suplicación."
+  },
+  {
+   "res": "Auto en ejecución definitiva que pone fin a un incidente decidiendo cuestiones no contenidas en el título (tras reposición o revisión)",
+   "quien": "Juez o Tribunal",
+   "recurso": "suplicacion",
+   "literal": {
+    "articulo": "191",
+    "texto": "Cuando pongan fin al procedimiento incidental en la ejecución decidiendo cuestiones sustanciales no resueltas o no contenidas en el título ejecutivo."
+   },
+   "nota": "Si la sentencia ejecutada era recurrible en suplicación."
+  },
+  {
+   "res": "Auto de la Sala del TSJ o de la Audiencia Nacional que, tras reposición, mantiene la falta de jurisdicción o competencia declarada antes del juicio",
+   "quien": "Juez o Tribunal",
+   "recurso": "casacion",
+   "literal": {
+    "articulo": "206",
+    "texto": "Los autos que resuelvan el recurso de reposición interpuesto contra la resolución en que la Sala, antes del acto de juicio, declare la falta de jurisdicción o competencia."
+   }
+  },
+  {
+   "res": "Auto de la Sala del TSJ o de la Audiencia Nacional que, tras reposición o revisión, confirma la terminación anticipada del proceso",
+   "quien": "Juez o Tribunal",
+   "recurso": "casacion",
+   "literal": {
+    "articulo": "206",
+    "texto": "Los autos dictados por dichas Salas que resuelvan el recurso de reposición, o de revisión, en su caso, interpuesto contra la resolución que disponga la terminación anticipada del proceso"
+   }
+  },
+  {
+   "res": "Auto de la Sala del TSJ o de la Audiencia Nacional en ejecución, tras reposición o revisión",
+   "quien": "Juez o Tribunal",
+   "recurso": "casacion",
+   "literal": {
+    "articulo": "206",
+    "texto": "Los autos que decidan el recurso de reposición interpuesto contra los que dicten dichas Salas"
+   },
+   "nota": "En los supuestos que enumera el art. 206.4."
+  },
+  {
+   "res": "Sentencia de un Juzgado de lo Social (regla general)",
+   "quien": "Sentencia",
+   "recurso": "suplicacion",
+   "literal": {
+    "articulo": "191",
+    "texto": "Son recurribles en suplicación las sentencias que dicten los Juzgados de lo Social"
+   }
+  },
+  {
+   "res": "Sentencia de despido o de extinción del contrato",
+   "quien": "Sentencia",
+   "recurso": "suplicacion",
+   "literal": {
+    "articulo": "191",
+    "texto": "En procesos por despido o extinción del contrato, salvo en los procesos por despido colectivo impugnados por los representantes de los trabajadores."
+   }
+  },
+  {
+   "res": "Sentencia en una reclamación de hasta 3.000 €",
+   "quien": "Sentencia",
+   "recurso": null,
+   "literal": {
+    "articulo": "191",
+    "texto": "Reclamaciones cuya cuantía litigiosa no exceda de 3.000 euros."
+   },
+   "nota": "Salvo que la cuestión afecte a todos o a muchos trabajadores o beneficiarios (art. 191.3.b)."
+  },
+  {
+   "res": "Sentencia sobre una sanción por falta que no es muy grave",
+   "quien": "Sentencia",
+   "recurso": null,
+   "literal": {
+    "articulo": "191",
+    "texto": "Impugnación de sanción por falta que no sea muy grave"
+   }
+  },
+  {
+   "res": "Sentencia sobre la fecha de disfrute de las vacaciones",
+   "quien": "Sentencia",
+   "recurso": null,
+   "literal": {
+    "articulo": "191",
+    "texto": "Procesos relativos a la fecha de disfrute de las vacaciones."
+   }
+  },
+  {
+   "res": "Sentencia sobre prestaciones de Seguridad Social o grado de incapacidad permanente",
+   "quien": "Sentencia",
+   "recurso": "suplicacion",
+   "literal": {
+    "articulo": "191",
+    "texto": "En los procesos que versen sobre reconocimiento o denegación del derecho a obtener prestaciones de Seguridad Social"
+   }
+  },
+  {
+   "res": "Sentencia de impugnación de un alta médica",
+   "quien": "Sentencia",
+   "recurso": null,
+   "literal": {
+    "articulo": "191",
+    "texto": "Tampoco procederá recurso en procesos de impugnación de alta médica"
+   }
+  },
+  {
+   "res": "Sentencia en conflicto colectivo, convenio, estatutos sindicales, procedimiento de oficio o tutela de derechos fundamentales",
+   "quien": "Sentencia",
+   "recurso": "suplicacion",
+   "literal": {
+    "articulo": "191",
+    "texto": "Contra las sentencias dictadas en materias de conflictos colectivos, impugnación de convenios colectivos"
+   }
+  },
+  {
+   "res": "Sentencia de la Sala de lo Social del TSJ que resuelve una suplicación",
+   "quien": "Sentencia",
+   "recurso": "cud",
+   "literal": {
+    "articulo": "218",
+    "texto": "Son recurribles en casación para la unificación de doctrina, las sentencias dictadas en suplicación por las Salas de lo Social de los Tribunales Superiores de Justicia."
+   }
+  },
+  {
+   "res": "Sentencia dictada en única instancia por la Sala de lo Social del TSJ o de la Audiencia Nacional",
+   "quien": "Sentencia",
+   "recurso": "casacion",
+   "literal": {
+    "articulo": "205",
+    "texto": "contra las sentencias y otras resoluciones dictadas en única instancia por las Salas de lo Social de los Tribunales Superiores de Justicia y por la Sala de lo Social de la Audiencia Nacional"
+   },
+   "nota": "Excepciones de cuantía en el art. 206.1."
+  },
+  {
+   "res": "Sentencia del despido colectivo impugnado por los representantes",
+   "quien": "Sentencia",
+   "recurso": "casacion",
+   "literal": {
+    "articulo": "124",
+    "texto": "será recurrible en casación ordinaria"
+   }
+  },
+  {
+   "res": "Sentencia firme dictada sin que compareciera el demandado",
+   "quien": "Sentencia",
+   "recurso": "rebelde",
+   "literal": {
+    "articulo": "185",
+    "texto": "El plazo para solicitar la audiencia será de veinte días desde la notificación personal de la sentencia"
+   }
+  },
+  {
+   "res": "Sentencia o laudo firmes (documentos recobrados, falsedad, cohecho, absolución penal posterior…)",
+   "quien": "Sentencia",
+   "recurso": "revision-firmes",
+   "literal": {
+    "articulo": "236",
+    "texto": "Contra cualquier sentencia firme dictada por los órganos del orden jurisdiccional social"
+   }
+  }
+ ]
+}
