@@ -360,12 +360,12 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > Quinto desarrollo de la LRJS, en el orden elegido por el usuario: bloques «Condiciones de trabajo y materia electoral» (5 fichas), «Seguridad Social, procedimiento de oficio y actos administrativos» (3), «Conflictos colectivos, convenios y estatutos sindicales» (3) y «Tutela de los derechos fundamentales» (1); 35 plazos. Materia electoral, procedimiento de oficio y estatutos sindicales van en ficha breve (qué es, quién demanda, plazo y recurso), como pidió el usuario. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
 
-- [ ] **Arts. 138.6 y 191.2.e: remisión al art. 41 del Estatuto de los Trabajadores.**
-  - **Estado:** pendiente de revisión individual.
+- [x] **Arts. 138.6 y 191.2.e: remisión al art. 41 del Estatuto de los Trabajadores.**
+  - **Estado:** resuelta con criterio interpretativo (usuario, 23-10-2026): se deja el aviso con las dos remisiones literales, sin elegir apartado.
   - **Observación:** para el recurso en las modificaciones sustanciales de carácter colectivo, el art. 138.6 remite al «apartado 4 del artículo 41» y el art. 191.2.e, al «apartado 2 del artículo 41» del Estatuto (Verificable: texto consolidado de la app).
   - **Criterio provisional:** mantener el texto legal literal, sin corregirlo por analogía. Hoy la ficha dice «de carácter colectivo» sin elegir apartado, y en un aviso reproduce entre comillas las dos remisiones tal como están en la ley.
   - **Opiniones aportadas por el usuario (23-10-2026):** Perplexity sostiene que el apartado 2 es el que define el carácter colectivo y que el 138.6 está desfasado (No verificable: el Estatuto no está en la app); su frase «en las colectivas no procede suplicación» se descarta porque invierte la regla. ChatGPT propone no añadir el apartado hasta verificar el origen y la evolución de ambas remisiones.
-  - **Tu respuesta:** (¿se mantiene el aviso con las dos citas literales, o se quita y queda solo «de carácter colectivo»?)
+  - **Tu respuesta:** dejar el aviso.
 
 - [x] **Arts. 125.a y 139.1.a: plazo de veinte días.**
   - **Estado:** resuelta con criterio de literalidad normativa (usuario, 23-10-2026, con las opiniones de Perplexity y ChatGPT que aporta).
