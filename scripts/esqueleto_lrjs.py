@@ -47,7 +47,10 @@ BLOQUES = [
       ((L2, "TÍTULO II", "CAPÍTULO X"), False)]),
     ("tutela", "Tutela de los derechos fundamentales", G2,
      [((L2, "TÍTULO II", "CAPÍTULO XI"), False)]),
-    # La audiencia al rebelde está en el Libro II, pero es un medio de impugnación: va con los recursos.
+    ("rebelde", "Audiencia al demandado rebelde", G2,
+     [((L2, "TÍTULO III"), False)]),
+    # La audiencia al rebelde (Libro II) figura en su sitio («rebelde») y también aquí, por ser un medio de
+    # impugnación (decisión del usuario, Chat 4).
     ("recursos", "Recursos, audiencia al rebelde y revisión", G3,
      [((L3, "TÍTULO I"), False), ((L3, "TÍTULO II"), False), ((L3, "TÍTULO III"), False),
       ((L3, "TÍTULO IV"), False), ((L3, "TÍTULO V"), False), ((L2, "TÍTULO III"), False),

@@ -553,101 +553,624 @@
    "nombre": "Despido, sanciones y extinción del contrato",
    "bloque": "lrjs",
    "grupo": "Libro II · Proceso ordinario y modalidades",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Despido disciplinario (demanda y juicio; sentencia, opción y recurso), impugnación de sanciones, extinción por causas objetivas, despido colectivo y, en ficha breve, los salarios de tramitación a cargo del Estado.",
    "ambito": {
     "corto": "Arts. 103 a 124",
     "texto": "CAPÍTULO II. De los despidos y sanciones · CAPÍTULO IV. De la extinción del contrato por causas objetivas, por despido colectivo y otras causas de extinción. · CAPÍTULO III. De la reclamación al Estado del pago de salarios de tramitación en juicios por despido",
     "articulos": [
      "103"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "103",
+      "texto": "Dicho plazo será de caducidad a todos los efectos"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
      "id": "despido-103",
-     "fase": "Despido disciplinario",
-     "subtitulo": "CAPÍTULO II · Sección 1.ª · arts. 103 a 113",
-     "descripcion": "",
+     "fase": "Despido: demanda y juicio",
+     "subtitulo": "20 días hábiles de caducidad · requisitos de la demanda · la empresa prueba primero",
+     "descripcion": "El trabajador reclama contra el despido en los 20 días hábiles siguientes a aquel en que se produjo. Es un plazo de caducidad y no cuentan los sábados, domingos ni festivos en la sede del órgano. Antes de demandar hay que intentar la conciliación o mediación previa (art. 63), salvo las excepciones del art. 64 (por ejemplo, cuando hay que agotar la vía administrativa). La demanda, además de los requisitos generales, recoge antigüedad, categoría, salario, lugar de trabajo, contrato y jornada; fecha, forma y hechos del despido, con la carta; si el trabajador es o fue representante en el año anterior, y si está afiliado a un sindicato cuando alegue falta de audiencia a los delegados sindicales. En el juicio, la empresa expone y prueba primero, y tiene que probar los hechos de la carta de despido. Las normas de despido se aplican a la impugnación de las demás extinciones decididas por la empresa, con sus especialidades.",
+     "aviso": "El art. 50 citado es del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]].",
      "articulos": [
       "103",
-      "113"
+      "104",
+      "105",
+      "106",
+      "63"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Demanda por despido",
+       "plazo": "20 días hábiles (caducidad)",
+       "articulo": "103",
+       "literal": "dentro de los veinte días hábiles siguientes a aquél en que se hubiera producido"
+      },
+      {
+       "acto": "La empresa no tramitó la baja en la Seguridad Social: señalamiento de la vista",
+       "plazo": "5 días desde la admisión",
+       "articulo": "103",
+       "literal": "El acto de la vista habrá de señalarse dentro de los cinco días siguientes al de la admisión de la demanda"
+      },
+      {
+       "acto": "En ese caso: sentencia",
+       "plazo": "5 días",
+       "articulo": "103",
+       "literal": "La sentencia se dictará en el plazo de cinco días."
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se demandó a quien no era el empresario",
+       "entonces": "Puede demandar al verdadero empresario o ampliar la demanda si no se ha celebrado el juicio. La caducidad no empieza a correr hasta que conste quién es el empresario.",
+       "articulos": [
+        "103"
+       ],
+       "literal": {
+        "articulo": "103",
+        "texto": "sin que comience el cómputo del plazo de caducidad hasta el momento en que conste quién sea el empresario"
+       }
+      },
+      {
+       "si": "La empresa quiere justificar el despido con motivos distintos de la carta",
+       "entonces": "No se le admiten: solo los de la comunicación escrita.",
+       "articulos": [
+        "105"
+       ],
+       "literal": {
+        "articulo": "105",
+        "texto": "al demandado no se le admitirán en el juicio otros motivos de oposición a la demanda que los contenidos en la comunicación escrita de dicho despido"
+       }
+      },
+      {
+       "si": "El despedido es miembro del comité, delegado de personal o delegado sindical",
+       "entonces": "La empresa debe aportar el expediente contradictorio.",
+       "articulos": [
+        "106"
+       ],
+       "literal": {
+        "articulo": "106",
+        "texto": "habrá de aportarse por la demandada el expediente contradictorio legalmente exigido"
+       }
+      },
+      {
+       "si": "Se pide la extinción del contrato por la causa del art. 50.1.b) ET",
+       "entonces": "Se tramita como urgente y preferente, igual que cuando no se tramitó la baja.",
+       "articulos": [
+        "103"
+       ],
+       "literal": {
+        "articulo": "103",
+        "texto": "La tramitación procesal establecida en el apartado anterior será de aplicación"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En el juicio por despido, ¿quién expone y prueba primero?",
+      "a": "La empresa demandada: expone primero en alegaciones, prueba y conclusiones, y debe probar los hechos imputados en la carta de despido.",
+      "articulos": [
+       "105"
+      ],
+      "literal": {
+       "articulo": "105",
+       "texto": "corresponderá al demandado exponer sus posiciones en primer lugar"
+      }
+     },
+     "conexiones": [
       "103",
-      "113"
+      "104",
+      "105",
+      "106",
+      "32",
+      "63",
+      "64",
+      "80"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "evitacion",
+      "ordinario"
+     ]
+    },
+    {
+     "id": "despido-108",
+     "fase": "Despido: sentencia, opción y recurso",
+     "subtitulo": "Procedente, improcedente o nulo · opción en 5 días · suplicación",
+     "descripcion": "La sentencia califica el despido como procedente, improcedente o nulo. Procedente: se acredita el incumplimiento de la carta; se convalida la extinción, sin indemnización ni salarios de tramitación. Improcedente: no se acredita, o se incumplió la forma del art. 55.1 ET; la empresa elige entre readmitir, con salarios de tramitación, o indemnizar (art. 56 ET); si el despedido es representante legal o sindical, elige él. Nulo: casos del art. 55.5 ET; readmisión inmediata con los salarios dejados de percibir, y la sentencia se ejecuta provisionalmente aunque se recurra. Contra la sentencia cabe suplicación en todo caso.",
+     "aviso": "El art. 55 (forma y nulidad) y el art. 56 (indemnización y salarios de tramitación) son del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]].",
+     "articulos": [
+      "107",
+      "108",
+      "109",
+      "110",
+      "111",
+      "112",
+      "113",
+      "191"
+     ],
+     "plazos": [
+      {
+       "acto": "Optar entre readmisión e indemnización",
+       "plazo": "5 días desde la notificación de la sentencia (sin esperar a la firmeza)",
+       "articulo": "110",
+       "literal": "dentro del plazo de cinco días desde la notificación de la sentencia que declare el despido improcedente"
+      },
+      {
+       "acto": "Improcedente por forma y se optó por readmitir: nuevo despido",
+       "plazo": "7 días desde la notificación",
+       "articulo": "110",
+       "literal": "podrá efectuarse un nuevo despido dentro del plazo de siete días desde la notificación de la sentencia"
+      },
+      {
+       "acto": "Sanción menor autorizada por el juez",
+       "plazo": "10 días desde la firmeza (caducidad)",
+       "articulo": "108",
+       "literal": "en el plazo de caducidad de los diez días siguientes a la firmeza de la sentencia"
+      },
+      {
+       "acto": "Revisar esa sanción a instancia del trabajador",
+       "plazo": "20 días desde su notificación (caducidad)",
+       "articulo": "108",
+       "literal": "en el plazo, igualmente de caducidad, de los veinte días siguientes a su notificación"
+      },
+      {
+       "acto": "Recurso del trabajador que eleva la indemnización: la empresa cambia de opción",
+       "plazo": "5 días desde la notificación",
+       "articulo": "111",
+       "literal": "dentro de los cinco días siguientes al de su notificación, podrá cambiar el sentido de su opción"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Los hechos son ciertos pero no tan graves como para despedir",
+       "entonces": "El juez puede autorizar una sanción adecuada, si la falta menor no había prescrito, previa readmisión.",
+       "articulos": [
+        "108"
+       ],
+       "literal": {
+        "articulo": "108",
+        "texto": "el juez podrá autorizar la imposición de una sanción adecuada a la gravedad de la falta"
+       }
+      },
+      {
+       "si": "La readmisión no es posible",
+       "entonces": "A petición del demandante, la sentencia puede tener hecha la opción por la indemnización y declarar extinguida la relación.",
+       "articulos": [
+        "110"
+       ],
+       "literal": {
+        "articulo": "110",
+        "texto": "si constare no ser realizable la readmisión"
+       }
+      },
+      {
+       "si": "Se recurre y la empresa había optado por readmitir",
+       "entonces": "La readmisión se hace de forma provisional (art. 297).",
+       "articulos": [
+        "111",
+        "297"
+       ],
+       "literal": {
+        "articulo": "111",
+        "texto": "ésta se llevará a efecto de forma provisional en los términos establecidos por el artículo 297"
+       }
+      },
+      {
+       "si": "Se recurre y la empresa había optado por indemnizar",
+       "entonces": "No hay readmisión mientras pende el recurso; el trabajador queda en situación legal de desempleo.",
+       "articulos": [
+        "111"
+       ],
+       "literal": {
+        "articulo": "111",
+        "texto": "no procederá la readmisión mientras penda el recurso"
+       }
+      },
+      {
+       "si": "El tribunal superior declara nulo el despido",
+       "entonces": "La opción se tiene por no hecha.",
+       "articulos": [
+        "111",
+        "112"
+       ],
+       "literal": {
+        "articulo": "111",
+        "texto": "ésta se tendrá por no hecha si el tribunal superior, al resolver el recurso, declarase nulo el despido"
+       }
+      },
+      {
+       "si": "¿Cabe recurso contra la sentencia de despido?",
+       "entonces": "Suplicación, en todo caso, salvo en el despido colectivo impugnado por los representantes.",
+       "articulos": [
+        "191"
+       ],
+       "literal": {
+        "articulo": "191",
+        "texto": "En procesos por despido o extinción del contrato, salvo en los procesos por despido colectivo impugnados por los representantes de los trabajadores."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Despido improcedente de un delegado de personal: ¿quién elige entre readmisión e indemnización?",
+      "a": "El propio trabajador, por ser representante legal de los trabajadores.",
+      "articulos": [
+       "110"
+      ],
+      "literal": {
+       "articulo": "110",
+       "texto": "la opción prevista en el número anterior corresponderá al trabajador"
+      }
+     },
+     "conexiones": [
+      "107",
+      "108",
+      "109",
+      "110",
+      "111",
+      "112",
+      "113",
+      "191",
+      "278",
+      "297"
+     ],
+     "continua_en": [
+      "recursos",
+      "ejecucion",
+      "provisional"
+     ]
     },
     {
      "id": "despido-114",
-     "fase": "Proceso de impugnación de sanciones",
-     "subtitulo": "CAPÍTULO II · Sección 2.ª · arts. 114 a 115",
-     "descripcion": "",
+     "fase": "Impugnación de sanciones",
+     "subtitulo": "Mismo plazo que el despido · la empresa prueba · recurso solo en faltas muy graves",
+     "descripcion": "El trabajador impugna la sanción por demanda, en el mismo plazo que el despido (art. 103). La empresa prueba los hechos y su entidad, sin poder alegar motivos distintos de los que dio al sancionar; alegaciones, prueba y conclusiones siguen el orden del despido disciplinario. La sentencia confirma la sanción, la revoca total o parcialmente (con abono de los salarios descontados) o la declara nula: defectos formales graves, discriminación, vulneración de derechos fundamentales, o sanción prohibida o no tipificada.",
      "articulos": [
       "114",
       "115"
      ],
-     "rango": [
-      "114",
-      "115"
+     "plazos": [
+      {
+       "acto": "Demanda contra la sanción",
+       "plazo": "El del art. 103: 20 días hábiles",
+       "articulo": "114",
+       "literal": "habrá de ser presentada dentro del plazo señalado en el artículo 103"
+      },
+      {
+       "acto": "Sanción menor autorizada por el juez",
+       "plazo": "10 días desde la notificación de la sentencia firme (caducidad)",
+       "articulo": "115",
+       "literal": "en el plazo de caducidad de los diez días siguientes a notificación de sentencia firme"
+      }
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "El sancionado es representante legal o sindical y la falta es grave o muy grave",
+       "entonces": "La empresa debe aportar el expediente contradictorio; sin audiencia de la representación, la sanción es nula.",
+       "articulos": [
+        "114",
+        "115"
+       ],
+       "literal": {
+        "articulo": "114",
+        "texto": "la parte demandada habrá de aportar el expediente contradictorio legalmente establecido"
+       }
+      },
+      {
+       "si": "La falta existe pero está mal calificada",
+       "entonces": "Se revoca en parte y el juez puede autorizar una sanción adecuada.",
+       "articulos": [
+        "115"
+       ],
+       "literal": {
+        "articulo": "115",
+        "texto": "cuando la falta cometida no haya sido adecuadamente calificada"
+       }
+      },
+      {
+       "si": "¿Cabe recurso?",
+       "entonces": "No, salvo en sanciones por faltas muy graves apreciadas judicialmente.",
+       "articulos": [
+        "115",
+        "191"
+       ],
+       "literal": {
+        "articulo": "115",
+        "texto": "Contra las sentencias dictadas en estos procesos no cabrá recurso alguno, salvo en los casos de sanciones por faltas muy graves, apreciadas judicialmente."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En la impugnación de una sanción, ¿quién tiene que probar los hechos?",
+      "a": "La empresa: la realidad de los hechos imputados y su entidad.",
+      "articulos": [
+       "114"
+      ],
+      "literal": {
+       "articulo": "114",
+       "texto": "Corresponderá al empresario probar la realidad de los hechos imputados al trabajador, y su entidad"
+      }
+     },
+     "conexiones": [
+      "103",
+      "114",
+      "115",
+      "191"
+     ],
+     "continua_en": [
+      "recursos"
+     ]
     },
     {
      "id": "despido-120",
      "fase": "Extinción por causas objetivas",
-     "subtitulo": "CAPÍTULO IV · Sección 1.ª · arts. 120 a 123",
-     "descripcion": "",
+     "subtitulo": "20 días desde la extinción · se puede demandar desde el preaviso",
+     "descripcion": "Se tramita por las normas del despido, con especialidades. El plazo para demandar es de 20 días desde el día siguiente a la extinción, y se puede demandar ya desde que se recibe el preaviso. Cobrar la indemnización ofrecida o usar el permiso para buscar empleo no supone conformidad. Procedente: la empresa cumple la forma y acredita la causa de la comunicación. Improcedente: no la acredita, o incumple los requisitos del art. 53.1 ET. Nula: casos del art. 53.4 ET, o fraude para eludir el despido colectivo. Si es improcedente o nula, efectos como en el despido disciplinario.",
+     "aviso": "Los arts. 49, 51 y 53 citados son del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]].",
      "articulos": [
       "120",
+      "121",
+      "122",
       "123"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Demanda contra la extinción objetiva",
+       "plazo": "20 días desde el día siguiente a la extinción",
+       "articulo": "121",
+       "literal": "El plazo para ejercitar la acción de impugnación de la decisión extintiva será de veinte días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El trabajador cobró la indemnización ofrecida",
+       "entonces": "Puede demandar igual: no supone conformidad.",
+       "articulos": [
+        "121"
+       ],
+       "literal": {
+        "articulo": "121",
+        "texto": "no enervan el ejercicio de la acción ni suponen conformidad con la decisión empresarial"
+       }
+      },
+      {
+       "si": "Faltó el preaviso o hubo un error excusable en la indemnización",
+       "entonces": "No hace improcedente el despido; la empresa paga los salarios del preaviso o la diferencia.",
+       "articulos": [
+        "122"
+       ],
+       "literal": {
+        "articulo": "122",
+        "texto": "la no concesión del preaviso o el error excusable en el cálculo de la indemnización no determinará la improcedencia del despido"
+       }
+      },
+      {
+       "si": "Se declara improcedente y hay readmisión",
+       "entonces": "El trabajador devuelve la indemnización cuando la sentencia sea firme.",
+       "articulos": [
+        "123"
+       ],
+       "literal": {
+        "articulo": "123",
+        "texto": "el trabajador habrá de reintegrar la indemnización recibida una vez sea firme la sentencia"
+       }
+      },
+      {
+       "si": "Extinción del art. 49.1.n) ET",
+       "entonces": "Procedimiento urgente y preferente.",
+       "articulos": [
+        "120"
+       ],
+       "literal": {
+        "articulo": "120",
+        "texto": "el procedimiento será urgente y se le dará tramitación preferente"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Despido objetivo: ¿puede el trabajador demandar antes de que se extinga el contrato?",
+      "a": "Sí: puede anticipar la acción desde que recibe la comunicación de preaviso. El plazo de 20 días empieza al día siguiente de la extinción.",
+      "articulos": [
+       "121"
+      ],
+      "literal": {
+       "articulo": "121",
+       "texto": "El trabajador podrá anticipar el ejercicio de su acción a partir del momento en que reciba la comunicación empresarial de preaviso."
+      }
+     },
+     "conexiones": [
+      "103",
       "120",
+      "121",
+      "122",
       "123"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": [
+      "recursos",
+      "ejecucion"
+     ]
     },
     {
      "id": "despido-124",
-     "fase": "Despidos colectivos por causas económicas, organizativas, técnicas o de producción o derivadas de fuerza mayor.",
-     "subtitulo": "CAPÍTULO IV · Sección 2.ª · art. 124",
-     "descripcion": "",
+     "fase": "Despido colectivo",
+     "subtitulo": "Demandan los representantes · 20 días · casación ordinaria · y después, la impugnación individual",
+     "descripcion": "Lo impugnan los representantes legales de los trabajadores, o los sindicales con implantación suficiente. Motivos: que no concurre la causa; que no hubo periodo de consultas, documentación (art. 51.2 ET) o el procedimiento del art. 51.7 ET; fraude, dolo, coacción o abuso de derecho, o vulneración de derechos fundamentales. No hace falta conciliación previa. Es urgente y preferente; juicio en única convocatoria en 15 días y sentencia en 5, recurrible en casación ordinaria. La sentencia declara la decisión ajustada a derecho, no ajustada (no se acredita la causa) o nula. Cada trabajador afectado puede impugnar su despido por el cauce de los arts. 120 a 123.",
+     "aviso": "El art. 51 citado es del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]].",
      "articulos": [
       "124"
      ],
-     "rango": [
-      "124",
-      "124"
+     "plazos": [
+      {
+       "acto": "Demanda de los representantes",
+       "plazo": "20 días (caducidad) desde el acuerdo o la notificación de la decisión",
+       "articulo": "124",
+       "literal": "La demanda deberá presentarse en el plazo de caducidad de veinte días desde la fecha del acuerdo alcanzado en el período de consultas"
+      },
+      {
+       "acto": "Nadie impugnó: demanda del empresario para que se declare ajustada a derecho",
+       "plazo": "20 días desde que acaba el plazo anterior",
+       "articulo": "124",
+       "literal": "el empresario, en el plazo de veinte días desde la finalización del plazo anterior, podrá interponer demanda"
+      },
+      {
+       "acto": "Empresa: aportar documentación y actas de las consultas",
+       "plazo": "5 días",
+       "articulo": "124",
+       "literal": "le requerirá para que en el plazo de cinco días presente"
+      },
+      {
+       "acto": "Juicio",
+       "plazo": "En los 15 días siguientes a la admisión",
+       "articulo": "124",
+       "literal": "dentro de los quince días siguientes a la admisión a trámite de la demanda"
+      },
+      {
+       "acto": "Sentencia",
+       "plazo": "5 días tras el juicio",
+       "articulo": "124",
+       "literal": "La sentencia se dictará dentro de los cinco días siguientes a la celebración del juicio"
+      }
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Los representantes no impugnaron el despido colectivo",
+       "entonces": "El trabajador impugna su despido individual; su plazo empieza cuando acaban los 20 días de los representantes.",
+       "articulos": [
+        "124"
+       ],
+       "literal": {
+        "articulo": "124",
+        "texto": "El plazo para la impugnación individual dará comienzo una vez transcurrido el plazo de caducidad de veinte días para el ejercicio de la acción por los representantes de los trabajadores."
+       }
+      },
+      {
+       "si": "Los representantes sí lo impugnaron",
+       "entonces": "El plazo individual empieza con la firmeza de la sentencia colectiva, que hace cosa juzgada sobre los procesos individuales.",
+       "articulos": [
+        "124"
+       ],
+       "literal": {
+        "articulo": "124",
+        "texto": "El plazo de caducidad para la impugnación individual comenzará a computar desde la firmeza de la sentencia dictada en el proceso colectivo"
+       }
+      },
+      {
+       "si": "No se respetaron las prioridades de permanencia",
+       "entonces": "Se discute en el proceso individual; la extinción es nula.",
+       "articulos": [
+        "124"
+       ],
+       "literal": {
+        "articulo": "124",
+        "texto": "Será nula la extinción del contrato acordada por el empresario sin respetar las prioridades de permanencia"
+       }
+      },
+      {
+       "si": "¿Hay que intentar antes la conciliación?",
+       "entonces": "No.",
+       "articulos": [
+        "124",
+        "63"
+       ],
+       "literal": {
+        "articulo": "124",
+        "texto": "Para presentar la demanda no será necesario agotar ninguna de las formas de evitación del proceso"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué recurso cabe contra la sentencia del despido colectivo impugnado por los representantes?",
+      "a": "Casación ordinaria; no suplicación.",
+      "articulos": [
+       "124",
+       "191"
+      ],
+      "literal": {
+       "articulo": "124",
+       "texto": "será recurrible en casación ordinaria"
+      }
+     },
+     "conexiones": [
+      "124",
+      "120",
+      "148",
+      "160",
+      "191"
+     ],
+     "continua_en": [
+      "recursos"
+     ]
     },
     {
      "id": "despido-116",
-     "fase": "De la reclamación al Estado del pago de salarios de tramitación en juicios por despido",
-     "subtitulo": "CAPÍTULO III · arts. 116 a 119",
-     "descripcion": "",
+     "fase": "Salarios de tramitación a cargo del Estado (ficha breve)",
+     "subtitulo": "Qué es · quién demanda · plazo · recurso",
+     "descripcion": "Qué es: si entre la demanda por despido y la primera sentencia que lo declara improcedente pasan más de 90 días hábiles, la empresa, ya firme la sentencia, puede reclamar al Estado los salarios de tramitación que excedan; si la empresa es insolvente provisional, los reclama el trabajador. Quién demanda: la empresa o el trabajador, después de reclamar en vía administrativa, ante el juzgado que conoció del despido. Plazo: el de prescripción del art. 59.2 ET. Juicio en los 5 días siguientes, con el Abogado del Estado, solo sobre la procedencia y la cuantía. Recurso: suplicación según las reglas generales del art. 191.",
+     "aviso": "El art. 116 dice «noventa días hábiles» y el art. 119, al remitirse a él, «sesenta días hábiles». Duda anotada en Pendientes. El art. 59.2 es del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]].",
      "articulos": [
       "116",
+      "117",
+      "118",
       "119"
      ],
-     "rango": [
+     "plazos": [
+      {
+       "acto": "Reclamar al Estado",
+       "plazo": "Prescripción del art. 59.2 ET",
+       "articulo": "117",
+       "literal": "El plazo de prescripción de esta acción es el previsto en el apartado 2 del artículo 59"
+      },
+      {
+       "acto": "Juicio",
+       "plazo": "En los 5 días siguientes a la admisión",
+       "articulo": "118",
+       "literal": "señalará día para el juicio en los cinco siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "¿Hay que reclamar antes a la Administración?",
+       "entonces": "Sí, en vía administrativa; contra la denegación se demanda.",
+       "articulos": [
+        "117"
+       ],
+       "literal": {
+        "articulo": "117",
+        "texto": "será requisito previo haber reclamado en vía administrativa"
+       }
+      },
+      {
+       "si": "Tiempo que no cuenta para el exceso",
+       "entonces": "La subsanación de la demanda, la suspensión del juicio a petición de parte y la suspensión por querella de falsedad.",
+       "articulos": [
+        "119"
+       ],
+       "literal": {
+        "articulo": "119",
+        "texto": "serán excluidos del mismo los períodos siguientes"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si la empresa es insolvente provisional, ¿quién reclama al Estado los salarios de tramitación?",
+      "a": "El trabajador, directamente, los que la empresa no le haya pagado.",
+      "articulos": [
+       "116"
+      ],
+      "literal": {
+       "articulo": "116",
+       "texto": "el trabajador podrá reclamar directamente al Estado los salarios"
+      }
+     },
+     "conexiones": [
       "116",
-      "119"
+      "117",
+      "118",
+      "119",
+      "191"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "continua_en": []
     }
    ]
   },
@@ -922,6 +1445,41 @@
      "rango": [
       "177",
       "184"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "rebelde",
+   "nombre": "Audiencia al demandado rebelde",
+   "bloque": "lrjs",
+   "grupo": "Libro II · Proceso ordinario y modalidades",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Art. 185",
+    "texto": "TÍTULO III. De la audiencia al demandado rebelde",
+    "articulos": [
+     "185"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "rebelde-185",
+     "fase": "De la audiencia al demandado rebelde",
+     "subtitulo": "TÍTULO III · art. 185",
+     "descripcion": "",
+     "articulos": [
+      "185"
+     ],
+     "rango": [
+      "185",
+      "185"
      ],
      "plazos": [],
      "ramas": [],

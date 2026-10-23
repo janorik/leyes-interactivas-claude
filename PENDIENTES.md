@@ -356,12 +356,24 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 ## LRJS — Ley reguladora de la jurisdicción social
 
+### Despido, sanciones y extinción (Chat 4, contenido elaborado, pendiente de revisión)
+
+> Primer bloque desarrollado de la LRJS (arts. 103-124), elegido por el usuario: 6 fichas y 18 plazos. En la app: Mapa › Despido, sanciones y extinción del contrato. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
+
+- [ ] **Arts. 116 y 119: ¿90 o 60 días hábiles? Remisión desfasada, pendiente de revisión individual.** El art. 116 fija en «noventa días hábiles» el tiempo a partir del cual la empresa reclama al Estado; el art. 119, al remitirse a ese mismo plazo, dice «sesenta días hábiles a que se refiere el artículo 116» (Verificable: texto consolidado de la app).
+  - **Propuesta:** aplicar los 90 días del art. 116, que es el que fija el plazo; el art. 119 solo regula qué periodos se excluyen del cómputo. La ficha avisa de la discrepancia sin elegir. No verificable hasta que lo confirmes.
+  - **Tu respuesta:**
+- [ ] **Art. 121: «veinte días» sin decir «hábiles».** El plazo para impugnar la extinción objetiva no dice si son días hábiles; el del despido (art. 103) sí.
+  - **Propuesta:** son hábiles, porque el art. 120 remite a las normas del despido. La ficha pone «20 días», sin añadir «hábiles». No verificable hasta que lo confirmes.
+  - **Tu respuesta:**
+- [ ] **Enlace al Estatuto de los Trabajadores:** las fichas citan los arts. 50, 53, 55, 56 y 59 del texto refundido del Estatuto de los Trabajadores con enlace a `BOE-A-2015-11430`. Esa referencia la he tomado de tu plataforma, que la usa en 7 sitios; no sale de la LRJS. Comprueba que el enlace abre el Estatuto en el BOE.
+  - **Tu respuesta:**
+- [ ] **Revisa las 6 fichas.**
+
 ### Mapa procesal (esqueleto, Chat 4)
 
-- [ ] **Esqueleto de 13 bloques y 65 fases:** cada fase es un título, capítulo o sección del índice del BOE, con su nombre literal y sus artículos. Revisa si la agrupación en bloques te sirve antes de desarrollar el primero.
-- [ ] **Audiencia al demandado rebelde (art. 185):** está en el Libro II, pero la he puesto en el bloque «Recursos, audiencia al rebelde y revisión» porque es un medio de impugnación de una sentencia firme.
-  - **Propuesta:** dejarla ahí (No verificable hasta que lo confirmes).
-  - **Tu respuesta:**
+- [ ] **Esqueleto de 14 bloques y 66 fases (antes de desarrollar el despido):** cada fase es un título, capítulo o sección del índice del BOE, con su nombre literal y sus artículos. Revisa si la agrupación en bloques te sirve antes de desarrollar el primero.
+- [x] **Audiencia al demandado rebelde (art. 185). Resuelta (usuario, 23-10-2026):** figura en el Mapa en su sitio del Libro II (bloque «Audiencia al demandado rebelde») y también en el bloque de recursos, por ser un medio de impugnación.
 
 ### Canon (Chat 4)
 
