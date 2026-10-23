@@ -454,7 +454,16 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
   - **Responsabilidad patrimonial:** Ley 40/2015. **Tu respuesta:**
   - **Tasas y depósito para recurrir:** no están en la LJCA. Dime la norma y se enlaza. **Tu respuesta:**
   - **Plazo frente al silencio:** el art. 46.1 dice seis meses (Verificable); Claude recuerda que la jurisprudencia lo ha matizado (No verificable, de memoria). Se pone como aviso solo con la fuente que aportes. **Tu respuesta:**
-- [ ] **Canon de la LJCA:** para el mapa procesal hace falta saber qué quieres desarrollar. ¿Tienes canon de la LJCA en tu plataforma? **Tu respuesta:** no lo tiene (23-10-2026). Propuesta de Claude en `fuentes/canon_contenido.md › LJCA` (39 apartados), pendiente de tu visto bueno.
+- [x] **Canon de la LJCA:** para el mapa procesal hace falta saber qué quieres desarrollar. ¿Tienes canon de la LJCA en tu plataforma? **Tu respuesta:** no lo tiene (23-10-2026). Propuesta de Claude en `fuentes/canon_contenido.md › LJCA` (39 apartados), **aprobada** («Sí a las tres», 23-10-2026).
+
+### Guía práctica y procedimiento ordinario (Chat 5, contenido elaborado, pendiente de revisión)
+
+> Primer desarrollo del mapa de la LJCA, con el enfoque de ruta procesal del profesional. Bloque «Antes de interponer» (fichas transversales de plazos para recurrir y del escrito de interposición) y bloque «Procedimiento ordinario» (arts. 43-77, 9 fichas). 41 plazos. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
+
+- [ ] **Art. 58.1: la incompetencia no alegada como cuestión previa.** El artículo permite alegar en la contestación los motivos de inadmisibilidad «salvo la incompetencia del órgano jurisdiccional» (Verificable). En la ficha digo que la ley no permite alegarla después en la contestación y que el órgano la aprecia de oficio (art. 7.2). **Propuesta:** dejarlo así; es lectura directa del texto (No verificable hasta que lo confirmes). **Tu respuesta:**
+- [ ] **Art. 128.1: sin «día de gracia» para interponer.** El escrito presentado el día en que se notifica la caducidad vale, «salvo cuando se trate de plazos para preparar o interponer recursos» (Verificable). La ficha de plazos lo presenta como aviso práctico. **Tu respuesta:**
+- [ ] **Persona jurídica (art. 45.2.d).** En la ficha digo «normalmente, el acuerdo de su órgano» como ejemplo del documento que acredita los requisitos para litigar; la ley habla de «normas o estatutos que les sean de aplicación» (Verificable). El ejemplo es mío (No verificable). **Tu respuesta:**
+- [ ] **Revisa las 11 fichas** (2 de la guía y 9 del ordinario).
 
 ## Páginas legales (todas las leyes)
 

@@ -1,0 +1,1726 @@
+{
+ "procedimientos": [
+  {
+   "id": "guia",
+   "nombre": "Antes de interponer: plazos y escrito",
+   "bloque": "ljca",
+   "grupo": "Guía práctica",
+   "resumen": "Las dos comprobaciones previas de todo recurso contencioso-administrativo: si se está en plazo (que depende de lo que se impugna) y si el escrito de interposición va completo y ante el órgano correcto.",
+   "ambito": {
+    "corto": "Arts. 45, 46, 51, 69, 115 y 128",
+    "texto": "Fichas transversales (no siguen el índice de la ley)",
+    "articulos": [
+     "46"
+    ],
+    "literal": [
+     {
+      "articulo": "128",
+      "texto": "Durante el mes de agosto no correrá el plazo para interponer el recurso contencioso-administrativo"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "guia-plazos",
+     "fase": "Plazos para recurrir según lo que se impugna",
+     "subtitulo": "Arts. 29, 30, 44, 46, 115 y 128",
+     "descripcion": "El plazo cambia según lo que se impugne. Acto expreso que pone fin a la vía administrativa o disposición publicada: dos meses. Acto presunto (silencio): seis meses desde que se produce según su normativa. Inactividad (art. 29): primero se reclama a la Administración y, pasado su plazo, dos meses. Vía de hecho (art. 30): diez días tras el requerimiento desatendido o veinte días sin requerimiento. Si se interpuso recurso potestativo de reposición, el plazo cuenta desde su resolución o su desestimación presunta. Lesividad y litigios entre Administraciones: dos meses. Derechos fundamentales: diez días. Agosto no cuenta, salvo en derechos fundamentales.",
+     "aviso": "Cuándo pone fin a la vía administrativa un acto, los recursos administrativos y el silencio se regulan en la [[Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas|https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565]]. El plazo frente al silencio está anotado en PENDIENTES para revisar.",
+     "articulos": [
+      "46",
+      "29",
+      "30",
+      "44",
+      "115",
+      "128"
+     ],
+     "plazos": [
+      {
+       "acto": "Acto expreso o disposición general",
+       "plazo": "2 meses",
+       "articulo": "46",
+       "literal": "El plazo para interponer el recurso contencioso-administrativo será de dos meses contados desde el día siguiente al de la publicación de la disposición impugnada o al de la notificación o publicación del acto que ponga fin a la vía administrativa"
+      },
+      {
+       "acto": "Acto presunto",
+       "plazo": "6 meses",
+       "articulo": "46",
+       "literal": "Si no lo fuera, el plazo será de seis meses"
+      },
+      {
+       "acto": "Tras recurso potestativo de reposición",
+       "plazo": "Desde su resolución o desestimación presunta",
+       "articulo": "46",
+       "literal": "se contará desde el día siguiente a aquel en que se notifique la resolución expresa del recurso potestativo de reposición o en que éste deba entenderse presuntamente desestimado"
+      },
+      {
+       "acto": "Inactividad: la Administración tiene para cumplir tras la reclamación",
+       "plazo": "3 meses",
+       "articulo": "29",
+       "literal": "Si en el plazo de tres meses desde la fecha de la reclamación"
+      },
+      {
+       "acto": "Inactividad: recurso",
+       "plazo": "2 meses desde que vence el plazo del art. 29",
+       "articulo": "46",
+       "literal": "los dos meses se contarán a partir del día siguiente al vencimiento de los plazos señalados en dicho artículo"
+      },
+      {
+       "acto": "Actos firmes no ejecutados: la Administración tiene para ejecutar tras la petición",
+       "plazo": "1 mes (después, procedimiento abreviado)",
+       "articulo": "29",
+       "literal": "si ésta no se produce en el plazo de un mes desde tal petición"
+      },
+      {
+       "acto": "Vía de hecho: la Administración tiene para atender el requerimiento",
+       "plazo": "10 días",
+       "articulo": "30",
+       "literal": "no fuere atendida dentro de los diez días siguientes a la presentación del requerimiento"
+      },
+      {
+       "acto": "Vía de hecho con requerimiento: recurso",
+       "plazo": "10 días",
+       "articulo": "46",
+       "literal": "el plazo para interponer el recurso será de diez días a contar desde el día siguiente a la terminación del plazo establecido en el artículo 30"
+      },
+      {
+       "acto": "Vía de hecho sin requerimiento: recurso",
+       "plazo": "20 días",
+       "articulo": "46",
+       "literal": "Si no hubiere requerimiento, el plazo será de veinte días desde el día en que se inició la actuación administrativa en vía de hecho"
+      },
+      {
+       "acto": "Recurso de lesividad",
+       "plazo": "2 meses desde la declaración de lesividad",
+       "articulo": "46",
+       "literal": "El plazo para interponer recurso de lesividad será de dos meses a contar desde el día siguiente a la fecha de la declaración de lesividad"
+      },
+      {
+       "acto": "Litigios entre Administraciones",
+       "plazo": "2 meses",
+       "articulo": "46",
+       "literal": "el plazo para interponer recurso contencioso-administrativo será de dos meses, salvo que por Ley se establezca otra cosa"
+      },
+      {
+       "acto": "Protección de derechos fundamentales",
+       "plazo": "10 días",
+       "articulo": "115",
+       "literal": "El plazo para interponer este recurso será de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "¿Corre el plazo en agosto?",
+       "entonces": "No, ni para interponer ni para ningún otro plazo de la ley, salvo en el procedimiento de derechos fundamentales, donde agosto es hábil.",
+       "articulos": [
+        "128"
+       ],
+       "literal": {
+        "articulo": "128",
+        "texto": "Durante el mes de agosto no correrá el plazo para interponer el recurso contencioso-administrativo ni ningún otro plazo de los previstos en esta Ley salvo para el procedimiento para la protección de los derechos fundamentales"
+       }
+      },
+      {
+       "si": "Se deja pasar el último día",
+       "entonces": "Para interponer no hay «día de gracia»: el escrito presentado el día en que se notifica la caducidad solo vale para otros trámites, no para preparar o interponer recursos.",
+       "articulos": [
+        "128"
+       ],
+       "literal": {
+        "articulo": "128",
+        "texto": "salvo cuando se trate de plazos para preparar o interponer recursos"
+       }
+      },
+      {
+       "si": "El recurso se presenta fuera de plazo",
+       "entonces": "Puede inadmitirse de entrada si consta de modo inequívoco, o declararse inadmisible en sentencia.",
+       "articulos": [
+        "51",
+        "69"
+       ],
+       "literal": {
+        "articulo": "69",
+        "texto": "Que se hubiera presentado el escrito inicial del recurso fuera del plazo establecido"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Se impugna un acto presunto. ¿Qué plazo hay para recurrir?",
+      "a": "Seis meses, contados desde el día siguiente a aquel en que se produce el acto presunto según su normativa específica.",
+      "articulos": [
+       "46"
+      ],
+      "literal": {
+       "articulo": "46",
+       "texto": "el plazo será de seis meses y se contará, para el solicitante y otros posibles interesados, a partir del día siguiente a aquél en que, de acuerdo con su normativa específica, se produzca el acto presunto"
+      }
+     },
+     "conexiones": [
+      "25",
+      "29",
+      "30",
+      "44",
+      "46",
+      "115",
+      "128"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "guia-escrito",
+     "fase": "Escrito de interposición: lista de comprobación",
+     "subtitulo": "Arts. 7, 45, 51 y 69",
+     "descripcion": "El recurso empieza, por regla general, con un escrito breve que cita lo que se impugna y pide que se tenga por interpuesto. Antes de presentarlo, comprobar: 1) órgano competente (arts. 8 a 14); 2) plazo (ficha anterior); 3) documentos que se acompañan: representación; legitimación si se recibió de otro (herencia u otro título); copia del acto o disposición, o datos para identificarlo (en inactividad o vía de hecho, el órgano al que se atribuye); si recurre una persona jurídica, el documento que acredita que cumple sus requisitos para litigar; si recurre un sindicato por sus afiliados funcionarios, la afiliación y la autorización. Sin terceros interesados, puede empezarse directamente por demanda; el recurso de lesividad empieza siempre por demanda.",
+     "articulos": [
+      "45",
+      "7",
+      "51",
+      "69"
+     ],
+     "plazos": [
+      {
+       "acto": "Subsanar defectos del escrito o de la comparecencia",
+       "plazo": "10 días",
+       "articulo": "45",
+       "literal": "señalando un plazo de diez días para que el recurrente pueda llevarla a efecto"
+      },
+      {
+       "acto": "Alegar antes de que se inadmita el recurso",
+       "plazo": "10 días",
+       "articulo": "51",
+       "literal": "en el plazo común de diez días, aleguen lo que estimen procedente"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Falta un documento o está incompleto",
+       "entonces": "No se inadmite de entrada: se requiere la subsanación en diez días; si no se subsana, el juez o tribunal decide sobre el archivo.",
+       "articulos": [
+        "45"
+       ],
+       "literal": {
+        "articulo": "45",
+        "texto": "si no lo hiciere, el Juez o Tribunal se pronunciará sobre el archivo de las actuaciones"
+       }
+      },
+      {
+       "si": "Recurre una persona jurídica",
+       "entonces": "Hay que acreditar que se cumplen sus requisitos para entablar acciones (normalmente, el acuerdo de su órgano), salvo que conste en el poder.",
+       "articulos": [
+        "45",
+        "69"
+       ],
+       "literal": {
+        "articulo": "45",
+        "texto": "El documento o documentos que acrediten el cumplimiento de los requisitos exigidos para entablar acciones las personas jurídicas"
+       }
+      },
+      {
+       "si": "No hay terceros interesados",
+       "entonces": "Puede empezarse directamente por demanda razonada, en lugar del escrito breve.",
+       "articulos": [
+        "45"
+       ],
+       "literal": {
+        "articulo": "45",
+        "texto": "podrá iniciarse también mediante demanda"
+       }
+      },
+      {
+       "si": "Se presenta ante un órgano incompetente",
+       "entonces": "El órgano lo aprecia, oye a las partes y, por auto, remite las actuaciones al competente, que emplaza a las partes por diez días.",
+       "articulos": [
+        "7"
+       ],
+       "literal": {
+        "articulo": "7",
+        "texto": "remitiéndose las actuaciones al órgano de la jurisdicción que se estime competente"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué se acompaña al escrito de interposición si se impugna una vía de hecho?",
+      "a": "La mención del órgano o dependencia al que se atribuye y, en su caso, el expediente o cualquier dato que identifique el objeto, además de la representación y demás documentos que procedan.",
+      "articulos": [
+       "45"
+      ],
+      "literal": {
+       "articulo": "45",
+       "texto": "se mencionará el órgano o dependencia al que se atribuya una u otra"
+      }
+     },
+     "conexiones": [
+      "7",
+      "8",
+      "14",
+      "45",
+      "51",
+      "69"
+     ],
+     "continua_en": [
+      "ordinario-45"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "generales",
+   "nombre": "Jurisdicción, competencia y partes",
+   "bloque": "ljca",
+   "grupo": "Parte general",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Arts. 1 a 24",
+    "texto": "TÍTULO I. Del orden jurisdiccional contencioso-administrativo · TÍTULO II. Las partes",
+    "articulos": [
+     "1"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "generales-1",
+     "fase": "Ámbito",
+     "subtitulo": "TÍTULO I · CAPÍTULO I · arts. 1 a 5",
+     "descripcion": "",
+     "articulos": [
+      "1",
+      "5"
+     ],
+     "rango": [
+      "1",
+      "5"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-6",
+     "fase": "Órganos y competencias",
+     "subtitulo": "TÍTULO I · CAPÍTULO II · arts. 6 a 13",
+     "descripcion": "",
+     "articulos": [
+      "6",
+      "13"
+     ],
+     "rango": [
+      "6",
+      "13"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-14",
+     "fase": "Competencia territorial de los Juzgados y Tribunales",
+     "subtitulo": "TÍTULO I · CAPÍTULO III · art. 14",
+     "descripcion": "",
+     "articulos": [
+      "14"
+     ],
+     "rango": [
+      "14",
+      "14"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-15",
+     "fase": "Constitución y actuación de las Salas de lo Contencioso-administrativo",
+     "subtitulo": "TÍTULO I · CAPÍTULO IV · arts. 15 a 16",
+     "descripcion": "",
+     "articulos": [
+      "15",
+      "16"
+     ],
+     "rango": [
+      "15",
+      "16"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-17",
+     "fase": "Distribución de asuntos",
+     "subtitulo": "TÍTULO I · CAPÍTULO V · art. 17",
+     "descripcion": "",
+     "articulos": [
+      "17"
+     ],
+     "rango": [
+      "17",
+      "17"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-18",
+     "fase": "Capacidad procesal",
+     "subtitulo": "TÍTULO II · CAPÍTULO I · art. 18",
+     "descripcion": "",
+     "articulos": [
+      "18"
+     ],
+     "rango": [
+      "18",
+      "18"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-19",
+     "fase": "Legitimación",
+     "subtitulo": "TÍTULO II · CAPÍTULO II · arts. 19 a 22",
+     "descripcion": "",
+     "articulos": [
+      "19",
+      "22"
+     ],
+     "rango": [
+      "19",
+      "22"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "generales-23",
+     "fase": "Representación y defensa de las partes",
+     "subtitulo": "TÍTULO II · CAPÍTULO III · arts. 23 a 24",
+     "descripcion": "",
+     "articulos": [
+      "23",
+      "24"
+     ],
+     "rango": [
+      "23",
+      "24"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "objeto",
+   "nombre": "Objeto del recurso: qué se impugna y qué se pide",
+   "bloque": "ljca",
+   "grupo": "Parte general",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Arts. 25 a 42",
+    "texto": "TÍTULO III. Objeto del recurso contencioso-administrativo",
+    "articulos": [
+     "25"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "objeto-25",
+     "fase": "Actividad administrativa impugnable",
+     "subtitulo": "TÍTULO III · CAPÍTULO I · arts. 25 a 30",
+     "descripcion": "",
+     "articulos": [
+      "25",
+      "30"
+     ],
+     "rango": [
+      "25",
+      "30"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "objeto-31",
+     "fase": "Pretensiones de las partes",
+     "subtitulo": "TÍTULO III · CAPÍTULO II · arts. 31 a 33",
+     "descripcion": "",
+     "articulos": [
+      "31",
+      "33"
+     ],
+     "rango": [
+      "31",
+      "33"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "objeto-34",
+     "fase": "Acumulación",
+     "subtitulo": "TÍTULO III · CAPÍTULO III · arts. 34 a 39",
+     "descripcion": "",
+     "articulos": [
+      "34",
+      "39"
+     ],
+     "rango": [
+      "34",
+      "39"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "objeto-40",
+     "fase": "Cuantía del recurso",
+     "subtitulo": "TÍTULO III · CAPÍTULO IV · arts. 40 a 42",
+     "descripcion": "",
+     "articulos": [
+      "40",
+      "42"
+     ],
+     "rango": [
+      "40",
+      "42"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "ordinario",
+   "nombre": "Procedimiento ordinario (primera o única instancia)",
+   "bloque": "ljca",
+   "grupo": "Procedimientos",
+   "resumen": "La ruta del recurso contencioso-administrativo ante el órgano de primera o única instancia: trámites previos, interposición y expediente, admisión, demanda y contestación, alegaciones previas, prueba, vista o conclusiones, sentencia y otras formas de terminar.",
+   "ambito": {
+    "corto": "Arts. 43 a 77",
+    "texto": "CAPÍTULO I. Procedimiento en primera o única instancia",
+    "articulos": [
+     "43"
+    ],
+    "literal": [
+     {
+      "articulo": "45",
+      "texto": "El recurso contencioso-administrativo se iniciará por un escrito reducido a citar la disposición, acto, inactividad o actuación constitutiva de vía de hecho que se impugne"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "ordinario-43",
+     "fase": "Diligencias preliminares",
+     "subtitulo": "CAPÍTULO I · Sección 1.ª · arts. 43 a 44",
+     "descripcion": "Dos trámites previos. Si la Administración quiere anular su propio acto, primero debe declararlo lesivo y después demandar (recurso de lesividad). En los litigios entre Administraciones no hay recurso administrativo: la que va a recurrir puede requerir antes a la otra para que derogue, anule, cese o actúe.",
+     "articulos": [
+      "43",
+      "44"
+     ],
+     "rango": [
+      "43",
+      "44"
+     ],
+     "plazos": [
+      {
+       "acto": "Requerimiento a otra Administración",
+       "plazo": "2 meses",
+       "articulo": "44",
+       "literal": "deberá producirse en el plazo de dos meses"
+      },
+      {
+       "acto": "La requerida no contesta: se entiende rechazado",
+       "plazo": "1 mes",
+       "articulo": "44",
+       "literal": "se entenderá rechazado si, dentro del mes siguiente a su recepción, el requerido no lo contestara"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Recursos especiales en materia de contratación",
+       "entonces": "Se recurre directamente, sin requerimiento previo ni recurso administrativo.",
+       "articulos": [
+        "44"
+       ],
+       "literal": {
+        "articulo": "44",
+        "texto": "interpondrán el recurso directamente y sin necesidad de previo requerimiento o recurso administrativo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede una Administración demandar directamente la anulación de un acto suyo?",
+      "a": "No: antes debe declararlo lesivo para el interés público.",
+      "articulos": [
+       "43"
+      ],
+      "literal": {
+       "articulo": "43",
+       "texto": "deberá, previamente, declararlo lesivo para el interés público"
+      }
+     },
+     "conexiones": [
+      "43",
+      "44",
+      "45",
+      "46"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "ordinario-45",
+     "fase": "Interposición del recurso y reclamación del expediente",
+     "subtitulo": "CAPÍTULO I · Sección 2.ª · arts. 45 a 48",
+     "descripcion": "Se presenta el escrito de interposición (ver «Escrito de interposición: lista de comprobación»). El LAJ comprueba la comparecencia, puede ordenar que se anuncie en el periódico oficial y reclama el expediente a la Administración, que debe remitirlo completo, en soporte electrónico, foliado y con índice. Si no lo envía, hay multas coercitivas reiteradas.",
+     "articulos": [
+      "45",
+      "47",
+      "48"
+     ],
+     "rango": [
+      "45",
+      "48"
+     ],
+     "plazos": [
+      {
+       "acto": "La Administración remite el expediente",
+       "plazo": "20 días improrrogables",
+       "articulo": "48",
+       "literal": "El expediente deberá ser remitido en el plazo improrrogable de veinte días"
+      },
+      {
+       "acto": "Reiteración si no llega",
+       "plazo": "10 días",
+       "articulo": "48",
+       "literal": "si no se enviara en el término de diez días"
+      },
+      {
+       "acto": "Repetición de la multa coercitiva",
+       "plazo": "Cada 20 días",
+       "articulo": "48",
+       "literal": "La multa será reiterada cada veinte días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La Administración no remite el expediente",
+       "entonces": "Tras reiterar la reclamación y apercibir, multa coercitiva de 300 a 1.200 euros a la autoridad o empleado responsable; tras la tercera, se pone en conocimiento del Ministerio Fiscal.",
+       "articulos": [
+        "48"
+       ],
+       "literal": {
+        "articulo": "48",
+        "texto": "impondrán una multa coercitiva de trescientos a mil doscientos euros"
+       }
+      },
+      {
+       "si": "El recurrente no quiere esperar al expediente",
+       "entonces": "Puede pedir que se le conceda plazo para formalizar la demanda sin él.",
+       "articulos": [
+        "53"
+       ],
+       "literal": {
+        "articulo": "53",
+        "texto": "que se le conceda plazo para formalizar la demanda"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Desde cuándo cuentan los veinte días para remitir el expediente?",
+      "a": "Desde que la comunicación judicial tiene entrada en el registro general del órgano requerido.",
+      "articulos": [
+       "48"
+      ],
+      "literal": {
+       "articulo": "48",
+       "texto": "a contar desde que la comunicación judicial tenga entrada en el registro general del órgano requerido"
+      }
+     },
+     "conexiones": [
+      "45",
+      "47",
+      "48",
+      "49",
+      "53"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "ordinario-49",
+     "fase": "Emplazamiento de los demandados y admisión del recurso",
+     "subtitulo": "CAPÍTULO I · Sección 3.ª · arts. 49 a 51",
+     "descripcion": "La Administración notifica la resolución que acuerda remitir el expediente a los interesados y los emplaza como demandados. La Administración se entiende emplazada al reclamarle el expediente y personada al enviarlo. Con el expediente, el juzgado o la sala puede inadmitir el recurso si consta de modo inequívoco y manifiesto la falta de jurisdicción o competencia, de legitimación, que la actividad no es impugnable o que ha caducado el plazo; antes oye a las partes.",
+     "articulos": [
+      "49",
+      "50",
+      "51"
+     ],
+     "rango": [
+      "49",
+      "51"
+     ],
+     "plazos": [
+      {
+       "acto": "Notificar a los interesados",
+       "plazo": "5 días",
+       "articulo": "49",
+       "literal": "se notificará en los cinco días siguientes a su adopción"
+      },
+      {
+       "acto": "Personarse como demandado",
+       "plazo": "9 días",
+       "articulo": "49",
+       "literal": "para que puedan personarse como demandados en el plazo de nueve días"
+      },
+      {
+       "acto": "Alegar sobre la posible inadmisión",
+       "plazo": "10 días",
+       "articulo": "51",
+       "literal": "en el plazo común de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Un demandado se persona tarde",
+       "entonces": "Se le tiene por parte para los trámites que no hayan precluido.",
+       "articulos": [
+        "50"
+       ],
+       "literal": {
+        "articulo": "50",
+        "texto": "se les tendrá por parte para los trámites no precluidos"
+       }
+      },
+      {
+       "si": "Se inadmite el recurso",
+       "entonces": "Contra el auto de inadmisión caben los recursos de la ley (ver «Recursos»).",
+       "articulos": [
+        "51",
+        "80"
+       ],
+       "literal": {
+        "articulo": "51",
+        "texto": "Contra el auto que declare la inadmisión podrán interponerse los recursos previstos en esta Ley"
+       }
+      },
+      {
+       "si": "Se admite, pero hay un motivo de inadmisibilidad",
+       "entonces": "El auto de admisión no se recurre, pero el motivo puede oponerse más adelante.",
+       "articulos": [
+        "51"
+       ],
+       "literal": {
+        "articulo": "51",
+        "texto": "no impedirá oponer cualquier motivo de inadmisibilidad en momento procesal posterior"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se puede recurrir el auto que admite el recurso?",
+      "a": "No, pero no impide oponer después cualquier motivo de inadmisibilidad.",
+      "articulos": [
+       "51"
+      ],
+      "literal": {
+       "articulo": "51",
+       "texto": "El auto de admisión no será recurrible"
+      }
+     },
+     "conexiones": [
+      "49",
+      "50",
+      "51",
+      "58",
+      "69"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "ordinario-52",
+     "fase": "Demanda y contestación",
+     "subtitulo": "CAPÍTULO I · Sección 4.ª · arts. 52 a 57",
+     "descripcion": "Con el expediente, el recurrente formaliza la demanda (hechos, fundamentos y pretensiones, con los documentos en que funda su derecho). Pueden alegarse motivos no planteados ante la Administración. Después contesta primero la Administración y luego los demás demandados. Si alguna parte ve el expediente incompleto, puede pedir que se complete dentro de su plazo, lo que lo suspende. Si nadie pide prueba ni vista o conclusiones, el pleito queda concluso para sentencia.",
+     "articulos": [
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57"
+     ],
+     "rango": [
+      "52",
+      "57"
+     ],
+     "plazos": [
+      {
+       "acto": "Demanda",
+       "plazo": "20 días",
+       "articulo": "52",
+       "literal": "para que se deduzca la demanda en el plazo de veinte días"
+      },
+      {
+       "acto": "Contestación",
+       "plazo": "20 días",
+       "articulo": "54",
+       "literal": "para que la contesten en el plazo de veinte días"
+      },
+      {
+       "acto": "Alegaciones complementarias si el expediente llega tras la demanda",
+       "plazo": "10 días",
+       "articulo": "53",
+       "literal": "por plazo común de diez días para que puedan efectuar las alegaciones complementarias"
+      },
+      {
+       "acto": "Subsanar defectos de la demanda",
+       "plazo": "Hasta 10 días",
+       "articulo": "56",
+       "literal": "requerirá que se subsanen las faltas de que adolezca en plazo no superior a diez días"
+      },
+      {
+       "acto": "El LAJ resuelve la petición de completar el expediente",
+       "plazo": "3 días",
+       "articulo": "55",
+       "literal": "resolverá lo pertinente en el plazo de tres días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No se presenta la demanda en plazo",
+       "entonces": "Se declara la caducidad del recurso por auto; aun así vale la demanda presentada el mismo día en que se notifica ese auto.",
+       "articulos": [
+        "52"
+       ],
+       "literal": {
+        "articulo": "52",
+        "texto": "se admitirá el escrito de demanda, y producirá sus efectos legales, si se presentare dentro del día en que se notifique el auto"
+       }
+      },
+      {
+       "si": "El expediente está incompleto",
+       "entonces": "Se pide que se complete dentro del plazo de demanda o contestación; la petición suspende el plazo, que se reinicia si se pidió en los diez primeros días y se acepta (nunca si lo pide la Administración demandada).",
+       "articulos": [
+        "55"
+       ],
+       "literal": {
+        "articulo": "55",
+        "texto": "La solicitud a que se refiere el apartado anterior suspenderá el curso del plazo correspondiente"
+       }
+      },
+      {
+       "si": "Motivos que no se alegaron en vía administrativa",
+       "entonces": "Pueden alegarse en la demanda y en la contestación.",
+       "articulos": [
+        "56"
+       ],
+       "literal": {
+        "articulo": "56",
+        "texto": "hayan sido o no planteados ante la Administración"
+       }
+      },
+      {
+       "si": "Documentos después de la demanda",
+       "entonces": "Solo en los casos del proceso civil y, el demandante, los que desvirtúen hechos de la contestación, antes de la citación de vista o conclusiones.",
+       "articulos": [
+        "56"
+       ],
+       "literal": {
+        "articulo": "56",
+        "texto": "no se admitirán a las partes más documentos que los que se hallen en alguno de los casos previstos para el proceso civil"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Pueden alegarse en la demanda motivos que no se plantearon ante la Administración?",
+      "a": "Sí: pueden alegarse cuantos motivos procedan, se hayan planteado o no ante la Administración.",
+      "articulos": [
+       "56"
+      ],
+      "literal": {
+       "articulo": "56",
+       "texto": "podrán alegarse cuantos motivos procedan, hayan sido o no planteados ante la Administración"
+      }
+     },
+     "conexiones": [
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "60",
+      "62"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "ordinario-58",
+     "fase": "Alegaciones previas",
+     "subtitulo": "CAPÍTULO I · Sección 5.ª · arts. 58 a 59",
+     "descripcion": "Antes de contestar, los demandados pueden alegar como cuestión previa la incompetencia del órgano o la inadmisibilidad del recurso (causas del art. 69). La Administración debe acompañar el expediente si no lo remitió. Se da traslado al actor, que puede subsanar, y se resuelve como incidente.",
+     "articulos": [
+      "58",
+      "59"
+     ],
+     "rango": [
+      "58",
+      "59"
+     ],
+     "plazos": [
+      {
+       "acto": "Alegaciones previas",
+       "plazo": "Primeros 5 días del plazo para contestar",
+       "articulo": "58",
+       "literal": "dentro de los primeros cinco días del plazo para contestar la demanda"
+      },
+      {
+       "acto": "Traslado al actor",
+       "plazo": "5 días",
+       "articulo": "59",
+       "literal": "dará traslado por cinco días al actor"
+      },
+      {
+       "acto": "Subsanar el defecto",
+       "plazo": "10 días",
+       "articulo": "59",
+       "literal": "podrá subsanar el defecto, si procediera, en el plazo de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se desestiman",
+       "entonces": "No hay recurso; se contesta la demanda en el plazo que quede. Los motivos de inadmisibilidad (no la incompetencia) pueden volver a alegarse en la contestación.",
+       "articulos": [
+        "58",
+        "59"
+       ],
+       "literal": {
+        "articulo": "59",
+        "texto": "no será susceptible de recurso y dispondrá que se conteste la demanda en el plazo que reste"
+       }
+      },
+      {
+       "si": "Se estiman",
+       "entonces": "El auto declara la inadmisibilidad; si es por falta de jurisdicción o competencia, se remite al órgano que corresponda.",
+       "articulos": [
+        "59",
+        "7"
+       ],
+       "literal": {
+        "articulo": "59",
+        "texto": "El auto estimatorio de las alegaciones previas declarará la inadmisibilidad del recurso"
+       }
+      },
+      {
+       "si": "La incompetencia no se alegó como cuestión previa",
+       "entonces": "La ley no permite alegarla después en la contestación; el órgano la aprecia de oficio, oyendo a las partes.",
+       "articulos": [
+        "58",
+        "7"
+       ],
+       "literal": {
+        "articulo": "58",
+        "texto": "salvo la incompetencia del órgano jurisdiccional, puedan ser alegados en la contestación"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué debe acompañar la Administración demandada para formular alegaciones previas?",
+      "a": "El expediente administrativo, si no lo había remitido antes.",
+      "articulos": [
+       "58"
+      ],
+      "literal": {
+       "articulo": "58",
+       "texto": "habrá de acompañar el expediente administrativo si no lo hubiera remitido antes"
+      }
+     },
+     "conexiones": [
+      "7",
+      "58",
+      "59",
+      "69"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "ordinario-60",
+     "fase": "Prueba",
+     "subtitulo": "CAPÍTULO I · Sección 6.ª · arts. 60 a 61",
+     "descripcion": "La prueba solo se pide por otrosí en la demanda, la contestación o las alegaciones complementarias, expresando los hechos y los medios. Se abre si hay hechos discutidos y relevantes; en sanciones administrativas o disciplinarias, siempre que haya disconformidad en los hechos. Se practica según la LEC. El juez puede acordar prueba de oficio.",
+     "articulos": [
+      "60",
+      "61"
+     ],
+     "rango": [
+      "60",
+      "61"
+     ],
+     "plazos": [
+      {
+       "acto": "Práctica de la prueba",
+       "plazo": "30 días",
+       "articulo": "60",
+       "literal": "siendo el plazo para practicarla de treinta días"
+      },
+      {
+       "acto": "Prueba por hechos nuevos de la contestación",
+       "plazo": "5 días desde el traslado",
+       "articulo": "60",
+       "literal": "dentro de los cinco días siguientes a aquel en que se haya dado traslado de la misma"
+      },
+      {
+       "acto": "Pedir aclaraciones al dictamen pericial",
+       "plazo": "Hasta 5 días",
+       "articulo": "60",
+       "literal": "un plazo no superior a cinco días para que las partes puedan solicitar aclaraciones al dictamen emitido"
+      },
+      {
+       "acto": "Alegar sobre la prueba acordada de oficio",
+       "plazo": "5 días",
+       "articulo": "61",
+       "literal": "en el plazo de cinco días, alegar cuanto estimen conveniente"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No se pidió prueba por otrosí",
+       "entonces": "No hay otro momento para pedirla (salvo hechos nuevos de la contestación); si nadie la pide, el pleito puede quedar concluso.",
+       "articulos": [
+        "60",
+        "57"
+       ],
+       "literal": {
+        "articulo": "60",
+        "texto": "Solamente se podrá pedir el recibimiento del proceso a prueba por medio de otrosí"
+       }
+      },
+      {
+       "si": "Se recurre una sanción",
+       "entonces": "Se recibe siempre a prueba si hay disconformidad en los hechos.",
+       "articulos": [
+        "60"
+       ],
+       "literal": {
+        "articulo": "60",
+        "texto": "Si el objeto del recurso fuera una sanción administrativa o disciplinaria, el proceso se recibirá siempre a prueba cuando exista disconformidad en los hechos"
+       }
+      },
+      {
+       "si": "Una prueba se practica fuera de plazo",
+       "entonces": "Puede aportarse si el retraso no es imputable a quien la propuso.",
+       "articulos": [
+        "60"
+       ],
+       "literal": {
+        "articulo": "60",
+        "texto": "se podrán aportar al proceso las pruebas practicadas fuera de este plazo por causas no imputables a la parte que las propuso"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo se pide el recibimiento a prueba?",
+      "a": "Por otrosí en la demanda, la contestación o las alegaciones complementarias, con los puntos de hecho y los medios de prueba ordenados.",
+      "articulos": [
+       "60"
+      ],
+      "literal": {
+       "articulo": "60",
+       "texto": "Solamente se podrá pedir el recibimiento del proceso a prueba por medio de otrosí, en los escritos de demanda y contestación y en los de alegaciones complementarias"
+      }
+     },
+     "conexiones": [
+      "57",
+      "60",
+      "61",
+      "62"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "ordinario-62",
+     "fase": "Vista y conclusiones",
+     "subtitulo": "CAPÍTULO I · Sección 7.ª · arts. 62 a 66",
+     "descripcion": "Las partes pueden pedir vista, conclusiones escritas o que el pleito quede concluso. Si coinciden, se hace lo que piden; si no, hay vista o conclusiones cuando lo pide el demandante o, si hubo prueba, cualquiera. En la vista o en las conclusiones no caben cuestiones nuevas; si el tribunal ve motivos distintos relevantes, los somete a las partes.",
+     "articulos": [
+      "62",
+      "63",
+      "64",
+      "65"
+     ],
+     "rango": [
+      "62",
+      "66"
+     ],
+     "plazos": [
+      {
+       "acto": "Pedir vista o conclusiones tras la prueba",
+       "plazo": "5 días",
+       "articulo": "62",
+       "literal": "por escrito presentado en el plazo de cinco días contados desde que se notifique la diligencia de ordenación declarando concluso el período de prueba"
+      },
+      {
+       "acto": "Escrito de conclusiones",
+       "plazo": "10 días sucesivos",
+       "articulo": "64",
+       "literal": "El plazo para formular el escrito será de diez días sucesivos para los demandantes y demandados"
+      },
+      {
+       "acto": "Alegar sobre motivos nuevos planteados por el tribunal",
+       "plazo": "10 días",
+       "articulo": "65",
+       "literal": "dándoles plazo de diez días para ser oídas sobre ello"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Nadie pide vista ni conclusiones",
+       "entonces": "Excepcionalmente, el juez o tribunal puede acordarlas según la índole del asunto.",
+       "articulos": [
+        "62"
+       ],
+       "literal": {
+        "articulo": "62",
+        "texto": "excepcionalmente, atendida la índole del asunto, podrá acordar la celebración de vista o la formulación de conclusiones escritas"
+       }
+      },
+      {
+       "si": "Se plantea una cuestión nueva en conclusiones",
+       "entonces": "No se admite: solo las suscitadas en demanda y contestación.",
+       "articulos": [
+        "65"
+       ],
+       "literal": {
+        "articulo": "65",
+        "texto": "no podrán plantearse cuestiones que no hayan sido suscitadas en los escritos de demanda y contestación"
+       }
+      },
+      {
+       "si": "Se reclaman daños ya probados",
+       "entonces": "El demandante puede pedir que la sentencia fije su existencia y cuantía.",
+       "articulos": [
+        "65",
+        "71"
+       ],
+       "literal": {
+        "articulo": "65",
+        "texto": "el demandante podrá solicitar que la sentencia formule pronunciamiento concreto sobre la existencia y cuantía de los daños y perjuicios"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cabe recurso contra la providencia que somete a las partes motivos distintos de los alegados?",
+      "a": "No.",
+      "articulos": [
+       "65"
+      ],
+      "literal": {
+       "articulo": "65",
+       "texto": "Contra esta providencia no cabrá recurso alguno"
+      }
+     },
+     "conexiones": [
+      "61",
+      "62",
+      "63",
+      "64",
+      "65",
+      "67"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "ordinario-67",
+     "fase": "Sentencia",
+     "subtitulo": "CAPÍTULO I · Sección 8.ª · arts. 67 a 73",
+     "descripcion": "La sentencia declara la inadmisibilidad o estima o desestima el recurso, y se pronuncia sobre costas. Si estima: anula, reconoce la situación jurídica individualizada y adopta medidas para restablecerla, fija plazo para cumplir o declara el derecho a indemnización. Lo que se recurre después (apelación o casación) depende del órgano y la cuantía: ver «Recursos».",
+     "articulos": [
+      "67",
+      "68",
+      "69",
+      "70",
+      "71",
+      "72",
+      "73"
+     ],
+     "rango": [
+      "67",
+      "73"
+     ],
+     "plazos": [
+      {
+       "acto": "Dictar sentencia",
+       "plazo": "10 días desde que el pleito queda concluso",
+       "articulo": "67",
+       "literal": "La sentencia se dictará en el plazo de diez días desde que el pleito haya sido declarado concluso"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Causas de inadmisibilidad",
+       "entonces": "Falta de jurisdicción; persona incapaz, mal representada o no legitimada; actividad no impugnable; cosa juzgada o litispendencia; recurso fuera de plazo.",
+       "articulos": [
+        "69"
+       ],
+       "literal": {
+        "articulo": "69",
+        "texto": "Que se hubiera presentado el escrito inicial del recurso fuera del plazo establecido"
+       }
+      },
+      {
+       "si": "Se estima una indemnización sin cuantía probada",
+       "entonces": "Se fijan las bases y la cuantía se concreta en ejecución.",
+       "articulos": [
+        "71"
+       ],
+       "literal": {
+        "articulo": "71",
+        "texto": "se establecerán las bases para la determinación de la cuantía"
+       }
+      },
+      {
+       "si": "Terceros en la misma situación",
+       "entonces": "La sentencia que reconoce una situación individualizada solo afecta a las partes, pero sus efectos pueden extenderse a terceros.",
+       "articulos": [
+        "72",
+        "110",
+        "111"
+       ],
+       "literal": {
+        "articulo": "72",
+        "texto": "tales efectos podrán extenderse a terceros en los términos previstos en los artículos 110 y 111"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede la sentencia fijar el contenido discrecional del acto que anula?",
+      "a": "No; tampoco puede redactar los preceptos de una disposición general anulada.",
+      "articulos": [
+       "71"
+      ],
+      "literal": {
+       "articulo": "71",
+       "texto": "ni podrán determinar el contenido discrecional de los actos anulados"
+      }
+     },
+     "conexiones": [
+      "68",
+      "69",
+      "70",
+      "71",
+      "72",
+      "81",
+      "86",
+      "110",
+      "139"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "ordinario-74",
+     "fase": "Otros modos de terminación del procedimiento",
+     "subtitulo": "CAPÍTULO I · Sección 9.ª · arts. 74 a 77",
+     "descripcion": "El proceso puede terminar sin sentencia de fondo: desistimiento del recurrente; allanamiento del demandado (sentencia conforme a lo pedido, salvo infracción manifiesta); reconocimiento total de las pretensiones en vía administrativa (satisfacción extraprocesal); o acuerdo entre las partes en materias transigibles.",
+     "articulos": [
+      "74",
+      "75",
+      "76",
+      "77"
+     ],
+     "rango": [
+      "74",
+      "77"
+     ],
+     "plazos": [
+      {
+       "acto": "Traslado del desistimiento",
+       "plazo": "5 días",
+       "articulo": "74",
+       "literal": "por plazo común de cinco días. Si prestaren"
+      },
+      {
+       "acto": "Oír a las partes si el allanamiento infringe el ordenamiento",
+       "plazo": "10 días",
+       "articulo": "75",
+       "literal": "las oirá por plazo común de diez días"
+      },
+      {
+       "acto": "Oír a las partes sobre el reconocimiento en vía administrativa",
+       "plazo": "5 días",
+       "articulo": "76",
+       "literal": "mandará oír a las partes por plazo común de cinco días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La Administración reconoce y luego revoca",
+       "entonces": "Si se desistió por ese reconocimiento, el actor puede pedir que el proceso continúe y se extienda al acto revocatorio.",
+       "articulos": [
+        "74"
+       ],
+       "literal": {
+        "articulo": "74",
+        "texto": "el actor podrá pedir que continúe el procedimiento en el estado en que se encontrase, extendiéndose al acto revocatorio"
+       }
+      },
+      {
+       "si": "¿Costas al desistir?",
+       "entonces": "El desistimiento no conlleva necesariamente condena en costas.",
+       "articulos": [
+        "74",
+        "139"
+       ],
+       "literal": {
+        "articulo": "74",
+        "texto": "El desistimiento no implicará necesariamente la condena en costas"
+       }
+      },
+      {
+       "si": "Las partes llegan a un acuerdo",
+       "entonces": "Auto que declara terminado el procedimiento, si no es manifiestamente contrario al ordenamiento ni lesivo del interés público o de terceros.",
+       "articulos": [
+        "77"
+       ],
+       "literal": {
+        "articulo": "77",
+        "texto": "dictará auto declarando terminado el procedimiento"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿El intento de conciliación suspende el proceso?",
+      "a": "No, salvo que lo pidan todas las partes personadas.",
+      "articulos": [
+       "77"
+      ],
+      "literal": {
+       "articulo": "77",
+       "texto": "El intento de conciliación no suspenderá el curso de las actuaciones salvo que todas las partes personadas lo solicitasen"
+      }
+     },
+     "conexiones": [
+      "74",
+      "75",
+      "76",
+      "77",
+      "139"
+     ],
+     "continua_en": []
+    }
+   ]
+  },
+  {
+   "id": "abreviado",
+   "nombre": "Procedimiento abreviado",
+   "bloque": "ljca",
+   "grupo": "Procedimientos",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Art. 78",
+    "texto": "CAPÍTULO II. Procedimiento abreviado",
+    "articulos": [
+     "78"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "abreviado-78",
+     "fase": "Procedimiento abreviado",
+     "subtitulo": "CAPÍTULO II · art. 78",
+     "descripcion": "",
+     "articulos": [
+      "78"
+     ],
+     "rango": [
+      "78",
+      "78"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "especiales",
+   "nombre": "Procedimientos especiales",
+   "bloque": "ljca",
+   "grupo": "Procedimientos",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Arts. 114 a 127",
+    "texto": "TÍTULO V. Procedimientos especiales",
+    "articulos": [
+     "114"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "especiales-114",
+     "fase": "Procedimiento para la protección de los derechos fundamentales de la persona",
+     "subtitulo": "TÍTULO V · CAPÍTULO I · arts. 114 a 122 quater",
+     "descripcion": "",
+     "articulos": [
+      "114",
+      "122 quater"
+     ],
+     "rango": [
+      "114",
+      "122 quater"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "especiales-123",
+     "fase": "Cuestión de ilegalidad",
+     "subtitulo": "TÍTULO V · CAPÍTULO II · arts. 123 a 126",
+     "descripcion": "",
+     "articulos": [
+      "123",
+      "126"
+     ],
+     "rango": [
+      "123",
+      "126"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "especiales-127",
+     "fase": "Procedimiento en los casos de suspensión administrativa previa de acuerdos",
+     "subtitulo": "TÍTULO V · CAPÍTULO III · art. 127",
+     "descripcion": "",
+     "articulos": [
+      "127"
+     ],
+     "rango": [
+      "127",
+      "127"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "especiales-127_bis",
+     "fase": "Procedimiento para la garantía de la unidad de mercado",
+     "subtitulo": "TÍTULO V · CAPÍTULO IV · arts. 127 bis a 127 quáter",
+     "descripcion": "",
+     "articulos": [
+      "127 bis",
+      "127 quáter"
+     ],
+     "rango": [
+      "127 bis",
+      "127 quáter"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "especiales-127_quinquies",
+     "fase": "Procedimiento para la declaración judicial de extinción de partidos políticos",
+     "subtitulo": "TÍTULO V · CAPÍTULO V · art. 127 quinquies",
+     "descripcion": "",
+     "articulos": [
+      "127 quinquies"
+     ],
+     "rango": [
+      "127 quinquies",
+      "127 quinquies"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "recursos",
+   "nombre": "Recursos contra resoluciones procesales",
+   "bloque": "ljca",
+   "grupo": "Recursos",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Arts. 79 a 102",
+    "texto": "CAPÍTULO III. Recursos contra resoluciones procesales",
+    "articulos": [
+     "79"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "recursos-79",
+     "fase": "Recursos contra providencias y autos",
+     "subtitulo": "CAPÍTULO III · Sección 1.ª · arts. 79 a 80",
+     "descripcion": "",
+     "articulos": [
+      "79",
+      "80"
+     ],
+     "rango": [
+      "79",
+      "80"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "recursos-81",
+     "fase": "Recurso ordinario de apelación",
+     "subtitulo": "CAPÍTULO III · Sección 2.ª · arts. 81 a 85",
+     "descripcion": "",
+     "articulos": [
+      "81",
+      "85"
+     ],
+     "rango": [
+      "81",
+      "85"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "recursos-86",
+     "fase": "Recurso de casación",
+     "subtitulo": "CAPÍTULO III · Sección 3.ª · arts. 86 a 95",
+     "descripcion": "",
+     "articulos": [
+      "86",
+      "95"
+     ],
+     "rango": [
+      "86",
+      "95"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "recursos-102",
+     "fase": "De la revisión de sentencias",
+     "subtitulo": "CAPÍTULO III · Sección 6.ª · art. 102",
+     "descripcion": "",
+     "articulos": [
+      "102"
+     ],
+     "rango": [
+      "102",
+      "102"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "recursos-102_bis",
+     "fase": "Recursos contra las resoluciones del Secretario judicial",
+     "subtitulo": "CAPÍTULO III · Sección 7.ª · art. 102 bis",
+     "descripcion": "",
+     "articulos": [
+      "102 bis"
+     ],
+     "rango": [
+      "102 bis",
+      "102 bis"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "ejecucion",
+   "nombre": "Ejecución de sentencias",
+   "bloque": "ljca",
+   "grupo": "Ejecución",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Arts. 103 a 113",
+    "texto": "CAPÍTULO IV. Ejecución de sentencias y demás títulos ejecutivos",
+    "articulos": [
+     "103"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "ejecucion-103",
+     "fase": "Ejecución de sentencias y demás títulos ejecutivos",
+     "subtitulo": "CAPÍTULO IV · arts. 103 a 113",
+     "descripcion": "",
+     "articulos": [
+      "103",
+      "113"
+     ],
+     "rango": [
+      "103",
+      "113"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  },
+  {
+   "id": "comunes",
+   "nombre": "Plazos, medidas cautelares, incidentes y costas",
+   "bloque": "ljca",
+   "grupo": "Parte general",
+   "esqueleto": true,
+   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "ambito": {
+    "corto": "Arts. 128 a 139",
+    "texto": "TÍTULO VI. Disposiciones comunes a los Títulos IV y V",
+    "articulos": [
+     "128"
+    ],
+    "literal": []
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "comunes-128",
+     "fase": "Plazos",
+     "subtitulo": "TÍTULO VI · CAPÍTULO I · art. 128",
+     "descripcion": "",
+     "articulos": [
+      "128"
+     ],
+     "rango": [
+      "128",
+      "128"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "comunes-129",
+     "fase": "Medidas cautelares",
+     "subtitulo": "TÍTULO VI · CAPÍTULO II · arts. 129 a 136",
+     "descripcion": "",
+     "articulos": [
+      "129",
+      "136"
+     ],
+     "rango": [
+      "129",
+      "136"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "comunes-137",
+     "fase": "Incidentes e invalidez de actos procesales",
+     "subtitulo": "TÍTULO VI · CAPÍTULO III · arts. 137 a 138",
+     "descripcion": "",
+     "articulos": [
+      "137",
+      "138"
+     ],
+     "rango": [
+      "137",
+      "138"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    },
+    {
+     "id": "comunes-139",
+     "fase": "Costas procesales",
+     "subtitulo": "TÍTULO VI · CAPÍTULO IV · art. 139",
+     "descripcion": "",
+     "articulos": [
+      "139"
+     ],
+     "rango": [
+      "139",
+      "139"
+     ],
+     "plazos": [],
+     "ramas": [],
+     "esqueleto": true
+    }
+   ]
+  }
+ ],
+ "externos": [],
+ "vista_procedimientos": [
+  {
+   "grupo": "Antes de interponer",
+   "items": [
+    "guia"
+   ]
+  },
+  {
+   "grupo": "Procedimientos",
+   "items": [
+    "ordinario",
+    "abreviado",
+    "especiales"
+   ]
+  },
+  {
+   "grupo": "Medidas cautelares y costas",
+   "items": [
+    "comunes"
+   ]
+  },
+  {
+   "grupo": "Ejecución",
+   "items": [
+    "ejecucion"
+   ]
+  }
+ ],
+ "vista_recursos": [
+  {
+   "grupo": "Medios de impugnación",
+   "items": [
+    "recursos"
+   ]
+  }
+ ]
+}

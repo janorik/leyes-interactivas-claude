@@ -193,9 +193,9 @@ Copiado el 23-10-2026 del documento de la plataforma (sin sus notas internas de 
 38. Ejecución frente a entes públicos (287-288) — PARCIAL (287, 288)
 39. Ejecución provisional (289-305) — PARCIAL (294-304). Nota: anticipos dinerarios 289-293 y la remisión genérica a la LEC (305) siguen fuera.
 
-## LJCA — Ley 29/1998 (propuesta de Claude; ampliación con los arts. 7 y 13 y fichas transversales aprobada por el usuario, Chat 5; resto pendiente de su visto bueno)
+## LJCA — Ley 29/1998 (propuesta de Claude, aprobada por el usuario en el Chat 5, 23-10-2026)
 
-> El usuario no tiene canon de la LJCA (23-10-2026). Propuesta de Claude (Chat 5), No verificable hasta que el usuario la confirme. Criterio: núcleo obligatorio (procedimientos, resoluciones y recursos completos) y «¿ayuda a orientarse?». Rangos sacados del índice del PDF consolidado (03-01-2025). Además del mapa, se propone `ljca/datos/recursos.json` (selector «¿qué recurso cabe?», fichas y test), como en las otras leyes.
+> El usuario no tenía canon de la LJCA (23-10-2026). Propuesta de Claude (Chat 5), aprobada por el usuario («Sí a las tres», 23-10-2026), con los arts. 7 y 13 y las fichas transversales añadidos a petición suya. Criterio: núcleo obligatorio (procedimientos, resoluciones y recursos completos) y «¿ayuda a orientarse?». Rangos sacados del índice del PDF consolidado (03-01-2025). Además del mapa, se propone `ljca/datos/recursos.json` (selector «¿qué recurso cabe?», fichas y test), como en las otras leyes.
 >
 > **Fichas transversales (aprobadas por el usuario, Chat 5):** 1) «Plazos para recurrir según lo que se impugna» (arts. 46, 115 y 128.2: acto expreso, presunto, inactividad, vía de hecho, tras reposición potestativa, lesividad, entre Administraciones, derechos fundamentales, agosto); 2) «Lista de comprobación del escrito de interposición» (art. 45.2 y causas de inadmisión del art. 69).
 
