@@ -360,12 +360,9 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > Quinto desarrollo de la LRJS, en el orden elegido por el usuario: bloques «Condiciones de trabajo y materia electoral» (5 fichas), «Seguridad Social, procedimiento de oficio y actos administrativos» (3), «Conflictos colectivos, convenios y estatutos sindicales» (3) y «Tutela de los derechos fundamentales» (1); 35 plazos. Materia electoral, procedimiento de oficio y estatutos sindicales van en ficha breve (qué es, quién demanda, plazo y recurso), como pidió el usuario. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
 
-- [ ] **Art. 138.6 frente al art. 191.2.e: ¿art. 41.4 o 41.2 del Estatuto?** Para las modificaciones sustanciales colectivas, el art. 138.6 remite al «apartado 4 del artículo 41» del Estatuto y el art. 191.2.e, al «apartado 2 del artículo 41». Es una remisión desfasada en uno de los dos.
-  - **Propuesta:** la ficha dice «modificaciones de carácter colectivo», sin citar el apartado. Pendiente de revisión individual. No verificable hasta que lo confirmes.
+- [ ] **Art. 138.6 frente al art. 191.2.e: ¿art. 41.4 o 41.2 del Estatuto? Pendiente de revisión individual (23-10-2026).** Con la opinión aportada por el usuario (consulta a Perplexity), la ficha reproduce ahora las dos remisiones literales en un aviso y en una alternativa, sin unificarlas. Esa opinión sostiene que el apartado 2 del art. 41 ET es el que define el carácter colectivo y que la remisión del art. 138.6 al apartado 4 está desfasada; no se puede comprobar aquí, porque el Estatuto no está en la app (No verificable). Se descarta su frase «en las modificaciones de carácter colectivo no procede suplicación», porque dice lo contrario de los arts. 138.6 y 191.2.e: en las colectivas es donde sí cabe recurso.
   - **Tu respuesta:**
-- [ ] **Art. 125.a: «veinte días» sin decir «hábiles»** (vacaciones), como en el art. 139 (conciliación familiar). El art. 138 sí dice «veinte días hábiles».
-  - **Propuesta:** dejarlo como dice la ley, sin añadir «hábiles». No verificable hasta que lo confirmes.
-  - **Tu respuesta:**
+- [x] **Arts. 125.a y 139.a: «veinte días» sin «hábiles». Resuelta (usuario, 23-10-2026, con la opinión de Perplexity que aporta):** se respeta la literalidad: «20 días» en vacaciones y conciliación, y «20 días hábiles» solo en el art. 138. Las fichas ya estaban así.
 - [ ] **Revisa las 12 fichas.**
 
 ### Ejecución y ejecución provisional (Chat 4, contenido elaborado, pendiente de revisión)

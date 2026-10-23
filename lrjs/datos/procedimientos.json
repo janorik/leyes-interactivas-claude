@@ -2253,7 +2253,7 @@
      "fase": "Movilidad geográfica, modificación sustancial, suspensión y reducción de jornada; trabajo a distancia",
      "subtitulo": "20 días hábiles · urgente · justificada, injustificada o nula",
      "descripcion": "Los trabajadores afectados impugnan la decisión empresarial de traslado, modificación sustancial de condiciones, suspensión o reducción de jornada en 20 días hábiles desde la notificación escrita. No exige conciliación previa. Es urgente: vista en 5 días y sentencia en 5, inmediatamente ejecutiva. La sentencia declara la decisión justificada (el trabajador puede extinguir el contrato en 15 días en los casos de los arts. 40.1 y 41.3 ET), injustificada (reposición y daños) o nula (fraude, discriminación o lesión de derechos fundamentales). Sin recurso, salvo las medidas colectivas. El acceso, reversión o modificación del trabajo a distancia tiene un cauce parecido (20 días hábiles, sentencia en 3 días, sin recurso salvo daños).",
-     "aviso": "Los arts. 40, 41, 47, 51 y 59 citados son del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]].",
+     "aviso": "Los arts. 40, 41, 47, 51 y 59 citados son del [[Estatuto de los Trabajadores (texto refundido)|https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430]]. Recurso en las modificaciones colectivas: el art. 138.6 dice «cuando tengan carácter colectivo de conformidad con el apartado 4 del artículo 41 del referido Estatuto» y el art. 191.2.e, «salvo cuando tengan carácter colectivo de conformidad con el apartado 2 del artículo 41 del referido Estatuto». La app reproduce las dos remisiones tal como están.",
      "articulos": [
       "138",
       "138 bis"
@@ -2335,6 +2335,18 @@
        "literal": {
         "articulo": "138",
         "texto": "Contra la misma no procederá ulterior recurso, salvo en los supuestos de movilidad geográfica previstos en el apartado 2 del artículo 40"
+       }
+      },
+      {
+       "si": "¿Qué apartado del art. 41 ET define el carácter colectivo, a efectos de recurso?",
+       "entonces": "La LRJS no coincide: el art. 191.2.e remite al apartado 2 y el art. 138.6, al apartado 4. Ver el aviso.",
+       "articulos": [
+        "191",
+        "138"
+       ],
+       "literal": {
+        "articulo": "191",
+        "texto": "salvo cuando tengan carácter colectivo de conformidad con el apartado 2 del artículo 41 del referido Estatuto"
        }
       }
      ],
