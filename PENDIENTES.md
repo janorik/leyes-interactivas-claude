@@ -360,9 +360,18 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > Quinto desarrollo de la LRJS, en el orden elegido por el usuario: bloques «Condiciones de trabajo y materia electoral» (5 fichas), «Seguridad Social, procedimiento de oficio y actos administrativos» (3), «Conflictos colectivos, convenios y estatutos sindicales» (3) y «Tutela de los derechos fundamentales» (1); 35 plazos. Materia electoral, procedimiento de oficio y estatutos sindicales van en ficha breve (qué es, quién demanda, plazo y recurso), como pidió el usuario. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
 
-- [ ] **Art. 138.6 frente al art. 191.2.e: ¿art. 41.4 o 41.2 del Estatuto? Pendiente de revisión individual (23-10-2026).** Con la opinión aportada por el usuario (consulta a Perplexity), la ficha reproduce ahora las dos remisiones literales en un aviso y en una alternativa, sin unificarlas. Esa opinión sostiene que el apartado 2 del art. 41 ET es el que define el carácter colectivo y que la remisión del art. 138.6 al apartado 4 está desfasada; no se puede comprobar aquí, porque el Estatuto no está en la app (No verificable). Se descarta su frase «en las modificaciones de carácter colectivo no procede suplicación», porque dice lo contrario de los arts. 138.6 y 191.2.e: en las colectivas es donde sí cabe recurso.
-  - **Tu respuesta:**
-- [x] **Arts. 125.a y 139.a: «veinte días» sin «hábiles». Resuelta (usuario, 23-10-2026, con la opinión de Perplexity que aporta):** se respeta la literalidad: «20 días» en vacaciones y conciliación, y «20 días hábiles» solo en el art. 138. Las fichas ya estaban así.
+- [ ] **Arts. 138.6 y 191.2.e: remisión al art. 41 del Estatuto de los Trabajadores.**
+  - **Estado:** pendiente de revisión individual.
+  - **Observación:** para el recurso en las modificaciones sustanciales de carácter colectivo, el art. 138.6 remite al «apartado 4 del artículo 41» y el art. 191.2.e, al «apartado 2 del artículo 41» del Estatuto (Verificable: texto consolidado de la app).
+  - **Criterio provisional:** mantener el texto legal literal, sin corregirlo por analogía. Hoy la ficha dice «de carácter colectivo» sin elegir apartado, y en un aviso reproduce entre comillas las dos remisiones tal como están en la ley.
+  - **Opiniones aportadas por el usuario (23-10-2026):** Perplexity sostiene que el apartado 2 es el que define el carácter colectivo y que el 138.6 está desfasado (No verificable: el Estatuto no está en la app); su frase «en las colectivas no procede suplicación» se descarta porque invierte la regla. ChatGPT propone no añadir el apartado hasta verificar el origen y la evolución de ambas remisiones.
+  - **Tu respuesta:** (¿se mantiene el aviso con las dos citas literales, o se quita y queda solo «de carácter colectivo»?)
+
+- [x] **Arts. 125.a y 139.1.a: plazo de veinte días.**
+  - **Estado:** resuelta con criterio de literalidad normativa (usuario, 23-10-2026, con las opiniones de Perplexity y ChatGPT que aporta).
+  - **Observación:** los arts. 125.a (vacaciones) y 139.1.a (conciliación) dicen «veinte días» sin calificarlos como hábiles; el art. 138.1 dice expresamente «veinte días hábiles» (Verificable).
+  - **Criterio:** reproducir literalmente el plazo de cada precepto, sin añadir «hábiles» ni equiparar los plazos por analogía. La literalidad no resuelve por sí sola el cómputo: las fichas no afirman que esos plazos sean naturales; el cómputo jurídico depende del régimen procesal aplicable.
+
 - [ ] **Revisa las 12 fichas.**
 
 ### Ejecución y ejecución provisional (Chat 4, contenido elaborado, pendiente de revisión)
