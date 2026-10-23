@@ -1,4 +1,4 @@
 {
  "_nota": "Versión publicada de la web, visible solo en la portada. Claude la sube en 1 cada vez que publica (une a la rama principal); es el mismo número que se da al usuario con ?v=N. Después se regenera la portada.",
- "version": 26
+ "version": 27
 }
