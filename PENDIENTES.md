@@ -437,6 +437,19 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [ ] **Contraste con una segunda lectura del PDF:** 21 tramos distintos, todos de maquetación (palabras partidas con guion a final de línea, como «contencioso-administrativo», y epígrafes que ocupan dos líneas y que la otra lectura pone en otro orden). Detalle en `lrjs/datos/informe_control.md`. No hay huecos en la numeración ni artículos sin texto.
 - [ ] **Disposiciones finales primera y segunda:** modifican otras leyes y el BOE resalta en negrita parte de su texto; en la app se ve igual.
 
+## LJCA — Ley reguladora de la Jurisdicción Contencioso-administrativa
+
+### Puntos de extracción (F1, Chat 5)
+
+> Texto literal extraído del PDF `fuentes/LJCA_BOE-A-1998-16718.pdf` con `python3 scripts/extraer_ley.py ljca`: preámbulo (exposición de motivos), 149 artículos (139 numerados más los «bis», «ter»…) y 25 disposiciones; 47 rótulos de estructura, todos los del índice del PDF. Detalle en `ljca/datos/informe_control.md`.
+
+- [ ] **Fecha de la versión: 03 de enero de 2025** (Verificable: portada del PDF). ¿Es la última? Si descargaste el PDF del BOE el 23-10-2026, lo es. **Tu respuesta:**
+- [ ] **Contraste con una segunda lectura del PDF:** 38 tramos distintos, todos de maquetación: la palabra «contencioso-administrativo» partida con guion a final de línea (la otra lectura la pega sin guion), el final del índice, una nota del BOE leída en otro orden (art. 9, Comité de Disciplina Deportiva) y títulos de disposiciones partidos en dos columnas. No hay huecos en la numeración ni artículos sin texto (Verificable: informe de control).
+- [ ] **Artículos vacíos:** 95 a 101 «(Suprimido)» (la casación anterior a la reforma de 2015) y un apartado «(Anulado)» en los arts. 10 y 11 (Verificable: texto del PDF). Se muestran tal cual.
+- [ ] **Disposición adicional cuarta, apartado 5:** el PDF escribe «Sala de lo Contencioso- Administrativo», con un espacio tras el guion a mitad de línea (Verificable: PDF, pág. 71). Se deja literal.
+- [ ] **Nombre en la cabecera de la app:** «Ley reguladora de la Jurisdicción Contencioso-administrativa» no cabe en 3 líneas del móvil y se corta («Contencioso-…»). **Propuesta:** dejarlo; la abreviatura «LJCA» en dorado ya identifica la ley (No verificable). **Tu respuesta:**
+- [ ] **Canon de la LJCA:** para el mapa procesal hace falta saber qué quieres desarrollar. ¿Tienes canon de la LJCA en tu plataforma? **Tu respuesta:**
+
 ## Páginas legales (todas las leyes)
 
 Aviso legal, Política de privacidad y Política de cookies (`aviso-legal.html`, `politica-privacidad.html`, `cookies.html`), y la ventana «© 2026 J A Noriega (Norik)» del pie. Hechas a partir de las de norlexia.es (repositorio WEB-NORLEXIA, `bocetos/`), adaptadas a esta app: sin formulario, sin Google Fonts y sin cookies.

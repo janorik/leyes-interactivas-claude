@@ -3,6 +3,7 @@
 
 Uso:  python3 scripts/extraer_ley.py lecrim
       python3 scripts/extraer_ley.py lrjs
+      python3 scripts/extraer_ley.py ljca
 
 Vale para las leyes sin XML, con la maquetación de los PDF consolidados del BOE
 (la LEC usa scripts/extraer_lec.py porque parte del XML). Lo propio de cada ley
@@ -44,6 +45,12 @@ LEYES = {
              "rotulo_pre": "Preámbulo",
              "ley": {"id": "lrjs", "nombre": "Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social",
                      "abreviatura": "LRJS", "boe": "BOE-A-2011-15936"}},
+    "ljca": {"pdf": "LJCA_BOE-A-1998-16718.pdf", "pag_cuerpo": 3,
+             "inicio_pre": "JUAN CARLOS I", "fin_pre": "TÍTULO I", "saltar_fin": False,
+             "rotulo_pre": "Preámbulo",
+             "ley": {"id": "ljca", "nombre": "Ley 29/1998, de 13 de julio, reguladora de la Jurisdicción "
+                                             "Contencioso-administrativa",
+                     "abreviatura": "LJCA", "boe": "BOE-A-1998-16718"}},
 }
 LEY = sys.argv[1] if len(sys.argv) > 1 else "lecrim"
 CFG = LEYES[LEY]
@@ -65,7 +72,7 @@ RE_VACIO = re.compile(r"^\((Sin contenido|Derogad[oa]s?|Anulad[oa]s?|Suprimid[oa
 
 ORDINALES = {"primera": 1, "segunda": 2, "tercera": 3, "cuarta": 4, "quinta": 5, "sexta": 6,
              "séptima": 7, "octava": 8, "novena": 9, "décima": 10, "undécima": 11,
-             "duodécima": 12, "decimotercera": 13, "decimocuarta": 14, "decimoquinta": 15}
+             "duodécima": 12, "decimoprimera": 11, "decimotercera": 13, "decimocuarta": 14, "decimoquinta": 15}
 PREF = {"adicional": "da", "transitoria": "dt", "derogatoria": "dd", "final": "df"}
 GRUPOS = {"da": "Disposiciones adicionales", "dt": "Disposiciones transitorias",
           "dd": "Disposiciones derogatorias", "df": "Disposiciones finales"}
@@ -225,7 +232,9 @@ def construir(lineas):
         m = re.match(r"^Última modificación: (.+)$", t)
         if m:
             fecha = m.group(1).strip()
-        elif t != "TEXTO CONSOLIDADO":
+        elif t == "TEXTO CONSOLIDADO":
+            notas_gen = []  # lo anterior es el final del índice (LJCA: acaba en la página del cuerpo)
+        else:
             notas_gen.append(cuerpo[i])
         i += 1
     notas_generales = unir_notas(notas_gen)
@@ -326,7 +335,7 @@ def construir(lineas):
             # El epígrafe puede seguir en negrita en las líneas siguientes.
             while epi and i < len(cuerpo) and abs(cuerpo[i]["x"] - X_IZQ) < 1.5 and \
                     not encabezado(cuerpo[i]) and solo_estilo(cuerpo[i], ("b", "i", "bi")):
-                epi += " " + cuerpo[i]["t"].strip()
+                epi += ("" if epi.endswith("-") and not epi.endswith(" -") else " ") + cuerpo[i]["t"].strip()
                 i += 1
             if k in articulos:
                 avisos.append(f"{rot}: aparece dos veces (pág. {ln['p']})")
