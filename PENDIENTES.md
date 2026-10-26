@@ -448,6 +448,7 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [ ] **Artículos vacíos:** 95 a 101 «(Suprimido)» (la casación anterior a la reforma de 2015) y un apartado «(Anulado)» en los arts. 10 y 11 (Verificable: texto del PDF). Se muestran tal cual.
 - [ ] **Disposición adicional cuarta, apartado 5:** el PDF escribe «Sala de lo Contencioso- Administrativo», con un espacio tras el guion a mitad de línea (Verificable: PDF, pág. 71). Se deja literal.
 - [x] **Nombre en la cabecera de la app:** «Ley reguladora de la Jurisdicción Contencioso-administrativa» no cabe en 3 líneas del móvil y se corta («Contencioso-…»). **Propuesta:** dejarlo; la abreviatura «LJCA» en dorado ya identifica la ley (No verificable). **Tu respuesta:** «como sea mejor»: se deja así.
+- [ ] **Remisión desfasada al art. 101 (art. 10.6):** el art. 10.6 dice que las Salas de los TSJ «Conocerán del recurso de casación en interés de la ley previsto en el artículo 101», que figura como «(Suprimido)» (Verificable). Estado: **pendiente de revisión individual**. **Propuesta:** como la del art. 99; la ficha de casación avisa de las dos (No verificable). **Tu respuesta:**
 - [ ] **Remisión desfasada al art. 99 (art. 10.5):** el art. 10.5 dice que las Salas de los TSJ «Conocerán del recurso de casación para la unificación de doctrina previsto en el artículo 99», y los arts. 95 a 101 figuran como «(Suprimido)» (Verificable: texto de la app). Estado: **pendiente de revisión individual** (criterio del usuario: no se corrige por analogía). **Propuesta:** en el mapa no se desarrolla ese recurso y se avisa de la remisión en la ficha de competencias (No verificable). **Tu respuesta:**
 - [ ] **Lo que el profesional mira y no está en la LJCA (Chat 5).** Para tratarlo cuando se hagan las Leyes 39/2015 y 40/2015 o cuando aportes la fuente; Claude no lo cita de memoria:
   - **Vía administrativa previa** (agotamiento, reposición potestativa, alzada, silencio): Ley 39/2015. **Propuesta:** ficha «Antes de ir al juzgado» enlazada a esa ley (No verificable). **Tu respuesta:**
@@ -464,6 +465,17 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [ ] **Art. 128.1: sin «día de gracia» para interponer.** El escrito presentado el día en que se notifica la caducidad vale, «salvo cuando se trate de plazos para preparar o interponer recursos» (Verificable). La ficha de plazos lo presenta como aviso práctico. **Tu respuesta:**
 - [ ] **Persona jurídica (art. 45.2.d).** En la ficha digo «normalmente, el acuerdo de su órgano» como ejemplo del documento que acredita los requisitos para litigar; la ley habla de «normas o estatutos que les sean de aplicación» (Verificable). El ejemplo es mío (No verificable). **Tu respuesta:**
 - [ ] **Revisa las 11 fichas** (2 de la guía y 9 del ordinario).
+
+### Recursos (Chat 5, contenido elaborado, pendiente de revisión)
+
+> Bloque «Recursos contra resoluciones procesales» del mapa (5 fichas: reposición y apelación de autos, apelación, casación, revisión de sentencias firmes, recursos contra el LAJ) y `ljca/datos/recursos.json`: 7 recursos, 26 casos del selector en 3 grupos (LAJ, Juez o Sala, Sentencia) y test. 18 plazos nuevos. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
+
+- [ ] **Queja: plazo de la LEC.** Los arts. 85.2 y 89.4 remiten la queja a la LEC (Verificable). Pongo el plazo del art. 495.1 LEC (diez días), comprobado en el texto de la LEC de esta app; ese artículo habla de la denegación del «recurso de casación» (Verificable). **Propuesta:** aplicarlo también a la queja por denegación de la apelación, por la remisión (No verificable). **Tu respuesta:**
+- [ ] **Revisión de sentencias firmes: plazos de la LEC (art. 512).** Por la remisión del art. 102.3 (Verificable). Igual que en la LRJS. **Tu respuesta:**
+- [ ] **Órgano de la apelación.** El art. 85.5 dice «la Sala de lo Contencioso-administrativo competente»; pongo TSJ (Juzgados) o Audiencia Nacional (Juzgados Centrales) por los arts. 10.2 y 11.2 (Verificable). **Tu respuesta:**
+- [ ] **Autos de la Sala del art. 87.1 en el selector.** Agrupo en un caso «inadmite el recurso o pone término a las medidas cautelares» (letras a y b) y señalo la reposición previa (art. 87.2). Las letras c a e (ejecución, ejecución provisional, extensión de efectos) y los autos del art. 87.1 bis quedan en la ficha de casación. **Propuesta:** suficiente para orientarse (No verificable). **Tu respuesta:**
+- [ ] **Sentencia de un Juzgado no apelable.** El selector la envía a casación «solo si contiene doctrina gravemente dañosa para los intereses generales y es susceptible de extensión de efectos» (art. 86.1); si no, es firme. **Tu respuesta:**
+- [ ] **Revisa las 5 fichas y el selector.**
 
 ## Páginas legales (todas las leyes)
 
