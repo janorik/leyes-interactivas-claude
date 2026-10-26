@@ -1,0 +1,447 @@
+{
+ "_nota": "Contenido ELABORADO (no literal), revisado:false. Cada literal se comprueba contra el artículo citado de la LJCA (scripts/insertar_datos.py ljca). Las frases de la LEC citadas en «efectos» se comprobaron a mano contra lec/datos/lec.json.",
+ "revisado": false,
+ "ubicacion": "Título IV, capítulo III · Recursos contra resoluciones procesales (arts. 79-102 bis)",
+ "grupos_selector": [
+  {
+   "quien": "LAJ",
+   "titulo": "Resoluciones del LAJ"
+  },
+  {
+   "quien": "Juez o Sala",
+   "titulo": "Providencias y autos del juzgado o de la sala"
+  },
+  {
+   "quien": "Sentencia",
+   "titulo": "Sentencias"
+  }
+ ],
+ "recursos": [
+  {
+   "id": "reposicion-laj",
+   "recurso": "Reposición (ante el LAJ)",
+   "contra_que": "Diligencias de ordenación y decretos no definitivos del LAJ, salvo que la ley prevea revisión directa.",
+   "plazo": "5 días desde la notificación",
+   "organo": "El mismo LAJ que dictó la resolución.",
+   "efectos": "Traslado a las demás partes por 3 días para impugnarlo; el LAJ resuelve por decreto dentro del tercer día. Si no se cumplen los requisitos, se inadmite por decreto recurrible directamente en revisión. Contra el decreto que resuelve la reposición cabe revisión ante el juez o tribunal.",
+   "articulos": [
+    "102 bis"
+   ],
+   "literales": [
+    {
+     "articulo": "102 bis",
+     "texto": "Contra las diligencias de ordenación y decretos no definitivos del Secretario judicial cabrá recurso de reposición ante el Secretario que dictó la resolución recurrida"
+    },
+    {
+     "articulo": "102 bis",
+     "texto": "El recurso de reposición se interpondrá en el plazo de cinco días a contar desde el siguiente al de la notificación de la resolución impugnada."
+    }
+   ]
+  },
+  {
+   "id": "revision-laj",
+   "recurso": "Revisión (contra decretos del LAJ)",
+   "contra_que": "El decreto que resuelve la reposición; directamente, los decretos que ponen fin al procedimiento o impiden su continuación y los demás en que la ley lo prevea (por ejemplo, el que declara firme la sentencia por no preparar la casación en plazo o el que declara desierta la casación).",
+   "plazo": "5 días",
+   "organo": "El juez, la jueza o el tribunal.",
+   "efectos": "Escrito citando la infracción. Sin efectos suspensivos. Traslado de 5 días a las demás partes y auto en 5 días. Contra la admisión o inadmisión no cabe recurso; contra el auto que lo resuelve, solo apelación o casación en los casos de los arts. 80 y 87.",
+   "articulos": [
+    "102 bis",
+    "89",
+    "92"
+   ],
+   "literales": [
+    {
+     "articulo": "102 bis",
+     "texto": "Cabrá recurso de revisión ante el juez, la jueza o el tribunal contra el decreto resolutivo de la reposición"
+    },
+    {
+     "articulo": "102 bis",
+     "texto": "El recurso de revisión deberá interponerse en el plazo de cinco días mediante escrito en el que deberá citarse la infracción en que la resolución hubiera incurrido."
+    }
+   ]
+  },
+  {
+   "id": "reposicion",
+   "recurso": "Reposición (ante el juez o tribunal)",
+   "contra_que": "Providencias y autos que no admiten apelación ni casación. No cabe contra los autos que resuelven una reposición o una aclaración, ni contra las resoluciones que la ley exceptúa.",
+   "plazo": "5 días desde la notificación",
+   "organo": "El mismo juez o tribunal que la dictó.",
+   "efectos": "No suspende la resolución, salvo que el órgano acuerde lo contrario. Traslado de 5 días a las demás partes; auto dentro del tercer día. Es requisito previo para preparar casación contra los autos de la Audiencia Nacional y de los TSJ del art. 87.1.",
+   "articulos": [
+    "79",
+    "87"
+   ],
+   "literales": [
+    {
+     "articulo": "79",
+     "texto": "Contra las providencias y los autos no susceptibles de apelación o casación podrá interponerse recurso de reposición"
+    },
+    {
+     "articulo": "79",
+     "texto": "El recurso de reposición se interpondrá en el plazo de cinco días a contar desde el siguiente al de la notificación de la resolución impugnada."
+    }
+   ]
+  },
+  {
+   "id": "apelacion",
+   "recurso": "Apelación",
+   "contra_que": "Sentencias de los Juzgados (y Juzgados Centrales), salvo cuantía no superior a 30.000 euros y materia electoral; siempre, las que inadmiten por cuantía, las de derechos fundamentales, las de litigios entre Administraciones, las de impugnación indirecta de disposiciones generales y las susceptibles de extensión de efectos. También los autos de los Juzgados del art. 80 (cautelares, ejecución, inadmisión, autorizaciones, ejecución provisional).",
+   "plazo": "15 días desde la notificación",
+   "organo": "Se presenta ante el Juzgado; resuelve la Sala del TSJ (Juzgados) o de la Audiencia Nacional (Juzgados Centrales).",
+   "efectos": "Contra sentencias, en ambos efectos (pero no impide la ejecución provisional ni medidas cautelares); contra autos, en un solo efecto. Escrito razonado. Oposición en 15 días; el apelado puede impugnar lo que le perjudique. Si se revoca una inadmisibilidad, la Sala resuelve también el fondo. Si se deniega la admisión, cabe queja.",
+   "articulos": [
+    "80",
+    "81",
+    "83",
+    "84",
+    "85",
+    "10",
+    "11"
+   ],
+   "literales": [
+    {
+     "articulo": "85",
+     "texto": "dentro de los quince días siguientes al de su notificación, mediante escrito razonado que deberá contener las alegaciones en que se fundamente el recurso"
+    },
+    {
+     "articulo": "81",
+     "texto": "Aquellos cuya cuantía no exceda de 30.000 euros."
+    },
+    {
+     "articulo": "80",
+     "texto": "Son apelables en un solo efecto los autos dictados por los Juzgados de lo Contencioso-administrativo"
+    }
+   ]
+  },
+  {
+   "id": "casacion",
+   "recurso": "Casación",
+   "contra_que": "Sentencias de la Audiencia Nacional y de los TSJ en única instancia o en apelación; sentencias de los Juzgados en única instancia solo si contienen doctrina gravemente dañosa para los intereses generales y son susceptibles de extensión de efectos; autos del art. 87 (previa reposición). No cabe en derecho de reunión ni en procesos contencioso-electorales.",
+   "plazo": "Preparación: 30 días desde la notificación. Interposición: 30 días desde que se admite.",
+   "organo": "Se prepara ante la Sala de instancia; resuelve la Sala Tercera del Tribunal Supremo (si el TSJ aplicó Derecho autonómico, una Sección especial del propio TSJ).",
+   "efectos": "Solo cuestiones de derecho. Se admite si hay interés casacional objetivo (art. 88). El escrito de preparación tiene contenido tasado (art. 89.2). Contra la admisión o inadmisión no cabe recurso; la inadmisión conlleva costas. No impide la ejecución provisional.",
+   "articulos": [
+    "86",
+    "87",
+    "87 bis",
+    "88",
+    "89",
+    "90",
+    "92",
+    "93"
+   ],
+   "literales": [
+    {
+     "articulo": "89",
+     "texto": "El recurso de casación se preparará ante la Sala de instancia en el plazo de treinta días"
+    },
+    {
+     "articulo": "88",
+     "texto": "presenta interés casacional objetivo para la formación de jurisprudencia"
+    },
+    {
+     "articulo": "90",
+     "texto": "Contra las providencias y los autos de admisión o inadmisión no cabrá recurso alguno."
+    }
+   ]
+  },
+  {
+   "id": "queja",
+   "recurso": "Queja",
+   "contra_que": "El auto del Juzgado que deniega la admisión de la apelación y el auto de la Sala que tiene por no preparada la casación.",
+   "plazo": "10 días desde la notificación (art. 495.1 LEC, al que remiten los arts. 85.2 y 89.4)",
+   "organo": "El órgano que debía resolver el recurso no admitido (Sala del TSJ o de la Audiencia Nacional; Tribunal Supremo).",
+   "efectos": "Se sustancia conforme a la Ley de Enjuiciamiento Civil: «en el plazo de diez días desde la notificación de la resolución que deniega la tramitación del recurso» (art. 495.1 LEC), con copia de la resolución recurrida; el tribunal resuelve en cinco días y contra su auto no cabe recurso (art. 495.2 y 3 LEC).",
+   "articulos": [
+    "85",
+    "89",
+    "10",
+    "11",
+    "12"
+   ],
+   "literales": [
+    {
+     "articulo": "85",
+     "texto": "denegará la admisión por medio de auto, contra el que podrá interponerse recurso de queja"
+    },
+    {
+     "articulo": "89",
+     "texto": "Contra este auto únicamente podrá interponerse recurso de queja"
+    }
+   ]
+  },
+  {
+   "id": "revision-firmes",
+   "recurso": "Revisión de sentencias firmes",
+   "contra_que": "Sentencias firmes, por motivos tasados: documentos decisivos recobrados, documentos falsos, falso testimonio, cohecho o maquinación fraudulenta, o sentencia del TEDH.",
+   "plazo": "Como máximo 5 años desde la publicación de la sentencia y 3 meses desde que se descubre el motivo (art. 512 LEC, al que remite el art. 102.3)",
+   "organo": "Sala del TSJ (sentencias de Juzgados), de la Audiencia Nacional (Juzgados Centrales) o del Tribunal Supremo (sentencias de Salas).",
+   "efectos": "Legitimación, plazos, procedimiento y efectos, según la Ley de Enjuiciamiento Civil: «En ningún caso podrá solicitarse la revisión después de transcurridos cinco años desde la fecha de la publicación de la sentencia» y solo «siempre que no hayan transcurrido tres meses desde el día en que se descubrieren los documentos decisivos, el cohecho, la violencia o el fraude» (art. 512 LEC; si el motivo es una sentencia del TEDH, un año desde su firmeza). Vista solo si la piden todas las partes o la Sala la estima necesaria.",
+   "articulos": [
+    "102",
+    "10",
+    "11",
+    "12"
+   ],
+   "literales": [
+    {
+     "articulo": "102",
+     "texto": "Habrá lugar a la revisión de una sentencia firme"
+    },
+    {
+     "articulo": "102",
+     "texto": "regirán las disposiciones de la Ley de Enjuiciamiento Civil"
+    }
+   ]
+  }
+ ],
+ "selector": [
+  {
+   "res": "Diligencia de ordenación",
+   "quien": "LAJ",
+   "recurso": "reposicion-laj",
+   "literal": {
+    "articulo": "102 bis",
+    "texto": "Contra las diligencias de ordenación y decretos no definitivos del Secretario judicial cabrá recurso de reposición"
+   }
+  },
+  {
+   "res": "Decreto no definitivo",
+   "quien": "LAJ",
+   "recurso": "reposicion-laj",
+   "literal": {
+    "articulo": "102 bis",
+    "texto": "Contra las diligencias de ordenación y decretos no definitivos del Secretario judicial cabrá recurso de reposición"
+   },
+   "nota": "Salvo que la ley prevea revisión directa."
+  },
+  {
+   "res": "Decreto que resuelve la reposición",
+   "quien": "LAJ",
+   "recurso": "revision-laj",
+   "literal": {
+    "articulo": "102 bis",
+    "texto": "Cabrá recurso de revisión ante el juez, la jueza o el tribunal contra el decreto resolutivo de la reposición"
+   }
+  },
+  {
+   "res": "Decreto que pone fin al procedimiento o impide su continuación",
+   "quien": "LAJ",
+   "recurso": "revision-laj",
+   "literal": {
+    "articulo": "102 bis",
+    "texto": "recurso directo de revisión contra los decretos por los que se ponga fin al procedimiento o impidan su continuación"
+   }
+  },
+  {
+   "res": "Decreto que declara firme la sentencia por no preparar la casación en plazo",
+   "quien": "LAJ",
+   "recurso": "revision-laj",
+   "literal": {
+    "articulo": "89",
+    "texto": "Contra esta decisión sólo cabrá el recurso directo de revisión regulado en el artículo 102 bis de esta Ley."
+   }
+  },
+  {
+   "res": "Decreto que declara desierto el recurso de casación",
+   "quien": "LAJ",
+   "recurso": "revision-laj",
+   "literal": {
+    "articulo": "92",
+    "texto": "Contra tal declaración sólo podrán interponerse los recursos que prevé el artículo 102 bis de esta Ley."
+   }
+  },
+  {
+   "res": "Providencia",
+   "quien": "Juez o Sala",
+   "recurso": "reposicion",
+   "literal": {
+    "articulo": "79",
+    "texto": "Contra las providencias y los autos no susceptibles de apelación o casación podrá interponerse recurso de reposición"
+   }
+  },
+  {
+   "res": "Auto que no admite apelación ni casación",
+   "quien": "Juez o Sala",
+   "recurso": "reposicion",
+   "literal": {
+    "articulo": "79",
+    "texto": "Contra las providencias y los autos no susceptibles de apelación o casación podrá interponerse recurso de reposición"
+   }
+  },
+  {
+   "res": "Auto que resuelve un recurso de reposición",
+   "quien": "Juez o Sala",
+   "recurso": null,
+   "literal": {
+    "articulo": "79",
+    "texto": "ni contra los autos que resuelvan los recursos de reposición y los de aclaración"
+   }
+  },
+  {
+   "res": "Auto del Juzgado que pone término a la pieza de medidas cautelares",
+   "quien": "Juez o Sala",
+   "recurso": "apelacion",
+   "literal": {
+    "articulo": "80",
+    "texto": "Los que pongan término a la pieza separada de medidas cautelares."
+   },
+   "nota": "En un solo efecto."
+  },
+  {
+   "res": "Auto del Juzgado dictado en ejecución de sentencia",
+   "quien": "Juez o Sala",
+   "recurso": "apelacion",
+   "literal": {
+    "articulo": "80",
+    "texto": "Los recaídos en ejecución de sentencia."
+   },
+   "nota": "En un solo efecto."
+  },
+  {
+   "res": "Auto del Juzgado que inadmite el recurso o impide su continuación",
+   "quien": "Juez o Sala",
+   "recurso": "apelacion",
+   "literal": {
+    "articulo": "80",
+    "texto": "Los que declaren la inadmisión del recurso contencioso-administrativo o hagan imposible su continuación."
+   },
+   "nota": "En un solo efecto."
+  },
+  {
+   "res": "Auto de la Sala (Audiencia Nacional o TSJ) que inadmite el recurso o pone término a las medidas cautelares",
+   "quien": "Juez o Sala",
+   "recurso": "casacion",
+   "literal": {
+    "articulo": "87",
+    "texto": "es requisito necesario interponer previamente el recurso de reposición"
+   },
+   "nota": "Primero, reposición; después, casación (art. 87.2)."
+  },
+  {
+   "res": "Auto del Juzgado que deniega la admisión de la apelación",
+   "quien": "Juez o Sala",
+   "recurso": "queja",
+   "literal": {
+    "articulo": "85",
+    "texto": "denegará la admisión por medio de auto, contra el que podrá interponerse recurso de queja"
+   }
+  },
+  {
+   "res": "Auto de la Sala que tiene por no preparada la casación",
+   "quien": "Juez o Sala",
+   "recurso": "queja",
+   "literal": {
+    "articulo": "89",
+    "texto": "Contra este auto únicamente podrá interponerse recurso de queja"
+   }
+  },
+  {
+   "res": "Auto que tiene por preparada la casación (para la parte recurrida)",
+   "quien": "Juez o Sala",
+   "recurso": null,
+   "literal": {
+    "articulo": "89",
+    "texto": "la parte recurrida no podrá interponer recurso alguno"
+   },
+   "nota": "Puede oponerse a la admisión al comparecer ante el Tribunal Supremo."
+  },
+  {
+   "res": "Providencia o auto del Tribunal Supremo que admite o inadmite la casación",
+   "quien": "Juez o Sala",
+   "recurso": null,
+   "literal": {
+    "articulo": "90",
+    "texto": "Contra las providencias y los autos de admisión o inadmisión no cabrá recurso alguno."
+   }
+  },
+  {
+   "res": "Auto que admite el recurso contencioso-administrativo",
+   "quien": "Juez o Sala",
+   "recurso": null,
+   "literal": {
+    "articulo": "51",
+    "texto": "El auto de admisión no será recurrible"
+   },
+   "nota": "La inadmisibilidad puede alegarse después."
+  },
+  {
+   "res": "Auto que desestima las alegaciones previas",
+   "quien": "Juez o Sala",
+   "recurso": null,
+   "literal": {
+    "articulo": "59",
+    "texto": "El auto desestimatorio de las alegaciones previas no será susceptible de recurso"
+   }
+  },
+  {
+   "res": "Sentencia de un Juzgado (cuantía superior a 30.000 euros)",
+   "quien": "Sentencia",
+   "recurso": "apelacion",
+   "literal": {
+    "articulo": "81",
+    "texto": "serán susceptibles de recurso de apelación, salvo que se hubieran dictado en los asuntos siguientes"
+   }
+  },
+  {
+   "res": "Sentencia de un Juzgado en derechos fundamentales",
+   "quien": "Sentencia",
+   "recurso": "apelacion",
+   "literal": {
+    "articulo": "81",
+    "texto": "Las dictadas en el procedimiento para la protección de los derechos fundamentales de la persona."
+   },
+   "nota": "Siempre apelable, sea cual sea la cuantía."
+  },
+  {
+   "res": "Sentencia de un Juzgado en un litigio entre Administraciones",
+   "quien": "Sentencia",
+   "recurso": "apelacion",
+   "literal": {
+    "articulo": "81",
+    "texto": "Las que resuelvan litigios entre Administraciones públicas."
+   },
+   "nota": "Siempre apelable."
+  },
+  {
+   "res": "Sentencia de un Juzgado en única instancia (no apelable)",
+   "quien": "Sentencia",
+   "recurso": "casacion",
+   "literal": {
+    "articulo": "86",
+    "texto": "únicamente serán susceptibles de recurso las sentencias que contengan doctrina que se reputa gravemente dañosa para los intereses generales y sean susceptibles de extensión de efectos"
+   },
+   "nota": "Solo en ese caso; si no, es firme."
+  },
+  {
+   "res": "Sentencia de la Audiencia Nacional o de un TSJ (única instancia o apelación)",
+   "quien": "Sentencia",
+   "recurso": "casacion",
+   "literal": {
+    "articulo": "86",
+    "texto": "serán susceptibles de recurso de casación ante la Sala de lo Contencioso-administrativo del Tribunal Supremo"
+   },
+   "nota": "Si es del TSJ, solo por infracción de Derecho estatal o de la UE (art. 86.3)."
+  },
+  {
+   "res": "Sentencia sobre el derecho de reunión o en proceso contencioso-electoral",
+   "quien": "Sentencia",
+   "recurso": null,
+   "literal": {
+    "articulo": "86",
+    "texto": "Se exceptúan de lo establecido en el apartado anterior las sentencias dictadas en el procedimiento para la protección del derecho fundamental de reunión y en los procesos contencioso-electorales."
+   },
+   "nota": "Excluidas de la casación (art. 86.2)."
+  },
+  {
+   "res": "Sentencia firme (motivos tasados)",
+   "quien": "Sentencia",
+   "recurso": "revision-firmes",
+   "literal": {
+    "articulo": "102",
+    "texto": "Habrá lugar a la revisión de una sentencia firme"
+   }
+  }
+ ]
+}

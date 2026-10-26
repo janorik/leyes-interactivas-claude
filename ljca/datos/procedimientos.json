@@ -749,7 +749,11 @@
       "58",
       "69"
      ],
-     "continua_en": []
+     "continua_en": [],
+     "recursos_rel": [
+      "apelacion",
+      "casacion"
+     ]
     },
     {
      "id": "ordinario-52",
@@ -1230,7 +1234,12 @@
       "110",
       "139"
      ],
-     "continua_en": []
+     "continua_en": [],
+     "recursos_rel": [
+      "apelacion",
+      "casacion",
+      "revision-firmes"
+     ]
     },
     {
      "id": "ordinario-74",
@@ -1467,15 +1476,19 @@
    "nombre": "Recursos contra resoluciones procesales",
    "bloque": "ljca",
    "grupo": "Recursos",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Qué recurso cabe contra cada resolución del proceso contencioso-administrativo: reposición y revisión frente al LAJ, reposición y apelación de autos, apelación de sentencias, casación ante el Tribunal Supremo, queja y revisión de sentencias firmes.",
    "ambito": {
     "corto": "Arts. 79 a 102",
     "texto": "CAPÍTULO III. Recursos contra resoluciones procesales",
     "articulos": [
      "79"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "79",
+      "texto": "Contra las providencias y los autos no susceptibles de apelación o casación podrá interponerse recurso de reposición"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
@@ -1483,7 +1496,7 @@
      "id": "recursos-79",
      "fase": "Recursos contra providencias y autos",
      "subtitulo": "CAPÍTULO III · Sección 1.ª · arts. 79 a 80",
-     "descripcion": "",
+     "descripcion": "Contra providencias y autos que no admiten apelación ni casación cabe reposición ante el mismo órgano; no suspende la resolución. Ciertos autos de los Juzgados se apelan en un solo efecto: los que ponen fin a la pieza de medidas cautelares, los dictados en ejecución, los que inadmiten el recurso o impiden su continuación, los de autorizaciones y los de ejecución provisional.",
      "articulos": [
       "79",
       "80"
@@ -1492,65 +1505,427 @@
       "79",
       "80"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Reposición",
+       "plazo": "5 días",
+       "articulo": "79",
+       "literal": "El recurso de reposición se interpondrá en el plazo de cinco días"
+      },
+      {
+       "acto": "Impugnar la reposición",
+       "plazo": "5 días",
+       "articulo": "79",
+       "literal": "por término común de cinco días, a fin de que puedan impugnarlo"
+      },
+      {
+       "acto": "Resolver la reposición",
+       "plazo": "3 días",
+       "articulo": "79",
+       "literal": "el órgano jurisdiccional resolverá por auto dentro del tercer día"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se quiere recurrir el auto que resolvió la reposición",
+       "entonces": "No cabe nueva reposición.",
+       "articulos": [
+        "79"
+       ],
+       "literal": {
+        "articulo": "79",
+        "texto": "ni contra los autos que resuelvan los recursos de reposición y los de aclaración"
+       }
+      },
+      {
+       "si": "Se quiere que la resolución no se cumpla mientras",
+       "entonces": "La reposición no suspende, salvo que el órgano lo acuerde de oficio o a instancia de parte.",
+       "articulos": [
+        "79"
+       ],
+       "literal": {
+        "articulo": "79",
+        "texto": "sin perjuicio del cual se llevará a efecto la resolución impugnada, salvo que el órgano jurisdiccional, de oficio o a instancia de parte, acuerde lo contrario"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿En qué efecto se apelan los autos de los Juzgados del art. 80?",
+      "a": "En un solo efecto.",
+      "articulos": [
+       "80"
+      ],
+      "literal": {
+       "articulo": "80",
+       "texto": "Son apelables en un solo efecto los autos"
+      }
+     },
+     "recursos_rel": [
+      "reposicion",
+      "apelacion"
+     ],
+     "conexiones": [
+      "79",
+      "80",
+      "85",
+      "87"
+     ],
+     "continua_en": []
     },
     {
      "id": "recursos-81",
      "fase": "Recurso ordinario de apelación",
      "subtitulo": "CAPÍTULO III · Sección 2.ª · arts. 81 a 85",
-     "descripcion": "",
+     "descripcion": "Las sentencias de los Juzgados se apelan salvo cuantía no superior a 30.000 euros y materia electoral. Se apelan siempre las que inadmiten por cuantía, las de derechos fundamentales, las de litigios entre Administraciones, las de impugnación indirecta de disposiciones generales y las susceptibles de extensión de efectos. Se presenta ante el propio Juzgado y resuelve la Sala del TSJ o de la Audiencia Nacional. No impide la ejecución provisional.",
      "articulos": [
       "81",
+      "82",
+      "83",
+      "84",
       "85"
      ],
      "rango": [
       "81",
       "85"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Interponer la apelación",
+       "plazo": "15 días",
+       "articulo": "85",
+       "literal": "dentro de los quince días siguientes al de su notificación"
+      },
+      {
+       "acto": "Oposición del apelado",
+       "plazo": "15 días",
+       "articulo": "85",
+       "literal": "en el plazo común de quince días, puedan formalizar su oposición"
+      },
+      {
+       "acto": "Oponerse a la impugnación del apelado",
+       "plazo": "10 días",
+       "articulo": "85",
+       "literal": "por plazo de diez días, al solo efecto de que pueda oponerse a la impugnación"
+      },
+      {
+       "acto": "Comparecer ante la Sala",
+       "plazo": "30 días",
+       "articulo": "85",
+       "literal": "para su comparecencia en el plazo de treinta días"
+      },
+      {
+       "acto": "Sentencia de la Sala",
+       "plazo": "10 días",
+       "articulo": "85",
+       "literal": "La Sala dictará sentencia en el plazo de diez días"
+      },
+      {
+       "acto": "Resolver sobre la ejecución provisional",
+       "plazo": "5 días tras audiencia de 5",
+       "articulo": "84",
+       "literal": "Previa audiencia de las demás partes por plazo común de cinco días, el Juez resolverá sobre la ejecución provisional en el término de los cinco días siguientes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Pasan los 15 días sin apelar",
+       "entonces": "Se declara la firmeza de la sentencia.",
+       "articulos": [
+        "85"
+       ],
+       "literal": {
+        "articulo": "85",
+        "texto": "Transcurrido el plazo de quince días sin haberse interpuesto el recurso de apelación"
+       }
+      },
+      {
+       "si": "No se admite la apelación",
+       "entonces": "Auto del juez denegándola; cabe queja (se tramita conforme a la LEC).",
+       "articulos": [
+        "85"
+       ],
+       "literal": {
+        "articulo": "85",
+        "texto": "denegará la admisión por medio de auto, contra el que podrá interponerse recurso de queja"
+       }
+      },
+      {
+       "si": "El apelado también está en desacuerdo con parte de la sentencia",
+       "entonces": "Puede impugnarla en su escrito de oposición, en lo que le perjudique.",
+       "articulos": [
+        "85"
+       ],
+       "literal": {
+        "articulo": "85",
+        "texto": "También podrá el apelado, en el mismo escrito, impugnar la sentencia apelada en lo que le resulte desfavorable"
+       }
+      },
+      {
+       "si": "La sentencia apelada había inadmitido el recurso",
+       "entonces": "Si la Sala la revoca, resuelve a la vez sobre el fondo.",
+       "articulos": [
+        "85"
+       ],
+       "literal": {
+        "articulo": "85",
+        "texto": "resolverá al mismo tiempo sobre el fondo del asunto"
+       }
+      },
+      {
+       "si": "La parte favorecida quiere ejecutar ya",
+       "entonces": "Puede pedir la ejecución provisional; no se acuerda si produce situaciones irreversibles o perjuicios de imposible reparación.",
+       "articulos": [
+        "84"
+       ],
+       "literal": {
+        "articulo": "84",
+        "texto": "No se acordará la ejecución provisional cuando la misma sea susceptible de producir situaciones irreversibles o perjuicios de imposible reparación"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Sentencia de un Juzgado en un asunto de 20.000 euros. ¿Cabe apelación?",
+      "a": "En principio no (cuantía no superior a 30.000 euros), salvo los supuestos en que siempre cabe: derechos fundamentales, litigios entre Administraciones, impugnación indirecta de disposiciones, extensión de efectos o inadmisión por cuantía.",
+      "articulos": [
+       "81"
+      ],
+      "literal": {
+       "articulo": "81",
+       "texto": "Aquellos cuya cuantía no exceda de 30.000 euros."
+      }
+     },
+     "recursos_rel": [
+      "apelacion",
+      "queja"
+     ],
+     "conexiones": [
+      "10",
+      "11",
+      "40",
+      "81",
+      "84",
+      "85"
+     ],
+     "continua_en": []
     },
     {
      "id": "recursos-86",
      "fase": "Recurso de casación",
      "subtitulo": "CAPÍTULO III · Sección 3.ª · arts. 86 a 95",
-     "descripcion": "",
+     "descripcion": "La casación ante el Tribunal Supremo se limita a cuestiones de derecho y exige interés casacional objetivo. Se prepara ante la Sala de instancia con un escrito de contenido tasado (art. 89.2); si se tiene por preparado, se emplaza ante el Supremo, donde una Sección de admisión decide sin recurso posible. Admitido, se interpone y se opone por escrito. Las sentencias de los Juzgados en única instancia solo son recurribles si contienen doctrina gravemente dañosa y son susceptibles de extensión de efectos.",
      "articulos": [
       "86",
-      "95"
+      "87",
+      "87 bis",
+      "88",
+      "89",
+      "90",
+      "91",
+      "92",
+      "93"
      ],
      "rango": [
       "86",
       "95"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Preparar la casación",
+       "plazo": "30 días",
+       "articulo": "89",
+       "literal": "El recurso de casación se preparará ante la Sala de instancia en el plazo de treinta días"
+      },
+      {
+       "acto": "Comparecer ante el Tribunal Supremo",
+       "plazo": "15 días",
+       "articulo": "89",
+       "literal": "dentro del plazo de quince días ante la Sala de lo Contencioso-administrativo del Tribunal Supremo"
+      },
+      {
+       "acto": "Escrito de interposición",
+       "plazo": "30 días",
+       "articulo": "92",
+       "literal": "dispone de un plazo de treinta días, a contar desde la notificación de aquélla, para presentar en la Secretaría de esa Sección competente el escrito de interposición"
+      },
+      {
+       "acto": "Oposición",
+       "plazo": "30 días",
+       "articulo": "92",
+       "literal": "para que puedan oponerse al recurso en el plazo común de treinta días"
+      },
+      {
+       "acto": "Sentencia",
+       "plazo": "10 días desde la deliberación",
+       "articulo": "92",
+       "literal": "dictará sentencia en el plazo de diez días desde que termine la deliberación para votación y fallo"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No se prepara en 30 días",
+       "entonces": "La resolución queda firme por decreto del LAJ; solo cabe revisión directa.",
+       "articulos": [
+        "89",
+        "102 bis"
+       ],
+       "literal": {
+        "articulo": "89",
+        "texto": "la sentencia o auto quedará firme"
+       }
+      },
+      {
+       "si": "El escrito de preparación no cumple el art. 89.2",
+       "entonces": "La Sala de instancia lo tiene por no preparado; solo cabe queja.",
+       "articulos": [
+        "89"
+       ],
+       "literal": {
+        "articulo": "89",
+        "texto": "tendrá por no preparado el recurso de casación"
+       }
+      },
+      {
+       "si": "Se inadmite en el Supremo",
+       "entonces": "Sin recurso, y con costas para el recurrente (pueden limitarse).",
+       "articulos": [
+        "90"
+       ],
+       "literal": {
+        "articulo": "90",
+        "texto": "La inadmisión a trámite del recurso de casación comportará la imposición de las costas a la parte recurrente"
+       }
+      },
+      {
+       "si": "No se presenta el escrito de interposición",
+       "entonces": "El recurso se declara desierto; solo caben los recursos del art. 102 bis.",
+       "articulos": [
+        "92"
+       ],
+       "literal": {
+        "articulo": "92",
+        "texto": "declarará desierto el recurso"
+       }
+      },
+      {
+       "si": "Se recurre una sentencia de un TSJ",
+       "entonces": "Solo por infracción relevante de Derecho estatal o de la UE; si es Derecho autonómico, conoce una Sección especial del TSJ.",
+       "articulos": [
+        "86"
+       ],
+       "literal": {
+        "articulo": "86",
+        "texto": "si el recurso pretende fundarse en infracción de normas de Derecho estatal o de la Unión Europea que sea relevante y determinante del fallo impugnado"
+       }
+      },
+      {
+       "si": "Se recurre un auto del art. 87.1",
+       "entonces": "Antes hay que interponer reposición.",
+       "articulos": [
+        "87"
+       ],
+       "literal": {
+        "articulo": "87",
+        "texto": "es requisito necesario interponer previamente el recurso de reposición"
+       }
+      }
+     ],
+     "aviso": "La casación para la unificación de doctrina y en interés de la ley (arts. 96-101) está suprimida en el texto consolidado, aunque los arts. 10.5 y 10.6 todavía la mencionan (anotado en PENDIENTES).",
+     "pregunta": {
+      "q": "¿Puede discutirse en casación la valoración de los hechos?",
+      "a": "No: se limita a cuestiones de derecho, aunque el Supremo puede integrar hechos omitidos que estén justificados (art. 93.3).",
+      "articulos": [
+       "87 bis",
+       "93"
+      ],
+      "literal": {
+       "articulo": "87 bis",
+       "texto": "se limitará a las cuestiones de derecho, con exclusión de las cuestiones de hecho"
+      }
+     },
+     "recursos_rel": [
+      "casacion",
+      "queja"
+     ],
+     "conexiones": [
+      "12",
+      "86",
+      "87",
+      "88",
+      "89",
+      "90",
+      "92",
+      "93"
+     ],
+     "continua_en": []
     },
     {
      "id": "recursos-102",
      "fase": "De la revisión de sentencias",
      "subtitulo": "CAPÍTULO III · Sección 6.ª · art. 102",
-     "descripcion": "",
+     "descripcion": "Contra sentencias firmes cabe revisión por motivos tasados: documentos decisivos recobrados, documentos falsos, falso testimonio, cohecho, prevaricación, violencia o maquinación fraudulenta, y sentencia del TEDH que declare violado un derecho del Convenio. Legitimación, plazos, procedimiento y efectos, según la LEC.",
      "articulos": [
-      "102"
+      "102",
+      "10",
+      "11",
+      "12"
      ],
      "rango": [
       "102",
       "102"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "El motivo es una sentencia del TEDH",
+       "entonces": "Cabe revisión si la violación tiene efectos que persisten y no pueden cesar de otro modo, sin perjudicar a terceros de buena fe.",
+       "articulos": [
+        "102"
+       ],
+       "literal": {
+        "articulo": "102",
+        "texto": "cuando el Tribunal Europeo de Derechos Humanos haya declarado que dicha resolución ha sido dictada en violación"
+       }
+      },
+      {
+       "si": "¿Hay vista?",
+       "entonces": "Solo si la piden todas las partes o la Sala la estima necesaria.",
+       "articulos": [
+        "102"
+       ],
+       "literal": {
+        "articulo": "102",
+        "texto": "sólo habrá lugar a la celebración de vista cuando lo pidan todas las partes o la Sala lo estime necesario"
+       }
+      }
+     ],
+     "aviso": "Los plazos de la revisión están en el art. 512 de la [[Ley de Enjuiciamiento Civil|https://www.boe.es/buscar/act.php?id=BOE-A-2000-323]] (también en esta app): cinco años desde la publicación de la sentencia y tres meses desde que se descubre el motivo; un año desde la firmeza si el motivo es una sentencia del TEDH.",
+     "pregunta": {
+      "q": "¿Qué ley rige los plazos y el procedimiento de la revisión?",
+      "a": "La Ley de Enjuiciamiento Civil.",
+      "articulos": [
+       "102"
+      ],
+      "literal": {
+       "articulo": "102",
+       "texto": "En lo referente a legitimación, plazos, procedimiento y efectos de las sentencias dictadas en este procedimiento de revisión, regirán las disposiciones de la Ley de Enjuiciamiento Civil."
+      }
+     },
+     "recursos_rel": [
+      "revision-firmes"
+     ],
+     "conexiones": [
+      "10",
+      "11",
+      "12",
+      "102"
+     ],
+     "continua_en": []
     },
     {
      "id": "recursos-102_bis",
      "fase": "Recursos contra las resoluciones del Secretario judicial",
      "subtitulo": "CAPÍTULO III · Sección 7.ª · art. 102 bis",
-     "descripcion": "",
+     "descripcion": "Contra diligencias de ordenación y decretos no definitivos del LAJ cabe reposición ante el propio LAJ. Contra el decreto que la resuelve, y directamente contra los decretos que ponen fin al procedimiento o impiden su continuación, cabe revisión ante el juez o tribunal, sin efectos suspensivos.",
      "articulos": [
       "102 bis"
      ],
@@ -1558,9 +1933,79 @@
       "102 bis",
       "102 bis"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Reposición ante el LAJ",
+       "plazo": "5 días",
+       "articulo": "102 bis",
+       "literal": "El recurso de reposición se interpondrá en el plazo de cinco días"
+      },
+      {
+       "acto": "Impugnar la reposición",
+       "plazo": "3 días",
+       "articulo": "102 bis",
+       "literal": "por término común de tres días"
+      },
+      {
+       "acto": "Revisión ante el juez o tribunal",
+       "plazo": "5 días",
+       "articulo": "102 bis",
+       "literal": "El recurso de revisión deberá interponerse en el plazo de cinco días"
+      },
+      {
+       "acto": "Resolver la revisión",
+       "plazo": "5 días",
+       "articulo": "102 bis",
+       "literal": "mediante auto, en un plazo de cinco días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se quiere recurrir el auto que resuelve la revisión",
+       "entonces": "Solo apelación o casación en los supuestos de los arts. 80 y 87.",
+       "articulos": [
+        "102 bis",
+        "80",
+        "87"
+       ],
+       "literal": {
+        "articulo": "102 bis",
+        "texto": "únicamente cabrá recurso de apelación y de casación en los supuestos previstos en los artículos 80 y 87"
+       }
+      },
+      {
+       "si": "La revisión se inadmite",
+       "entonces": "Por providencia, sin recurso.",
+       "articulos": [
+        "102 bis"
+       ],
+       "literal": {
+        "articulo": "102 bis",
+        "texto": "Contra las resoluciones sobre admisión o inadmisión no cabrá recurso alguno."
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿La revisión contra un decreto suspende lo acordado?",
+      "a": "No: carece de efectos suspensivos.",
+      "articulos": [
+       "102 bis"
+      ],
+      "literal": {
+       "articulo": "102 bis",
+       "texto": "Dichos recursos carecerán de efectos suspensivos"
+      }
+     },
+     "recursos_rel": [
+      "reposicion-laj",
+      "revision-laj"
+     ],
+     "conexiones": [
+      "89",
+      "92",
+      "102 bis"
+     ],
+     "continua_en": []
     }
    ]
   },
