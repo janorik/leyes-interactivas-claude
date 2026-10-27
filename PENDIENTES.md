@@ -477,6 +477,26 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [ ] **Sentencia de un Juzgado no apelable.** El selector la envía a casación «solo si contiene doctrina gravemente dañosa para los intereses generales y es susceptible de extensión de efectos» (art. 86.1); si no, es firme. **Tu respuesta:**
 - [ ] **Revisa las 5 fichas y el selector.**
 
+### Procedimiento abreviado (Chat 6, contenido elaborado, pendiente de revisión)
+
+> Bloque «Procedimiento abreviado» (art. 78, con los arts. 29.2 y 81): 6 fichas (cuándo se sigue y demanda; admisión y citación; sin vista; vista y cuestiones procesales; hechos y prueba; sentencia y recurso) y 8 plazos. La primera ficha conserva el id del esqueleto (`abreviado-78`). Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
+
+- [ ] **Art. 78.1: ¿las materias van al abreviado sea cual sea la cuantía?** El artículo enumera personal, extranjería, inadmisión de asilo y dopaje, «así como todas aquellas cuya cuantía no supere los 30.000 euros» (Verificable). **Propuesta:** leer que esas materias van al abreviado aunque superen 30.000 euros, y que el límite de cuantía es solo para los demás asuntos; así lo pongo en la ficha (No verificable hasta que lo confirmes). **Tu respuesta:**
+- [ ] **Art. 78.17: «recurso de súplica».** El BOE anota que se entiende hecha al recurso de reposición, según la disposición adicional octava de la LJCA (Verificable: nota del PDF y texto de la DA 8.ª). Estado: **resuelta** (la propia ley lo dice). La ficha lo avisa. **Tu respuesta:**
+- [ ] **Recurso contra la sentencia del abreviado.** Pongo la regla general del art. 81 (sin apelación si la cuantía no excede de 30.000 euros, salvo los casos del art. 81.2) (Verificable). De ahí deduzco que en personal, extranjería, asilo o dopaje con cuantía superior o indeterminada cabe apelación (No verificable: deducción mía, depende de cómo se fije la cuantía, arts. 40-42). **Tu respuesta:**
+- [ ] **Abreviado sin vista (art. 78.3).** El artículo remite al art. 57 para declarar concluso el pleito; lo resumo como «queda concluso para sentencia, salvo prueba de oficio (art. 61)» (Verificable el texto; el resumen es mío). **Tu respuesta:**
+- [ ] **Revisa las 6 fichas.**
+
+### Plazos, medidas cautelares, incidentes y costas (Chat 6, contenido elaborado, pendiente de revisión)
+
+> Bloque «Disposiciones comunes» (arts. 128-139): 5 fichas (plazos; medidas cautelares, 129-134; medidas urgentes y previas al recurso, 135-136, ficha nueva `comunes-135`; incidentes, en ficha breve; costas) y 8 plazos. Mismos id del esqueleto en las otras cuatro.
+
+- [ ] **Recurso contra el auto de medidas cautelares.** En la ficha resumo: auto de un Juzgado que pone término a la pieza cautelar, apelación en un solo efecto (art. 80.1.a); de la Sala, casación previa reposición (arts. 87.1.b y 87.2); en lo demás, reposición (art. 79) (Verificable cada artículo; la combinación es mía). No detallo la excepción y el límite de los arts. 86.2 y 86.3 a los que remite el art. 87.1: están en la ficha de casación. **Tu respuesta:**
+- [ ] **Medida previa al recurso (art. 136.2).** El plazo de diez días es para interponer el recurso pidiendo la ratificación, desde la notificación de la medida (Verificable). Solo para inactividad (art. 29) y vía de hecho (art. 30), por la remisión del art. 136.2 al apartado anterior (Verificable). **Tu respuesta:**
+- [ ] **Art. 128.1 (sin día extra para recurrir):** la misma duda que en «Guía práctica y procedimiento ordinario»; la respuesta que des vale para las dos fichas.
+- [ ] **Costas en casación:** solo remito al art. 93.4, como hace el art. 139.3 (Verificable). **Tu respuesta:**
+- [ ] **Revisa las 5 fichas.**
+
 ## Páginas legales (todas las leyes)
 
 Aviso legal, Política de privacidad y Política de cookies (`aviso-legal.html`, `politica-privacidad.html`, `cookies.html`), y la ventana «© 2026 J A Noriega (Norik)» del pie. Hechas a partir de las de norlexia.es (repositorio WEB-NORLEXIA, `bocetos/`), adaptadas a esta app: sin formulario, sin Google Fonts y sin cookies.

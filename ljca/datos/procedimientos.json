@@ -1339,23 +1339,270 @@
    "nombre": "Procedimiento abreviado",
    "bloque": "ljca",
    "grupo": "Procedimientos",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "La ruta del procedimiento abreviado ante los Juzgados: cuándo se sigue, demanda directa, citación a vista (o tramitación escrita si se pide), vista con cuestiones procesales y prueba, sentencia y qué recurso cabe.",
    "ambito": {
     "corto": "Art. 78",
     "texto": "CAPÍTULO II. Procedimiento abreviado",
     "articulos": [
      "78"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "78",
+      "texto": "El recurso se iniciará por demanda, a la que se acompañará el documento o documentos en que el actor funde su derecho y aquellos previstos en el artículo 45.2"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
      "id": "abreviado-78",
-     "fase": "Procedimiento abreviado",
-     "subtitulo": "CAPÍTULO II · art. 78",
-     "descripcion": "",
+     "fase": "Cuándo se sigue y demanda",
+     "subtitulo": "CAPÍTULO II · art. 78.1-2 (y 29.2)",
+     "descripcion": "Solo ante los Juzgados y los Juzgados Centrales, en asuntos de su competencia sobre: personal al servicio de las Administraciones Públicas, extranjería, inadmisión de peticiones de asilo, disciplina deportiva en materia de dopaje y cualquier asunto de cuantía no superior a 30.000 euros. También el recurso por actos firmes no ejecutados (art. 29.2). No hay escrito de interposición ni reclamación previa del expediente: se empieza directamente por demanda, con los documentos en que se funda el derecho y los del art. 45.2. El plazo para presentarla es el general del art. 46 (ver «Plazos para recurrir»).",
+     "articulos": [
+      "78",
+      "29",
+      "45",
+      "46"
+     ],
+     "rango": [
+      "78",
+      "78"
+     ],
+     "plazos": [
+      {
+       "acto": "Presentar la demanda (acto expreso)",
+       "plazo": "2 meses",
+       "articulo": "46",
+       "literal": "El plazo para interponer el recurso contencioso-administrativo será de dos meses"
+      },
+      {
+       "acto": "Actos firmes no ejecutados: la Administración tiene para ejecutar tras la petición",
+       "plazo": "1 mes",
+       "articulo": "29",
+       "literal": "si ésta no se produce en el plazo de un mes desde tal petición"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El asunto supera 30.000 euros pero es de personal, extranjería, asilo o dopaje",
+       "entonces": "Por la letra del artículo, la materia basta: se sigue el abreviado (anotado en PENDIENTES para revisar).",
+       "articulos": [
+        "78"
+       ],
+       "literal": {
+        "articulo": "78",
+        "texto": "sobre cuestiones de personal al servicio de las Administraciones Públicas, sobre extranjería y sobre inadmisión de peticiones de asilo político, asuntos de disciplina deportiva en materia de dopaje, así como todas aquellas cuya cuantía no supere los 30.000 euros"
+       }
+      },
+      {
+       "si": "La Administración no ejecuta un acto firme",
+       "entonces": "Se pide la ejecución; si no se produce en un mes, se recurre y se tramita por el abreviado.",
+       "articulos": [
+        "29"
+       ],
+       "literal": {
+        "articulo": "29",
+        "texto": "que se tramitará por el procedimiento abreviado regulado en el artículo 78"
+       }
+      },
+      {
+       "si": "El asunto corresponde a un TSJ, la Audiencia Nacional o el Supremo",
+       "entonces": "No cabe el abreviado: se sigue el procedimiento ordinario.",
+       "articulos": [
+        "78",
+        "43"
+       ],
+       "literal": {
+        "articulo": "78",
+        "texto": "Los Juzgados de lo Contencioso-Administrativo y, en su caso, los Juzgados Centrales de lo Contencioso-Administrativo de este Orden Jurisdiccional conocen, por el procedimiento abreviado"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Con qué escrito empieza el procedimiento abreviado?",
+      "a": "Con la demanda, a la que se acompañan los documentos en que se funda el derecho y los del art. 45.2.",
+      "articulos": [
+       "78"
+      ],
+      "literal": {
+       "articulo": "78",
+       "texto": "El recurso se iniciará por demanda"
+      }
+     },
+     "conexiones": [
+      "8",
+      "29",
+      "40",
+      "45",
+      "46",
+      "81"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "abreviado-78_3",
+     "fase": "Admisión, citación a vista y expediente",
+     "subtitulo": "CAPÍTULO II · art. 78.3-4",
+     "descripcion": "El LAJ comprueba la jurisdicción y la competencia objetiva y admite la demanda; si tiene dudas, da cuenta al juez. Admitida, da traslado al demandado, cita a las partes a la vista con día y hora y requiere a la Administración el expediente en soporte electrónico. El expediente se entrega al actor y a los interesados personados para que aleguen en la vista. Si la demanda pide diligencias de preparación de la prueba, el LAJ acuerda lo necesario; el juez decide en el juicio si la admite.",
+     "articulos": [
+      "78"
+     ],
+     "rango": [
+      "78",
+      "78"
+     ],
+     "plazos": [
+      {
+       "acto": "Remisión del expediente por la Administración",
+       "plazo": "Al menos 15 días antes de la vista",
+       "articulo": "78",
+       "literal": "con al menos quince días de antelación del término señalado para la vista"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El LAJ no aprecia jurisdicción o competencia objetiva",
+       "entonces": "No admite: da cuenta al juez, que resuelve.",
+       "articulos": [
+        "78",
+        "7"
+       ],
+       "literal": {
+        "articulo": "78",
+        "texto": "En otro caso, dará cuenta a éste para que resuelva lo que proceda"
+       }
+      },
+      {
+       "si": "La demanda pide diligencias de preparación de la prueba",
+       "entonces": "Se preparan, pero la admisión de la prueba se decide en el juicio.",
+       "articulos": [
+        "78"
+       ],
+       "literal": {
+        "articulo": "78",
+        "texto": "sin perjuicio de lo que el juez o tribunal decida sobre su admisión o inadmisión en el acto del juicio"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Para qué se entrega el expediente al actor en el abreviado?",
+      "a": "Para que pueda hacer alegaciones en el acto de la vista.",
+      "articulos": [
+       "78"
+      ],
+      "literal": {
+       "articulo": "78",
+       "texto": "para que puedan hacer alegaciones en el acto de la vista"
+      }
+     },
+     "conexiones": [
+      "7",
+      "48",
+      "78"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "abreviado-78_sin_vista",
+     "fase": "Sin vista: tramitación por escrito",
+     "subtitulo": "CAPÍTULO II · art. 78.3, párrafos 3.º a 5.º",
+     "descripcion": "Si el actor pide por otrosí en la demanda que se falle sin prueba ni vista, no hay citación: los demandados contestan por escrito y el pleito queda concluso para sentencia, salvo que el juez acuerde prueba de oficio (art. 61). Los demandados pueden oponerse y pedir la vista, explicando en qué hechos no hay conformidad y qué prueba nueva haría falta; el juez decide por auto. Si se rechaza la vista, hay conclusiones solo si el actor las pidió en la demanda.",
+     "articulos": [
+      "78",
+      "54",
+      "57",
+      "61"
+     ],
+     "rango": [
+      "78",
+      "78"
+     ],
+     "plazos": [
+      {
+       "acto": "Contestación a la demanda",
+       "plazo": "20 días",
+       "articulo": "78",
+       "literal": "para que la contesten en el plazo de veinte días"
+      },
+      {
+       "acto": "Pedir que se celebre la vista (demandados)",
+       "plazo": "Primeros 10 días del plazo para contestar",
+       "articulo": "78",
+       "literal": "Dentro de los diez primeros días del plazo para contestar la demanda, las partes demandadas podrán solicitar que se celebre la vista"
+      },
+      {
+       "acto": "Conclusiones (si el actor las pidió)",
+       "plazo": "5 días sucesivos",
+       "articulo": "78",
+       "literal": "se abrirá un trámite de conclusiones, por plazo de cinco días sucesivos"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El auto acuerda la vista",
+       "entonces": "No se puede recurrir; se cita a las partes como en el trámite normal.",
+       "articulos": [
+        "78"
+       ],
+       "literal": {
+        "articulo": "78",
+        "texto": "El auto que acuerde la celebración de vista no será recurrible"
+       }
+      },
+      {
+       "si": "El auto rechaza la vista",
+       "entonces": "Se contesta en el plazo que quede; cabe reposición contra ese auto.",
+       "articulos": [
+        "78",
+        "79"
+       ],
+       "literal": {
+        "articulo": "78",
+        "texto": "contra el mismo podrá interponerse recurso de reposición"
+       }
+      },
+      {
+       "si": "La Administración contesta sin el expediente",
+       "entonces": "Opera el apercibimiento del art. 54.1: no se admite la contestación sin expediente.",
+       "articulos": [
+        "78",
+        "54"
+       ],
+       "literal": {
+        "articulo": "54",
+        "texto": "apercibiéndola de que no se admitirá la contestación si no va acompañada de dicho expediente"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "En el abreviado sin vista, ¿qué deben explicar los demandados para pedir la vista?",
+      "a": "En qué hechos hay disconformidad y qué medios de prueba distintos de los que ya constan habría que practicar.",
+      "articulos": [
+       "78"
+      ],
+      "literal": {
+       "articulo": "78",
+       "texto": "argumentando a tal fin en qué hechos existe disconformidad y qué medios de prueba, distintos de los ya obrantes en actuaciones, habrían de ser practicados"
+      }
+     },
+     "conexiones": [
+      "54",
+      "57",
+      "61",
+      "79"
+     ],
+     "continua_en": [],
+     "recursos_rel": [
+      "reposicion"
+     ]
+    },
+    {
+     "id": "abreviado-78_5",
+     "fase": "Vista: comparecencia y cuestiones procesales",
+     "subtitulo": "CAPÍTULO II · art. 78.5-9",
+     "descripcion": "Con las partes o alguna de ellas presentes, el juez abre la vista. El demandante expone o ratifica su demanda. El demandado alega, empezando por las cuestiones procesales: jurisdicción, competencia objetiva y territorial y cualquier otro obstáculo a una sentencia de fondo. Oído el demandante, el juez resuelve en el acto. Si se discute la cuantía (y con ella el procedimiento), el juez invita a un acuerdo y, si no lo hay, decide él.",
      "articulos": [
       "78"
      ],
@@ -1364,8 +1611,222 @@
       "78"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "No comparece nadie o solo el demandado",
+       "entonces": "Se tiene al actor por desistido y se le condena en costas.",
+       "articulos": [
+        "78"
+       ],
+       "literal": {
+        "articulo": "78",
+        "texto": "el Juez o Tribunal tendrá al actor por desistido del recurso y le condenará en costas"
+       }
+      },
+      {
+       "si": "Solo comparece el actor",
+       "entonces": "La vista sigue sin el demandado.",
+       "articulos": [
+        "78"
+       ],
+       "literal": {
+        "articulo": "78",
+        "texto": "si compareciere sólo el actor, acordará que prosiga la vista en ausencia del demandado"
+       }
+      },
+      {
+       "si": "El juez rechaza la cuestión procesal y sigue el juicio (o la acoge contra el actor)",
+       "entonces": "La parte perjudicada puede pedir que conste en acta su disconformidad.",
+       "articulos": [
+        "78"
+       ],
+       "literal": {
+        "articulo": "78",
+        "texto": "el demandado podrá pedir que conste en acta su disconformidad"
+       }
+      },
+      {
+       "si": "Se discute la cuantía y no hay acuerdo",
+       "entonces": "Decide el juez y da al proceso el curso que corresponda; sin recurso.",
+       "articulos": [
+        "78",
+        "40"
+       ],
+       "literal": {
+        "articulo": "78",
+        "texto": "Frente a la decisión del Juez no se dará recurso alguno"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué ocurre si en el abreviado solo comparece el demandado?",
+      "a": "El juez tiene al actor por desistido y le condena en costas.",
+      "articulos": [
+       "78"
+      ],
+      "literal": {
+       "articulo": "78",
+       "texto": "Si las partes no comparecieren o lo hiciere sólo el demandado"
+      }
+     },
+     "conexiones": [
+      "7",
+      "40",
+      "69",
+      "74",
+      "139"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "abreviado-78_10",
+     "fase": "Hechos, prueba y conclusiones",
+     "subtitulo": "CAPÍTULO II · art. 78.10-19",
+     "descripcion": "Resueltas las cuestiones procesales, las partes fijan los hechos. Si no hay conformidad, se propone la prueba y se practica en el acto la que se admita, como en el ordinario, con reglas propias: interrogatorio de parte con preguntas verbales, sin pliegos; testifical sin escritos de preguntas, sin tachas y con posible limitación de testigos; pericial sin insaculación de peritos. Al final, conclusiones y, con la venia del juez, las propias partes pueden hablar.",
+     "aviso": "El art. 78.17 dice «recurso de súplica»; la disposición adicional octava de la LJCA dispone que se entiende hecha al recurso de reposición.",
+     "articulos": [
+      "78",
+      "60"
+     ],
+     "rango": [
+      "78",
+      "78"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Todos los demandados están conformes, la cuestión es solo jurídica o no hay prueba admitida, y nadie quiere conclusiones",
+       "entonces": "El juez lo aprecia y, si nadie se opone, dicta sentencia sin más; si alguien se opone, resuelve la oposición.",
+       "articulos": [
+        "78"
+       ],
+       "literal": {
+        "articulo": "78",
+        "texto": "si ninguna parte se opusiere, dictará sentencia sin más dilación"
+       }
+      },
+      {
+       "si": "El juez deniega una prueba o admite una que se denuncia obtenida con violación de derechos fundamentales",
+       "entonces": "Recurso en el acto (súplica, hoy reposición), que se resuelve seguidamente.",
+       "articulos": [
+        "78"
+       ],
+       "literal": {
+        "articulo": "78",
+        "texto": "las partes podrán interponer en el acto recurso de súplica"
+       }
+      },
+      {
+       "si": "Una prueba relevante no puede practicarse en la vista, sin mala fe",
+       "entonces": "Se suspende la vista y se señala en el acto cuándo se reanuda.",
+       "articulos": [
+        "78"
+       ],
+       "literal": {
+        "articulo": "78",
+        "texto": "sin mala fe por parte de quien tuviera la carga de aportarla, la suspenderá"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se pueden tachar testigos en el abreviado?",
+      "a": "No; solo en conclusiones se pueden hacer observaciones sobre sus circunstancias personales y la veracidad de lo que dicen.",
+      "articulos": [
+       "78"
+      ],
+      "literal": {
+       "articulo": "78",
+       "texto": "Los testigos no podrán ser tachados"
+      }
+     },
+     "conexiones": [
+      "60",
+      "61",
+      "78"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "abreviado-78_20",
+     "fase": "Sentencia y recurso",
+     "subtitulo": "CAPÍTULO II · art. 78.20-22 (y 81)",
+     "descripcion": "El juez dicta sentencia en diez días desde la vista, o de palabra al terminarla. La vista se graba (art. 63); si no se puede, se levanta acta con el contenido del art. 78.22. Contra la sentencia: apelación, salvo que la cuantía no exceda de 30.000 euros; aun así, siempre son apelables, entre otras, las que inadmiten en esos asuntos, las de litigios entre Administraciones y las susceptibles de extensión de efectos (art. 81.2). Ver «Recursos».",
+     "articulos": [
+      "78",
+      "81",
+      "63",
+      "68"
+     ],
+     "rango": [
+      "78",
+      "78"
+     ],
+     "plazos": [
+      {
+       "acto": "Dictar sentencia",
+       "plazo": "10 días desde la vista",
+       "articulo": "78",
+       "literal": "dictarán sentencia en el plazo de diez días desde la celebración de la vista"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La cuantía no excede de 30.000 euros",
+       "entonces": "No cabe apelación, salvo los casos del art. 81.2.",
+       "articulos": [
+        "81"
+       ],
+       "literal": {
+        "articulo": "81",
+        "texto": "Aquellos cuya cuantía no exceda de 30.000 euros"
+       }
+      },
+      {
+       "si": "La sentencia inadmite el recurso en un asunto de cuantía no superior a 30.000 euros",
+       "entonces": "Es siempre apelable.",
+       "articulos": [
+        "81"
+       ],
+       "literal": {
+        "articulo": "81",
+        "texto": "Las que declaren la inadmisibilidad del recurso en el caso de la letra a) del apartado anterior"
+       }
+      },
+      {
+       "si": "La sentencia se dicta de palabra",
+       "entonces": "Se aplican los requisitos y efectos de los apartados 3 y 4 del art. 210 de la LEC.",
+       "articulos": [
+        "78"
+       ],
+       "literal": {
+        "articulo": "78",
+        "texto": "la sentencia se podrá dictar oralmente al concluir dicho acto"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿En qué plazo dicta sentencia el juez en el abreviado?",
+      "a": "En diez días desde la celebración de la vista, o de palabra al concluirla.",
+      "articulos": [
+       "78"
+      ],
+      "literal": {
+       "articulo": "78",
+       "texto": "en el plazo de diez días desde la celebración de la vista"
+      }
+     },
+     "conexiones": [
+      "63",
+      "68",
+      "81",
+      "86",
+      "139"
+     ],
+     "continua_en": [],
+     "recursos_rel": [
+      "apelacion",
+      "casacion"
+     ]
     }
    ]
   },
@@ -2050,15 +2511,19 @@
    "nombre": "Plazos, medidas cautelares, incidentes y costas",
    "bloque": "ljca",
    "grupo": "Parte general",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Lo que vale en todo el proceso: cómo corren y caducan los plazos (y agosto), cómo pedir medidas cautelares (también urgentes o antes del recurso), qué pasa con los defectos de los escritos y quién paga las costas.",
    "ambito": {
     "corto": "Arts. 128 a 139",
     "texto": "TÍTULO VI. Disposiciones comunes a los Títulos IV y V",
     "articulos": [
      "128"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "129",
+      "texto": "Los interesados podrán solicitar en cualquier estado del proceso la adopción de cuantas medidas aseguren la efectividad de la sentencia"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
@@ -2066,7 +2531,7 @@
      "id": "comunes-128",
      "fase": "Plazos",
      "subtitulo": "TÍTULO VI · CAPÍTULO I · art. 128",
-     "descripcion": "",
+     "descripcion": "Los plazos no se prorrogan: pasado el plazo, el LAJ da por caducado el derecho y perdido el trámite. Aun así, el escrito vale si se presenta el mismo día en que se notifica esa resolución, salvo si es para preparar o interponer un recurso. En agosto no corre ningún plazo de la ley, salvo en el procedimiento de derechos fundamentales. Por urgencia se puede pedir que se habiliten días inhábiles en derechos fundamentales y en las medidas cautelares. Los plazos para recurrir según lo que se impugna están en «Plazos para recurrir».",
      "articulos": [
       "128"
      ],
@@ -2074,32 +2539,319 @@
       "128",
       "128"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Auto sobre la habilitación de días inhábiles",
+       "plazo": "3 días",
+       "articulo": "128",
+       "literal": "resolverá por auto en el plazo de tres días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se deja pasar un plazo",
+       "entonces": "Se tiene por caducado el derecho y perdido el trámite; vale el escrito presentado el día en que se notifica esa resolución.",
+       "articulos": [
+        "128"
+       ],
+       "literal": {
+        "articulo": "128",
+        "texto": "se admitirá el escrito que proceda, y producirá sus efectos legales, si se presentare dentro del día en que se notifique la resolución"
+       }
+      },
+      {
+       "si": "El plazo era para preparar o interponer un recurso",
+       "entonces": "No hay ese día extra: el recurso fuera de plazo no se salva.",
+       "articulos": [
+        "128"
+       ],
+       "literal": {
+        "articulo": "128",
+        "texto": "salvo cuando se trate de plazos para preparar o interponer recursos"
+       }
+      },
+      {
+       "si": "El plazo cae en agosto",
+       "entonces": "No corre, salvo en el procedimiento de protección de derechos fundamentales, donde agosto es hábil.",
+       "articulos": [
+        "128",
+        "114"
+       ],
+       "literal": {
+        "articulo": "128",
+        "texto": "Durante el mes de agosto no correrá el plazo para interponer el recurso contencioso-administrativo ni ningún otro plazo de los previstos en esta Ley"
+       }
+      },
+      {
+       "si": "Hay urgencia en derechos fundamentales o en medidas cautelares",
+       "entonces": "Se puede pedir que se habiliten días inhábiles; se acuerda siempre si denegarlo causaría perjuicios irreversibles.",
+       "articulos": [
+        "128"
+       ],
+       "literal": {
+        "articulo": "128",
+        "texto": "acordando en todo caso la habilitación cuando su denegación pudiera causar perjuicios irreversibles"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Corre en agosto el plazo para interponer un recurso por la vía de protección de derechos fundamentales?",
+      "a": "Sí: en ese procedimiento agosto es hábil.",
+      "articulos": [
+       "128"
+      ],
+      "literal": {
+       "articulo": "128",
+       "texto": "en el que el mes de agosto tendrá carácter de hábil"
+      }
+     },
+     "conexiones": [
+      "46",
+      "114",
+      "115",
+      "128"
+     ],
+     "continua_en": []
     },
     {
      "id": "comunes-129",
-     "fase": "Medidas cautelares",
-     "subtitulo": "TÍTULO VI · CAPÍTULO II · arts. 129 a 136",
-     "descripcion": "",
+     "fase": "Medidas cautelares: pedirlas y tramitarlas",
+     "subtitulo": "TÍTULO VI · CAPÍTULO II · arts. 129 a 134",
+     "descripcion": "Se pueden pedir en cualquier momento del proceso (la suspensión de una disposición general, solo en el escrito de interposición o en la demanda). Se conceden solo si ejecutar el acto o aplicar la disposición puede hacer perder su finalidad legítima al recurso, tras valorar todos los intereses; pueden denegarse si causarían perturbación grave a los intereses generales o de tercero. Se tramitan en pieza separada, con audiencia de la otra parte. Se puede exigir caución y la medida no se aplica hasta que se constituya. El auto se comunica a la Administración, que debe cumplirlo de inmediato.",
      "articulos": [
       "129",
-      "136"
+      "130",
+      "131",
+      "132",
+      "133",
+      "134"
      ],
      "rango": [
       "129",
+      "134"
+     ],
+     "plazos": [
+      {
+       "acto": "Audiencia a la parte contraria",
+       "plazo": "Máximo 10 días",
+       "articulo": "131",
+       "literal": "por plazo que no excederá de diez días"
+      },
+      {
+       "acto": "Auto que resuelve el incidente",
+       "plazo": "5 días siguientes",
+       "articulo": "131",
+       "literal": "será resuelto por auto dentro de los cinco días siguientes"
+      },
+      {
+       "acto": "Pedir indemnización por la medida levantada",
+       "plazo": "1 año desde el alzamiento",
+       "articulo": "133",
+       "literal": "dentro del año siguiente a la fecha del alzamiento"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se impugna una disposición general y se quiere suspender",
+       "entonces": "Hay que pedirlo en el escrito de interposición o en la demanda.",
+       "articulos": [
+        "129"
+       ],
+       "literal": {
+        "articulo": "129",
+        "texto": "la petición deberá efectuarse en el escrito de interposición o en el de demanda"
+       }
+      },
+      {
+       "si": "La medida perturbaría gravemente los intereses generales o de tercero",
+       "entonces": "Puede denegarse, ponderándolo de forma circunstanciada.",
+       "articulos": [
+        "130"
+       ],
+       "literal": {
+        "articulo": "130",
+        "texto": "La medida cautelar podrá denegarse cuando de ésta pudiera seguirse perturbación grave de los intereses generales o de tercero"
+       }
+      },
+      {
+       "si": "La medida puede causar perjuicios",
+       "entonces": "Pueden acordarse medidas para evitarlos y exigirse caución; la medida no se aplica hasta que la caución conste en autos.",
+       "articulos": [
+        "133"
+       ],
+       "literal": {
+        "articulo": "133",
+        "texto": "La medida cautelar acordada no se llevará a efecto hasta que la caución o garantía esté constituida y acreditada en autos"
+       }
+      },
+      {
+       "si": "Cambian las circunstancias",
+       "entonces": "La medida puede modificarse o revocarse; no por cómo avanza el debate ni por un cambio de criterio del juez.",
+       "articulos": [
+        "132"
+       ],
+       "literal": {
+        "articulo": "132",
+        "texto": "podrán ser modificadas o revocadas durante el curso del procedimiento si cambiaran las circunstancias en virtud de las cuales se hubieran adoptado"
+       }
+      },
+      {
+       "si": "Se quiere recurrir el auto",
+       "entonces": "Si es de un Juzgado y pone término a la pieza cautelar: apelación en un solo efecto (art. 80.1.a). Si es de la Sala: casación, previa reposición (art. 87.1.b y 87.2). En los demás casos, reposición (art. 79).",
+       "articulos": [
+        "80",
+        "87",
+        "79"
+       ],
+       "literal": {
+        "articulo": "80",
+        "texto": "Los que pongan término a la pieza separada de medidas cautelares"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo puede acordarse una medida cautelar en el contencioso-administrativo?",
+      "a": "Cuando, valorados todos los intereses en conflicto, la ejecución del acto o la aplicación de la disposición pudieran hacer perder su finalidad legítima al recurso.",
+      "articulos": [
+       "130"
+      ],
+      "literal": {
+       "articulo": "130",
+       "texto": "la medida cautelar podrá acordarse únicamente cuando la ejecución del acto o la aplicación de la disposición pudieran hacer perder su finalidad legítima al recurso"
+      }
+     },
+     "conexiones": [
+      "45",
+      "79",
+      "80",
+      "87",
+      "104",
+      "107"
+     ],
+     "continua_en": [],
+     "recursos_rel": [
+      "reposicion",
+      "apelacion",
+      "casacion"
+     ]
+    },
+    {
+     "id": "comunes-135",
+     "fase": "Medidas urgentes y antes de recurrir",
+     "subtitulo": "TÍTULO VI · CAPÍTULO II · arts. 135 a 136",
+     "descripcion": "Si se alega especial urgencia, el juez decide en dos días sin oír a la otra parte: o adopta o deniega la medida (sin recurso) y después oye a la otra parte para mantenerla, modificarla o levantarla; o no aprecia urgencia y la tramita por la vía normal. En inactividad (art. 29) y vía de hecho (art. 30) la medida se adopta salvo evidencia en contra o perturbación grave, y puede pedirse antes de interponer el recurso; si no se interpone en plazo, queda sin efecto.",
+     "articulos": [
+      "135",
       "136"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "rango": [
+      "135",
+      "136"
+     ],
+     "plazos": [
+      {
+       "acto": "Auto sobre la medida urgente, sin oír a la otra parte",
+       "plazo": "2 días",
+       "articulo": "135",
+       "literal": "sin oír a la parte contraria, en el plazo de dos días podrá mediante auto"
+      },
+      {
+       "acto": "Alegaciones de la otra parte (o comparecencia)",
+       "plazo": "3 días",
+       "articulo": "135",
+       "literal": "para que en el plazo de tres días alegue lo que estime procedente"
+      },
+      {
+       "acto": "Interponer el recurso y pedir la ratificación (medida previa)",
+       "plazo": "10 días desde la notificación de la medida",
+       "articulo": "136",
+       "literal": "lo que habrá de hacerse inexcusablemente en el plazo de diez días a contar desde la notificación de la adopción de las medidas cautelares"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El juez aprecia la urgencia",
+       "entonces": "Adopta o deniega la medida sin recurso; tras oír a la otra parte dicta otro auto, que sí es recurrible.",
+       "articulos": [
+        "135"
+       ],
+       "literal": {
+        "articulo": "135",
+        "texto": "el cual será recurrible conforme a las reglas generales"
+       }
+      },
+      {
+       "si": "El juez no aprecia la urgencia",
+       "entonces": "Se tramita el incidente normal (art. 131) y mientras tanto no se puede volver a pedir por la vía urgente.",
+       "articulos": [
+        "135",
+        "131"
+       ],
+       "literal": {
+        "articulo": "135",
+        "texto": "durante la cual los interesados no podrán solicitar nuevamente medida alguna al amparo del presente artículo"
+       }
+      },
+      {
+       "si": "Se recurre una inactividad o una vía de hecho",
+       "entonces": "La medida se adopta salvo que sea evidente que no se dan esos supuestos o cause perturbación grave.",
+       "articulos": [
+        "136",
+        "29",
+        "30"
+       ],
+       "literal": {
+        "articulo": "136",
+        "texto": "la medida cautelar se adoptará salvo que se aprecie con evidencia que no se dan las situaciones previstas en dichos artículos"
+       }
+      },
+      {
+       "si": "Se obtuvo una medida antes de recurrir y no se interpone el recurso",
+       "entonces": "La medida queda sin efecto y el solicitante debe indemnizar los daños.",
+       "articulos": [
+        "136"
+       ],
+       "literal": {
+        "articulo": "136",
+        "texto": "De no interponerse el recurso, quedarán automáticamente sin efecto las medidas acordadas"
+       }
+      },
+      {
+       "si": "Extranjería o asilo con retorno de un menor",
+       "entonces": "El juez oye antes al Ministerio Fiscal.",
+       "articulos": [
+        "135"
+       ],
+       "literal": {
+        "articulo": "135",
+        "texto": "el órgano jurisdiccional oirá al Ministerio Fiscal con carácter previo a dictar el auto"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cabe recurso contra el auto que adopta una medida por especial urgencia sin oír a la otra parte?",
+      "a": "No; es recurrible el auto posterior que la levanta, mantiene o modifica tras oír a la otra parte.",
+      "articulos": [
+       "135"
+      ],
+      "literal": {
+       "articulo": "135",
+       "texto": "Contra este auto no se dará recurso alguno"
+      }
+     },
+     "conexiones": [
+      "29",
+      "30",
+      "128",
+      "131"
+     ],
+     "continua_en": []
     },
     {
      "id": "comunes-137",
      "fase": "Incidentes e invalidez de actos procesales",
      "subtitulo": "TÍTULO VI · CAPÍTULO III · arts. 137 a 138",
-     "descripcion": "",
+     "descripcion": "Las cuestiones incidentales van en pieza separada y no paran el proceso. Si se alega que un acto de parte tiene un defecto, esa parte puede subsanarlo u oponerse en diez días; si lo aprecia el órgano de oficio, el LAJ lo señala en una diligencia de ordenación y da el mismo plazo. Solo se puede decidir el recurso por el defecto si es insubsanable o no se subsana a tiempo.",
      "articulos": [
       "137",
       "138"
@@ -2108,15 +2860,62 @@
       "137",
       "138"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Subsanar u oponerse al defecto alegado",
+       "plazo": "10 días desde la notificación",
+       "articulo": "138",
+       "literal": "dentro de los diez días siguientes al de la notificación del escrito que contenga la alegación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El órgano aprecia de oficio un defecto subsanable",
+       "entonces": "El LAJ lo señala en diligencia de ordenación y da plazo para subsanar.",
+       "articulos": [
+        "138"
+       ],
+       "literal": {
+        "articulo": "138",
+        "texto": "dictará diligencia de ordenación en que lo reseñe y otorgue el mencionado plazo para la subsanación"
+       }
+      },
+      {
+       "si": "El defecto no tiene arreglo o no se subsana en plazo",
+       "entonces": "Solo entonces puede decidirse el recurso por ese defecto.",
+       "articulos": [
+        "138"
+       ],
+       "literal": {
+        "articulo": "138",
+        "texto": "Sólo cuando el defecto sea insubsanable o no se subsane debidamente en plazo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Suspenden el proceso las cuestiones incidentales?",
+      "a": "No: se tramitan en pieza separada y sin suspender el curso de los autos.",
+      "articulos": [
+       "137"
+      ],
+      "literal": {
+       "articulo": "137",
+       "texto": "se sustanciarán en pieza separada y sin suspender el curso de los autos"
+      }
+     },
+     "conexiones": [
+      "45",
+      "69",
+      "137",
+      "138"
+     ],
+     "continua_en": []
     },
     {
      "id": "comunes-139",
      "fase": "Costas procesales",
      "subtitulo": "TÍTULO VI · CAPÍTULO IV · art. 139",
-     "descripcion": "",
+     "descripcion": "En primera o única instancia paga las costas quien ve rechazadas todas sus pretensiones, salvo serias dudas de hecho o de derecho razonadas. Si la estimación es parcial, cada parte paga las suyas y las comunes por mitad, salvo mala fe o temeridad. En los recursos, el recurrente si se desestima del todo. Hay un tope en primera o única instancia: un tercio de la cuantía por cada favorecido (las de cuantía indeterminada se valoran en 18.000 euros). Nunca se condena en costas al Ministerio Fiscal. La tasación sigue la LEC.",
      "articulos": [
       "139"
      ],
@@ -2125,8 +2924,71 @@
       "139"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Se rechazan todas las pretensiones de una parte",
+       "entonces": "Se le imponen las costas, salvo que el órgano razone que había serias dudas de hecho o de derecho.",
+       "articulos": [
+        "139"
+       ],
+       "literal": {
+        "articulo": "139",
+        "texto": "impondrá las costas a la parte que haya visto rechazadas todas sus pretensiones, salvo que aprecie y así lo razone, que el caso presentaba serias dudas de hecho o de derecho"
+       }
+      },
+      {
+       "si": "Estimación o desestimación parcial",
+       "entonces": "Cada parte paga las suyas y las comunes por mitad, salvo mala fe o temeridad.",
+       "articulos": [
+        "139"
+       ],
+       "literal": {
+        "articulo": "139",
+        "texto": "cada parte abonará las costas causadas a su instancia y las comunes por mitad"
+       }
+      },
+      {
+       "si": "Se desestima totalmente un recurso (apelación, reposición…)",
+       "entonces": "Costas al recurrente, salvo circunstancias razonadas; en casación rige el art. 93.4.",
+       "articulos": [
+        "139",
+        "93"
+       ],
+       "literal": {
+        "articulo": "139",
+        "texto": "En los recursos se impondrán las costas al recurrente si se desestima totalmente el recurso"
+       }
+      },
+      {
+       "si": "La pretensión es de cuantía indeterminada",
+       "entonces": "Para el tope de un tercio se valora en 18.000 euros, salvo que el tribunal razone otra cosa por la complejidad.",
+       "articulos": [
+        "139"
+       ],
+       "literal": {
+        "articulo": "139",
+        "texto": "las pretensiones de cuantía indeterminada se valorarán en 18.000 euros"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuál es el tope de las costas en primera o única instancia?",
+      "a": "La tercera parte de la cuantía del proceso por cada uno de los favorecidos por la condena.",
+      "articulos": [
+       "139"
+      ],
+      "literal": {
+       "articulo": "139",
+       "texto": "una cantidad total que no exceda de la tercera parte de la cuantía del proceso, por cada uno de los favorecidos por esa condena"
+      }
+     },
+     "conexiones": [
+      "40",
+      "78",
+      "93",
+      "139"
+     ],
+     "continua_en": []
     }
    ]
   }
