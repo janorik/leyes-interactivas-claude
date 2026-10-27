@@ -497,6 +497,40 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [ ] **Costas en casación:** solo remito al art. 93.4, como hace el art. 139.3 (Verificable). **Tu respuesta:**
 - [ ] **Revisa las 5 fichas.**
 
+### Jurisdicción, competencia y partes (Chat 6, contenido elaborado, pendiente de revisión)
+
+> Bloque «Jurisdicción, competencia y partes» (arts. 1-24): 6 fichas (ámbito; qué órgano conoce; si el órgano no es competente, ficha nueva `generales-7`; competencia territorial; legitimación; procurador y abogado) y 4 plazos. Quedan como índice, por el canon, las fases de los arts. 15-16, 17 y 18.
+
+- [ ] **Cuadro «qué órgano conoce» (arts. 8-13).** Lo presento como alternativas con los casos más frecuentes, no como lista completa de los arts. 8 a 12 (Verificable cada caso; la selección es mía). Para el detalle, el texto literal. **Tu respuesta:**
+- [ ] **Nota del BOE sobre los Tribunales de Instancia.** El PDF dice que las referencias a los Juzgados de lo Contencioso-Administrativo se entienden hechas a las Secciones de los Tribunales de Instancia (disposición adicional primera de la Ley Orgánica 1/2025, BOE-A-2025-76) (Verificable: nota del PDF). **Propuesta:** las fichas siguen diciendo «Juzgado», como el texto de la ley, y la ficha de competencias lo avisa (No verificable). **Tu respuesta:**
+- [ ] **Art. 23: órgano unipersonal y colegiado.** Escribo «Juzgado» para unipersonal y «Sala (TSJ, Audiencia Nacional, Supremo)» para colegiado; la ley solo dice «órganos unipersonales» y «órganos colegiados» (Verificable el texto; la equivalencia es mía, No verificable). **Tu respuesta:**
+- [ ] **Revisa las 6 fichas.**
+
+### Objeto del recurso (Chat 6, contenido elaborado, pendiente de revisión)
+
+> Bloque «Objeto del recurso» (arts. 25-42): 4 fichas (qué se puede impugnar; qué se puede pedir; acumulación, ampliación y pleito testigo; cuantía) y 11 plazos. Del cap. III no se usa el art. 38, por el canon.
+
+- [ ] **Art. 28 y causa de inadmisión.** Digo que el recurso contra actos confirmatorios de actos consentidos es inadmisible y enlazo el art. 69 (Verificable: art. 28 «No es admisible»). **Tu respuesta:**
+- [ ] **Art. 40: quién fija la cuantía.** La fija el LAJ y, si el demandado discrepa, el juez la decide definitivamente en la sentencia (art. 40.3) (Verificable). **Tu respuesta:**
+- [ ] **Revisa las 4 fichas.**
+
+### Procedimientos especiales (Chat 6, contenido elaborado, pendiente de revisión)
+
+> Bloque «Procedimientos especiales»: la fase del esqueleto de derechos fundamentales (arts. 114-122 quater) se divide en `especiales-114` (interposición y expediente, 114-116), `especiales-117` (admisión, demanda y sentencia, 117-121), `especiales-122` (reuniones, ficha breve) y `especiales-122_bis` (autorizaciones de los arts. 122 bis-122 quater, índice por el canon). Cuestión de ilegalidad (123-126) en ficha breve. Siguen como índice, por el canon, los arts. 127, 127 bis-quáter y 127 quinquies. 16 plazos.
+
+- [ ] **Art. 115.1: plazo con recurso administrativo previo.** Si se interpuso potestativamente un recurso administrativo, los diez días empiezan pasados veinte desde su presentación (Verificable). Es lectura directa; lo señalo porque cambia mucho el cómputo. **Tu respuesta:**
+- [ ] **Recurso contra la sentencia de derechos fundamentales.** Del Juzgado, siempre apelación en un solo efecto (art. 121.3) (Verificable). De las Salas, pongo el enlace a casación por las reglas generales (art. 86) (No verificable: deducción mía). **Tu respuesta:**
+- [ ] **Revisa las 5 fichas.**
+
+### Ejecución de sentencias (Chat 6, contenido elaborado, pendiente de revisión)
+
+> Bloque «Ejecución de sentencias» (arts. 103-113): la fase única del esqueleto se divide en 4 fichas (cumplimiento y ejecución forzosa, `ejecucion-103`; condenas a pagar, a hacer o a publicar; incidentes y multas coercitivas; extensión de efectos) y 12 plazos.
+
+- [ ] **Remisiones desfasadas en el art. 110.** El art. 110.5.b remite a la doctrina sentada «en el recurso a que se refiere el artículo 99», y los arts. 110.1.c y 110.6 mencionan el recurso «en interés de ley»; los arts. 95 a 101 figuran como «(Suprimido)» (Verificable). Estado: **pendiente de revisión individual**. **Propuesta:** como en los arts. 10.5 y 10.6, avisarlo en la ficha sin interpretarlo (No verificable). **Tu respuesta:**
+- [ ] **Plazo para ejecutar condenas a pagar.** El art. 104.2 da dos meses con carácter general y el art. 106.3, tres meses para la condena al pago de cantidad (Verificable). Las fichas ponen cada uno en su sitio. **Tu respuesta:**
+- [ ] **Recurso contra autos de ejecución.** Combino el art. 80.1.b (apelación, Juzgados) y el art. 87.1.c con el 87.2 (casación, Salas, previa reposición) (Verificable cada artículo; la combinación es mía). **Tu respuesta:**
+- [ ] **Revisa las 4 fichas.**
+
 ## Páginas legales (todas las leyes)
 
 Aviso legal, Política de privacidad y Política de cookies (`aviso-legal.html`, `politica-privacidad.html`, `cookies.html`), y la ventana «© 2026 J A Noriega (Norik)» del pie. Hechas a partir de las de norlexia.es (repositorio WEB-NORLEXIA, `bocetos/`), adaptadas a esta app: sin formulario, sin Google Fonts y sin cookies.

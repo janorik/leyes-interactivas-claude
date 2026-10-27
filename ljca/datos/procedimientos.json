@@ -269,42 +269,119 @@
    "nombre": "Jurisdicción, competencia y partes",
    "bloque": "ljca",
    "grupo": "Parte general",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Antes de presentar nada: si el asunto es de lo contencioso-administrativo, qué órgano conoce (Juzgado, Juzgado Central, TSJ, Audiencia Nacional o Supremo) y en qué sitio, qué pasa si uno se equivoca, quién puede recurrir y contra quién, y si hacen falta procurador y abogado.",
    "ambito": {
     "corto": "Arts. 1 a 24",
     "texto": "TÍTULO I. Del orden jurisdiccional contencioso-administrativo · TÍTULO II. Las partes",
     "articulos": [
      "1"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "1",
+      "texto": "Los Juzgados y Tribunales del orden contencioso-administrativo conocerán de las pretensiones que se deduzcan en relación con la actuación de las Administraciones públicas sujeta al Derecho Administrativo"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
      "id": "generales-1",
-     "fase": "Ámbito",
+     "fase": "Ámbito: qué va a lo contencioso-administrativo",
      "subtitulo": "TÍTULO I · CAPÍTULO I · arts. 1 a 5",
-     "descripcion": "",
+     "descripcion": "Entra la actuación de las Administraciones públicas sujeta al Derecho Administrativo, los reglamentos y los decretos legislativos que exceden la delegación. También, entre otros: contratos administrativos y la preparación y adjudicación de los demás contratos públicos, actos de corporaciones de Derecho público en funciones públicas y toda la responsabilidad patrimonial de la Administración. Quedan fuera lo atribuido a los órdenes civil, penal y social, lo contencioso-disciplinario militar y los conflictos de jurisdicción y de atribuciones. La jurisdicción es improrrogable: se aprecia de oficio.",
      "articulos": [
       "1",
+      "2",
+      "3",
       "5"
      ],
      "rango": [
       "1",
       "5"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Audiencia sobre la falta de jurisdicción (partes y Fiscal)",
+       "plazo": "10 días",
+       "articulo": "5",
+       "literal": "previa audiencia de las partes y del Ministerio Fiscal por plazo común de diez días"
+      },
+      {
+       "acto": "Nueva demanda ante el orden competente (conserva la fecha)",
+       "plazo": "1 mes desde la notificación",
+       "articulo": "5",
+       "literal": "se presenta en el plazo de un mes desde que fuera notificada"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se reclama responsabilidad patrimonial a una Administración",
+       "entonces": "Siempre ante lo contencioso, aunque concurran particulares o haya aseguradora; no ante lo civil ni lo social.",
+       "articulos": [
+        "2"
+       ],
+       "literal": {
+        "articulo": "2",
+        "texto": "no pudiendo ser demandadas aquellas por este motivo ante los órdenes jurisdiccionales civil o social"
+       }
+      },
+      {
+       "si": "La cuestión está atribuida expresamente al orden civil, penal o social",
+       "entonces": "No corresponde a lo contencioso, aunque tenga que ver con la Administración.",
+       "articulos": [
+        "3"
+       ],
+       "literal": {
+        "articulo": "3",
+        "texto": "Las cuestiones expresamente atribuidas a los órdenes jurisdiccionales civil, penal y social"
+       }
+      },
+      {
+       "si": "El órgano aprecia falta de jurisdicción",
+       "entonces": "La declara tras oír a las partes y al Fiscal e indica el orden competente; si la nueva demanda se presenta en un mes y se siguieron las indicaciones de la notificación (o era defectuosa), vale la fecha inicial.",
+       "articulos": [
+        "5"
+       ],
+       "literal": {
+        "articulo": "5",
+        "texto": "se entenderá presentada en la fecha en que se inició el plazo para interponer el recurso contencioso-administrativo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Pueden las partes someter a lo contencioso un asunto que no le corresponde?",
+      "a": "No: la jurisdicción contencioso-administrativa es improrrogable y su falta se aprecia de oficio.",
+      "articulos": [
+       "5"
+      ],
+      "literal": {
+       "articulo": "5",
+       "texto": "La Jurisdicción Contencioso-administrativa es improrrogable"
+      }
+     },
+     "conexiones": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "7",
+      "69"
+     ],
+     "continua_en": []
     },
     {
      "id": "generales-6",
-     "fase": "Órganos y competencias",
+     "fase": "Qué órgano conoce",
      "subtitulo": "TÍTULO I · CAPÍTULO II · arts. 6 a 13",
-     "descripcion": "",
+     "descripcion": "La regla práctica: según quién dicta el acto y la materia. Juzgados: actos de entidades locales (salvo planeamiento urbanístico), varios actos autonómicos (personal, sanciones menores, responsabilidad hasta 30.050 euros) y extranjería. Juzgados Centrales: ciertos actos de Ministros y Secretarios de Estado y de organismos estatales con competencia en toda España. TSJ: lo autonómico y local no atribuido a los Juzgados, reglamentos autonómicos y locales, y todo lo no atribuido a otro órgano. Audiencia Nacional: disposiciones y actos de Ministros y Secretarios de Estado. Supremo: Consejo de Ministros, CGPJ y Fiscal General. Si hay duda, manda la materia sobre el órgano autor. Mira las alternativas para los casos más frecuentes.",
+     "aviso": "Nota del BOE en el texto consolidado: por la disposición adicional primera de la Ley Orgánica 1/2025, de 2 de enero (BOE-A-2025-76), las referencias a los Juzgados de lo Contencioso-Administrativo se entienden hechas a las Secciones de los Tribunales de Instancia, y las de los Juzgados Centrales a las del Tribunal Central de Instancia. Los arts. 10.5 y 10.6 remiten a los arts. 99 y 101, que están suprimidos (anotado en PENDIENTES).",
      "articulos": [
-      "6",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
       "13"
      ],
      "rango": [
@@ -312,14 +389,199 @@
       "13"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Acto de un ayuntamiento u otra entidad local",
+       "entonces": "Juzgado, salvo que se impugne un instrumento de planeamiento urbanístico (TSJ).",
+       "articulos": [
+        "8",
+        "10"
+       ],
+       "literal": {
+        "articulo": "8",
+        "texto": "excluidas las impugnaciones de cualquier clase de instrumentos de planeamiento urbanístico"
+       }
+      },
+      {
+       "si": "Acto autonómico (no del Consejo de Gobierno) sobre personal, sanciones o responsabilidad",
+       "entonces": "Juzgado: personal (salvo nacimiento o extinción de la relación de funcionarios de carrera), multas hasta 60.000 euros o ceses hasta seis meses, y responsabilidad hasta 30.050 euros. Lo demás autonómico, TSJ.",
+       "articulos": [
+        "8",
+        "10"
+       ],
+       "literal": {
+        "articulo": "8",
+        "texto": "Las sanciones administrativas que consistan en multas no superiores a 60.000 euros"
+       }
+      },
+      {
+       "si": "Extranjería",
+       "entonces": "Juzgado, si resuelve la Administración periférica del Estado o la comunidad autónoma.",
+       "articulos": [
+        "8"
+       ],
+       "literal": {
+        "articulo": "8",
+        "texto": "de todas las resoluciones que se dicten en materia de extranjería"
+       }
+      },
+      {
+       "si": "Responsabilidad patrimonial resuelta por un Ministro o Secretario de Estado",
+       "entonces": "Juzgado Central si no excede de 30.050 euros; si excede, Audiencia Nacional.",
+       "articulos": [
+        "9",
+        "11"
+       ],
+       "literal": {
+        "articulo": "9",
+        "texto": "en materia de responsabilidad patrimonial cuando lo reclamado no exceda de 30.050 euros"
+       }
+      },
+      {
+       "si": "Reglamento autonómico o local",
+       "entonces": "TSJ en única instancia.",
+       "articulos": [
+        "10"
+       ],
+       "literal": {
+        "articulo": "10",
+        "texto": "Las disposiciones generales emanadas de las Comunidades Autónomas y de las Entidades locales"
+       }
+      },
+      {
+       "si": "Disposición o acto de un Ministro o Secretario de Estado",
+       "entonces": "Audiencia Nacional, salvo lo atribuido a los Juzgados Centrales (art. 9).",
+       "articulos": [
+        "11",
+        "9"
+       ],
+       "literal": {
+        "articulo": "11",
+        "texto": "De los recursos que se deduzcan en relación con las disposiciones generales y los actos de los Ministros"
+       }
+      },
+      {
+       "si": "Acto del Consejo de Ministros, del CGPJ o del Fiscal General",
+       "entonces": "Tribunal Supremo en única instancia.",
+       "articulos": [
+        "12"
+       ],
+       "literal": {
+        "articulo": "12",
+        "texto": "Los actos y disposiciones del Consejo de Ministros y de las Comisiones Delegadas del Gobierno"
+       }
+      },
+      {
+       "si": "Materia y órgano autor llevan a órganos distintos",
+       "entonces": "Prevalece la materia, salvo disposición expresa. La inactividad y la vía de hecho van al mismo órgano que el acto.",
+       "articulos": [
+        "13"
+       ],
+       "literal": {
+        "articulo": "13",
+        "texto": "la atribución de competencia por razón de la materia prevalece sobre la efectuada en razón del órgano administrativo autor del acto"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué órgano conoce del recurso contra una multa autonómica de 40.000 euros?",
+      "a": "El Juzgado de lo Contencioso-administrativo (multas no superiores a 60.000 euros), salvo que proceda del Consejo de Gobierno.",
+      "articulos": [
+       "8"
+      ],
+      "literal": {
+       "articulo": "8",
+       "texto": "salvo cuando procedan del respectivo Consejo de Gobierno"
+      }
+     },
+     "conexiones": [
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "78"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "generales-7",
+     "fase": "Si el órgano no es competente",
+     "subtitulo": "TÍTULO I · CAPÍTULO II · art. 7",
+     "descripcion": "La competencia no se puede prorrogar y el órgano la examina incluso de oficio, oyendo a las partes y al Fiscal. Si no es competente, lo declara por auto antes de la sentencia y remite las actuaciones al que considere competente, donde sigue el proceso. No se archiva: las actuaciones pasan al órgano competente. El órgano competente lo es también para las incidencias y para ejecutar la sentencia.",
+     "articulos": [
+      "7"
+     ],
+     "rango": [
+      "7",
+      "7"
+     ],
+     "plazos": [
+      {
+       "acto": "Audiencia sobre la competencia (partes y Fiscal)",
+       "plazo": "10 días",
+       "articulo": "7",
+       "literal": "previa audiencia de las partes y del Ministerio Fiscal por plazo común de diez días"
+      },
+      {
+       "acto": "Comparecer ante el órgano competente",
+       "plazo": "10 días",
+       "articulo": "7",
+       "literal": "con emplazamiento a las partes para que en el plazo de diez días comparezcan ante el mismo"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El competente puede ser un tribunal superior en grado",
+       "entonces": "Se envía con exposición razonada y decide ese tribunal.",
+       "articulos": [
+        "7"
+       ],
+       "literal": {
+        "articulo": "7",
+        "texto": "se acompañará una exposición razonada, estándose a lo que resuelva éste"
+       }
+      },
+      {
+       "si": "La incompetencia se quiere alegar como parte",
+       "entonces": "Como alegación previa (art. 58) o en la vista del abreviado (art. 78.7).",
+       "articulos": [
+        "58",
+        "78"
+       ],
+       "literal": {
+        "articulo": "58",
+        "texto": "Las partes demandadas podrán alegar, dentro de los primeros cinco días del plazo para contestar la demanda, los motivos que pudieren determinar la incompetencia del órgano jurisdiccional"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué forma adopta la declaración de incompetencia y hasta cuándo puede hacerse?",
+      "a": "Forma de auto, y debe hacerse antes de la sentencia.",
+      "articulos": [
+       "7"
+      ],
+      "literal": {
+       "articulo": "7",
+       "texto": "La declaración de incompetencia adoptará la forma de auto y deberá efectuarse antes de la sentencia"
+      }
+     },
+     "conexiones": [
+      "5",
+      "7",
+      "58",
+      "78",
+      "103"
+     ],
+     "continua_en": []
     },
     {
      "id": "generales-14",
-     "fase": "Competencia territorial de los Juzgados y Tribunales",
+     "fase": "Competencia territorial",
      "subtitulo": "TÍTULO I · CAPÍTULO III · art. 14",
-     "descripcion": "",
+     "descripcion": "Para los Juzgados y los TSJ. Regla general: el del lugar donde tiene su sede el órgano que dictó el acto originario. En responsabilidad patrimonial, personal, propiedades especiales y sanciones, el demandante elige entre su domicilio y la sede del órgano autor (con actos autonómicos o locales, dentro del mismo TSJ). Urbanismo, expropiación e intervención en la propiedad: donde estén los inmuebles. Si el acto tiene muchos destinatarios con fueros distintos, la sede del órgano autor.",
      "articulos": [
       "14"
      ],
@@ -328,8 +590,59 @@
       "14"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "Sanción, personal, responsabilidad patrimonial o propiedades especiales",
+       "entonces": "A elección del demandante: su domicilio o la sede del órgano autor del acto originario.",
+       "articulos": [
+        "14"
+       ],
+       "literal": {
+        "articulo": "14",
+        "texto": "a elección del demandante, el juzgado o el tribunal en cuya circunscripción tenga aquél su domicilio o se halle la sede del órgano autor del acto originario impugnado"
+       }
+      },
+      {
+       "si": "El acto es de una comunidad autónoma o de una entidad local",
+       "entonces": "Esa elección queda limitada a la circunscripción del TSJ donde tiene su sede el órgano autor.",
+       "articulos": [
+        "14"
+       ],
+       "literal": {
+        "articulo": "14",
+        "texto": "la elección a que se refiere esta regla segunda se entenderá limitada a la circunscripción del Tribunal Superior de Justicia"
+       }
+      },
+      {
+       "si": "Planes urbanísticos, expropiación o intervención en la propiedad privada",
+       "entonces": "El órgano del lugar donde radican los inmuebles.",
+       "articulos": [
+        "14"
+       ],
+       "literal": {
+        "articulo": "14",
+        "texto": "en cuya circunscripción radiquen los inmuebles afectados"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuál es la regla general de competencia territorial?",
+      "a": "El órgano en cuya circunscripción tiene su sede el órgano que dictó la disposición o el acto originario impugnado.",
+      "articulos": [
+       "14"
+      ],
+      "literal": {
+       "articulo": "14",
+       "texto": "en cuya circunscripción tenga su sede el órgano que hubiere dictado la disposición o el acto originario impugnado"
+      }
+     },
+     "conexiones": [
+      "7",
+      "8",
+      "10",
+      "14"
+     ],
+     "continua_en": []
     },
     {
      "id": "generales-15",
@@ -382,37 +695,163 @@
     },
     {
      "id": "generales-19",
-     "fase": "Legitimación",
+     "fase": "Legitimación: quién recurre y contra quién",
      "subtitulo": "TÍTULO II · CAPÍTULO II · arts. 19 a 22",
-     "descripcion": "",
+     "descripcion": "Puede recurrir quien tenga un derecho o interés legítimo; también las entidades que defienden intereses colectivos, las Administraciones frente a otras en el ámbito de su autonomía y cualquier ciudadano con acción popular solo donde una ley la prevea. La Administración que quiere anular su propio acto debe declararlo antes lesivo. No pueden recurrir los órganos de la propia Administración ni los que actúan por su cuenta. Son demandados la Administración autora, quienes resulten afectados si se estima el recurso y sus aseguradoras.",
      "articulos": [
       "19",
-      "22"
+      "20",
+      "21"
      ],
      "rango": [
       "19",
       "22"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "La Administración quiere anular su propio acto",
+       "entonces": "Debe declararlo lesivo para el interés público y después recurrirlo (plazo: art. 46.5).",
+       "articulos": [
+        "19",
+        "43",
+        "46"
+       ],
+       "literal": {
+        "articulo": "19",
+        "texto": "previa su declaración de lesividad para el interés público"
+       }
+      },
+      {
+       "si": "Recurre un órgano o un miembro de un órgano colegiado de la misma Administración",
+       "entonces": "No puede, salvo que una ley lo autorice expresamente.",
+       "articulos": [
+        "20"
+       ],
+       "literal": {
+        "articulo": "20",
+        "texto": "Los órganos de la misma y los miembros de sus órganos colegiados, salvo que una Ley lo autorice expresamente"
+       }
+      },
+      {
+       "si": "La Administración tiene un seguro de responsabilidad",
+       "entonces": "La aseguradora es siempre codemandada junto a ella.",
+       "articulos": [
+        "21"
+       ],
+       "literal": {
+        "articulo": "21",
+        "texto": "Las aseguradoras de las Administraciones públicas, que siempre serán parte codemandada"
+       }
+      },
+      {
+       "si": "Se recurre la resolución de un órgano de recursos contractuales",
+       "entonces": "Ese órgano no es parte demandada; lo son los favorecidos por el acto.",
+       "articulos": [
+        "21"
+       ],
+       "literal": {
+        "articulo": "21",
+        "texto": "los citados órganos no tendrán la consideración de parte demandada"
+       }
+      },
+      {
+       "si": "La demanda se funda en la ilegalidad de un reglamento",
+       "entonces": "También es demandada la Administración autora del reglamento.",
+       "articulos": [
+        "21"
+       ],
+       "literal": {
+        "articulo": "21",
+        "texto": "se considerará también parte demandada a la Administración autora de la misma"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede cualquier ciudadano recurrir por acción popular?",
+      "a": "Solo en los casos expresamente previstos por las leyes.",
+      "articulos": [
+       "19"
+      ],
+      "literal": {
+       "articulo": "19",
+       "texto": "Cualquier ciudadano, en ejercicio de la acción popular, en los casos expresamente previstos por las Leyes"
+      }
+     },
+     "conexiones": [
+      "19",
+      "20",
+      "21",
+      "43",
+      "45",
+      "49"
+     ],
+     "continua_en": []
     },
     {
      "id": "generales-23",
-     "fase": "Representación y defensa de las partes",
+     "fase": "Procurador y abogado",
      "subtitulo": "TÍTULO II · CAPÍTULO III · arts. 23 a 24",
-     "descripcion": "",
+     "descripcion": "Ante un Juzgado (órgano unipersonal), el abogado es siempre obligatorio y el procurador, opcional: si el abogado asume la representación, a él se notifica. Ante una Sala (TSJ, Audiencia Nacional, Supremo), procurador y abogado obligatorios. Excepción: el funcionario puede actuar por sí mismo en defensa de sus derechos estatutarios, salvo separación de empleados públicos inamovibles, usando los sistemas electrónicos. La representación puede conferirse electrónicamente.",
      "articulos": [
-      "23",
-      "24"
+      "23"
      ],
      "rango": [
       "23",
       "24"
      ],
      "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "ramas": [
+      {
+       "si": "El recurso va a un Juzgado",
+       "entonces": "Abogado siempre; procurador opcional.",
+       "articulos": [
+        "23"
+       ],
+       "literal": {
+        "articulo": "23",
+        "texto": "las partes podrán conferir su representación a un Procurador y serán asistidas, en todo caso, por Abogado"
+       }
+      },
+      {
+       "si": "El recurso va a una Sala",
+       "entonces": "Procurador y abogado obligatorios.",
+       "articulos": [
+        "23"
+       ],
+       "literal": {
+        "articulo": "23",
+        "texto": "las partes deberán conferir su representación a un Procurador y ser asistidas por Abogado"
+       }
+      },
+      {
+       "si": "Recurre un funcionario sobre sus derechos estatutarios",
+       "entonces": "Puede comparecer por sí mismo, salvo separación de inamovibles, y debe usar los medios electrónicos.",
+       "articulos": [
+        "23"
+       ],
+       "literal": {
+        "articulo": "23",
+        "texto": "Podrán, no obstante, comparecer por sí mismos los funcionarios públicos en defensa de sus derechos estatutarios"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si ante un Juzgado la representación la lleva el abogado, ¿a quién se notifican las actuaciones?",
+      "a": "Al abogado.",
+      "articulos": [
+       "23"
+      ],
+      "literal": {
+       "articulo": "23",
+       "texto": "Cuando las partes confieran su representación al Abogado, será a éste a quien se notifiquen las actuaciones"
+      }
+     },
+     "conexiones": [
+      "23",
+      "45"
+     ],
+     "continua_en": []
     }
    ]
   },
@@ -421,85 +860,442 @@
    "nombre": "Objeto del recurso: qué se impugna y qué se pide",
    "bloque": "ljca",
    "grupo": "Parte general",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Qué actuación de la Administración se puede llevar al juzgado (actos, reglamentos, inactividad, vía de hecho), qué se puede pedir, cuándo se juntan varios recursos o se amplía el que está en marcha, y cómo se fija la cuantía, que decide el procedimiento y si cabe apelación o casación.",
    "ambito": {
     "corto": "Arts. 25 a 42",
     "texto": "TÍTULO III. Objeto del recurso contencioso-administrativo",
     "articulos": [
      "25"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "25",
+      "texto": "El recurso contencioso-administrativo es admisible en relación con las disposiciones de carácter general y con los actos expresos y presuntos de la Administración pública que pongan fin a la vía administrativa"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
      "id": "objeto-25",
-     "fase": "Actividad administrativa impugnable",
+     "fase": "Qué se puede impugnar",
      "subtitulo": "TÍTULO III · CAPÍTULO I · arts. 25 a 30",
-     "descripcion": "",
+     "descripcion": "Se pueden recurrir los reglamentos y los actos expresos o presuntos que ponen fin a la vía administrativa; los de trámite, solo si deciden el fondo, impiden continuar o causan indefensión o perjuicio irreparable. También la inactividad (art. 29) y la vía de hecho (art. 30). Un acto dictado en aplicación de un reglamento ilegal puede recurrirse alegando esa ilegalidad, aunque el reglamento no se recurriera en su día. No se admite el recurso contra actos que reproducen o confirman otros firmes y consentidos.",
+     "aviso": "Cuándo un acto pone fin a la vía administrativa se regula en la [[Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas|https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565]].",
      "articulos": [
       "25",
+      "26",
+      "27",
+      "28",
+      "29",
       "30"
      ],
      "rango": [
       "25",
       "30"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Inactividad: la Administración tiene para cumplir tras la reclamación",
+       "plazo": "3 meses",
+       "articulo": "29",
+       "literal": "Si en el plazo de tres meses desde la fecha de la reclamación"
+      },
+      {
+       "acto": "Actos firmes no ejecutados: tras pedir la ejecución",
+       "plazo": "1 mes (después, abreviado)",
+       "articulo": "29",
+       "literal": "si ésta no se produce en el plazo de un mes desde tal petición"
+      },
+      {
+       "acto": "Vía de hecho: la Administración tiene para atender el requerimiento",
+       "plazo": "10 días",
+       "articulo": "30",
+       "literal": "no fuere atendida dentro de los diez días siguientes a la presentación del requerimiento"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Es un acto de trámite",
+       "entonces": "Solo se recurre si decide directa o indirectamente el fondo, impide continuar el procedimiento o produce indefensión o perjuicio irreparable.",
+       "articulos": [
+        "25"
+       ],
+       "literal": {
+        "articulo": "25",
+        "texto": "si estos últimos deciden directa o indirectamente el fondo del asunto, determinan la imposibilidad de continuar el procedimiento, producen indefensión o perjuicio irreparable"
+       }
+      },
+      {
+       "si": "El acto repite o confirma otro que no se recurrió a tiempo",
+       "entonces": "Recurso inadmisible.",
+       "articulos": [
+        "28",
+        "69"
+       ],
+       "literal": {
+        "articulo": "28",
+        "texto": "los confirmatorios de actos consentidos por no haber sido recurridos en tiempo y forma"
+       }
+      },
+      {
+       "si": "El acto aplica un reglamento que se considera ilegal",
+       "entonces": "Cabe recurrir el acto por esa ilegalidad (impugnación indirecta), aunque no se recurriera el reglamento o se desestimara su recurso.",
+       "articulos": [
+        "26"
+       ],
+       "literal": {
+        "articulo": "26",
+        "texto": "no impiden la impugnación de los actos de aplicación"
+       }
+      },
+      {
+       "si": "La sentencia firme estima el recurso indirecto por ilegalidad del reglamento",
+       "entonces": "El juez plantea la cuestión de ilegalidad al tribunal competente para el recurso directo, salvo que sea él mismo o el Supremo, que anulan directamente.",
+       "articulos": [
+        "27",
+        "123"
+       ],
+       "literal": {
+        "articulo": "27",
+        "texto": "deberá plantear la cuestión de ilegalidad ante el Tribunal competente para conocer del recurso directo contra la disposición"
+       }
+      },
+      {
+       "si": "La Administración no cumple una prestación debida a personas determinadas",
+       "entonces": "Primero se le reclama; si en tres meses no cumple ni hay acuerdo, recurso contra la inactividad.",
+       "articulos": [
+        "29",
+        "46"
+       ],
+       "literal": {
+        "articulo": "29",
+        "texto": "éstos pueden deducir recurso contencioso-administrativo contra la inactividad de la Administración"
+       }
+      },
+      {
+       "si": "Hay una actuación material sin cobertura (vía de hecho)",
+       "entonces": "Se puede requerir el cese; si no se atiende en diez días, o sin requerir, se recurre directamente.",
+       "articulos": [
+        "30",
+        "46"
+       ],
+       "literal": {
+        "articulo": "30",
+        "texto": "podrá deducir directamente recurso contencioso-administrativo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Se puede recurrir un acto que confirma otro que no se impugnó en plazo?",
+      "a": "No: es inadmisible el recurso contra los actos confirmatorios de actos consentidos.",
+      "articulos": [
+       "28"
+      ],
+      "literal": {
+       "articulo": "28",
+       "texto": "No es admisible el recurso contencioso-administrativo respecto de los actos que sean reproducción de otros anteriores definitivos y firmes"
+      }
+     },
+     "conexiones": [
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "46",
+      "69",
+      "123"
+     ],
+     "continua_en": []
     },
     {
      "id": "objeto-31",
-     "fase": "Pretensiones de las partes",
+     "fase": "Qué se puede pedir",
      "subtitulo": "TÍTULO III · CAPÍTULO II · arts. 31 a 33",
-     "descripcion": "",
+     "descripcion": "Contra actos y reglamentos: que se declaren contrarios a Derecho y se anulen y, además, que se reconozca una situación jurídica individualizada con las medidas para restablecerla, incluida la indemnización. Contra la inactividad: que se condene a cumplir la obligación en sus términos concretos. Contra la vía de hecho: que se declare contraria a Derecho, cese y se restablezca la situación. El juez resuelve dentro de lo pedido y de los motivos alegados; si ve otros motivos, los somete antes a las partes.",
      "articulos": [
       "31",
+      "32",
       "33"
      ],
      "rango": [
       "31",
       "33"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Alegaciones sobre los motivos que plantea el juez",
+       "plazo": "10 días",
+       "articulo": "33",
+       "literal": "concederá a los interesados un plazo común de diez días para que formulen las alegaciones que estimen oportunas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se quiere algo más que la anulación (por ejemplo, cobrar o recuperar un derecho)",
+       "entonces": "Hay que pedir el reconocimiento de la situación jurídica individualizada y las medidas para restablecerla, incluida la indemnización.",
+       "articulos": [
+        "31"
+       ],
+       "literal": {
+        "articulo": "31",
+        "texto": "el reconocimiento de una situación jurídica individualizada y la adopción de las medidas adecuadas para el pleno restablecimiento de la misma"
+       }
+      },
+      {
+       "si": "El juez aprecia motivos que las partes no han planteado",
+       "entonces": "Los expone por providencia, sin prejuzgar, y da diez días para alegar; esa providencia no tiene recurso.",
+       "articulos": [
+        "33"
+       ],
+       "literal": {
+        "articulo": "33",
+        "texto": "Contra la expresada providencia no cabrá recurso alguno"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué puede pedirse en un recurso contra la inactividad de la Administración?",
+      "a": "Que se condene a la Administración a cumplir sus obligaciones en los concretos términos en que estén establecidas.",
+      "articulos": [
+       "32"
+      ],
+      "literal": {
+       "articulo": "32",
+       "texto": "condene a la Administración al cumplimiento de sus obligaciones en los concretos términos en que estén establecidas"
+      }
+     },
+     "conexiones": [
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "56",
+      "71"
+     ],
+     "continua_en": []
     },
     {
      "id": "objeto-34",
-     "fase": "Acumulación",
+     "fase": "Acumulación, ampliación y pleito testigo",
      "subtitulo": "TÍTULO III · CAPÍTULO III · arts. 34 a 39",
-     "descripcion": "",
+     "descripcion": "Se pueden juntar en un proceso las pretensiones sobre un mismo acto o sobre actos conectados (reproducción, confirmación, ejecución u otra conexión directa). Si sale un acto conectado durante el proceso, el recurso se puede ampliar a él dentro del plazo del art. 46. El órgano puede acumular recursos de oficio. Con muchos recursos de idéntico objeto, tramita uno o varios primero (pleito testigo) y suspende los demás. Contra estas decisiones, solo reposición.",
      "articulos": [
       "34",
+      "35",
+      "36",
+      "37",
       "39"
      ],
      "rango": [
       "34",
       "39"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Interponer por separado si no se admite la acumulación",
+       "plazo": "30 días",
+       "articulo": "35",
+       "literal": "ordenará a la parte que interponga por separado los recursos en el plazo de treinta días"
+      },
+      {
+       "acto": "Pedir la ampliación del recurso",
+       "plazo": "El del art. 46",
+       "articulo": "36",
+       "literal": "dentro del plazo que señala el artículo 46, la ampliación del recurso"
+      },
+      {
+       "acto": "Alegaciones sobre la ampliación",
+       "plazo": "5 días",
+       "articulo": "36",
+       "literal": "para que presenten alegaciones en el plazo común de cinco días"
+      },
+      {
+       "acto": "Recurrir la resolución expresa tras desistir del recurso contra el silencio",
+       "plazo": "2 meses desde su notificación",
+       "articulo": "36",
+       "literal": "el plazo para recurrir la resolución expresa, que será de dos meses"
+      },
+      {
+       "acto": "Tras la sentencia del pleito testigo: pedir extensión, continuar o desistir",
+       "plazo": "5 días",
+       "articulo": "37",
+       "literal": "a fin de que en el plazo de cinco días puedan interesar la extensión de sus efectos"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No se admite la acumulación y no se separan los recursos en plazo",
+       "entonces": "Se tiene por caducado el recurso que no se interpuso por separado.",
+       "articulos": [
+        "35"
+       ],
+       "literal": {
+        "articulo": "35",
+        "texto": "el Juez tendrá por caducado aquel recurso respecto del cual no se hubiere dado cumplimiento a lo ordenado"
+       }
+      },
+      {
+       "si": "Se recurrió el silencio y la Administración resuelve después de forma expresa",
+       "entonces": "Se puede ampliar el recurso a la resolución expresa o desistir si se acepta.",
+       "articulos": [
+        "36"
+       ],
+       "literal": {
+        "articulo": "36",
+        "texto": "podrá el recurrente desistir del recurso interpuesto con fundamento en la aceptación de la resolución expresa que se hubiere dictado o solicitar la ampliación a la resolución expresa"
+       }
+      },
+      {
+       "si": "Hay muchos recursos con idéntico objeto ante el mismo órgano",
+       "entonces": "Tramita uno o varios con preferencia y suspende los demás hasta su sentencia.",
+       "articulos": [
+        "37"
+       ],
+       "literal": {
+        "articulo": "37",
+        "texto": "tramitará uno o varios con carácter preferente"
+       }
+      },
+      {
+       "si": "Se quiere recurrir una decisión sobre acumulación, ampliación o tramitación preferente",
+       "entonces": "Solo cabe reposición.",
+       "articulos": [
+        "39"
+       ],
+       "literal": {
+        "articulo": "39",
+        "texto": "solo se dará recurso de reposición"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Suspende el proceso la petición de ampliación del recurso?",
+      "a": "Sí, aunque se mantienen los señalamientos ya acordados si la ampliación se decide antes y no perjudica a nadie.",
+      "articulos": [
+       "36"
+      ],
+      "literal": {
+       "articulo": "36",
+       "texto": "que producirá la suspensión del curso del procedimiento"
+      }
+     },
+     "conexiones": [
+      "34",
+      "36",
+      "37",
+      "39",
+      "46",
+      "110",
+      "111"
+     ],
+     "continua_en": [],
+     "recursos_rel": [
+      "reposicion"
+     ]
     },
     {
      "id": "objeto-40",
      "fase": "Cuantía del recurso",
      "subtitulo": "TÍTULO III · CAPÍTULO IV · arts. 40 a 42",
-     "descripcion": "",
+     "descripcion": "La cuantía decide si el asunto va por el abreviado (hasta 30.000 euros, art. 78) y si cabe apelación (art. 81) o casación. La fija el LAJ tras la demanda y la contestación, donde las partes pueden dar su parecer por otrosí; si el demandado discrepa, el juez la decide definitivamente en la sentencia. Es el valor económico de la pretensión: si solo se pide anular, el principal del acto, sin recargos ni costas; con varios demandantes, la de cada uno, no la suma. Son de cuantía indeterminada, entre otros, los recursos directos contra reglamentos y planes urbanísticos y los de funcionarios sin contenido económico.",
      "articulos": [
       "40",
+      "41",
       "42"
      ],
      "rango": [
       "40",
       "42"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Fijar la cuantía cuando lo requiere el LAJ (demandante)",
+       "plazo": "Máximo 10 días",
+       "articulo": "40",
+       "literal": "concediéndole al efecto un plazo no superior a diez días"
+      },
+      {
+       "acto": "Oponerse a la cuantía fijada por el demandante",
+       "plazo": "10 días",
+       "articulo": "40",
+       "literal": "lo expondrá por escrito dentro del término de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay varios demandantes",
+       "entonces": "Se mira la pretensión de cada uno, no la suma.",
+       "articulos": [
+        "41"
+       ],
+       "literal": {
+        "articulo": "41",
+        "texto": "se atenderá al valor económico de la pretensión deducida por cada uno de ellos, y no a la suma de todos"
+       }
+      },
+      {
+       "si": "Hay acumulación o ampliación",
+       "entonces": "Se suman las pretensiones, pero las de menor cuantía no ganan por ello la apelación o la casación.",
+       "articulos": [
+        "41"
+       ],
+       "literal": {
+        "articulo": "41",
+        "texto": "no comunicará a las de cuantía inferior la posibilidad de casación o apelación"
+       }
+      },
+      {
+       "si": "Se pide anular y además el reconocimiento de un derecho",
+       "entonces": "Cuenta todo lo reclamado si la Administración lo denegó entero; si lo reconoció en parte, la diferencia.",
+       "articulos": [
+        "42"
+       ],
+       "literal": {
+        "articulo": "42",
+        "texto": "Por la diferencia de la cuantía entre el objeto de la reclamación y el del acto que motivó el recurso"
+       }
+      },
+      {
+       "si": "Por una cuantía mal fijada no se admite la apelación o la casación",
+       "entonces": "Se puede fundar la queja en esa indebida determinación.",
+       "articulos": [
+        "40",
+        "85"
+       ],
+       "literal": {
+        "articulo": "40",
+        "texto": "podrá fundar el recurso de queja en la indebida determinación de la cuantía"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si solo se pide anular una liquidación, ¿cuenta el recargo para fijar la cuantía?",
+      "a": "No, se atiende al débito principal, salvo que el recargo u otra responsabilidad sea de importe superior.",
+      "articulos": [
+       "42"
+      ],
+      "literal": {
+       "articulo": "42",
+       "texto": "se tendrá en cuenta el débito principal, pero no los recargos, las costas ni cualquier otra clase de responsabilidad, salvo que cualquiera de éstos fuera de importe superior a aquél"
+      }
+     },
+     "conexiones": [
+      "40",
+      "41",
+      "42",
+      "78",
+      "81",
+      "86",
+      "139"
+     ],
+     "continua_en": [],
+     "recursos_rel": [
+      "queja"
+     ]
     }
    ]
   },
@@ -1835,29 +2631,296 @@
    "nombre": "Procedimientos especiales",
    "bloque": "ljca",
    "grupo": "Procedimientos",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "El procedimiento preferente y rápido para proteger derechos fundamentales (con la prohibición de reuniones), y la cuestión de ilegalidad que plantea el juez tras anular un acto por basarse en un reglamento ilegal. Los demás procedimientos especiales quedan como índice.",
    "ambito": {
     "corto": "Arts. 114 a 127",
     "texto": "TÍTULO V. Procedimientos especiales",
     "articulos": [
      "114"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "114",
+      "texto": "A todos los efectos, la tramitación de estos recursos tendrá carácter preferente"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
      "id": "especiales-114",
-     "fase": "Procedimiento para la protección de los derechos fundamentales de la persona",
-     "subtitulo": "TÍTULO V · CAPÍTULO I · arts. 114 a 122 quater",
-     "descripcion": "",
+     "fase": "Derechos fundamentales: interposición y expediente",
+     "subtitulo": "TÍTULO V · CAPÍTULO I · arts. 114 a 116",
+     "descripcion": "Vía preferente para defender los derechos y libertades del art. 53.2 de la Constitución frente a la Administración. Se pueden pedir la anulación, el reconocimiento del derecho y su restablecimiento, siempre para proteger el derecho invocado. Plazo corto: diez días. El escrito debe decir con precisión qué derecho se pide proteger y los argumentos esenciales. El LAJ pide el expediente con urgencia; si no llega, el proceso sigue. Agosto es hábil (art. 128.2).",
      "articulos": [
       "114",
-      "122 quater"
+      "115",
+      "116",
+      "128"
      ],
      "rango": [
       "114",
+      "116"
+     ],
+     "plazos": [
+      {
+       "acto": "Interponer el recurso",
+       "plazo": "10 días",
+       "articulo": "115",
+       "literal": "El plazo para interponer este recurso será de diez días"
+      },
+      {
+       "acto": "Si hubo recurso administrativo potestativo, inactividad o vía de hecho sin requerimiento",
+       "plazo": "10 días, pasados 20 desde la reclamación, el recurso o el inicio de la vía de hecho",
+       "articulo": "115",
+       "literal": "el plazo de diez días se iniciará transcurridos veinte días desde la reclamación, la presentación del recurso o el inicio de la actuación administrativa en vía de hecho"
+      },
+      {
+       "acto": "Remisión del expediente por la Administración",
+       "plazo": "Máximo 5 días desde el requerimiento",
+       "articulo": "116",
+       "literal": "en el plazo máximo de cinco días a contar desde la recepción del requerimiento remita el expediente"
+      },
+      {
+       "acto": "Comparecer como demandados (interesados)",
+       "plazo": "5 días",
+       "articulo": "116",
+       "literal": "para que puedan comparecer como demandados ante el Juzgado o Sala en el plazo de cinco días"
+      },
+      {
+       "acto": "Alegaciones sobre el expediente que llega tarde",
+       "plazo": "48 horas",
+       "articulo": "116",
+       "literal": "lo entregará a las partes por plazo de cuarenta y ocho horas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La Administración no envía el expediente a tiempo",
+       "entonces": "El proceso no se para; si llega después, se entrega a las partes para alegar en 48 horas.",
+       "articulos": [
+        "116"
+       ],
+       "literal": {
+        "articulo": "116",
+        "texto": "La falta de envío del expediente administrativo dentro del plazo previsto en el apartado anterior no suspenderá el curso de los autos"
+       }
+      },
+      {
+       "si": "La Administración o los demandados creen que no procede esta vía",
+       "entonces": "Pueden pedir razonadamente la inadmisión y la comparecencia del art. 117.2.",
+       "articulos": [
+        "116",
+        "117"
+       ],
+       "literal": {
+        "articulo": "116",
+        "texto": "podrán solicitar razonadamente la inadmisión del recurso y la celebración de la comparecencia"
+       }
+      },
+      {
+       "si": "Lo que se pide no busca proteger el derecho fundamental invocado",
+       "entonces": "No cabe en esta vía: las pretensiones deben tener esa finalidad (usa el procedimiento ordinario o el abreviado).",
+       "articulos": [
+        "114"
+       ],
+       "literal": {
+        "articulo": "114",
+        "texto": "siempre que tengan como finalidad la de restablecer o preservar los derechos o libertades por razón de los cuales el recurso hubiere sido formulado"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué debe expresar el escrito de interposición en el procedimiento de derechos fundamentales?",
+      "a": "Con precisión y claridad, el derecho o derechos cuya tutela se pide y, de forma concisa, los argumentos sustanciales.",
+      "articulos": [
+       "115"
+      ],
+      "literal": {
+       "articulo": "115",
+       "texto": "se expresará con precisión y claridad el derecho o derechos cuya tutela se pretende"
+      }
+     },
+     "conexiones": [
+      "31",
+      "32",
+      "46",
+      "48",
+      "115",
+      "128",
+      "135"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "especiales-117",
+     "fase": "Derechos fundamentales: admisión, demanda y sentencia",
+     "subtitulo": "TÍTULO V · CAPÍTULO I · arts. 117 a 121",
+     "descripcion": "Con el expediente o sin él, el LAJ manda seguir. Si se discute que el asunto vaya por esta vía, hay comparecencia con el Fiscal y el órgano decide por auto. Después, demanda en ocho días y alegaciones del Fiscal y los demandados en otros ocho; prueba de veinte días como máximo y sentencia en cinco. Se estima si hay cualquier infracción del ordenamiento (incluso desviación de poder) que vulnere un derecho amparable. La sentencia de un Juzgado es siempre apelable.",
+     "articulos": [
+      "117",
+      "118",
+      "119",
+      "120",
+      "121"
+     ],
+     "rango": [
+      "117",
+      "121"
+     ],
+     "plazos": [
+      {
+       "acto": "Decreto mandando seguir",
+       "plazo": "Al día siguiente",
+       "articulo": "117",
+       "literal": "dentro del siguiente día, dictará decreto mandando seguir las actuaciones"
+      },
+      {
+       "acto": "Comparecencia sobre la inadmisión",
+       "plazo": "Antes de 5 días",
+       "articulo": "117",
+       "literal": "que habrá de tener lugar antes de transcurrir cinco días"
+      },
+      {
+       "acto": "Formalizar la demanda",
+       "plazo": "8 días improrrogables",
+       "articulo": "118",
+       "literal": "en el plazo improrrogable de ocho días pueda formalizar la demanda"
+      },
+      {
+       "acto": "Alegaciones del Fiscal y los demandados",
+       "plazo": "8 días improrrogables",
+       "articulo": "119",
+       "literal": "presenten sus alegaciones en el plazo común e improrrogable de ocho días"
+      },
+      {
+       "acto": "Prueba (proposición y práctica)",
+       "plazo": "Máximo 20 días",
+       "articulo": "120",
+       "literal": "El período probatorio no será en ningún caso superior a veinte días comunes"
+      },
+      {
+       "acto": "Sentencia",
+       "plazo": "5 días",
+       "articulo": "121",
+       "literal": "el órgano jurisdiccional dictará sentencia en el plazo de cinco días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay posibles motivos de inadmisión",
+       "entonces": "Comparecencia con las partes y el Fiscal y, al día siguiente, auto que sigue por esta vía o inadmite por inadecuación del procedimiento.",
+       "articulos": [
+        "117"
+       ],
+       "literal": {
+        "articulo": "117",
+        "texto": "acordando su inadmisión por inadecuación del procedimiento"
+       }
+      },
+      {
+       "si": "La sentencia es de un Juzgado",
+       "entonces": "Siempre cabe apelación, en un solo efecto.",
+       "articulos": [
+        "121",
+        "81"
+       ],
+       "literal": {
+        "articulo": "121",
+        "texto": "Contra las sentencias de los Juzgados de lo Contencioso-administrativo procederá siempre la apelación en un solo efecto"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo estima la sentencia el recurso de protección de derechos fundamentales?",
+      "a": "Cuando el acto, la actuación o la disposición incurren en cualquier infracción del ordenamiento, incluso desviación de poder, y por ello vulneran un derecho amparable.",
+      "articulos": [
+       "121"
+      ],
+      "literal": {
+       "articulo": "121",
+       "texto": "incurran en cualquier infracción del ordenamiento jurídico, incluso la desviación de poder, y como consecuencia de la misma vulneren un derecho de los susceptibles de amparo"
+      }
+     },
+     "conexiones": [
+      "57",
+      "60",
+      "81",
+      "117",
+      "121"
+     ],
+     "continua_en": [],
+     "recursos_rel": [
+      "apelacion",
+      "casacion"
+     ]
+    },
+    {
+     "id": "especiales-122",
+     "fase": "Prohibición o modificación de reuniones",
+     "subtitulo": "TÍTULO V · CAPÍTULO I · art. 122",
+     "descripcion": "Ficha breve. Si la autoridad prohíbe una reunión o propone modificarla y los promotores no lo aceptan, pueden recurrir en 48 horas ante el tribunal competente, entregando copia registrada del recurso a la autoridad para que envíe el expediente. Hay una audiencia con la Administración, el Fiscal y los promotores, y el tribunal resuelve sin más recurso: solo puede mantener o revocar la prohibición o la modificación.",
+     "articulos": [
+      "122"
+     ],
+     "rango": [
+      "122",
+      "122"
+     ],
+     "plazos": [
+      {
+       "acto": "Interponer el recurso",
+       "plazo": "48 horas desde la notificación",
+       "articulo": "122",
+       "literal": "dentro de las cuarenta y ocho horas siguientes a la notificación de la prohibición o modificación"
+      },
+      {
+       "acto": "Convocatoria a la audiencia",
+       "plazo": "4 días improrrogables",
+       "articulo": "122",
+       "literal": "en el plazo improrrogable de cuatro días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El tribunal resuelve",
+       "entonces": "No cabe recurso; solo mantiene o revoca.",
+       "articulos": [
+        "122"
+       ],
+       "literal": {
+        "articulo": "122",
+        "texto": "oirá a todos los personados y resolverá sin ulterior recurso"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué puede decidir el tribunal en el recurso contra la prohibición de una reunión?",
+      "a": "Solo mantener o revocar la prohibición o las modificaciones propuestas.",
+      "articulos": [
+       "122"
+      ],
+      "literal": {
+       "articulo": "122",
+       "texto": "únicamente podrá mantener o revocar la prohibición o las modificaciones propuestas"
+      }
+     },
+     "conexiones": [
+      "10",
+      "122"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "especiales-122_bis",
+     "fase": "Autorizaciones judiciales (arts. 122 bis a 122 quater)",
+     "subtitulo": "TÍTULO V · CAPÍTULO I · arts. 122 bis a 122 quater",
+     "descripcion": "",
+     "articulos": [
+      "122 bis"
+     ],
+     "rango": [
+      "122 bis",
       "122 quater"
      ],
      "plazos": [],
@@ -1868,18 +2931,91 @@
      "id": "especiales-123",
      "fase": "Cuestión de ilegalidad",
      "subtitulo": "TÍTULO V · CAPÍTULO II · arts. 123 a 126",
-     "descripcion": "",
+     "descripcion": "Ficha breve. Cuando un juez anula un acto con sentencia firme porque el reglamento aplicado es ilegal y no es competente para el recurso directo contra ese reglamento, plantea la cuestión al tribunal que sí lo es (art. 27). Se limita a los preceptos que sirvieron para estimar la demanda. Las partes pueden personarse y alegar; el tribunal sentencia sobre la validez del reglamento. Esa sentencia no cambia lo ya decidido en el pleito de origen.",
      "articulos": [
       "123",
-      "126"
+      "124",
+      "125",
+      "126",
+      "27"
      ],
      "rango": [
       "123",
       "126"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Auto de planteamiento",
+       "plazo": "5 días desde que consta la firmeza de la sentencia",
+       "articulo": "123",
+       "literal": "dentro de los cinco días siguientes a que conste en las actuaciones la firmeza de la sentencia"
+      },
+      {
+       "acto": "Comparecer y alegar ante el tribunal competente",
+       "plazo": "15 días",
+       "articulo": "123",
+       "literal": "en el plazo de quince días, puedan comparecer y formular alegaciones"
+      },
+      {
+       "acto": "Sentencia",
+       "plazo": "10 días desde que se declara concluso",
+       "articulo": "125",
+       "literal": "La sentencia se dictará en los diez días siguientes a dicha declaración"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se quiere recurrir el auto que plantea la cuestión",
+       "entonces": "No cabe recurso.",
+       "articulos": [
+        "123"
+       ],
+       "literal": {
+        "articulo": "123",
+        "texto": "Contra el auto de planteamiento no se dará recurso alguno"
+       }
+      },
+      {
+       "si": "Una parte se persona después de los quince días",
+       "entonces": "No se admite la personación.",
+       "articulos": [
+        "123"
+       ],
+       "literal": {
+        "articulo": "123",
+        "texto": "Transcurrido este plazo, no se admitirá la personación"
+       }
+      },
+      {
+       "si": "La sentencia declara ilegal (o legal) el reglamento",
+       "entonces": "No afecta a la situación jurídica concreta que resolvió la sentencia del pleito de origen.",
+       "articulos": [
+        "126"
+       ],
+       "literal": {
+        "articulo": "126",
+        "texto": "no afectará a la situación jurídica concreta derivada de la sentencia dictada por el Juez o Tribunal que planteó aquélla"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿A qué preceptos se limita la cuestión de ilegalidad?",
+      "a": "Solo a los preceptos reglamentarios cuya ilegalidad sirvió de base para estimar la demanda.",
+      "articulos": [
+       "123"
+      ],
+      "literal": {
+       "articulo": "123",
+       "texto": "La cuestión habrá de ceñirse exclusivamente a aquel o aquellos preceptos reglamentarios cuya declaración de ilegalidad haya servido de base para la estimación de la demanda"
+      }
+     },
+     "conexiones": [
+      "26",
+      "27",
+      "123",
+      "126"
+     ],
+     "continua_en": []
     },
     {
      "id": "especiales-127",
@@ -2475,34 +3611,415 @@
    "nombre": "Ejecución de sentencias",
    "bloque": "ljca",
    "grupo": "Ejecución",
-   "esqueleto": true,
-   "resumen": "Esqueleto del bloque: las fases son los títulos, capítulos y secciones del BOE. Plazos, alternativas y preguntas, en preparación.",
+   "resumen": "Qué hacer cuando la Administración no cumple la sentencia: plazos para instar la ejecución forzosa, condenas a pagar o a hacer, incidentes y multas coercitivas, y cómo extender los efectos de una sentencia favorable a quien está en la misma situación.",
    "ambito": {
     "corto": "Arts. 103 a 113",
     "texto": "CAPÍTULO IV. Ejecución de sentencias y demás títulos ejecutivos",
     "articulos": [
      "103"
     ],
-    "literal": []
+    "literal": [
+     {
+      "articulo": "103",
+      "texto": "Las partes están obligadas a cumplir las sentencias en la forma y términos que en éstas se consignen"
+     }
+    ]
    },
    "revisado": false,
    "fases": [
     {
      "id": "ejecucion-103",
-     "fase": "Ejecución de sentencias y demás títulos ejecutivos",
-     "subtitulo": "CAPÍTULO IV · arts. 103 a 113",
-     "descripcion": "",
+     "fase": "Cumplimiento y ejecución forzosa",
+     "subtitulo": "CAPÍTULO IV · arts. 103 a 105 y 113",
+     "descripcion": "Ejecuta el órgano que conoció en primera o única instancia. Firme la sentencia, el LAJ la comunica al órgano responsable de cumplirla. Si en dos meses (o en el plazo que fije la sentencia) no se cumple, cualquier parte o afectado puede pedir la ejecución forzosa. No cabe suspender ni declarar inejecutable el fallo; si hay imposibilidad material o legal, la Administración debe alegarla en ese plazo y el juez fija, en su caso, una indemnización. Son nulos los actos dictados para eludir la sentencia.",
      "articulos": [
       "103",
+      "104",
+      "105",
       "113"
      ],
      "rango": [
       "103",
-      "113"
+      "105"
      ],
-     "plazos": [],
-     "ramas": [],
-     "esqueleto": true
+     "plazos": [
+      {
+       "acto": "Comunicación de la sentencia firme al órgano responsable",
+       "plazo": "10 días",
+       "articulo": "104",
+       "literal": "lo comunicará en el plazo de diez días al órgano previamente identificado como responsable de su cumplimiento"
+      },
+      {
+       "acto": "Instar la ejecución forzosa",
+       "plazo": "Pasados 2 meses desde la comunicación (o el plazo de la sentencia)",
+       "articulo": "104",
+       "literal": "Transcurridos dos meses a partir de la comunicación de la sentencia o el plazo fijado en ésta para el cumplimiento del fallo"
+      },
+      {
+       "acto": "Acuerdo del art. 77 sin plazo: ejecución forzosa",
+       "plazo": "2 meses tras requerir el cumplimiento",
+       "articulo": "113",
+       "literal": "la parte perjudicada podrá requerir a la otra su cumplimiento y transcurridos dos meses podrá proceder a instar su ejecución forzosa"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La Administración alega que no puede cumplir",
+       "entonces": "Debe decirlo dentro de los dos meses; el juez, oídas las partes, decide, adopta medidas y fija la indemnización por la parte que no se pueda cumplir.",
+       "articulos": [
+        "105"
+       ],
+       "literal": {
+        "articulo": "105",
+        "texto": "fijando en su caso la indemnización que proceda por la parte en que no pueda ser objeto de cumplimiento pleno"
+       }
+      },
+      {
+       "si": "La Administración dicta un acto para esquivar la sentencia",
+       "entonces": "Es nulo de pleno derecho; se pide su nulidad al órgano de la ejecución, por el trámite del art. 109.",
+       "articulos": [
+        "103",
+        "109"
+       ],
+       "literal": {
+        "articulo": "103",
+        "texto": "Serán nulos de pleno derecho los actos y disposiciones contrarios a los pronunciamientos de las sentencias"
+       }
+      },
+      {
+       "si": "Dos meses harían ineficaz la sentencia",
+       "entonces": "La sentencia puede fijar un plazo menor para cumplir.",
+       "articulos": [
+        "104"
+       ],
+       "literal": {
+        "articulo": "104",
+        "texto": "podrá fijar un plazo inferior para el cumplimiento"
+       }
+      },
+      {
+       "si": "No se cumple un acuerdo del art. 77 con plazo",
+       "entonces": "Vencido el plazo, cualquier parte puede pedir la ejecución forzosa.",
+       "articulos": [
+        "113",
+        "77"
+       ],
+       "literal": {
+        "articulo": "113",
+        "texto": "cualquiera de las partes podrá instar su ejecución forzosa"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede el juez suspender el cumplimiento de una sentencia o declararla inejecutable?",
+      "a": "No. Si hay imposibilidad material o legal, adopta medidas para la mayor efectividad y fija la indemnización que proceda.",
+      "articulos": [
+       "105"
+      ],
+      "literal": {
+       "articulo": "105",
+       "texto": "No podrá suspenderse el cumplimiento ni declararse la inejecución total o parcial del fallo"
+      }
+     },
+     "conexiones": [
+      "7",
+      "71",
+      "77",
+      "104",
+      "105",
+      "109"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "ejecucion-106",
+     "fase": "Condenas a pagar, a hacer o a publicar",
+     "subtitulo": "CAPÍTULO IV · arts. 106 a 108",
+     "descripcion": "Condena a pagar: la Administración paga con cargo a su presupuesto, más el interés legal desde la sentencia de instancia; a los tres meses se puede pedir la ejecución forzosa, y el juez puede subir el interés dos puntos si no hay diligencia. Condena a hacer o a dictar un acto: si no cumple, el juez puede ejecutar con sus medios o con otras Administraciones, o dar al fallo la eficacia del acto omitido. Si la sentencia anula un acto, se puede pedir su inscripción en registros y su publicación.",
+     "articulos": [
+      "106",
+      "107",
+      "108"
+     ],
+     "rango": [
+      "106",
+      "108"
+     ],
+     "plazos": [
+      {
+       "acto": "Pago: instar la ejecución forzosa",
+       "plazo": "Pasados 3 meses desde la comunicación",
+       "articulo": "106",
+       "literal": "transcurridos tres meses desde que la sentencia firme sea comunicada al órgano que deba cumplirla, se podrá instar la ejecución forzosa"
+      },
+      {
+       "acto": "Pago: modificación presupuestaria si hace falta",
+       "plazo": "3 meses desde la notificación",
+       "articulo": "106",
+       "literal": "deberá concluirse el procedimiento correspondiente dentro de los tres meses siguientes al día de notificación de la resolución judicial"
+      },
+      {
+       "acto": "Publicar la anulación de un reglamento o acto general",
+       "plazo": "10 días desde la firmeza",
+       "articulo": "107",
+       "literal": "ordenará su publicación en diario oficial en el plazo de diez días a contar desde la firmeza de la sentencia"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La Administración tarda en pagar",
+       "entonces": "Además del interés legal, el juez puede aumentarlo en dos puntos si aprecia falta de diligencia.",
+       "articulos": [
+        "106"
+       ],
+       "literal": {
+        "articulo": "106",
+        "texto": "podrá incrementar en dos puntos el interés legal a devengar, siempre que apreciase falta de diligencia en el cumplimiento"
+       }
+      },
+      {
+       "si": "Pagar causaría un trastorno grave a la Hacienda",
+       "entonces": "La Administración lo propone razonadamente y el juez decide la forma menos gravosa.",
+       "articulos": [
+        "106"
+       ],
+       "literal": {
+        "articulo": "106",
+        "texto": "se resuelva sobre el modo de ejecutar la sentencia en la forma que sea menos gravosa para aquélla"
+       }
+      },
+      {
+       "si": "La Administración no realiza la actividad o el acto a que fue condenada",
+       "entonces": "El juez ejecuta con sus medios o con otras Administraciones, o adopta medidas, incluida la ejecución subsidiaria a su costa.",
+       "articulos": [
+        "108"
+       ],
+       "literal": {
+        "articulo": "108",
+        "texto": "entre las que se incluye la ejecución subsidiaria con cargo a la Administración condenada"
+       }
+      },
+      {
+       "si": "La sentencia ordena demoler un inmueble",
+       "entonces": "Antes, salvo peligro inminente, se exigen garantías para indemnizar a terceros de buena fe.",
+       "articulos": [
+        "108"
+       ],
+       "literal": {
+        "articulo": "108",
+        "texto": "la prestación de garantías suficientes para responder del pago de las indemnizaciones debidas a terceros de buena fe"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Desde cuándo se calcula el interés legal de una condena a pagar?",
+      "a": "Desde la notificación de la sentencia dictada en única o primera instancia.",
+      "articulos": [
+       "106"
+      ],
+      "literal": {
+       "articulo": "106",
+       "texto": "calculado desde la fecha de notificación de la sentencia dictada en única o primera instancia"
+      }
+     },
+     "conexiones": [
+      "71",
+      "104",
+      "106",
+      "107",
+      "108"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "ejecucion-109",
+     "fase": "Incidentes de ejecución y medidas contra el incumplimiento",
+     "subtitulo": "CAPÍTULO IV · arts. 109 y 112",
+     "descripcion": "Mientras no conste la ejecución total, cualquier parte o afectado puede plantear un incidente para resolver dudas de la ejecución (qué órgano, plazo, medios), sin contrariar el fallo. Pasados los plazos sin cumplir, el juez adopta las medidas necesarias: multas coercitivas reiteradas de 150 a 1.500 euros a la autoridad o funcionario responsable, previo apercibimiento, y testimonio para exigir responsabilidad penal.",
+     "articulos": [
+      "109",
+      "112"
+     ],
+     "rango": [
+      "109",
+      "112"
+     ],
+     "plazos": [
+      {
+       "acto": "Alegaciones en el incidente de ejecución",
+       "plazo": "Máximo 20 días",
+       "articulo": "109",
+       "literal": "en plazo común que no excederá de veinte días"
+      },
+      {
+       "acto": "Auto que resuelve el incidente",
+       "plazo": "10 días",
+       "articulo": "109",
+       "literal": "dictará auto, en el plazo de diez días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No está claro quién debe cumplir, en qué plazo o cómo",
+       "entonces": "Incidente de ejecución: lo decide el juez por auto, sin contrariar el fallo.",
+       "articulos": [
+        "109"
+       ],
+       "literal": {
+        "articulo": "109",
+        "texto": "podrán promover incidente para decidir, sin contrariar el contenido del fallo"
+       }
+      },
+      {
+       "si": "La autoridad o el funcionario siguen sin cumplir",
+       "entonces": "Multas coercitivas de 150 a 1.500 euros, reiterables, y testimonio para responsabilidad penal, previo apercibimiento.",
+       "articulos": [
+        "112"
+       ],
+       "literal": {
+        "articulo": "112",
+        "texto": "Imponer multas coercitivas de ciento cincuenta a mil quinientos euros"
+       }
+      },
+      {
+       "si": "Se quiere recurrir un auto dictado en ejecución",
+       "entonces": "Si es de un Juzgado, apelación (art. 80.1.b); si es de una Sala, casación en los casos del art. 87.1.c, previa reposición.",
+       "articulos": [
+        "80",
+        "87"
+       ],
+       "literal": {
+        "articulo": "80",
+        "texto": "Los recaídos en ejecución de sentencia"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿A quién pueden imponerse multas coercitivas por incumplir la sentencia?",
+      "a": "A las autoridades, funcionarios o agentes que incumplan los requerimientos, una vez acreditada su responsabilidad y previo apercibimiento.",
+      "articulos": [
+       "112"
+      ],
+      "literal": {
+       "articulo": "112",
+       "texto": "a las autoridades, funcionarios o agentes que incumplan los requerimientos del Juzgado o de la Sala"
+      }
+     },
+     "conexiones": [
+      "48",
+      "80",
+      "87",
+      "103",
+      "109",
+      "112"
+     ],
+     "continua_en": [],
+     "recursos_rel": [
+      "apelacion",
+      "casacion",
+      "reposicion"
+     ]
+    },
+    {
+     "id": "ejecucion-110",
+     "fase": "Extensión de los efectos de la sentencia",
+     "subtitulo": "CAPÍTULO IV · arts. 110 a 111",
+     "descripcion": "En materia tributaria, de personal y de unidad de mercado, quien esté en idéntica situación que el favorecido por una sentencia firme puede pedir que se le extiendan sus efectos sin pleitear de nuevo. Se pide al órgano que dictó la sentencia, en un año, con escrito razonado y documentos que prueben la identidad de situación; ese órgano debe ser también competente por territorio para el nuevo interesado. También sirve para los recursos suspendidos por un pleito testigo (art. 37).",
+     "aviso": "El art. 110 menciona el recurso del art. 99 y el recurso en interés de la ley, que figuran como suprimidos (anotado en PENDIENTES).",
+     "articulos": [
+      "110",
+      "111",
+      "37"
+     ],
+     "rango": [
+      "110",
+      "111"
+     ],
+     "plazos": [
+      {
+       "acto": "Pedir la extensión de efectos",
+       "plazo": "1 año desde la última notificación de la sentencia a las partes",
+       "articulo": "110",
+       "literal": "en el plazo de un año desde la última notificación de ésta a quienes fueron parte en el proceso"
+      },
+      {
+       "acto": "Informe de la Administración y antecedentes",
+       "plazo": "20 días",
+       "articulo": "110",
+       "literal": "en los veinte días siguientes"
+      },
+      {
+       "acto": "Alegaciones de las partes",
+       "plazo": "5 días",
+       "articulo": "110",
+       "literal": "para que aleguen por plazo común de cinco días"
+      },
+      {
+       "acto": "Pleito testigo firme: pedir extensión, seguir o desistir",
+       "plazo": "5 días",
+       "articulo": "111",
+       "literal": "para que en el plazo de cinco días interesen la extensión de los efectos de la sentencia"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay cosa juzgada, la doctrina es contraria a la jurisprudencia, o el interesado consintió una resolución firme",
+       "entonces": "Se desestima la extensión.",
+       "articulos": [
+        "110"
+       ],
+       "literal": {
+        "articulo": "110",
+        "texto": "Si para el interesado se hubiere dictado resolución que, habiendo causado estado en vía administrativa, fuere consentida y firme"
+       }
+      },
+      {
+       "si": "Se concede la extensión",
+       "entonces": "El auto no puede reconocer una situación distinta de la de la sentencia.",
+       "articulos": [
+        "110"
+       ],
+       "literal": {
+        "articulo": "110",
+        "texto": "no podrá reconocerse una situación jurídica distinta a la definida en la sentencia firme"
+       }
+      },
+      {
+       "si": "Se quiere recurrir el auto",
+       "entonces": "Según las reglas generales del art. 80 (apelación de autos de los Juzgados).",
+       "articulos": [
+        "110",
+        "80"
+       ],
+       "literal": {
+        "articulo": "110",
+        "texto": "El régimen de recurso del auto dictado se ajustará a las reglas generales previstas en el artículo 80"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿En qué materias cabe extender los efectos de una sentencia firme?",
+      "a": "En materia tributaria, de personal al servicio de la Administración y de unidad de mercado.",
+      "articulos": [
+       "110"
+      ],
+      "literal": {
+       "articulo": "110",
+       "texto": "En materia tributaria, de personal al servicio de la Administración pública y de unidad de mercado"
+      }
+     },
+     "conexiones": [
+      "37",
+      "69",
+      "80",
+      "81",
+      "110",
+      "111"
+     ],
+     "continua_en": [],
+     "recursos_rel": [
+      "apelacion"
+     ]
     }
    ]
   },
