@@ -1,0 +1,1301 @@
+{
+ "procedimientos": [
+  {
+   "id": "cambios",
+   "nombre": "Cambios en el contrato: movilidad, modificación y cambio de empresario",
+   "bloque": "et",
+   "grupo": "Cambios y suspensión",
+   "resumen": "Qué puede cambiar el empresario y qué puede hacer el trabajador: movilidad funcional y geográfica, modificación sustancial de condiciones (individual o colectiva), contratas, cesión ilegal y sucesión de empresa.",
+   "ambito": {
+    "corto": "Arts. 39 a 44",
+    "texto": "TÍTULO I · CAPÍTULO III · Secciones 1.ª y 2.ª",
+    "articulos": [
+     "39"
+    ],
+    "literal": [
+     {
+      "articulo": "41",
+      "texto": "La dirección de la empresa podrá acordar modificaciones sustanciales de las condiciones de trabajo cuando existan probadas razones económicas, técnicas, organizativas o de producción"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "cambios-39",
+     "fase": "Movilidad funcional",
+     "subtitulo": "Sección 1.ª · art. 39",
+     "descripcion": "El empresario puede cambiar las funciones dentro del grupo profesional, respetando titulaciones y dignidad. Fuera del grupo, solo con razones técnicas u organizativas y por el tiempo imprescindible, comunicándolo a los representantes. Con funciones superiores se cobra la retribución de esas funciones; con inferiores se mantiene la de origen. Otros cambios de funciones exigen acuerdo o el cauce de la modificación sustancial (art. 41).",
+     "articulos": [
+      "39"
+     ],
+     "rango": [
+      "39",
+      "39"
+     ],
+     "plazos": [
+      {
+       "acto": "Funciones superiores: reclamar el ascenso o la vacante",
+       "plazo": "Más de 6 meses en un año u 8 en dos años",
+       "articulo": "39",
+       "literal": "por un periodo superior a seis meses durante un año u ocho durante dos años"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La empresa niega el ascenso o la cobertura de la vacante",
+       "entonces": "Con informe previo del comité o los delegados, el trabajador puede reclamar ante la jurisdicción social, además de la diferencia salarial.",
+       "articulos": [
+        "39"
+       ],
+       "literal": {
+        "articulo": "39",
+        "texto": "el trabajador podrá reclamar ante la jurisdicción social"
+       }
+      },
+      {
+       "si": "Tras la movilidad, la empresa alega ineptitud o falta de adaptación",
+       "entonces": "No puede invocarlas como causa de despido objetivo.",
+       "articulos": [
+        "39",
+        "52"
+       ],
+       "literal": {
+        "articulo": "39",
+        "texto": "No cabrá invocar como causa de despido objetivo la ineptitud sobrevenida o la falta de adaptación"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué salario corresponde al trabajador al que se encomiendan funciones inferiores?",
+      "a": "Mantiene la retribución de origen.",
+      "articulos": [
+       "39"
+      ],
+      "literal": {
+       "articulo": "39",
+       "texto": "en los que mantendrá la retribución de origen"
+      }
+     },
+     "conexiones": [
+      "22",
+      "41",
+      "52"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "cambios-40",
+     "fase": "Movilidad geográfica (traslados)",
+     "subtitulo": "Sección 1.ª · art. 40",
+     "descripcion": "El traslado a otro centro que obliga a cambiar de residencia exige razones económicas, técnicas, organizativas o de producción y aviso al trabajador y a sus representantes con treinta días de antelación. El trabajador elige: trasladarse con compensación de gastos o extinguir el contrato con veinte días por año (máximo doce mensualidades). Si no extingue y no está conforme, puede impugnar. Si alcanza los umbrales colectivos, periodo de consultas de hasta quince días. Hay reglas propias para víctimas de violencia de género, sexual o de terrorismo.",
+     "aviso": "La impugnación del traslado tiene modalidad propia en la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]]; caducidad de veinte días (art. 59.4).",
+     "articulos": [
+      "40",
+      "59"
+     ],
+     "rango": [
+      "40",
+      "40"
+     ],
+     "plazos": [
+      {
+       "acto": "Aviso del traslado",
+       "plazo": "Mínimo 30 días antes",
+       "articulo": "40",
+       "literal": "con una antelación mínima de treinta días a la fecha de su efectividad"
+      },
+      {
+       "acto": "Extinción si se rechaza el traslado",
+       "plazo": "20 días por año, máximo 12 mensualidades",
+       "articulo": "40",
+       "literal": "percibiendo una indemnización de veinte días de salario por año de servicio, prorrateándose por meses los periodos de tiempo inferiores a un año y con un máximo de doce mensualidades"
+      },
+      {
+       "acto": "Periodo de consultas (traslado colectivo)",
+       "plazo": "Máximo 15 días",
+       "articulo": "40",
+       "literal": "de una duración no superior a quince días"
+      },
+      {
+       "acto": "Impugnar (caducidad)",
+       "plazo": "20 días desde el siguiente a la notificación",
+       "articulo": "59",
+       "literal": "Lo previsto en el apartado anterior será de aplicación a las acciones contra las decisiones empresariales en materia de movilidad geográfica"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El trabajador no está conforme pero no quiere extinguir",
+       "entonces": "Se incorpora y puede impugnar; si la sentencia declara injustificado el traslado, vuelve a su centro.",
+       "articulos": [
+        "40"
+       ],
+       "literal": {
+        "articulo": "40",
+        "texto": "reconocerá el derecho del trabajador a ser reincorporado al centro de trabajo de origen"
+       }
+      },
+      {
+       "si": "Traslados sucesivos por debajo del umbral, sin causas nuevas",
+       "entonces": "Fraude de ley: nulos.",
+       "articulos": [
+        "40"
+       ],
+       "literal": {
+        "articulo": "40",
+        "texto": "dichos nuevos traslados se considerarán efectuados en fraude de ley"
+       }
+      },
+      {
+       "si": "Se traslada al cónyuge que trabaja en la misma empresa",
+       "entonces": "El otro tiene derecho al traslado a la misma localidad, si hay puesto.",
+       "articulos": [
+        "40"
+       ],
+       "literal": {
+        "articulo": "40",
+        "texto": "tendrá derecho al traslado a la misma localidad, si hubiera puesto de trabajo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Con cuánta antelación debe notificarse un traslado?",
+      "a": "Al menos treinta días antes de su efectividad, al trabajador y a sus representantes.",
+      "articulos": [
+       "40"
+      ],
+      "literal": {
+       "articulo": "40",
+       "texto": "La decisión de traslado deberá ser notificada por el empresario al trabajador, así como a sus representantes legales"
+      }
+     },
+     "conexiones": [
+      "41",
+      "50",
+      "59"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "cambios-41",
+     "fase": "Modificación sustancial de condiciones",
+     "subtitulo": "Sección 1.ª · art. 41",
+     "descripcion": "Con razones económicas, técnicas, organizativas o de producción probadas, el empresario puede modificar condiciones sustanciales: jornada, horario, turnos, salario, sistema de trabajo y rendimiento, y funciones fuera del art. 39. Individual: aviso con quince días. Colectiva (umbrales en noventa días): periodo de consultas de hasta quince días y efectos a los siete días de notificar la decisión. Si perjudica en jornada, horario, turnos, salario o funciones, el trabajador puede extinguir con veinte días por año (máximo nueve meses); si no, puede impugnar. Lo pactado en convenio estatutario se modifica por el art. 82.3.",
+     "aviso": "La impugnación tiene modalidad propia en la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]]; caducidad de veinte días (art. 59.4). Las colectivas, también por conflicto colectivo.",
+     "articulos": [
+      "41",
+      "59",
+      "82"
+     ],
+     "rango": [
+      "41",
+      "41"
+     ],
+     "plazos": [
+      {
+       "acto": "Aviso de la modificación individual",
+       "plazo": "Mínimo 15 días antes",
+       "articulo": "41",
+       "literal": "con una antelación mínima de quince días a la fecha de su efectividad"
+      },
+      {
+       "acto": "Periodo de consultas (colectiva)",
+       "plazo": "Máximo 15 días",
+       "articulo": "41",
+       "literal": "de duración no superior a quince días"
+      },
+      {
+       "acto": "Efectos de la modificación colectiva sin acuerdo",
+       "plazo": "7 días desde la notificación",
+       "articulo": "41",
+       "literal": "surtirá efectos en el plazo de los siete días siguientes a su notificación"
+      },
+      {
+       "acto": "Extinción si perjudica",
+       "plazo": "20 días por año, máximo 9 meses",
+       "articulo": "41",
+       "literal": "una indemnización de veinte días de salario por año de servicio prorrateándose por meses los periodos inferiores a un año y con un máximo de nueve meses"
+      },
+      {
+       "acto": "Impugnar (caducidad)",
+       "plazo": "20 días desde el siguiente a la notificación",
+       "articulo": "59",
+       "literal": "El plazo se computará desde el día siguiente a la fecha de notificación de la decisión empresarial, tras la finalización, en su caso, del periodo de consultas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El trabajador impugna y la modificación es injustificada",
+       "entonces": "Se le repone en sus anteriores condiciones.",
+       "articulos": [
+        "41"
+       ],
+       "literal": {
+        "articulo": "41",
+        "texto": "reconocerá el derecho del trabajador a ser repuesto en sus anteriores condiciones"
+       }
+      },
+      {
+       "si": "Modificaciones sucesivas por debajo del umbral colectivo, sin causas nuevas",
+       "entonces": "Fraude de ley: nulas.",
+       "articulos": [
+        "41"
+       ],
+       "literal": {
+        "articulo": "41",
+        "texto": "dichas nuevas modificaciones se considerarán efectuadas en fraude de ley"
+       }
+      },
+      {
+       "si": "Se plantea conflicto colectivo",
+       "entonces": "Paraliza las acciones individuales ya iniciadas hasta que se resuelva.",
+       "articulos": [
+        "41"
+       ],
+       "literal": {
+        "articulo": "41",
+        "texto": "La interposición del conflicto paralizará la tramitación de las acciones individuales iniciadas hasta su resolución"
+       }
+      },
+      {
+       "si": "La modificación menoscaba la dignidad y se hizo sin respetar el art. 41",
+       "entonces": "Causa justa para pedir la extinción del art. 50.",
+       "articulos": [
+        "50"
+       ],
+       "literal": {
+        "articulo": "50",
+        "texto": "Las modificaciones sustanciales en las condiciones de trabajo llevadas a cabo sin respetar lo previsto en el artículo 41"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué umbral convierte en colectiva una modificación sustancial en una empresa de 80 trabajadores?",
+      "a": "Que afecte al menos a diez trabajadores en un periodo de noventa días.",
+      "articulos": [
+       "41"
+      ],
+      "literal": {
+       "articulo": "41",
+       "texto": "Diez trabajadores, en las empresas que ocupen menos de cien trabajadores"
+      }
+     },
+     "conexiones": [
+      "39",
+      "40",
+      "50",
+      "59",
+      "82"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "cambios-42",
+     "fase": "Contratas y cesión ilegal de trabajadores",
+     "subtitulo": "Sección 2.ª · arts. 42 a 43",
+     "descripcion": "Contratas de la propia actividad: la empresa principal responde solidariamente de las deudas salariales de la contratista durante un año tras el encargo, y de las de Seguridad Social durante tres (salvo certificación negativa). Cesión de trabajadores: solo a través de empresas de trabajo temporal; si es ilegal (mera puesta a disposición, empresa sin organización ni medios propios), cedente y cesionaria responden solidariamente y el trabajador puede elegir quedar fijo en cualquiera de las dos.",
+     "articulos": [
+      "42",
+      "43"
+     ],
+     "rango": [
+      "42",
+      "43"
+     ],
+     "plazos": [
+      {
+       "acto": "Responsabilidad solidaria por salarios de la contratista",
+       "plazo": "Durante el año siguiente al fin del encargo",
+       "articulo": "42",
+       "literal": "responderá solidariamente durante el año siguiente a la finalización del encargo"
+      },
+      {
+       "acto": "Responsabilidad por Seguridad Social de la contratista",
+       "plazo": "3 años tras el encargo",
+       "articulo": "42",
+       "literal": "durante los tres años siguientes a la terminación de su encargo"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La obra la contrata un particular para su vivienda",
+       "entonces": "No hay responsabilidad del dueño por los actos de la contratista.",
+       "articulos": [
+        "42"
+       ],
+       "literal": {
+        "articulo": "42",
+        "texto": "No habrá responsabilidad por los actos de la contratista cuando la actividad contratada se refiera exclusivamente a la construcción o reparación que pueda contratar una persona respecto de su vivienda"
+       }
+      },
+      {
+       "si": "Hay cesión ilegal",
+       "entonces": "El trabajador elige ser fijo en la cedente o en la cesionaria, con antigüedad desde el inicio de la cesión.",
+       "articulos": [
+        "43"
+       ],
+       "literal": {
+        "articulo": "43",
+        "texto": "tendrán derecho a adquirir la condición de fijos, a su elección, en la empresa cedente o cesionaria"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo hay cesión ilegal de trabajadores?",
+      "a": "Cuando el contrato entre empresas se limita a poner trabajadores a disposición, o la cedente carece de actividad u organización propia y estable, de medios, o no ejerce como empresario.",
+      "articulos": [
+       "43"
+      ],
+      "literal": {
+       "articulo": "43",
+       "texto": "que el objeto de los contratos de servicios entre las empresas se limite a una mera puesta a disposición de los trabajadores"
+      }
+     },
+     "conexiones": [
+      "42",
+      "43",
+      "44"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "cambios-44",
+     "fase": "Sucesión de empresa",
+     "subtitulo": "Sección 2.ª · art. 44",
+     "descripcion": "El cambio de titular de la empresa, de un centro o de una unidad productiva autónoma no extingue los contratos: el nuevo empresario se subroga en los derechos y obligaciones laborales y de Seguridad Social. Hay sucesión cuando se transmite una entidad económica que mantiene su identidad. Se sigue aplicando el convenio de origen hasta que expire o entre en vigor otro, salvo pacto. Cedente y cesionario deben informar a los representantes.",
+     "articulos": [
+      "44"
+     ],
+     "rango": [
+      "44",
+      "44"
+     ],
+     "plazos": [
+      {
+       "acto": "Responsabilidad solidaria por deudas anteriores (inter vivos)",
+       "plazo": "3 años",
+       "articulo": "44",
+       "literal": "responderán solidariamente durante tres años de las obligaciones laborales nacidas con anterioridad a la transmisión"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La cesión se declara delito",
+       "entonces": "También responden solidariamente de las obligaciones posteriores a la transmisión.",
+       "articulos": [
+        "44"
+       ],
+       "literal": {
+        "articulo": "44",
+        "texto": "cuando la cesión fuese declarada delito"
+       }
+      },
+      {
+       "si": "La unidad transmitida conserva su autonomía",
+       "entonces": "Los representantes siguen en su mandato.",
+       "articulos": [
+        "44"
+       ],
+       "literal": {
+        "articulo": "44",
+        "texto": "no extinguirá por sí mismo el mandato de los representantes legales de los trabajadores"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué convenio se aplica tras una sucesión de empresa?",
+      "a": "Salvo pacto, el que se aplicaba en el momento de la transmisión, hasta que expire o entre en vigor otro aplicable.",
+      "articulos": [
+       "44"
+      ],
+      "literal": {
+       "articulo": "44",
+       "texto": "seguirán rigiéndose por el convenio colectivo que en el momento de la transmisión fuere de aplicación"
+      }
+     },
+     "conexiones": [
+      "42",
+      "43",
+      "49"
+     ],
+     "continua_en": []
+    }
+   ]
+  },
+  {
+   "id": "extincion",
+   "nombre": "Extinción del contrato y despido",
+   "bloque": "et",
+   "grupo": "Extinción y despido",
+   "resumen": "Cómo termina el contrato y qué hacer en cada caso: causas, extinción pedida por el trabajador, despido colectivo, objetivo y disciplinario, su forma, calificación (procedente, improcedente o nulo) y efectos: indemnización, readmisión y salarios de tramitación.",
+   "ambito": {
+    "corto": "Arts. 49 a 56",
+    "texto": "TÍTULO I · CAPÍTULO III · Sección 4.ª Extinción del contrato",
+    "articulos": [
+     "49"
+    ],
+    "literal": [
+     {
+      "articulo": "49",
+      "texto": "Por despido del trabajador"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "extincion-49",
+     "fase": "Causas de extinción y finiquito",
+     "subtitulo": "Sección 4.ª · art. 49",
+     "descripcion": "El art. 49 enumera todas las formas de terminar el contrato: mutuo acuerdo, causas del contrato, fin del tiempo convenido, dimisión, muerte o jubilación del trabajador, muerte, jubilación o incapacidad del empresario, fuerza mayor, despido colectivo, voluntad del trabajador por incumplimiento del empresario, despido disciplinario, causas objetivas, violencia de género o sexual e incapacidad permanente sin ajuste posible. Al comunicar la extinción, el empresario debe acompañar la propuesta de finiquito; el trabajador puede firmarlo ante un representante.",
+     "articulos": [
+      "49"
+     ],
+     "rango": [
+      "49",
+      "49"
+     ],
+     "plazos": [
+      {
+       "acto": "Preaviso al terminar un contrato temporal de más de un año",
+       "plazo": "15 días",
+       "articulo": "49",
+       "literal": "está obligada a notificar a la otra la terminación del mismo con una antelación mínima de quince días"
+      },
+      {
+       "acto": "Incapacidad permanente: el trabajador comunica que quiere seguir",
+       "plazo": "10 días naturales desde la notificación de la resolución",
+       "articulo": "49",
+       "literal": "La persona trabajadora dispondrá de un plazo de diez días naturales"
+      },
+      {
+       "acto": "Incapacidad permanente: la empresa ajusta, cambia de puesto o extingue",
+       "plazo": "Máximo 3 meses desde la notificación de la resolución",
+       "articulo": "49",
+       "literal": "La empresa dispondrá de un plazo máximo de tres meses"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Termina un contrato temporal",
+       "entonces": "Indemnización de doce días por año (en proporción), salvo contratos formativos y de sustitución.",
+       "articulos": [
+        "49"
+       ],
+       "literal": {
+        "articulo": "49",
+        "texto": "excepto en los contratos formativos y el contrato de duración determinada por causa de sustitución"
+       }
+      },
+      {
+       "si": "Se sigue trabajando tras la duración máxima sin denuncia",
+       "entonces": "El contrato pasa a indefinido, salvo prueba de que la prestación era temporal.",
+       "articulos": [
+        "49"
+       ],
+       "literal": {
+        "articulo": "49",
+        "texto": "el contrato se considerará prorrogado tácitamente por tiempo indefinido"
+       }
+      },
+      {
+       "si": "Muere, se jubila o queda incapacitado el empresario",
+       "entonces": "Un mes de salario para el trabajador (salvo sucesión de empresa, art. 44).",
+       "articulos": [
+        "49",
+        "44"
+       ],
+       "literal": {
+        "articulo": "49",
+        "texto": "el trabajador tendrá derecho al abono de una cantidad equivalente a un mes de salario"
+       }
+      },
+      {
+       "si": "El empresario impide que el representante esté en la firma del finiquito",
+       "entonces": "El trabajador puede hacerlo constar en el propio recibo.",
+       "articulos": [
+        "49"
+       ],
+       "literal": {
+        "articulo": "49",
+        "texto": "el trabajador podrá hacerlo constar en el propio recibo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué indemnización corresponde al terminar un contrato temporal?",
+      "a": "La parte proporcional de doce días de salario por año de servicio (o la de su normativa específica), salvo en los contratos formativos y de sustitución.",
+      "articulos": [
+       "49"
+      ],
+      "literal": {
+       "articulo": "49",
+       "texto": "doce días de salario por cada año de servicio"
+      }
+     },
+     "conexiones": [
+      "15",
+      "44",
+      "50",
+      "51",
+      "52",
+      "54",
+      "59"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "extincion-50",
+     "fase": "El trabajador pide la extinción por incumplimiento del empresario",
+     "subtitulo": "Sección 4.ª · art. 50",
+     "descripcion": "El trabajador puede pedir al juez que extinga el contrato por causa justa: modificación sustancial sin respetar el art. 41 que dañe su dignidad, impagos o retrasos continuados del salario, u otro incumplimiento grave del empresario (o que no le reintegre tras una sentencia que anuló una movilidad o modificación). Si se estima, cobra la indemnización del despido improcedente. Se reclama ante el Juzgado de lo Social; el cauce está en la LRJS.",
+     "aviso": "El procedimiento para reclamar se regula en la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]].",
+     "articulos": [
+      "50"
+     ],
+     "rango": [
+      "50",
+      "50"
+     ],
+     "plazos": [
+      {
+       "acto": "Hay «retraso» en el salario",
+       "plazo": "Más de 15 días sobre la fecha de pago",
+       "articulo": "50",
+       "literal": "se entenderá que hay retraso cuando se supere en quince días la fecha fijada para el abono del salario"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se deben tres mensualidades en un año o hay retrasos durante seis meses",
+       "entonces": "Concurre la causa de impago o retraso (aunque no sean consecutivos).",
+       "articulos": [
+        "50"
+       ],
+       "literal": {
+        "articulo": "50",
+        "texto": "en el período de un año, tres mensualidades completas de salario, aún no consecutivas, o cuando concurra retraso en el pago del salario durante seis meses"
+       }
+      },
+      {
+       "si": "El incumplimiento se debe a fuerza mayor",
+       "entonces": "No es causa justa por la letra c).",
+       "articulos": [
+        "50"
+       ],
+       "literal": {
+        "articulo": "50",
+        "texto": "salvo los supuestos de fuerza mayor"
+       }
+      },
+      {
+       "si": "El juez estima la extinción",
+       "entonces": "Indemnización del despido improcedente (art. 56).",
+       "articulos": [
+        "50",
+        "56"
+       ],
+       "literal": {
+        "articulo": "50",
+        "texto": "el trabajador tendrá derecho a las indemnizaciones señaladas para el despido improcedente"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué indemnización recibe el trabajador si el juez extingue el contrato por incumplimiento grave del empresario?",
+      "a": "La señalada para el despido improcedente.",
+      "articulos": [
+       "50"
+      ],
+      "literal": {
+       "articulo": "50",
+       "texto": "las indemnizaciones señaladas para el despido improcedente"
+      }
+     },
+     "conexiones": [
+      "29",
+      "40",
+      "41",
+      "56"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "extincion-51",
+     "fase": "Despido colectivo",
+     "subtitulo": "Sección 4.ª · art. 51",
+     "descripcion": "Es colectivo el despido por causas económicas, técnicas, organizativas o de producción que, en noventa días, afecta al menos a 10 trabajadores (empresas de menos de 100), al 10 % (de 100 a 300) o a 30 (más de 300), y el cierre total con más de cinco trabajadores. Exige un periodo de consultas con los representantes, de 30 días naturales como máximo (15 en empresas de menos de 50). La impugnación tiene modalidad propia en la LRJS.",
+     "aviso": "La impugnación del despido colectivo se regula en la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]]. El art. 51 es largo: para la documentación, el acuerdo y la comunicación, consulta el texto literal.",
+     "articulos": [
+      "51"
+     ],
+     "rango": [
+      "51",
+      "51"
+     ],
+     "plazos": [
+      {
+       "acto": "Periodo para contar los umbrales",
+       "plazo": "90 días",
+       "articulo": "51",
+       "literal": "cuando, en un periodo de noventa días, la extinción afecte al menos a"
+      },
+      {
+       "acto": "Periodo de consultas",
+       "plazo": "Máximo 30 días naturales (15 si menos de 50 trabajadores)",
+       "articulo": "51",
+       "literal": "de una duración no superior a treinta días naturales, o de quince en el caso de empresas de menos de cincuenta trabajadores"
+      },
+      {
+       "acto": "Constituir la comisión representativa",
+       "plazo": "Máximo 7 días (15 si algún centro no tiene representantes)",
+       "articulo": "51",
+       "literal": "El plazo máximo para la constitución de la comisión representativa será de siete días"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se encadenan despidos objetivos por debajo del umbral en periodos sucesivos de 90 días, sin causas nuevas",
+       "entonces": "Se consideran en fraude de ley y son nulos.",
+       "articulos": [
+        "51",
+        "52"
+       ],
+       "literal": {
+        "articulo": "51",
+        "texto": "dichas nuevas extinciones se considerarán efectuadas en fraude de ley, y serán declaradas nulas y sin efecto"
+       }
+      },
+      {
+       "si": "La empresa cierra del todo por esas causas",
+       "entonces": "Es despido colectivo si afecta a más de cinco trabajadores.",
+       "articulos": [
+        "51"
+       ],
+       "literal": {
+        "articulo": "51",
+        "texto": "siempre que el número de trabajadores afectados sea superior a cinco"
+       }
+      },
+      {
+       "si": "No se constituye la comisión representativa a tiempo",
+       "entonces": "No impide iniciar el periodo de consultas ni alarga su duración.",
+       "articulos": [
+        "51"
+       ],
+       "literal": {
+        "articulo": "51",
+        "texto": "La falta de constitución de la comisión representativa no impedirá el inicio y transcurso del periodo de consultas"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo hay causa económica a efectos del despido colectivo?",
+      "a": "Cuando los resultados muestran una situación económica negativa, como pérdidas actuales o previstas o la disminución persistente de ingresos o ventas (tres trimestres consecutivos por debajo del mismo trimestre del año anterior).",
+      "articulos": [
+       "51"
+      ],
+      "literal": {
+       "articulo": "51",
+       "texto": "se entenderá que la disminución es persistente si durante tres trimestres consecutivos"
+      }
+     },
+     "conexiones": [
+      "41",
+      "47",
+      "49",
+      "52"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "extincion-52",
+     "fase": "Despido objetivo: causas",
+     "subtitulo": "Sección 4.ª · art. 52",
+     "descripcion": "El empresario puede extinguir el contrato por: ineptitud del trabajador (no la conocida antes de superar el periodo de prueba), falta de adaptación a cambios técnicos razonables (tras ofrecer formación y esperar dos meses), causas económicas, técnicas, organizativas o de producción por debajo de los umbrales del despido colectivo, y falta de financiación de ciertos planes públicos en entidades sin ánimo de lucro. La forma y los efectos están en el art. 53.",
+     "articulos": [
+      "52"
+     ],
+     "rango": [
+      "52",
+      "52"
+     ],
+     "plazos": [
+      {
+       "acto": "Falta de adaptación: espera mínima",
+       "plazo": "2 meses desde el cambio o desde el fin de la formación",
+       "articulo": "52",
+       "literal": "hasta que hayan transcurrido, como mínimo, dos meses desde que se introdujo la modificación o desde que finalizó la formación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La ineptitud ya existía antes de superar el periodo de prueba",
+       "entonces": "No se puede alegar después.",
+       "articulos": [
+        "52",
+        "14"
+       ],
+       "literal": {
+        "articulo": "52",
+        "texto": "La ineptitud existente con anterioridad al cumplimiento de un periodo de prueba no podrá alegarse con posterioridad a dicho cumplimiento"
+       }
+      },
+      {
+       "si": "Despido por causas económicas u organizativas que afecta a representantes",
+       "entonces": "Los representantes tienen prioridad de permanencia.",
+       "articulos": [
+        "52"
+       ],
+       "literal": {
+        "articulo": "52",
+        "texto": "Los representantes de los trabajadores tendrán prioridad de permanencia en la empresa"
+       }
+      },
+      {
+       "si": "Se alcanzan los umbrales del art. 51.1",
+       "entonces": "Hay que seguir el procedimiento del despido colectivo.",
+       "articulos": [
+        "52",
+        "51"
+       ],
+       "literal": {
+        "articulo": "52",
+        "texto": "se deberá seguir el procedimiento previsto en dicho artículo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué debe hacer el empresario antes de despedir por falta de adaptación a cambios técnicos?",
+      "a": "Ofrecer un curso de adaptación (tiempo de trabajo efectivo, pagado) y esperar al menos dos meses.",
+      "articulos": [
+       "52"
+      ],
+      "literal": {
+       "articulo": "52",
+       "texto": "Previamente el empresario deberá ofrecer al trabajador un curso dirigido a facilitar la adaptación"
+      }
+     },
+     "conexiones": [
+      "14",
+      "51",
+      "53"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "extincion-53",
+     "fase": "Despido objetivo: forma y efectos",
+     "subtitulo": "Sección 4.ª · art. 53",
+     "descripcion": "Requisitos: carta con la causa, poner a disposición a la vez la indemnización de veinte días por año (máximo doce mensualidades) y preaviso de quince días, con licencia de seis horas semanales para buscar empleo. Se impugna como el despido disciplinario. Es nulo si es discriminatorio o viola derechos fundamentales, y en los casos protegidos (embarazo, nacimiento y cuidado, permisos y adaptaciones de jornada, violencia de género o sexual), salvo que se pruebe la causa. Si no, procedente o improcedente.",
+     "aviso": "La demanda se regula en la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]] (modalidad de despido y extinción por causas objetivas).",
+     "articulos": [
+      "53"
+     ],
+     "rango": [
+      "53",
+      "53"
+     ],
+     "plazos": [
+      {
+       "acto": "Indemnización a disposición con la carta",
+       "plazo": "20 días por año, máximo 12 mensualidades",
+       "articulo": "53",
+       "literal": "la indemnización de veinte días por año de servicio, prorrateándose por meses los periodos de tiempo inferiores a un año y con un máximo de doce mensualidades"
+      },
+      {
+       "acto": "Preaviso",
+       "plazo": "15 días desde la entrega de la carta",
+       "articulo": "53",
+       "literal": "Concesión de un plazo de preaviso de quince días"
+      },
+      {
+       "acto": "Licencia para buscar empleo durante el preaviso",
+       "plazo": "6 horas semanales retribuidas",
+       "articulo": "53",
+       "literal": "a una licencia de seis horas semanales con el fin de buscar nuevo empleo"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Causa económica y la empresa no puede pagar la indemnización al entregar la carta",
+       "entonces": "Puede no ponerla a disposición si lo hace constar; el trabajador la exige cuando la extinción sea efectiva.",
+       "articulos": [
+        "53"
+       ],
+       "literal": {
+        "articulo": "53",
+        "texto": "no se pudiera poner a disposición del trabajador la indemnización a que se refiere el párrafo anterior"
+       }
+      },
+      {
+       "si": "Falta el preaviso o hay un error excusable en la indemnización",
+       "entonces": "No hace improcedente el despido; se pagan los salarios del preaviso o la diferencia.",
+       "articulos": [
+        "53"
+       ],
+       "literal": {
+        "articulo": "53",
+        "texto": "la no concesión del preaviso o el error excusable en el cálculo de la indemnización no determinará la improcedencia del despido"
+       }
+      },
+      {
+       "si": "Se declara improcedente y el empresario readmite",
+       "entonces": "El trabajador devuelve la indemnización cobrada; si se indemniza, se descuenta.",
+       "articulos": [
+        "53"
+       ],
+       "literal": {
+        "articulo": "53",
+        "texto": "el trabajador habrá de reintegrarle la indemnización percibida"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo se impugna el despido objetivo?",
+      "a": "Como si se tratase de un despido disciplinario.",
+      "articulos": [
+       "53"
+      ],
+      "literal": {
+       "articulo": "53",
+       "texto": "Contra la decisión extintiva podrá recurrir como si se tratase de despido disciplinario"
+      }
+     },
+     "conexiones": [
+      "52",
+      "55",
+      "56",
+      "59"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "extincion-54",
+     "fase": "Despido disciplinario: causas",
+     "subtitulo": "Sección 4.ª · art. 54",
+     "descripcion": "El empresario puede despedir por un incumplimiento grave y culpable del trabajador. La ley enumera los incumplimientos: faltas repetidas e injustificadas de asistencia o puntualidad, indisciplina o desobediencia, ofensas verbales o físicas, transgresión de la buena fe o abuso de confianza, disminución continuada y voluntaria del rendimiento, embriaguez habitual o toxicomanía que afecten al trabajo, y acoso discriminatorio, sexual o por razón de sexo. Ojo a la prescripción de las faltas (art. 60).",
+     "articulos": [
+      "54",
+      "60"
+     ],
+     "rango": [
+      "54",
+      "54"
+     ],
+     "plazos": [
+      {
+       "acto": "Prescripción de las faltas muy graves",
+       "plazo": "60 días desde que la empresa las conoce; 6 meses desde que se cometen",
+       "articulo": "60",
+       "literal": "y las muy graves, a los sesenta días a partir de la fecha en que la empresa tuvo conocimiento de su comisión y, en todo caso, a los seis meses de haberse cometido"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El incumplimiento no es grave o no es culpable",
+       "entonces": "No justifica el despido disciplinario (será improcedente si no se acredita).",
+       "articulos": [
+        "54",
+        "55"
+       ],
+       "literal": {
+        "articulo": "54",
+        "texto": "mediante despido basado en un incumplimiento grave y culpable del trabajador"
+       }
+      },
+      {
+       "si": "La embriaguez o la toxicomanía no repercuten en el trabajo",
+       "entonces": "No son causa de despido.",
+       "articulos": [
+        "54"
+       ],
+       "literal": {
+        "articulo": "54",
+        "texto": "La embriaguez habitual o toxicomanía si repercuten negativamente en el trabajo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué faltas de asistencia justifican el despido disciplinario?",
+      "a": "Las faltas repetidas e injustificadas de asistencia o puntualidad.",
+      "articulos": [
+       "54"
+      ],
+      "literal": {
+       "articulo": "54",
+       "texto": "Las faltas repetidas e injustificadas de asistencia o puntualidad al trabajo"
+      }
+     },
+     "conexiones": [
+      "55",
+      "58",
+      "60"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "extincion-55",
+     "fase": "Despido disciplinario: forma y calificación",
+     "subtitulo": "Sección 4.ª · art. 55",
+     "descripcion": "Carta de despido con los hechos y la fecha de efectos (el convenio puede exigir más). Representantes y delegados sindicales: expediente contradictorio. Afiliados, si le consta al empresario: audiencia previa a los delegados sindicales. Si falla la forma, cabe un nuevo despido en veinte días. El despido es procedente si se prueba el incumplimiento; improcedente si no o si falla la forma; nulo si es discriminatorio, viola derechos fundamentales o afecta a los supuestos protegidos (embarazo, nacimiento y cuidado, permisos, violencia de género o sexual), salvo procedencia por otros motivos.",
+     "aviso": "La demanda de despido (caducidad de veinte días hábiles, art. 59.3) se regula en la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]].",
+     "articulos": [
+      "55",
+      "59"
+     ],
+     "rango": [
+      "55",
+      "55"
+     ],
+     "plazos": [
+      {
+       "acto": "Nuevo despido que subsana la forma",
+       "plazo": "20 días desde el siguiente al primer despido",
+       "articulo": "55",
+       "literal": "solo cabrá efectuarlo en el plazo de veinte días, a contar desde el siguiente al del primer despido"
+      },
+      {
+       "acto": "Demandar por despido (caducidad)",
+       "plazo": "20 días hábiles",
+       "articulo": "59",
+       "literal": "El ejercicio de la acción contra el despido o resolución de contratos temporales caducará a los veinte días siguientes de aquel en que se hubiera producido"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El despedido es representante legal o delegado sindical",
+       "entonces": "Hay que abrir expediente contradictorio, oyendo al interesado y a los demás representantes.",
+       "articulos": [
+        "55"
+       ],
+       "literal": {
+        "articulo": "55",
+        "texto": "procederá la apertura de expediente contradictorio"
+       }
+      },
+      {
+       "si": "Se declara nulo",
+       "entonces": "Readmisión inmediata con los salarios dejados de percibir.",
+       "articulos": [
+        "55"
+       ],
+       "literal": {
+        "articulo": "55",
+        "texto": "El despido nulo tendrá el efecto de la readmisión inmediata del trabajador, con abono de los salarios dejados de percibir"
+       }
+      },
+      {
+       "si": "Se declara procedente",
+       "entonces": "Se convalida la extinción, sin indemnización ni salarios de tramitación.",
+       "articulos": [
+        "55"
+       ],
+       "literal": {
+        "articulo": "55",
+        "texto": "sin derecho a indemnización ni a salarios de tramitación"
+       }
+      },
+      {
+       "si": "Se declara improcedente",
+       "entonces": "Opción entre readmisión e indemnización (art. 56).",
+       "articulos": [
+        "55",
+        "56"
+       ],
+       "literal": {
+        "articulo": "55",
+        "texto": "Será improcedente en caso contrario o cuando en su forma no se ajustara a lo establecido en el apartado 1"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué debe figurar en la carta de despido disciplinario?",
+      "a": "Los hechos que lo motivan y la fecha en que tendrá efectos.",
+      "articulos": [
+       "55"
+      ],
+      "literal": {
+       "articulo": "55",
+       "texto": "haciendo figurar los hechos que lo motivan y la fecha en que tendrá efectos"
+      }
+     },
+     "conexiones": [
+      "53",
+      "54",
+      "56",
+      "59",
+      "68"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "extincion-56",
+     "fase": "Despido improcedente: opción, indemnización y salarios de tramitación",
+     "subtitulo": "Sección 4.ª · art. 56",
+     "descripcion": "Declarado improcedente, el empresario elige en cinco días entre readmitir (con salarios de tramitación) o indemnizar con treinta y tres días por año, hasta veinticuatro mensualidades. Si no elige, se readmite. Si es representante legal o delegado sindical, elige él, y siempre cobra salarios de tramitación. Si la sentencia tarda más de noventa días hábiles desde la demanda, el exceso de salarios de tramitación lo puede reclamar el empresario al Estado.",
+     "aviso": "Contratos anteriores al 12 de febrero de 2012: la indemnización se calcula según la disposición transitoria undécima del ET (45 días por año hasta esa fecha y 33 después, con sus topes); y la disposición transitoria duodécima regula la aplicación temporal del art. 56.5. La reclamación al Estado de los salarios de tramitación está también en la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]].",
+     "articulos": [
+      "56"
+     ],
+     "rango": [
+      "56",
+      "56"
+     ],
+     "plazos": [
+      {
+       "acto": "Opción del empresario",
+       "plazo": "5 días desde la notificación de la sentencia",
+       "articulo": "56",
+       "literal": "en el plazo de cinco días desde la notificación de la sentencia, podrá optar entre la readmisión del trabajador o el abono de una indemnización"
+      },
+      {
+       "acto": "Indemnización",
+       "plazo": "33 días por año, máximo 24 mensualidades",
+       "articulo": "56",
+       "literal": "treinta y tres días de salario por año de servicio, prorrateándose por meses los periodos de tiempo inferiores a un año, hasta un máximo de veinticuatro mensualidades"
+      },
+      {
+       "acto": "Salarios de tramitación a cargo del Estado",
+       "plazo": "Lo que exceda de 90 días hábiles desde la demanda",
+       "articulo": "56",
+       "literal": "transcurridos más de noventa días hábiles desde la fecha en que se presentó la demanda"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El empresario no opta",
+       "entonces": "Se entiende que readmite.",
+       "articulos": [
+        "56"
+       ],
+       "literal": {
+        "articulo": "56",
+        "texto": "se entiende que procede la primera"
+       }
+      },
+      {
+       "si": "El despedido es representante legal o delegado sindical",
+       "entonces": "La opción es suya; si no opta, readmisión; cobra salarios de tramitación en todo caso.",
+       "articulos": [
+        "56"
+       ],
+       "literal": {
+        "articulo": "56",
+        "texto": "la opción corresponderá siempre a este"
+       }
+      },
+      {
+       "si": "Se opta por la readmisión",
+       "entonces": "Salarios de tramitación desde el despido hasta la notificación de la sentencia (o hasta un nuevo empleo, si el empresario prueba lo cobrado).",
+       "articulos": [
+        "56"
+       ],
+       "literal": {
+        "articulo": "56",
+        "texto": "En caso de que se opte por la readmisión, el trabajador tendrá derecho a los salarios de tramitación"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuál es la indemnización por despido improcedente en el art. 56.1?",
+      "a": "Treinta y tres días de salario por año de servicio, prorrateando por meses, hasta veinticuatro mensualidades.",
+      "articulos": [
+       "56"
+      ],
+      "literal": {
+       "articulo": "56",
+       "texto": "hasta un máximo de veinticuatro mensualidades"
+      }
+     },
+     "conexiones": [
+      "50",
+      "53",
+      "55",
+      "68"
+     ],
+     "continua_en": []
+    }
+   ]
+  },
+  {
+   "id": "sanciones",
+   "nombre": "Faltas, sanciones y plazos de prescripción",
+   "bloque": "et",
+   "grupo": "Sanciones y plazos",
+   "resumen": "Cómo sanciona la empresa y cuándo prescriben las faltas; y los plazos que no se pueden pasar: caducidad de veinte días para despido, traslado y modificación sustancial, y prescripción de un año para el resto.",
+   "ambito": {
+    "corto": "Arts. 58 a 60",
+    "texto": "TÍTULO I · CAPÍTULOS IV y V",
+    "articulos": [
+     "58"
+    ],
+    "literal": [
+     {
+      "articulo": "59",
+      "texto": "Las acciones derivadas del contrato de trabajo que no tengan señalado plazo especial prescribirán al año de su terminación"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "sanciones-58",
+     "fase": "Faltas y sanciones del trabajador",
+     "subtitulo": "CAPÍTULO IV · art. 58",
+     "descripcion": "La empresa sanciona según la graduación de faltas y sanciones de la ley o del convenio aplicable. Las faltas graves y muy graves exigen comunicación escrita con la fecha y los hechos. Toda sanción es revisable ante la jurisdicción social. No se puede sancionar reduciendo vacaciones u otros descansos ni con multa de haber. Las faltas prescriben (art. 60).",
+     "aviso": "La impugnación de sanciones tiene modalidad propia en la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]].",
+     "articulos": [
+      "58",
+      "60"
+     ],
+     "rango": [
+      "58",
+      "58"
+     ],
+     "plazos": [
+      {
+       "acto": "Prescripción: faltas leves",
+       "plazo": "10 días",
+       "articulo": "60",
+       "literal": "las faltas leves prescribirán a los diez días"
+      },
+      {
+       "acto": "Prescripción: faltas graves",
+       "plazo": "20 días",
+       "articulo": "60",
+       "literal": "las graves, a los veinte días"
+      },
+      {
+       "acto": "Prescripción: faltas muy graves",
+       "plazo": "60 días desde que se conocen; siempre 6 meses desde que se cometen",
+       "articulo": "60",
+       "literal": "las muy graves, a los sesenta días a partir de la fecha en que la empresa tuvo conocimiento de su comisión"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La sanción grave o muy grave se comunica de palabra",
+       "entonces": "Incumple el requisito de comunicación escrita con fecha y hechos.",
+       "articulos": [
+        "58"
+       ],
+       "literal": {
+        "articulo": "58",
+        "texto": "La sanción de las faltas graves y muy graves requerirá comunicación escrita al trabajador"
+       }
+      },
+      {
+       "si": "La sanción consiste en quitar días de vacaciones o en una multa",
+       "entonces": "Está prohibida.",
+       "articulos": [
+        "58"
+       ],
+       "literal": {
+        "articulo": "58",
+        "texto": "No se podrán imponer sanciones que consistan en la reducción de la duración de las vacaciones"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede revisarse judicialmente cualquier sanción?",
+      "a": "Sí: la valoración de las faltas y las sanciones son siempre revisables ante la jurisdicción social.",
+      "articulos": [
+       "58"
+      ],
+      "literal": {
+       "articulo": "58",
+       "texto": "serán siempre revisables ante la jurisdicción social"
+      }
+     },
+     "conexiones": [
+      "54",
+      "60"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "sanciones-59",
+     "fase": "Prescripción y caducidad de las acciones",
+     "subtitulo": "CAPÍTULO V · arts. 59 a 60",
+     "descripcion": "Regla general: las acciones del contrato sin plazo especial prescriben al año de terminar el contrato; las de cantidades o de tracto único, al año desde que pudieron ejercitarse. Despido, fin de contrato temporal, movilidad geográfica y modificación sustancial: caducidad de veinte días hábiles, que se interrumpe con la papeleta de conciliación. Las infracciones del empresario prescriben según la ley de infracciones y sanciones; las faltas del trabajador, según el art. 60.",
+     "articulos": [
+      "59",
+      "60"
+     ],
+     "rango": [
+      "59",
+      "60"
+     ],
+     "plazos": [
+      {
+       "acto": "Acciones del contrato sin plazo especial (prescripción)",
+       "plazo": "1 año desde que termina el contrato",
+       "articulo": "59",
+       "literal": "prescribirán al año de su terminación"
+      },
+      {
+       "acto": "Reclamar cantidades (prescripción)",
+       "plazo": "1 año desde que pudo ejercitarse la acción",
+       "articulo": "59",
+       "literal": "el plazo de un año se computará desde el día en que la acción pudiera ejercitarse"
+      },
+      {
+       "acto": "Despido o fin de contrato temporal (caducidad)",
+       "plazo": "20 días hábiles",
+       "articulo": "59",
+       "literal": "Los días serán hábiles y el plazo de caducidad a todos los efectos"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se presenta la papeleta de conciliación",
+       "entonces": "Se interrumpe el plazo de caducidad.",
+       "articulos": [
+        "59"
+       ],
+       "literal": {
+        "articulo": "59",
+        "texto": "El plazo de caducidad quedará interrumpido por la presentación de la solicitud de conciliación"
+       }
+      },
+      {
+       "si": "Se impugna un traslado o una modificación sustancial",
+       "entonces": "Mismo plazo de caducidad, desde el día siguiente a la notificación (tras las consultas, si las hubo).",
+       "articulos": [
+        "59"
+       ],
+       "literal": {
+        "articulo": "59",
+        "texto": "las acciones contra las decisiones empresariales en materia de movilidad geográfica y modificación sustancial de condiciones de trabajo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué efecto tiene la papeleta de conciliación sobre el plazo para demandar por despido?",
+      "a": "Interrumpe el plazo de caducidad.",
+      "articulos": [
+       "59"
+      ],
+      "literal": {
+       "articulo": "59",
+       "texto": "quedará interrumpido por la presentación de la solicitud de conciliación ante el órgano público de mediación, arbitraje y conciliación competente"
+      }
+     },
+     "aviso": "La prescripción de las infracciones del empresario se regula en el texto refundido de la Ley sobre Infracciones y Sanciones en el Orden Social (Real Decreto Legislativo 5/2000), que la app no incluye. La conciliación previa y la demanda se regulan en la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]].",
+     "conexiones": [
+      "40",
+      "41",
+      "55",
+      "58"
+     ],
+     "continua_en": []
+    }
+   ]
+  }
+ ],
+ "externos": [],
+ "vista_procedimientos": [],
+ "vista_recursos": []
+}
