@@ -477,6 +477,60 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [ ] **Sentencia de un Juzgado no apelable.** El selector la envía a casación «solo si contiene doctrina gravemente dañosa para los intereses generales y es susceptible de extensión de efectos» (art. 86.1); si no, es firme. **Tu respuesta:**
 - [ ] **Revisa las 5 fichas y el selector.**
 
+### Procedimiento abreviado (Chat 6, contenido elaborado, pendiente de revisión)
+
+> Bloque «Procedimiento abreviado» (art. 78, con los arts. 29.2 y 81): 6 fichas (cuándo se sigue y demanda; admisión y citación; sin vista; vista y cuestiones procesales; hechos y prueba; sentencia y recurso) y 8 plazos. La primera ficha conserva el id del esqueleto (`abreviado-78`). Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío.
+
+- [ ] **Art. 78.1: ¿las materias van al abreviado sea cual sea la cuantía?** El artículo enumera personal, extranjería, inadmisión de asilo y dopaje, «así como todas aquellas cuya cuantía no supere los 30.000 euros» (Verificable). **Propuesta:** leer que esas materias van al abreviado aunque superen 30.000 euros, y que el límite de cuantía es solo para los demás asuntos; así lo pongo en la ficha (No verificable hasta que lo confirmes). **Tu respuesta:**
+- [ ] **Art. 78.17: «recurso de súplica».** El BOE anota que se entiende hecha al recurso de reposición, según la disposición adicional octava de la LJCA (Verificable: nota del PDF y texto de la DA 8.ª). Estado: **resuelta** (la propia ley lo dice). La ficha lo avisa. **Tu respuesta:**
+- [ ] **Recurso contra la sentencia del abreviado.** Pongo la regla general del art. 81 (sin apelación si la cuantía no excede de 30.000 euros, salvo los casos del art. 81.2) (Verificable). De ahí deduzco que en personal, extranjería, asilo o dopaje con cuantía superior o indeterminada cabe apelación (No verificable: deducción mía, depende de cómo se fije la cuantía, arts. 40-42). **Tu respuesta:**
+- [ ] **Abreviado sin vista (art. 78.3).** El artículo remite al art. 57 para declarar concluso el pleito; lo resumo como «queda concluso para sentencia, salvo prueba de oficio (art. 61)» (Verificable el texto; el resumen es mío). **Tu respuesta:**
+- [ ] **Revisa las 6 fichas.**
+
+### Plazos, medidas cautelares, incidentes y costas (Chat 6, contenido elaborado, pendiente de revisión)
+
+> Bloque «Disposiciones comunes» (arts. 128-139): 5 fichas (plazos; medidas cautelares, 129-134; medidas urgentes y previas al recurso, 135-136, ficha nueva `comunes-135`; incidentes, en ficha breve; costas) y 8 plazos. Mismos id del esqueleto en las otras cuatro.
+
+- [ ] **Recurso contra el auto de medidas cautelares.** En la ficha resumo: auto de un Juzgado que pone término a la pieza cautelar, apelación en un solo efecto (art. 80.1.a); de la Sala, casación previa reposición (arts. 87.1.b y 87.2); en lo demás, reposición (art. 79) (Verificable cada artículo; la combinación es mía). No detallo la excepción y el límite de los arts. 86.2 y 86.3 a los que remite el art. 87.1: están en la ficha de casación. **Tu respuesta:**
+- [ ] **Medida previa al recurso (art. 136.2).** El plazo de diez días es para interponer el recurso pidiendo la ratificación, desde la notificación de la medida (Verificable). Solo para inactividad (art. 29) y vía de hecho (art. 30), por la remisión del art. 136.2 al apartado anterior (Verificable). **Tu respuesta:**
+- [ ] **Art. 128.1 (sin día extra para recurrir):** la misma duda que en «Guía práctica y procedimiento ordinario»; la respuesta que des vale para las dos fichas.
+- [ ] **Costas en casación:** solo remito al art. 93.4, como hace el art. 139.3 (Verificable). **Tu respuesta:**
+- [ ] **Revisa las 5 fichas.**
+
+### Jurisdicción, competencia y partes (Chat 6, contenido elaborado, pendiente de revisión)
+
+> Bloque «Jurisdicción, competencia y partes» (arts. 1-24): 6 fichas (ámbito; qué órgano conoce; si el órgano no es competente, ficha nueva `generales-7`; competencia territorial; legitimación; procurador y abogado) y 4 plazos. Quedan como índice, por el canon, las fases de los arts. 15-16, 17 y 18.
+
+- [ ] **Cuadro «qué órgano conoce» (arts. 8-13).** Lo presento como alternativas con los casos más frecuentes, no como lista completa de los arts. 8 a 12 (Verificable cada caso; la selección es mía). Para el detalle, el texto literal. **Tu respuesta:**
+- [ ] **Nota del BOE sobre los Tribunales de Instancia.** El PDF dice que las referencias a los Juzgados de lo Contencioso-Administrativo se entienden hechas a las Secciones de los Tribunales de Instancia (disposición adicional primera de la Ley Orgánica 1/2025, BOE-A-2025-76) (Verificable: nota del PDF). **Propuesta:** las fichas siguen diciendo «Juzgado», como el texto de la ley, y la ficha de competencias lo avisa (No verificable). **Tu respuesta:**
+- [ ] **Art. 23: órgano unipersonal y colegiado.** Escribo «Juzgado» para unipersonal y «Sala (TSJ, Audiencia Nacional, Supremo)» para colegiado; la ley solo dice «órganos unipersonales» y «órganos colegiados» (Verificable el texto; la equivalencia es mía, No verificable). **Tu respuesta:**
+- [ ] **Revisa las 6 fichas.**
+
+### Objeto del recurso (Chat 6, contenido elaborado, pendiente de revisión)
+
+> Bloque «Objeto del recurso» (arts. 25-42): 4 fichas (qué se puede impugnar; qué se puede pedir; acumulación, ampliación y pleito testigo; cuantía) y 11 plazos. Del cap. III no se usa el art. 38, por el canon.
+
+- [ ] **Art. 28 y causa de inadmisión.** Digo que el recurso contra actos confirmatorios de actos consentidos es inadmisible y enlazo el art. 69 (Verificable: art. 28 «No es admisible»). **Tu respuesta:**
+- [ ] **Art. 40: quién fija la cuantía.** La fija el LAJ y, si el demandado discrepa, el juez la decide definitivamente en la sentencia (art. 40.3) (Verificable). **Tu respuesta:**
+- [ ] **Revisa las 4 fichas.**
+
+### Procedimientos especiales (Chat 6, contenido elaborado, pendiente de revisión)
+
+> Bloque «Procedimientos especiales»: la fase del esqueleto de derechos fundamentales (arts. 114-122 quater) se divide en `especiales-114` (interposición y expediente, 114-116), `especiales-117` (admisión, demanda y sentencia, 117-121), `especiales-122` (reuniones, ficha breve) y `especiales-122_bis` (autorizaciones de los arts. 122 bis-122 quater, índice por el canon). Cuestión de ilegalidad (123-126) en ficha breve. Siguen como índice, por el canon, los arts. 127, 127 bis-quáter y 127 quinquies. 16 plazos.
+
+- [ ] **Art. 115.1: plazo con recurso administrativo previo.** Si se interpuso potestativamente un recurso administrativo, los diez días empiezan pasados veinte desde su presentación (Verificable). Es lectura directa; lo señalo porque cambia mucho el cómputo. **Tu respuesta:**
+- [ ] **Recurso contra la sentencia de derechos fundamentales.** Del Juzgado, siempre apelación en un solo efecto (art. 121.3) (Verificable). De las Salas, pongo el enlace a casación por las reglas generales (art. 86) (No verificable: deducción mía). **Tu respuesta:**
+- [ ] **Revisa las 5 fichas.**
+
+### Ejecución de sentencias (Chat 6, contenido elaborado, pendiente de revisión)
+
+> Bloque «Ejecución de sentencias» (arts. 103-113): la fase única del esqueleto se divide en 4 fichas (cumplimiento y ejecución forzosa, `ejecucion-103`; condenas a pagar, a hacer o a publicar; incidentes y multas coercitivas; extensión de efectos) y 12 plazos.
+
+- [ ] **Remisiones desfasadas en el art. 110.** El art. 110.5.b remite a la doctrina sentada «en el recurso a que se refiere el artículo 99», y los arts. 110.1.c y 110.6 mencionan el recurso «en interés de ley»; los arts. 95 a 101 figuran como «(Suprimido)» (Verificable). Estado: **pendiente de revisión individual**. **Propuesta:** como en los arts. 10.5 y 10.6, avisarlo en la ficha sin interpretarlo (No verificable). **Tu respuesta:**
+- [ ] **Plazo para ejecutar condenas a pagar.** El art. 104.2 da dos meses con carácter general y el art. 106.3, tres meses para la condena al pago de cantidad (Verificable). Las fichas ponen cada uno en su sitio. **Tu respuesta:**
+- [ ] **Recurso contra autos de ejecución.** Combino el art. 80.1.b (apelación, Juzgados) y el art. 87.1.c con el 87.2 (casación, Salas, previa reposición) (Verificable cada artículo; la combinación es mía). **Tu respuesta:**
+- [ ] **Revisa las 4 fichas.**
+
 ## Páginas legales (todas las leyes)
 
 Aviso legal, Política de privacidad y Política de cookies (`aviso-legal.html`, `politica-privacidad.html`, `cookies.html`), y la ventana «© 2026 J A Noriega (Norik)» del pie. Hechas a partir de las de norlexia.es (repositorio WEB-NORLEXIA, `bocetos/`), adaptadas a esta app: sin formulario, sin Google Fonts y sin cookies.
