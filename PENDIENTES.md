@@ -541,8 +541,8 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [ ] **Contraste con una segunda lectura del PDF:** 13 tramos distintos, todos de títulos de disposiciones partidos en dos líneas y de una referencia «Ref. BOE-A-2009-15958» leída sin guiones. No hay huecos en la numeración ni artículos sin texto (Verificable: informe de control).
 - [ ] **Art. 48 bis sin título:** el BOE no le pone epígrafe, ni en el índice ni en el texto (Verificable: PDF, pág. 57). Se muestra tal cual.
 - [ ] **Disposiciones derogadas:** adicionales decimosexta y vigesimoprimera «(Derogada)», y apartados derogados en la adicional decimoquinta y la transitoria segunda (Verificable). Se muestran tal cual.
-- [ ] **Lema de la portada:** dice «Estudia las leyes procesales como un mapa», y el ET no es una ley procesal (Verificable: `scripts/generar_portada.py`). **Propuesta:** cambiarlo, por ejemplo, por «Estudia y consulta las leyes como un mapa» (No verificable). **Tu respuesta:**
-- [ ] **Canon del ET:** propuesta de Claude en `fuentes/canon_contenido.md › ET`, pendiente de tu aprobación. **Tu respuesta:**
+- [x] **Lema de la portada:** decía «Estudia las leyes procesales como un mapa», y el ET no es una ley procesal (Verificable: `scripts/generar_portada.py`). **Propuesta:** cambiarlo, por ejemplo, por «Estudia y consulta las leyes como un mapa» (No verificable). **Resuelta (usuario, 30-10-2026):** «Consulta las leyes como un mapa».
+- [x] **Canon del ET:** propuesta de Claude en `fuentes/canon_contenido.md › ET`. **Resuelta (usuario, 30-10-2026):** aprobada tal cual.
 
 ## Páginas legales (todas las leyes)
 

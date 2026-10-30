@@ -247,9 +247,9 @@ Copiado el 23-10-2026 del documento de la plataforma (sin sus notas internas de 
 39. Adicionales, transitorias, derogatorias y finales — NO. Nota: la supletoriedad de la LEC (disposición final primera) se menciona en la ficha general.
 
 
-## ET — Real Decreto Legislativo 2/2015 (propuesta de Claude, Chat 6, 30-10-2026; PENDIENTE de aprobación del usuario)
+## ET — Real Decreto Legislativo 2/2015 (propuesta de Claude, aprobada por el usuario en el Chat 6, 30-10-2026)
 
-> El usuario no tiene canon del ET y pidió a Claude que lo propusiera (Chat 6). Enfoque elegido por el usuario: **mapa por situaciones del caso** (opción A), con enlaces a la ruta procesal de la LRJS. Criterio: «¿ayuda a orientarse en la situación, sus plazos y cómo se reclama?». Rangos sacados del índice del PDF consolidado (21-10-2026). Las disposiciones no se ponen como fase (la app las mostraría como «Art. dt11»): se citan en el texto de la ficha que corresponda.
+> El usuario no tiene canon del ET y pidió a Claude que lo propusiera (Chat 6); lo aprobó tal cual («1 sí», 30-10-2026). Enfoque elegido por el usuario: **mapa por situaciones del caso** (opción A), con enlaces a la ruta procesal de la LRJS. Criterio: «¿ayuda a orientarse en la situación, sus plazos y cómo se reclama?». Rangos sacados del índice del PDF consolidado (21-10-2026). Las disposiciones no se ponen como fase (la app las mostraría como «Art. dt11»): se citan en el texto de la ficha que corresponda.
 >
 > **Fichas transversales propuestas:** 1) «Plazos del ET» (caducidad y prescripción del art. 59, prescripción de faltas del art. 60, periodo de prueba, preavisos y plazos de comunicación que salgan del texto); 2) «¿Qué hago ante…?» (situación → acción y plazo, con enlace a la ficha de la LRJS que corresponda).
 
