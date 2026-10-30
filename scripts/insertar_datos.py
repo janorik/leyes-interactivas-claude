@@ -220,6 +220,7 @@ def main():
     if ficha:
         datos["ley"]["nombre_corto"] = ficha["nombre"]
         datos["ley"]["titulo_mapa"] = ficha.get("mapa", "Mapa procesal")
+        datos["ley"]["rotulo_mapa"] = ficha.get("rotulo_mapa", "Mapa procesal")
     validar_y_anadir_procedimientos(datos)
     validar_y_anadir_recursos(datos)
     js = json.dumps(datos, ensure_ascii=False, separators=(",", ":"))

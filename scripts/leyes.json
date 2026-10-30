@@ -49,7 +49,8 @@
    "carpeta": "et/",
    "estado": "disponible",
    "descripcion": "Mapa por situaciones (contrato, salario, jornada, cambios, suspensión y ERTE, despido y extinción, sanciones y plazos, representación y convenios), texto literal completo, repaso y notas.",
-   "mapa": "Estatuto de los Trabajadores"
+   "mapa": "Estatuto de los Trabajadores",
+   "rotulo_mapa": "Mapa por situaciones"
   }
  ]
 }
