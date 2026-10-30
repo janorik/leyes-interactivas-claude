@@ -766,12 +766,50 @@ function siguienteTarjeta(){
   if (g.length>1 && repActual) g = g.filter(t=>t.id!==repActual.id);
   repActual = g[Math.floor(Math.random()*g.length)]; repVista = false;
 }
+// Test de plazos: una pregunta por plazo del mapa, con 3 distractores del mismo tipo (días, meses, años…), primero del mismo procedimiento
+const PLAZOS_TEST = PROC_MAPA.flatMap(p=>p.fases.flatMap(f=>f.plazos.map(pl=>({p, f, pl}))));
+const unidadPlazo = s => ((norm(s).match(/hora|dia|semana|mes|ano|%/)||["otro"])[0]);
+let testPl = null, testPlPuntos = {ok:0, total:0};
+function nuevaPreguntaPlazo(){
+  const pool = PLAZOS_TEST.filter(x=>repFiltro==="todos"||x.p.id===repFiltro);
+  let g = pool.length>1 && testPl ? pool.filter(x=>x!==testPl.x) : pool;
+  const x = g[Math.floor(Math.random()*g.length)], u = unidadPlazo(x.pl.plazo), vistos = new Set([norm(x.pl.plazo)]), opciones = [x.pl.plazo];
+  const azar = a => a.map(v=>[Math.random(),v]).sort((a,b)=>a[0]-b[0]).map(v=>v[1]);
+  const cand = [...azar(PLAZOS_TEST.filter(y=>y.p===x.p&&unidadPlazo(y.pl.plazo)===u)), ...azar(PLAZOS_TEST.filter(y=>y.p!==x.p&&unidadPlazo(y.pl.plazo)===u)), ...azar(PLAZOS_TEST)];
+  // no se ofrece como falso un plazo del mismo acto (p. ej., contestar en el ordinario y en el verbal) ni de la misma frase literal
+  PLAZOS_TEST.forEach(y=>{ if (norm(y.pl.acto)===norm(x.pl.acto) || y.pl.literal===x.pl.literal) vistos.add(norm(y.pl.plazo)); });
+  for (const y of cand){ if (opciones.length>=4) break; const n = norm(y.pl.plazo); if (!vistos.has(n)){ vistos.add(n); opciones.push(y.pl.plazo); } }
+  testPl = {x, opciones: azar(opciones), elegida: undefined};
+}
+function vistaTestPlazos(filtro){
+  const filtros = PROC_MAPA.filter(p=>PLAZOS_TEST.some(x=>x.p===p));
+  if (!filtros.some(p=>p.id===filtro)) filtro = "todos";
+  if (filtro!==repFiltro){ repFiltro = filtro; testPl = null; }
+  if (!testPl) nuevaPreguntaPlazo();
+  const t = testPl, resp = t.elegida !== undefined, pl = t.x.pl, v = $("#v-repaso");
+  v.innerHTML = '<div class="eyebrow">Modo repaso</div><h1 class="tit">Ponte a prueba</h1>'+segRepaso("test")+
+    '<div class="rep-top"><select id="repSel" aria-label="Procedimiento"><option value="todos">Todos los procedimientos</option>'+
+    filtros.map(p=>'<option value="'+p.id+'"'+(repFiltro===p.id?" selected":"")+'>'+esc(p.nombre)+'</option>').join("")+'</select>'+
+    '<span style="font-size:.85rem;color:var(--suave)">Aciertos '+testPlPuntos.ok+' de '+testPlPuntos.total+'</span></div>'+
+    '<div class="card tarjeta"><div class="eyebrow">'+esc(t.x.p.nombre+" · "+t.x.f.fase)+'</div><div class="q">'+esc(pl.acto)+': ¿qué plazo?</div>'+
+    t.opciones.map((o,i)=>{ let cl=""; if(resp){ if(o===pl.plazo) cl=" ok"; else if(i===t.elegida) cl=" mal"; }
+      return '<button class="opc'+cl+'" data-i="'+i+'"'+(resp?" disabled":"")+'>'+esc(o)+'</button>'; }).join("")+
+    (resp ? '<div class="a">'+(t.opciones[t.elegida]===pl.plazo?'<b style="color:#2e7d4f">✔ Correcto.</b>':'<b style="color:var(--peligro)">✘ No.</b>')+
+      ' <span class="chip plazo">'+esc(pl.plazo)+'</span>'+lit(pl.literal)+'<div style="margin-top:6px">'+chipArt(pl.articulo)+
+      ' <a class="chip" href="#proc/'+t.x.p.id+'/'+t.x.f.id+'">Ver la fase</a></div></div><div class="botones"><button class="btn prim" id="sigTest">Siguiente ›</button></div>' : "")+
+    '</div><p class="legal-pie">'+PEND+' Preguntas generadas a partir de los plazos del mapa; las otras opciones son plazos de otros actos. La respuesta cita el texto literal. Los aciertos no se guardan.</p>';
+  $("#repSel").onchange = e => { location.hash = "#repaso/test"+(e.target.value==="todos"?"":"/"+e.target.value); };
+  v.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{ location.hash = b.dataset.h; });
+  v.querySelectorAll(".opc").forEach(b=>b.onclick=()=>{ if(t.elegida!==undefined) return; t.elegida = +b.dataset.i; testPlPuntos.total++; if(t.opciones[t.elegida]===pl.plazo) testPlPuntos.ok++; vistaTestPlazos(repFiltro); });
+  const sig = $("#sigTest"); if (sig) sig.onclick = () => { nuevaPreguntaPlazo(); vistaTestPlazos(repFiltro); };
+}
+const segRepaso = act => PLAZOS_TEST.length ? '<div class="seg" role="tablist">'+[["tarjetas","Tarjetas","#repaso"],["test","Test de plazos","#repaso/test"]].map(([t,n,h])=>'<button role="tab" data-h="'+h+'" aria-selected="'+(act===t)+'">'+n+'</button>').join("")+'</div>' : "";
 function vistaRepaso(filtro){
   if (filtro && filtro!==repFiltro){ repFiltro = filtro; repActual = null; }
   if (!repActual) siguienteTarjeta();
   const pool = poolRep(), ok = pool.filter(t=>progreso[t.id]==="ok").length, ko = pool.filter(t=>progreso[t.id]==="ko").length;
   const t = repActual, v = $("#v-repaso");
-  v.innerHTML = '<div class="eyebrow">Modo repaso</div><h1 class="tit">Ponte a prueba</h1>'+
+  v.innerHTML = '<div class="eyebrow">Modo repaso</div><h1 class="tit">Ponte a prueba</h1>'+segRepaso("tarjetas")+
     '<div class="rep-top"><select id="repSel" aria-label="Procedimiento"><option value="todos">Todos los procedimientos</option>'+
     PROC_MAPA.map(p=>'<option value="'+p.id+'"'+(repFiltro===p.id?" selected":"")+'>'+esc(p.nombre)+'</option>').join("")+
     '<option value="recursos"'+(repFiltro==="recursos"?" selected":"")+'>Recursos</option></select>'+
@@ -784,6 +822,7 @@ function vistaRepaso(filtro){
       : '<div class="botones"><button class="btn prim" id="ver">Mostrar respuesta</button></div>')+
     '</div><p class="legal-pie">'+PEND+' Tarjetas generadas a partir de los esquemas; la respuesta cita el texto literal. El progreso se guarda en este navegador. <a href="#repaso" id="reset">Reiniciar progreso</a></p>';
   $("#repSel").onchange = e => { location.hash = "#repaso"+(e.target.value==="todos"?"":"/"+e.target.value); };
+  v.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{ location.hash = b.dataset.h; });
   const ver=$("#ver"); if(ver) ver.onclick=()=>{ repVista=true; vistaRepaso(); };
   const marcar = r => { progreso[t.id]=r; ls.set("progreso", JSON.stringify(progreso)); siguienteTarjeta(); vistaRepaso(); };
   const okb=$("#ok"), kob=$("#ko"); if(okb){ okb.onclick=()=>marcar("ok"); kob.onclick=()=>marcar("ko"); }
@@ -936,7 +975,7 @@ function ruta(){
     else if (partes[0]==="art"){ const [k,qs]=base.slice(4).split("?"); mostrar("art","ley"); vistaArt(k, qs==="r=1"); }
     else if (partes[0]==="ley"){ mostrar("ley","ley"); pintarArbol(); }
     else if (partes[0]==="buscar"){ mostrar("buscar","buscar"); setTimeout(()=>$("#q").focus(),0); }
-    else if (partes[0]==="repaso"){ mostrar("repaso","repaso"); vistaRepaso(partes[1]||"todos"); }
+    else if (partes[0]==="repaso"){ mostrar("repaso","repaso"); if (partes[1]==="test") vistaTestPlazos(partes[2]||"todos"); else vistaRepaso(partes[1]||"todos"); }
     else if (partes[0]==="notas"){ mostrar("notas","notas"); vistaNotas(); document.title = ABR+" · Mis notas"; }
     else if (partes[0]==="recursos"){ mostrar("recursos","recursos"); if (REC.length) vistaRecursos(partes[1]||"cabe", partes[2]); else vistaAgrupada("recursos"); document.title = ABR+" · Recursos"; }
     else if (partes[0]==="procedimientos"){ mostrar("procedimientos","procedimientos"); vistaAgrupada("procedimientos"); document.title = ABR+" · Procedimientos"; }
