@@ -1,6 +1,472 @@
 {
  "procedimientos": [
   {
+   "id": "relacion",
+   "nombre": "¿Hay relación laboral? Ámbito y fuentes",
+   "bloque": "et",
+   "grupo": "Relación laboral y contrato",
+   "resumen": "La primera pregunta del caso: si hay relación laboral (común o especial) y qué norma se aplica.",
+   "ambito": {
+    "corto": "Arts. 1 a 3",
+    "texto": "TÍTULO I · CAPÍTULO I · Sección 1.ª Ámbito y fuentes",
+    "articulos": [
+     "1"
+    ],
+    "literal": [
+     {
+      "articulo": "1",
+      "texto": "Esta ley será de aplicación a los trabajadores que voluntariamente presten sus servicios retribuidos por cuenta ajena"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "relacion-1",
+     "fase": "¿Hay relación laboral?",
+     "subtitulo": "CAPÍTULO I · Sección 1.ª · arts. 1 a 2",
+     "descripcion": "Es trabajador quien presta servicios voluntarios, retribuidos, por cuenta ajena y dentro de la organización y dirección de otro. Quedan fuera, entre otros, los funcionarios, las prestaciones obligatorias, los consejeros que solo ejercen el cargo, los trabajos amistosos o familiares (salvo prueba de que son asalariados) y los intermediarios mercantiles que asumen el riesgo. Hay relaciones laborales especiales con su propia norma: alta dirección, hogar familiar, deportistas y artistas, abogados en despachos, entre otras.",
+     "articulos": [
+      "1",
+      "2",
+      "8"
+     ],
+     "rango": [
+      "1",
+      "2"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "No hay contrato escrito pero se trabaja bajo dirección ajena y a cambio de retribución",
+       "entonces": "Se presume que existe contrato de trabajo.",
+       "articulos": [
+        "8"
+       ],
+       "literal": {
+        "articulo": "8",
+        "texto": "Se presumirá existente entre todo el que presta un servicio por cuenta y dentro del ámbito de organización y dirección de otro"
+       }
+      },
+      {
+       "si": "Trabajan familiares que conviven con el empresario",
+       "entonces": "Excluido, salvo que se demuestre que son asalariados.",
+       "articulos": [
+        "1"
+       ],
+       "literal": {
+        "articulo": "1",
+        "texto": "Los trabajos familiares, salvo que se demuestre la condición de asalariados de quienes los llevan a cabo"
+       }
+      },
+      {
+       "si": "Es una relación laboral especial (por ejemplo, alta dirección o servicio del hogar)",
+       "entonces": "Se rige por su propia regulación, que debe respetar los derechos básicos constitucionales.",
+       "articulos": [
+        "2"
+       ],
+       "literal": {
+        "articulo": "2",
+        "texto": "la regulación de dichas relaciones laborales respetará los derechos básicos reconocidos por la Constitución"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué notas definen al trabajador del ET?",
+      "a": "Presta servicios voluntariamente, retribuidos, por cuenta ajena y dentro del ámbito de organización y dirección de otro.",
+      "articulos": [
+       "1"
+      ],
+      "literal": {
+       "articulo": "1",
+       "texto": "que voluntariamente presten sus servicios retribuidos por cuenta ajena y dentro del ámbito de organización y dirección de otra persona"
+      }
+     },
+     "conexiones": [
+      "1",
+      "2",
+      "8"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "relacion-3",
+     "fase": "Fuentes: qué norma se aplica",
+     "subtitulo": "CAPÍTULO I · Sección 1.ª · art. 3",
+     "descripcion": "Ficha breve. La relación laboral se rige por la ley y los reglamentos, los convenios colectivos, el contrato (sin condiciones peores que la ley o el convenio) y los usos y costumbres. Si dos normas chocan, respetando los mínimos de derecho necesario, se aplica la más favorable para el trabajador en su conjunto y en cómputo anual. El trabajador no puede renunciar a los derechos indisponibles.",
+     "articulos": [
+      "3"
+     ],
+     "rango": [
+      "3",
+      "3"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El contrato fija condiciones peores que el convenio",
+       "entonces": "No valen: el contrato no puede empeorar la ley ni el convenio.",
+       "articulos": [
+        "3"
+       ],
+       "literal": {
+        "articulo": "3",
+        "texto": "sin que en ningún caso puedan establecerse en perjuicio del trabajador condiciones menos favorables o contrarias a las disposiciones legales y convenios colectivos"
+       }
+      },
+      {
+       "si": "El trabajador renuncia a un derecho reconocido por ley o convenio",
+       "entonces": "La renuncia no es válida.",
+       "articulos": [
+        "3"
+       ],
+       "literal": {
+        "articulo": "3",
+        "texto": "Los trabajadores no podrán disponer válidamente, antes o después de su adquisición, de los derechos que tengan reconocidos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cómo se resuelve un conflicto entre dos normas laborales?",
+      "a": "Aplicando la más favorable para el trabajador apreciada en su conjunto y en cómputo anual, respetando los mínimos de derecho necesario.",
+      "articulos": [
+       "3"
+      ],
+      "literal": {
+       "articulo": "3",
+       "texto": "mediante la aplicación de lo más favorable para el trabajador apreciado en su conjunto, y en cómputo anual"
+      }
+     },
+     "conexiones": [
+      "3",
+      "82",
+      "84"
+     ],
+     "continua_en": []
+    }
+   ]
+  },
+  {
+   "id": "contrato",
+   "nombre": "El contrato: forma, modalidades, prueba y duración",
+   "bloque": "et",
+   "grupo": "Relación laboral y contrato",
+   "resumen": "Cómo se celebra el contrato y cuánto dura: forma escrita y sus consecuencias, contratos formativos y a tiempo parcial, periodo de prueba, temporales y cuándo el trabajador queda fijo.",
+   "ambito": {
+    "corto": "Arts. 8 a 16",
+    "texto": "TÍTULO I · CAPÍTULOS I y II",
+    "articulos": [
+     "8"
+    ],
+    "literal": [
+     {
+      "articulo": "15",
+      "texto": "El contrato de trabajo se presume concertado por tiempo indefinido"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "contrato-8",
+     "fase": "Forma del contrato y nulidad parcial",
+     "subtitulo": "CAPÍTULO I · Sección 3.ª · arts. 8 a 9",
+     "descripcion": "El contrato puede ser verbal o escrito, pero deben ser escritos, entre otros, los formativos, a tiempo parcial, fijos-discontinuos, de relevo y los temporales de más de cuatro semanas. Sin la forma escrita exigida, se presume indefinido y a jornada completa, salvo prueba en contrario. Cualquiera de las partes puede exigir la forma escrita. Si una cláusula es nula, el resto sigue y se completa con la norma; por el trabajo ya prestado en un contrato nulo se cobra como si fuera válido.",
+     "articulos": [
+      "8",
+      "9"
+     ],
+     "rango": [
+      "8",
+      "9"
+     ],
+     "plazos": [
+      {
+       "acto": "Comunicar el contrato a la oficina pública de empleo",
+       "plazo": "10 días desde que se concierta",
+       "articulo": "8",
+       "literal": "en el plazo de los diez días siguientes a su concertación"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Falta la forma escrita exigida",
+       "entonces": "Se presume indefinido y a jornada completa, salvo prueba de lo contrario.",
+       "articulos": [
+        "8"
+       ],
+       "literal": {
+        "articulo": "8",
+        "texto": "el contrato de trabajo se presumirá celebrado por tiempo indefinido y a jornada completa"
+       }
+      },
+      {
+       "si": "El contrato es nulo",
+       "entonces": "El trabajador cobra por el trabajo hecho como si el contrato fuera válido.",
+       "articulos": [
+        "9"
+       ],
+       "literal": {
+        "articulo": "9",
+        "texto": "el trabajador podrá exigir, por el trabajo que ya hubiese prestado, la remuneración consiguiente a un contrato válido"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué contratos temporales deben constar por escrito?",
+      "a": "Los de duración superior a cuatro semanas (además de los que exija la ley).",
+      "articulos": [
+       "8"
+      ],
+      "literal": {
+       "articulo": "8",
+       "texto": "los contratos por tiempo determinado cuya duración sea superior a cuatro semanas"
+      }
+     },
+     "conexiones": [
+      "8",
+      "9",
+      "15",
+      "16"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "contrato-11",
+     "fase": "Contrato formativo, a tiempo parcial y trabajo a distancia",
+     "subtitulo": "CAPÍTULO I · Sección 4.ª · arts. 11 a 13",
+     "descripcion": "Ficha breve. Contrato formativo: en alternancia con estudios (de tres meses a dos años) o para la práctica profesional tras los estudios (de seis meses a un año). Tiempo parcial: menos horas que un trabajador a tiempo completo comparable; las horas complementarias tienen reglas propias y, con las ordinarias, no pueden superar el límite del tiempo parcial. El trabajo a distancia se rige por su ley específica (Ley 10/2021, de trabajo a distancia, según el art. 13). Los arts. 11 y 12 son largos: consulta el texto literal.",
+     "articulos": [
+      "11",
+      "12",
+      "13"
+     ],
+     "rango": [
+      "11",
+      "13"
+     ],
+     "plazos": [
+      {
+       "acto": "Formación en alternancia",
+       "plazo": "De 3 meses a 2 años",
+       "articulo": "11",
+       "literal": "con un mínimo de tres meses y un máximo de dos años"
+      },
+      {
+       "acto": "Contrato para la práctica profesional",
+       "plazo": "De 6 meses a 1 año",
+       "articulo": "11",
+       "literal": "La duración de este contrato no podrá ser inferior a seis meses ni exceder de un año"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Las horas ordinarias y complementarias del tiempo parcial superan la jornada a tiempo completo",
+       "entonces": "No se permite: deben quedar por debajo del límite del tiempo parcial.",
+       "articulos": [
+        "12"
+       ],
+       "literal": {
+        "articulo": "12",
+        "texto": "no podrá exceder del límite legal del trabajo a tiempo parcial definido en el apartado 1"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo es a tiempo parcial un contrato?",
+      "a": "Cuando se pactan menos horas (al día, semana, mes o año) que las de un trabajador a tiempo completo comparable.",
+      "articulos": [
+       "12"
+      ],
+      "literal": {
+       "articulo": "12",
+       "texto": "inferior a la jornada de trabajo de un trabajador a tiempo completo comparable"
+      }
+     },
+     "conexiones": [
+      "8",
+      "11",
+      "12",
+      "13",
+      "35"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "contrato-14",
+     "fase": "Periodo de prueba",
+     "subtitulo": "CAPÍTULO II · Sección 1.ª · art. 14",
+     "descripcion": "Debe pactarse por escrito y respetar los límites del convenio. Sin convenio: seis meses para técnicos titulados y dos meses para los demás (tres en empresas de menos de veinticinco). En temporales de hasta seis meses, un mes como máximo. Durante la prueba cualquiera puede resolver el contrato sin indemnización, pero es nula la resolución por embarazo. Es nulo el periodo de prueba si el trabajador ya hizo esas funciones en la empresa.",
+     "articulos": [
+      "14"
+     ],
+     "rango": [
+      "14",
+      "14"
+     ],
+     "plazos": [
+      {
+       "acto": "Máximo sin convenio: técnicos titulados",
+       "plazo": "6 meses",
+       "articulo": "14",
+       "literal": "no podrá exceder de seis meses para los técnicos titulados"
+      },
+      {
+       "acto": "Máximo sin convenio: demás trabajadores",
+       "plazo": "2 meses (3 en empresas de menos de 25)",
+       "articulo": "14",
+       "literal": "ni de dos meses para los demás trabajadores"
+      },
+      {
+       "acto": "Temporales de hasta 6 meses",
+       "plazo": "1 mes, salvo convenio",
+       "articulo": "14",
+       "literal": "el periodo de prueba no podrá exceder de un mes"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El trabajador ya había hecho las mismas funciones en la empresa",
+       "entonces": "El pacto de periodo de prueba es nulo.",
+       "articulos": [
+        "14"
+       ],
+       "literal": {
+        "articulo": "14",
+        "texto": "Será nulo el pacto que establezca un periodo de prueba cuando el trabajador haya ya desempeñado las mismas funciones con anterioridad en la empresa"
+       }
+      },
+      {
+       "si": "La empresa resuelve durante la prueba a una trabajadora embarazada",
+       "entonces": "Es nula, salvo motivos no relacionados con el embarazo o la maternidad.",
+       "articulos": [
+        "14"
+       ],
+       "literal": {
+        "articulo": "14",
+        "texto": "La resolución a instancia empresarial será nula en el caso de las trabajadoras por razón de embarazo"
+       }
+      },
+      {
+       "si": "Durante la prueba hay incapacidad temporal, nacimiento u otras situaciones protegidas",
+       "entonces": "Se interrumpe el cómputo si hay acuerdo entre ambas partes.",
+       "articulos": [
+        "14"
+       ],
+       "literal": {
+        "articulo": "14",
+        "texto": "interrumpen el cómputo del mismo siempre que se produzca acuerdo entre ambas partes"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué pasa al terminar el periodo de prueba sin desistimiento?",
+      "a": "El contrato produce plenos efectos y el tiempo de prueba cuenta en la antigüedad.",
+      "articulos": [
+       "14"
+      ],
+      "literal": {
+       "articulo": "14",
+       "texto": "el contrato producirá plenos efectos, computándose el tiempo de los servicios prestados en la antigüedad"
+      }
+     },
+     "conexiones": [
+      "14",
+      "15",
+      "52"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "contrato-15",
+     "fase": "Contratos temporales y fijeza",
+     "subtitulo": "CAPÍTULO II · Sección 1.ª · arts. 15 a 16",
+     "descripcion": "El contrato se presume indefinido. Solo cabe temporal por circunstancias de la producción (máximo seis meses, ampliable a un año por convenio sectorial; y situaciones ocasionales previsibles hasta noventa días al año) o por sustitución, con la causa y su conexión con la duración especificadas en el contrato. Quien se contrata incumpliendo esto queda fijo; también quien encadena más de dieciocho meses en veinticuatro con dos o más contratos por circunstancias de la producción. Para trabajos estacionales o intermitentes existe el fijo-discontinuo (art. 16), siempre por escrito.",
+     "articulos": [
+      "15",
+      "16"
+     ],
+     "rango": [
+      "15",
+      "16"
+     ],
+     "plazos": [
+      {
+       "acto": "Temporal por circunstancias de la producción",
+       "plazo": "Máximo 6 meses (1 año por convenio sectorial)",
+       "articulo": "15",
+       "literal": "su duración no podrá ser superior a seis meses"
+      },
+      {
+       "acto": "Situaciones ocasionales y previsibles",
+       "plazo": "Máximo 90 días en el año natural (120 en el sector agrario)",
+       "articulo": "15",
+       "literal": "Las empresas solo podrán utilizar este contrato un máximo de noventa días en el año natural"
+      },
+      {
+       "acto": "Encadenamiento que convierte en fijo",
+       "plazo": "Más de 18 meses en 24",
+       "articulo": "15",
+       "literal": "en un periodo de veinticuatro meses hubieran estado contratadas durante un plazo superior a dieciocho meses"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El contrato temporal no especifica la causa y su conexión con la duración",
+       "entonces": "No hay causa justificada de temporalidad; la contratación incumple el art. 15 y el trabajador queda fijo.",
+       "articulos": [
+        "15"
+       ],
+       "literal": {
+        "articulo": "15",
+        "texto": "Las personas contratadas incumpliendo lo establecido en este artículo adquirirán la condición de fijas"
+       }
+      },
+      {
+       "si": "El temporal no está dado de alta pasado el periodo de prueba legal",
+       "entonces": "Adquiere la condición de fijo.",
+       "articulos": [
+        "15"
+       ],
+       "literal": {
+        "articulo": "15",
+        "texto": "las personas trabajadoras temporales que no hubieran sido dadas de alta en la Seguridad Social"
+       }
+      },
+      {
+       "si": "El mismo puesto se cubre más de 18 meses en 24 con temporales por circunstancias de la producción",
+       "entonces": "Quien lo ocupe adquiere la condición de fijo.",
+       "articulos": [
+        "15"
+       ],
+       "literal": {
+        "articulo": "15",
+        "texto": "adquirirá la condición de fija la persona que ocupe un puesto de trabajo que haya estado ocupado"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Por qué causas puede celebrarse un contrato de duración determinada?",
+      "a": "Solo por circunstancias de la producción o por sustitución de persona trabajadora.",
+      "articulos": [
+       "15"
+      ],
+      "literal": {
+       "articulo": "15",
+       "texto": "El contrato de trabajo de duración determinada solo podrá celebrarse por circunstancias de la producción o por sustitución de persona trabajadora"
+      }
+     },
+     "conexiones": [
+      "8",
+      "14",
+      "16",
+      "49"
+     ],
+     "continua_en": []
+    }
+   ]
+  },
+  {
    "id": "cambios",
    "nombre": "Cambios en el contrato: movilidad, modificación y cambio de empresario",
    "bloque": "et",
@@ -418,6 +884,379 @@
       "42",
       "43",
       "49"
+     ],
+     "continua_en": []
+    }
+   ]
+  },
+  {
+   "id": "suspension",
+   "nombre": "Suspensión del contrato, excedencias y ERTE",
+   "bloque": "et",
+   "grupo": "Cambios y suspensión",
+   "resumen": "Cuándo se suspende el contrato y qué pasa al volver: causas, excedencias, ERTE por causas empresariales y suspensión por nacimiento y cuidado de menor, con el permiso parental.",
+   "ambito": {
+    "corto": "Arts. 45 a 48 bis",
+    "texto": "TÍTULO I · CAPÍTULO III · Sección 3.ª Suspensión del contrato",
+    "articulos": [
+     "45"
+    ],
+    "literal": [
+     {
+      "articulo": "45",
+      "texto": "El contrato de trabajo podrá suspenderse por las siguientes causas"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "suspension-45",
+     "fase": "Suspensión del contrato: causas, efectos y reincorporación",
+     "subtitulo": "Sección 3.ª · arts. 45 y 48.1-3",
+     "descripcion": "El contrato se suspende, entre otras causas, por mutuo acuerdo, incapacidad temporal, nacimiento y cuidado de menor, riesgo durante el embarazo o la lactancia, cargo público, privación de libertad sin condena, sanción de suspensión de empleo y sueldo, fuerza mayor temporal, causas económicas, técnicas, organizativas o de producción, huelga, violencia de género o sexual y permiso parental. Durante la suspensión no se trabaja ni se cobra salario. Al cesar la causa, el trabajador vuelve a su puesto (salvo en mutuo acuerdo y causas del contrato, donde se está a lo pactado).",
+     "articulos": [
+      "45",
+      "48"
+     ],
+     "rango": [
+      "45",
+      "45"
+     ],
+     "plazos": [
+      {
+       "acto": "Reincorporarse tras un cargo público o función sindical provincial o superior",
+       "plazo": "Máximo 30 días naturales desde el cese",
+       "articulo": "48",
+       "literal": "el trabajador deberá reincorporarse en el plazo máximo de treinta días naturales a partir de la cesación en el cargo o función"
+      },
+      {
+       "acto": "Reserva del puesto tras incapacidad permanente revisable por mejoría",
+       "plazo": "2 años desde la resolución",
+       "articulo": "48",
+       "literal": "durante un periodo de dos años a contar desde la fecha de la resolución por la que se declare la incapacidad permanente"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La suspensión fue por mutuo acuerdo o por causa del contrato",
+       "entonces": "La reincorporación se rige por lo pactado.",
+       "articulos": [
+        "48"
+       ],
+       "literal": {
+        "articulo": "48",
+        "texto": "excepto en los señalados en las letras a) y b), en que se estará a lo pactado"
+       }
+      },
+      {
+       "si": "Se declara una incapacidad permanente sin ajuste posible",
+       "entonces": "Puede llevar a la extinción del art. 49.1.n); mientras se resuelven los ajustes, sigue la suspensión con reserva.",
+       "articulos": [
+        "48",
+        "49"
+       ],
+       "literal": {
+        "articulo": "48",
+        "texto": "durante el tiempo en que se resuelven los ajustes razonables o el cambio a un puesto vacante y disponible"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué efecto principal tiene la suspensión del contrato?",
+      "a": "Exonera de las obligaciones recíprocas de trabajar y de remunerar el trabajo.",
+      "articulos": [
+       "45"
+      ],
+      "literal": {
+       "articulo": "45",
+       "texto": "La suspensión exonera de las obligaciones recíprocas de trabajar y remunerar el trabajo"
+      }
+     },
+     "conexiones": [
+      "45",
+      "46",
+      "47",
+      "48",
+      "49"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "suspension-46",
+     "fase": "Excedencias",
+     "subtitulo": "Sección 3.ª · art. 46",
+     "descripcion": "Forzosa: por cargo público que impida trabajar; conserva el puesto y la antigüedad. Voluntaria: con un año de antigüedad, de cuatro meses a cinco años, sin reserva del puesto. Para cuidado de hijos (hasta tres años) o de familiares que no pueden valerse (hasta dos, ampliable por convenio): computa la antigüedad, se puede fraccionar y es un derecho individual; el despido por haberla pedido o disfrutado es nulo (arts. 53.4 y 55.5).",
+     "articulos": [
+      "46",
+      "55"
+     ],
+     "rango": [
+      "46",
+      "46"
+     ],
+     "plazos": [
+      {
+       "acto": "Pedir el reingreso tras la excedencia forzosa",
+       "plazo": "Dentro del mes siguiente al cese en el cargo",
+       "articulo": "46",
+       "literal": "El reingreso deberá ser solicitado dentro del mes siguiente al cese en el cargo público"
+      },
+      {
+       "acto": "Excedencia voluntaria",
+       "plazo": "De 4 meses a 5 años (con 1 año de antigüedad)",
+       "articulo": "46",
+       "literal": "por un plazo no menor a cuatro meses y no mayor a cinco años"
+      },
+      {
+       "acto": "Nueva excedencia voluntaria",
+       "plazo": "Tras 4 años desde la anterior",
+       "articulo": "46",
+       "literal": "si han transcurrido cuatro años desde el final de la anterior excedencia voluntaria"
+      },
+      {
+       "acto": "Excedencia por cuidado de hijo",
+       "plazo": "Hasta 3 años",
+       "articulo": "46",
+       "literal": "de duración no superior a tres años para atender al cuidado de cada hijo"
+      },
+      {
+       "acto": "Excedencia por cuidado de familiar",
+       "plazo": "Hasta 2 años (más por convenio)",
+       "articulo": "46",
+       "literal": "de duración no superior a dos años, salvo que se establezca una duración mayor por negociación colectiva"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Dos trabajadores de la empresa la piden por el mismo sujeto causante",
+       "entonces": "La empresa puede limitar el disfrute simultáneo por razones fundadas y por escrito, ofreciendo un plan alternativo.",
+       "articulos": [
+        "46"
+       ],
+       "literal": {
+        "articulo": "46",
+        "texto": "la empresa podrá limitar su ejercicio simultáneo por razones fundadas y objetivas de funcionamiento"
+       }
+      },
+      {
+       "si": "Nace un nuevo hijo durante la excedencia",
+       "entonces": "La nueva excedencia pone fin a la anterior.",
+       "articulos": [
+        "46"
+       ],
+       "literal": {
+        "articulo": "46",
+        "texto": "el inicio de la misma dará fin al que, en su caso, se viniera disfrutando"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué antigüedad se exige para la excedencia voluntaria?",
+      "a": "Al menos un año en la empresa.",
+      "articulos": [
+       "46"
+      ],
+      "literal": {
+       "articulo": "46",
+       "texto": "El trabajador con al menos una antigüedad en la empresa de un año tiene derecho"
+      }
+     },
+     "conexiones": [
+      "45",
+      "48",
+      "53",
+      "55"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "suspension-47",
+     "fase": "ERTE: reducción de jornada o suspensión por causas empresariales",
+     "subtitulo": "Sección 3.ª · arts. 47 y 47 bis",
+     "descripcion": "La empresa puede reducir la jornada o suspender contratos temporalmente por causas económicas, técnicas, organizativas o de producción (o fuerza mayor), sea cual sea su tamaño y el número de afectados. Se comunica a la autoridad laboral y se abre un periodo de consultas de hasta quince días (siete en empresas de menos de cincuenta). Con acuerdo se presumen las causas. Después la empresa notifica su decisión, que surte efectos desde que se comunica a la autoridad laboral. El trabajador puede impugnarla ante la jurisdicción social. El Mecanismo RED (art. 47 bis) es una variante que activa el Consejo de Ministros.",
+     "aviso": "La impugnación individual y colectiva se regula en la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]]. El art. 47 es largo (fuerza mayor, formación, prohibiciones durante el ERTE): consulta el texto literal.",
+     "articulos": [
+      "47",
+      "47 bis"
+     ],
+     "rango": [
+      "47",
+      "47 bis"
+     ],
+     "plazos": [
+      {
+       "acto": "Periodo de consultas",
+       "plazo": "Máximo 15 días (7 si menos de 50 trabajadores)",
+       "articulo": "47",
+       "literal": "de duración no superior a quince días"
+      },
+      {
+       "acto": "Constituir la comisión representativa",
+       "plazo": "Máximo 5 días (10 si algún centro no tiene representantes)",
+       "articulo": "47",
+       "literal": "El plazo máximo para la constitución de la comisión representativa será de cinco días"
+      },
+      {
+       "acto": "Informe de la Inspección de Trabajo",
+       "plazo": "15 días improrrogables",
+       "articulo": "47",
+       "literal": "El informe deberá ser evacuado en el improrrogable plazo de quince días"
+      },
+      {
+       "acto": "Comunicar la decisión tras la última reunión (si no, caduca)",
+       "plazo": "15 días",
+       "articulo": "47",
+       "literal": "Si en el plazo de quince días desde la fecha de la última reunión celebrada en el periodo de consultas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El periodo de consultas termina con acuerdo",
+       "entonces": "Se presumen las causas; solo se impugna por fraude, dolo, coacción o abuso de derecho.",
+       "articulos": [
+        "47"
+       ],
+       "literal": {
+        "articulo": "47",
+        "texto": "solo podrá ser impugnado ante la jurisdicción social por la existencia de fraude, dolo, coacción o abuso de derecho en su conclusión"
+       }
+      },
+      {
+       "si": "El trabajador no está conforme con la medida",
+       "entonces": "Reclama ante la jurisdicción social, que la declara justificada o injustificada.",
+       "articulos": [
+        "47"
+       ],
+       "literal": {
+        "articulo": "47",
+        "texto": "podrá reclamar la persona trabajadora ante la jurisdicción social que declarará la medida justificada o injustificada"
+       }
+      },
+      {
+       "si": "La empresa no comunica su decisión a tiempo",
+       "entonces": "El procedimiento caduca.",
+       "articulos": [
+        "47"
+       ],
+       "literal": {
+        "articulo": "47",
+        "texto": "se producirá la caducidad del procedimiento"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo hay causa económica para un ERTE por disminución de ingresos?",
+      "a": "Cuando durante dos trimestres consecutivos los ingresos o ventas de cada trimestre son inferiores a los del mismo trimestre del año anterior.",
+      "articulos": [
+       "47"
+      ],
+      "literal": {
+       "articulo": "47",
+       "texto": "si durante dos trimestres consecutivos el nivel de ingresos ordinarios o ventas"
+      }
+     },
+     "conexiones": [
+      "41",
+      "45",
+      "47 bis",
+      "51"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "suspension-48",
+     "fase": "Nacimiento, cuidado de menor y permiso parental",
+     "subtitulo": "Sección 3.ª · arts. 48.4 y siguientes y 48 bis",
+     "descripcion": "El nacimiento suspende el contrato de cada progenitor durante diecinueve semanas (treinta y dos en familias monoparentales); las seis semanas posteriores al parto son obligatorias para la madre biológica. Hay reglas para partos prematuros y hospitalización, adopción y acogimiento. El permiso parental (art. 48 bis) permite hasta ocho semanas para cuidar a un hijo hasta que cumpla ocho años, con preaviso de diez días. Despedir en estos periodos o por ejercerlos es nulo, salvo procedencia por otros motivos (arts. 53.4 y 55.5).",
+     "aviso": "El art. 48 es largo (adopción, acogimiento, riesgo durante el embarazo, distribución de las semanas): consulta el texto literal.",
+     "articulos": [
+      "48",
+      "48 bis",
+      "55"
+     ],
+     "rango": [
+      "48",
+      "48 bis"
+     ],
+     "plazos": [
+      {
+       "acto": "Suspensión por nacimiento (cada progenitor)",
+       "plazo": "19 semanas (32 si monoparental)",
+       "articulo": "48",
+       "literal": "suspenderá el contrato de trabajo de la madre biológica y el del progenitor distinto de la madre biológica durante diecinueve semanas"
+      },
+      {
+       "acto": "Hospitalización del neonato más de 7 días",
+       "plazo": "Hasta 13 semanas más",
+       "articulo": "48",
+       "literal": "con un máximo de trece semanas adicionales"
+      },
+      {
+       "acto": "Permiso parental",
+       "plazo": "Hasta 8 semanas, hasta que el menor cumpla 8 años",
+       "articulo": "48 bis",
+       "literal": "que tendrá una duración no superior a ocho semanas, continuas o discontinuas"
+      },
+      {
+       "acto": "Preaviso del permiso parental",
+       "plazo": "10 días (o el del convenio)",
+       "articulo": "48 bis",
+       "literal": "con una antelación de diez días o la concretada por los convenios colectivos"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El neonato queda hospitalizado tras el parto",
+       "entonces": "La suspensión puede empezar a contar desde el alta (salvo las seis semanas obligatorias de la madre).",
+       "articulos": [
+        "48"
+       ],
+       "literal": {
+        "articulo": "48",
+        "texto": "el periodo de suspensión podrá computarse, a instancia de la madre biológica o del otro progenitor, a partir de la fecha del alta hospitalaria"
+       }
+      },
+      {
+       "si": "Dos trabajadores piden el permiso parental por el mismo menor y altera seriamente la empresa",
+       "entonces": "La empresa puede aplazarlo un tiempo razonable, por escrito y ofreciendo una alternativa igual de flexible.",
+       "articulos": [
+        "48 bis"
+       ],
+       "literal": {
+        "articulo": "48 bis",
+        "texto": "ésta podrá aplazar la concesión del permiso por un período razonable"
+       }
+      },
+      {
+       "si": "Se despide durante estas suspensiones",
+       "entonces": "El despido es nulo, salvo procedencia por motivos ajenos.",
+       "articulos": [
+        "55",
+        "53"
+       ],
+       "literal": {
+        "articulo": "55",
+        "texto": "disfrute del permiso parental a que se refiere el artículo 48 bis"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Puede transferirse el permiso parental al otro progenitor?",
+      "a": "No: es un derecho individual que no puede transferirse.",
+      "articulos": [
+       "48 bis"
+      ],
+      "literal": {
+       "articulo": "48 bis",
+       "texto": "sin que pueda transferirse su ejercicio"
+      }
+     },
+     "conexiones": [
+      "37",
+      "45",
+      "53",
+      "55"
      ],
      "continua_en": []
     }
