@@ -531,6 +531,31 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [ ] **Recurso contra autos de ejecución.** Combino el art. 80.1.b (apelación, Juzgados) y el art. 87.1.c con el 87.2 (casación, Salas, previa reposición) (Verificable cada artículo; la combinación es mía). **Tu respuesta:**
 - [ ] **Revisa las 4 fichas.**
 
+## ET — Estatuto de los Trabajadores
+
+### Puntos de extracción (F1, Chat 6)
+
+> Texto literal extraído del PDF `fuentes/ET_BOE-A-2015-11430.pdf` (subido por el usuario como «ESTTUTO TRABAJADORES Boe .pdf» y renombrado) con `python3 scripts/extraer_ley.py et`: Real Decreto Legislativo de aprobación (artículo único y disposición derogatoria única, como una sola entrada), 95 artículos (1 a 92, más 20 bis, 47 bis y 48 bis) y 44 disposiciones (29 adicionales, 13 transitorias y 2 finales); 34 rótulos de estructura, todos los del índice. Detalle en `et/datos/informe_control.md`.
+
+- [ ] **Fecha de la versión: 21 de octubre de 2026** (Verificable: página 8 del PDF, «Última modificación»). **Tu respuesta:**
+- [ ] **Contraste con una segunda lectura del PDF:** 13 tramos distintos, todos de títulos de disposiciones partidos en dos líneas y de una referencia «Ref. BOE-A-2009-15958» leída sin guiones. No hay huecos en la numeración ni artículos sin texto (Verificable: informe de control).
+- [ ] **Art. 48 bis sin título:** el BOE no le pone epígrafe, ni en el índice ni en el texto (Verificable: PDF, pág. 57). Se muestra tal cual.
+- [ ] **Disposiciones derogadas:** adicionales decimosexta y vigesimoprimera «(Derogada)», y apartados derogados en la adicional decimoquinta y la transitoria segunda (Verificable). Se muestran tal cual.
+- [x] **Lema de la portada:** decía «Estudia las leyes procesales como un mapa», y el ET no es una ley procesal (Verificable: `scripts/generar_portada.py`). **Propuesta:** cambiarlo, por ejemplo, por «Estudia y consulta las leyes como un mapa» (No verificable). **Resuelta (usuario, 30-10-2026):** «Consulta las leyes como un mapa».
+- [x] **Canon del ET:** propuesta de Claude en `fuentes/canon_contenido.md › ET`. **Resuelta (usuario, 30-10-2026):** aprobada tal cual.
+
+### Mapa por situaciones (F3, Chat 6, contenido elaborado, pendiente de revisión)
+
+> 12 bloques y 44 fichas según el canon aprobado: guía práctica (plazos del ET y «¿Qué hago ante…?»), relación laboral, contrato, derechos, salario, tiempo de trabajo, cambios en el contrato, suspensión y ERTE, extinción y despido, sanciones y prescripción, representantes y convenios. 97 plazos. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío. Las fichas remiten a la LRJS con enlace al BOE; los enlaces directos a las fichas de la LRJS son la fase F5.
+
+- [ ] **Rótulo «Mapa procesal» y «fases».** La plantilla común pone «Mapa procesal» sobre el título del mapa y llama «fases» a las fichas (Verificable: captura de la app). En el ET no son fases de un proceso. **Propuesta:** que el rótulo salga de `leyes.json` (en el ET, por ejemplo, «Mapa por situaciones») y dejar «fases» como está para no tocar las demás leyes (No verificable). **Tu respuesta:**
+- [ ] **Art. 13 (trabajo a distancia):** remite a la «Ley 10/2021 de trabajo a distancia» (Verificable). No pongo enlace porque su referencia del BOE no sale del PDF. Si quieres el enlace, dime la referencia o compruébala tú. **Tu respuesta:**
+- [ ] **Art. 60.1 (infracciones del empresario):** remite al texto refundido de la Ley sobre Infracciones y Sanciones en el Orden Social (Real Decreto Legislativo 5/2000) (Verificable). Sin enlace por el mismo motivo. **Tu respuesta:**
+- [ ] **Despido improcedente de contratos anteriores al 12-02-2012:** la ficha del art. 56 cita la disposición transitoria undécima (45 días por año hasta esa fecha y 33 después) sin ponerla como «artículo», porque la app la mostraría como «Art. dt11» (Verificable: texto de la DT 11.ª). **Tu respuesta:**
+- [ ] **Remisiones a la LRJS sin número de artículo.** En las fichas digo «se regula en la LRJS» (modalidad de despido, de movilidad y modificación, de vacaciones, de conciliación, de sanciones, de elecciones, de convenios) sin citar artículos de la LRJS (No verificable aquí: es la estructura que conozco de la LRJS de la app, no lo he comprobado ficha por ficha). Se concretará en F5 al enlazar cada ficha con la de la LRJS. **Tu respuesta:**
+- [ ] **Ficha «¿Qué hago ante…?».** Las respuestas son orientaciones mías que combinan varios artículos (Verificable cada artículo; la combinación es mía). **Tu respuesta:**
+- [ ] **Revisa las 44 fichas.**
+
 ## Páginas legales (todas las leyes)
 
 Aviso legal, Política de privacidad y Política de cookies (`aviso-legal.html`, `politica-privacidad.html`, `cookies.html`), y la ventana «© 2026 J A Noriega (Norik)» del pie. Hechas a partir de las de norlexia.es (repositorio WEB-NORLEXIA, `bocetos/`), adaptadas a esta app: sin formulario, sin Google Fonts y sin cookies.

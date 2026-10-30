@@ -76,7 +76,7 @@ a.ley:hover{border-color:var(--acento)}
 <header><div class="in">
   <div class="cab">__LOGO__<div><b>NORLEXIA</b><span>Leyes interactivas</span></div>
     <button id="tema" aria-label="Cambiar modo claro u oscuro" title="Modo claro/oscuro">◐</button></div>
-  <div class="hero"><h1>Estudia las leyes procesales como un mapa</h1>
+  <div class="hero"><h1>Consulta las leyes como un mapa</h1>
     <p>Fases de cada procedimiento, plazos con la frase literal del BOE, recursos, test de repaso y tus notas. Funciona en el móvil y sin conexión.</p></div>
 </div></header>
 <main class="in">

@@ -51,6 +51,12 @@ LEYES = {
              "ley": {"id": "ljca", "nombre": "Ley 29/1998, de 13 de julio, reguladora de la Jurisdicción "
                                              "Contencioso-administrativa",
                      "abreviatura": "LJCA", "boe": "BOE-A-1998-16718"}},
+    "et": {"pdf": "ET_BOE-A-2015-11430.pdf", "pag_cuerpo": 8,
+           "inicio_pre": "El artículo Uno.d)", "fin_pre": "TEXTO REFUNDIDO DE LA LEY DEL ESTATUTO DE LOS TRABAJADORES",
+           "saltar_fin": True, "rotulo_pre": "Real Decreto Legislativo de aprobación",
+           "ley": {"id": "et", "nombre": "Real Decreto Legislativo 2/2015, de 23 de octubre, por el que se aprueba el "
+                                         "texto refundido de la Ley del Estatuto de los Trabajadores",
+                   "abreviatura": "ET", "boe": "BOE-A-2015-11430"}},
 }
 LEY = sys.argv[1] if len(sys.argv) > 1 else "lecrim"
 CFG = LEYES[LEY]
@@ -72,7 +78,11 @@ RE_VACIO = re.compile(r"^\((Sin contenido|Derogad[oa]s?|Anulad[oa]s?|Suprimid[oa
 
 ORDINALES = {"primera": 1, "segunda": 2, "tercera": 3, "cuarta": 4, "quinta": 5, "sexta": 6,
              "séptima": 7, "octava": 8, "novena": 9, "décima": 10, "undécima": 11,
-             "duodécima": 12, "decimoprimera": 11, "decimotercera": 13, "decimocuarta": 14, "decimoquinta": 15}
+             "duodécima": 12, "decimoprimera": 11, "decimotercera": 13, "decimocuarta": 14, "decimoquinta": 15,
+             "decimosexta": 16, "decimoséptima": 17, "decimoctava": 18, "decimonovena": 19, "vigésima": 20,
+             "vigesimoprimera": 21, "vigesimosegunda": 22, "vigesimotercera": 23, "vigesimocuarta": 24,
+             "vigesimoquinta": 25, "vigesimosexta": 26, "vigesimoséptima": 27, "vigesimoctava": 28,
+             "vigesimonovena": 29}
 PREF = {"adicional": "da", "transitoria": "dt", "derogatoria": "dd", "final": "df"}
 GRUPOS = {"da": "Disposiciones adicionales", "dt": "Disposiciones transitorias",
           "dd": "Disposiciones derogatorias", "df": "Disposiciones finales"}
