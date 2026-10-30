@@ -556,6 +556,13 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [ ] **Ficha «¿Qué hago ante…?».** Las respuestas son orientaciones mías que combinan varios artículos (Verificable cada artículo; la combinación es mía). **Tu respuesta:**
 - [ ] **Revisa las 44 fichas.**
 
+### Test de plazos (F4, Chat 7, todas las leyes)
+
+> Nueva pestaña «Test de plazos» dentro de «Repaso», en todas las leyes: «¿qué plazo?» con 4 opciones. La correcta y su frase literal salen del mapa; las otras tres son plazos de otros actos (primero del mismo tipo y del mismo procedimiento) (Verificable: código de la plantilla).
+
+- [ ] **Opciones parecidas.** Como los distractores son plazos reales de otros actos, a veces se parecen mucho a la respuesta o podrían valer en otro supuesto. Ejemplo (ET, Verificable: captura): «Reclamar cantidades (prescripción)» ofrece «1 año desde que pudo reclamarse» (correcta) y «1 año desde que termina el contrato» (plazo del art. 59.1 para las acciones derivadas del contrato). **Propuesta:** dejarlo así, porque obliga a distinguir el *dies a quo*, y si ves una pregunta que te parezca engañosa, me la apuntas y la ajusto (No verificable). **Tu respuesta:**
+- [ ] **Aciertos.** El marcador del test no se guarda en el navegador (se pierde al cerrar), a diferencia del progreso de las tarjetas. Si quieres que se guarde, habría que añadir una clave nueva a `cookies.html`. **Tu respuesta:**
+
 ## Páginas legales (todas las leyes)
 
 Aviso legal, Política de privacidad y Política de cookies (`aviso-legal.html`, `politica-privacidad.html`, `cookies.html`), y la ventana «© 2026 J A Noriega (Norik)» del pie. Hechas a partir de las de norlexia.es (repositorio WEB-NORLEXIA, `bocetos/`), adaptadas a esta app: sin formulario, sin Google Fonts y sin cookies.
