@@ -467,6 +467,816 @@
    ]
   },
   {
+   "id": "derechos",
+   "nombre": "Derechos y deberes en el contrato",
+   "bloque": "et",
+   "grupo": "Condiciones de trabajo",
+   "resumen": "Los límites del poder del empresario y los pactos que más se discuten: no discriminación, control y derechos digitales, no competencia y permanencia.",
+   "ambito": {
+    "corto": "Arts. 17 a 21",
+    "texto": "TÍTULO I · CAPÍTULO II · Sección 2.ª",
+    "articulos": [
+     "17"
+    ],
+    "literal": [
+     {
+      "articulo": "20",
+      "texto": "El trabajador estará obligado a realizar el trabajo convenido bajo la dirección del empresario"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "derechos-17",
+     "fase": "No discriminación",
+     "subtitulo": "CAPÍTULO II · Sección 2.ª · art. 17",
+     "descripcion": "Son nulos los reglamentos, cláusulas de convenio, pactos y decisiones del empresario que discriminen en el empleo, el salario, la jornada o las demás condiciones por edad, discapacidad, sexo, origen, estado civil, condición social, religión, ideas, orientación e identidad sexual, sindicación, parentesco o lengua. También las represalias contra quien reclama igualdad de trato. Un despido discriminatorio es nulo (arts. 53.4 y 55.5).",
+     "aviso": "La tutela de derechos fundamentales tiene modalidad propia en la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]].",
+     "articulos": [
+      "17",
+      "55"
+     ],
+     "rango": [
+      "17",
+      "17"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "La empresa reacciona contra quien reclamó por discriminación",
+       "entonces": "La decisión es nula (garantía de indemnidad).",
+       "articulos": [
+        "17"
+       ],
+       "literal": {
+        "articulo": "17",
+        "texto": "como reacción ante una reclamación efectuada en la empresa o ante una acción administrativa o judicial destinada a exigir el cumplimiento del principio de igualdad de trato"
+       }
+      },
+      {
+       "si": "El despido tiene un móvil discriminatorio",
+       "entonces": "Es nulo: readmisión con salarios.",
+       "articulos": [
+        "55"
+       ],
+       "literal": {
+        "articulo": "55",
+        "texto": "Será nulo el despido que tenga por móvil alguna de las causas de discriminación prohibidas"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué consecuencia tiene una cláusula de convenio discriminatoria?",
+      "a": "Es nula y sin efecto.",
+      "articulos": [
+       "17"
+      ],
+      "literal": {
+       "articulo": "17",
+       "texto": "Se entenderán nulos y sin efecto los preceptos reglamentarios, las cláusulas de los convenios colectivos"
+      }
+     },
+     "conexiones": [
+      "4",
+      "17",
+      "28",
+      "53",
+      "55"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "derechos-20",
+     "fase": "Poder de dirección, control y derechos digitales",
+     "subtitulo": "CAPÍTULO II · Sección 2.ª · arts. 20 y 20 bis",
+     "descripcion": "El trabajador trabaja bajo la dirección del empresario, con diligencia y buena fe. El empresario puede vigilar y controlar el cumplimiento, respetando la dignidad, y comprobar con personal médico el estado de salud alegado para faltar. El trabajador tiene derecho a la intimidad en los dispositivos digitales, a la desconexión digital y frente a la videovigilancia y la geolocalización, en los términos de la legislación de protección de datos.",
+     "articulos": [
+      "20",
+      "20 bis"
+     ],
+     "rango": [
+      "20",
+      "20 bis"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "El trabajador se niega al reconocimiento médico de su ausencia",
+       "entonces": "Puede perder los derechos económicos a cargo del empresario por esa situación.",
+       "articulos": [
+        "20"
+       ],
+       "literal": {
+        "articulo": "20",
+        "texto": "La negativa del trabajador a dichos reconocimientos podrá determinar la suspensión de los derechos económicos"
+       }
+      },
+      {
+       "si": "La empresa controla los dispositivos o usa cámaras o geolocalización",
+       "entonces": "Debe respetar la intimidad en los términos de la legislación de protección de datos.",
+       "articulos": [
+        "20 bis"
+       ],
+       "literal": {
+        "articulo": "20 bis",
+        "texto": "a la intimidad frente al uso de dispositivos de videovigilancia y geolocalización"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué límite tiene el control empresarial?",
+      "a": "La consideración debida a la dignidad del trabajador (y su capacidad real, si tiene discapacidad).",
+      "articulos": [
+       "20"
+      ],
+      "literal": {
+       "articulo": "20",
+       "texto": "guardando en su adopción y aplicación la consideración debida a su dignidad"
+      }
+     },
+     "conexiones": [
+      "5",
+      "20",
+      "20 bis",
+      "54"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "derechos-21",
+     "fase": "No concurrencia, no competencia y permanencia",
+     "subtitulo": "CAPÍTULO II · Sección 2.ª · art. 21",
+     "descripcion": "Durante el contrato no se puede trabajar para otros si hay concurrencia desleal o pacto de plena dedicación compensado. Tras el contrato, el pacto de no competencia vale como máximo dos años (técnicos) o seis meses (resto), solo con interés efectivo del empresario y compensación adecuada. Si el empresario pagó una especialización, cabe pactar por escrito la permanencia hasta dos años; si el trabajador se va antes, debe indemnizar.",
+     "articulos": [
+      "21"
+     ],
+     "rango": [
+      "21",
+      "21"
+     ],
+     "plazos": [
+      {
+       "acto": "No competencia tras el contrato",
+       "plazo": "Máximo 2 años (técnicos) o 6 meses (resto)",
+       "articulo": "21",
+       "literal": "no podrá tener una duración superior a dos años para los técnicos y de seis meses para los demás trabajadores"
+      },
+      {
+       "acto": "Dejar el pacto de plena dedicación",
+       "plazo": "Preaviso de 30 días",
+       "articulo": "21",
+       "literal": "comunicándolo por escrito al empresario con un preaviso de treinta días"
+      },
+      {
+       "acto": "Pacto de permanencia",
+       "plazo": "Máximo 2 años, por escrito",
+       "articulo": "21",
+       "literal": "El acuerdo no será de duración superior a dos años y se formalizará siempre por escrito"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El pacto de no competencia no tiene compensación adecuada",
+       "entonces": "No es válido.",
+       "articulos": [
+        "21"
+       ],
+       "literal": {
+        "articulo": "21",
+        "texto": "Que se satisfaga al trabajador una compensación económica adecuada"
+       }
+      },
+      {
+       "si": "El trabajador incumple el pacto de permanencia",
+       "entonces": "El empresario puede reclamar daños y perjuicios.",
+       "articulos": [
+        "21"
+       ],
+       "literal": {
+        "articulo": "21",
+        "texto": "el empresario tendrá derecho a una indemnización de daños y perjuicios"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué requisitos tiene el pacto de no competencia postcontractual?",
+      "a": "Interés industrial o comercial efectivo del empresario y compensación económica adecuada, con la duración máxima legal.",
+      "articulos": [
+       "21"
+      ],
+      "literal": {
+       "articulo": "21",
+       "texto": "Que el empresario tenga un efectivo interés industrial o comercial en ello"
+      }
+     },
+     "conexiones": [
+      "5",
+      "21"
+     ],
+     "continua_en": []
+    }
+   ]
+  },
+  {
+   "id": "salario",
+   "nombre": "Salario y garantías",
+   "bloque": "et",
+   "grupo": "Condiciones de trabajo",
+   "resumen": "Qué es salario, cómo se paga, qué pasa si no se paga (interés, extinción del art. 50) y quién responde si la empresa es insolvente (privilegios y FOGASA).",
+   "ambito": {
+    "corto": "Arts. 26 a 33",
+    "texto": "TÍTULO I · CAPÍTULO II · Sección 4.ª Salarios y garantías salariales",
+    "articulos": [
+     "26"
+    ],
+    "literal": [
+     {
+      "articulo": "26",
+      "texto": "Se considerará salario la totalidad de las percepciones económicas de los trabajadores"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "salario-26",
+     "fase": "Qué es salario",
+     "subtitulo": "CAPÍTULO II · Sección 4.ª · arts. 26 a 28",
+     "descripcion": "Es salario todo lo que se cobra, en dinero o en especie, por el trabajo o por descansos computables como trabajo. El salario en especie no puede pasar del 30 % ni rebajar el salario mínimo en dinero. No son salario las dietas y suplidos, las prestaciones de la Seguridad Social ni las indemnizaciones por traslado, suspensión o despido. La estructura (salario base y complementos) la fija el convenio o el contrato. Hay salario mínimo interprofesional (art. 27) e igualdad de retribución por razón de sexo (art. 28).",
+     "articulos": [
+      "26",
+      "27",
+      "28"
+     ],
+     "rango": [
+      "26",
+      "28"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Se paga en especie",
+       "entonces": "No más del 30 % de las percepciones salariales ni por debajo del salario mínimo en dinero.",
+       "articulos": [
+        "26"
+       ],
+       "literal": {
+        "articulo": "26",
+        "texto": "En ningún caso, incluidas las relaciones laborales de carácter especial a que se refiere el artículo 2, el salario en especie podrá superar el treinta por ciento de las percepciones salariales del trabajador"
+       }
+      },
+      {
+       "si": "Se discute si un plus es consolidable",
+       "entonces": "Lo que se pacte; si no hay pacto, no consolidan los ligados al puesto o a los resultados de la empresa.",
+       "articulos": [
+        "26"
+       ],
+       "literal": {
+        "articulo": "26",
+        "texto": "no teniendo el carácter de consolidables, salvo acuerdo en contrario, los que estén vinculados al puesto de trabajo o a la situación y resultados de la empresa"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Son salario las indemnizaciones por despido?",
+      "a": "No; tampoco los suplidos por gastos ni las prestaciones de la Seguridad Social.",
+      "articulos": [
+       "26"
+      ],
+      "literal": {
+       "articulo": "26",
+       "texto": "las indemnizaciones correspondientes a traslados, suspensiones o despidos"
+      }
+     },
+     "conexiones": [
+      "26",
+      "27",
+      "28",
+      "29"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "salario-29",
+     "fase": "Pago del salario y mora",
+     "subtitulo": "CAPÍTULO II · Sección 4.ª · art. 29",
+     "descripcion": "El salario se paga puntualmente y con recibo, en la fecha y lugar pactados o según los usos, por periodos que no pueden superar el mes. Se pueden pedir anticipos por el trabajo ya hecho. La comisión se devenga cuando se realiza y paga el negocio. El retraso genera un interés por mora del 10 %. Los impagos o retrasos continuados permiten pedir la extinción del art. 50.",
+     "aviso": "La reclamación de cantidades va por el proceso ordinario de la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]] (o el monitorio); prescribe al año (art. 59.2).",
+     "articulos": [
+      "29",
+      "50",
+      "59"
+     ],
+     "rango": [
+      "29",
+      "29"
+     ],
+     "plazos": [
+      {
+       "acto": "Periodo máximo de pago",
+       "plazo": "1 mes",
+       "articulo": "29",
+       "literal": "no podrá exceder de un mes"
+      },
+      {
+       "acto": "Interés por mora",
+       "plazo": "10 % de lo adeudado",
+       "articulo": "29",
+       "literal": "El interés por mora en el pago del salario será el diez por ciento de lo adeudado"
+      },
+      {
+       "acto": "Reclamar el salario (prescripción)",
+       "plazo": "1 año desde que pudo reclamarse",
+       "articulo": "59",
+       "literal": "el plazo de un año se computará desde el día en que la acción pudiera ejercitarse"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La empresa paga tarde o no paga de forma continuada",
+       "entonces": "Además de reclamar con interés, el trabajador puede pedir la extinción del contrato (art. 50).",
+       "articulos": [
+        "50"
+       ],
+       "literal": {
+        "articulo": "50",
+        "texto": "La falta de pago o retrasos continuados en el abono del salario pactado"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuál es el interés por mora en el pago del salario?",
+      "a": "El diez por ciento de lo adeudado.",
+      "articulos": [
+       "29"
+      ],
+      "literal": {
+       "articulo": "29",
+       "texto": "el diez por ciento de lo adeudado"
+      }
+     },
+     "conexiones": [
+      "29",
+      "49",
+      "50",
+      "59"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "salario-32",
+     "fase": "Garantías del salario y FOGASA",
+     "subtitulo": "CAPÍTULO II · Sección 4.ª · arts. 32 a 33",
+     "descripcion": "Los salarios de los últimos treinta días, hasta el doble del salario mínimo, cobran antes que cualquier otro crédito, incluso hipotecario; los demás salarios e indemnizaciones mínimas tienen privilegio con topes. Si el empresario es insolvente o está en concurso, el Fondo de Garantía Salarial paga salarios (con tope y hasta ciento veinte días) e indemnizaciones reconocidas por despido o extinción, dentro de sus límites. En concurso se aplica la ley concursal.",
+     "aviso": "El art. 33 es largo (topes de las indemnizaciones, subrogación, procedimiento): consulta el texto literal. El papel del FOGASA en el proceso se regula en la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]].",
+     "articulos": [
+      "32",
+      "33"
+     ],
+     "rango": [
+      "32",
+      "33"
+     ],
+     "plazos": [
+      {
+       "acto": "Ejercitar la preferencia del crédito salarial",
+       "plazo": "1 año desde que debió cobrarse",
+       "articulo": "32",
+       "literal": "El plazo para ejercitar los derechos de preferencia del crédito salarial es de un año"
+      },
+      {
+       "acto": "Salarios a cargo del FOGASA",
+       "plazo": "Máximo 120 días (con tope diario)",
+       "articulo": "33",
+       "literal": "con un máximo de ciento veinte días"
+      },
+      {
+       "acto": "Pedir el pago al FOGASA (prescripción)",
+       "plazo": "1 año desde la conciliación, sentencia o resolución",
+       "articulo": "33",
+       "literal": "prescribirá al año de la fecha del acto de conciliación, sentencia, auto o resolución de la autoridad laboral"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Hay otro acreedor con hipoteca sobre los bienes de la empresa",
+       "entonces": "Los salarios de los últimos treinta días (hasta el doble del SMI) cobran antes.",
+       "articulos": [
+        "32"
+       ],
+       "literal": {
+        "articulo": "32",
+        "texto": "gozarán de preferencia sobre cualquier otro crédito, aunque este se encuentre garantizado por prenda o hipoteca"
+       }
+      },
+      {
+       "si": "La empresa está en concurso",
+       "entonces": "Se aplican las reglas de la ley concursal sobre clasificación de créditos.",
+       "articulos": [
+        "32"
+       ],
+       "literal": {
+        "articulo": "32",
+        "texto": "En caso de concurso, serán de aplicación las disposiciones"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuándo paga el FOGASA los salarios pendientes?",
+      "a": "Cuando no se pagan por insolvencia o concurso del empresario.",
+      "articulos": [
+       "33"
+      ],
+      "literal": {
+       "articulo": "33",
+       "texto": "abonará a los trabajadores el importe de los salarios pendientes de pago a causa de insolvencia o concurso del empresario"
+      }
+     },
+     "conexiones": [
+      "26",
+      "32",
+      "33",
+      "56"
+     ],
+     "continua_en": []
+    }
+   ]
+  },
+  {
+   "id": "tiempo",
+   "nombre": "Tiempo de trabajo",
+   "bloque": "et",
+   "grupo": "Condiciones de trabajo",
+   "resumen": "Jornada, registro, adaptación para conciliar, horas extraordinarias, descansos, permisos y vacaciones: lo que más se reclama en el día a día.",
+   "ambito": {
+    "corto": "Arts. 34 a 38",
+    "texto": "TÍTULO I · CAPÍTULO II · Sección 5.ª Tiempo de trabajo",
+    "articulos": [
+     "34"
+    ],
+    "literal": [
+     {
+      "articulo": "34",
+      "texto": "La duración de la jornada de trabajo será la pactada en los convenios colectivos o contratos de trabajo"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "tiempo-34",
+     "fase": "Jornada, descanso entre jornadas y registro",
+     "subtitulo": "CAPÍTULO II · Sección 5.ª · art. 34",
+     "descripcion": "La jornada la fija el convenio o el contrato, con un máximo de cuarenta horas semanales de trabajo efectivo de promedio anual y nueve horas ordinarias diarias (salvo pacto). Entre jornadas, al menos doce horas. Sin pacto, la empresa puede distribuir de forma irregular el 10 % de la jornada, avisando con cinco días. La empresa debe llevar un registro diario de jornada y conservarlo cuatro años.",
+     "articulos": [
+      "34"
+     ],
+     "rango": [
+      "34",
+      "34"
+     ],
+     "plazos": [
+      {
+       "acto": "Jornada máxima ordinaria",
+       "plazo": "40 horas semanales de promedio anual",
+       "articulo": "34",
+       "literal": "será de cuarenta horas semanales de trabajo efectivo de promedio en cómputo anual"
+      },
+      {
+       "acto": "Descanso entre jornadas",
+       "plazo": "Mínimo 12 horas",
+       "articulo": "34",
+       "literal": "Entre el final de una jornada y el comienzo de la siguiente mediarán, como mínimo, doce horas"
+      },
+      {
+       "acto": "Preaviso de la distribución irregular",
+       "plazo": "Mínimo 5 días",
+       "articulo": "34",
+       "literal": "con un preaviso mínimo de cinco días el día y la hora de la prestación de trabajo"
+      },
+      {
+       "acto": "Compensar las diferencias de la distribución irregular (sin pacto)",
+       "plazo": "12 meses",
+       "articulo": "34",
+       "literal": "deberán quedar compensadas en el plazo de doce meses desde que se produzcan"
+      },
+      {
+       "acto": "Conservar el registro de jornada",
+       "plazo": "4 años",
+       "articulo": "34",
+       "literal": "La empresa conservará los registros a que se refiere este precepto durante cuatro años"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "No hay pacto de distribución irregular",
+       "entonces": "La empresa puede distribuir de forma irregular solo el 10 % de la jornada.",
+       "articulos": [
+        "34"
+       ],
+       "literal": {
+        "articulo": "34",
+        "texto": "En defecto de pacto, la empresa podrá distribuir de manera irregular a lo largo del año el diez por ciento de la jornada de trabajo"
+       }
+      },
+      {
+       "si": "Se reclaman horas no pagadas",
+       "entonces": "El registro diario de jornada es la prueba clave: debe incluir la hora de inicio y fin de cada día.",
+       "articulos": [
+        "34"
+       ],
+       "literal": {
+        "articulo": "34",
+        "texto": "deberá incluir el horario concreto de inicio y finalización de la jornada de trabajo de cada persona trabajadora"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuántas horas deben mediar entre el fin de una jornada y el inicio de la siguiente?",
+      "a": "Como mínimo, doce horas.",
+      "articulos": [
+       "34"
+      ],
+      "literal": {
+       "articulo": "34",
+       "texto": "mediarán, como mínimo, doce horas"
+      }
+     },
+     "conexiones": [
+      "34",
+      "35",
+      "37",
+      "41"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "tiempo-34_8",
+     "fase": "Adaptación de jornada para conciliar",
+     "subtitulo": "CAPÍTULO II · Sección 5.ª · art. 34.8",
+     "descripcion": "Se puede pedir adaptar la duración y distribución de la jornada, el horario o la forma de trabajar (incluido el trabajo a distancia) para conciliar: con hijos hasta los doce años, y para cuidar a mayores de doce, cónyuge o pareja, familiares hasta el segundo grado o dependientes que convivan, justificándolo. Debe ser razonable y proporcionado. Sin regulación en convenio, la empresa negocia en quince días como máximo y, si no se opone de forma motivada, se presume concedida; si la deniega o propone una alternativa, debe motivar las razones objetivas. Despedir a quien la pide o disfruta es nulo (arts. 53.4 y 55.5).",
+     "aviso": "Las discrepancias se resuelven por el procedimiento urgente de conciliación de la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]].",
+     "articulos": [
+      "34",
+      "55"
+     ],
+     "rango": [
+      "34",
+      "34"
+     ],
+     "plazos": [
+      {
+       "acto": "Negociación de la empresa con el trabajador",
+       "plazo": "Máximo 15 días",
+       "articulo": "34",
+       "literal": "durante un periodo máximo de quince días, presumiéndose su concesión si no concurre oposición motivada expresa en este plazo"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "La empresa no se opone de forma motivada en quince días",
+       "entonces": "Se presume concedida la adaptación.",
+       "articulos": [
+        "34"
+       ],
+       "literal": {
+        "articulo": "34",
+        "texto": "presumiéndose su concesión si no concurre oposición motivada expresa en este plazo"
+       }
+      },
+      {
+       "si": "Se despide a quien la solicitó o disfruta",
+       "entonces": "El despido es nulo, salvo procedencia por motivos ajenos.",
+       "articulos": [
+        "55"
+       ],
+       "literal": {
+        "articulo": "55",
+        "texto": "o hayan solicitado o estén disfrutando de las adaptaciones de jornada previstas en el artículo 34.8"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hasta qué edad de los hijos puede pedirse la adaptación de jornada?",
+      "a": "Hasta que cumplan doce años (después, si hay necesidades de cuidado justificadas).",
+      "articulos": [
+       "34"
+      ],
+      "literal": {
+       "articulo": "34",
+       "texto": "tienen derecho a efectuar dicha solicitud hasta que los hijos o hijas cumplan doce años"
+      }
+     },
+     "conexiones": [
+      "34",
+      "37",
+      "53",
+      "55"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "tiempo-35",
+     "fase": "Horas extraordinarias",
+     "subtitulo": "CAPÍTULO II · Sección 5.ª · art. 35",
+     "descripcion": "Son las que superan la jornada ordinaria máxima. El convenio o el contrato decide si se pagan (nunca por debajo de la hora ordinaria) o se compensan con descanso; sin pacto, descanso en los cuatro meses siguientes. Máximo ochenta al año (proporcional en jornadas inferiores). Ver el texto literal para las de fuerza mayor y la voluntariedad.",
+     "articulos": [
+      "35"
+     ],
+     "rango": [
+      "35",
+      "35"
+     ],
+     "plazos": [
+      {
+       "acto": "Compensar con descanso sin pacto",
+       "plazo": "4 meses siguientes",
+       "articulo": "35",
+       "literal": "deberán ser compensadas mediante descanso dentro de los cuatro meses siguientes a su realización"
+      },
+      {
+       "acto": "Máximo anual",
+       "plazo": "80 horas",
+       "articulo": "35",
+       "literal": "El número de horas extraordinarias no podrá ser superior a ochenta al año"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se pagan las horas extraordinarias",
+       "entonces": "Nunca por debajo del valor de la hora ordinaria.",
+       "articulos": [
+        "35"
+       ],
+       "literal": {
+        "articulo": "35",
+        "texto": "que en ningún caso podrá ser inferior al valor de la hora ordinaria"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Si no hay pacto, ¿cómo se compensan las horas extraordinarias?",
+      "a": "Con descanso dentro de los cuatro meses siguientes.",
+      "articulos": [
+       "35"
+      ],
+      "literal": {
+       "articulo": "35",
+       "texto": "En ausencia de pacto al respecto"
+      }
+     },
+     "conexiones": [
+      "12",
+      "34",
+      "35"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "tiempo-37",
+     "fase": "Descanso semanal, fiestas, permisos y reducciones",
+     "subtitulo": "CAPÍTULO II · Sección 5.ª · art. 37",
+     "descripcion": "Descanso semanal de día y medio (dos días los menores). Hasta catorce fiestas al año, dos locales. Permisos retribuidos con aviso y justificación: quince días naturales por matrimonio o pareja de hecho, cinco por accidente, enfermedad grave u hospitalización de familiares, dos por fallecimiento (más dos con desplazamiento), uno por traslado de domicilio, deberes públicos y otros. El art. 37 regula también la lactancia y las reducciones de jornada por cuidado; su ejercicio está protegido frente al despido (art. 55.5).",
+     "aviso": "El art. 37 es largo (lactancia, reducción de jornada por guarda legal, permisos por fuerza mayor familiar): consulta el texto literal. Las discrepancias sobre su concreción se resuelven por el procedimiento urgente de la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]].",
+     "articulos": [
+      "37",
+      "55"
+     ],
+     "rango": [
+      "37",
+      "37"
+     ],
+     "plazos": [
+      {
+       "acto": "Permiso por matrimonio o registro de pareja de hecho",
+       "plazo": "15 días naturales",
+       "articulo": "37",
+       "literal": "Quince días naturales en caso de matrimonio o registro de pareja de hecho"
+      },
+      {
+       "acto": "Accidente o enfermedad grave, hospitalización de familiar",
+       "plazo": "5 días",
+       "articulo": "37",
+       "literal": "Cinco días por accidente o enfermedad graves, hospitalización"
+      },
+      {
+       "acto": "Fallecimiento de familiar hasta 2.º grado",
+       "plazo": "2 días (+2 con desplazamiento)",
+       "articulo": "37",
+       "literal": "Dos días por el fallecimiento del cónyuge, pareja de hecho o parientes hasta el segundo grado"
+      },
+      {
+       "acto": "Traslado de domicilio",
+       "plazo": "1 día",
+       "articulo": "37",
+       "literal": "Un día por traslado del domicilio habitual"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se despide a quien solicitó o disfruta ciertos permisos del art. 37",
+       "entonces": "El despido es nulo, salvo procedencia por motivos ajenos.",
+       "articulos": [
+        "55"
+       ],
+       "literal": {
+        "articulo": "55",
+        "texto": "el de las personas trabajadoras que hayan solicitado uno de los permisos a los que se refieren los apartados 3.b), 4, 5 y 6 del artículo 37"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuántas fiestas laborales puede haber al año?",
+      "a": "No más de catorce, de las cuales dos son locales.",
+      "articulos": [
+       "37"
+      ],
+      "literal": {
+       "articulo": "37",
+       "texto": "no podrán exceder de catorce al año, de las cuales dos serán locales"
+      }
+     },
+     "conexiones": [
+      "34",
+      "37",
+      "48",
+      "55"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "tiempo-38",
+     "fase": "Vacaciones",
+     "subtitulo": "CAPÍTULO II · Sección 5.ª · art. 38",
+     "descripcion": "Al menos treinta días naturales al año, retribuidos y sin poder cambiarse por dinero. Las fechas se fijan de común acuerdo según el convenio; el calendario se conoce con dos meses de antelación. Si no hay acuerdo, decide el juez en un procedimiento sumario y preferente, sin recurso. Si coinciden con incapacidad temporal por embarazo, parto o lactancia, o con la suspensión por nacimiento, se disfrutan en otra fecha aunque termine el año.",
+     "aviso": "El proceso para fijar las vacaciones se regula en la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]].",
+     "articulos": [
+      "38"
+     ],
+     "rango": [
+      "38",
+      "38"
+     ],
+     "plazos": [
+      {
+       "acto": "Duración mínima",
+       "plazo": "30 días naturales",
+       "articulo": "38",
+       "literal": "En ningún caso la duración será inferior a treinta días naturales"
+      },
+      {
+       "acto": "Conocer las fechas",
+       "plazo": "Al menos 2 meses antes",
+       "articulo": "38",
+       "literal": "El trabajador conocerá las fechas que le correspondan dos meses antes, al menos, del comienzo del disfrute"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Empresa y trabajador no se ponen de acuerdo en las fechas",
+       "entonces": "Las fija el juez en un procedimiento sumario y preferente; su decisión no tiene recurso.",
+       "articulos": [
+        "38"
+       ],
+       "literal": {
+        "articulo": "38",
+        "texto": "la jurisdicción social fijará la fecha que para el disfrute corresponda y su decisión será irrecurrible"
+       }
+      },
+      {
+       "si": "Las vacaciones coinciden con IT por embarazo, parto o lactancia o con la suspensión por nacimiento",
+       "entonces": "Se disfrutan en otra fecha, aunque haya terminado el año natural.",
+       "articulos": [
+        "38"
+       ],
+       "literal": {
+        "articulo": "38",
+        "texto": "aunque haya terminado el año natural a que correspondan"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Pueden cambiarse las vacaciones por dinero?",
+      "a": "No: no son sustituibles por compensación económica.",
+      "articulos": [
+       "38"
+      ],
+      "literal": {
+       "articulo": "38",
+       "texto": "no sustituible por compensación económica"
+      }
+     },
+     "conexiones": [
+      "38",
+      "48",
+      "58"
+     ],
+     "continua_en": []
+    }
+   ]
+  },
+  {
    "id": "cambios",
    "nombre": "Cambios en el contrato: movilidad, modificación y cambio de empresario",
    "bloque": "et",
