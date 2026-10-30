@@ -592,6 +592,7 @@ function htmlFicha(p, f){
     (f.aviso ? '<div class="nota"><b>Ojo:</b> '+conLeyes(f.aviso)+'</div>' : "")+
     ((f.continua_en||[]).length ? '<h4>Continúa en</h4><div>'+f.continua_en.map(id=>{ const q=PROC.find(x=>x.id===id); return q?'<a class="btn" style="margin:0 6px 6px 0" href="#proc/'+q.id+'">'+esc(q.nombre)+' ›</a>':""; }).join("")+'</div>' : "")+
     ((f.recursos_rel||[]).length && REC.length ? '<h4>Recursos</h4><div>'+f.recursos_rel.map(id=>{ const r=REC.find(x=>x.id===id); return r?'<a class="btn" style="margin:0 6px 6px 0" href="#recursos/fichas/'+r.id+'">'+esc(r.recurso)+' ›</a>':""; }).join("")+'<a class="btn" style="margin:0 6px 6px 0" href="#recursos/cabe">¿Qué recurso cabe? ›</a></div>' : "")+
+    ((f.otra_ley||[]).length ? '<h4>En otra ley</h4><div>'+f.otra_ley.map(o=>'<a class="btn" style="margin:0 6px 6px 0" href="../'+encodeURIComponent(o.ley)+'/index.html'+esc(location.search)+'#proc/'+encodeURIComponent(o.proc)+'/'+encodeURIComponent(o.fase)+'">'+esc(o.abr)+' · '+esc(o.nombre)+' ›</a>').join("")+'</div>' : "")+
     ((f.conexiones||[]).length ? '<h4>Conexiones</h4><div>'+f.conexiones.map(k=>chipArt(k,ABR+" "+k)).join("")+'</div>' : "")+
     '<div class="navfase">'+(ant?'<a class="btn" href="#proc/'+p.id+'/'+ant.id+'">‹ '+esc(ant.fase)+'</a>':'<span></span>')+
       (sig?'<a class="btn prim" href="#proc/'+p.id+'/'+sig.id+'">'+esc(sig.fase)+' ›</a>':'<span></span>')+'</div>'+

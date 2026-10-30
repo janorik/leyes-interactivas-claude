@@ -211,6 +211,46 @@ def validar_y_anadir_recursos(datos):
     print(f"Recursos comprobados: {len(rec['recursos'])} recursos, {len(rec['selector'])} casos del selector.")
 
 
+def anadir_enlaces_otras_leyes(datos):
+    """Botones entre fichas de dos leyes (scripts/enlaces_leyes.json): campo otra_ley de cada fase."""
+    ruta = os.path.join(RAIZ, "scripts", "enlaces_leyes.json")
+    if not os.path.exists(ruta) or not datos.get("procedimientos"):
+        return
+    with open(ruta, encoding="utf-8") as f:
+        pares = json.load(f)["pares"]
+    with open(os.path.join(RAIZ, "scripts", "leyes.json"), encoding="utf-8") as f:
+        abrev = {l["id"]: l["abreviatura"] for l in json.load(f)["leyes"]}
+    cache, errores, n = {}, [], 0
+
+    def fase(ref):
+        ley, fid = ref.split(":", 1)
+        if ley not in cache:
+            with open(os.path.join(RAIZ, ley, "datos", "procedimientos.json"), encoding="utf-8") as f:
+                cache[ley] = {fa["id"]: (p, fa) for p in json.load(f)["procedimientos"]
+                              if not p.get("solo_procedimientos") for fa in p["fases"]}
+        pf = cache[ley].get(fid)
+        if not pf:
+            errores.append(f"{ref}: ficha no encontrada")
+        elif pf[1].get("esqueleto"):
+            errores.append(f"{ref}: es una ficha de índice")
+        return ley, fid, pf
+
+    propias = {fa["id"]: fa for p in datos["procedimientos"] for fa in p["fases"]}
+    for a, b in pares:
+        for de, a_ in ((a, b), (b, a)):
+            ley, fid, _ = fase(de)
+            ley2, fid2, pf2 = fase(a_)
+            if ley != LEY or not pf2 or fid not in propias:
+                continue
+            propias[fid].setdefault("otra_ley", []).append(
+                {"ley": ley2, "abr": abrev[ley2], "proc": pf2[0]["id"], "fase": fid2, "nombre": laj(pf2[1]["fase"])})
+            n += 1
+    if errores:
+        sys.exit("ERROR en enlaces_leyes.json:\n- " + "\n- ".join(sorted(set(errores))))
+    if n:
+        print(f"Enlaces a otras leyes: {n}.")
+
+
 def main():
     with open(JSON_LEY, encoding="utf-8") as f:
         datos = laj(json.load(f))
@@ -222,6 +262,7 @@ def main():
         datos["ley"]["titulo_mapa"] = ficha.get("mapa", "Mapa procesal")
     validar_y_anadir_procedimientos(datos)
     validar_y_anadir_recursos(datos)
+    anadir_enlaces_otras_leyes(datos)
     js = json.dumps(datos, ensure_ascii=False, separators=(",", ":"))
     js = js.replace("</", "<\\/")  # no puede cerrar la etiqueta <script>
     with open(PLANTILLA, encoding="utf-8") as f:
