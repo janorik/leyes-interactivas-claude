@@ -260,6 +260,8 @@ def main():
     if ficha:
         datos["ley"]["nombre_corto"] = ficha["nombre"]
         datos["ley"]["titulo_mapa"] = ficha.get("mapa", "Mapa procesal")
+        if ficha.get("rotulos"):  # rótulos propios del mapa (el ET no es ley procesal: «Ficha», no «Fase»)
+            datos["ley"]["rotulos"] = ficha["rotulos"]
     validar_y_anadir_procedimientos(datos)
     validar_y_anadir_recursos(datos)
     anadir_enlaces_otras_leyes(datos)

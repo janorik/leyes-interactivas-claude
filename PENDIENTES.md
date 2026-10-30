@@ -548,13 +548,20 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > 12 bloques y 44 fichas según el canon aprobado: guía práctica (plazos del ET y «¿Qué hago ante…?»), relación laboral, contrato, derechos, salario, tiempo de trabajo, cambios en el contrato, suspensión y ERTE, extinción y despido, sanciones y prescripción, representantes y convenios. 97 plazos. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío. Las fichas remiten a la LRJS con enlace al BOE; los enlaces directos a las fichas de la LRJS son la fase F5.
 
-- [ ] **Rótulo «Mapa procesal» y «fases».** La plantilla común pone «Mapa procesal» sobre el título del mapa y llama «fases» a las fichas (Verificable: captura de la app). En el ET no son fases de un proceso. **Propuesta:** que el rótulo salga de `leyes.json` (en el ET, por ejemplo, «Mapa por situaciones») y dejar «fases» como está para no tocar las demás leyes (No verificable). **Tu respuesta:**
+- [x] **Rótulos procesales en el ET** («Mapa procesal», «Ruta procesal», «¿Cuándo se sigue este juicio?», «Fases»). **Resuelta (usuario, Chat 7, 30-10-2026):** «Creo que es de otras leyes, no en el Estatuto». En el ET ahora: «Mapa por situaciones», «Bloque», «¿Qué abarca este bloque?», «Fichas» / «Ficha N» y «Todos los bloques» (campo `rotulos` de `scripts/leyes.json`); las leyes procesales no cambian.
 - [ ] **Art. 13 (trabajo a distancia):** remite a la «Ley 10/2021 de trabajo a distancia» (Verificable). No pongo enlace porque su referencia del BOE no sale del PDF. Si quieres el enlace, dime la referencia o compruébala tú. **Tu respuesta:**
 - [ ] **Art. 60.1 (infracciones del empresario):** remite al texto refundido de la Ley sobre Infracciones y Sanciones en el Orden Social (Real Decreto Legislativo 5/2000) (Verificable). Sin enlace por el mismo motivo. **Tu respuesta:**
 - [ ] **Despido improcedente de contratos anteriores al 12-02-2012:** la ficha del art. 56 cita la disposición transitoria undécima (45 días por año hasta esa fecha y 33 después) sin ponerla como «artículo», porque la app la mostraría como «Art. dt11» (Verificable: texto de la DT 11.ª). **Tu respuesta:**
 - [ ] **Remisiones a la LRJS sin número de artículo.** En las fichas digo «se regula en la LRJS» (modalidad de despido, de movilidad y modificación, de vacaciones, de conciliación, de sanciones, de elecciones, de convenios) sin citar artículos de la LRJS (No verificable aquí: es la estructura que conozco de la LRJS de la app, no lo he comprobado ficha por ficha). Se concretará en F5 al enlazar cada ficha con la de la LRJS. **Tu respuesta:**
 - [ ] **Ficha «¿Qué hago ante…?».** Las respuestas son orientaciones mías que combinan varios artículos (Verificable cada artículo; la combinación es mía). **Tu respuesta:**
 - [ ] **Revisa las 44 fichas.**
+
+### Ficha «Permisos retribuidos» (Chat 7, pedida por el usuario)
+
+> Separada de la de descanso, fiestas y reducciones (que conserva su id para no perder notas y pasa a llamarse «Descanso semanal, fiestas, lactancia y reducciones de jornada», con 3 plazos nuevos: lactancia, reducción por guarda legal y preaviso de 15 días). La nueva (`tiempo-37_3`) recoge el art. 37.3 y 37.9: 6 plazos con frase literal.
+
+- [ ] **Doble letra «g)» en el art. 37.3** (Verificable: el BOE repite «g)» para la imposibilidad de acceder al centro y para la donación de órganos). Se menciona en el aviso de la ficha. **Tu respuesta:**
+- [ ] **Cómo se reclama un permiso del apartado 3 denegado.** El art. 37.7 ET remite al art. 139 LRJS solo para los apartados 4, 5 y 6 (Verificable). Para los permisos del apartado 3 el ET no dice nada (Verificable). **Propuesta:** no poner botón a la LRJS en esta ficha hasta que me digas qué vía quieres indicar (No verificable). **Tu respuesta:**
 
 ### Test de plazos (F4, Chat 7, todas las leyes)
 
