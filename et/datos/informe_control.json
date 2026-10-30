@@ -1,0 +1,78 @@
+{
+ "control": {
+  "huecos_numeracion": [],
+  "fuera_de_orden": [],
+  "vacios": [
+   "da16",
+   "da21"
+  ],
+  "sin_texto": [],
+  "muy_cortos": [],
+  "rotulos_indice": 34,
+  "rotulos_cuerpo": 34,
+  "indice_no_encontrado": [],
+  "n_articulos": 95,
+  "n_disposiciones": 44,
+  "con_notas_boe": 1,
+  "con_destacado": []
+ },
+ "avisos": [],
+ "contraste": {
+  "palabras_pdftotext": 57494,
+  "palabras_extraidas": 57495,
+  "diferencias": [
+   {
+    "pdftotext": "afectada Disposición adicional undécima organizaciones sindicales Acreditación de la capacidad",
+    "extraido": "afectada Disposición adicional undécima Acreditación de la capacidad"
+   },
+   {
+    "pdftotext": "capacidad representativa de las A los efectos de",
+    "extraido": "capacidad representativa de las organizaciones sindicales A los efectos de"
+   },
+   {
+    "pdftotext": "Social Disposición adicional decimonovena supuestos de jornada reducida Cálculo de indemnizaciones en",
+    "extraido": "Social Disposición adicional decimonovena Cálculo de indemnizaciones en"
+   },
+   {
+    "pdftotext": "de indemnizaciones en determinados 1 En los supuestos",
+    "extraido": "de indemnizaciones en determinados supuestos de jornada reducida 1 En los supuestos"
+   },
+   {
+    "pdftotext": "procedencia Disposición adicional vigesimoprimera cuidado de familiares Sustitución de trabajadores excedentes",
+    "extraido": "procedencia Disposición adicional vigesimoprimera Sustitución de trabajadores excedentes"
+   },
+   {
+    "pdftotext": "de trabajadores excedentes por Derogada Disposición adicional vigesimosegunda",
+    "extraido": "de trabajadores excedentes por cuidado de familiares Derogada Disposición adicional vigesimosegunda"
+   },
+   {
+    "pdftotext": "norma Disposición adicional vigesimocuarta temporalidad Compromiso de reducción de",
+    "extraido": "norma Disposición adicional vigesimocuarta Compromiso de reducción de"
+   },
+   {
+    "pdftotext": "de la tasa de 1 El Gobierno efectuará",
+    "extraido": "de la tasa de temporalidad 1 El Gobierno efectuará"
+   },
+   {
+    "pdftotext": "mismo Disposición transitoria tercera relevo y edad de jubilación Contratos a tiempo parcial",
+    "extraido": "mismo Disposición transitoria tercera Contratos a tiempo parcial"
+   },
+   {
+    "pdftotext": "jubilación parcial y de A efectos de lo",
+    "extraido": "jubilación parcial y de relevo y edad de jubilación A efectos de lo"
+   },
+   {
+    "pdftotext": "determinados Disposición transitoria quinta contractuales Limitación del encadenamiento de",
+    "extraido": "determinados Disposición transitoria quinta Limitación del encadenamiento de"
+   },
+   {
+    "pdftotext": "del encadenamiento de modalidades 1 Lo previsto en",
+    "extraido": "del encadenamiento de modalidades contractuales 1 Lo previsto en"
+   },
+   {
+    "pdftotext": "enero de 2017 Ref BOEA 2009 15958 Disposición transitoria",
+    "extraido": "enero de 2017 Ref BOE A 2009 15958 Disposición transitoria"
+   }
+  ]
+ }
+}

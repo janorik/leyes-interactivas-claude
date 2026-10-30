@@ -245,3 +245,38 @@ Copiado el 23-10-2026 del documento de la plataforma (sin sus notas internas de 
 38. Costas procesales (139) — SI
 #### Disposiciones
 39. Adicionales, transitorias, derogatorias y finales — NO. Nota: la supletoriedad de la LEC (disposición final primera) se menciona en la ficha general.
+
+
+## ET — Real Decreto Legislativo 2/2015 (propuesta de Claude, Chat 6, 30-10-2026; PENDIENTE de aprobación del usuario)
+
+> El usuario no tiene canon del ET y pidió a Claude que lo propusiera (Chat 6). Enfoque elegido por el usuario: **mapa por situaciones del caso** (opción A), con enlaces a la ruta procesal de la LRJS. Criterio: «¿ayuda a orientarse en la situación, sus plazos y cómo se reclama?». Rangos sacados del índice del PDF consolidado (21-10-2026). Las disposiciones no se ponen como fase (la app las mostraría como «Art. dt11»): se citan en el texto de la ficha que corresponda.
+>
+> **Fichas transversales propuestas:** 1) «Plazos del ET» (caducidad y prescripción del art. 59, prescripción de faltas del art. 60, periodo de prueba, preavisos y plazos de comunicación que salgan del texto); 2) «¿Qué hago ante…?» (situación → acción y plazo, con enlace a la ficha de la LRJS que corresponda).
+
+#### Título I. Relación individual de trabajo
+1. Ámbito y fuentes (arts. 1-3) — PARCIAL (1, 2, 3 breve). Nota: ¿hay relación laboral?, relaciones especiales, jerarquía de fuentes.
+2. Derechos y deberes básicos (4-5) — NO
+3. Elementos y eficacia del contrato (6-9) — PARCIAL (8, 9). Nota: forma y presunción del contrato; nulidad parcial.
+4. Modalidades del contrato (10-13) — PARCIAL (11, 12, 13 breve). Nota: formativo, tiempo parcial y relevo, trabajo a distancia.
+5. Duración del contrato (14-16) — SI. Nota: periodo de prueba, contratos temporales y su conversión en indefinidos, fijo-discontinuo.
+6. Derechos y deberes derivados del contrato (17-21) — PARCIAL (17, 20, 20 bis breve, 21). Nota: no discriminación, control empresarial, intimidad digital, pactos de no concurrencia y permanencia.
+7. Clasificación y promoción (22-25) — NO
+8. Salarios y garantías salariales (26-33) — PARCIAL (26, 27 breve, 28 breve, 29, 32, 33). Nota: concepto de salario, pago e interés por mora, garantías y FOGASA.
+9. Tiempo de trabajo (34-38) — PARCIAL (34, 35, 37, 38). Nota: jornada y registro, adaptación de jornada, horas extraordinarias, descansos, permisos y reducciones, vacaciones.
+10. Movilidad funcional y geográfica y modificación sustancial (39-41) — SI
+11. Garantías por cambio de empresario (42-44) — SI. Nota: contratas, cesión ilegal y sucesión de empresa.
+12. Suspensión del contrato (45-48 bis) — SI. Nota: causas, excedencias, ERTE, Mecanismo RED (breve), nacimiento y cuidado, permiso parental.
+13. Extinción del contrato (49-56) — SI. Nota: el núcleo del mapa: causas, extinción por voluntad del trabajador, despido colectivo, objetivo y disciplinario, forma, calificación y efectos (indemnización, readmisión, salarios de tramitación). Mencionar en la ficha del despido improcedente las disposiciones transitorias undécima y duodécima.
+14. Procedimiento concursal (57) — NO
+15. Faltas y sanciones (58) — SI
+16. Prescripción y caducidad (59-60) — SI. Nota: base de la ficha transversal de plazos.
+#### Título II. Representación colectiva y reunión
+17. Órganos de representación (61-68) — PARCIAL (62, 63, 64 breve, 68). Nota: delegados y comité; garantías de los representantes (opción en el despido).
+18. Procedimiento electoral (69-76) — PARCIAL (76 breve). Nota: reclamaciones electorales, con enlace a la modalidad de la LRJS.
+19. Derecho de reunión (77-81) — NO
+#### Título III. Negociación colectiva y convenios
+20. Naturaleza y efectos de los convenios (82-86) — PARCIAL (82, 84, 86). Nota: eficacia e inaplicación del convenio, concurrencia, vigencia.
+21. Legitimación (87-88) — NO
+22. Tramitación, aplicación, adhesión y extensión (89-92) — PARCIAL (91 breve). Nota: aplicación e interpretación; impugnación del convenio en la LRJS.
+#### Disposiciones
+23. Adicionales, transitorias y finales — NO (se citan en las fichas cuando hagan falta).

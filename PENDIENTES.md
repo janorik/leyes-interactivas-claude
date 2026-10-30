@@ -531,6 +531,19 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [ ] **Recurso contra autos de ejecución.** Combino el art. 80.1.b (apelación, Juzgados) y el art. 87.1.c con el 87.2 (casación, Salas, previa reposición) (Verificable cada artículo; la combinación es mía). **Tu respuesta:**
 - [ ] **Revisa las 4 fichas.**
 
+## ET — Estatuto de los Trabajadores
+
+### Puntos de extracción (F1, Chat 6)
+
+> Texto literal extraído del PDF `fuentes/ET_BOE-A-2015-11430.pdf` (subido por el usuario como «ESTTUTO TRABAJADORES Boe .pdf» y renombrado) con `python3 scripts/extraer_ley.py et`: Real Decreto Legislativo de aprobación (artículo único y disposición derogatoria única, como una sola entrada), 95 artículos (1 a 92, más 20 bis, 47 bis y 48 bis) y 44 disposiciones (29 adicionales, 13 transitorias y 2 finales); 34 rótulos de estructura, todos los del índice. Detalle en `et/datos/informe_control.md`.
+
+- [ ] **Fecha de la versión: 21 de octubre de 2026** (Verificable: página 8 del PDF, «Última modificación»). **Tu respuesta:**
+- [ ] **Contraste con una segunda lectura del PDF:** 13 tramos distintos, todos de títulos de disposiciones partidos en dos líneas y de una referencia «Ref. BOE-A-2009-15958» leída sin guiones. No hay huecos en la numeración ni artículos sin texto (Verificable: informe de control).
+- [ ] **Art. 48 bis sin título:** el BOE no le pone epígrafe, ni en el índice ni en el texto (Verificable: PDF, pág. 57). Se muestra tal cual.
+- [ ] **Disposiciones derogadas:** adicionales decimosexta y vigesimoprimera «(Derogada)», y apartados derogados en la adicional decimoquinta y la transitoria segunda (Verificable). Se muestran tal cual.
+- [ ] **Lema de la portada:** dice «Estudia las leyes procesales como un mapa», y el ET no es una ley procesal (Verificable: `scripts/generar_portada.py`). **Propuesta:** cambiarlo, por ejemplo, por «Estudia y consulta las leyes como un mapa» (No verificable). **Tu respuesta:**
+- [ ] **Canon del ET:** propuesta de Claude en `fuentes/canon_contenido.md › ET`, pendiente de tu aprobación. **Tu respuesta:**
+
 ## Páginas legales (todas las leyes)
 
 Aviso legal, Política de privacidad y Política de cookies (`aviso-legal.html`, `politica-privacidad.html`, `cookies.html`), y la ventana «© 2026 J A Noriega (Norik)» del pie. Hechas a partir de las de norlexia.es (repositorio WEB-NORLEXIA, `bocetos/`), adaptadas a esta app: sin formulario, sin Google Fonts y sin cookies.
