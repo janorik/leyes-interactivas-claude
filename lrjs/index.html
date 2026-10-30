@@ -776,6 +776,8 @@ function nuevaPreguntaPlazo(){
   const x = g[Math.floor(Math.random()*g.length)], u = unidadPlazo(x.pl.plazo), vistos = new Set([norm(x.pl.plazo)]), opciones = [x.pl.plazo];
   const azar = a => a.map(v=>[Math.random(),v]).sort((a,b)=>a[0]-b[0]).map(v=>v[1]);
   const cand = [...azar(PLAZOS_TEST.filter(y=>y.p===x.p&&unidadPlazo(y.pl.plazo)===u)), ...azar(PLAZOS_TEST.filter(y=>y.p!==x.p&&unidadPlazo(y.pl.plazo)===u)), ...azar(PLAZOS_TEST)];
+  // no se ofrece como falso un plazo del mismo acto (p. ej., contestar en el ordinario y en el verbal) ni de la misma frase literal
+  PLAZOS_TEST.forEach(y=>{ if (norm(y.pl.acto)===norm(x.pl.acto) || y.pl.literal===x.pl.literal) vistos.add(norm(y.pl.plazo)); });
   for (const y of cand){ if (opciones.length>=4) break; const n = norm(y.pl.plazo); if (!vistos.has(n)){ vistos.add(n); opciones.push(y.pl.plazo); } }
   testPl = {x, opciones: azar(opciones), elegida: undefined};
 }
