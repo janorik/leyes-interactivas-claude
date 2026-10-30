@@ -548,7 +548,7 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 
 > 12 bloques y 44 fichas según el canon aprobado: guía práctica (plazos del ET y «¿Qué hago ante…?»), relación laboral, contrato, derechos, salario, tiempo de trabajo, cambios en el contrato, suspensión y ERTE, extinción y despido, sanciones y prescripción, representantes y convenios. 97 plazos. Las frases entre « » son literales (comprobadas por el script); el resto es resumen mío. Las fichas remiten a la LRJS con enlace al BOE; los enlaces directos a las fichas de la LRJS son la fase F5.
 
-- [ ] **Rótulo «Mapa procesal» y «fases».** La plantilla común pone «Mapa procesal» sobre el título del mapa y llama «fases» a las fichas (Verificable: captura de la app). En el ET no son fases de un proceso. **Propuesta:** que el rótulo salga de `leyes.json` (en el ET, por ejemplo, «Mapa por situaciones») y dejar «fases» como está para no tocar las demás leyes (No verificable). **Tu respuesta:**
+- [x] **Rótulos procesales en el ET** («Mapa procesal», «Ruta procesal», «¿Cuándo se sigue este juicio?», «Fases»). **Resuelta (usuario, Chat 7, 30-10-2026):** «Creo que es de otras leyes, no en el Estatuto». En el ET ahora: «Mapa por situaciones», «Bloque», «¿Qué abarca este bloque?», «Fichas» / «Ficha N» y «Todos los bloques» (campo `rotulos` de `scripts/leyes.json`); las leyes procesales no cambian.
 - [ ] **Art. 13 (trabajo a distancia):** remite a la «Ley 10/2021 de trabajo a distancia» (Verificable). No pongo enlace porque su referencia del BOE no sale del PDF. Si quieres el enlace, dime la referencia o compruébala tú. **Tu respuesta:**
 - [ ] **Art. 60.1 (infracciones del empresario):** remite al texto refundido de la Ley sobre Infracciones y Sanciones en el Orden Social (Real Decreto Legislativo 5/2000) (Verificable). Sin enlace por el mismo motivo. **Tu respuesta:**
 - [ ] **Despido improcedente de contratos anteriores al 12-02-2012:** la ficha del art. 56 cita la disposición transitoria undécima (45 días por año hasta esa fecha y 33 después) sin ponerla como «artículo», porque la app la mostraría como «Art. dt11» (Verificable: texto de la DT 11.ª). **Tu respuesta:**
@@ -556,12 +556,26 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
 - [ ] **Ficha «¿Qué hago ante…?».** Las respuestas son orientaciones mías que combinan varios artículos (Verificable cada artículo; la combinación es mía). **Tu respuesta:**
 - [ ] **Revisa las 44 fichas.**
 
+### Ficha «Permisos retribuidos» (Chat 7, pedida por el usuario)
+
+> Separada de la de descanso, fiestas y reducciones (que conserva su id para no perder notas y pasa a llamarse «Descanso semanal, fiestas, lactancia y reducciones de jornada», con 3 plazos nuevos: lactancia, reducción por guarda legal y preaviso de 15 días). La nueva (`tiempo-37_3`) recoge el art. 37.3 y 37.9: 6 plazos con frase literal.
+
+- [ ] **Doble letra «g)» en el art. 37.3** (Verificable: el BOE repite «g)» para la imposibilidad de acceder al centro y para la donación de órganos). Se menciona en el aviso de la ficha. **Tu respuesta:**
+- [ ] **Cómo se reclama un permiso del apartado 3 denegado.** El art. 37.7 ET remite al art. 139 LRJS solo para los apartados 4, 5 y 6 (Verificable). Para los permisos del apartado 3 el ET no dice nada (Verificable). **Propuesta:** no poner botón a la LRJS en esta ficha hasta que me digas qué vía quieres indicar (No verificable). **Tu respuesta:**
+
 ### Test de plazos (F4, Chat 7, todas las leyes)
 
 > Nueva pestaña «Test de plazos» dentro de «Repaso», en todas las leyes: «¿qué plazo?» con 4 opciones. La correcta y su frase literal salen del mapa; las otras tres son plazos de otros actos (primero del mismo tipo y del mismo procedimiento) (Verificable: código de la plantilla).
 
 - [ ] **Opciones parecidas.** Como los distractores son plazos reales de otros actos, a veces se parecen mucho a la respuesta o podrían valer en otro supuesto. Ejemplo (ET, Verificable: captura): «Reclamar cantidades (prescripción)» ofrece «1 año desde que pudo reclamarse» (correcta) y «1 año desde que termina el contrato» (plazo del art. 59.1 para las acciones derivadas del contrato). No salen como falsos los plazos de un acto con el mismo nombre ni los de la misma frase literal (por ejemplo, «Contestar a la demanda», 20 días en el ordinario y 10 en el verbal), porque serían correctos en otro procedimiento (Verificable: probado con 150 preguntas por ley). **Propuesta:** dejar el resto así, porque obliga a distinguir el *dies a quo*, y si ves una pregunta que te parezca engañosa, me la apuntas y la ajusto (No verificable). **Tu respuesta:**
 - [ ] **Aciertos.** El marcador del test no se guarda en el navegador (se pierde al cerrar), a diferencia del progreso de las tarjetas. Si quieres que se guarde, habría que añadir una clave nueva a `cookies.html`. **Tu respuesta:**
+
+### Enlaces entre el ET y la LRJS (F5, Chat 7, contenido elaborado, pendiente de revisión)
+
+> 43 pares de fichas en `scripts/enlaces_leyes.json`; cada uno pone un botón «En otra ley» en las dos fichas. Los enlaces al BOE siguen en el texto, como decidiste. Probado en navegador: los 86 botones abren la ficha correcta.
+
+- [ ] **Criterio de emparejamiento.** La mayoría sale de las remisiones expresas de la LRJS al ET (Verificable: por ejemplo, art. 125 LRJS → art. 38 ET, vacaciones; art. 127 → art. 76, materia electoral; art. 137 → funciones superiores del art. 39; art. 138 → arts. 40, 41 y 47; art. 153 → arts. 40, 41, 47 y 51; art. 156 → art. 82; art. 281 → art. 56). El resto es criterio mío (No verificable): no discriminación y derechos digitales → tutela de derechos fundamentales; pago del salario → demanda ordinaria y monitorio; garantías del salario → FOGASA e insolvencia; adaptación de jornada, permisos y nacimiento → conciliación (art. 139 LRJS); descanso, prescripción y plazos → despido y conciliación previa; concurrencia de convenios → impugnación de convenios; aplicación e interpretación del convenio → conflicto colectivo. **Propuesta:** revísalos al usar la app y dime cuáles quitar o añadir. **Tu respuesta:**
+- [ ] **Fichas del ET sin enlace** porque no veo una modalidad concreta de la LRJS (No verificable): fuentes, forma del contrato, periodo de prueba, contratos temporales y fijeza, no concurrencia, qué es salario, jornada, horas extra, contratas y cesión ilegal, sucesión de empresa, suspensión, excedencias, causas de extinción y representantes (art. 62). Algunas se reclaman por el proceso ordinario o por despido; si quieres, les pongo el botón a la demanda ordinaria (`ordinario-80`) o a despido. **Tu respuesta:**
 
 ## Páginas legales (todas las leyes)
 

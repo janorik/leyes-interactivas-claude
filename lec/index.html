@@ -373,6 +373,8 @@ CLAVES.forEach((k,i)=>POS[k]=i);
 const PROC = D.procedimientos || [];
 // Procedimientos que solo viven en la pestaña «Procedimientos» (unen bloques del Mapa): no se repiten en Mapa, buscador ni repaso.
 const PROC_MAPA = PROC.filter(p=>!p.solo_procedimientos);
+// Rótulos del mapa: los de las leyes procesales salvo que leyes.json dé otros (p. ej., el ET, que se organiza por situaciones)
+const RT = Object.assign({mapa:"Mapa procesal", bloque:"Ruta procesal", cuando:"¿Cuándo se sigue este juicio?", fases:"Fases", fase:"Fase", todos:"Todos los procedimientos"}, D.ley.rotulos||{});
 const ABR = D.ley.abreviatura || D.ley.id.toUpperCase();  // «LEC», «LECrim»…
 // Sin mapa procesal todavía (ley recién extraída): se entra por el árbol de la ley.
 const INICIO = PROC.length ? "procesos" : "ley";
@@ -452,7 +454,7 @@ function infoClave(c){
   const [tipo, ...r] = c.split(":"); const id = r.join(":");
   if (tipo==="art") return A[id] ? {tipo:"Artículo", nombre:nombreArt(id), href:hrefLey(id)} : null;
   if (tipo==="fase"){ const [pid,fid]=id.split("/"); const p=PROC.find(x=>x.id===pid), f=p&&p.fases.find(x=>x.id===fid);
-    return f ? {tipo:"Fase", nombre:p.nombre+" · "+f.fase, href:"#proc/"+pid+"/"+fid} : null; }
+    return f ? {tipo:RT.fase, nombre:p.nombre+" · "+f.fase, href:"#proc/"+pid+"/"+fid} : null; }
   if (tipo==="rec"){ const x=(D.recursos||[]).find(y=>y.id===id); return x ? {tipo:"Recurso", nombre:x.recurso, href:"#recursos/fichas/"+id} : null; }
   return null;
 }
@@ -490,7 +492,7 @@ document.addEventListener("input", e => {
 const PROXIMOS = [];
 function vistaProcesos(){
   const grupos = [...new Set(PROC_MAPA.map(p=>p.grupo||"").concat(EXT.map(e=>e.grupo||"")))];
-  $("#v-procesos").innerHTML = '<div class="eyebrow">Mapa procesal</div><h1 class="tit">'+esc(D.ley.titulo_mapa||"Mapa procesal")+'</h1>'+
+  $("#v-procesos").innerHTML = '<div class="eyebrow">'+esc(RT.mapa)+'</div><h1 class="tit">'+esc(D.ley.titulo_mapa||RT.mapa)+'</h1>'+
     grupos.map(g=>'<div class="seccion-t">'+esc(g)+'</div><div class="grid">'+
     PROC_MAPA.filter(p=>(p.grupo||"")===g).map(p=>tarjetaProc(p, p.bloque)).join("")+
     EXT.filter(e=>(e.grupo||"")===g).map(tarjetaExt).join("")+'</div>').join("")+
@@ -515,7 +517,7 @@ function tarjetaItem(it){
   if (typeof it === "string"){ const p = PROC.find(x=>x.id===it); return p ? tarjetaProc(p) : ""; }
   if (it.externo){ const e = EXT.find(x=>x.id===it.externo); return e ? tarjetaExt(e) : ""; }
   const p = PROC.find(x=>x.id===it.proc), f = p && p.fases.find(x=>x.id===it.fase);
-  return f ? '<a class="card proc-card" href="#proc/'+p.id+'/'+f.id+'"><div class="eyebrow">'+esc(p.nombre)+' · fase</div><h3>'+punto(f.esqueleto,p.revisado)+esc(f.fase)+'</h3><p>'+esc(f.subtitulo||"")+'</p></a>' : "";
+  return f ? '<a class="card proc-card" href="#proc/'+p.id+'/'+f.id+'"><div class="eyebrow">'+esc(p.nombre)+' · '+esc(RT.fase.toLowerCase())+'</div><h3>'+punto(f.esqueleto,p.revisado)+esc(f.fase)+'</h3><p>'+esc(f.subtitulo||"")+'</p></a>' : "";
 }
 function vistaAgrupada(cual){
   const tit = cual==="procedimientos" ? ["Por tipo de juicio","Procedimientos"] : ["Mapa de recursos","Recursos"];
@@ -533,14 +535,14 @@ function vistaProc(id, faseId){
   const fase = faseId ? p.fases.find(f=>f.id===faseId) : null;
   const nPlazos = p.fases.reduce((n,f)=>n+f.plazos.length,0);
   let h = '<div class="migas">'+(p.solo_procedimientos?'<a href="#procedimientos">Procedimientos</a>':'<a href="#procesos">Mapa</a>')+'<span>'+esc(p.nombre)+'</span></div>'+
-    '<div class="cabproc"><div><div class="eyebrow">Ruta procesal</div><h1 class="tit">'+esc(p.nombre)+'</h1></div>'+
+    '<div class="cabproc"><div><div class="eyebrow">'+esc(RT.bloque)+'</div><h1 class="tit">'+esc(p.nombre)+'</h1></div>'+
     (TARJETAS.some(c=>c.p===p) ? '<a class="btn" href="#repaso/'+p.id+'">🃏 Modo repaso</a>' : '')+'</div>'+
     '<p class="lead">'+esc(p.resumen)+' '+(p.esqueleto?ESQ:p.revisado?REV:PEND)+'</p>'+
     ((p.relacionados||[]).length ? '<div class="relac"><small>Temas comunes relacionados</small><div>'+p.relacionados.map(id=>{ const q=PROC.find(x=>x.id===id);
       return q ? '<a class="btn" href="#proc/'+q.id+'">'+esc(q.nombre)+' ›</a>' : ""; }).join("")+'</div></div>' : "")+
     '<div class="card resumen"><div><small>Ámbito</small><b>'+esc(p.ambito.corto||p.ambito.texto)+'</b></div>'+
-    '<div><small>Fases</small><b>'+p.fases.length+'</b></div><div><small>Plazos</small><b>'+nPlazos+'</b></div></div>'+
-    '<details class="card" style="padding:10px 12px;margin-bottom:10px"><summary style="cursor:pointer;font-weight:600">'+(p.esqueleto?"¿Dónde está en la ley?":"¿Cuándo se sigue este juicio?")+'</summary><p>'+esc(p.ambito.texto)+'</p>'+
+    '<div><small>'+esc(RT.fases)+'</small><b>'+p.fases.length+'</b></div><div><small>Plazos</small><b>'+nPlazos+'</b></div></div>'+
+    '<details class="card" style="padding:10px 12px;margin-bottom:10px"><summary style="cursor:pointer;font-weight:600">'+(p.esqueleto?"¿Dónde está en la ley?":esc(RT.cuando))+'</summary><p>'+esc(p.ambito.texto)+'</p>'+
     (p.ambito.literal||[]).map(l=>lit(l.texto)+'<div style="margin:2px 0 6px">'+chipArt(l.articulo)+'</div>').join("")+'</details>'+
     '<div class="seg" role="tablist">'+["ruta","plazos","articulos"].map(t=>'<button role="tab" data-p="'+t+'" aria-selected="'+(pestProc===t)+'">'+({ruta:"Ruta",plazos:"Plazos",articulos:"Artículos"})[t]+'</button>').join("")+'</div>';
   if (pestProc === "ruta"){
@@ -552,7 +554,7 @@ function vistaProc(id, faseId){
         '<span class="art">'+(f.esqueleto?esc(artsRango(f.rango).length+" arts."):'Art. '+esc(f.articulos[0]))+'</span></button></li>').join("")+'</ol>'+
       '<div class="ficha-col">'+(fase ? '<div class="card">'+htmlFicha(p,fase)+'</div>' : '<div class="card ficha"><p class="vacio">Toca una fase para ver su ficha.</p></div>')+'</div></div>';
   } else if (pestProc === "plazos"){
-    h += p.fases.filter(f=>f.plazos.length).map(f=>'<div class="card ficha" style="margin-bottom:10px;padding:12px 14px"><a class="eyebrow" style="text-decoration:none" href="#proc/'+p.id+'/'+f.id+'">Fase '+(p.fases.indexOf(f)+1)+' · '+esc(f.fase)+' ›</a>'+
+    h += p.fases.filter(f=>f.plazos.length).map(f=>'<div class="card ficha" style="margin-bottom:10px;padding:12px 14px"><a class="eyebrow" style="text-decoration:none" href="#proc/'+p.id+'/'+f.id+'">'+esc(RT.fase)+' '+(p.fases.indexOf(f)+1)+' · '+esc(f.fase)+' ›</a>'+
       f.plazos.map(pl=>'<div class="plz"><span class="v">'+esc(pl.plazo)+'</span><div class="d">'+esc(pl.acto)+' '+chipArt(pl.articulo)+lit(pl.literal)+'</div></div>').join("")+'</div>').join("")+
       '<p class="legal-pie">'+PEND+' Plazos tal como los enuncia cada artículo. El cómputo (días hábiles, agosto, festivos) no está calculado.</p>';
   } else {
@@ -565,14 +567,14 @@ function vistaProc(id, faseId){
   v.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{ pestProc=b.dataset.p; vistaProc(id, faseId); });
   v.querySelectorAll(".fase").forEach(b=>b.onclick=()=>{ location.hash = "#proc/"+id+"/"+b.dataset.f; });
   activarFicha(v);
-  if (fase && esMovil() && pestProc==="ruta") abrirHoja(p.nombre+" · fase "+(p.fases.indexOf(fase)+1)+" de "+p.fases.length, htmlFicha(p,fase), "#proc/"+id);
+  if (fase && esMovil() && pestProc==="ruta") abrirHoja(p.nombre+" · "+RT.fase.toLowerCase()+" "+(p.fases.indexOf(fase)+1)+" de "+p.fases.length, htmlFicha(p,fase), "#proc/"+id);
   if (fase && !esMovil()){ const b = v.querySelector('.fase[aria-current="true"]'); if (b) b.scrollIntoView({block:"nearest"}); }
 }
 function htmlFicha(p, f){
   const i = p.fases.indexOf(f), ant = p.fases[i-1], sig = p.fases[i+1];
   if (f.esqueleto){
     const ks = artsRango(f.rango);
-    return '<div class="ficha"><div class="eyebrow">Fase '+(i+1)+' · '+esc(f.subtitulo)+'</div>'+
+    return '<div class="ficha"><div class="eyebrow">'+esc(RT.fase)+' '+(i+1)+' · '+esc(f.subtitulo)+'</div>'+
       '<h2>'+esc(f.fase)+'</h2><div>'+ESQ+'</div>'+htmlMis("fase:"+p.id+"/"+f.id)+
       '<p class="vacio" style="text-align:left">Aún sin plazos, alternativas ni preguntas: se añadirán al desarrollar este bloque. Mientras, aquí tienes sus artículos.</p>'+
       '<h4>Artículos de esta fase ('+ks.length+')</h4><div class="lista-arts">'+ks.map(k=>'<a href="'+hrefArt(k)+'"><b>'+esc(A[k].rotulo)+'.</b> '+esc(A[k].titulo||(A[k].texto_literal.slice(0,90).replace(/\s+\S*$/,"")+"…"))+'</a>').join("")+'</div>'+
@@ -580,7 +582,7 @@ function htmlFicha(p, f){
         (sig?'<a class="btn prim" href="#proc/'+p.id+'/'+sig.id+'">'+esc(sig.fase)+' ›</a>':'<span></span>')+'</div>'+
       '<p class="legal-pie">Nombre de la fase y artículos tomados literalmente del índice del texto consolidado del BOE.</p></div>';
   }
-  return '<div class="ficha"><div class="eyebrow">Fase '+(i+1)+' · '+esc(f.articulos.map(k=>"Art. "+k).join(" · "))+'</div>'+
+  return '<div class="ficha"><div class="eyebrow">'+esc(RT.fase)+' '+(i+1)+' · '+esc(f.articulos.map(k=>"Art. "+k).join(" · "))+'</div>'+
     '<h2>'+esc(f.fase)+'</h2><div>'+(p.revisado?REV:PEND)+'</div>'+htmlMis("fase:"+p.id+"/"+f.id)+
     '<h4>Qué ocurre</h4><p>'+conLeyes(f.descripcion)+'</p>'+
     (f.plazos.length ? '<h4>Plazos</h4>'+f.plazos.map(pl=>'<div class="plz"><span class="v">'+esc(pl.plazo)+'</span><div class="d">'+esc(pl.acto)+' '+chipArt(pl.articulo)+lit(pl.literal)+'</div></div>').join("") : "")+
@@ -592,6 +594,7 @@ function htmlFicha(p, f){
     (f.aviso ? '<div class="nota"><b>Ojo:</b> '+conLeyes(f.aviso)+'</div>' : "")+
     ((f.continua_en||[]).length ? '<h4>Continúa en</h4><div>'+f.continua_en.map(id=>{ const q=PROC.find(x=>x.id===id); return q?'<a class="btn" style="margin:0 6px 6px 0" href="#proc/'+q.id+'">'+esc(q.nombre)+' ›</a>':""; }).join("")+'</div>' : "")+
     ((f.recursos_rel||[]).length && REC.length ? '<h4>Recursos</h4><div>'+f.recursos_rel.map(id=>{ const r=REC.find(x=>x.id===id); return r?'<a class="btn" style="margin:0 6px 6px 0" href="#recursos/fichas/'+r.id+'">'+esc(r.recurso)+' ›</a>':""; }).join("")+'<a class="btn" style="margin:0 6px 6px 0" href="#recursos/cabe">¿Qué recurso cabe? ›</a></div>' : "")+
+    ((f.otra_ley||[]).length ? '<h4>En otra ley</h4><div>'+f.otra_ley.map(o=>'<a class="btn" style="margin:0 6px 6px 0" href="../'+encodeURIComponent(o.ley)+'/index.html'+esc(location.search)+'#proc/'+encodeURIComponent(o.proc)+'/'+encodeURIComponent(o.fase)+'">'+esc(o.abr)+' · '+esc(o.nombre)+' ›</a>').join("")+'</div>' : "")+
     ((f.conexiones||[]).length ? '<h4>Conexiones</h4><div>'+f.conexiones.map(k=>chipArt(k,ABR+" "+k)).join("")+'</div>' : "")+
     '<div class="navfase">'+(ant?'<a class="btn" href="#proc/'+p.id+'/'+ant.id+'">‹ '+esc(ant.fase)+'</a>':'<span></span>')+
       (sig?'<a class="btn prim" href="#proc/'+p.id+'/'+sig.id+'">'+esc(sig.fase)+' ›</a>':'<span></span>')+'</div>'+
@@ -730,7 +733,7 @@ function buscar(){
   info.textContent = (fases.length?fases.length+" fase(s) del mapa procesal · ":"")+(claves.length?claves.length+" artículo(s)":"ningún artículo")+(claves.length>MAX?" (se muestran "+MAX+")":"")+".";
   const misN = modo==="auto" ? Object.keys(MIS.notas).filter(c=>infoClave(c) && pal.every(w=>norm(MIS.notas[c].texto+" "+infoClave(c).nombre).includes(w))) : [];
   if (misN.length) info.textContent = misN.length+" nota(s) tuya(s) · "+info.textContent;
-  let h = misN.map(c=>{ const i=infoClave(c); return '<li class="card"><a href="'+i.href+'"><div class="tipo">Tu nota · '+esc(i.tipo)+'</div><span class="t">'+esc(i.nombre)+'</span><div class="frag">'+esc(MIS.notas[c].texto.slice(0,160))+'</div></a></li>'; }).join("")+fases.map(e=>'<li class="card"><a href="#proc/'+e.p.id+'/'+e.f.id+'"><div class="tipo">Fase · '+esc(e.p.nombre)+'</div><span class="t">'+esc(e.f.fase)+'</span> — '+esc(e.f.subtitulo)+
+  let h = misN.map(c=>{ const i=infoClave(c); return '<li class="card"><a href="'+i.href+'"><div class="tipo">Tu nota · '+esc(i.tipo)+'</div><span class="t">'+esc(i.nombre)+'</span><div class="frag">'+esc(MIS.notas[c].texto.slice(0,160))+'</div></a></li>'; }).join("")+fases.map(e=>'<li class="card"><a href="#proc/'+e.p.id+'/'+e.f.id+'"><div class="tipo">'+esc(RT.fase)+' · '+esc(e.p.nombre)+'</div><span class="t">'+esc(e.f.fase)+'</span> — '+esc(e.f.subtitulo)+
     (e.f.plazos.length?'<div class="frag">'+e.f.plazos.map(x=>esc(x.acto+": "+x.plazo)).join(" · ")+'</div>':"")+'</a></li>').join("");
   h += claves.slice(0,MAX).map(k=>{ const a=A[k]; let extra="";
     if (terminos.length){ const t=a.rotulo+" "+(a.titulo||"")+"\n"+a.texto_literal, i=norm(t).indexOf(terminos[0]);
@@ -788,7 +791,7 @@ function vistaTestPlazos(filtro){
   if (!testPl) nuevaPreguntaPlazo();
   const t = testPl, resp = t.elegida !== undefined, pl = t.x.pl, v = $("#v-repaso");
   v.innerHTML = '<div class="eyebrow">Modo repaso</div><h1 class="tit">Ponte a prueba</h1>'+segRepaso("test")+
-    '<div class="rep-top"><select id="repSel" aria-label="Procedimiento"><option value="todos">Todos los procedimientos</option>'+
+    '<div class="rep-top"><select id="repSel" aria-label="Procedimiento"><option value="todos">'+esc(RT.todos)+'</option>'+
     filtros.map(p=>'<option value="'+p.id+'"'+(repFiltro===p.id?" selected":"")+'>'+esc(p.nombre)+'</option>').join("")+'</select>'+
     '<span style="font-size:.85rem;color:var(--suave)">Aciertos '+testPlPuntos.ok+' de '+testPlPuntos.total+'</span></div>'+
     '<div class="card tarjeta"><div class="eyebrow">'+esc(t.x.p.nombre+" · "+t.x.f.fase)+'</div><div class="q">'+esc(pl.acto)+': ¿qué plazo?</div>'+
@@ -810,7 +813,7 @@ function vistaRepaso(filtro){
   const pool = poolRep(), ok = pool.filter(t=>progreso[t.id]==="ok").length, ko = pool.filter(t=>progreso[t.id]==="ko").length;
   const t = repActual, v = $("#v-repaso");
   v.innerHTML = '<div class="eyebrow">Modo repaso</div><h1 class="tit">Ponte a prueba</h1>'+segRepaso("tarjetas")+
-    '<div class="rep-top"><select id="repSel" aria-label="Procedimiento"><option value="todos">Todos los procedimientos</option>'+
+    '<div class="rep-top"><select id="repSel" aria-label="Procedimiento"><option value="todos">'+esc(RT.todos)+'</option>'+
     PROC_MAPA.map(p=>'<option value="'+p.id+'"'+(repFiltro===p.id?" selected":"")+'>'+esc(p.nombre)+'</option>').join("")+
     '<option value="recursos"'+(repFiltro==="recursos"?" selected":"")+'>Recursos</option></select>'+
     '<span style="font-size:.85rem;color:var(--suave)">✔ '+ok+' sabidas · ✘ '+ko+' falladas · '+pool.length+' tarjetas</span></div>'+
@@ -971,7 +974,7 @@ function ruta(){
   const partes = base.split("/");
   if (base !== ultimaBase){
     cerrarHoja();
-    if (partes[0]==="proc"){ mostrar("proc", (PROC.find(x=>x.id===partes[1])||{}).solo_procedimientos ? "procedimientos" : "procesos"); vistaProc(partes[1], partes[2]); document.title = ABR+" · Mapa procesal"; }
+    if (partes[0]==="proc"){ mostrar("proc", (PROC.find(x=>x.id===partes[1])||{}).solo_procedimientos ? "procedimientos" : "procesos"); vistaProc(partes[1], partes[2]); document.title = ABR+" · "+RT.mapa; }
     else if (partes[0]==="art"){ const [k,qs]=base.slice(4).split("?"); mostrar("art","ley"); vistaArt(k, qs==="r=1"); }
     else if (partes[0]==="ley"){ mostrar("ley","ley"); pintarArbol(); }
     else if (partes[0]==="buscar"){ mostrar("buscar","buscar"); setTimeout(()=>$("#q").focus(),0); }

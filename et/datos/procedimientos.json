@@ -1407,13 +1407,100 @@
     },
     {
      "id": "tiempo-37",
-     "fase": "Descanso semanal, fiestas, permisos y reducciones",
-     "subtitulo": "CAPÍTULO II · Sección 5.ª · art. 37",
-     "descripcion": "Descanso semanal de día y medio (dos días los menores). Hasta catorce fiestas al año, dos locales. Permisos retribuidos con aviso y justificación: quince días naturales por matrimonio o pareja de hecho, cinco por accidente, enfermedad grave u hospitalización de familiares, dos por fallecimiento (más dos con desplazamiento), uno por traslado de domicilio, deberes públicos y otros. El art. 37 regula también la lactancia y las reducciones de jornada por cuidado; su ejercicio está protegido frente al despido (art. 55.5).",
-     "aviso": "El art. 37 es largo (lactancia, reducción de jornada por guarda legal, permisos por fuerza mayor familiar): consulta el texto literal. Las discrepancias sobre su concreción se resuelven por el procedimiento urgente de la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]].",
+     "fase": "Descanso semanal, fiestas, lactancia y reducciones de jornada",
+     "subtitulo": "CAPÍTULO II · Sección 5.ª · art. 37 (salvo permisos)",
+     "descripcion": "Descanso semanal de día y medio (dos días los menores). Hasta catorce fiestas al año, dos locales. Cuidado del lactante: una hora de ausencia (divisible en dos fracciones) hasta los nueve meses, sustituible por media hora de reducción o acumulable en jornadas completas. Reducción de jornada por guarda legal de un menor de doce años o de una persona con discapacidad, o por cuidado de un familiar que no puede valerse por sí mismo: entre un octavo y la mitad, con reducción proporcional del salario; hay reglas propias para el menor con cáncer o enfermedad grave y para las víctimas de violencia de género, violencia sexual o terrorismo. La concreción horaria corresponde a la persona trabajadora, con preaviso. Los permisos retribuidos (matrimonio, enfermedad, fallecimiento…) están en la ficha siguiente.",
+     "aviso": "El art. 37 es largo: consulta el texto literal. Las discrepancias sobre la concreción horaria de la lactancia y las reducciones (apartados 4, 5 y 6) se resuelven por el procedimiento del art. 139 de la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]].",
      "articulos": [
       "37",
       "55"
+     ],
+     "rango": [
+      "37",
+      "37"
+     ],
+     "plazos": [
+      {
+       "acto": "Cuidado del lactante",
+       "plazo": "1 hora diaria hasta los 9 meses",
+       "articulo": "37",
+       "literal": "tendrán derecho a una hora de ausencia del trabajo, que podrán dividir en dos fracciones, para el cuidado del lactante hasta que este cumpla nueve meses"
+      },
+      {
+       "acto": "Reducción de jornada por guarda legal",
+       "plazo": "Entre 1/8 y la mitad de la jornada",
+       "articulo": "37",
+       "literal": "entre, al menos, un octavo y un máximo de la mitad de la duración de aquella"
+      },
+      {
+       "acto": "Preaviso de la lactancia o de la reducción de jornada",
+       "plazo": "15 días (o el del convenio)",
+       "articulo": "37",
+       "literal": "deberá preavisar al empresario con una antelación de quince días o la que se determine en el convenio colectivo aplicable"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Empresa y trabajador no se ponen de acuerdo en el horario de la reducción o de la lactancia",
+       "entonces": "Lo resuelve el juzgado de lo social por el procedimiento del art. 139 LRJS.",
+       "articulos": [
+        "37"
+       ],
+       "literal": {
+        "articulo": "37",
+        "texto": "serán resueltas por la jurisdicción social a través del procedimiento establecido en el artículo 139 de la Ley 36/2011"
+       }
+      },
+      {
+       "si": "Los dos progenitores de la misma empresa piden la lactancia por el mismo hijo",
+       "entonces": "La empresa puede limitar el ejercicio simultáneo por razones objetivas motivadas por escrito, ofreciendo un plan alternativo.",
+       "articulos": [
+        "37"
+       ],
+       "literal": {
+        "articulo": "37",
+        "texto": "podrá limitarse su ejercicio simultáneo por razones fundadas y objetivas de funcionamiento de la empresa"
+       }
+      },
+      {
+       "si": "Se despide a quien solicitó o disfruta ciertos permisos del art. 37",
+       "entonces": "El despido es nulo, salvo procedencia por motivos ajenos.",
+       "articulos": [
+        "55"
+       ],
+       "literal": {
+        "articulo": "55",
+        "texto": "el de las personas trabajadoras que hayan solicitado uno de los permisos a los que se refieren los apartados 3.b), 4, 5 y 6 del artículo 37"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Cuántas fiestas laborales puede haber al año?",
+      "a": "No más de catorce, de las cuales dos son locales.",
+      "articulos": [
+       "37"
+      ],
+      "literal": {
+       "articulo": "37",
+       "texto": "no podrán exceder de catorce al año, de las cuales dos serán locales"
+      }
+     },
+     "conexiones": [
+      "34",
+      "37",
+      "48",
+      "55"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "tiempo-37_3",
+     "fase": "Permisos retribuidos",
+     "subtitulo": "CAPÍTULO II · Sección 5.ª · art. 37.3 y 37.9",
+     "descripcion": "Con aviso previo y justificación, la persona trabajadora puede ausentarse cobrando: quince días naturales por matrimonio o registro de pareja de hecho; cinco días por accidente o enfermedad graves, hospitalización o intervención con reposo domiciliario del cónyuge, pareja de hecho, parientes hasta el segundo grado o conviviente que necesite cuidado; dos días por fallecimiento del cónyuge, pareja o parientes hasta el segundo grado (dos más si hay desplazamiento); un día por traslado de domicilio; el tiempo indispensable para un deber público y personal (incluido votar), exámenes prenatales y preparación al parto, trámites de adopción o acogimiento y actos preparatorios de la donación de órganos; funciones sindicales o de representación; hasta cuatro días si no se puede llegar al trabajo por restricciones de la autoridad o riesgo grave (catástrofe, fenómeno meteorológico). Además, ausencia por fuerza mayor familiar urgente, retribuida hasta el equivalente a cuatro días al año (art. 37.9).",
+     "aviso": "El convenio colectivo puede mejorar estos permisos: compruébalo. El BOE repite la letra «g)» en el art. 37.3 (imposibilidad de acceder al centro y donación de órganos). El ET no dice expresamente por qué procedimiento se reclama un permiso del apartado 3 denegado; la vía del art. 139 de la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]] la menciona el art. 37.7 para los apartados 4, 5 y 6.",
+     "articulos": [
+      "37"
      ],
      "rango": [
       "37",
@@ -1443,9 +1530,56 @@
        "plazo": "1 día",
        "articulo": "37",
        "literal": "Un día por traslado del domicilio habitual"
+      },
+      {
+       "acto": "Imposibilidad de acceder al centro de trabajo (restricciones o riesgo grave)",
+       "plazo": "Hasta 4 días (después, mientras dure)",
+       "articulo": "37",
+       "literal": "Hasta cuatro días por imposibilidad de acceder al centro de trabajo"
+      },
+      {
+       "acto": "Ausencia por fuerza mayor familiar urgente (horas retribuidas)",
+       "plazo": "Equivalente a 4 días al año",
+       "articulo": "37",
+       "literal": "equivalentes a cuatro días al año"
       }
      ],
      "ramas": [
+      {
+       "si": "El deber público impide trabajar más del 20 % de las horas en tres meses",
+       "entonces": "La empresa puede pasar a la persona trabajadora a excedencia forzosa (art. 46.1).",
+       "articulos": [
+        "37",
+        "46"
+       ],
+       "literal": {
+        "articulo": "37",
+        "texto": "podrá la empresa pasar al trabajador afectado a la situación de excedencia regulada en el artículo 46.1"
+       }
+      },
+      {
+       "si": "Por el deber público se cobra una indemnización",
+       "entonces": "Se descuenta del salario.",
+       "articulos": [
+        "37"
+       ],
+       "literal": {
+        "articulo": "37",
+        "texto": "se descontará el importe de la misma del salario a que tuviera derecho en la empresa"
+       }
+      },
+      {
+       "si": "Pasados los cuatro días sigue sin poderse acceder al centro de trabajo",
+       "entonces": "El permiso se prolonga mientras duren las circunstancias, salvo que la empresa aplique un ERTE por fuerza mayor (art. 47.6); si el puesto lo permite, puede establecer el trabajo a distancia.",
+       "articulos": [
+        "37",
+        "47"
+       ],
+       "literal": {
+        "articulo": "37",
+        "texto": "el permiso se prolongará hasta que desaparezcan las circunstancias que lo justificaron"
+       }
+      },
       {
        "si": "Se despide a quien solicitó o disfruta ciertos permisos del art. 37",
        "entonces": "El despido es nulo, salvo procedencia por motivos ajenos.",
@@ -1459,20 +1593,20 @@
       }
      ],
      "pregunta": {
-      "q": "¿Cuántas fiestas laborales puede haber al año?",
-      "a": "No más de catorce, de las cuales dos son locales.",
+      "q": "¿Qué exige el ET para disfrutar un permiso retribuido del art. 37.3?",
+      "a": "Previo aviso y justificación.",
       "articulos": [
        "37"
       ],
       "literal": {
        "articulo": "37",
-       "texto": "no podrán exceder de catorce al año, de las cuales dos serán locales"
+       "texto": "previo aviso y justificación, podrá ausentarse del trabajo, con derecho a remuneración"
       }
      },
      "conexiones": [
-      "34",
       "37",
-      "48",
+      "46",
+      "47",
       "55"
      ],
      "continua_en": []
