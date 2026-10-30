@@ -1,6 +1,278 @@
 {
  "procedimientos": [
   {
+   "id": "guia",
+   "nombre": "Guía práctica: plazos y qué hacer",
+   "bloque": "et",
+   "grupo": "Guía práctica",
+   "resumen": "Dos fichas para empezar por el caso: los plazos que no se pueden pasar y, para cada situación frecuente, qué acción hay, en qué plazo y dónde está el detalle.",
+   "ambito": {
+    "corto": "Arts. 59, 60 y otros",
+    "texto": "Fichas transversales (no siguen el índice de la ley)",
+    "articulos": [
+     "59"
+    ],
+    "literal": [
+     {
+      "articulo": "59",
+      "texto": "El plazo de caducidad quedará interrumpido por la presentación de la solicitud de conciliación"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "guia-plazos",
+     "fase": "Plazos del ET que no se pueden pasar",
+     "subtitulo": "Arts. 59, 60 y otros",
+     "descripcion": "Los plazos que deciden un asunto laboral. Caducidad de veinte días hábiles para despido, fin de contrato temporal, traslado y modificación sustancial (se interrumpe con la papeleta de conciliación). Prescripción de un año para el resto de acciones del contrato y para reclamar cantidades. Prescripción de las faltas del trabajador: diez, veinte o sesenta días según su gravedad, y siempre seis meses. Opción tras el despido improcedente: cinco días. En cada ficha están los demás plazos de su situación.",
+     "aviso": "Cómo se cuentan los días y la conciliación previa se regulan en la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]]. La calculadora de plazos con calendario está prevista como segunda parte de la app.",
+     "articulos": [
+      "59",
+      "60",
+      "56"
+     ],
+     "rango": [
+      "59",
+      "60"
+     ],
+     "plazos": [
+      {
+       "acto": "Demandar por despido o fin de contrato temporal (caducidad)",
+       "plazo": "20 días hábiles",
+       "articulo": "59",
+       "literal": "caducará a los veinte días siguientes de aquel en que se hubiera producido"
+      },
+      {
+       "acto": "Impugnar traslado o modificación sustancial (caducidad)",
+       "plazo": "20 días desde el siguiente a la notificación",
+       "articulo": "59",
+       "literal": "El plazo se computará desde el día siguiente a la fecha de notificación de la decisión empresarial"
+      },
+      {
+       "acto": "Resto de acciones del contrato (prescripción)",
+       "plazo": "1 año desde que termina el contrato",
+       "articulo": "59",
+       "literal": "prescribirán al año de su terminación"
+      },
+      {
+       "acto": "Reclamar cantidades (prescripción)",
+       "plazo": "1 año desde que pudo reclamarse",
+       "articulo": "59",
+       "literal": "el plazo de un año se computará desde el día en que la acción pudiera ejercitarse"
+      },
+      {
+       "acto": "Faltas leves / graves / muy graves (prescripción)",
+       "plazo": "10 / 20 / 60 días desde que se conocen; siempre 6 meses",
+       "articulo": "60",
+       "literal": "las faltas leves prescribirán a los diez días; las graves, a los veinte días, y las muy graves, a los sesenta días"
+      },
+      {
+       "acto": "Opción del empresario tras el despido improcedente",
+       "plazo": "5 días desde la notificación de la sentencia",
+       "articulo": "56",
+       "literal": "en el plazo de cinco días desde la notificación de la sentencia"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se presenta la papeleta de conciliación",
+       "entonces": "El plazo de caducidad queda interrumpido.",
+       "articulos": [
+        "59"
+       ],
+       "literal": {
+        "articulo": "59",
+        "texto": "El plazo de caducidad quedará interrumpido por la presentación de la solicitud de conciliación"
+       }
+      },
+      {
+       "si": "Se duda de si un plazo es de caducidad o prescripción",
+       "entonces": "Despido, fin de contrato temporal, traslado y modificación sustancial: caducidad (días hábiles). Lo demás, prescripción de un año salvo plazo especial.",
+       "articulos": [
+        "59"
+       ],
+       "literal": {
+        "articulo": "59",
+        "texto": "Los días serán hábiles y el plazo de caducidad a todos los efectos"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué plazo hay para demandar por despido y qué lo interrumpe?",
+      "a": "Veinte días hábiles de caducidad; lo interrumpe la presentación de la papeleta de conciliación.",
+      "articulos": [
+       "59"
+      ],
+      "literal": {
+       "articulo": "59",
+       "texto": "El ejercicio de la acción contra el despido o resolución de contratos temporales caducará a los veinte días siguientes"
+      }
+     },
+     "conexiones": [
+      "40",
+      "41",
+      "55",
+      "56",
+      "58",
+      "59",
+      "60"
+     ],
+     "continua_en": [
+      "sanciones",
+      "extincion"
+     ]
+    },
+    {
+     "id": "guia-que-hago",
+     "fase": "¿Qué hago ante…? Situación, acción y plazo",
+     "subtitulo": "Ficha transversal",
+     "descripcion": "Una puerta de entrada por situaciones. Abre la alternativa que encaje con el caso: cada una dice qué acción hay, en qué plazo y en qué ficha está el detalle. La forma de reclamar (conciliación previa, demanda y modalidad procesal) está en la LRJS.",
+     "aviso": "Las modalidades procesales de cada reclamación se regulan en la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]].",
+     "articulos": [
+      "59"
+     ],
+     "rango": [
+      "59",
+      "59"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Me han despedido",
+       "entonces": "Revisa la carta (hechos y fecha) y si hay causa de nulidad; demanda en veinte días hábiles (ficha «Despido disciplinario: forma y calificación»).",
+       "articulos": [
+        "55",
+        "59"
+       ],
+       "literal": {
+        "articulo": "55",
+        "texto": "El despido deberá ser notificado por escrito al trabajador"
+       }
+      },
+      {
+       "si": "Me han despedido por causas objetivas",
+       "entonces": "Comprueba carta, indemnización de veinte días y preaviso; se impugna como el disciplinario (ficha «Despido objetivo: forma y efectos»).",
+       "articulos": [
+        "53"
+       ],
+       "literal": {
+        "articulo": "53",
+        "texto": "Contra la decisión extintiva podrá recurrir como si se tratase de despido disciplinario"
+       }
+      },
+      {
+       "si": "No me pagan o me pagan tarde",
+       "entonces": "Reclama con interés del 10 % (un año para hacerlo); si es continuado, puedes pedir la extinción del art. 50 (fichas «Pago del salario» y «El trabajador pide la extinción»).",
+       "articulos": [
+        "29",
+        "50"
+       ],
+       "literal": {
+        "articulo": "50",
+        "texto": "La falta de pago o retrasos continuados en el abono del salario pactado"
+       }
+      },
+      {
+       "si": "Me cambian el horario, el turno o el sueldo",
+       "entonces": "Puede ser modificación sustancial: impugna en veinte días o, si te perjudica, extingue con veinte días por año, máximo nueve meses (ficha «Modificación sustancial»).",
+       "articulos": [
+        "41"
+       ],
+       "literal": {
+        "articulo": "41",
+        "texto": "tendrá derecho a rescindir su contrato y percibir una indemnización de veinte días de salario por año de servicio"
+       }
+      },
+      {
+       "si": "Me trasladan a otra ciudad",
+       "entonces": "Elige entre ir con compensación de gastos o extinguir con veinte días por año, máximo doce mensualidades; o impugnar en veinte días (ficha «Movilidad geográfica»).",
+       "articulos": [
+        "40"
+       ],
+       "literal": {
+        "articulo": "40",
+        "texto": "el trabajador tendrá derecho a optar entre el traslado, percibiendo una compensación por gastos, o la extinción de su contrato"
+       }
+      },
+      {
+       "si": "Me han sancionado",
+       "entonces": "Comprueba la comunicación escrita y la prescripción de la falta; la sanción es siempre revisable judicialmente (ficha «Faltas y sanciones»).",
+       "articulos": [
+        "58",
+        "60"
+       ],
+       "literal": {
+        "articulo": "58",
+        "texto": "serán siempre revisables ante la jurisdicción social"
+       }
+      },
+      {
+       "si": "Encadeno contratos temporales",
+       "entonces": "Más de dieciocho meses en veinticuatro, o un temporal sin causa, te hace fijo (ficha «Contratos temporales y fijeza»).",
+       "articulos": [
+        "15"
+       ],
+       "literal": {
+        "articulo": "15",
+        "texto": "adquirirán la condición de personas trabajadoras fijas"
+       }
+      },
+      {
+       "si": "Necesito adaptar mi jornada para cuidar",
+       "entonces": "Pídelo; la empresa negocia en quince días y, si no se opone de forma motivada, se presume concedido (ficha «Adaptación de jornada»).",
+       "articulos": [
+        "34"
+       ],
+       "literal": {
+        "articulo": "34",
+        "texto": "presumiéndose su concesión si no concurre oposición motivada expresa en este plazo"
+       }
+      },
+      {
+       "si": "La empresa ha cambiado de dueño",
+       "entonces": "Tu contrato sigue; el nuevo empresario se subroga en tus derechos (ficha «Sucesión de empresa»).",
+       "articulos": [
+        "44"
+       ],
+       "literal": {
+        "articulo": "44",
+        "texto": "quedando el nuevo empresario subrogado en los derechos y obligaciones laborales y de Seguridad Social del anterior"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "Un trabajador encadena dos contratos por circunstancias de la producción durante diecinueve meses en dos años. ¿Qué ocurre?",
+      "a": "Adquiere la condición de fijo (más de dieciocho meses en veinticuatro).",
+      "articulos": [
+       "15"
+      ],
+      "literal": {
+       "articulo": "15",
+       "texto": "durante un plazo superior a dieciocho meses"
+      }
+     },
+     "conexiones": [
+      "15",
+      "29",
+      "34",
+      "40",
+      "41",
+      "44",
+      "50",
+      "53",
+      "55",
+      "58"
+     ],
+     "continua_en": [
+      "extincion",
+      "cambios",
+      "salario"
+     ]
+    }
+   ]
+  },
+  {
    "id": "relacion",
    "nombre": "¿Hay relación laboral? Ámbito y fuentes",
    "bloque": "et",
@@ -2938,6 +3210,427 @@
       "41",
       "55",
       "58"
+     ],
+     "continua_en": []
+    }
+   ]
+  },
+  {
+   "id": "representacion",
+   "nombre": "Representantes de los trabajadores",
+   "bloque": "et",
+   "grupo": "Representación y convenios",
+   "resumen": "Lo práctico de la representación unitaria: quién representa, qué garantías tiene el representante (decisivas si se le despide o sanciona) y cómo se impugnan las elecciones.",
+   "ambito": {
+    "corto": "Arts. 61 a 76",
+    "texto": "TÍTULO II · CAPÍTULO I · Del derecho de representación colectiva",
+    "articulos": [
+     "62"
+    ],
+    "literal": [
+     {
+      "articulo": "68",
+      "texto": "como representantes legales de los trabajadores"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "representacion-62",
+     "fase": "Delegados de personal y comité de empresa",
+     "subtitulo": "TÍTULO II · CAPÍTULO I · arts. 62 a 64",
+     "descripcion": "Ficha breve. En centros de más de diez y menos de cincuenta trabajadores representan los delegados de personal (uno hasta treinta; tres de treinta y uno a cuarenta y nueve; uno en los de seis a diez si lo deciden). Desde cincuenta trabajadores, comité de empresa; con varios centros pequeños en la misma provincia que sumen cincuenta, comité conjunto. Tienen derechos de información y consulta (art. 64) y son los interlocutores en los periodos de consultas (traslados, modificaciones, ERTE y despidos colectivos).",
+     "articulos": [
+      "62",
+      "63",
+      "64"
+     ],
+     "rango": [
+      "62",
+      "64"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "La empresa tiene entre seis y diez trabajadores",
+       "entonces": "Puede haber un delegado si lo decide la mayoría.",
+       "articulos": [
+        "62"
+       ],
+       "literal": {
+        "articulo": "62",
+        "texto": "Igualmente podrá haber un delegado de personal en aquellas empresas o centros que cuenten entre seis y diez trabajadores, si así lo decidieran estos por mayoría"
+       }
+      },
+      {
+       "si": "Varios centros de la misma provincia no llegan a cincuenta pero en conjunto sí",
+       "entonces": "Se constituye un comité de empresa conjunto.",
+       "articulos": [
+        "63"
+       ],
+       "literal": {
+        "articulo": "63",
+        "texto": "se constituirá un comité de empresa conjunto"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Desde cuántos trabajadores hay comité de empresa en un centro?",
+      "a": "Desde cincuenta trabajadores de censo.",
+      "articulos": [
+       "63"
+      ],
+      "literal": {
+       "articulo": "63",
+       "texto": "constituyéndose en cada centro de trabajo cuyo censo sea de cincuenta o más trabajadores"
+      }
+     },
+     "conexiones": [
+      "41",
+      "47",
+      "51",
+      "62",
+      "63",
+      "64"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "representacion-68",
+     "fase": "Garantías de los representantes",
+     "subtitulo": "TÍTULO II · CAPÍTULO I · art. 68",
+     "descripcion": "Los representantes legales tienen, salvo mejora por convenio: expediente contradictorio antes de sanciones graves o muy graves; prioridad de permanencia en suspensiones y extinciones por causas tecnológicas o económicas; no ser despedidos ni sancionados por su labor representativa durante el mandato ni el año siguiente; libertad de expresión; y crédito de horas mensuales retribuidas según la plantilla. En el despido improcedente, la opción es suya (art. 56.4).",
+     "articulos": [
+      "68",
+      "55",
+      "56"
+     ],
+     "rango": [
+      "68",
+      "68"
+     ],
+     "plazos": [
+      {
+       "acto": "Protección frente a despido o sanción por su labor",
+       "plazo": "Durante el mandato y el año siguiente",
+       "articulo": "68",
+       "literal": "No ser despedido ni sancionado durante el ejercicio de sus funciones ni dentro del año siguiente a la expiración de su mandato"
+      },
+      {
+       "acto": "Crédito horario (centros de hasta 100 trabajadores)",
+       "plazo": "15 horas al mes",
+       "articulo": "68",
+       "literal": "Hasta cien trabajadores, quince horas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se sanciona a un representante por falta grave o muy grave",
+       "entonces": "Hay que abrir expediente contradictorio, oyendo al comité o a los demás delegados.",
+       "articulos": [
+        "68"
+       ],
+       "literal": {
+        "articulo": "68",
+        "texto": "Apertura de expediente contradictorio en el supuesto de sanciones por faltas graves o muy graves"
+       }
+      },
+      {
+       "si": "El despido del representante se declara improcedente",
+       "entonces": "Elige él entre readmisión e indemnización y cobra salarios de tramitación.",
+       "articulos": [
+        "56"
+       ],
+       "literal": {
+        "articulo": "56",
+        "texto": "Si el despedido fuera un representante legal de los trabajadores o un delegado sindical, la opción corresponderá siempre a este"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quién tiene prioridad de permanencia en una extinción por causas económicas?",
+      "a": "Los representantes legales de los trabajadores.",
+      "articulos": [
+       "68"
+      ],
+      "literal": {
+       "articulo": "68",
+       "texto": "Prioridad de permanencia en la empresa o centro de trabajo respecto de los demás trabajadores"
+      }
+     },
+     "conexiones": [
+      "52",
+      "55",
+      "56",
+      "68"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "representacion-76",
+     "fase": "Reclamaciones en materia electoral",
+     "subtitulo": "TÍTULO II · CAPÍTULO I · Sección 2.ª · art. 76",
+     "descripcion": "Ficha breve. Las impugnaciones del proceso electoral van a un arbitraje (salvo la denegación de inscripción, que va directamente al juez). Puede impugnar quien tenga interés legítimo, incluida la empresa, por vicios graves, falta de capacidad o legitimidad de los elegidos, discordancia del acta o falta de correlación entre trabajadores y representantes. Contra los actos de la mesa hay que reclamar antes ante ella.",
+     "aviso": "La impugnación judicial del laudo arbitral tiene modalidad propia en la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]].",
+     "articulos": [
+      "76"
+     ],
+     "rango": [
+      "69",
+      "76"
+     ],
+     "plazos": [
+      {
+       "acto": "Reclamar ante la mesa",
+       "plazo": "Día laborable siguiente al acto",
+       "articulo": "76",
+       "literal": "requerirá haber efectuado reclamación dentro del día laborable siguiente al acto"
+      },
+      {
+       "acto": "Escrito de impugnación (arbitraje)",
+       "plazo": "3 días hábiles",
+       "articulo": "76",
+       "literal": "deberá presentarse en un plazo de tres días hábiles"
+      },
+      {
+       "acto": "Impugnar actos del día de la votación o posteriores",
+       "plazo": "10 días hábiles desde la entrada de las actas",
+       "articulo": "76",
+       "literal": "el plazo será de diez días hábiles, contados a partir de la entrada de las actas"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "Se deniega la inscripción de las actas",
+       "entonces": "Se reclama directamente ante la jurisdicción social, sin arbitraje.",
+       "articulos": [
+        "76"
+       ],
+       "literal": {
+        "articulo": "76",
+        "texto": "con excepción de las denegaciones de inscripción, cuyas reclamaciones podrán plantearse directamente ante la jurisdicción social"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Por qué vía se impugnan, en general, las elecciones a representantes?",
+      "a": "Por el procedimiento arbitral del art. 76.",
+      "articulos": [
+       "76"
+      ],
+      "literal": {
+       "articulo": "76",
+       "texto": "Las impugnaciones en materia electoral se tramitarán conforme al procedimiento arbitral regulado en este artículo"
+      }
+     },
+     "conexiones": [
+      "69",
+      "73",
+      "74",
+      "76"
+     ],
+     "continua_en": []
+    }
+   ]
+  },
+  {
+   "id": "convenios",
+   "nombre": "Convenios colectivos",
+   "bloque": "et",
+   "grupo": "Representación y convenios",
+   "resumen": "Lo práctico del convenio: a quién obliga, cómo dejar de aplicarlo (descuelgue), qué convenio prevalece, cuánto dura y quién lo interpreta.",
+   "ambito": {
+    "corto": "Arts. 82 a 92",
+    "texto": "TÍTULO III · De la negociación colectiva y de los convenios colectivos",
+    "articulos": [
+     "82"
+    ],
+    "literal": [
+     {
+      "articulo": "82",
+      "texto": "Los convenios colectivos regulados por esta ley obligan a todos los empresarios y trabajadores incluidos dentro de su ámbito de aplicación"
+     }
+    ]
+   },
+   "revisado": false,
+   "fases": [
+    {
+     "id": "convenios-82",
+     "fase": "Eficacia del convenio e inaplicación (descuelgue)",
+     "subtitulo": "TÍTULO III · CAPÍTULO I · art. 82",
+     "descripcion": "El convenio obliga a todos los empresarios y trabajadores de su ámbito durante su vigencia. Con causas económicas, técnicas, organizativas o de producción, la empresa y los representantes pueden acordar, tras un periodo de consultas, no aplicar condiciones del convenio en materias como jornada, horario, turnos, salario, sistema de trabajo, funciones y mejoras voluntarias. Con acuerdo se presumen las causas. Sin acuerdo, comisión paritaria, procedimientos de solución extrajudicial y, en último término, la Comisión Consultiva Nacional o el órgano autonómico.",
+     "articulos": [
+      "82",
+      "41"
+     ],
+     "rango": [
+      "82",
+      "82"
+     ],
+     "plazos": [
+      {
+       "acto": "Comisión paritaria ante el desacuerdo",
+       "plazo": "Máximo 7 días",
+       "articulo": "82",
+       "literal": "que dispondrá de un plazo máximo de siete días para pronunciarse"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El periodo de consultas termina con acuerdo de inaplicación",
+       "entonces": "Se presumen las causas; solo se impugna por fraude, dolo, coacción o abuso de derecho.",
+       "articulos": [
+        "82"
+       ],
+       "literal": {
+        "articulo": "82",
+        "texto": "solo podrá ser impugnado ante la jurisdicción social por la existencia de fraude, dolo, coacción o abuso de derecho en su conclusión"
+       }
+      },
+      {
+       "si": "El acuerdo afecta a medidas de igualdad de género o del plan de igualdad",
+       "entonces": "No puede llevar a incumplirlas.",
+       "articulos": [
+        "82"
+       ],
+       "literal": {
+        "articulo": "82",
+        "texto": "El acuerdo de inaplicación no podrá dar lugar al incumplimiento de las obligaciones establecidas en convenio relativas a la eliminación de las discriminaciones por razones de género"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Hasta cuándo puede durar la inaplicación del convenio?",
+      "a": "Lo que fije el acuerdo, nunca más allá de que sea aplicable un nuevo convenio en la empresa.",
+      "articulos": [
+       "82"
+      ],
+      "literal": {
+       "articulo": "82",
+       "texto": "no podrá prolongarse más allá del momento en que resulte aplicable un nuevo convenio en dicha empresa"
+      }
+     },
+     "conexiones": [
+      "41",
+      "82",
+      "87",
+      "91"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "convenios-84",
+     "fase": "Concurrencia de convenios y vigencia",
+     "subtitulo": "TÍTULO III · CAPÍTULO I · arts. 84 y 86",
+     "descripcion": "Un convenio vigente no puede verse afectado por otro de ámbito distinto, salvo pacto. Excepción: el convenio de empresa tiene prioridad sobre el sectorial en horas extraordinarias y turnos, horario y vacaciones, clasificación, modalidades de contratación y conciliación, entre otras. Vigencia: la que pacten las partes; sin denuncia se prorroga de año en año. Denunciado, sigue vigente mientras se negocia (salvo pacto); pasado un año sin acuerdo, mediación obligatoria.",
+     "articulos": [
+      "84",
+      "86"
+     ],
+     "rango": [
+      "84",
+      "86"
+     ],
+     "plazos": [
+      {
+       "acto": "Prórroga si no se denuncia",
+       "plazo": "De año en año",
+       "articulo": "86",
+       "literal": "los convenios colectivos se prorrogarán de año en año si no mediara denuncia expresa de las partes"
+      },
+      {
+       "acto": "Mediación obligatoria tras la denuncia sin nuevo convenio",
+       "plazo": "Pasado 1 año",
+       "articulo": "86",
+       "literal": "Transcurrido un año desde la denuncia del convenio colectivo sin que se haya acordado un nuevo convenio"
+      }
+     ],
+     "ramas": [
+      {
+       "si": "El convenio de empresa regula horario o vacaciones de forma distinta al sectorial",
+       "entonces": "Prevalece el de empresa en esas materias.",
+       "articulos": [
+        "84"
+       ],
+       "literal": {
+        "articulo": "84",
+        "texto": "tendrá prioridad aplicativa respecto del convenio sectorial estatal, autonómico o de ámbito inferior"
+       }
+      },
+      {
+       "si": "Termina la negociación sin acuerdo",
+       "entonces": "Salvo pacto, se mantiene la vigencia del convenio denunciado.",
+       "articulos": [
+        "86"
+       ],
+       "literal": {
+        "articulo": "86",
+        "texto": "se mantendrá la vigencia del convenio colectivo"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Qué pasa con un convenio que nadie denuncia al terminar su duración?",
+      "a": "Salvo pacto en contrario, se prorroga de año en año.",
+      "articulos": [
+       "86"
+      ],
+      "literal": {
+       "articulo": "86",
+       "texto": "Salvo pacto en contrario, los convenios colectivos se prorrogarán de año en año"
+      }
+     },
+     "conexiones": [
+      "3",
+      "83",
+      "84",
+      "86"
+     ],
+     "continua_en": []
+    },
+    {
+     "id": "convenios-91",
+     "fase": "Aplicación e interpretación del convenio",
+     "subtitulo": "TÍTULO III · CAPÍTULO II · art. 91",
+     "descripcion": "Ficha breve. Las dudas de aplicación e interpretación del convenio las resuelve primero su comisión paritaria, sin perjuicio de la jurisdicción social. Los convenios y acuerdos interprofesionales pueden prever mediación y arbitraje; el acuerdo de mediación y el laudo tienen la eficacia de un convenio y solo se recurren por los motivos tasados del propio art. 91.",
+     "aviso": "La impugnación del convenio y el conflicto colectivo tienen modalidades propias en la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]].",
+     "articulos": [
+      "91"
+     ],
+     "rango": [
+      "89",
+      "92"
+     ],
+     "plazos": [],
+     "ramas": [
+      {
+       "si": "Hay una controversia colectiva sobre cómo aplicar el convenio",
+       "entonces": "Comisión paritaria y, si se prevén, mediación o arbitraje con eficacia de convenio.",
+       "articulos": [
+        "91"
+       ],
+       "literal": {
+        "articulo": "91",
+        "texto": "tendrán la misma eficacia jurídica y tramitación que los convenios colectivos regulados en esta ley"
+       }
+      }
+     ],
+     "pregunta": {
+      "q": "¿Quién resuelve en primer lugar las dudas de interpretación del convenio?",
+      "a": "Su comisión paritaria, sin perjuicio de la jurisdicción social.",
+      "articulos": [
+       "91"
+      ],
+      "literal": {
+       "articulo": "91",
+       "texto": "corresponderá a la comisión paritaria de los mismos"
+      }
+     },
+     "conexiones": [
+      "82",
+      "86",
+      "91"
      ],
      "continua_en": []
     }
