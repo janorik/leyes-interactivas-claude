@@ -101,6 +101,28 @@ def validar_y_anadir_procedimientos(datos):
         if articulo in arts and _norm(texto) not in _norm(arts[articulo]["texto_literal"]):
             errores.append(f"{donde}: la frase no está en el art. {articulo}: «{texto[:70]}»")
 
+    def apartado(articulo, texto, ap, donde):
+        # «apartado» (p. ej. "3 b)" o "9"): comprueba que la frase está en ese apartado y letra del artículo.
+        if not ap or articulo not in arts:
+            return
+        lineas = arts[articulo]["texto_literal"].split("\n")
+        i = next((n for n, l in enumerate(lineas) if _norm(texto) in _norm(l)), None)
+        if i is None:
+            return errores.append(f"{donde}: no se puede comprobar el apartado «{ap}» (la frase ocupa varios párrafos)")
+        num = letra = None
+        for l in reversed(lineas[:i + 1]):
+            if letra is None and num is None:
+                m = re.match(r"([a-z](?: bis| ter)?)\) ", l)
+                if m:
+                    letra = m.group(1)
+            m = re.match(r"(\d+)\. ", l)
+            if m:
+                num = m.group(1)
+                break
+        real = (num or "") + (f" {letra})" if letra else "")
+        if real != ap:
+            errores.append(f"{donde}: apartado «{ap}» incorrecto; la frase está en «{real}» del art. {articulo}")
+
     plazos = []
     for p in proc:
         if "revisado" not in p:
@@ -119,6 +141,7 @@ def validar_y_anadir_procedimientos(datos):
                 art(k, d)
             for pl in f["plazos"]:
                 lit(pl["articulo"], pl["literal"], d + "/plazo")
+                apartado(pl["articulo"], pl["literal"], pl.get("apartado"), d + "/plazo")
                 plazos.append({"id": f"{d}-{len(plazos) + 1}", "acto": pl["acto"], "plazo": pl["plazo"],
                                "computo": "", "articulos": [pl["articulo"]], "bloque": p["bloque"],
                                "procedimiento": p["id"], "fase": f["fase"], "literal": pl["literal"],
@@ -127,9 +150,11 @@ def validar_y_anadir_procedimientos(datos):
                 for k in r["articulos"]:
                     art(k, d)
                 lit(r["literal"]["articulo"], r["literal"]["texto"], d + "/rama")
+                apartado(r["literal"]["articulo"], r["literal"]["texto"], r.get("apartado"), d + "/rama")
             q = f.get("pregunta")
             if q:
                 lit(q["literal"]["articulo"], q["literal"]["texto"], d + "/pregunta")
+                apartado(q["literal"]["articulo"], q["literal"]["texto"], q.get("apartado"), d + "/pregunta")
     # Leyes distintas enlazadas desde el mapa (p. ej. el Tribunal del Jurado en la LECrim).
     for e in externos:
         if len(RE_LEY_EXT.findall(e["texto"])) != 1 or e["texto"].count("[[") != 1:

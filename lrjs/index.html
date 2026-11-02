@@ -429,7 +429,9 @@ $("#pie").textContent = L.nombre+" · "+L.boe+" · Texto consolidado a "+L.fecha
 let BASE = "procesos";                                   // ruta actual sin el artículo superpuesto
 const hrefArt = k => "#"+BASE+"~"+encodeURIComponent(k);  // abre el artículo encima, sin perder el sitio
 const hrefLey = k => "#art/"+encodeURIComponent(k);
-const chipArt = (k, etq) => A[k] ? '<a class="chip" href="'+hrefArt(k)+'">'+esc(etq || ("Art. "+k))+'</a>' : '<span class="chip">Art. '+esc(k)+' (?)</span>';
+const chipArt = (k, etq, frase) => A[k] ? '<a class="chip" href="'+hrefArt(k)+(frase?"|"+encodeURIComponent(frase):"")+'">'+esc(etq || ("Art. "+k))+'</a>' : '<span class="chip">Art. '+esc(k)+' (?)</span>';
+// Con «apartado» (p. ej. "3 b)"): la etiqueta dice «Art. 37.3 b)» y abre el artículo bajado hasta la frase literal, resaltada.
+const chipAp = (k, ap, frase) => ap ? chipArt(k, "Art. "+k+"."+ap, frase) : chipArt(k);
 const lit = t => '<div class="lit">'+esc(t)+'</div>';
 const D_R = '<span class="punto r" role="img" aria-label="Revisado" title="Revisado"></span>';
 const D_P = '<span class="punto p" role="img" aria-label="Pendiente de revisión" title="Pendiente de revisión: contenido elaborado, valídalo con el texto literal"></span>';
@@ -585,11 +587,11 @@ function htmlFicha(p, f){
   return '<div class="ficha"><div class="eyebrow">'+esc(RT.fase)+' '+(i+1)+' · '+esc(f.articulos.map(k=>"Art. "+k).join(" · "))+'</div>'+
     '<h2>'+esc(f.fase)+'</h2><div>'+(p.revisado?REV:PEND)+'</div>'+htmlMis("fase:"+p.id+"/"+f.id)+
     '<h4>Qué ocurre</h4><p>'+conLeyes(f.descripcion)+'</p>'+
-    (f.plazos.length ? '<h4>Plazos</h4>'+f.plazos.map(pl=>'<div class="plz"><span class="v">'+esc(pl.plazo)+'</span><div class="d">'+esc(pl.acto)+' '+chipArt(pl.articulo)+lit(pl.literal)+'</div></div>').join("") : "")+
+    (f.plazos.length ? '<h4>Plazos</h4>'+f.plazos.map(pl=>'<div class="plz"><span class="v">'+esc(pl.plazo)+'</span><div class="d">'+esc(pl.acto)+' '+chipAp(pl.articulo,pl.apartado,pl.literal)+lit(pl.literal)+'</div></div>').join("") : "")+
     (f.ramas.length ? '<h4>Alternativas · toca para ver qué pasa</h4>'+f.ramas.map(r=>'<div class="rama" role="button" tabindex="0" aria-expanded="false"><span class="flecha">▾</span><span class="q">'+esc(minus(r.si))+'</span>'+
-      '<span class="r">→ '+esc(r.entonces)+lit(r.literal.texto)+'<span>'+r.articulos.map(k=>chipArt(k)).join("")+'</span></span></div>').join("") : "")+
+      '<span class="r">→ '+esc(r.entonces)+lit(r.literal.texto)+'<span>'+r.articulos.map(k=>k===r.literal.articulo?chipAp(k,r.apartado,r.literal.texto):chipArt(k)).join("")+'</span></span></div>').join("") : "")+
     (f.pregunta ? '<h4>Ponte a prueba</h4><div class="preg"><p class="q">'+esc(f.pregunta.q)+'</p><button class="btn ver-resp">Mostrar respuesta</button>'+
-      '<div class="a" hidden>'+esc(f.pregunta.a)+lit(f.pregunta.literal.texto)+'<div>'+f.pregunta.articulos.map(k=>chipArt(k)).join("")+'</div></div></div>' : "")+
+      '<div class="a" hidden>'+esc(f.pregunta.a)+lit(f.pregunta.literal.texto)+'<div>'+f.pregunta.articulos.map(k=>k===f.pregunta.literal.articulo?chipAp(k,f.pregunta.apartado,f.pregunta.literal.texto):chipArt(k)).join("")+'</div></div></div>' : "")+
     (f.duda ? '<div class="nota duda"><b>Duda de interpretación:</b> '+esc(f.duda)+'</div>' : "")+
     (f.aviso ? '<div class="nota"><b>Ojo:</b> '+conLeyes(f.aviso)+'</div>' : "")+
     ((f.continua_en||[]).length ? '<h4>Continúa en</h4><div>'+f.continua_en.map(id=>{ const q=PROC.find(x=>x.id===id); return q?'<a class="btn" style="margin:0 6px 6px 0" href="#proc/'+q.id+'">'+esc(q.nombre)+' ›</a>':""; }).join("")+'</div>' : "")+
@@ -993,8 +995,10 @@ function ruta(){
   }
   setTimeout(actualizarAtras, 0);
   if (sobre){
-    abrirHoja(A[sobre] ? A[sobre].rotulo : sobre, '<div style="padding:12px 16px">'+htmlArticulo(sobre,false,[])+
-      '<p><a class="btn" href="'+hrefLey(sobre)+'">Abrir en la ley ›</a></p></div>', "#"+base);
+    const j = sobre.indexOf("|"), sk = j<0 ? sobre : sobre.slice(0,j), frase = j<0 ? "" : sobre.slice(j+1);
+    abrirHoja(A[sk] ? A[sk].rotulo : sk, '<div style="padding:12px 16px">'+htmlArticulo(sk,false,frase?[norm(frase)]:[])+
+      '<p><a class="btn" href="'+hrefLey(sk)+'">Abrir en la ley ›</a></p></div>', "#"+base);
+    const m = frase && $("#hojaCuerpo mark.hl"); if (m) setTimeout(()=>m.scrollIntoView({block:"center"}),0);
   }
 }
 window.addEventListener("hashchange", ruta);

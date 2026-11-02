@@ -1498,7 +1498,7 @@
      "fase": "Permisos retribuidos",
      "subtitulo": "CAPÍTULO II · Sección 5.ª · art. 37.3 y 37.9",
      "descripcion": "Con aviso previo y justificación, la persona trabajadora puede ausentarse cobrando: quince días naturales por matrimonio o registro de pareja de hecho; cinco días por accidente o enfermedad graves, hospitalización o intervención con reposo domiciliario del cónyuge, pareja de hecho, parientes hasta el segundo grado o conviviente que necesite cuidado; dos días por fallecimiento del cónyuge, pareja o parientes hasta el segundo grado (dos más si hay desplazamiento); un día por traslado de domicilio; el tiempo indispensable para un deber público y personal (incluido votar), exámenes prenatales y preparación al parto, trámites de adopción o acogimiento y actos preparatorios de la donación de órganos; funciones sindicales o de representación; hasta cuatro días si no se puede llegar al trabajo por restricciones de la autoridad o riesgo grave (catástrofe, fenómeno meteorológico). Además, ausencia por fuerza mayor familiar urgente, retribuida hasta el equivalente a cuatro días al año (art. 37.9).",
-     "aviso": "El convenio colectivo puede mejorar estos permisos: compruébalo. El ET no dice si los días de estos permisos (salvo los quince naturales del matrimonio) son naturales o laborables, ni desde cuándo se cuentan, ni si el de hospitalización depende de que dure el ingreso: mira el convenio aplicable y la jurisprudencia. El BOE repite la letra «g)» en el art. 37.3 (imposibilidad de acceder al centro y donación de órganos). El ET no dice expresamente por qué procedimiento se reclama un permiso del apartado 3 denegado; la vía del art. 139 de la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]] la menciona el art. 37.7 para los apartados 4, 5 y 6.",
+     "aviso": "El convenio colectivo puede mejorar estos permisos: compruébalo. El ET no dice si los días de estos permisos (salvo los quince naturales del matrimonio) son naturales o laborables, ni desde cuándo se cuentan, ni si el de hospitalización depende de que dure el ingreso. En «Alternativas» va el criterio de los tribunales tal como lo recogen varios portales jurídicos coincidentes (no se ha leído el texto de las sentencias); el número de sentencia solo se da cuando las fuentes coinciden. El BOE repite la letra «g)» en el art. 37.3 (imposibilidad de acceder al centro y donación de órganos). El ET no dice expresamente por qué procedimiento se reclama un permiso del apartado 3 denegado; la vía del art. 139 de la [[Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social|https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936]] la menciona el art. 37.7 para los apartados 4, 5 y 6.",
      "articulos": [
       "37"
      ],
@@ -1511,40 +1511,142 @@
        "acto": "Permiso por matrimonio o registro de pareja de hecho",
        "plazo": "15 días naturales",
        "articulo": "37",
-       "literal": "Quince días naturales en caso de matrimonio o registro de pareja de hecho"
+       "literal": "Quince días naturales en caso de matrimonio o registro de pareja de hecho",
+       "apartado": "3 a)"
       },
       {
        "acto": "Accidente o enfermedad grave, hospitalización de familiar",
        "plazo": "5 días",
        "articulo": "37",
-       "literal": "Cinco días por accidente o enfermedad graves, hospitalización"
+       "literal": "Cinco días por accidente o enfermedad graves, hospitalización",
+       "apartado": "3 b)"
       },
       {
        "acto": "Fallecimiento de familiar hasta 2.º grado",
        "plazo": "2 días (+2 con desplazamiento)",
        "articulo": "37",
-       "literal": "Dos días por el fallecimiento del cónyuge, pareja de hecho o parientes hasta el segundo grado"
+       "literal": "Dos días por el fallecimiento del cónyuge, pareja de hecho o parientes hasta el segundo grado",
+       "apartado": "3 b bis)"
       },
       {
        "acto": "Traslado de domicilio",
        "plazo": "1 día",
        "articulo": "37",
-       "literal": "Un día por traslado del domicilio habitual"
+       "literal": "Un día por traslado del domicilio habitual",
+       "apartado": "3 c)"
       },
       {
        "acto": "Imposibilidad de acceder al centro de trabajo (restricciones o riesgo grave)",
        "plazo": "Hasta 4 días (después, mientras dure)",
        "articulo": "37",
-       "literal": "Hasta cuatro días por imposibilidad de acceder al centro de trabajo"
+       "literal": "Hasta cuatro días por imposibilidad de acceder al centro de trabajo",
+       "apartado": "3 g)"
       },
       {
        "acto": "Ausencia por fuerza mayor familiar urgente (horas retribuidas)",
        "plazo": "Equivalente a 4 días al año",
        "articulo": "37",
-       "literal": "equivalentes a cuatro días al año"
+       "literal": "equivalentes a cuatro días al año",
+       "apartado": "9"
       }
      ],
      "ramas": [
+      {
+       "si": "El hecho causante cae en día no laborable (festivo o de descanso)",
+       "entonces": "Según el Tribunal Supremo, el permiso empieza el primer día laborable siguiente, porque los permisos sirven para ausentarse en días de trabajo (STS 145/2018, de 13 de febrero, y otras posteriores, como la STS 695/2023, de 3 de octubre). Vale también para el de matrimonio si la boda cae en día no laborable.",
+       "articulos": [
+        "37"
+       ],
+       "literal": {
+        "articulo": "37",
+        "texto": "podrá ausentarse del trabajo, con derecho a remuneración"
+       },
+       "apartado": "3"
+      },
+      {
+       "si": "Hay dudas sobre si los cinco días por hospitalización o enfermedad grave son naturales o laborables",
+       "entonces": "Según el Tribunal Supremo, son días laborables (STS 1084/2025, de noviembre de 2025). El ET solo dice «naturales» en el permiso de matrimonio.",
+       "articulos": [
+        "37"
+       ],
+       "literal": {
+        "articulo": "37",
+        "texto": "Cinco días por accidente o enfermedad graves, hospitalización"
+       },
+       "apartado": "3 b)"
+      },
+      {
+       "si": "La empresa exige que los cinco días por hospitalización empiecen el mismo día del ingreso",
+       "entonces": "No tiene por qué ser así. Según el Tribunal Supremo, el permiso no tiene que empezar el día del hecho causante ni el primer día laborable siguiente, y la empresa no puede imponerlo: puede disfrutarse mientras subsista la necesidad de cuidado del familiar (STS 126/2026, de 4 de febrero, rec. 251/2024).",
+       "articulos": [
+        "37"
+       ],
+       "literal": {
+        "articulo": "37",
+        "texto": "Cinco días por accidente o enfermedad graves, hospitalización"
+       },
+       "apartado": "3 b)"
+      },
+      {
+       "si": "El familiar sigue hospitalizado muchos días (por ejemplo, quince) y se quieren coger los cinco días sueltos o alternos",
+       "entonces": "El Tribunal Supremo admite disfrutar el permiso mientras siga la necesidad de cuidado (STS 126/2026), pero no consta que haya dicho si puede cogerse en días sueltos o alternos. No está claro: mira el convenio aplicable.",
+       "articulos": [
+        "37"
+       ],
+       "literal": {
+        "articulo": "37",
+        "texto": "Cinco días por accidente o enfermedad graves, hospitalización"
+       },
+       "apartado": "3 b)"
+      },
+      {
+       "si": "Al familiar le dan el alta hospitalaria, pero sigue con reposo en casa",
+       "entonces": "Según el Tribunal Supremo, el permiso no se pierde con el alta hospitalaria: lo que cuenta es el alta médica (sentencias de 2026).",
+       "articulos": [
+        "37"
+       ],
+       "literal": {
+        "articulo": "37",
+        "texto": "que precise reposo domiciliario"
+       },
+       "apartado": "3 b)"
+      },
+      {
+       "si": "El hecho causante ocurre durante las vacaciones o el descanso semanal",
+       "entonces": "Según el Tribunal de Justicia de la Unión Europea (sentencia de 4 de junio de 2020, asunto C-588/18), el Derecho de la Unión no obliga a dar el permiso en otra fecha. Mira el convenio, que puede mejorarlo.",
+       "articulos": [
+        "37"
+       ],
+       "literal": {
+        "articulo": "37",
+        "texto": "podrá ausentarse del trabajo, con derecho a remuneración"
+       },
+       "apartado": "3"
+      },
+      {
+       "si": "El fallecimiento obliga a desplazarse",
+       "entonces": "El permiso pasa de dos a cuatro días. El ET no dice a partir de cuántos kilómetros hay desplazamiento: mira el convenio.",
+       "articulos": [
+        "37"
+       ],
+       "literal": {
+        "articulo": "37",
+        "texto": "el plazo se ampliará en dos días"
+       },
+       "apartado": "3 b bis)"
+      },
+      {
+       "si": "Una urgencia familiar por enfermedad o accidente obliga a ausentarse y el convenio no regula el pago",
+       "entonces": "Según el Tribunal Supremo (sentencia de 17 de abril de 2026), esas horas se cobran por ley, hasta el equivalente a cuatro días al año, aunque el convenio no lo regule.",
+       "articulos": [
+        "37"
+       ],
+       "literal": {
+        "articulo": "37",
+        "texto": "tendrán derecho a que sean retribuidas las horas de ausencia"
+       },
+       "apartado": "9"
+      },
       {
        "si": "El deber público impide trabajar más del 20 % de las horas en tres meses",
        "entonces": "La empresa puede pasar a la persona trabajadora a excedencia forzosa (art. 46.1).",
@@ -1555,7 +1657,8 @@
        "literal": {
         "articulo": "37",
         "texto": "podrá la empresa pasar al trabajador afectado a la situación de excedencia regulada en el artículo 46.1"
-       }
+       },
+       "apartado": "3 d)"
       },
       {
        "si": "Por el deber público se cobra una indemnización",
@@ -1566,7 +1669,8 @@
        "literal": {
         "articulo": "37",
         "texto": "se descontará el importe de la misma del salario a que tuviera derecho en la empresa"
-       }
+       },
+       "apartado": "3 d)"
       },
       {
        "si": "Pasados los cuatro días sigue sin poderse acceder al centro de trabajo",
@@ -1578,7 +1682,8 @@
        "literal": {
         "articulo": "37",
         "texto": "el permiso se prolongará hasta que desaparezcan las circunstancias que lo justificaron"
-       }
+       },
+       "apartado": "3 g)"
       },
       {
        "si": "Se despide a quien solicitó o disfruta ciertos permisos del art. 37",
@@ -1589,7 +1694,8 @@
        "literal": {
         "articulo": "55",
         "texto": "el de las personas trabajadoras que hayan solicitado uno de los permisos a los que se refieren los apartados 3.b), 4, 5 y 6 del artículo 37"
-       }
+       },
+       "apartado": "5 b)"
       }
      ],
      "pregunta": {
@@ -1601,7 +1707,8 @@
       "literal": {
        "articulo": "37",
        "texto": "previo aviso y justificación, podrá ausentarse del trabajo, con derecho a remuneración"
-      }
+      },
+      "apartado": "3"
      },
      "conexiones": [
       "37",
