@@ -581,6 +581,8 @@ Hay una sección por ley; dentro de cada una, el mismo orden: dudas de interpret
     - [ ] **Acompañar al médico a un hijo o familiar no es deber inexcusable:** dos fuentes, sin fecha ni número. **Tu respuesta:**
 - [ ] **Cómo se reclama un permiso del apartado 3 denegado.** El art. 37.7 ET remite al art. 139 LRJS solo para los apartados 4, 5 y 6 (Verificable). Para los permisos del apartado 3 el ET no dice nada (Verificable). **Propuesta:** no poner botón a la LRJS en esta ficha hasta que me digas qué vía quieres indicar (No verificable). **Tu respuesta:**
 
+- [ ] **Apartado en las etiquetas de la ficha de permisos** (Chat 8): «Art. 37.3 a)», «37.3 b bis)», «37.9», «55.5 b)», etc., comprobados por el script (Verificable). Para la letra «g)» repetida, las dos salen como «Art. 37.3 g)». Límite del control: un párrafo sin letra que vaya al final de un apartado se atribuye a la última letra (No verificable que no ocurra en otros artículos; en este no afecta). **Tu respuesta:**
+
 ### Test de plazos (F4, Chat 7, todas las leyes)
 
 > Nueva pestaña «Test de plazos» dentro de «Repaso», en todas las leyes: «¿qué plazo?» con 4 opciones. La correcta y su frase literal salen del mapa; las otras tres son plazos de otros actos (primero del mismo tipo y del mismo procedimiento) (Verificable: código de la plantilla).

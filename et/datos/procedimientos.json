@@ -1511,37 +1511,43 @@
        "acto": "Permiso por matrimonio o registro de pareja de hecho",
        "plazo": "15 días naturales",
        "articulo": "37",
-       "literal": "Quince días naturales en caso de matrimonio o registro de pareja de hecho"
+       "literal": "Quince días naturales en caso de matrimonio o registro de pareja de hecho",
+       "apartado": "3 a)"
       },
       {
        "acto": "Accidente o enfermedad grave, hospitalización de familiar",
        "plazo": "5 días",
        "articulo": "37",
-       "literal": "Cinco días por accidente o enfermedad graves, hospitalización"
+       "literal": "Cinco días por accidente o enfermedad graves, hospitalización",
+       "apartado": "3 b)"
       },
       {
        "acto": "Fallecimiento de familiar hasta 2.º grado",
        "plazo": "2 días (+2 con desplazamiento)",
        "articulo": "37",
-       "literal": "Dos días por el fallecimiento del cónyuge, pareja de hecho o parientes hasta el segundo grado"
+       "literal": "Dos días por el fallecimiento del cónyuge, pareja de hecho o parientes hasta el segundo grado",
+       "apartado": "3 b bis)"
       },
       {
        "acto": "Traslado de domicilio",
        "plazo": "1 día",
        "articulo": "37",
-       "literal": "Un día por traslado del domicilio habitual"
+       "literal": "Un día por traslado del domicilio habitual",
+       "apartado": "3 c)"
       },
       {
        "acto": "Imposibilidad de acceder al centro de trabajo (restricciones o riesgo grave)",
        "plazo": "Hasta 4 días (después, mientras dure)",
        "articulo": "37",
-       "literal": "Hasta cuatro días por imposibilidad de acceder al centro de trabajo"
+       "literal": "Hasta cuatro días por imposibilidad de acceder al centro de trabajo",
+       "apartado": "3 g)"
       },
       {
        "acto": "Ausencia por fuerza mayor familiar urgente (horas retribuidas)",
        "plazo": "Equivalente a 4 días al año",
        "articulo": "37",
-       "literal": "equivalentes a cuatro días al año"
+       "literal": "equivalentes a cuatro días al año",
+       "apartado": "9"
       }
      ],
      "ramas": [
@@ -1554,7 +1560,8 @@
        "literal": {
         "articulo": "37",
         "texto": "podrá ausentarse del trabajo, con derecho a remuneración"
-       }
+       },
+       "apartado": "3"
       },
       {
        "si": "Hay dudas sobre si los cinco días por hospitalización o enfermedad grave son naturales o laborables",
@@ -1565,7 +1572,8 @@
        "literal": {
         "articulo": "37",
         "texto": "Cinco días por accidente o enfermedad graves, hospitalización"
-       }
+       },
+       "apartado": "3 b)"
       },
       {
        "si": "La empresa exige que los cinco días por hospitalización empiecen el mismo día del ingreso",
@@ -1576,7 +1584,8 @@
        "literal": {
         "articulo": "37",
         "texto": "Cinco días por accidente o enfermedad graves, hospitalización"
-       }
+       },
+       "apartado": "3 b)"
       },
       {
        "si": "El familiar sigue hospitalizado muchos días (por ejemplo, quince) y se quieren coger los cinco días sueltos o alternos",
@@ -1587,7 +1596,8 @@
        "literal": {
         "articulo": "37",
         "texto": "Cinco días por accidente o enfermedad graves, hospitalización"
-       }
+       },
+       "apartado": "3 b)"
       },
       {
        "si": "Al familiar le dan el alta hospitalaria, pero sigue con reposo en casa",
@@ -1598,7 +1608,8 @@
        "literal": {
         "articulo": "37",
         "texto": "que precise reposo domiciliario"
-       }
+       },
+       "apartado": "3 b)"
       },
       {
        "si": "El hecho causante ocurre durante las vacaciones o el descanso semanal",
@@ -1609,7 +1620,8 @@
        "literal": {
         "articulo": "37",
         "texto": "podrá ausentarse del trabajo, con derecho a remuneración"
-       }
+       },
+       "apartado": "3"
       },
       {
        "si": "El fallecimiento obliga a desplazarse",
@@ -1620,7 +1632,8 @@
        "literal": {
         "articulo": "37",
         "texto": "el plazo se ampliará en dos días"
-       }
+       },
+       "apartado": "3 b bis)"
       },
       {
        "si": "Una urgencia familiar por enfermedad o accidente obliga a ausentarse y el convenio no regula el pago",
@@ -1631,7 +1644,8 @@
        "literal": {
         "articulo": "37",
         "texto": "tendrán derecho a que sean retribuidas las horas de ausencia"
-       }
+       },
+       "apartado": "9"
       },
       {
        "si": "El deber público impide trabajar más del 20 % de las horas en tres meses",
@@ -1643,7 +1657,8 @@
        "literal": {
         "articulo": "37",
         "texto": "podrá la empresa pasar al trabajador afectado a la situación de excedencia regulada en el artículo 46.1"
-       }
+       },
+       "apartado": "3 d)"
       },
       {
        "si": "Por el deber público se cobra una indemnización",
@@ -1654,7 +1669,8 @@
        "literal": {
         "articulo": "37",
         "texto": "se descontará el importe de la misma del salario a que tuviera derecho en la empresa"
-       }
+       },
+       "apartado": "3 d)"
       },
       {
        "si": "Pasados los cuatro días sigue sin poderse acceder al centro de trabajo",
@@ -1666,7 +1682,8 @@
        "literal": {
         "articulo": "37",
         "texto": "el permiso se prolongará hasta que desaparezcan las circunstancias que lo justificaron"
-       }
+       },
+       "apartado": "3 g)"
       },
       {
        "si": "Se despide a quien solicitó o disfruta ciertos permisos del art. 37",
@@ -1677,7 +1694,8 @@
        "literal": {
         "articulo": "55",
         "texto": "el de las personas trabajadoras que hayan solicitado uno de los permisos a los que se refieren los apartados 3.b), 4, 5 y 6 del artículo 37"
-       }
+       },
+       "apartado": "5 b)"
       }
      ],
      "pregunta": {
@@ -1689,7 +1707,8 @@
       "literal": {
        "articulo": "37",
        "texto": "previo aviso y justificación, podrá ausentarse del trabajo, con derecho a remuneración"
-      }
+      },
+      "apartado": "3"
      },
      "conexiones": [
       "37",
